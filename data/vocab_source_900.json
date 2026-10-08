@@ -1,0 +1,6253 @@
+[
+  {
+    "source_no": 1,
+    "word": "会社",
+    "reading": "かいしゃ",
+    "meaning": "company",
+    "example": "父は会社で働いています。"
+  },
+  {
+    "source_no": 2,
+    "word": "地図",
+    "reading": "ちず",
+    "meaning": "map",
+    "example": "地図を見て行きましょう。"
+  },
+  {
+    "source_no": 3,
+    "word": "出発",
+    "reading": "しゅっぱつ",
+    "meaning": "departure; to depart",
+    "example": "電車は８時に出発します。"
+  },
+  {
+    "source_no": 4,
+    "word": "楽しい",
+    "reading": "たのしい",
+    "meaning": "enjoyable",
+    "example": "日本の生活は楽しいです。"
+  },
+  {
+    "source_no": 5,
+    "word": "医者",
+    "reading": "いしゃ",
+    "meaning": "doctor",
+    "example": "医者に診てもらいました。"
+  },
+  {
+    "source_no": 6,
+    "word": "同じ",
+    "reading": "おなじ",
+    "meaning": "same",
+    "example": "私たちは同じ学校です。"
+  },
+  {
+    "source_no": 7,
+    "word": "食事",
+    "reading": "しょくじ",
+    "meaning": "meal",
+    "example": "家族と食事をしました。"
+  },
+  {
+    "source_no": 8,
+    "word": "新聞",
+    "reading": "しんぶん",
+    "meaning": "newspaper",
+    "example": "毎朝新聞を読みます。"
+  },
+  {
+    "source_no": 9,
+    "word": "開ける",
+    "reading": "あける",
+    "meaning": "to open",
+    "example": "窓を開けてください。"
+  },
+  {
+    "source_no": 10,
+    "word": "工場",
+    "reading": "こうじょう",
+    "meaning": "factory",
+    "example": "工場で車を作っています。"
+  },
+  {
+    "source_no": 11,
+    "word": "勉強",
+    "reading": "べんきょう",
+    "meaning": "study",
+    "example": "毎日日本語を勉強します。"
+  },
+  {
+    "source_no": 12,
+    "word": "自転車",
+    "reading": "じてんしゃ",
+    "meaning": "bicycle",
+    "example": "自転車で駅へ行きます。"
+  },
+  {
+    "source_no": 13,
+    "word": "質問",
+    "reading": "しつもん",
+    "meaning": "question",
+    "example": "質問があります。"
+  },
+  {
+    "source_no": 14,
+    "word": "会話",
+    "reading": "かいわ",
+    "meaning": "conversation",
+    "example": "日本語で会話しましょう。"
+  },
+  {
+    "source_no": 15,
+    "word": "病院",
+    "reading": "びょういん",
+    "meaning": "hospital",
+    "example": "病院へ行きました。"
+  },
+  {
+    "source_no": 16,
+    "word": "銀行",
+    "reading": "ぎんこう",
+    "meaning": "bank",
+    "example": "銀行でお金を下ろします。"
+  },
+  {
+    "source_no": 17,
+    "word": "旅行",
+    "reading": "りょこう",
+    "meaning": "trip; travel",
+    "example": "夏休みに京都へ旅行します。"
+  },
+  {
+    "source_no": 18,
+    "word": "研究",
+    "reading": "けんきゅう",
+    "meaning": "research",
+    "example": "大学で研究しています。"
+  },
+  {
+    "source_no": 19,
+    "word": "親切",
+    "reading": "しんせつ",
+    "meaning": "kind",
+    "example": "あの人はとても親切です。"
+  },
+  {
+    "source_no": 20,
+    "word": "写真",
+    "reading": "しゃしん",
+    "meaning": "photograph",
+    "example": "写真を撮りましょう。"
+  },
+  {
+    "source_no": 21,
+    "word": "音楽",
+    "reading": "おんがく",
+    "meaning": "music",
+    "example": "音楽を聞くのが好きです。"
+  },
+  {
+    "source_no": 22,
+    "word": "赤い",
+    "reading": "あかい",
+    "meaning": "red",
+    "example": "赤い車が見えます。"
+  },
+  {
+    "source_no": 23,
+    "word": "青い",
+    "reading": "あおい",
+    "meaning": "blue",
+    "example": "空が青いですね。"
+  },
+  {
+    "source_no": 24,
+    "word": "黒い",
+    "reading": "くろい",
+    "meaning": "black",
+    "example": "黒いかばんを買いました。"
+  },
+  {
+    "source_no": 25,
+    "word": "洋服",
+    "reading": "ようふく",
+    "meaning": "Western clothes",
+    "example": "新しい洋服を着ます。"
+  },
+  {
+    "source_no": 26,
+    "word": "店員",
+    "reading": "てんいん",
+    "meaning": "shop clerk",
+    "example": "店員に聞いてください。"
+  },
+  {
+    "source_no": 27,
+    "word": "歌手",
+    "reading": "かしゅ",
+    "meaning": "singer",
+    "example": "彼は有名な歌手です。"
+  },
+  {
+    "source_no": 28,
+    "word": "返事",
+    "reading": "へんじ",
+    "meaning": "reply; answer",
+    "example": "メールの返事を書きました。"
+  },
+  {
+    "source_no": 29,
+    "word": "会場",
+    "reading": "かいじょう",
+    "meaning": "venue",
+    "example": "会場は駅の近くです。"
+  },
+  {
+    "source_no": 30,
+    "word": "運転",
+    "reading": "うんてん",
+    "meaning": "driving",
+    "example": "父は毎日車を運転します。"
+  },
+  {
+    "source_no": 31,
+    "word": "歩く",
+    "reading": "あるく",
+    "meaning": "to walk",
+    "example": "毎朝駅まで歩きます。"
+  },
+  {
+    "source_no": 32,
+    "word": "野菜",
+    "reading": "やさい",
+    "meaning": "vegetables",
+    "example": "野菜をたくさん食べます。"
+  },
+  {
+    "source_no": 33,
+    "word": "借りる",
+    "reading": "かりる",
+    "meaning": "to borrow",
+    "example": "図書館で本を借ります。"
+  },
+  {
+    "source_no": 34,
+    "word": "急ぐ",
+    "reading": "いそぐ",
+    "meaning": "to hurry",
+    "example": "急いでください。"
+  },
+  {
+    "source_no": 35,
+    "word": "世界",
+    "reading": "せかい",
+    "meaning": "world",
+    "example": "世界には多くの国があります。"
+  },
+  {
+    "source_no": 36,
+    "word": "有名",
+    "reading": "ゆうめい",
+    "meaning": "famous",
+    "example": "この寺は有名です。"
+  },
+  {
+    "source_no": 37,
+    "word": "止める",
+    "reading": "とめる",
+    "meaning": "to stop",
+    "example": "車をここに止めてください。"
+  },
+  {
+    "source_no": 38,
+    "word": "駅員",
+    "reading": "えきいん",
+    "meaning": "station staff",
+    "example": "駅員に聞きました。"
+  },
+  {
+    "source_no": 39,
+    "word": "持つ",
+    "reading": "もつ",
+    "meaning": "to hold; to have",
+    "example": "かばんを持っています。"
+  },
+  {
+    "source_no": 40,
+    "word": "秋",
+    "reading": "あき",
+    "meaning": "autumn",
+    "example": "秋は涼しいです。"
+  },
+  {
+    "source_no": 41,
+    "word": "英語",
+    "reading": "えいご",
+    "meaning": "English (language)",
+    "example": "英語を話せます。"
+  },
+  {
+    "source_no": 42,
+    "word": "教室",
+    "reading": "きょうしつ",
+    "meaning": "classroom",
+    "example": "教室に学生がいます。"
+  },
+  {
+    "source_no": 43,
+    "word": "台風",
+    "reading": "たいふう",
+    "meaning": "typhoon",
+    "example": "台風が近づいています。"
+  },
+  {
+    "source_no": 44,
+    "word": "送る",
+    "reading": "おくる",
+    "meaning": "to send",
+    "example": "友達に手紙を送ります。"
+  },
+  {
+    "source_no": 45,
+    "word": "試験",
+    "reading": "しけん",
+    "meaning": "examination",
+    "example": "来週試験があります。"
+  },
+  {
+    "source_no": 46,
+    "word": "建物",
+    "reading": "たてもの",
+    "meaning": "building",
+    "example": "あの建物は新しいです。"
+  },
+  {
+    "source_no": 47,
+    "word": "夕方",
+    "reading": "ゆうがた",
+    "meaning": "evening",
+    "example": "夕方散歩します。"
+  },
+  {
+    "source_no": 48,
+    "word": "社会",
+    "reading": "しゃかい",
+    "meaning": "society",
+    "example": "社会について勉強します。"
+  },
+  {
+    "source_no": 49,
+    "word": "用事",
+    "reading": "ようじ",
+    "meaning": "errand; business",
+    "example": "午後は用事があります。"
+  },
+  {
+    "source_no": 50,
+    "word": "歌",
+    "reading": "うた",
+    "meaning": "song",
+    "example": "日本の歌を歌います。"
+  },
+  {
+    "source_no": 51,
+    "word": "春",
+    "reading": "はる",
+    "meaning": "spring",
+    "example": "春になると桜が咲きます。"
+  },
+  {
+    "source_no": 52,
+    "word": "牛肉",
+    "reading": "ぎゅうにく",
+    "meaning": "beef",
+    "example": "牛肉を食べました。"
+  },
+  {
+    "source_no": 53,
+    "word": "住む",
+    "reading": "すむ",
+    "meaning": "to live",
+    "example": "京都に住んでいます。"
+  },
+  {
+    "source_no": 54,
+    "word": "朝食",
+    "reading": "ちょうしょく",
+    "meaning": "breakfast",
+    "example": "朝食を食べました。"
+  },
+  {
+    "source_no": 55,
+    "word": "漢字",
+    "reading": "かんじ",
+    "meaning": "kanji",
+    "example": "毎日漢字を練習します。"
+  },
+  {
+    "source_no": 56,
+    "word": "風",
+    "reading": "かぜ",
+    "meaning": "wind",
+    "example": "今日は風が強いです。"
+  },
+  {
+    "source_no": 57,
+    "word": "紙",
+    "reading": "かみ",
+    "meaning": "paper",
+    "example": "紙に名前を書いてください。"
+  },
+  {
+    "source_no": 58,
+    "word": "家族",
+    "reading": "かぞく",
+    "meaning": "family",
+    "example": "家族は四人です。"
+  },
+  {
+    "source_no": 59,
+    "word": "映画",
+    "reading": "えいが",
+    "meaning": "movie",
+    "example": "昨日映画を見ました。"
+  },
+  {
+    "source_no": 60,
+    "word": "料理",
+    "reading": "りょうり",
+    "meaning": "cooking; cuisine",
+    "example": "母は料理が上手です。"
+  },
+  {
+    "source_no": 61,
+    "word": "特別",
+    "reading": "とくべつ",
+    "meaning": "special",
+    "example": "今日は特別な日です。"
+  },
+  {
+    "source_no": 62,
+    "word": "飲み物",
+    "reading": "のみもの",
+    "meaning": "drink; beverage",
+    "example": "冷たい飲み物をください。"
+  },
+  {
+    "source_no": 63,
+    "word": "帰る",
+    "reading": "かえる",
+    "meaning": "to return home",
+    "example": "今日は早く帰ります。"
+  },
+  {
+    "source_no": 64,
+    "word": "売る",
+    "reading": "うる",
+    "meaning": "to sell",
+    "example": "この店は野菜を売っています。"
+  },
+  {
+    "source_no": 65,
+    "word": "写す",
+    "reading": "うつす",
+    "meaning": "to copy",
+    "example": "ノートを写してください。"
+  },
+  {
+    "source_no": 66,
+    "word": "病気",
+    "reading": "びょうき",
+    "meaning": "illness",
+    "example": "風邪で病気になりました。"
+  },
+  {
+    "source_no": 67,
+    "word": "着る",
+    "reading": "きる",
+    "meaning": "to wear",
+    "example": "コートを着ています。"
+  },
+  {
+    "source_no": 68,
+    "word": "発音",
+    "reading": "はつおん",
+    "meaning": "pronunciation",
+    "example": "日本語の発音は難しいです。"
+  },
+  {
+    "source_no": 69,
+    "word": "思う",
+    "reading": "おもう",
+    "meaning": "to think",
+    "example": "私もそう思います。"
+  },
+  {
+    "source_no": 70,
+    "word": "図書館",
+    "reading": "としょかん",
+    "meaning": "library",
+    "example": "図書館で勉強しました。"
+  },
+  {
+    "source_no": 71,
+    "word": "夏休み",
+    "reading": "なつやすみ",
+    "meaning": "summer vacation",
+    "example": "夏休みに旅行します。"
+  },
+  {
+    "source_no": 72,
+    "word": "会議",
+    "reading": "かいぎ",
+    "meaning": "meeting",
+    "example": "午後に会議があります。"
+  },
+  {
+    "source_no": 73,
+    "word": "習う",
+    "reading": "ならう",
+    "meaning": "to learn",
+    "example": "ピアノを習っています。"
+  },
+  {
+    "source_no": 74,
+    "word": "貸す",
+    "reading": "かす",
+    "meaning": "to lend",
+    "example": "友達に本を貸しました。"
+  },
+  {
+    "source_no": 75,
+    "word": "鳥",
+    "reading": "とり",
+    "meaning": "bird",
+    "example": "鳥が空を飛んでいます。"
+  },
+  {
+    "source_no": 76,
+    "word": "重い",
+    "reading": "おもい",
+    "meaning": "heavy",
+    "example": "この荷物は重いです。"
+  },
+  {
+    "source_no": 77,
+    "word": "冬",
+    "reading": "ふゆ",
+    "meaning": "winter",
+    "example": "北海道の冬は寒いです。"
+  },
+  {
+    "source_no": 78,
+    "word": "公園",
+    "reading": "こうえん",
+    "meaning": "park",
+    "example": "公園で子どもが遊んでいます。"
+  },
+  {
+    "source_no": 79,
+    "word": "道",
+    "reading": "みち",
+    "meaning": "road; way",
+    "example": "この道をまっすぐ行きます。"
+  },
+  {
+    "source_no": 80,
+    "word": "黒板",
+    "reading": "こくばん",
+    "meaning": "blackboard",
+    "example": "先生は黒板に書きました。"
+  },
+  {
+    "source_no": 81,
+    "word": "問題",
+    "reading": "もんだい",
+    "meaning": "problem; question",
+    "example": "この問題は難しいです。"
+  },
+  {
+    "source_no": 82,
+    "word": "住所",
+    "reading": "じゅうしょ",
+    "meaning": "address",
+    "example": "住所を書いてください。"
+  },
+  {
+    "source_no": 83,
+    "word": "魚",
+    "reading": "さかな",
+    "meaning": "fish",
+    "example": "魚を食べるのが好きです。"
+  },
+  {
+    "source_no": 84,
+    "word": "昼休み",
+    "reading": "ひるやすみ",
+    "meaning": "lunch break",
+    "example": "昼休みに友達と話しました。"
+  },
+  {
+    "source_no": 85,
+    "word": "切る",
+    "reading": "きる",
+    "meaning": "to cut",
+    "example": "はさみで紙を切ります。"
+  },
+  {
+    "source_no": 86,
+    "word": "音",
+    "reading": "おと",
+    "meaning": "sound",
+    "example": "外で大きな音がしました。"
+  },
+  {
+    "source_no": 87,
+    "word": "始める",
+    "reading": "はじめる",
+    "meaning": "to begin",
+    "example": "日本語の勉強を始めました。"
+  },
+  {
+    "source_no": 88,
+    "word": "終わる",
+    "reading": "おわる",
+    "meaning": "to finish",
+    "example": "授業は３時に終わります。"
+  },
+  {
+    "source_no": 89,
+    "word": "色",
+    "reading": "いろ",
+    "meaning": "colour",
+    "example": "この色が好きです。"
+  },
+  {
+    "source_no": 90,
+    "word": "力",
+    "reading": "ちから",
+    "meaning": "strength; power",
+    "example": "もっと力を入れてください。"
+  },
+  {
+    "source_no": 91,
+    "word": "便利",
+    "reading": "べんり",
+    "meaning": "convenient",
+    "example": "この町は便利です。"
+  },
+  {
+    "source_no": 92,
+    "word": "変わる",
+    "reading": "かわる",
+    "meaning": "to change",
+    "example": "天気が変わりました。"
+  },
+  {
+    "source_no": 93,
+    "word": "使う",
+    "reading": "つかう",
+    "meaning": "to use",
+    "example": "このペンを使ってください。"
+  },
+  {
+    "source_no": 94,
+    "word": "建てる",
+    "reading": "たてる",
+    "meaning": "to build",
+    "example": "新しい家を建てています。"
+  },
+  {
+    "source_no": 95,
+    "word": "運ぶ",
+    "reading": "はこぶ",
+    "meaning": "to carry",
+    "example": "荷物を運びます。"
+  },
+  {
+    "source_no": 96,
+    "word": "近い",
+    "reading": "ちかい",
+    "meaning": "near",
+    "example": "駅はここから近いです。"
+  },
+  {
+    "source_no": 97,
+    "word": "遠い",
+    "reading": "とおい",
+    "meaning": "far",
+    "example": "学校は家から遠いです。"
+  },
+  {
+    "source_no": 98,
+    "word": "若い",
+    "reading": "わかい",
+    "meaning": "young",
+    "example": "彼はまだ若いです。"
+  },
+  {
+    "source_no": 99,
+    "word": "古い",
+    "reading": "ふるい",
+    "meaning": "old",
+    "example": "この時計は古いです。"
+  },
+  {
+    "source_no": 100,
+    "word": "新年",
+    "reading": "しんねん",
+    "meaning": "New Year",
+    "example": "新年に家族に会います。"
+  },
+  {
+    "source_no": 101,
+    "word": "元気",
+    "reading": "げんき",
+    "meaning": "healthy; energetic",
+    "example": "お元気ですか。"
+  },
+  {
+    "source_no": 102,
+    "word": "安い",
+    "reading": "やすい",
+    "meaning": "cheap",
+    "example": "この店の服は安いです。"
+  },
+  {
+    "source_no": 103,
+    "word": "高い",
+    "reading": "たかい",
+    "meaning": "expensive; high",
+    "example": "このカメラは高いです。"
+  },
+  {
+    "source_no": 104,
+    "word": "低い",
+    "reading": "ひくい",
+    "meaning": "low",
+    "example": "この山はあまり高くないです。"
+  },
+  {
+    "source_no": 105,
+    "word": "広い",
+    "reading": "ひろい",
+    "meaning": "wide; spacious",
+    "example": "この部屋は広いです。"
+  },
+  {
+    "source_no": 106,
+    "word": "狭い",
+    "reading": "せまい",
+    "meaning": "narrow; small",
+    "example": "私の部屋は狭いです。"
+  },
+  {
+    "source_no": 107,
+    "word": "多い",
+    "reading": "おおい",
+    "meaning": "many",
+    "example": "日本には人が多いです。"
+  },
+  {
+    "source_no": 108,
+    "word": "少ない",
+    "reading": "すくない",
+    "meaning": "few; little",
+    "example": "今日は仕事が少ないです。"
+  },
+  {
+    "source_no": 109,
+    "word": "強い",
+    "reading": "つよい",
+    "meaning": "strong",
+    "example": "風が強いです。"
+  },
+  {
+    "source_no": 110,
+    "word": "弱い",
+    "reading": "よわい",
+    "meaning": "weak",
+    "example": "私は辛い物に弱いです。"
+  },
+  {
+    "source_no": 111,
+    "word": "正しい",
+    "reading": "ただしい",
+    "meaning": "correct",
+    "example": "正しい答えを書きました。"
+  },
+  {
+    "source_no": 112,
+    "word": "間違える",
+    "reading": "まちがえる",
+    "meaning": "to make a mistake",
+    "example": "漢字を間違えました。"
+  },
+  {
+    "source_no": 113,
+    "word": "答える",
+    "reading": "こたえる",
+    "meaning": "to answer",
+    "example": "質問に答えてください。"
+  },
+  {
+    "source_no": 114,
+    "word": "考える",
+    "reading": "かんがえる",
+    "meaning": "to think; consider",
+    "example": "もう少し考えます。"
+  },
+  {
+    "source_no": 115,
+    "word": "知る",
+    "reading": "しる",
+    "meaning": "to know",
+    "example": "そのニュースを知っています。"
+  },
+  {
+    "source_no": 116,
+    "word": "忘れる",
+    "reading": "わすれる",
+    "meaning": "to forget",
+    "example": "財布を忘れました。"
+  },
+  {
+    "source_no": 117,
+    "word": "覚える",
+    "reading": "おぼえる",
+    "meaning": "to remember; memorize",
+    "example": "新しい言葉を覚えます。"
+  },
+  {
+    "source_no": 118,
+    "word": "決める",
+    "reading": "きめる",
+    "meaning": "to decide",
+    "example": "明日行くことを決めました。"
+  },
+  {
+    "source_no": 119,
+    "word": "約束",
+    "reading": "やくそく",
+    "meaning": "promise; appointment",
+    "example": "友達と約束があります。"
+  },
+  {
+    "source_no": 120,
+    "word": "必要",
+    "reading": "ひつよう",
+    "meaning": "necessary",
+    "example": "パスポートが必要です。"
+  },
+  {
+    "source_no": 121,
+    "word": "必ず",
+    "reading": "かならず",
+    "meaning": "certainly; without fail",
+    "example": "明日は必ず来てください。"
+  },
+  {
+    "source_no": 122,
+    "word": "自由",
+    "reading": "じゆう",
+    "meaning": "freedom; free",
+    "example": "休みの日は自由に過ごします。"
+  },
+  {
+    "source_no": 123,
+    "word": "安心",
+    "reading": "あんしん",
+    "meaning": "relief; peace of mind",
+    "example": "大丈夫だと聞いて安心しました。"
+  },
+  {
+    "source_no": 124,
+    "word": "心配",
+    "reading": "しんぱい",
+    "meaning": "worry; concern",
+    "example": "母のことを心配しています。"
+  },
+  {
+    "source_no": 125,
+    "word": "生活",
+    "reading": "せいかつ",
+    "meaning": "life; living",
+    "example": "日本での生活に慣れました。"
+  },
+  {
+    "source_no": 126,
+    "word": "世界中",
+    "reading": "せかいじゅう",
+    "meaning": "all over the world",
+    "example": "世界中の人が知っています。"
+  },
+  {
+    "source_no": 127,
+    "word": "文化",
+    "reading": "ぶんか",
+    "meaning": "culture",
+    "example": "日本の文化を勉強しています。"
+  },
+  {
+    "source_no": 128,
+    "word": "歴史",
+    "reading": "れきし",
+    "meaning": "history",
+    "example": "京都の歴史は長いです。"
+  },
+  {
+    "source_no": 129,
+    "word": "町",
+    "reading": "まち",
+    "meaning": "town; city",
+    "example": "この町は静かです。"
+  },
+  {
+    "source_no": 130,
+    "word": "村",
+    "reading": "むら",
+    "meaning": "village",
+    "example": "山の近くに小さい村があります。"
+  },
+  {
+    "source_no": 131,
+    "word": "都市",
+    "reading": "とし",
+    "meaning": "city; urban area",
+    "example": "東京は大きな都市です。"
+  },
+  {
+    "source_no": 132,
+    "word": "国",
+    "reading": "くに",
+    "meaning": "country",
+    "example": "いろいろな国へ行きたいです。"
+  },
+  {
+    "source_no": 133,
+    "word": "外国",
+    "reading": "がいこく",
+    "meaning": "foreign country",
+    "example": "外国の料理が好きです。"
+  },
+  {
+    "source_no": 134,
+    "word": "日本語",
+    "reading": "にほんご",
+    "meaning": "Japanese language",
+    "example": "日本語を毎日練習しています。"
+  },
+  {
+    "source_no": 135,
+    "word": "言葉",
+    "reading": "ことば",
+    "meaning": "word; language",
+    "example": "新しい言葉を覚えました。"
+  },
+  {
+    "source_no": 136,
+    "word": "説明",
+    "reading": "せつめい",
+    "meaning": "explanation",
+    "example": "先生が説明しました。"
+  },
+  {
+    "source_no": 137,
+    "word": "意味",
+    "reading": "いみ",
+    "meaning": "meaning",
+    "example": "この言葉の意味を教えてください 。"
+  },
+  {
+    "source_no": 138,
+    "word": "注意",
+    "reading": "ちゅうい",
+    "meaning": "caution; attention",
+    "example": "足元に注意してください。"
+  },
+  {
+    "source_no": 139,
+    "word": "用意",
+    "reading": "ようい",
+    "meaning": "preparation",
+    "example": "旅行の用意をします。"
+  },
+  {
+    "source_no": 140,
+    "word": "準備",
+    "reading": "じゅんび",
+    "meaning": "preparation",
+    "example": "明日の準備をしています。"
+  },
+  {
+    "source_no": 141,
+    "word": "予定",
+    "reading": "よてい",
+    "meaning": "plan; schedule",
+    "example": "来週の予定があります。"
+  },
+  {
+    "source_no": 142,
+    "word": "約",
+    "reading": "やく",
+    "meaning": "about; approximately",
+    "example": "約10分かかります。"
+  },
+  {
+    "source_no": 143,
+    "word": "時間",
+    "reading": "じかん",
+    "meaning": "time",
+    "example": "日本語を勉強する時間があります 。"
+  },
+  {
+    "source_no": 144,
+    "word": "場所",
+    "reading": "ばしょ",
+    "meaning": "place; location",
+    "example": "会議の場所を教えてください。"
+  },
+  {
+    "source_no": 145,
+    "word": "方法",
+    "reading": "ほうほう",
+    "meaning": "method; way",
+    "example": "いい方法を考えます。"
+  },
+  {
+    "source_no": 146,
+    "word": "方向",
+    "reading": "ほうこう",
+    "meaning": "direction",
+    "example": "駅の方向へ歩きます。"
+  },
+  {
+    "source_no": 147,
+    "word": "途中",
+    "reading": "とちゅう",
+    "meaning": "on the way; middle",
+    "example": "学校へ行く途中で会いました。"
+  },
+  {
+    "source_no": 148,
+    "word": "最初",
+    "reading": "さいしょ",
+    "meaning": "first; beginning",
+    "example": "最初に名前を書いてください。"
+  },
+  {
+    "source_no": 149,
+    "word": "最後",
+    "reading": "さいご",
+    "meaning": "last; end",
+    "example": "最後まで頑張ります。"
+  },
+  {
+    "source_no": 150,
+    "word": "最近",
+    "reading": "さいきん",
+    "meaning": "recently",
+    "example": "最近、日本語が上手になりました 。"
+  },
+  {
+    "source_no": 151,
+    "word": "今度",
+    "reading": "こんど",
+    "meaning": "next time; this time",
+    "example": "今度一緒に映画を見ましょう。"
+  },
+  {
+    "source_no": 152,
+    "word": "最近",
+    "reading": "さいきん",
+    "meaning": "recently",
+    "example": "最近忙しいです。"
+  },
+  {
+    "source_no": 153,
+    "word": "昔",
+    "reading": "むかし",
+    "meaning": "old times; long ago",
+    "example": "昔ここに学校がありました。"
+  },
+  {
+    "source_no": 154,
+    "word": "未来",
+    "reading": "みらい",
+    "meaning": "future",
+    "example": "未来のことを考えています。"
+  },
+  {
+    "source_no": 155,
+    "word": "現在",
+    "reading": "げんざい",
+    "meaning": "present; current",
+    "example": "現在、日本に住んでいます。"
+  },
+  {
+    "source_no": 156,
+    "word": "時代",
+    "reading": "じだい",
+    "meaning": "era; period",
+    "example": "江戸時代を勉強しました。"
+  },
+  {
+    "source_no": 157,
+    "word": "場合",
+    "reading": "ばあい",
+    "meaning": "case; situation",
+    "example": "雨の場合、行きません。"
+  },
+  {
+    "source_no": 158,
+    "word": "関係",
+    "reading": "かんけい",
+    "meaning": "relationship; connection",
+    "example": "仕事と生活の関係を考えます。"
+  },
+  {
+    "source_no": 159,
+    "word": "仕事",
+    "reading": "しごと",
+    "meaning": "work; job",
+    "example": "毎日仕事をしています。"
+  },
+  {
+    "source_no": 160,
+    "word": "作る",
+    "reading": "つくる",
+    "meaning": "to make; create",
+    "example": "夕食を作ります。"
+  },
+  {
+    "source_no": 161,
+    "word": "作文",
+    "reading": "さくぶん",
+    "meaning": "essay; composition",
+    "example": "日本語で作文を書きました。"
+  },
+  {
+    "source_no": 162,
+    "word": "作品",
+    "reading": "さくひん",
+    "meaning": "work; creation",
+    "example": "有名な作品を見ました。"
+  },
+  {
+    "source_no": 163,
+    "word": "使用",
+    "reading": "しよう",
+    "meaning": "use; usage",
+    "example": "この機械を使用します。"
+  },
+  {
+    "source_no": 164,
+    "word": "利用",
+    "reading": "りよう",
+    "meaning": "use; utilization",
+    "example": "電車を利用しています。"
+  },
+  {
+    "source_no": 165,
+    "word": "目的",
+    "reading": "もくてき",
+    "meaning": "purpose; goal",
+    "example": "日本へ来た目的は勉強です。"
+  },
+  {
+    "source_no": 166,
+    "word": "理由",
+    "reading": "りゆう",
+    "meaning": "reason",
+    "example": "遅れた理由を説明しました。"
+  },
+  {
+    "source_no": 167,
+    "word": "意見",
+    "reading": "いけん",
+    "meaning": "opinion",
+    "example": "みんなの意見を聞きます。"
+  },
+  {
+    "source_no": 168,
+    "word": "返す",
+    "reading": "かえす",
+    "meaning": "to return something",
+    "example": "借りた本を返します。"
+  },
+  {
+    "source_no": 169,
+    "word": "送る",
+    "reading": "おくる",
+    "meaning": "to send; see off",
+    "example": "友達を駅まで送ります。"
+  },
+  {
+    "source_no": 170,
+    "word": "受ける",
+    "reading": "うける",
+    "meaning": "to receive; take",
+    "example": "試験を受けます。"
+  },
+  {
+    "source_no": 171,
+    "word": "取る",
+    "reading": "とる",
+    "meaning": "to take",
+    "example": "写真を取ります。"
+  },
+  {
+    "source_no": 172,
+    "word": "取り出す",
+    "reading": "とりだす",
+    "meaning": "to take out",
+    "example": "かばんから本を取り出しました。"
+  },
+  {
+    "source_no": 173,
+    "word": "入れる",
+    "reading": "いれる",
+    "meaning": "to put in",
+    "example": "コーヒーに砂糖を入れます。"
+  },
+  {
+    "source_no": 174,
+    "word": "出す",
+    "reading": "だす",
+    "meaning": "to take out; submit",
+    "example": "宿題を出しました。"
+  },
+  {
+    "source_no": 175,
+    "word": "入る",
+    "reading": "はいる",
+    "meaning": "to enter",
+    "example": "部屋に入ってください。"
+  },
+  {
+    "source_no": 176,
+    "word": "出る",
+    "reading": "でる",
+    "meaning": "to leave; appear",
+    "example": "７時に家を出ます。"
+  },
+  {
+    "source_no": 177,
+    "word": "開く",
+    "reading": "ひらく",
+    "meaning": "to open; hold",
+    "example": "会議を開きます。"
+  },
+  {
+    "source_no": 178,
+    "word": "閉める",
+    "reading": "しめる",
+    "meaning": "to close",
+    "example": "ドアを閉めてください。"
+  },
+  {
+    "source_no": 179,
+    "word": "閉まる",
+    "reading": "しまる",
+    "meaning": "to close (by itself)",
+    "example": "店は９時に閉まります。"
+  },
+  {
+    "source_no": 180,
+    "word": "動く",
+    "reading": "うごく",
+    "meaning": "to move",
+    "example": "時計が動いています。"
+  },
+  {
+    "source_no": 182,
+    "word": "動物",
+    "reading": "どうぶつ",
+    "meaning": "animal",
+    "example": "動物園で動物を見ました。"
+  },
+  {
+    "source_no": 183,
+    "word": "走る",
+    "reading": "はしる",
+    "meaning": "to run",
+    "example": "毎朝公園で走ります。"
+  },
+  {
+    "source_no": 184,
+    "word": "泳ぐ",
+    "reading": "およぐ",
+    "meaning": "to swim",
+    "example": "夏に海で泳ぎます。"
+  },
+  {
+    "source_no": 185,
+    "word": "登る",
+    "reading": "のぼる",
+    "meaning": "to climb",
+    "example": "山に登りました。"
+  },
+  {
+    "source_no": 186,
+    "word": "降りる",
+    "reading": "おりる",
+    "meaning": "to get off; descend",
+    "example": "次の駅で電車を降ります。"
+  },
+  {
+    "source_no": 187,
+    "word": "乗る",
+    "reading": "のる",
+    "meaning": "to ride; get on",
+    "example": "バスに乗ります。"
+  },
+  {
+    "source_no": 188,
+    "word": "通る",
+    "reading": "とおる",
+    "meaning": "to pass through",
+    "example": "この道を通ります。"
+  },
+  {
+    "source_no": 189,
+    "word": "渡る",
+    "reading": "わたる",
+    "meaning": "to cross",
+    "example": "橋を渡ります。"
+  },
+  {
+    "source_no": 190,
+    "word": "曲がる",
+    "reading": "まがる",
+    "meaning": "to turn; bend",
+    "example": "右へ曲がってください。"
+  },
+  {
+    "source_no": 191,
+    "word": "急行",
+    "reading": "きゅうこう",
+    "meaning": "express train",
+    "example": "急行電車に乗りました。"
+  },
+  {
+    "source_no": 192,
+    "word": "電車",
+    "reading": "でんしゃ",
+    "meaning": "train",
+    "example": "電車で会社へ行きます。"
+  },
+  {
+    "source_no": 193,
+    "word": "地下鉄",
+    "reading": "ちかてつ",
+    "meaning": "subway",
+    "example": "地下鉄で駅へ行きます。"
+  },
+  {
+    "source_no": 194,
+    "word": "飛行機",
+    "reading": "ひこうき",
+    "meaning": "airplane",
+    "example": "飛行機で東京へ行きます。"
+  },
+  {
+    "source_no": 195,
+    "word": "船",
+    "reading": "ふね",
+    "meaning": "ship; boat",
+    "example": "船で島へ行きました。"
+  },
+  {
+    "source_no": 196,
+    "word": "自動車",
+    "reading": "じどうしゃ",
+    "meaning": "automobile",
+    "example": "父は自動車を運転します。"
+  },
+  {
+    "source_no": 197,
+    "word": "駐車場",
+    "reading": "ちゅうしゃじょ",
+    "meaning": "う",
+    "example": "parking lot 車を駐車場に止めます。"
+  },
+  {
+    "source_no": 198,
+    "word": "交通",
+    "reading": "こうつう",
+    "meaning": "traffic; transportation",
+    "example": "東京は交通が便利です。"
+  },
+  {
+    "source_no": 199,
+    "word": "住所",
+    "reading": "じゅうしょ",
+    "meaning": "address",
+    "example": "住所を書いてください。"
+  },
+  {
+    "source_no": 200,
+    "word": "番号",
+    "reading": "ばんごう",
+    "meaning": "number",
+    "example": "電話番号を教えてください。"
+  },
+  {
+    "source_no": 201,
+    "word": "電話",
+    "reading": "でんわ",
+    "meaning": "telephone",
+    "example": "友達に電話をします。"
+  },
+  {
+    "source_no": 202,
+    "word": "手紙",
+    "reading": "てがみ",
+    "meaning": "letter",
+    "example": "母に手紙を書きました。"
+  },
+  {
+    "source_no": 203,
+    "word": "郵便局",
+    "reading": "ゆうびんきょく",
+    "meaning": "post office",
+    "example": "郵便局で切手を買います。"
+  },
+  {
+    "source_no": 204,
+    "word": "荷物",
+    "reading": "にもつ",
+    "meaning": "luggage; package",
+    "example": "荷物が届きました。"
+  },
+  {
+    "source_no": 205,
+    "word": "切手",
+    "reading": "きって",
+    "meaning": "stamp",
+    "example": "切手を貼ってください。"
+  },
+  {
+    "source_no": 206,
+    "word": "新聞社",
+    "reading": "しんぶんしゃ",
+    "meaning": "newspaper company",
+    "example": "新聞社で働いています。"
+  },
+  {
+    "source_no": 207,
+    "word": "放送",
+    "reading": "ほうそう",
+    "meaning": "broadcast",
+    "example": "朝のニュース放送を見ました。"
+  },
+  {
+    "source_no": 208,
+    "word": "写真家",
+    "reading": "しゃしんか",
+    "meaning": "photographer",
+    "example": "彼は有名な写真家です。"
+  },
+  {
+    "source_no": 209,
+    "word": "音声",
+    "reading": "おんせい",
+    "meaning": "voice; audio",
+    "example": "音声を聞いてください。"
+  },
+  {
+    "source_no": 210,
+    "word": "映す",
+    "reading": "うつす",
+    "meaning": "to project; reflect",
+    "example": "映画を画面に映します。"
+  },
+  {
+    "source_no": 211,
+    "word": "服",
+    "reading": "ふく",
+    "meaning": "clothes",
+    "example": "新しい服を買いました。"
+  },
+  {
+    "source_no": 213,
+    "word": "靴",
+    "reading": "くつ",
+    "meaning": "shoes",
+    "example": "靴を脱いでください。"
+  },
+  {
+    "source_no": 214,
+    "word": "帽子",
+    "reading": "ぼうし",
+    "meaning": "hat; cap",
+    "example": "帽子をかぶっています。"
+  },
+  {
+    "source_no": 215,
+    "word": "財布",
+    "reading": "さいふ",
+    "meaning": "wallet",
+    "example": "財布を忘れました。"
+  },
+  {
+    "source_no": 216,
+    "word": "鞄",
+    "reading": "かばん",
+    "meaning": "bag",
+    "example": "鞄の中に本があります。"
+  },
+  {
+    "source_no": 217,
+    "word": "時計",
+    "reading": "とけい",
+    "meaning": "clock; watch",
+    "example": "時計を見ると８時でした。"
+  },
+  {
+    "source_no": 218,
+    "word": "指輪",
+    "reading": "ゆびわ",
+    "meaning": "ring",
+    "example": "母に指輪を買いました。"
+  },
+  {
+    "source_no": 219,
+    "word": "色々",
+    "reading": "いろいろ",
+    "meaning": "various; many kinds",
+    "example": "色々な国へ行きたいです。"
+  },
+  {
+    "source_no": 220,
+    "word": "白い",
+    "reading": "しろい",
+    "meaning": "white",
+    "example": "白い花が咲いています。"
+  },
+  {
+    "source_no": 221,
+    "word": "茶色",
+    "reading": "ちゃいろ",
+    "meaning": "brown",
+    "example": "茶色の靴を買いました。"
+  },
+  {
+    "source_no": 222,
+    "word": "黄色い",
+    "reading": "きいろい",
+    "meaning": "yellow",
+    "example": "黄色い花が好きです。"
+  },
+  {
+    "source_no": 223,
+    "word": "緑",
+    "reading": "みどり",
+    "meaning": "green",
+    "example": "山は緑が多いです。"
+  },
+  {
+    "source_no": 224,
+    "word": "光",
+    "reading": "ひかり",
+    "meaning": "light",
+    "example": "朝の光がきれいです。"
+  },
+  {
+    "source_no": 225,
+    "word": "暗い",
+    "reading": "くらい",
+    "meaning": "dark",
+    "example": "部屋が暗いです。"
+  },
+  {
+    "source_no": 226,
+    "word": "明るい",
+    "reading": "あかるい",
+    "meaning": "bright; cheerful",
+    "example": "この部屋は明るいです。"
+  },
+  {
+    "source_no": 227,
+    "word": "温かい",
+    "reading": "あたたかい",
+    "meaning": "warm",
+    "example": "温かいお茶を飲みます。"
+  },
+  {
+    "source_no": 228,
+    "word": "冷たい",
+    "reading": "つめたい",
+    "meaning": "cold",
+    "example": "冷たい水をください。"
+  },
+  {
+    "source_no": 229,
+    "word": "暑い",
+    "reading": "あつい",
+    "meaning": "hot (weather)",
+    "example": "夏はとても暑いです。"
+  },
+  {
+    "source_no": 230,
+    "word": "寒い",
+    "reading": "さむい",
+    "meaning": "cold (weather)",
+    "example": "冬は寒いです。"
+  },
+  {
+    "source_no": 231,
+    "word": "涼しい",
+    "reading": "すずしい",
+    "meaning": "cool; refreshing",
+    "example": "秋は涼しいです。"
+  },
+  {
+    "source_no": 232,
+    "word": "暖かい",
+    "reading": "あたたかい",
+    "meaning": "warm (weather)",
+    "example": "春は暖かいです。"
+  },
+  {
+    "source_no": 233,
+    "word": "天気",
+    "reading": "てんき",
+    "meaning": "weather",
+    "example": "明日の天気はどうですか。"
+  },
+  {
+    "source_no": 234,
+    "word": "晴れる",
+    "reading": "はれる",
+    "meaning": "to clear up",
+    "example": "明日は晴れるでしょう。"
+  },
+  {
+    "source_no": 235,
+    "word": "曇る",
+    "reading": "くもる",
+    "meaning": "to become cloudy",
+    "example": "空が曇っています。"
+  },
+  {
+    "source_no": 236,
+    "word": "雨",
+    "reading": "あめ",
+    "meaning": "rain",
+    "example": "雨が降っています。"
+  },
+  {
+    "source_no": 237,
+    "word": "雪",
+    "reading": "ゆき",
+    "meaning": "snow",
+    "example": "北海道では雪が多いです。"
+  },
+  {
+    "source_no": 238,
+    "word": "風邪",
+    "reading": "かぜ",
+    "meaning": "cold (illness)",
+    "example": "風邪をひきました。"
+  },
+  {
+    "source_no": 239,
+    "word": "熱",
+    "reading": "ねつ",
+    "meaning": "fever; heat",
+    "example": "熱があります。"
+  },
+  {
+    "source_no": 240,
+    "word": "薬",
+    "reading": "くすり",
+    "meaning": "medicine",
+    "example": "薬を飲みました。"
+  },
+  {
+    "source_no": 241,
+    "word": "痛い",
+    "reading": "いたい",
+    "meaning": "painful; hurt",
+    "example": "足が痛いです。"
+  },
+  {
+    "source_no": 242,
+    "word": "元気",
+    "reading": "げんき",
+    "meaning": "healthy; energetic",
+    "example": "今日は元気です。"
+  },
+  {
+    "source_no": 244,
+    "word": "若者",
+    "reading": "わかもの",
+    "meaning": "young person",
+    "example": "若者が公園に集まっています。"
+  },
+  {
+    "source_no": 245,
+    "word": "大切",
+    "reading": "たいせつ",
+    "meaning": "important; valuable",
+    "example": "家族は大切です。"
+  },
+  {
+    "source_no": 246,
+    "word": "簡単",
+    "reading": "かんたん",
+    "meaning": "easy; simple",
+    "example": "この問題は簡単です。"
+  },
+  {
+    "source_no": 247,
+    "word": "難しい",
+    "reading": "むずかしい",
+    "meaning": "difficult",
+    "example": "漢字は難しいです。"
+  },
+  {
+    "source_no": 248,
+    "word": "面白い",
+    "reading": "おもしろい",
+    "meaning": "interesting",
+    "example": "この本は面白いです。"
+  },
+  {
+    "source_no": 249,
+    "word": "眠い",
+    "reading": "ねむい",
+    "meaning": "sleepy",
+    "example": "昨日は遅くて眠いです。"
+  },
+  {
+    "source_no": 250,
+    "word": "忙しい",
+    "reading": "いそがしい",
+    "meaning": "busy",
+    "example": "今週は忙しいです。"
+  },
+  {
+    "source_no": 251,
+    "word": "暇",
+    "reading": "ひま",
+    "meaning": "free time; not busy",
+    "example": "今日は暇です。"
+  },
+  {
+    "source_no": 252,
+    "word": "静か",
+    "reading": "しずか",
+    "meaning": "quiet",
+    "example": "この町は静かです。"
+  },
+  {
+    "source_no": 253,
+    "word": "賑やか",
+    "reading": "にぎやか",
+    "meaning": "lively",
+    "example": "駅の前は賑やかです。"
+  },
+  {
+    "source_no": 254,
+    "word": "きれい",
+    "reading": "きれい",
+    "meaning": "beautiful; clean",
+    "example": "京都はきれいな町です。"
+  },
+  {
+    "source_no": 255,
+    "word": "丈夫",
+    "reading": "じょうぶ",
+    "meaning": "strong; durable",
+    "example": "この靴は丈夫です。"
+  },
+  {
+    "source_no": 256,
+    "word": "安全",
+    "reading": "あんぜん",
+    "meaning": "safe",
+    "example": "ここは安全な場所です。"
+  },
+  {
+    "source_no": 257,
+    "word": "危険",
+    "reading": "きけん",
+    "meaning": "dangerous",
+    "example": "ここは危険です。"
+  },
+  {
+    "source_no": 258,
+    "word": "同時",
+    "reading": "どうじ",
+    "meaning": "same time",
+    "example": "二つの仕事を同時にします。"
+  },
+  {
+    "source_no": 259,
+    "word": "早い",
+    "reading": "はやい",
+    "meaning": "early; fast",
+    "example": "朝起きるのが早いです。"
+  },
+  {
+    "source_no": 260,
+    "word": "遅い",
+    "reading": "おそい",
+    "meaning": "late; slow",
+    "example": "電車が遅れています。"
+  },
+  {
+    "source_no": 261,
+    "word": "速い",
+    "reading": "はやい",
+    "meaning": "fast (speed)",
+    "example": "この車は速いです。"
+  },
+  {
+    "source_no": 262,
+    "word": "正月",
+    "reading": "しょうがつ",
+    "meaning": "New Year holiday",
+    "example": "正月に家族と会います。"
+  },
+  {
+    "source_no": 263,
+    "word": "誕生日",
+    "reading": "たんじょうび",
+    "meaning": "birthday",
+    "example": "明日は母の誕生日です。"
+  },
+  {
+    "source_no": 264,
+    "word": "結婚",
+    "reading": "けっこん",
+    "meaning": "marriage",
+    "example": "兄は来年結婚します。"
+  },
+  {
+    "source_no": 265,
+    "word": "結婚式",
+    "reading": "けっこんしき",
+    "meaning": "wedding ceremony",
+    "example": "友達の結婚式に行きました。"
+  },
+  {
+    "source_no": 266,
+    "word": "夫",
+    "reading": "おっと",
+    "meaning": "husband",
+    "example": "夫は会社員です。"
+  },
+  {
+    "source_no": 267,
+    "word": "妻",
+    "reading": "つま",
+    "meaning": "wife",
+    "example": "妻と旅行しました。"
+  },
+  {
+    "source_no": 268,
+    "word": "父親",
+    "reading": "ちちおや",
+    "meaning": "father",
+    "example": "父親は料理が得意です。"
+  },
+  {
+    "source_no": 269,
+    "word": "母親",
+    "reading": "ははおや",
+    "meaning": "mother",
+    "example": "母親に電話しました。"
+  },
+  {
+    "source_no": 270,
+    "word": "子供",
+    "reading": "こども",
+    "meaning": "child",
+    "example": "公園で子供が遊んでいます。"
+  },
+  {
+    "source_no": 271,
+    "word": "男性",
+    "reading": "だんせい",
+    "meaning": "man; male",
+    "example": "あの男性は先生です。"
+  },
+  {
+    "source_no": 272,
+    "word": "女性",
+    "reading": "じょせい",
+    "meaning": "woman; female",
+    "example": "女性のお客様が来ました。"
+  },
+  {
+    "source_no": 273,
+    "word": "男の子",
+    "reading": "おとこのこ",
+    "meaning": "boy",
+    "example": "男の子がサッカーをしています。"
+  },
+  {
+    "source_no": 275,
+    "word": "兄弟",
+    "reading": "きょうだい",
+    "meaning": "brothers; siblings",
+    "example": "私は兄弟が二人います。"
+  },
+  {
+    "source_no": 276,
+    "word": "姉妹",
+    "reading": "しまい",
+    "meaning": "sisters",
+    "example": "姉妹で買い物に行きました。"
+  },
+  {
+    "source_no": 277,
+    "word": "兄",
+    "reading": "あに",
+    "meaning": "older brother",
+    "example": "兄は東京に住んでいます。"
+  },
+  {
+    "source_no": 278,
+    "word": "姉",
+    "reading": "あね",
+    "meaning": "older sister",
+    "example": "姉は日本語を勉強しています。"
+  },
+  {
+    "source_no": 279,
+    "word": "弟",
+    "reading": "おとうと",
+    "meaning": "younger brother",
+    "example": "弟は学生です。"
+  },
+  {
+    "source_no": 280,
+    "word": "妹",
+    "reading": "いもうと",
+    "meaning": "younger sister",
+    "example": "妹は高校生です。"
+  },
+  {
+    "source_no": 281,
+    "word": "親",
+    "reading": "おや",
+    "meaning": "parent",
+    "example": "親を大切にします。"
+  },
+  {
+    "source_no": 282,
+    "word": "祖父",
+    "reading": "そふ",
+    "meaning": "grandfather",
+    "example": "祖父は元気です。"
+  },
+  {
+    "source_no": 283,
+    "word": "祖母",
+    "reading": "そぼ",
+    "meaning": "grandmother",
+    "example": "祖母の家へ行きました。"
+  },
+  {
+    "source_no": 284,
+    "word": "家庭",
+    "reading": "かてい",
+    "meaning": "home; family",
+    "example": "家庭で料理をします。"
+  },
+  {
+    "source_no": 285,
+    "word": "家",
+    "reading": "いえ",
+    "meaning": "house; home",
+    "example": "家に帰ります。"
+  },
+  {
+    "source_no": 286,
+    "word": "部屋",
+    "reading": "へや",
+    "meaning": "room",
+    "example": "部屋を掃除しました。"
+  },
+  {
+    "source_no": 287,
+    "word": "台所",
+    "reading": "だいどころ",
+    "meaning": "kitchen",
+    "example": "台所で料理を作ります。"
+  },
+  {
+    "source_no": 288,
+    "word": "玄関",
+    "reading": "げんかん",
+    "meaning": "entrance",
+    "example": "玄関で靴を脱ぎます。"
+  },
+  {
+    "source_no": 289,
+    "word": "窓",
+    "reading": "まど",
+    "meaning": "window",
+    "example": "窓を開けてください。"
+  },
+  {
+    "source_no": 290,
+    "word": "戸",
+    "reading": "と",
+    "meaning": "door",
+    "example": "戸を閉めました。"
+  },
+  {
+    "source_no": 291,
+    "word": "庭",
+    "reading": "にわ",
+    "meaning": "garden",
+    "example": "庭に花があります。"
+  },
+  {
+    "source_no": 292,
+    "word": "屋上",
+    "reading": "おくじょう",
+    "meaning": "rooftop",
+    "example": "屋上から町が見えます。"
+  },
+  {
+    "source_no": 293,
+    "word": "階段",
+    "reading": "かいだん",
+    "meaning": "stairs",
+    "example": "階段を上ります。"
+  },
+  {
+    "source_no": 294,
+    "word": "建築",
+    "reading": "けんちく",
+    "meaning": "architecture; construction",
+    "example": "日本の建築を見ました。"
+  },
+  {
+    "source_no": 295,
+    "word": "部分",
+    "reading": "ぶぶん",
+    "meaning": "part; section",
+    "example": "わからない部分があります。"
+  },
+  {
+    "source_no": 296,
+    "word": "全部",
+    "reading": "ぜんぶ",
+    "meaning": "all; whole",
+    "example": "全部食べました。"
+  },
+  {
+    "source_no": 297,
+    "word": "全員",
+    "reading": "ぜんいん",
+    "meaning": "everyone; all members",
+    "example": "全員集まりました。"
+  },
+  {
+    "source_no": 298,
+    "word": "一緒",
+    "reading": "いっしょ",
+    "meaning": "together",
+    "example": "一緒に映画を見ませんか。"
+  },
+  {
+    "source_no": 299,
+    "word": "別",
+    "reading": "べつ",
+    "meaning": "different; separate",
+    "example": "これは別の問題です。"
+  },
+  {
+    "source_no": 300,
+    "word": "必要性",
+    "reading": "ひつようせい",
+    "meaning": "necessity",
+    "example": "勉強の必要性を感じます。"
+  },
+  {
+    "source_no": 301,
+    "word": "仕事場",
+    "reading": "しごとば",
+    "meaning": "workplace",
+    "example": "仕事場は駅の近くです。"
+  },
+  {
+    "source_no": 302,
+    "word": "社員",
+    "reading": "しゃいん",
+    "meaning": "company employee",
+    "example": "父は会社の社員です。"
+  },
+  {
+    "source_no": 303,
+    "word": "主人",
+    "reading": "しゅじん",
+    "meaning": "husband; master",
+    "example": "主人は料理が好きです。"
+  },
+  {
+    "source_no": 304,
+    "word": "客",
+    "reading": "きゃく",
+    "meaning": "customer; guest",
+    "example": "お客さんが来ました。"
+  },
+  {
+    "source_no": 306,
+    "word": "受付",
+    "reading": "うけつけ",
+    "meaning": "reception; front desk",
+    "example": "受付で名前を書きます。"
+  },
+  {
+    "source_no": 307,
+    "word": "事務所",
+    "reading": "じむしょ",
+    "meaning": "office",
+    "example": "事務所で働いています。"
+  },
+  {
+    "source_no": 308,
+    "word": "銀行員",
+    "reading": "ぎんこういん",
+    "meaning": "bank employee",
+    "example": "銀行員に聞きました。"
+  },
+  {
+    "source_no": 309,
+    "word": "店長",
+    "reading": "てんちょう",
+    "meaning": "store manager",
+    "example": "店長と話しました。"
+  },
+  {
+    "source_no": 310,
+    "word": "社長",
+    "reading": "しゃちょう",
+    "meaning": "company president",
+    "example": "社長は会議に出ました。"
+  },
+  {
+    "source_no": 311,
+    "word": "部長",
+    "reading": "ぶちょう",
+    "meaning": "department manager",
+    "example": "部長から説明がありました。"
+  },
+  {
+    "source_no": 312,
+    "word": "工場長",
+    "reading": "こうじょうちょ",
+    "meaning": "う",
+    "example": "factory manager 工場長に質問しました。"
+  },
+  {
+    "source_no": 313,
+    "word": "農業",
+    "reading": "のうぎょう",
+    "meaning": "agriculture",
+    "example": "祖父は農業をしています。"
+  },
+  {
+    "source_no": 314,
+    "word": "工業",
+    "reading": "こうぎょう",
+    "meaning": "industry",
+    "example": "この町は工業が盛んです。"
+  },
+  {
+    "source_no": 315,
+    "word": "商業",
+    "reading": "しょうぎょう",
+    "meaning": "commerce; business",
+    "example": "商業について勉強します。"
+  },
+  {
+    "source_no": 316,
+    "word": "会社員",
+    "reading": "かいしゃいん",
+    "meaning": "office worker",
+    "example": "兄は会社員です。"
+  },
+  {
+    "source_no": 317,
+    "word": "公務員",
+    "reading": "こうむいん",
+    "meaning": "government employee",
+    "example": "彼は公務員です。"
+  },
+  {
+    "source_no": 318,
+    "word": "医院",
+    "reading": "いいん",
+    "meaning": "clinic",
+    "example": "近くの医院へ行きました。"
+  },
+  {
+    "source_no": 319,
+    "word": "看護師",
+    "reading": "かんごし",
+    "meaning": "nurse",
+    "example": "看護師が薬を持ってきました。"
+  },
+  {
+    "source_no": 320,
+    "word": "病室",
+    "reading": "びょうしつ",
+    "meaning": "hospital room",
+    "example": "病室は静かです。"
+  },
+  {
+    "source_no": 321,
+    "word": "薬局",
+    "reading": "やっきょく",
+    "meaning": "pharmacy",
+    "example": "薬局で薬を買いました。"
+  },
+  {
+    "source_no": 322,
+    "word": "歯医者",
+    "reading": "はいしゃ",
+    "meaning": "dentist",
+    "example": "歯医者へ行きました。"
+  },
+  {
+    "source_no": 323,
+    "word": "健康",
+    "reading": "けんこう",
+    "meaning": "health",
+    "example": "健康に気をつけています。"
+  },
+  {
+    "source_no": 324,
+    "word": "運動",
+    "reading": "うんどう",
+    "meaning": "exercise; movement",
+    "example": "毎日運動しています。"
+  },
+  {
+    "source_no": 325,
+    "word": "散歩",
+    "reading": "さんぽ",
+    "meaning": "walk; stroll",
+    "example": "公園を散歩しました。"
+  },
+  {
+    "source_no": 326,
+    "word": "練習",
+    "reading": "れんしゅう",
+    "meaning": "practice",
+    "example": "日本語を毎日練習します。"
+  },
+  {
+    "source_no": 327,
+    "word": "試す",
+    "reading": "ためす",
+    "meaning": "to try; test",
+    "example": "新しい方法を試します。"
+  },
+  {
+    "source_no": 328,
+    "word": "習慣",
+    "reading": "しゅうかん",
+    "meaning": "habit",
+    "example": "良い習慣は大切です。"
+  },
+  {
+    "source_no": 329,
+    "word": "教える",
+    "reading": "おしえる",
+    "meaning": "to teach; tell",
+    "example": "日本語を教えています。"
+  },
+  {
+    "source_no": 330,
+    "word": "教わる",
+    "reading": "おそわる",
+    "meaning": "to be taught",
+    "example": "先生に漢字を教わりました。 学生 がくせい student 私は日本語の学生です。"
+  },
+  {
+    "source_no": 331,
+    "word": "大学",
+    "reading": "だいがく",
+    "meaning": "university",
+    "example": "大学で日本語を勉強しています。"
+  },
+  {
+    "source_no": 332,
+    "word": "高校",
+    "reading": "こうこう",
+    "meaning": "high school",
+    "example": "兄は高校に通っています。"
+  },
+  {
+    "source_no": 335,
+    "word": "教科書",
+    "reading": "きょうかしょ",
+    "meaning": "textbook",
+    "example": "教科書を開いてください。"
+  },
+  {
+    "source_no": 337,
+    "word": "辞書",
+    "reading": "じしょ",
+    "meaning": "dictionary",
+    "example": "辞書で言葉を調べます。"
+  },
+  {
+    "source_no": 338,
+    "word": "漢字",
+    "reading": "かんじ",
+    "meaning": "kanji",
+    "example": "漢字を覚えるのは大変です。"
+  },
+  {
+    "source_no": 339,
+    "word": "文法",
+    "reading": "ぶんぽう",
+    "meaning": "grammar",
+    "example": "日本語の文法を勉強しています。"
+  },
+  {
+    "source_no": 340,
+    "word": "線",
+    "reading": "せん",
+    "meaning": "line",
+    "example": "紙に線を書きます。"
+  },
+  {
+    "source_no": 341,
+    "word": "字",
+    "reading": "じ",
+    "meaning": "letter; character",
+    "example": "大きい字を書いてください。"
+  },
+  {
+    "source_no": 342,
+    "word": "読む",
+    "reading": "よむ",
+    "meaning": "to read",
+    "example": "毎朝新聞を読みます。"
+  },
+  {
+    "source_no": 343,
+    "word": "書く",
+    "reading": "かく",
+    "meaning": "to write",
+    "example": "名前を書いてください。"
+  },
+  {
+    "source_no": 344,
+    "word": "聞く",
+    "reading": "きく",
+    "meaning": "to listen; ask",
+    "example": "先生に聞きました。"
+  },
+  {
+    "source_no": 345,
+    "word": "話す",
+    "reading": "はなす",
+    "meaning": "to speak",
+    "example": "日本語で話します。"
+  },
+  {
+    "source_no": 346,
+    "word": "見る",
+    "reading": "みる",
+    "meaning": "to see; watch",
+    "example": "映画を見る予定です。"
+  },
+  {
+    "source_no": 347,
+    "word": "見せる",
+    "reading": "みせる",
+    "meaning": "to show",
+    "example": "写真を見せてください。"
+  },
+  {
+    "source_no": 348,
+    "word": "読み方",
+    "reading": "よみかた",
+    "meaning": "way of reading",
+    "example": "この漢字の読み方を教えてくださ い。"
+  },
+  {
+    "source_no": 349,
+    "word": "書き方",
+    "reading": "かきかた",
+    "meaning": "way of writing",
+    "example": "手紙の書き方を習いました。"
+  },
+  {
+    "source_no": 350,
+    "word": "話し方",
+    "reading": "はなしかた",
+    "meaning": "way of speaking",
+    "example": "日本語の話し方を練習します。"
+  },
+  {
+    "source_no": 352,
+    "word": "習字",
+    "reading": "しゅうじ",
+    "meaning": "calligraphy",
+    "example": "学校で習字をしました。"
+  },
+  {
+    "source_no": 353,
+    "word": "授業",
+    "reading": "じゅぎょう",
+    "meaning": "class; lesson",
+    "example": "午前中に授業があります。"
+  },
+  {
+    "source_no": 354,
+    "word": "宿題",
+    "reading": "しゅくだい",
+    "meaning": "homework",
+    "example": "宿題を忘れました。"
+  },
+  {
+    "source_no": 355,
+    "word": "質問する",
+    "reading": "しつもんする",
+    "meaning": "to ask a question",
+    "example": "先生に質問しました。"
+  },
+  {
+    "source_no": 356,
+    "word": "答え",
+    "reading": "こたえ",
+    "meaning": "answer",
+    "example": "答えを書いてください。"
+  },
+  {
+    "source_no": 357,
+    "word": "試験",
+    "reading": "しけん",
+    "meaning": "exam",
+    "example": "来月試験があります。"
+  },
+  {
+    "source_no": 358,
+    "word": "合格",
+    "reading": "ごうかく",
+    "meaning": "pass; success",
+    "example": "試験に合格しました。"
+  },
+  {
+    "source_no": 359,
+    "word": "成績",
+    "reading": "せいせき",
+    "meaning": "grade; result",
+    "example": "成績が上がりました。"
+  },
+  {
+    "source_no": 360,
+    "word": "話題",
+    "reading": "わだい",
+    "meaning": "topic; subject",
+    "example": "映画が今日の話題になっています 。"
+  },
+  {
+    "source_no": 361,
+    "word": "意見",
+    "reading": "いけん",
+    "meaning": "opinion",
+    "example": "自分の意見を言いました。"
+  },
+  {
+    "source_no": 362,
+    "word": "考え",
+    "reading": "かんがえ",
+    "meaning": "idea; thought",
+    "example": "いい考えがあります。"
+  },
+  {
+    "source_no": 363,
+    "word": "決定",
+    "reading": "けってい",
+    "meaning": "decision",
+    "example": "旅行の日を決定しました。"
+  },
+  {
+    "source_no": 364,
+    "word": "選ぶ",
+    "reading": "えらぶ",
+    "meaning": "to choose",
+    "example": "好きな色を選んでください。"
+  },
+  {
+    "source_no": 365,
+    "word": "比べる",
+    "reading": "くらべる",
+    "meaning": "to compare",
+    "example": "二つの商品を比べます。"
+  },
+  {
+    "source_no": 366,
+    "word": "見つける",
+    "reading": "みつける",
+    "meaning": "to find",
+    "example": "鍵を見つけました。"
+  },
+  {
+    "source_no": 369,
+    "word": "忘れ物",
+    "reading": "わすれもの",
+    "meaning": "lost item; forgotten thing",
+    "example": "電車に忘れ物をしました。"
+  },
+  {
+    "source_no": 370,
+    "word": "思い出す",
+    "reading": "おもいだす",
+    "meaning": "to remember; recall",
+    "example": "昔のことを思い出しました。"
+  },
+  {
+    "source_no": 371,
+    "word": "知らせる",
+    "reading": "しらせる",
+    "meaning": "to inform",
+    "example": "予定を知らせてください。"
+  },
+  {
+    "source_no": 372,
+    "word": "連絡",
+    "reading": "れんらく",
+    "meaning": "contact; communication",
+    "example": "後で連絡します。"
+  },
+  {
+    "source_no": 373,
+    "word": "返事",
+    "reading": "へんじ",
+    "meaning": "reply",
+    "example": "メールの返事を書きました。"
+  },
+  {
+    "source_no": 374,
+    "word": "招待",
+    "reading": "しょうたい",
+    "meaning": "invitation",
+    "example": "結婚式に招待されました。"
+  },
+  {
+    "source_no": 375,
+    "word": "遊ぶ",
+    "reading": "あそぶ",
+    "meaning": "to play; spend time",
+    "example": "友達と公園で遊びます。"
+  },
+  {
+    "source_no": 376,
+    "word": "楽しむ",
+    "reading": "たのしむ",
+    "meaning": "to enjoy",
+    "example": "旅行を楽しみました。"
+  },
+  {
+    "source_no": 377,
+    "word": "趣味",
+    "reading": "しゅみ",
+    "meaning": "hobby",
+    "example": "私の趣味は読書です。"
+  },
+  {
+    "source_no": 378,
+    "word": "読書",
+    "reading": "どくしょ",
+    "meaning": "reading books",
+    "example": "夜に読書をします。"
+  },
+  {
+    "source_no": 379,
+    "word": "映画館",
+    "reading": "えいがかん",
+    "meaning": "movie theater",
+    "example": "映画館で映画を見ました。"
+  },
+  {
+    "source_no": 380,
+    "word": "音楽会",
+    "reading": "おんがくかい",
+    "meaning": "music concert",
+    "example": "音楽会へ行きました。"
+  },
+  {
+    "source_no": 381,
+    "word": "写真館",
+    "reading": "しゃしんかん",
+    "meaning": "photo studio",
+    "example": "写真館で写真を撮りました。"
+  },
+  {
+    "source_no": 382,
+    "word": "美術館",
+    "reading": "びじゅつかん",
+    "meaning": "art museum",
+    "example": "美術館で絵を見ました。"
+  },
+  {
+    "source_no": 383,
+    "word": "博物館",
+    "reading": "はくぶつかん",
+    "meaning": "museum",
+    "example": "博物館で歴史を学びました。"
+  },
+  {
+    "source_no": 384,
+    "word": "動物園",
+    "reading": "どうぶつえん",
+    "meaning": "zoo",
+    "example": "動物園でパンダを見ました。"
+  },
+  {
+    "source_no": 385,
+    "word": "遊園地",
+    "reading": "ゆうえんち",
+    "meaning": "amusement park",
+    "example": "週末に遊園地へ行きます。"
+  },
+  {
+    "source_no": 386,
+    "word": "公園",
+    "reading": "こうえん",
+    "meaning": "park",
+    "example": "公園で散歩します。"
+  },
+  {
+    "source_no": 387,
+    "word": "海岸",
+    "reading": "かいがん",
+    "meaning": "seaside; coast",
+    "example": "夏に海岸へ行きました。"
+  },
+  {
+    "source_no": 388,
+    "word": "山",
+    "reading": "やま",
+    "meaning": "mountain",
+    "example": "週末に山へ登ります。"
+  },
+  {
+    "source_no": 389,
+    "word": "川",
+    "reading": "かわ",
+    "meaning": "river",
+    "example": "川の水はきれいです。"
+  },
+  {
+    "source_no": 390,
+    "word": "池",
+    "reading": "いけ",
+    "meaning": "pond",
+    "example": "公園に大きな池があります。"
+  },
+  {
+    "source_no": 391,
+    "word": "島",
+    "reading": "しま",
+    "meaning": "island",
+    "example": "夏休みに島へ行きました。"
+  },
+  {
+    "source_no": 392,
+    "word": "海",
+    "reading": "うみ",
+    "meaning": "sea; ocean",
+    "example": "海で泳ぎました。"
+  },
+  {
+    "source_no": 393,
+    "word": "空",
+    "reading": "そら",
+    "meaning": "sky",
+    "example": "空が青いです。"
+  },
+  {
+    "source_no": 394,
+    "word": "星",
+    "reading": "ほし",
+    "meaning": "star",
+    "example": "夜に星を見ました。"
+  },
+  {
+    "source_no": 395,
+    "word": "月",
+    "reading": "つき",
+    "meaning": "moon; month",
+    "example": "月がきれいです。"
+  },
+  {
+    "source_no": 396,
+    "word": "太陽",
+    "reading": "たいよう",
+    "meaning": "sun",
+    "example": "太陽が出ています。"
+  },
+  {
+    "source_no": 397,
+    "word": "世界",
+    "reading": "せかい",
+    "meaning": "world",
+    "example": "世界の文化を学びます。"
+  },
+  {
+    "source_no": 398,
+    "word": "自然",
+    "reading": "しぜん",
+    "meaning": "nature",
+    "example": "日本の自然が好きです。"
+  },
+  {
+    "source_no": 400,
+    "word": "森",
+    "reading": "もり",
+    "meaning": "forest",
+    "example": "森の中を歩きました。"
+  },
+  {
+    "source_no": 401,
+    "word": "林",
+    "reading": "はやし",
+    "meaning": "woods",
+    "example": "林の中に鳥がいます。"
+  },
+  {
+    "source_no": 402,
+    "word": "木",
+    "reading": "き",
+    "meaning": "tree",
+    "example": "庭に大きな木があります。"
+  },
+  {
+    "source_no": 403,
+    "word": "花",
+    "reading": "はな",
+    "meaning": "flower",
+    "example": "花を買いました。"
+  },
+  {
+    "source_no": 404,
+    "word": "草",
+    "reading": "くさ",
+    "meaning": "grass",
+    "example": "庭の草を取ります。"
+  },
+  {
+    "source_no": 405,
+    "word": "葉",
+    "reading": "は",
+    "meaning": "leaf",
+    "example": "木の葉が落ちています。"
+  },
+  {
+    "source_no": 406,
+    "word": "果物",
+    "reading": "くだもの",
+    "meaning": "fruit",
+    "example": "毎日果物を食べます。"
+  },
+  {
+    "source_no": 407,
+    "word": "野菜",
+    "reading": "やさい",
+    "meaning": "vegetables",
+    "example": "野菜を切ります。"
+  },
+  {
+    "source_no": 408,
+    "word": "米",
+    "reading": "こめ",
+    "meaning": "rice (uncooked)",
+    "example": "米を買いました。"
+  },
+  {
+    "source_no": 409,
+    "word": "飯",
+    "reading": "めし",
+    "meaning": "meal; cooked rice",
+    "example": "昼飯を食べました。"
+  },
+  {
+    "source_no": 410,
+    "word": "朝ご飯",
+    "reading": "あさごはん",
+    "meaning": "breakfast",
+    "example": "朝ご飯を作ります。"
+  },
+  {
+    "source_no": 411,
+    "word": "昼ご飯",
+    "reading": "ひるごはん",
+    "meaning": "lunch",
+    "example": "昼ご飯を食べました。"
+  },
+  {
+    "source_no": 412,
+    "word": "晩ご飯",
+    "reading": "ばんごはん",
+    "meaning": "dinner",
+    "example": "晩ご飯は何ですか。"
+  },
+  {
+    "source_no": 413,
+    "word": "食べ物",
+    "reading": "たべもの",
+    "meaning": "food",
+    "example": "日本の食べ物が好きです。"
+  },
+  {
+    "source_no": 414,
+    "word": "飲む",
+    "reading": "のむ",
+    "meaning": "to drink",
+    "example": "水を飲みます。"
+  },
+  {
+    "source_no": 415,
+    "word": "料理する",
+    "reading": "りょうりする",
+    "meaning": "to cook",
+    "example": "週末に料理します。"
+  },
+  {
+    "source_no": 416,
+    "word": "焼く",
+    "reading": "やく",
+    "meaning": "to grill; bake",
+    "example": "魚を焼きます。"
+  },
+  {
+    "source_no": 417,
+    "word": "切る",
+    "reading": "きる",
+    "meaning": "to cut",
+    "example": "野菜を切ります。"
+  },
+  {
+    "source_no": 418,
+    "word": "洗う",
+    "reading": "あらう",
+    "meaning": "to wash",
+    "example": "手を洗ってください。"
+  },
+  {
+    "source_no": 419,
+    "word": "掃除",
+    "reading": "そうじ",
+    "meaning": "cleaning",
+    "example": "部屋の掃除をします。"
+  },
+  {
+    "source_no": 420,
+    "word": "洗濯",
+    "reading": "せんたく",
+    "meaning": "laundry; washing",
+    "example": "毎週日曜日に洗濯します。"
+  },
+  {
+    "source_no": 421,
+    "word": "片付ける",
+    "reading": "かたづける",
+    "meaning": "to tidy; put away",
+    "example": "部屋を片付けます。"
+  },
+  {
+    "source_no": 422,
+    "word": "料理人",
+    "reading": "りょうりにん",
+    "meaning": "cook; chef",
+    "example": "料理人になりたいです。"
+  },
+  {
+    "source_no": 423,
+    "word": "肉",
+    "reading": "にく",
+    "meaning": "meat",
+    "example": "肉を買いました。"
+  },
+  {
+    "source_no": 424,
+    "word": "牛乳",
+    "reading": "ぎゅうにゅう",
+    "meaning": "milk",
+    "example": "毎朝牛乳を飲みます。"
+  },
+  {
+    "source_no": 425,
+    "word": "卵",
+    "reading": "たまご",
+    "meaning": "egg",
+    "example": "朝ご飯に卵を食べます。"
+  },
+  {
+    "source_no": 426,
+    "word": "塩",
+    "reading": "しお",
+    "meaning": "salt",
+    "example": "料理に塩を入れます。"
+  },
+  {
+    "source_no": 427,
+    "word": "砂糖",
+    "reading": "さとう",
+    "meaning": "sugar",
+    "example": "コーヒーに砂糖を入れます。"
+  },
+  {
+    "source_no": 428,
+    "word": "茶",
+    "reading": "ちゃ",
+    "meaning": "tea",
+    "example": "日本のお茶を飲みました。"
+  },
+  {
+    "source_no": 429,
+    "word": "酒",
+    "reading": "さけ",
+    "meaning": "alcohol; sake",
+    "example": "父は酒を飲みません。"
+  },
+  {
+    "source_no": 432,
+    "word": "店",
+    "reading": "みせ",
+    "meaning": "shop; store",
+    "example": "新しい店ができました。"
+  },
+  {
+    "source_no": 433,
+    "word": "買い物",
+    "reading": "かいもの",
+    "meaning": "shopping",
+    "example": "週末に買い物をします。"
+  },
+  {
+    "source_no": 434,
+    "word": "値段",
+    "reading": "ねだん",
+    "meaning": "price",
+    "example": "この服の値段はいくらですか。"
+  },
+  {
+    "source_no": 435,
+    "word": "料金",
+    "reading": "りょうきん",
+    "meaning": "fee; charge",
+    "example": "入場料金を払いました。"
+  },
+  {
+    "source_no": 436,
+    "word": "無料",
+    "reading": "むりょう",
+    "meaning": "free of charge",
+    "example": "このサービスは無料です。"
+  },
+  {
+    "source_no": 437,
+    "word": "有料",
+    "reading": "ゆうりょう",
+    "meaning": "paid; not free",
+    "example": "駐車場は有料です。"
+  },
+  {
+    "source_no": 438,
+    "word": "お金",
+    "reading": "おかね",
+    "meaning": "money",
+    "example": "お金を銀行に入れます。"
+  },
+  {
+    "source_no": 439,
+    "word": "財布",
+    "reading": "さいふ",
+    "meaning": "wallet",
+    "example": "財布を家に忘れました。"
+  },
+  {
+    "source_no": 440,
+    "word": "買う",
+    "reading": "かう",
+    "meaning": "to buy",
+    "example": "新しい靴を買いました。"
+  },
+  {
+    "source_no": 441,
+    "word": "売り場",
+    "reading": "うりば",
+    "meaning": "sales floor",
+    "example": "売り場は二階です。"
+  },
+  {
+    "source_no": 442,
+    "word": "商品",
+    "reading": "しょうひん",
+    "meaning": "product; goods",
+    "example": "商品を確認してください。"
+  },
+  {
+    "source_no": 443,
+    "word": "品物",
+    "reading": "しなもの",
+    "meaning": "item; goods",
+    "example": "品物が届きました。"
+  },
+  {
+    "source_no": 444,
+    "word": "交換",
+    "reading": "こうかん",
+    "meaning": "exchange",
+    "example": "サイズを交換しました。"
+  },
+  {
+    "source_no": 445,
+    "word": "返す",
+    "reading": "かえす",
+    "meaning": "to return",
+    "example": "本を図書館に返します。"
+  },
+  {
+    "source_no": 446,
+    "word": "貸し出す",
+    "reading": "かしだす",
+    "meaning": "to lend out",
+    "example": "図書館で本を貸し出します。"
+  },
+  {
+    "source_no": 447,
+    "word": "支払う",
+    "reading": "しはらう",
+    "meaning": "to pay",
+    "example": "レジでお金を支払います。"
+  },
+  {
+    "source_no": 448,
+    "word": "現金",
+    "reading": "げんきん",
+    "meaning": "cash",
+    "example": "現金で払います。"
+  },
+  {
+    "source_no": 449,
+    "word": "貯金",
+    "reading": "ちょきん",
+    "meaning": "savings",
+    "example": "毎月貯金しています。"
+  },
+  {
+    "source_no": 451,
+    "word": "通帳",
+    "reading": "つうちょう",
+    "meaning": "bankbook",
+    "example": "通帳を確認しました。"
+  },
+  {
+    "source_no": 452,
+    "word": "住所",
+    "reading": "じゅうしょ",
+    "meaning": "address",
+    "example": "住所が変わりました。"
+  },
+  {
+    "source_no": 453,
+    "word": "名前",
+    "reading": "なまえ",
+    "meaning": "name",
+    "example": "名前を書いてください。"
+  },
+  {
+    "source_no": 454,
+    "word": "名字",
+    "reading": "みょうじ",
+    "meaning": "family name",
+    "example": "名字を教えてください。"
+  },
+  {
+    "source_no": 455,
+    "word": "番地",
+    "reading": "ばんち",
+    "meaning": "house number",
+    "example": "番地まで書きます。"
+  },
+  {
+    "source_no": 457,
+    "word": "番組",
+    "reading": "ばんぐみ",
+    "meaning": "TV/radio program",
+    "example": "好きな番組を見ます。"
+  },
+  {
+    "source_no": 458,
+    "word": "新聞",
+    "reading": "しんぶん",
+    "meaning": "newspaper",
+    "example": "毎朝新聞を読みます。"
+  },
+  {
+    "source_no": 459,
+    "word": "雑誌",
+    "reading": "ざっし",
+    "meaning": "magazine",
+    "example": "雑誌を買いました。"
+  },
+  {
+    "source_no": 460,
+    "word": "小説",
+    "reading": "しょうせつ",
+    "meaning": "novel",
+    "example": "日本の小説を読みます。"
+  },
+  {
+    "source_no": 462,
+    "word": "漫画",
+    "reading": "まんが",
+    "meaning": "manga; comic",
+    "example": "漫画を読むのが好きです。"
+  },
+  {
+    "source_no": 463,
+    "word": "記事",
+    "reading": "きじ",
+    "meaning": "article; news story",
+    "example": "新しい記事を読みました。"
+  },
+  {
+    "source_no": 464,
+    "word": "文章",
+    "reading": "ぶんしょう",
+    "meaning": "sentence; writing",
+    "example": "日本語の文章を書きます。"
+  },
+  {
+    "source_no": 465,
+    "word": "内容",
+    "reading": "ないよう",
+    "meaning": "content",
+    "example": "話の内容を説明します。"
+  },
+  {
+    "source_no": 466,
+    "word": "意味",
+    "reading": "いみ",
+    "meaning": "meaning",
+    "example": "この言葉の意味を調べます。"
+  },
+  {
+    "source_no": 467,
+    "word": "文字",
+    "reading": "もじ",
+    "meaning": "character; letter",
+    "example": "文字を大きく書いてください。"
+  },
+  {
+    "source_no": 468,
+    "word": "名前",
+    "reading": "なまえ",
+    "meaning": "name",
+    "example": "紙に名前を書きました。"
+  },
+  {
+    "source_no": 469,
+    "word": "番号",
+    "reading": "ばんごう",
+    "meaning": "number",
+    "example": "番号を確認してください。"
+  },
+  {
+    "source_no": 470,
+    "word": "記憶",
+    "reading": "きおく",
+    "meaning": "memory",
+    "example": "昔の記憶があります。"
+  },
+  {
+    "source_no": 471,
+    "word": "写真",
+    "reading": "しゃしん",
+    "meaning": "photograph",
+    "example": "旅行の写真を見ました。"
+  },
+  {
+    "source_no": 472,
+    "word": "映像",
+    "reading": "えいぞう",
+    "meaning": "image; video",
+    "example": "映像を見ています。"
+  },
+  {
+    "source_no": 473,
+    "word": "映画",
+    "reading": "えいが",
+    "meaning": "movie",
+    "example": "週末に映画を見ます。"
+  },
+  {
+    "source_no": 474,
+    "word": "画面",
+    "reading": "がめん",
+    "meaning": "screen",
+    "example": "画面を見てください。"
+  },
+  {
+    "source_no": 475,
+    "word": "電気",
+    "reading": "でんき",
+    "meaning": "electricity; light",
+    "example": "電気を消してください。"
+  },
+  {
+    "source_no": 476,
+    "word": "電池",
+    "reading": "でんち",
+    "meaning": "battery",
+    "example": "時計の電池を交換しました。"
+  },
+  {
+    "source_no": 477,
+    "word": "機械",
+    "reading": "きかい",
+    "meaning": "machine",
+    "example": "工場に新しい機械があります。"
+  },
+  {
+    "source_no": 478,
+    "word": "電話機",
+    "reading": "でんわき",
+    "meaning": "telephone device",
+    "example": "電話機を使います。"
+  },
+  {
+    "source_no": 479,
+    "word": "冷蔵庫",
+    "reading": "れいぞうこ",
+    "meaning": "refrigerator",
+    "example": "冷蔵庫に牛乳があります。"
+  },
+  {
+    "source_no": 480,
+    "word": "洗面所",
+    "reading": "せんめんじょ",
+    "meaning": "washroom; bathroom sink",
+    "example": "area 洗面所で顔を洗います。"
+  },
+  {
+    "source_no": 481,
+    "word": "風呂",
+    "reading": "ふろ",
+    "meaning": "bath",
+    "example": "夜に風呂に入ります。"
+  },
+  {
+    "source_no": 482,
+    "word": "浴室",
+    "reading": "よくしつ",
+    "meaning": "bathroom; bath room",
+    "example": "浴室を掃除しました。"
+  },
+  {
+    "source_no": 483,
+    "word": "寝る",
+    "reading": "ねる",
+    "meaning": "to sleep; go to bed",
+    "example": "11時に寝ます。"
+  },
+  {
+    "source_no": 484,
+    "word": "起きる",
+    "reading": "おきる",
+    "meaning": "to wake up; get up",
+    "example": "毎朝6時に起きます。"
+  },
+  {
+    "source_no": 485,
+    "word": "起こす",
+    "reading": "おこす",
+    "meaning": "to wake someone",
+    "example": "母が私を起こしました。"
+  },
+  {
+    "source_no": 486,
+    "word": "休む",
+    "reading": "やすむ",
+    "meaning": "to rest; take a break",
+    "example": "日曜日は家で休みます。"
+  },
+  {
+    "source_no": 487,
+    "word": "寝室",
+    "reading": "しんしつ",
+    "meaning": "bedroom",
+    "example": "寝室は二階です。"
+  },
+  {
+    "source_no": 488,
+    "word": "布団",
+    "reading": "ふとん",
+    "meaning": "Japanese bedding",
+    "example": "布団をたたみます。"
+  },
+  {
+    "source_no": 489,
+    "word": "ベッド",
+    "reading": "ベッド",
+    "meaning": "bed",
+    "example": "ベッドで本を読みます。"
+  },
+  {
+    "source_no": 490,
+    "word": "朝",
+    "reading": "あさ",
+    "meaning": "morning",
+    "example": "朝早く起きます。"
+  },
+  {
+    "source_no": 491,
+    "word": "昼",
+    "reading": "ひる",
+    "meaning": "noon; daytime",
+    "example": "昼にご飯を食べます。"
+  },
+  {
+    "source_no": 492,
+    "word": "夜",
+    "reading": "よる",
+    "meaning": "night",
+    "example": "夜に勉強します。"
+  },
+  {
+    "source_no": 493,
+    "word": "午前",
+    "reading": "ごぜん",
+    "meaning": "morning; A.M.",
+    "example": "午前9時に会います。"
+  },
+  {
+    "source_no": 494,
+    "word": "午後",
+    "reading": "ごご",
+    "meaning": "afternoon; P.M.",
+    "example": "午後から仕事です。"
+  },
+  {
+    "source_no": 495,
+    "word": "毎日",
+    "reading": "まいにち",
+    "meaning": "every day",
+    "example": "毎日日本語を勉強します。"
+  },
+  {
+    "source_no": 496,
+    "word": "毎週",
+    "reading": "まいしゅう",
+    "meaning": "every week",
+    "example": "毎週図書館へ行きます。"
+  },
+  {
+    "source_no": 497,
+    "word": "毎月",
+    "reading": "まいつき",
+    "meaning": "every month",
+    "example": "毎月本を買います。"
+  },
+  {
+    "source_no": 498,
+    "word": "毎年",
+    "reading": "まいとし",
+    "meaning": "every year",
+    "example": "毎年京都へ行きます。"
+  },
+  {
+    "source_no": 499,
+    "word": "週末",
+    "reading": "しゅうまつ",
+    "meaning": "weekend",
+    "example": "週末に旅行します。"
+  },
+  {
+    "source_no": 500,
+    "word": "平日",
+    "reading": "へいじつ",
+    "meaning": "weekday",
+    "example": "平日は仕事があります。"
+  },
+  {
+    "source_no": 501,
+    "word": "休日",
+    "reading": "きゅうじつ",
+    "meaning": "holiday; day off",
+    "example": "休日は家で休みます。"
+  },
+  {
+    "source_no": 502,
+    "word": "今年",
+    "reading": "ことし",
+    "meaning": "this year",
+    "example": "今年日本へ来ました。"
+  },
+  {
+    "source_no": 503,
+    "word": "去年",
+    "reading": "きょねん",
+    "meaning": "last year",
+    "example": "去年東京へ行きました。"
+  },
+  {
+    "source_no": 504,
+    "word": "来年",
+    "reading": "らいねん",
+    "meaning": "next year",
+    "example": "来年旅行したいです。"
+  },
+  {
+    "source_no": 505,
+    "word": "今月",
+    "reading": "こんげつ",
+    "meaning": "this month",
+    "example": "今月は忙しいです。"
+  },
+  {
+    "source_no": 506,
+    "word": "来月",
+    "reading": "らいげつ",
+    "meaning": "next month",
+    "example": "来月試験があります。"
+  },
+  {
+    "source_no": 507,
+    "word": "先月",
+    "reading": "せんげつ",
+    "meaning": "last month",
+    "example": "先月新しい仕事を始めました。"
+  },
+  {
+    "source_no": 508,
+    "word": "今日",
+    "reading": "きょう",
+    "meaning": "today",
+    "example": "今日は天気がいいです。"
+  },
+  {
+    "source_no": 509,
+    "word": "明日",
+    "reading": "あした",
+    "meaning": "tomorrow",
+    "example": "明日学校へ行きます。"
+  },
+  {
+    "source_no": 510,
+    "word": "昨日",
+    "reading": "きのう",
+    "meaning": "yesterday",
+    "example": "昨日映画を見ました。"
+  },
+  {
+    "source_no": 511,
+    "word": "一昨日",
+    "reading": "おととい",
+    "meaning": "day before yesterday",
+    "example": "一昨日友達に会いました。"
+  },
+  {
+    "source_no": 512,
+    "word": "今朝",
+    "reading": "けさ",
+    "meaning": "this morning",
+    "example": "今朝早く起きました。"
+  },
+  {
+    "source_no": 513,
+    "word": "今晩",
+    "reading": "こんばん",
+    "meaning": "tonight",
+    "example": "今晩一緒に食事をしませんか。"
+  },
+  {
+    "source_no": 514,
+    "word": "先週",
+    "reading": "せんしゅう",
+    "meaning": "last week",
+    "example": "先週京都へ行きました。"
+  },
+  {
+    "source_no": 515,
+    "word": "来週",
+    "reading": "らいしゅう",
+    "meaning": "next week",
+    "example": "来週試験があります。"
+  },
+  {
+    "source_no": 516,
+    "word": "今週",
+    "reading": "こんしゅう",
+    "meaning": "this week",
+    "example": "今週は忙しいです。"
+  },
+  {
+    "source_no": 517,
+    "word": "先日",
+    "reading": "せんじつ",
+    "meaning": "the other day",
+    "example": "先日先生に会いました。"
+  },
+  {
+    "source_no": 518,
+    "word": "時々",
+    "reading": "ときどき",
+    "meaning": "sometimes",
+    "example": "時々映画を見ます。"
+  },
+  {
+    "source_no": 519,
+    "word": "いつも",
+    "reading": "いつも",
+    "meaning": "always",
+    "example": "いつも朝ご飯を食べます。"
+  },
+  {
+    "source_no": 520,
+    "word": "よく",
+    "reading": "よく",
+    "meaning": "often; well",
+    "example": "よく日本語を使います。"
+  },
+  {
+    "source_no": 521,
+    "word": "たまに",
+    "reading": "たまに",
+    "meaning": "occasionally",
+    "example": "たまに外で食事します。"
+  },
+  {
+    "source_no": 522,
+    "word": "すぐ",
+    "reading": "すぐ",
+    "meaning": "immediately; soon",
+    "example": "すぐ行きます。"
+  },
+  {
+    "source_no": 523,
+    "word": "もう",
+    "reading": "もう",
+    "meaning": "already; anymore",
+    "example": "もう宿題をしました。"
+  },
+  {
+    "source_no": 524,
+    "word": "まだ",
+    "reading": "まだ",
+    "meaning": "still; not yet",
+    "example": "まだ終わっていません。"
+  },
+  {
+    "source_no": 525,
+    "word": "初めて",
+    "reading": "はじめて",
+    "meaning": "for the first time",
+    "example": "初めて日本へ来ました。"
+  },
+  {
+    "source_no": 526,
+    "word": "久しぶり",
+    "reading": "ひさしぶり",
+    "meaning": "long time no see",
+    "example": "久しぶりに友達に会いました。"
+  },
+  {
+    "source_no": 527,
+    "word": "一度",
+    "reading": "いちど",
+    "meaning": "once",
+    "example": "一度日本へ行きたいです。"
+  },
+  {
+    "source_no": 528,
+    "word": "二度",
+    "reading": "にど",
+    "meaning": "twice",
+    "example": "二度説明しました。"
+  },
+  {
+    "source_no": 529,
+    "word": "最中",
+    "reading": "さいちゅう",
+    "meaning": "in the middle of",
+    "example": "食事の最中に電話が来ました。"
+  },
+  {
+    "source_no": 530,
+    "word": "間",
+    "reading": "あいだ",
+    "meaning": "between; during",
+    "example": "夏休みの間、旅行します。"
+  },
+  {
+    "source_no": 531,
+    "word": "前",
+    "reading": "まえ",
+    "meaning": "before; front",
+    "example": "駅の前で待ちます。"
+  },
+  {
+    "source_no": 532,
+    "word": "後ろ",
+    "reading": "うしろ",
+    "meaning": "behind",
+    "example": "後ろを見てください。"
+  },
+  {
+    "source_no": 533,
+    "word": "中",
+    "reading": "なか",
+    "meaning": "inside; middle",
+    "example": "箱の中に本があります。"
+  },
+  {
+    "source_no": 534,
+    "word": "外",
+    "reading": "そと",
+    "meaning": "outside",
+    "example": "外で遊びます。"
+  },
+  {
+    "source_no": 535,
+    "word": "上",
+    "reading": "うえ",
+    "meaning": "above; on",
+    "example": "机の上に本があります。"
+  },
+  {
+    "source_no": 536,
+    "word": "下",
+    "reading": "した",
+    "meaning": "below; under",
+    "example": "いすの下に猫がいます。"
+  },
+  {
+    "source_no": 537,
+    "word": "左",
+    "reading": "ひだり",
+    "meaning": "left",
+    "example": "左へ曲がってください。"
+  },
+  {
+    "source_no": 538,
+    "word": "右",
+    "reading": "みぎ",
+    "meaning": "right",
+    "example": "右に銀行があります。"
+  },
+  {
+    "source_no": 539,
+    "word": "横",
+    "reading": "よこ",
+    "meaning": "side; beside",
+    "example": "私の横に座ってください。"
+  },
+  {
+    "source_no": 540,
+    "word": "縦",
+    "reading": "たて",
+    "meaning": "vertical",
+    "example": "紙を縦に置きます。"
+  },
+  {
+    "source_no": 541,
+    "word": "隣",
+    "reading": "となり",
+    "meaning": "next to; neighbour",
+    "example": "隣の人に聞きました。"
+  },
+  {
+    "source_no": 542,
+    "word": "近所",
+    "reading": "きんじょ",
+    "meaning": "neighbourhood",
+    "example": "近所にスーパーがあります。"
+  },
+  {
+    "source_no": 543,
+    "word": "入口",
+    "reading": "いりぐち",
+    "meaning": "entrance",
+    "example": "入口はあちらです。"
+  },
+  {
+    "source_no": 544,
+    "word": "出口",
+    "reading": "でぐち",
+    "meaning": "exit",
+    "example": "出口で待っています。"
+  },
+  {
+    "source_no": 545,
+    "word": "角",
+    "reading": "かど",
+    "meaning": "corner",
+    "example": "次の角を右に曲がります。"
+  },
+  {
+    "source_no": 546,
+    "word": "道路",
+    "reading": "どうろ",
+    "meaning": "road",
+    "example": "道路を渡ります。"
+  },
+  {
+    "source_no": 547,
+    "word": "橋",
+    "reading": "はし",
+    "meaning": "bridge",
+    "example": "橋を渡ってください。"
+  },
+  {
+    "source_no": 548,
+    "word": "建物",
+    "reading": "たてもの",
+    "meaning": "building",
+    "example": "大きい建物があります。"
+  },
+  {
+    "source_no": 549,
+    "word": "住所",
+    "reading": "じゅうしょ",
+    "meaning": "address",
+    "example": "新しい住所を教えてください。"
+  },
+  {
+    "source_no": 550,
+    "word": "入口",
+    "reading": "いりぐち",
+    "meaning": "entrance",
+    "example": "建物の入口で待っています。"
+  },
+  {
+    "source_no": 551,
+    "word": "出口",
+    "reading": "でぐち",
+    "meaning": "exit",
+    "example": "出口から出てください。"
+  },
+  {
+    "source_no": 552,
+    "word": "階",
+    "reading": "かい",
+    "meaning": "floor; storey",
+    "example": "私の部屋は三階です。"
+  },
+  {
+    "source_no": 553,
+    "word": "一階",
+    "reading": "いっかい",
+    "meaning": "first floor",
+    "example": "店は一階にあります。"
+  },
+  {
+    "source_no": 554,
+    "word": "二階",
+    "reading": "にかい",
+    "meaning": "second floor",
+    "example": "二階に図書館があります。"
+  },
+  {
+    "source_no": 555,
+    "word": "地下",
+    "reading": "ちか",
+    "meaning": "underground; basement",
+    "example": "地下に駐車場があります。"
+  },
+  {
+    "source_no": 556,
+    "word": "建物",
+    "reading": "たてもの",
+    "meaning": "building",
+    "example": "あの建物は古いです。"
+  },
+  {
+    "source_no": 557,
+    "word": "町中",
+    "reading": "まちなか",
+    "meaning": "downtown; town area",
+    "example": "町中を歩きました。"
+  },
+  {
+    "source_no": 558,
+    "word": "都会",
+    "reading": "とかい",
+    "meaning": "city; urban area",
+    "example": "東京は大きな都会です。"
+  },
+  {
+    "source_no": 559,
+    "word": "田舎",
+    "reading": "いなか",
+    "meaning": "countryside",
+    "example": "田舎でゆっくり休みたいです。"
+  },
+  {
+    "source_no": 560,
+    "word": "国際",
+    "reading": "こくさい",
+    "meaning": "international",
+    "example": "国際交流に参加しました。"
+  },
+  {
+    "source_no": 561,
+    "word": "外国人",
+    "reading": "がいこくじん",
+    "meaning": "foreigner",
+    "example": "外国人の友達がいます。"
+  },
+  {
+    "source_no": 563,
+    "word": "旅行者",
+    "reading": "りょこうしゃ",
+    "meaning": "traveller",
+    "example": "旅行者が駅で地図を見ています。"
+  },
+  {
+    "source_no": 564,
+    "word": "先生",
+    "reading": "せんせい",
+    "meaning": "teacher",
+    "example": "先生に質問しました。"
+  },
+  {
+    "source_no": 565,
+    "word": "生徒",
+    "reading": "せいと",
+    "meaning": "student; pupil",
+    "example": "生徒が教室にいます。"
+  },
+  {
+    "source_no": 566,
+    "word": "学ぶ",
+    "reading": "まなぶ",
+    "meaning": "to learn",
+    "example": "日本文化を学びます。"
+  },
+  {
+    "source_no": 567,
+    "word": "習う",
+    "reading": "ならう",
+    "meaning": "to learn",
+    "example": "ピアノを習っています。"
+  },
+  {
+    "source_no": 568,
+    "word": "教育",
+    "reading": "きょういく",
+    "meaning": "education",
+    "example": "教育について勉強します。"
+  },
+  {
+    "source_no": 569,
+    "word": "練習問題",
+    "reading": "れんしゅうもん",
+    "meaning": "だい",
+    "example": "practice question 練習問題を解きます。"
+  },
+  {
+    "source_no": 571,
+    "word": "技術",
+    "reading": "ぎじゅつ",
+    "meaning": "technology; skill",
+    "example": "日本の技術は有名です。"
+  },
+  {
+    "source_no": 572,
+    "word": "科学",
+    "reading": "かがく",
+    "meaning": "science",
+    "example": "科学を勉強しています。"
+  },
+  {
+    "source_no": 573,
+    "word": "数学",
+    "reading": "すうがく",
+    "meaning": "mathematics",
+    "example": "数学の授業があります。"
+  },
+  {
+    "source_no": 574,
+    "word": "国語",
+    "reading": "こくご",
+    "meaning": "Japanese language (school",
+    "example": "subject) 国語の宿題があります。"
+  },
+  {
+    "source_no": 575,
+    "word": "英文",
+    "reading": "えいぶん",
+    "meaning": "English sentence/text",
+    "example": "英文を読みました。"
+  },
+  {
+    "source_no": 576,
+    "word": "話",
+    "reading": "はなし",
+    "meaning": "story; talk",
+    "example": "面白い話を聞きました。"
+  },
+  {
+    "source_no": 577,
+    "word": "声",
+    "reading": "こえ",
+    "meaning": "voice",
+    "example": "大きな声で話してください。"
+  },
+  {
+    "source_no": 578,
+    "word": "発表",
+    "reading": "はっぴょう",
+    "meaning": "presentation; announcement",
+    "example": "授業で発表しました。"
+  },
+  {
+    "source_no": 579,
+    "word": "連絡先",
+    "reading": "れんらくさき",
+    "meaning": "contact information",
+    "example": "連絡先を書いてください。"
+  },
+  {
+    "source_no": 581,
+    "word": "連休",
+    "reading": "れんきゅう",
+    "meaning": "consecutive holidays",
+    "example": "連休に旅行へ行きます。"
+  },
+  {
+    "source_no": 582,
+    "word": "休暇",
+    "reading": "きゅうか",
+    "meaning": "vacation; leave",
+    "example": "夏に休暇を取りました。"
+  },
+  {
+    "source_no": 583,
+    "word": "旅行先",
+    "reading": "りょこうさき",
+    "meaning": "travel destination",
+    "example": "旅行先を決めました。"
+  },
+  {
+    "source_no": 584,
+    "word": "観光",
+    "reading": "かんこう",
+    "meaning": "sightseeing",
+    "example": "京都を観光しました。"
+  },
+  {
+    "source_no": 585,
+    "word": "観光地",
+    "reading": "かんこうち",
+    "meaning": "tourist spot",
+    "example": "有名な観光地へ行きました。"
+  },
+  {
+    "source_no": 586,
+    "word": "寺",
+    "reading": "てら",
+    "meaning": "temple",
+    "example": "京都には古い寺があります。"
+  },
+  {
+    "source_no": 587,
+    "word": "神社",
+    "reading": "じんじゃ",
+    "meaning": "shrine",
+    "example": "神社で写真を撮りました。"
+  },
+  {
+    "source_no": 588,
+    "word": "城",
+    "reading": "しろ",
+    "meaning": "castle",
+    "example": "大きな城を見ました。"
+  },
+  {
+    "source_no": 589,
+    "word": "公園",
+    "reading": "こうえん",
+    "meaning": "park",
+    "example": "公園で休みました。"
+  },
+  {
+    "source_no": 590,
+    "word": "景色",
+    "reading": "けしき",
+    "meaning": "scenery; view",
+    "example": "山の景色がきれいです。"
+  },
+  {
+    "source_no": 591,
+    "word": "写真撮影",
+    "reading": "しゃしんさつえ",
+    "meaning": "い",
+    "example": "photography 写真撮影をしました。"
+  },
+  {
+    "source_no": 592,
+    "word": "土産",
+    "reading": "みやげ",
+    "meaning": "souvenir",
+    "example": "家族に土産を買いました。"
+  },
+  {
+    "source_no": 593,
+    "word": "有名人",
+    "reading": "ゆうめいじん",
+    "meaning": "famous person",
+    "example": "有名人に会いました。"
+  },
+  {
+    "source_no": 594,
+    "word": "文化祭",
+    "reading": "ぶんかさい",
+    "meaning": "cultural festival",
+    "example": "学校の文化祭に参加しました。"
+  },
+  {
+    "source_no": 595,
+    "word": "祭り",
+    "reading": "まつり",
+    "meaning": "festival",
+    "example": "夏祭りへ行きました。"
+  },
+  {
+    "source_no": 596,
+    "word": "花火",
+    "reading": "はなび",
+    "meaning": "fireworks",
+    "example": "夜に花火を見ました。"
+  },
+  {
+    "source_no": 597,
+    "word": "音",
+    "reading": "おと",
+    "meaning": "sound",
+    "example": "花火の音が聞こえます。"
+  },
+  {
+    "source_no": 598,
+    "word": "聞こえる",
+    "reading": "きこえる",
+    "meaning": "to be heard",
+    "example": "音楽が聞こえます。"
+  },
+  {
+    "source_no": 599,
+    "word": "見える",
+    "reading": "みえる",
+    "meaning": "to be visible",
+    "example": "富士山が見えます。"
+  },
+  {
+    "source_no": 600,
+    "word": "消す",
+    "reading": "けす",
+    "meaning": "to turn off; erase",
+    "example": "電気を消してください。"
+  },
+  {
+    "source_no": 601,
+    "word": "消える",
+    "reading": "きえる",
+    "meaning": "to disappear; go out",
+    "example": "電気が消えました。"
+  },
+  {
+    "source_no": 602,
+    "word": "付ける",
+    "reading": "つける",
+    "meaning": "to turn on; attach",
+    "example": "テレビを付けます。"
+  },
+  {
+    "source_no": 603,
+    "word": "付く",
+    "reading": "つく",
+    "meaning": "to be attached; turn on",
+    "example": "電気が付きました。"
+  },
+  {
+    "source_no": 604,
+    "word": "落とす",
+    "reading": "おとす",
+    "meaning": "to drop",
+    "example": "財布を落としました。"
+  },
+  {
+    "source_no": 605,
+    "word": "落ちる",
+    "reading": "おちる",
+    "meaning": "to fall",
+    "example": "木の葉が落ちています。"
+  },
+  {
+    "source_no": 606,
+    "word": "壊す",
+    "reading": "こわす",
+    "meaning": "to break",
+    "example": "時計を壊しました。"
+  },
+  {
+    "source_no": 607,
+    "word": "壊れる",
+    "reading": "こわれる",
+    "meaning": "to break; be broken",
+    "example": "パソコンが壊れました。"
+  },
+  {
+    "source_no": 608,
+    "word": "直す",
+    "reading": "なおす",
+    "meaning": "to fix; correct",
+    "example": "自転車を直します。"
+  },
+  {
+    "source_no": 609,
+    "word": "治る",
+    "reading": "なおる",
+    "meaning": "to recover; be cured",
+    "example": "病気が治りました。"
+  },
+  {
+    "source_no": 610,
+    "word": "開ける",
+    "reading": "あける",
+    "meaning": "to open",
+    "example": "窓を開けてください。"
+  },
+  {
+    "source_no": 611,
+    "word": "開く",
+    "reading": "あく",
+    "meaning": "to open (by itself)",
+    "example": "ドアが開きました。"
+  },
+  {
+    "source_no": 612,
+    "word": "閉じる",
+    "reading": "とじる",
+    "meaning": "to close",
+    "example": "本を閉じてください。"
+  },
+  {
+    "source_no": 613,
+    "word": "閉まる",
+    "reading": "しまる",
+    "meaning": "to close (by itself)",
+    "example": "店が閉まりました。"
+  },
+  {
+    "source_no": 614,
+    "word": "始まる",
+    "reading": "はじまる",
+    "meaning": "to begin",
+    "example": "授業が始まります。"
+  },
+  {
+    "source_no": 615,
+    "word": "始める",
+    "reading": "はじめる",
+    "meaning": "to start something",
+    "example": "新しい仕事を始めました。"
+  },
+  {
+    "source_no": 616,
+    "word": "終わる",
+    "reading": "おわる",
+    "meaning": "to finish",
+    "example": "会議が終わりました。"
+  },
+  {
+    "source_no": 617,
+    "word": "続ける",
+    "reading": "つづける",
+    "meaning": "to continue",
+    "example": "日本語の勉強を続けます。"
+  },
+  {
+    "source_no": 618,
+    "word": "続く",
+    "reading": "つづく",
+    "meaning": "to continue; last",
+    "example": "雨が三日続きました。"
+  },
+  {
+    "source_no": 619,
+    "word": "急ぐ",
+    "reading": "いそぐ",
+    "meaning": "to hurry",
+    "example": "駅まで急ぎます。"
+  },
+  {
+    "source_no": 620,
+    "word": "間に合う",
+    "reading": "まにあう",
+    "meaning": "to be in time",
+    "example": "電車に間に合いました。"
+  },
+  {
+    "source_no": 621,
+    "word": "遅れる",
+    "reading": "おくれる",
+    "meaning": "to be late",
+    "example": "会社に遅れました。"
+  },
+  {
+    "source_no": 622,
+    "word": "集まる",
+    "reading": "あつまる",
+    "meaning": "to gather",
+    "example": "みんなが集まりました。"
+  },
+  {
+    "source_no": 623,
+    "word": "集める",
+    "reading": "あつめる",
+    "meaning": "to collect",
+    "example": "切手を集めています。"
+  },
+  {
+    "source_no": 624,
+    "word": "並ぶ",
+    "reading": "ならぶ",
+    "meaning": "to line up",
+    "example": "店の前に並びます。"
+  },
+  {
+    "source_no": 625,
+    "word": "並べる",
+    "reading": "ならべる",
+    "meaning": "to arrange; line up",
+    "example": "本を棚に並べます。"
+  },
+  {
+    "source_no": 626,
+    "word": "入院",
+    "reading": "にゅういん",
+    "meaning": "hospitalisation",
+    "example": "父は病院に入院しました。"
+  },
+  {
+    "source_no": 627,
+    "word": "退院",
+    "reading": "たいいん",
+    "meaning": "leaving hospital",
+    "example": "来週退院します。"
+  },
+  {
+    "source_no": 628,
+    "word": "予約",
+    "reading": "よやく",
+    "meaning": "reservation",
+    "example": "ホテルを予約しました。"
+  },
+  {
+    "source_no": 629,
+    "word": "案内",
+    "reading": "あんない",
+    "meaning": "guidance; information",
+    "example": "駅で案内を聞きました。"
+  },
+  {
+    "source_no": 630,
+    "word": "地図",
+    "reading": "ちず",
+    "meaning": "map",
+    "example": "地図を見ながら歩きます。"
+  },
+  {
+    "source_no": 631,
+    "word": "番号",
+    "reading": "ばんごう",
+    "meaning": "number",
+    "example": "番号を確認してください。"
+  },
+  {
+    "source_no": 632,
+    "word": "信号",
+    "reading": "しんごう",
+    "meaning": "traffic light; signal",
+    "example": "信号を渡ります。"
+  },
+  {
+    "source_no": 634,
+    "word": "交差点",
+    "reading": "こうさてん",
+    "meaning": "intersection",
+    "example": "次の交差点を左に曲がります。"
+  },
+  {
+    "source_no": 635,
+    "word": "駅前",
+    "reading": "えきまえ",
+    "meaning": "in front of station",
+    "example": "駅前で会いましょう。"
+  },
+  {
+    "source_no": 636,
+    "word": "改札口",
+    "reading": "かいさつぐち",
+    "meaning": "ticket gate",
+    "example": "改札口で待っています。"
+  },
+  {
+    "source_no": 637,
+    "word": "切符",
+    "reading": "きっぷ",
+    "meaning": "ticket",
+    "example": "切符を買いました。"
+  },
+  {
+    "source_no": 638,
+    "word": "片道",
+    "reading": "かたみち",
+    "meaning": "one way",
+    "example": "片道の切符をください。"
+  },
+  {
+    "source_no": 639,
+    "word": "往復",
+    "reading": "おうふく",
+    "meaning": "round trip",
+    "example": "往復切符を買います。"
+  },
+  {
+    "source_no": 640,
+    "word": "乗り換え",
+    "reading": "のりかえ",
+    "meaning": "transfer (train/bus)",
+    "example": "東京駅で乗り換えます。"
+  },
+  {
+    "source_no": 641,
+    "word": "運転",
+    "reading": "うんてん",
+    "meaning": "driving",
+    "example": "父は車の運転ができます。"
+  },
+  {
+    "source_no": 642,
+    "word": "運転手",
+    "reading": "うんてんしゅ",
+    "meaning": "driver",
+    "example": "バスの運転手に聞きました。"
+  },
+  {
+    "source_no": 643,
+    "word": "免許",
+    "reading": "めんきょ",
+    "meaning": "licence; permission",
+    "example": "車の免許を取りました。"
+  },
+  {
+    "source_no": 644,
+    "word": "自転車",
+    "reading": "じてんしゃ",
+    "meaning": "bicycle",
+    "example": "自転車で学校へ行きます。"
+  },
+  {
+    "source_no": 645,
+    "word": "歩く",
+    "reading": "あるく",
+    "meaning": "to walk",
+    "example": "駅まで歩きます。"
+  },
+  {
+    "source_no": 646,
+    "word": "歩道",
+    "reading": "ほどう",
+    "meaning": "sidewalk",
+    "example": "歩道を歩いてください。"
+  },
+  {
+    "source_no": 647,
+    "word": "旅行",
+    "reading": "りょこう",
+    "meaning": "travel; trip",
+    "example": "夏休みに旅行します。"
+  },
+  {
+    "source_no": 648,
+    "word": "出発",
+    "reading": "しゅっぱつ",
+    "meaning": "departure",
+    "example": "朝8時に出発します。"
+  },
+  {
+    "source_no": 649,
+    "word": "到着",
+    "reading": "とうちゃく",
+    "meaning": "arrival",
+    "example": "東京に到着しました。"
+  },
+  {
+    "source_no": 650,
+    "word": "泊まる",
+    "reading": "とまる",
+    "meaning": "to stay overnight",
+    "example": "ホテルに泊まります。"
+  },
+  {
+    "source_no": 651,
+    "word": "宿",
+    "reading": "やど",
+    "meaning": "inn; lodging",
+    "example": "山の近くの宿に泊まりました。"
+  },
+  {
+    "source_no": 652,
+    "word": "ホテル",
+    "reading": "ホテル",
+    "meaning": "hotel",
+    "example": "ホテルを予約しました。"
+  },
+  {
+    "source_no": 653,
+    "word": "部屋代",
+    "reading": "へやだい",
+    "meaning": "room charge",
+    "example": "部屋代を払いました。"
+  },
+  {
+    "source_no": 654,
+    "word": "荷物",
+    "reading": "にもつ",
+    "meaning": "luggage",
+    "example": "荷物を預けました。"
+  },
+  {
+    "source_no": 655,
+    "word": "空港",
+    "reading": "くうこう",
+    "meaning": "airport",
+    "example": "空港へ行きます。"
+  },
+  {
+    "source_no": 656,
+    "word": "港",
+    "reading": "みなと",
+    "meaning": "port; harbour",
+    "example": "港から船に乗ります。"
+  },
+  {
+    "source_no": 657,
+    "word": "航空会社",
+    "reading": "こうくうがいし",
+    "meaning": "ゃ",
+    "example": "airline company 航空会社に電話しました。"
+  },
+  {
+    "source_no": 658,
+    "word": "旅行会社",
+    "reading": "りょこうがいし",
+    "meaning": "ゃ",
+    "example": "travel agency 旅行会社で予約しました。 659 切符売り場きっぷうりば ticket counter 切符売り場はあそこです。"
+  },
+  {
+    "source_no": 660,
+    "word": "荷造り",
+    "reading": "にづくり",
+    "meaning": "packing luggage",
+    "example": "旅行の前に荷造りをします。"
+  },
+  {
+    "source_no": 661,
+    "word": "持つ",
+    "reading": "もつ",
+    "meaning": "to hold; carry",
+    "example": "鞄を持っています。"
+  },
+  {
+    "source_no": 662,
+    "word": "置く",
+    "reading": "おく",
+    "meaning": "to put; place",
+    "example": "机の上に本を置きます。"
+  },
+  {
+    "source_no": 663,
+    "word": "置き場",
+    "reading": "おきば",
+    "meaning": "place for keeping things",
+    "example": "自転車置き場があります。"
+  },
+  {
+    "source_no": 664,
+    "word": "片手",
+    "reading": "かたて",
+    "meaning": "one hand",
+    "example": "片手で荷物を持ちます。"
+  },
+  {
+    "source_no": 665,
+    "word": "両手",
+    "reading": "りょうて",
+    "meaning": "both hands",
+    "example": "両手で箱を持ってください。"
+  },
+  {
+    "source_no": 666,
+    "word": "指",
+    "reading": "ゆび",
+    "meaning": "finger",
+    "example": "指をけがしました。"
+  },
+  {
+    "source_no": 667,
+    "word": "手首",
+    "reading": "てくび",
+    "meaning": "wrist",
+    "example": "手首が少し痛いです。"
+  },
+  {
+    "source_no": 668,
+    "word": "足",
+    "reading": "あし",
+    "meaning": "leg; foot",
+    "example": "足が疲れました。"
+  },
+  {
+    "source_no": 669,
+    "word": "首",
+    "reading": "くび",
+    "meaning": "neck",
+    "example": "首が痛いです。"
+  },
+  {
+    "source_no": 670,
+    "word": "顔",
+    "reading": "かお",
+    "meaning": "face",
+    "example": "顔を洗います。"
+  },
+  {
+    "source_no": 671,
+    "word": "頭",
+    "reading": "あたま",
+    "meaning": "head",
+    "example": "頭が痛いです。"
+  },
+  {
+    "source_no": 672,
+    "word": "髪",
+    "reading": "かみ",
+    "meaning": "hair",
+    "example": "髪を切りました。"
+  },
+  {
+    "source_no": 673,
+    "word": "目",
+    "reading": "め",
+    "meaning": "eye",
+    "example": "目が疲れました。"
+  },
+  {
+    "source_no": 674,
+    "word": "耳",
+    "reading": "みみ",
+    "meaning": "ear",
+    "example": "耳で音を聞きます。"
+  },
+  {
+    "source_no": 675,
+    "word": "口",
+    "reading": "くち",
+    "meaning": "mouth",
+    "example": "口を開けてください。"
+  },
+  {
+    "source_no": 676,
+    "word": "歯",
+    "reading": "は",
+    "meaning": "tooth",
+    "example": "歯を磨きます。"
+  },
+  {
+    "source_no": 677,
+    "word": "鼻",
+    "reading": "はな",
+    "meaning": "nose",
+    "example": "鼻が痛いです。"
+  },
+  {
+    "source_no": 678,
+    "word": "背中",
+    "reading": "せなか",
+    "meaning": "back",
+    "example": "背中が痛いです。"
+  },
+  {
+    "source_no": 679,
+    "word": "腕",
+    "reading": "うで",
+    "meaning": "arm",
+    "example": "腕を動かします。"
+  },
+  {
+    "source_no": 680,
+    "word": "手",
+    "reading": "て",
+    "meaning": "hand",
+    "example": "手を洗ってください。"
+  },
+  {
+    "source_no": 681,
+    "word": "指先",
+    "reading": "ゆびさき",
+    "meaning": "fingertip",
+    "example": "指先で押してください。"
+  },
+  {
+    "source_no": 682,
+    "word": "体",
+    "reading": "からだ",
+    "meaning": "body",
+    "example": "体に気をつけます。"
+  },
+  {
+    "source_no": 683,
+    "word": "心",
+    "reading": "こころ",
+    "meaning": "heart; mind",
+    "example": "心が大切です。"
+  },
+  {
+    "source_no": 684,
+    "word": "声",
+    "reading": "こえ",
+    "meaning": "voice",
+    "example": "小さい声で話してください。"
+  },
+  {
+    "source_no": 685,
+    "word": "病院",
+    "reading": "びょういん",
+    "meaning": "hospital",
+    "example": "病院へ行きました。"
+  },
+  {
+    "source_no": 686,
+    "word": "医者",
+    "reading": "いしゃ",
+    "meaning": "doctor",
+    "example": "医者に相談しました。"
+  },
+  {
+    "source_no": 687,
+    "word": "患者",
+    "reading": "かんじゃ",
+    "meaning": "patient",
+    "example": "患者を助けます。"
+  },
+  {
+    "source_no": 688,
+    "word": "怪我",
+    "reading": "けが",
+    "meaning": "injury",
+    "example": "足を怪我しました。"
+  },
+  {
+    "source_no": 689,
+    "word": "痛み",
+    "reading": "いたみ",
+    "meaning": "pain",
+    "example": "痛みがあります。"
+  },
+  {
+    "source_no": 690,
+    "word": "注射",
+    "reading": "ちゅうしゃ",
+    "meaning": "injection",
+    "example": "病院で注射をしました。"
+  },
+  {
+    "source_no": 691,
+    "word": "入れる",
+    "reading": "いれる",
+    "meaning": "to put in",
+    "example": "荷物を箱に入れます。"
+  },
+  {
+    "source_no": 692,
+    "word": "出す",
+    "reading": "だす",
+    "meaning": "to take out; submit",
+    "example": "宿題を出しました。"
+  },
+  {
+    "source_no": 693,
+    "word": "押す",
+    "reading": "おす",
+    "meaning": "to push",
+    "example": "ボタンを押してください。"
+  },
+  {
+    "source_no": 694,
+    "word": "引く",
+    "reading": "ひく",
+    "meaning": "to pull",
+    "example": "ドアを引いてください。"
+  },
+  {
+    "source_no": 695,
+    "word": "回す",
+    "reading": "まわす",
+    "meaning": "to turn; rotate",
+    "example": "つまみを回します。"
+  },
+  {
+    "source_no": 696,
+    "word": "曲げる",
+    "reading": "まげる",
+    "meaning": "to bend",
+    "example": "腕を曲げます。"
+  },
+  {
+    "source_no": 697,
+    "word": "洗う",
+    "reading": "あらう",
+    "meaning": "to wash",
+    "example": "手を洗います。"
+  },
+  {
+    "source_no": 698,
+    "word": "磨く",
+    "reading": "みがく",
+    "meaning": "to polish; brush",
+    "example": "歯を磨きます。"
+  },
+  {
+    "source_no": 699,
+    "word": "触る",
+    "reading": "さわる",
+    "meaning": "to touch",
+    "example": "ここに触らないでください。"
+  },
+  {
+    "source_no": 700,
+    "word": "笑う",
+    "reading": "わらう",
+    "meaning": "to laugh; smile",
+    "example": "友達と一緒に笑いました。"
+  },
+  {
+    "source_no": 701,
+    "word": "泣く",
+    "reading": "なく",
+    "meaning": "to cry",
+    "example": "子供が泣いています。"
+  },
+  {
+    "source_no": 702,
+    "word": "怒る",
+    "reading": "おこる",
+    "meaning": "to get angry",
+    "example": "父はあまり怒りません。"
+  },
+  {
+    "source_no": 703,
+    "word": "喜ぶ",
+    "reading": "よろこぶ",
+    "meaning": "to be pleased",
+    "example": "プレゼントをもらって喜びました 。"
+  },
+  {
+    "source_no": 704,
+    "word": "楽しい",
+    "reading": "たのしい",
+    "meaning": "enjoyable; fun",
+    "example": "旅行は楽しかったです。"
+  },
+  {
+    "source_no": 705,
+    "word": "嬉しい",
+    "reading": "うれしい",
+    "meaning": "happy; glad",
+    "example": "会えて嬉しいです。"
+  },
+  {
+    "source_no": 706,
+    "word": "悲しい",
+    "reading": "かなしい",
+    "meaning": "sad",
+    "example": "別れるのは悲しいです。"
+  },
+  {
+    "source_no": 707,
+    "word": "怖い",
+    "reading": "こわい",
+    "meaning": "scary; frightening",
+    "example": "夜の山は怖いです。"
+  },
+  {
+    "source_no": 708,
+    "word": "好き",
+    "reading": "すき",
+    "meaning": "like; favourite",
+    "example": "日本料理が好きです。"
+  },
+  {
+    "source_no": 709,
+    "word": "嫌い",
+    "reading": "きらい",
+    "meaning": "dislike",
+    "example": "辛い食べ物が嫌いです。"
+  },
+  {
+    "source_no": 710,
+    "word": "上手",
+    "reading": "じょうず",
+    "meaning": "skillful; good at",
+    "example": "彼は料理が上手です。"
+  },
+  {
+    "source_no": 711,
+    "word": "下手",
+    "reading": "へた",
+    "meaning": "poor at; unskillful",
+    "example": "私は歌が下手です。"
+  },
+  {
+    "source_no": 712,
+    "word": "得意",
+    "reading": "とくい",
+    "meaning": "good at; strong point",
+    "example": "日本語が得意です。"
+  },
+  {
+    "source_no": 713,
+    "word": "苦手",
+    "reading": "にがて",
+    "meaning": "poor at; weak in",
+    "example": "漢字が少し苦手です。"
+  },
+  {
+    "source_no": 714,
+    "word": "有名",
+    "reading": "ゆうめい",
+    "meaning": "famous",
+    "example": "京都は有名な町です。"
+  },
+  {
+    "source_no": 715,
+    "word": "特急",
+    "reading": "とっきゅう",
+    "meaning": "limited express train",
+    "example": "特急電車に乗りました。"
+  },
+  {
+    "source_no": 716,
+    "word": "普通",
+    "reading": "ふつう",
+    "meaning": "normal; ordinary",
+    "example": "普通の生活をしています。"
+  },
+  {
+    "source_no": 717,
+    "word": "特別",
+    "reading": "とくべつ",
+    "meaning": "special",
+    "example": "今日は特別な日です。"
+  },
+  {
+    "source_no": 718,
+    "word": "必要",
+    "reading": "ひつよう",
+    "meaning": "necessary",
+    "example": "パスポートが必要です。"
+  },
+  {
+    "source_no": 719,
+    "word": "不便",
+    "reading": "ふべん",
+    "meaning": "inconvenient",
+    "example": "車がないと不便です。"
+  },
+  {
+    "source_no": 720,
+    "word": "便利",
+    "reading": "べんり",
+    "meaning": "convenient",
+    "example": "電車は便利です。"
+  },
+  {
+    "source_no": 721,
+    "word": "安全",
+    "reading": "あんぜん",
+    "meaning": "safety; safe",
+    "example": "安全に気をつけます。"
+  },
+  {
+    "source_no": 722,
+    "word": "危ない",
+    "reading": "あぶない",
+    "meaning": "dangerous",
+    "example": "そこは危ないです。"
+  },
+  {
+    "source_no": 723,
+    "word": "正月",
+    "reading": "しょうがつ",
+    "meaning": "New Year",
+    "example": "正月に家族で集まります。"
+  },
+  {
+    "source_no": 724,
+    "word": "春",
+    "reading": "はる",
+    "meaning": "spring",
+    "example": "春になると花が咲きます。"
+  },
+  {
+    "source_no": 725,
+    "word": "夏",
+    "reading": "なつ",
+    "meaning": "summer",
+    "example": "夏は海へ行きます。"
+  },
+  {
+    "source_no": 726,
+    "word": "秋",
+    "reading": "あき",
+    "meaning": "autumn",
+    "example": "秋は涼しいです。"
+  },
+  {
+    "source_no": 727,
+    "word": "冬",
+    "reading": "ふゆ",
+    "meaning": "winter",
+    "example": "冬は雪が降ります。"
+  },
+  {
+    "source_no": 728,
+    "word": "季節",
+    "reading": "きせつ",
+    "meaning": "season",
+    "example": "日本には四つの季節があります。"
+  },
+  {
+    "source_no": 729,
+    "word": "温度",
+    "reading": "おんど",
+    "meaning": "temperature",
+    "example": "部屋の温度を下げます。"
+  },
+  {
+    "source_no": 730,
+    "word": "温度計",
+    "reading": "おんどけい",
+    "meaning": "thermometer",
+    "example": "温度計で部屋の温度を見ます。"
+  },
+  {
+    "source_no": 731,
+    "word": "気温",
+    "reading": "きおん",
+    "meaning": "air temperature",
+    "example": "今日の気温は高いです。"
+  },
+  {
+    "source_no": 732,
+    "word": "台風",
+    "reading": "たいふう",
+    "meaning": "typhoon",
+    "example": "台風が近づいています。"
+  },
+  {
+    "source_no": 733,
+    "word": "地震",
+    "reading": "じしん",
+    "meaning": "earthquake",
+    "example": "昨日地震がありました。"
+  },
+  {
+    "source_no": 734,
+    "word": "火事",
+    "reading": "かじ",
+    "meaning": "fire",
+    "example": "近くで火事がありました。"
+  },
+  {
+    "source_no": 735,
+    "word": "災害",
+    "reading": "さいがい",
+    "meaning": "disaster",
+    "example": "災害の準備をしています。"
+  },
+  {
+    "source_no": 736,
+    "word": "警察",
+    "reading": "けいさつ",
+    "meaning": "police",
+    "example": "警察に電話しました。"
+  },
+  {
+    "source_no": 738,
+    "word": "事故",
+    "reading": "じこ",
+    "meaning": "accident",
+    "example": "道で事故がありました。"
+  },
+  {
+    "source_no": 739,
+    "word": "注意する",
+    "reading": "ちゅういする",
+    "meaning": "to be careful",
+    "example": "車に注意してください。"
+  },
+  {
+    "source_no": 740,
+    "word": "守る",
+    "reading": "まもる",
+    "meaning": "to protect; obey",
+    "example": "ルールを守ります。"
+  },
+  {
+    "source_no": 741,
+    "word": "禁止",
+    "reading": "きんし",
+    "meaning": "prohibition",
+    "example": "ここでは写真は禁止です。"
+  },
+  {
+    "source_no": 742,
+    "word": "規則",
+    "reading": "きそく",
+    "meaning": "rule; regulation",
+    "example": "学校の規則を守ります。"
+  },
+  {
+    "source_no": 743,
+    "word": "約束する",
+    "reading": "やくそくする",
+    "meaning": "to promise",
+    "example": "友達と約束しました。"
+  },
+  {
+    "source_no": 744,
+    "word": "信じる",
+    "reading": "しんじる",
+    "meaning": "to believe",
+    "example": "友達を信じています。 745 必要になるひつようになるto become necessary 旅行ではお金が必要になります。"
+  },
+  {
+    "source_no": 746,
+    "word": "変える",
+    "reading": "かえる",
+    "meaning": "to change something",
+    "example": "予定を変えました。"
+  },
+  {
+    "source_no": 747,
+    "word": "変化",
+    "reading": "へんか",
+    "meaning": "change; variation",
+    "example": "季節の変化を感じます。"
+  },
+  {
+    "source_no": 748,
+    "word": "増える",
+    "reading": "ふえる",
+    "meaning": "to increase",
+    "example": "人が増えています。"
+  },
+  {
+    "source_no": 749,
+    "word": "増やす",
+    "reading": "ふやす",
+    "meaning": "to increase something",
+    "example": "貯金を増やしたいです。"
+  },
+  {
+    "source_no": 750,
+    "word": "減る",
+    "reading": "へる",
+    "meaning": "to decrease",
+    "example": "仕事が減りました。"
+  },
+  {
+    "source_no": 751,
+    "word": "減らす",
+    "reading": "へらす",
+    "meaning": "to reduce",
+    "example": "塩を減らします。"
+  },
+  {
+    "source_no": 752,
+    "word": "選手",
+    "reading": "せんしゅ",
+    "meaning": "player; athlete",
+    "example": "彼はサッカー選手です。"
+  },
+  {
+    "source_no": 753,
+    "word": "勝つ",
+    "reading": "かつ",
+    "meaning": "to win",
+    "example": "試合に勝ちました。"
+  },
+  {
+    "source_no": 754,
+    "word": "負ける",
+    "reading": "まける",
+    "meaning": "to lose",
+    "example": "試合に負けました。"
+  },
+  {
+    "source_no": 755,
+    "word": "試合",
+    "reading": "しあい",
+    "meaning": "match; game",
+    "example": "明日は試合があります。"
+  },
+  {
+    "source_no": 756,
+    "word": "練習場",
+    "reading": "れんしゅうじょ",
+    "meaning": "う",
+    "example": "practice place 練習場で運動します。"
+  },
+  {
+    "source_no": 757,
+    "word": "体操",
+    "reading": "たいそう",
+    "meaning": "exercise; gymnastics",
+    "example": "朝、体操をします。"
+  },
+  {
+    "source_no": 758,
+    "word": "走者",
+    "reading": "そうしゃ",
+    "meaning": "runner",
+    "example": "走者が速く走っています。"
+  },
+  {
+    "source_no": 759,
+    "word": "参加",
+    "reading": "さんか",
+    "meaning": "participation",
+    "example": "イベントに参加しました。"
+  },
+  {
+    "source_no": 760,
+    "word": "出席",
+    "reading": "しゅっせき",
+    "meaning": "attendance",
+    "example": "会議に出席しました。"
+  },
+  {
+    "source_no": 761,
+    "word": "欠席",
+    "reading": "けっせき",
+    "meaning": "absence",
+    "example": "病気で学校を欠席しました。"
+  },
+  {
+    "source_no": 762,
+    "word": "集合",
+    "reading": "しゅうごう",
+    "meaning": "gathering; meeting",
+    "example": "8時に駅へ集合します。"
+  },
+  {
+    "source_no": 763,
+    "word": "解散",
+    "reading": "かいさん",
+    "meaning": "breakup; dispersal",
+    "example": "仕事の後で解散しました。"
+  },
+  {
+    "source_no": 764,
+    "word": "開会",
+    "reading": "かいかい",
+    "meaning": "opening ceremony",
+    "example": "午前9時に開会します。"
+  },
+  {
+    "source_no": 765,
+    "word": "閉会",
+    "reading": "へいかい",
+    "meaning": "closing ceremony",
+    "example": "夕方に閉会しました。"
+  },
+  {
+    "source_no": 766,
+    "word": "会場",
+    "reading": "かいじょう",
+    "meaning": "venue",
+    "example": "会場は駅の近くです。"
+  },
+  {
+    "source_no": 767,
+    "word": "受付",
+    "reading": "うけつけ",
+    "meaning": "reception desk",
+    "example": "受付で名前を書きます。"
+  },
+  {
+    "source_no": 768,
+    "word": "案内所",
+    "reading": "あんないじょ",
+    "meaning": "information desk",
+    "example": "案内所で地図をもらいました。"
+  },
+  {
+    "source_no": 769,
+    "word": "入場",
+    "reading": "にゅうじょう",
+    "meaning": "entrance; admission",
+    "example": "会場に入場しました。"
+  },
+  {
+    "source_no": 770,
+    "word": "退場",
+    "reading": "たいじょう",
+    "meaning": "leaving; exit",
+    "example": "終わったら退場してください。"
+  },
+  {
+    "source_no": 771,
+    "word": "建設",
+    "reading": "けんせつ",
+    "meaning": "construction",
+    "example": "新しい建物を建設しています。"
+  },
+  {
+    "source_no": 772,
+    "word": "工事",
+    "reading": "こうじ",
+    "meaning": "construction work",
+    "example": "道路の工事をしています。"
+  },
+  {
+    "source_no": 773,
+    "word": "会社",
+    "reading": "かいしゃ",
+    "meaning": "company",
+    "example": "父は会社で働いています。"
+  },
+  {
+    "source_no": 774,
+    "word": "社会",
+    "reading": "しゃかい",
+    "meaning": "society",
+    "example": "社会の問題を考えます。"
+  },
+  {
+    "source_no": 775,
+    "word": "社会人",
+    "reading": "しゃかいじん",
+    "meaning": "working adult",
+    "example": "彼は社会人です。"
+  },
+  {
+    "source_no": 776,
+    "word": "経験",
+    "reading": "けいけん",
+    "meaning": "experience",
+    "example": "日本で働いた経験があります。"
+  },
+  {
+    "source_no": 777,
+    "word": "成功",
+    "reading": "せいこう",
+    "meaning": "success",
+    "example": "仕事が成功しました。"
+  },
+  {
+    "source_no": 778,
+    "word": "失敗",
+    "reading": "しっぱい",
+    "meaning": "failure; mistake",
+    "example": "失敗から学びます。"
+  },
+  {
+    "source_no": 779,
+    "word": "努力",
+    "reading": "どりょく",
+    "meaning": "effort",
+    "example": "毎日努力しています。"
+  },
+  {
+    "source_no": 780,
+    "word": "頑張る",
+    "reading": "がんばる",
+    "meaning": "to do one's best",
+    "example": "試験のために頑張ります。"
+  },
+  {
+    "source_no": 781,
+    "word": "休憩",
+    "reading": "きゅうけい",
+    "meaning": "break; rest",
+    "example": "少し休憩しましょう。"
+  },
+  {
+    "source_no": 782,
+    "word": "集中",
+    "reading": "しゅうちゅう",
+    "meaning": "concentration",
+    "example": "勉強に集中します。"
+  },
+  {
+    "source_no": 783,
+    "word": "変",
+    "reading": "へん",
+    "meaning": "strange; unusual",
+    "example": "変な音がしました。"
+  },
+  {
+    "source_no": 784,
+    "word": "普段",
+    "reading": "ふだん",
+    "meaning": "usually; ordinary times",
+    "example": "普段は電車で行きます。"
+  },
+  {
+    "source_no": 785,
+    "word": "特に",
+    "reading": "とくに",
+    "meaning": "especially",
+    "example": "特に京都が好きです。"
+  },
+  {
+    "source_no": 786,
+    "word": "例えば",
+    "reading": "たとえば",
+    "meaning": "for example",
+    "example": "例えばこの方法があります。"
+  },
+  {
+    "source_no": 787,
+    "word": "もちろん",
+    "reading": "もちろん",
+    "meaning": "of course",
+    "example": "もちろん行きます。"
+  },
+  {
+    "source_no": 788,
+    "word": "一番",
+    "reading": "いちばん",
+    "meaning": "most; number one",
+    "example": "これが一番好きです。"
+  },
+  {
+    "source_no": 789,
+    "word": "最も",
+    "reading": "もっとも",
+    "meaning": "most; extremely",
+    "example": "これは最も大切です。"
+  },
+  {
+    "source_no": 790,
+    "word": "以上",
+    "reading": "いじょう",
+    "meaning": "more than; above",
+    "example": "18歳以上の人が入れます。"
+  },
+  {
+    "source_no": 791,
+    "word": "以下",
+    "reading": "いか",
+    "meaning": "below; less than",
+    "example": "10分以下で終わります。"
+  },
+  {
+    "source_no": 792,
+    "word": "以内",
+    "reading": "いない",
+    "meaning": "within",
+    "example": "一週間以内に返事します。"
+  },
+  {
+    "source_no": 793,
+    "word": "以外",
+    "reading": "いがい",
+    "meaning": "except; other than",
+    "example": "日本語以外も勉強しています。"
+  },
+  {
+    "source_no": 794,
+    "word": "以上に",
+    "reading": "いじょうに",
+    "meaning": "more than expected",
+    "example": "予想以上に楽しかったです。"
+  },
+  {
+    "source_no": 795,
+    "word": "最後に",
+    "reading": "さいごに",
+    "meaning": "finally; lastly",
+    "example": "最後に質問があります。"
+  },
+  {
+    "source_no": 796,
+    "word": "最初に",
+    "reading": "さいしょに",
+    "meaning": "first; at the beginning",
+    "example": "最初に名前を書いてください。"
+  },
+  {
+    "source_no": 797,
+    "word": "次",
+    "reading": "つぎ",
+    "meaning": "next",
+    "example": "次の駅で降ります。"
+  },
+  {
+    "source_no": 798,
+    "word": "次回",
+    "reading": "じかい",
+    "meaning": "next time",
+    "example": "次回また会いましょう。"
+  },
+  {
+    "source_no": 799,
+    "word": "前回",
+    "reading": "ぜんかい",
+    "meaning": "last time",
+    "example": "前回の授業を復習します。"
+  },
+  {
+    "source_no": 800,
+    "word": "今回",
+    "reading": "こんかい",
+    "meaning": "this time",
+    "example": "今回の旅行は楽しかったです。"
+  },
+  {
+    "source_no": 801,
+    "word": "一回",
+    "reading": "いっかい",
+    "meaning": "once; one time",
+    "example": "一回説明しました。"
+  },
+  {
+    "source_no": 802,
+    "word": "二回",
+    "reading": "にかい",
+    "meaning": "twice",
+    "example": "二回行ったことがあります。"
+  },
+  {
+    "source_no": 803,
+    "word": "毎回",
+    "reading": "まいかい",
+    "meaning": "every time",
+    "example": "毎回漢字を練習します。"
+  },
+  {
+    "source_no": 804,
+    "word": "何回",
+    "reading": "なんかい",
+    "meaning": "how many times",
+    "example": "何回日本へ行きましたか。"
+  },
+  {
+    "source_no": 805,
+    "word": "何度",
+    "reading": "なんど",
+    "meaning": "how many times; how many",
+    "example": "degrees 何度も練習しました。"
+  },
+  {
+    "source_no": 806,
+    "word": "度",
+    "reading": "ど",
+    "meaning": "time; degree",
+    "example": "もう一度お願いします。"
+  },
+  {
+    "source_no": 807,
+    "word": "番",
+    "reading": "ばん",
+    "meaning": "number; turn",
+    "example": "私の番です。"
+  },
+  {
+    "source_no": 808,
+    "word": "番目",
+    "reading": "ばんめ",
+    "meaning": "ordinal number",
+    "example": "三番目の駅です。"
+  },
+  {
+    "source_no": 809,
+    "word": "順番",
+    "reading": "じゅんばん",
+    "meaning": "order; turn",
+    "example": "順番を待ってください。"
+  },
+  {
+    "source_no": 810,
+    "word": "最後まで",
+    "reading": "さいごまで",
+    "meaning": "until the end",
+    "example": "最後まで頑張ります。"
+  },
+  {
+    "source_no": 811,
+    "word": "全く",
+    "reading": "まったく",
+    "meaning": "completely; not at all",
+    "example": "全く分かりません。"
+  },
+  {
+    "source_no": 812,
+    "word": "皆",
+    "reading": "みな",
+    "meaning": "everyone",
+    "example": "皆で写真を撮りました。"
+  },
+  {
+    "source_no": 813,
+    "word": "皆さん",
+    "reading": "みなさん",
+    "meaning": "everyone (polite)",
+    "example": "皆さん、おはようございます。"
+  },
+  {
+    "source_no": 814,
+    "word": "自分",
+    "reading": "じぶん",
+    "meaning": "oneself",
+    "example": "自分で考えてください。"
+  },
+  {
+    "source_no": 815,
+    "word": "他",
+    "reading": "ほか",
+    "meaning": "other; another",
+    "example": "他の方法を考えます。"
+  },
+  {
+    "source_no": 816,
+    "word": "相手",
+    "reading": "あいて",
+    "meaning": "partner; opponent",
+    "example": "相手の話を聞きます。"
+  },
+  {
+    "source_no": 817,
+    "word": "同じ",
+    "reading": "おなじ",
+    "meaning": "same",
+    "example": "私と同じ考えです。"
+  },
+  {
+    "source_no": 818,
+    "word": "違う",
+    "reading": "ちがう",
+    "meaning": "different; wrong",
+    "example": "答えが違います。"
+  },
+  {
+    "source_no": 819,
+    "word": "比較",
+    "reading": "ひかく",
+    "meaning": "comparison",
+    "example": "二つの商品を比較します。"
+  },
+  {
+    "source_no": 820,
+    "word": "約束",
+    "reading": "やくそく",
+    "meaning": "promise; appointment",
+    "example": "友達との約束があります。"
+  },
+  {
+    "source_no": 821,
+    "word": "泳ぐ",
+    "reading": "およぐ",
+    "meaning": "to swim",
+    "example": "夏に海で泳ぎます。"
+  },
+  {
+    "source_no": 822,
+    "word": "経験",
+    "reading": "けいけん",
+    "meaning": "experience",
+    "example": "日本で働いた経験があります。"
+  },
+  {
+    "source_no": 823,
+    "word": "静か",
+    "reading": "しずか",
+    "meaning": "quiet",
+    "example": "この場所は静かです。"
+  },
+  {
+    "source_no": 824,
+    "word": "選手",
+    "reading": "せんしゅ",
+    "meaning": "player; athlete",
+    "example": "彼は有名な選手です。"
+  },
+  {
+    "source_no": 825,
+    "word": "住所",
+    "reading": "じゅうしょ",
+    "meaning": "address",
+    "example": "住所を書いてください。"
+  },
+  {
+    "source_no": 826,
+    "word": "笑顔",
+    "reading": "えがお",
+    "meaning": "smiling face",
+    "example": "彼女は笑顔で話しました。"
+  },
+  {
+    "source_no": 827,
+    "word": "旅行",
+    "reading": "りょこう",
+    "meaning": "travel",
+    "example": "来月旅行します。"
+  },
+  {
+    "source_no": 828,
+    "word": "必要",
+    "reading": "ひつよう",
+    "meaning": "necessary",
+    "example": "パスポートが必要です。"
+  },
+  {
+    "source_no": 829,
+    "word": "勝負",
+    "reading": "しょうぶ",
+    "meaning": "match; contest",
+    "example": "今日勝負があります。"
+  },
+  {
+    "source_no": 830,
+    "word": "便利",
+    "reading": "べんり",
+    "meaning": "convenient",
+    "example": "このアプリは便利です。"
+  },
+  {
+    "source_no": 831,
+    "word": "料理",
+    "reading": "りょうり",
+    "meaning": "cooking; cuisine",
+    "example": "日本料理を食べました。"
+  },
+  {
+    "source_no": 832,
+    "word": "関係",
+    "reading": "かんけい",
+    "meaning": "relationship",
+    "example": "仕事の関係で東京へ行きます。"
+  },
+  {
+    "source_no": 833,
+    "word": "春休み",
+    "reading": "はるやすみ",
+    "meaning": "spring vacation",
+    "example": "春休みに旅行します。"
+  },
+  {
+    "source_no": 834,
+    "word": "写真",
+    "reading": "しゃしん",
+    "meaning": "photograph",
+    "example": "写真を撮りました。"
+  },
+  {
+    "source_no": 835,
+    "word": "負ける",
+    "reading": "まける",
+    "meaning": "to lose",
+    "example": "試合に負けました。"
+  },
+  {
+    "source_no": 836,
+    "word": "意味",
+    "reading": "いみ",
+    "meaning": "meaning",
+    "example": "この言葉の意味を教えてください 。"
+  },
+  {
+    "source_no": 837,
+    "word": "建物",
+    "reading": "たてもの",
+    "meaning": "building",
+    "example": "あの建物は大きいです。"
+  },
+  {
+    "source_no": 838,
+    "word": "泣く",
+    "reading": "なく",
+    "meaning": "to cry",
+    "example": "赤ちゃんが泣いています。"
+  },
+  {
+    "source_no": 839,
+    "word": "科学",
+    "reading": "かがく",
+    "meaning": "science",
+    "example": "科学を勉強しています。"
+  },
+  {
+    "source_no": 840,
+    "word": "注意",
+    "reading": "ちゅうい",
+    "meaning": "caution; attention",
+    "example": "車に注意してください。"
+  },
+  {
+    "source_no": 841,
+    "word": "運転",
+    "reading": "うんてん",
+    "meaning": "driving",
+    "example": "父は毎日車を運転します。"
+  },
+  {
+    "source_no": 842,
+    "word": "花火",
+    "reading": "はなび",
+    "meaning": "fireworks",
+    "example": "夏祭りで花火を見ました。"
+  },
+  {
+    "source_no": 843,
+    "word": "考える",
+    "reading": "かんがえる",
+    "meaning": "to think; consider",
+    "example": "もう少し考えます。"
+  },
+  {
+    "source_no": 844,
+    "word": "病院",
+    "reading": "びょういん",
+    "meaning": "hospital",
+    "example": "病院へ行きました。"
+  },
+  {
+    "source_no": 845,
+    "word": "登る",
+    "reading": "のぼる",
+    "meaning": "to climb",
+    "example": "山に登りました。"
+  },
+  {
+    "source_no": 846,
+    "word": "文化",
+    "reading": "ぶんか",
+    "meaning": "culture",
+    "example": "日本の文化を学びます。"
+  },
+  {
+    "source_no": 847,
+    "word": "送る",
+    "reading": "おくる",
+    "meaning": "to send; see off",
+    "example": "荷物を送ります。"
+  },
+  {
+    "source_no": 848,
+    "word": "約",
+    "reading": "やく",
+    "meaning": "about; approximately",
+    "example": "約10分かかります。"
+  },
+  {
+    "source_no": 849,
+    "word": "強い",
+    "reading": "つよい",
+    "meaning": "strong",
+    "example": "風が強いです。"
+  },
+  {
+    "source_no": 850,
+    "word": "発表",
+    "reading": "はっぴょう",
+    "meaning": "presentation; announcement",
+    "example": "授業で発表しました。"
+  },
+  {
+    "source_no": 851,
+    "word": "遠い",
+    "reading": "とおい",
+    "meaning": "far",
+    "example": "駅はここから遠いです。"
+  },
+  {
+    "source_no": 852,
+    "word": "決める",
+    "reading": "きめる",
+    "meaning": "to decide",
+    "example": "日にちを決めました。"
+  },
+  {
+    "source_no": 853,
+    "word": "銀行",
+    "reading": "ぎんこう",
+    "meaning": "bank",
+    "example": "銀行でお金を下ろします。"
+  },
+  {
+    "source_no": 854,
+    "word": "楽しい",
+    "reading": "たのしい",
+    "meaning": "enjoyable; fun",
+    "example": "旅行は楽しかったです。"
+  },
+  {
+    "source_no": 855,
+    "word": "読書",
+    "reading": "どくしょ",
+    "meaning": "reading books",
+    "example": "趣味は読書です。"
+  },
+  {
+    "source_no": 856,
+    "word": "事故",
+    "reading": "じこ",
+    "meaning": "accident",
+    "example": "道で事故がありました。"
+  },
+  {
+    "source_no": 857,
+    "word": "変わる",
+    "reading": "かわる",
+    "meaning": "to change",
+    "example": "天気が変わりました。"
+  },
+  {
+    "source_no": 858,
+    "word": "自然",
+    "reading": "しぜん",
+    "meaning": "nature",
+    "example": "日本の自然が好きです。"
+  },
+  {
+    "source_no": 859,
+    "word": "買い物",
+    "reading": "かいもの",
+    "meaning": "shopping",
+    "example": "週末に買い物をします。"
+  },
+  {
+    "source_no": 860,
+    "word": "頑張る",
+    "reading": "がんばる",
+    "meaning": "to do one's best",
+    "example": "試験のために頑張ります。"
+  },
+  {
+    "source_no": 861,
+    "word": "景色",
+    "reading": "けしき",
+    "meaning": "scenery; view",
+    "example": "山の景色がきれいです。"
+  },
+  {
+    "source_no": 862,
+    "word": "忘れる",
+    "reading": "わすれる",
+    "meaning": "to forget",
+    "example": "財布を忘れました。"
+  },
+  {
+    "source_no": 863,
+    "word": "必ず",
+    "reading": "かならず",
+    "meaning": "certainly; without fail",
+    "example": "必ず連絡してください。"
+  },
+  {
+    "source_no": 864,
+    "word": "準備",
+    "reading": "じゅんび",
+    "meaning": "preparation",
+    "example": "旅行の準備をします。"
+  },
+  {
+    "source_no": 865,
+    "word": "悪い",
+    "reading": "わるい",
+    "meaning": "bad",
+    "example": "天気が悪いです。"
+  },
+  {
+    "source_no": 866,
+    "word": "開ける",
+    "reading": "あける",
+    "meaning": "to open",
+    "example": "窓を開けます。"
+  },
+  {
+    "source_no": 867,
+    "word": "信号",
+    "reading": "しんごう",
+    "meaning": "traffic light; signal",
+    "example": "信号を渡ります。"
+  },
+  {
+    "source_no": 868,
+    "word": "遊ぶ",
+    "reading": "あそぶ",
+    "meaning": "to play; spend time",
+    "example": "友達と遊びました。"
+  },
+  {
+    "source_no": 869,
+    "word": "生活",
+    "reading": "せいかつ",
+    "meaning": "life; living",
+    "example": "日本の生活に慣れました。"
+  },
+  {
+    "source_no": 870,
+    "word": "知らせる",
+    "reading": "しらせる",
+    "meaning": "to inform",
+    "example": "予定を知らせます。"
+  },
+  {
+    "source_no": 871,
+    "word": "近い",
+    "reading": "ちかい",
+    "meaning": "near",
+    "example": "駅は近いです。"
+  },
+  {
+    "source_no": 872,
+    "word": "説明",
+    "reading": "せつめい",
+    "meaning": "explanation",
+    "example": "先生が説明しました。"
+  },
+  {
+    "source_no": 873,
+    "word": "眠る",
+    "reading": "ねむる",
+    "meaning": "to sleep",
+    "example": "子供が眠っています。"
+  },
+  {
+    "source_no": 874,
+    "word": "受ける",
+    "reading": "うける",
+    "meaning": "to receive; take",
+    "example": "試験を受けます。"
+  },
+  {
+    "source_no": 875,
+    "word": "青い",
+    "reading": "あおい",
+    "meaning": "blue",
+    "example": "青い空が見えます。"
+  },
+  {
+    "source_no": 876,
+    "word": "集める",
+    "reading": "あつめる",
+    "meaning": "to collect",
+    "example": "切手を集めています。"
+  },
+  {
+    "source_no": 877,
+    "word": "理由",
+    "reading": "りゆう",
+    "meaning": "reason",
+    "example": "遅れた理由を説明しました。"
+  },
+  {
+    "source_no": 878,
+    "word": "直す",
+    "reading": "なおす",
+    "meaning": "to fix; correct",
+    "example": "自転車を直します。"
+  },
+  {
+    "source_no": 879,
+    "word": "広い",
+    "reading": "ひろい",
+    "meaning": "wide; spacious",
+    "example": "この部屋は広いです。"
+  },
+  {
+    "source_no": 880,
+    "word": "約束する",
+    "reading": "やくそくする",
+    "meaning": "to promise",
+    "example": "明日会うと約束しました。"
+  },
+  {
+    "source_no": 881,
+    "word": "音楽",
+    "reading": "おんがく",
+    "meaning": "music",
+    "example": "音楽を聞くのが好きです。"
+  },
+  {
+    "source_no": 882,
+    "word": "選ぶ",
+    "reading": "えらぶ",
+    "meaning": "to choose",
+    "example": "好きな物を選びます。"
+  },
+  {
+    "source_no": 883,
+    "word": "痛い",
+    "reading": "いたい",
+    "meaning": "painful",
+    "example": "足が痛いです。"
+  },
+  {
+    "source_no": 884,
+    "word": "研究",
+    "reading": "けんきゅう",
+    "meaning": "research",
+    "example": "日本の歴史を研究しています。"
+  },
+  {
+    "source_no": 885,
+    "word": "間違える",
+    "reading": "まちがえる",
+    "meaning": "to make a mistake",
+    "example": "漢字を間違えました。"
+  },
+  {
+    "source_no": 886,
+    "word": "暑い",
+    "reading": "あつい",
+    "meaning": "hot (weather)",
+    "example": "夏は暑いです。"
+  },
+  {
+    "source_no": 887,
+    "word": "参加",
+    "reading": "さんか",
+    "meaning": "participation",
+    "example": "日本語の授業に参加してください 。"
+  },
+  {
+    "source_no": 888,
+    "word": "安心",
+    "reading": "あんしん",
+    "meaning": "relief; peace of mind",
+    "example": "無事だと聞いて安心しました。"
+  },
+  {
+    "source_no": 891,
+    "word": "運ぶ",
+    "reading": "はこぶ",
+    "meaning": "to carry; transport",
+    "example": "荷物を部屋まで運びます。"
+  },
+  {
+    "source_no": 892,
+    "word": "伝える",
+    "reading": "つたえる",
+    "meaning": "to tell; convey",
+    "example": "先生に気持ちを伝えました。"
+  },
+  {
+    "source_no": 893,
+    "word": "返事",
+    "reading": "へんじ",
+    "meaning": "reply; answer",
+    "example": "メールの返事を書きます。"
+  },
+  {
+    "source_no": 894,
+    "word": "若い",
+    "reading": "わかい",
+    "meaning": "young",
+    "example": "彼はまだ若いです。"
+  },
+  {
+    "source_no": 895,
+    "word": "冷たい",
+    "reading": "つめたい",
+    "meaning": "cold",
+    "example": "冷たい水を飲みます。"
+  },
+  {
+    "source_no": 896,
+    "word": "関係する",
+    "reading": "かんけいする",
+    "meaning": "to relate; be connected",
+    "example": "仕事に関係しています。"
+  },
+  {
+    "source_no": 897,
+    "word": "始める",
+    "reading": "はじめる",
+    "meaning": "to start",
+    "example": "日本語の勉強を始めました。"
+  },
+  {
+    "source_no": 898,
+    "word": "覚える",
+    "reading": "おぼえる",
+    "meaning": "to remember; memorize",
+    "example": "新しい漢字を覚えます。"
+  },
+  {
+    "source_no": 899,
+    "word": "特別",
+    "reading": "とくべつ",
+    "meaning": "special",
+    "example": "今日は特別な日です。"
+  },
+  {
+    "source_no": 900,
+    "word": "変える",
+    "reading": "かえる",
+    "meaning": "to change something",
+    "example": "予定を変えました。"
+  },
+  {
+    "source_no": 901,
+    "word": "貸す",
+    "reading": "かす",
+    "meaning": "to lend",
+    "example": "友達に本を貸しました。"
+  },
+  {
+    "source_no": 902,
+    "word": "答える",
+    "reading": "こたえる",
+    "meaning": "to answer",
+    "example": "質問に答えてください。"
+  },
+  {
+    "source_no": 903,
+    "word": "必要性",
+    "reading": "ひつようせい",
+    "meaning": "necessity",
+    "example": "勉強の必要性を感じます。"
+  },
+  {
+    "source_no": 904,
+    "word": "緑",
+    "reading": "みどり",
+    "meaning": "green",
+    "example": "山は緑が多いです。"
+  },
+  {
+    "source_no": 905,
+    "word": "決定",
+    "reading": "けってい",
+    "meaning": "decision",
+    "example": "旅行の日を決定しました。"
+  },
+  {
+    "source_no": 906,
+    "word": "急ぐ",
+    "reading": "いそぐ",
+    "meaning": "to hurry",
+    "example": "駅まで急ぎます。"
+  },
+  {
+    "source_no": 907,
+    "word": "写す",
+    "reading": "うつす",
+    "meaning": "to copy",
+    "example": "黒板の字を写します。"
+  },
+  {
+    "source_no": 908,
+    "word": "重い",
+    "reading": "おもい",
+    "meaning": "heavy",
+    "example": "この荷物は重いです。"
+  },
+  {
+    "source_no": 909,
+    "word": "調べる",
+    "reading": "しらべる",
+    "meaning": "to check; investigate",
+    "example": "辞書で調べます。"
+  },
+  {
+    "source_no": 910,
+    "word": "集まる",
+    "reading": "あつまる",
+    "meaning": "to gather",
+    "example": "駅に人が集まりました。"
+  },
+  {
+    "source_no": 911,
+    "word": "元気",
+    "reading": "げんき",
+    "meaning": "healthy; energetic",
+    "example": "今日は元気です。"
+  },
+  {
+    "source_no": 912,
+    "word": "泊まる",
+    "reading": "とまる",
+    "meaning": "to stay overnight",
+    "example": "ホテルに泊まります。"
+  },
+  {
+    "source_no": 913,
+    "word": "利用",
+    "reading": "りよう",
+    "meaning": "use; utilization",
+    "example": "電車を利用します。"
+  },
+  {
+    "source_no": 914,
+    "word": "下げる",
+    "reading": "さげる",
+    "meaning": "to lower",
+    "example": "温度を下げます。"
+  },
+  {
+    "source_no": 915,
+    "word": "上げる",
+    "reading": "あげる",
+    "meaning": "to raise",
+    "example": "声を上げてください。"
+  },
+  {
+    "source_no": 916,
+    "word": "残る",
+    "reading": "のこる",
+    "meaning": "to remain",
+    "example": "少し時間が残っています。"
+  },
+  {
+    "source_no": 917,
+    "word": "残す",
+    "reading": "のこす",
+    "meaning": "to leave; save",
+    "example": "食べ物を残さないでください。"
+  },
+  {
+    "source_no": 918,
+    "word": "失敗",
+    "reading": "しっぱい",
+    "meaning": "failure; mistake",
+    "example": "失敗から学びます。"
+  },
+  {
+    "source_no": 919,
+    "word": "成功",
+    "reading": "せいこう",
+    "meaning": "success",
+    "example": "計画が成功しました。"
+  }
+]

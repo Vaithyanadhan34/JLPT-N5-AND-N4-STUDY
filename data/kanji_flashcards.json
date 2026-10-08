@@ -1,0 +1,3857 @@
+[
+  {
+    "character": "四",
+    "source": "JK4B Flashcard",
+    "card": 4,
+    "strokes": 5,
+    "reading_info": "シ SHI, よ yo, よ(つ) yo(tsu),  / よっ(つ) yot(tsu), よん yon Four よん、し  / yon, shi  / four / よにん  / yonin   / four people / よじ  / yoji   / four o’clock / しがつ  / shigatsu  / April / しこく   / shikoku   / Shikoku Island",
+    "vocabulary_text": "よん、し  / yon, shi  / four / よにん  / yonin   / four people / よじ  / yoji   / four o’clock / しがつ  / shigatsu  / April / しこく   / shikoku   / Shikoku Island",
+    "page": 1
+  },
+  {
+    "character": "五",
+    "source": "JK4B Flashcard",
+    "card": 5,
+    "strokes": 4,
+    "reading_info": "ゴ GO, いつ itsu,  / いつ(つ) itsu(tsu) Five ご   / go   / ﬁ ve  / ごがつ  / gogatsu  / May / ごばんめ  / gobanme  / 5th / いつか  / itsuka  / 5th day of the month / いつつ  / itsutsu  / ﬁ ve things",
+    "vocabulary_text": "ご   / go   / ﬁ ve  / ごがつ  / gogatsu  / May / ごばんめ  / gobanme  / 5th / いつか  / itsuka  / 5th day of the month / いつつ  / itsutsu  / ﬁ ve things",
+    "page": 1
+  },
+  {
+    "character": "六",
+    "source": "JK4B Flashcard",
+    "card": 6,
+    "strokes": 4,
+    "reading_info": "ロク ROKU, む mu, むつ  / mutsu, むっ(つ) mut(tsu),  / むい mui Six ろく   / roku  / six / ろくがつ  / rokugatsu   / June / ろくばんめ  / rokubanme  / 6th / むっつ  / muttsu  / six things / むいか   / muika   / 6th day of the month",
+    "vocabulary_text": "ろく   / roku  / six / ろくがつ  / rokugatsu   / June / ろくばんめ  / rokubanme  / 6th / むっつ  / muttsu  / six things / むいか   / muika   / 6th day of the month",
+    "page": 1
+  },
+  {
+    "character": "七",
+    "source": "JK4B Flashcard",
+    "card": 7,
+    "strokes": 2,
+    "reading_info": "Seven なな、しち   / nana, shichi  / seven  / ななじゅう  / nanajū  / seventy / ななひゃくえん  / nanahyaku en  / 700 yen / しちごさん  / shichigosan  / 7-5-3 Festival / なのか  / nanoka  / 7th day of  /   /   /  the month / ななつ  / nanatsu  / seven things",
+    "vocabulary_text": "",
+    "page": 1
+  },
+  {
+    "character": "八",
+    "source": "JK4B Flashcard",
+    "card": 8,
+    "strokes": 2,
+    "reading_info": "ハチ HACHI, や ya, や(つ)  / ya(tsu), やっ(つ) yat(tsu),  / よう yō Eight はち   / hachi  / eight / ようか  / yōka   / 8th day of the month / はっぷん  / happun  / eight minutes / おやつ  / oyatsu  / between-meal snack / やおや   / yaoya   / vegetable stand",
+    "vocabulary_text": "はち   / hachi  / eight / ようか  / yōka   / 8th day of the month / はっぷん  / happun  / eight minutes / おやつ  / oyatsu  / between-meal snack / やおや   / yaoya   / vegetable stand",
+    "page": 1
+  },
+  {
+    "character": "九",
+    "source": "JK4B Flashcard",
+    "card": 9,
+    "strokes": 2,
+    "reading_info": "キュウ KYŪ, ク KU,  / ここの kokono,  / ここの(つ) kokono(tsu) Nine きゅう、く   / kyū, ku   / nine / きゅうにん  / kyūnin  / nine people / くがつ  / kugatsu  / September / ここのか  / kokonoka  / 9th day of the month / きゅうしゅう  / kyūshū  / Kyushu Island",
+    "vocabulary_text": "きゅう、く   / kyū, ku   / nine / きゅうにん  / kyūnin  / nine people / くがつ  / kugatsu  / September / ここのか  / kokonoka  / 9th day of the month / きゅうしゅう  / kyūshū  / Kyushu Island",
+    "page": 1
+  },
+  {
+    "character": "十",
+    "source": "JK4B Flashcard",
+    "card": 10,
+    "strokes": 2,
+    "reading_info": "ジュウ JŪ, ジッ JIT,  / とお to, と to Ten じゅう  / jū  / ten / じゅうえん  / jū en   / ten yen / じゅうがつ  / jūgatsu   / October / じゅっぷん/ juppun/jippun 10 minutes /  じっぷん / とおか   / tōka   / 10th day of the month",
+    "vocabulary_text": "じゅう  / jū  / ten / じゅうえん  / jū en   / ten yen / じゅうがつ  / jūgatsu   / October / じゅっぷん/ juppun/jippun 10 minutes /  じっぷん / とおか   / tōka   / 10th day of the month",
+    "page": 1
+  },
+  {
+    "character": "百",
+    "source": "JK4B Flashcard",
+    "card": 11,
+    "strokes": 6,
+    "reading_info": "ヒャク HYAKU Hundred ひゃく   / hyaku   / 100  / さんびゃく  / sanbyaku  / 300 / はっぴゃく  / happyaku  / 800 / ひゃくえん  / hyaku en  / 100 yen / ひゃくねん  / hyakunen  / century, 100 years",
+    "vocabulary_text": "ひゃく   / hyaku   / 100  / さんびゃく  / sanbyaku  / 300 / はっぴゃく  / happyaku  / 800 / ひゃくえん  / hyaku en  / 100 yen / ひゃくねん  / hyakunen  / century, 100 years",
+    "page": 1
+  },
+  {
+    "character": "千",
+    "source": "JK4B Flashcard",
+    "card": 12,
+    "strokes": 3,
+    "reading_info": "セン SEN, ち chi Thousand せん  / sen  / 1,000 / にせん  / nisen   / 2,000 / さんぜん  / sanzen   / 3,000 / なんぜん  / nanzen  / how many thousand? / せんえん   / sen en   / 1,000 yen",
+    "vocabulary_text": "せん  / sen  / 1,000 / にせん  / nisen   / 2,000 / さんぜん  / sanzen   / 3,000 / なんぜん  / nanzen  / how many thousand? / せんえん   / sen en   / 1,000 yen",
+    "page": 1
+  },
+  {
+    "character": "万",
+    "source": "JK4B Flashcard",
+    "card": 13,
+    "strokes": 3,
+    "reading_info": "マン MAN, バン BAN Ten thousand いちまん   / ichiman   / ten thousand  / じゅうまん  / jūman  / hundred thousand / ひゃくまん  / hyakuman  / one million / まんがいち  / mangaichi  / by some chance",
+    "vocabulary_text": "いちまん   / ichiman   / ten thousand  / じゅうまん  / jūman  / hundred thousand / ひゃくまん  / hyakuman  / one million / まんがいち  / mangaichi  / by some chance",
+    "page": 1
+  },
+  {
+    "character": "円",
+    "source": "JK4B Flashcard",
+    "card": 14,
+    "strokes": 4,
+    "reading_info": "エン EN, まる(い) maru(i) Yen (currency of Japan); / round えん   / en  / yen, circle / いちえん  / ichi en   / 1 yen / じゅうえん  / jū en   / 10 yen / ひゃくえん  / hyaku en  / 100 yen / いちまんえん  / ichiman en   / 10,000 yen",
+    "vocabulary_text": "えん   / en  / yen, circle / いちえん  / ichi en   / 1 yen / じゅうえん  / jū en   / 10 yen / ひゃくえん  / hyaku en  / 100 yen / いちまんえん  / ichiman en   / 10,000 yen",
+    "page": 1
+  },
+  {
+    "character": "日",
+    "source": "JK4B Flashcard",
+    "card": 15,
+    "strokes": 4,
+    "reading_info": "ニチ NICHI, ジツ JITSU,  / ひ hi, か ka Sun, day, Sunday ひ   / hi   / day  / ふつか  / futsuka  / 2nd day of  the month / にほん  / nihon  / Japan / にちようび  / nichiyōbi  / Sunday / きゅうじつ  / kyūjitsu  / holiday, day off / きょう*  / kyō  / today",
+    "vocabulary_text": "ひ   / hi   / day  / ふつか  / futsuka  / 2nd day of  the month / にほん  / nihon  / Japan / にちようび  / nichiyōbi  / Sunday / きゅうじつ  / kyūjitsu  / holiday, day off / きょう*  / kyō  / today",
+    "page": 1
+  },
+  {
+    "character": "月",
+    "source": "JK4B Flashcard",
+    "card": 16,
+    "strokes": 4,
+    "reading_info": "ゲツ GETSU, ガツ GATSU,  / つき tsuki Moon, month, Monday つき  / tsuki  / moon / げつようび  / getsuyōbi   / Monday / こんげつ  / kongetsu   / this month / いちがつ  / ichigatsu  / January / なんがつ   / nangatsu   / what month / いっかげつ   / ikkagetsu   / one month / せいねんがっぴ   / seinengappi  / date of birth",
+    "vocabulary_text": "",
+    "page": 2
+  },
+  {
+    "character": "火",
+    "source": "JK4B Flashcard",
+    "card": 17,
+    "strokes": 4,
+    "reading_info": "カ KA, ひ hi Fire, Tuesday ひ   / hi   / ﬁ re, ﬂ ame  / はなび  / hanabi  / ﬁ reworks / かようび  / kayōbi  / Tuesday / かじ  / kaji  / (destructive) ﬁ re / かざん  / kazan  / volcano",
+    "vocabulary_text": "ひ   / hi   / ﬁ re, ﬂ ame  / はなび  / hanabi  / ﬁ reworks / かようび  / kayōbi  / Tuesday / かじ  / kaji  / (destructive) ﬁ re / かざん  / kazan  / volcano",
+    "page": 2
+  },
+  {
+    "character": "水",
+    "source": "JK4B Flashcard",
+    "card": 18,
+    "strokes": 4,
+    "reading_info": "スイ SUI, みず mizu Water, Wednesday みず   / mizu  / water / みずぎ  / mizugi   / swimsuit / すいようび  / suiyōbi   / Wednesday / すいぞくかん  / suizokukan  / aquarium",
+    "vocabulary_text": "みず   / mizu  / water / みずぎ  / mizugi   / swimsuit / すいようび  / suiyōbi   / Wednesday / すいぞくかん  / suizokukan  / aquarium",
+    "page": 2
+  },
+  {
+    "character": "木",
+    "source": "JK4B Flashcard",
+    "card": 19,
+    "strokes": 4,
+    "reading_info": "ボク BOKU, モク MOKU,  / き ki, こ ko Tree, wood, Thursday き   / ki   / tree, wood  / もくようび  / mokuyōbi  / Thursday / もくせい  / mokusei  / made of wood / さくらのき  / sakura no ki  / cherry tree",
+    "vocabulary_text": "き   / ki   / tree, wood  / もくようび  / mokuyōbi  / Thursday / もくせい  / mokusei  / made of wood / さくらのき  / sakura no ki  / cherry tree",
+    "page": 2
+  },
+  {
+    "character": "土",
+    "source": "JK4B Flashcard",
+    "card": 20,
+    "strokes": 3,
+    "reading_info": "ド DO, ト TO, つち tsuchi Earth, ground, Saturday つち  / tsuchi  / earth, soil / どようび  / doyōbi   / Saturday / どそく  / dosoku   / with one’s shoes on / おみやげ*  / omiyage  / present, souvenir",
+    "vocabulary_text": "つち  / tsuchi  / earth, soil / どようび  / doyōbi   / Saturday / どそく  / dosoku   / with one’s shoes on / おみやげ*  / omiyage  / present, souvenir",
+    "page": 2
+  },
+  {
+    "character": "王",
+    "source": "JK4B Flashcard",
+    "card": 21,
+    "strokes": 4,
+    "reading_info": "オウ Ō King おう   / ō   / king  / おうじ  / ōji  / prince / おうじょ  / ōjo  / princess / じょおう  / joō  / queen",
+    "vocabulary_text": "おう   / ō   / king  / おうじ  / ōji  / prince / おうじょ  / ōjo  / princess / じょおう  / joō  / queen",
+    "page": 2
+  },
+  {
+    "character": "金",
+    "source": "JK4B Flashcard",
+    "card": 22,
+    "strokes": 8,
+    "reading_info": "キン KIN, コン KON,  / かね kane, かな kana Gold, money, metal, Friday おかね   / okane  / money / かねもち  / kanemochi   / rich person / かなもの  / kanamono   / hardware / きん  / kin  / gold / きんいろ   / kiniro   / gold color / きんぎょ   / kingyo   / goldﬁ sh",
+    "vocabulary_text": "おかね   / okane  / money / かねもち  / kanemochi   / rich person / かなもの  / kanamono   / hardware / きん  / kin  / gold / きんいろ   / kiniro   / gold color / きんぎょ   / kingyo   / goldﬁ sh",
+    "page": 2
+  },
+  {
+    "character": "山",
+    "source": "JK4B Flashcard",
+    "card": 23,
+    "strokes": 3,
+    "reading_info": "サン SAN, やま yama Mountain やま   / yama   / mountain  / ふじさん  / fujisan  / Mount Fuji / やまやま  / yamayama  / a lot/many mountains / やまもり  / yamamori  / a heap",
+    "vocabulary_text": "やま   / yama   / mountain  / ふじさん  / fujisan  / Mount Fuji / やまやま  / yamayama  / a lot/many mountains / やまもり  / yamamori  / a heap",
+    "page": 2
+  },
+  {
+    "character": "田",
+    "source": "JK4B Flashcard",
+    "card": 24,
+    "strokes": 5,
+    "reading_info": "デン DEN, た ta Rice ﬁ eld たんぼ　   / tanbo　  / rice ﬁ eld",
+    "vocabulary_text": "たんぼ　   / tanbo　  / rice ﬁ eld",
+    "page": 2
+  },
+  {
+    "character": "川",
+    "source": "JK4B Flashcard",
+    "card": 25,
+    "strokes": 3,
+    "reading_info": "セン SEN, かわ kawa River かわ   / kawa   / river  / おがわ  / ogawa  / brook, stream / 〜かわ/がわ  / ~kawa/gawa  / sufﬁ x for rivers",
+    "vocabulary_text": "かわ   / kawa   / river  / おがわ  / ogawa  / brook, stream / 〜かわ/がわ  / ~kawa/gawa  / sufﬁ x for rivers",
+    "page": 2
+  },
+  {
+    "character": "人",
+    "source": "JK4B Flashcard",
+    "card": 26,
+    "strokes": 2,
+    "reading_info": "ジン JIN, ニン NIN, ひと hito Person ひと   / hito   / person  / 〜にん  / ~nin  / counter for people / にんきがある  / ninki ga aru  / popular / にほんじん  / nihonjin  / Japanese person / じんせい  / jinsei  / life",
+    "vocabulary_text": "ひと   / hito   / person  / 〜にん  / ~nin  / counter for people / にんきがある  / ninki ga aru  / popular / にほんじん  / nihonjin  / Japanese person / じんせい  / jinsei  / life",
+    "page": 2
+  },
+  {
+    "character": "力",
+    "source": "JK4B Flashcard",
+    "card": 27,
+    "strokes": 2,
+    "reading_info": "リョク RYOKU, リキ RIKI,  / ちから chikara Power ちから   / chikara  / power / ちからもち  / chikaramochi   / strong person / ちからづよい  / chikarazuyoi   / powerful / ちからづける  / chikarazukeru  / to encourage / りきし   / rikishi   / sumo wrestler",
+    "vocabulary_text": "ちから   / chikara  / power / ちからもち  / chikaramochi   / strong person / ちからづよい  / chikarazuyoi   / powerful / ちからづける  / chikarazukeru  / to encourage / りきし   / rikishi   / sumo wrestler",
+    "page": 2
+  },
+  {
+    "character": "男",
+    "source": "JK4B Flashcard",
+    "card": 28,
+    "strokes": 7,
+    "reading_info": "ダン DAN, ナン NAN,  / おとこ otoko Male おとこ   / otoko   / male  / おとこのひと  / otokonohito  / man / だんし  / danshi  / boy (formal) / だんしこう  / danshikō  / boys’ school / だんせい  / dansei  / man, male",
+    "vocabulary_text": "おとこ   / otoko   / male  / おとこのひと  / otokonohito  / man / だんし  / danshi  / boy (formal) / だんしこう  / danshikō  / boys’ school / だんせい  / dansei  / man, male",
+    "page": 2
+  },
+  {
+    "character": "父",
+    "source": "JK4B Flashcard",
+    "card": 29,
+    "strokes": 4,
+    "reading_info": "フ FU, ちち chichi Father おとうさん  / otōsan  / father / ちち  / chichi   / my father / ちちのひ  / chichi no hi   / Father’s Day / ふぼ  / fubo  / father and mother,  /   /   /  parents",
+    "vocabulary_text": "おとうさん  / otōsan  / father / ちち  / chichi   / my father / ちちのひ  / chichi no hi   / Father’s Day / ふぼ  / fubo  / father and mother,  /   /   /  parents",
+    "page": 2
+  },
+  {
+    "character": "女",
+    "source": "JK4B Flashcard",
+    "card": 30,
+    "strokes": 3,
+    "reading_info": "ジョ JO, ニョ NYO, ニョウ NYŌ,  / おんな onna, め me Female おんな   / onna   / female  / おんなのひと  / onnanohito  / woman / じょしこう  / joshikō  / girls’ school / だんじょ  / danjo  / men and women / じょせい  / josei  / woman, female",
+    "vocabulary_text": "おんな   / onna   / female  / おんなのひと  / onnanohito  / woman / じょしこう  / joshikō  / girls’ school / だんじょ  / danjo  / men and women / じょせい  / josei  / woman, female",
+    "page": 2
+  },
+  {
+    "character": "母",
+    "source": "JK4B Flashcard",
+    "card": 31,
+    "strokes": 5,
+    "reading_info": "ボ BO, はは haha Mother おかあさん   / okāsan  / mother / はは  / haha   / my mother / ははのひ  / haha no hi  / Mother’s Day / ぼこくご  / bokokugo  / one’s mother tongue",
+    "vocabulary_text": "おかあさん   / okāsan  / mother / はは  / haha   / my mother / ははのひ  / haha no hi  / Mother’s Day / ぼこくご  / bokokugo  / one’s mother tongue",
+    "page": 3
+  },
+  {
+    "character": "子",
+    "source": "JK4B Flashcard",
+    "card": 32,
+    "strokes": 3,
+    "reading_info": "シSHI, ス SU, こ ko Child こども   / kodomo   / child  / おとこのこ  / otokonoko  / boy / おんなのこ  / onnanoko  / girl / こいぬ  / koinu  / puppy / ひとりっこ  / hitorikko  / only child / ふたご  / futago  / twins",
+    "vocabulary_text": "こども   / kodomo   / child  / おとこのこ  / otokonoko  / boy / おんなのこ  / onnanoko  / girl / こいぬ  / koinu  / puppy / ひとりっこ  / hitorikko  / only child / ふたご  / futago  / twins",
+    "page": 3
+  },
+  {
+    "character": "好",
+    "source": "JK4B Flashcard",
+    "card": 33,
+    "strokes": 6,
+    "reading_info": "コウ KŌ, この(む) kono(mu),  / す(き) su(ki), す(く) su(ku) To like すきな   / suki na  / like,  /   /   /  favorable (adj.) / おこのみやき  / okonomiyaki   / savory hotcakes",
+    "vocabulary_text": "すきな   / suki na  / like,  /   /   /  favorable (adj.) / おこのみやき  / okonomiyaki   / savory hotcakes",
+    "page": 3
+  },
+  {
+    "character": "方",
+    "source": "JK4B Flashcard",
+    "card": 34,
+    "strokes": 4,
+    "reading_info": "ホウ HŌ, かた kata Person (polite),  / this one, direction このかた   / kono kata   / this person (polite) / しかた  / shikata  / how to do / ゆうがた  / yūgata  / early evening / ほうめん  / hōmen  / direction / りょうほう  / ryōhō  / both",
+    "vocabulary_text": "このかた   / kono kata   / this person (polite) / しかた  / shikata  / how to do / ゆうがた  / yūgata  / early evening / ほうめん  / hōmen  / direction / りょうほう  / ryōhō  / both",
+    "page": 3
+  },
+  {
+    "character": "々",
+    "source": "JK4B Flashcard",
+    "card": 35,
+    "strokes": 3,
+    "reading_info": "Noun pluralizer いちにち   / ichinichi  / one by one, separately / ひび  / hibi   / daily, day after day / つきづき  / tsukizuki   / every month / ひとびと  / hitobito  / people, each person / かたがた   / katagata   / people (honoriﬁ c)",
+    "vocabulary_text": "いちにち   / ichinichi  / one by one, separately / ひび  / hibi   / daily, day after day / つきづき  / tsukizuki   / every month / ひとびと  / hitobito  / people, each person / かたがた   / katagata   / people (honoriﬁ c)",
+    "page": 3
+  },
+  {
+    "character": "小",
+    "source": "JK4B Flashcard",
+    "card": 36,
+    "strokes": 3,
+    "reading_info": "ショウ SHŌ, ちい(さい)  / chii(sai), こ ko, お o Small ちいさい   / chiisai  / small / ちいさな  / chiisana  / small (alt. spelling) / しょうがくせい  / shōgakusei  / elementary student / しょうがっこう  / shōgakkō  / elementary school",
+    "vocabulary_text": "ちいさい   / chiisai  / small / ちいさな  / chiisana  / small (alt. spelling) / しょうがくせい  / shōgakusei  / elementary student / しょうがっこう  / shōgakkō  / elementary school",
+    "page": 3
+  },
+  {
+    "character": "少",
+    "source": "JK4B Flashcard",
+    "card": 37,
+    "strokes": 4,
+    "reading_info": "ショウ SHŌ, すく(ない)  / suku(nai), すこ(し) suko(shi) Few すこし  / sukoshi  / few, a little [adj.] / すくない  / sukunai   / few, a little / すくなくとも  / sukunakutomo  at least / しょうねん  / shōnen  / young man / しょうじょ   / shōjo   / young woman",
+    "vocabulary_text": "すこし  / sukoshi  / few, a little [adj.] / すくない  / sukunai   / few, a little / すくなくとも  / sukunakutomo  at least / しょうねん  / shōnen  / young man / しょうじょ   / shōjo   / young woman",
+    "page": 3
+  },
+  {
+    "character": "中",
+    "source": "JK4B Flashcard",
+    "card": 38,
+    "strokes": 4,
+    "reading_info": "チュウ CHŪ, ジュウ JŪ,  / なか naka Middle なか   / naka   / middle, inside, medium  / ちゅうごく  / chūgoku  / China / ちゅうがっこう chūgakkō  / junior high / ちゅうこ  / chūko  / used / いちにちじゅう ichinichijū  / all day long",
+    "vocabulary_text": "なか   / naka   / middle, inside, medium  / ちゅうごく  / chūgoku  / China / ちゅうがっこう chūgakkō  / junior high / ちゅうこ  / chūko  / used / いちにちじゅう ichinichijū  / all day long",
+    "page": 3
+  },
+  {
+    "character": "大",
+    "source": "JK4B Flashcard",
+    "card": 39,
+    "strokes": 3,
+    "reading_info": "Big おおきい  / ōkii  / big / おおきな  / ōkina  / big (alt. spelling) / だいすきな  / daisuki na   / like a lot, love / だいがく  / daigaku   / university, college / だいじな  / daiji na  / important / たいしかん   / taishikan   / embassy / おとな  / otona   / adult",
+    "vocabulary_text": "",
+    "page": 3
+  },
+  {
+    "character": "夕",
+    "source": "JK4B Flashcard",
+    "card": 40,
+    "strokes": 3,
+    "reading_info": "セキ SEKI, ゆう yū Early evening ゆうべ   / yūbe   / last evening  / ゆうがた  / yūgata  / evening / ゆうしょく  / yūshoku  / dinner / たなばた  / tanabata  / the Star Festival",
+    "vocabulary_text": "ゆうべ   / yūbe   / last evening  / ゆうがた  / yūgata  / evening / ゆうしょく  / yūshoku  / dinner / たなばた  / tanabata  / the Star Festival",
+    "page": 3
+  },
+  {
+    "character": "多",
+    "source": "JK4B Flashcard",
+    "card": 41,
+    "strokes": 6,
+    "reading_info": "タ TA, おおい ōi Many おおい  / ōi  / many / たすう  / tasū   / large number, multitude / たぶん  / tabun   / probably, maybe / たしょう  / tashō  / somewhat, more or less / たもくてき   / tamokuteki   / multipurpose",
+    "vocabulary_text": "おおい  / ōi  / many / たすう  / tasū   / large number, multitude / たぶん  / tabun   / probably, maybe / たしょう  / tashō  / somewhat, more or less / たもくてき   / tamokuteki   / multipurpose",
+    "page": 3
+  },
+  {
+    "character": "内",
+    "source": "JK4B Flashcard",
+    "card": 42,
+    "strokes": 4,
+    "reading_info": "ナイ NAI, うち uchi Inside うち   / uchi   / inside, in  / おくない  / okunai  / indoor / こくない  / kokunai  / domestic / かない  / kanai  / my wife",
+    "vocabulary_text": "うち   / uchi   / inside, in  / おくない  / okunai  / indoor / こくない  / kokunai  / domestic / かない  / kanai  / my wife",
+    "page": 3
+  },
+  {
+    "character": "外",
+    "source": "JK4B Flashcard",
+    "card": 43,
+    "strokes": 5,
+    "reading_info": "ガイ GAI, ゲ GE, そと soto,  / ほか hoka, はず(す) hazu(su) Outside そと  / soto  / outside / がいこく  / gaikoku   / foreign country / がいこくご  / gaikokugo   / foreign language / かいがい  / kaigai  / overseas",
+    "vocabulary_text": "そと  / soto  / outside / がいこく  / gaikoku   / foreign country / がいこくご  / gaikokugo   / foreign language / かいがい  / kaigai  / overseas",
+    "page": 3
+  },
+  {
+    "character": "上",
+    "source": "JK4B Flashcard",
+    "card": 44,
+    "strokes": 3,
+    "reading_info": "ジョウ JŌ, うえ ue, かみ  / kami, あ(がる) a(garu),  / のぼ(る) nobo(ru) Up, above, on うえ   / ue   / up, above, on  / めうえ  / meue  / superior, senior / あがる  / agaru  / to enter, to rise / じょうずな  / jōzu na  / good at",
+    "vocabulary_text": "うえ   / ue   / up, above, on  / めうえ  / meue  / superior, senior / あがる  / agaru  / to enter, to rise / じょうずな  / jōzu na  / good at",
+    "page": 3
+  },
+  {
+    "character": "下",
+    "source": "JK4B Flashcard",
+    "card": 45,
+    "strokes": 3,
+    "reading_info": "Down, below, under した  / shita  / down, below, under / おろす  / orosu   / to lower / おりる  / oriru   / to go down, get off / 〜ください  / ~kudasai  / please give / へたな   / heta na   / not good at",
+    "vocabulary_text": "した  / shita  / down, below, under / おろす  / orosu   / to lower / おりる  / oriru   / to go down, get off / 〜ください  / ~kudasai  / please give / へたな   / heta na   / not good at",
+    "page": 3
+  },
+  {
+    "character": "工",
+    "source": "JK4B Flashcard",
+    "card": 46,
+    "strokes": 3,
+    "reading_info": "コウ KŌ, ク KU Craft だいく   / daiku   / carpenter  / こうがくぶ  / kōgakubu  / engineering dept. / こうぎょう  / kōgyō  / industry / こうじ  / kōji  / construction / こうじょう  / kōjō  / factory",
+    "vocabulary_text": "だいく   / daiku   / carpenter  / こうがくぶ  / kōgakubu  / engineering dept. / こうぎょう  / kōgyō  / industry / こうじ  / kōji  / construction / こうじょう  / kōjō  / factory",
+    "page": 4
+  },
+  {
+    "character": "左",
+    "source": "JK4B Flashcard",
+    "card": 47,
+    "strokes": 5,
+    "reading_info": "サ SA, ひだり hidari Left ひだり  / hidari  / left / ひだりがわ  / hidari gawa   / left side / ひだりて  / hidari te   / left hand / ひだりきき  / hidari kiki  / left-handed / さゆう   / sayū   / left and right",
+    "vocabulary_text": "ひだり  / hidari  / left / ひだりがわ  / hidari gawa   / left side / ひだりて  / hidari te   / left hand / ひだりきき  / hidari kiki  / left-handed / さゆう   / sayū   / left and right",
+    "page": 4
+  },
+  {
+    "character": "右",
+    "source": "JK4B Flashcard",
+    "card": 48,
+    "strokes": 5,
+    "reading_info": "ウ U, ユウ YŪ, みぎ migi Right みぎ   / migi   / right  / みぎがわ  / migi gawa  / right side / みぎて  / migi te  / right hand / みぎきき  / migi kiki  / right-handed / さゆう  / sayū  / left and right",
+    "vocabulary_text": "みぎ   / migi   / right  / みぎがわ  / migi gawa  / right side / みぎて  / migi te  / right hand / みぎきき  / migi kiki  / right-handed / さゆう  / sayū  / left and right",
+    "page": 4
+  },
+  {
+    "character": "家",
+    "source": "JK4B Flashcard",
+    "card": 49,
+    "strokes": 10,
+    "reading_info": "カ KA, ケ KE, いえ ie, や ya House, home いえ, うち   / ie, uchi   / house, home  / かぞく  / kazoku  / family / かてい  / katei  / household / かけい  / kakei  / family ﬁ nances / さっか  / sakka  / writer, author / せんもんか  / senmonka  / specialist, expert",
+    "vocabulary_text": "いえ, うち   / ie, uchi   / house, home  / かぞく  / kazoku  / family / かてい  / katei  / household / かけい  / kakei  / family ﬁ nances / さっか  / sakka  / writer, author / せんもんか  / senmonka  / specialist, expert",
+    "page": 4
+  },
+  {
+    "character": "入",
+    "source": "JK4B Flashcard",
+    "card": 50,
+    "strokes": 2,
+    "reading_info": "ニュウ NYŪ, い(る) i(ru),  / い(れる) i(reru), はい(る)  / hai(ru) To enter いれる   / ireru  / to put in, insert / はいる  / hairu   / to enter / にゅうがくする  / nyūgaku suru   / to enroll at school / きにゅうする  / kinyū suru  / to write on a form",
+    "vocabulary_text": "いれる   / ireru  / to put in, insert / はいる  / hairu   / to enter / にゅうがくする  / nyūgaku suru   / to enroll at school / きにゅうする  / kinyū suru  / to write on a form",
+    "page": 4
+  },
+  {
+    "character": "出",
+    "source": "JK4B Flashcard",
+    "card": 51,
+    "strokes": 5,
+    "reading_info": "シュツ SHUTSU, スイ SUI,  / で(る) de(ru), だ(す) da(su) To exit でる   / deru   / to go out, depart  / できる  / dekiru  / can do, be made / だす  / dasu  / to put out, submit / がいしゅつ  / gaishutsu  / going out",
+    "vocabulary_text": "でる   / deru   / to go out, depart  / できる  / dekiru  / can do, be made / だす  / dasu  / to put out, submit / がいしゅつ  / gaishutsu  / going out",
+    "page": 4
+  },
+  {
+    "character": "門",
+    "source": "JK4B Flashcard",
+    "card": 52,
+    "strokes": 8,
+    "reading_info": "モン MON, かど kado Gate もん  / mon  / gate / せいもん  / seimon   / main gate/entrance / こうもん  / kōmon   / school gate / せんもん  / senmon  / specialty, profession",
+    "vocabulary_text": "もん  / mon  / gate / せいもん  / seimon   / main gate/entrance / こうもん  / kōmon   / school gate / せんもん  / senmon  / specialty, profession",
+    "page": 4
+  },
+  {
+    "character": "開",
+    "source": "JK4B Flashcard",
+    "card": 53,
+    "strokes": 12,
+    "reading_info": "カイ KAI, ひら(く) hira(ku),  / あ(く) a(ku), あ(ける) a(keru) To open あける   / akeru   / to open something  / あく  / aku  / something opens / ひらく  / hiraku  / to open, hold (meeting) / かいてん  / kaiten  / store opening / かいし  / kaishi  / start, beginning / かいかいしき kaikaishiki  / opening ceremony",
+    "vocabulary_text": "あける   / akeru   / to open something  / あく  / aku  / something opens / ひらく  / hiraku  / to open, hold (meeting) / かいてん  / kaiten  / store opening / かいし  / kaishi  / start, beginning / かいかいしき kaikaishiki  / opening ceremony",
+    "page": 4
+  },
+  {
+    "character": "閉",
+    "source": "JK4B Flashcard",
+    "card": 54,
+    "strokes": 11,
+    "reading_info": "ヘイ HEI, と(じる) to(jiru),  / し(める) shi(meru),  / し(まる) shi(maru) To close しめる   / shimeru  / to close something / しまる  / shimaru   / something closes / とじる  / tojiru  / to shut / へいかいしき  / heikaishiki  / closing ceremony / へいてん  / heiten  / closing shop",
+    "vocabulary_text": "しめる   / shimeru  / to close something / しまる  / shimaru   / something closes / とじる  / tojiru  / to shut / へいかいしき  / heikaishiki  / closing ceremony / へいてん  / heiten  / closing shop",
+    "page": 4
+  },
+  {
+    "character": "所",
+    "source": "JK4B Flashcard",
+    "card": 55,
+    "strokes": 8,
+    "reading_info": "ショ SHO, ところ tokoro Place ところ   / tokoro   / place  / ところどころ  / tokorodokoro  / here and there / だいどころ  / daidokoro  / kitchen / ばしょ  / basho  / location / めいしょ  / meisho  / famous place",
+    "vocabulary_text": "ところ   / tokoro   / place  / ところどころ  / tokorodokoro  / here and there / だいどころ  / daidokoro  / kitchen / ばしょ  / basho  / location / めいしょ  / meisho  / famous place",
+    "page": 4
+  },
+  {
+    "character": "近",
+    "source": "JK4B Flashcard",
+    "card": 56,
+    "strokes": 7,
+    "reading_info": "キン KIN, ちか(い) chika(i) Near ちかい   / chikai  / near, soon / ちかみち  / chikamichi   / shortcut / きんじょ  / kinjo   / neighborhood / きんだい  / kindai   / modern times / きんだいてき  / kindaiteki   / modern / さいきん  / saikin   / recent",
+    "vocabulary_text": "ちかい   / chikai  / near, soon / ちかみち  / chikamichi   / shortcut / きんじょ  / kinjo   / neighborhood / きんだい  / kindai   / modern times / きんだいてき  / kindaiteki   / modern / さいきん  / saikin   / recent",
+    "page": 4
+  },
+  {
+    "character": "口",
+    "source": "JK4B Flashcard",
+    "card": 57,
+    "strokes": 3,
+    "reading_info": "コウ KŌ, ク KU, くち kuchi,  / モク moku Mouth くち  / kuchi  / mouth, opening / いりぐち  / iriguchi   / entrance / でぐち  / deguchi   / exit / きたぐち  / kitaguchi  / north entrance / じんこう   / jinkō   / population",
+    "vocabulary_text": "くち  / kuchi  / mouth, opening / いりぐち  / iriguchi   / entrance / でぐち  / deguchi   / exit / きたぐち  / kitaguchi  / north entrance / じんこう   / jinkō   / population",
+    "page": 4
+  },
+  {
+    "character": "目",
+    "source": "JK4B Flashcard",
+    "card": 58,
+    "strokes": 5,
+    "reading_info": "ボク BOKU, モク moku,  / め me, ま ma Eye(s) め  / me  / eye, viewpoint / よっつめ  / yottsume   / fourth item / めうえ  / meue   / superior, senior / めした  / meshita  / inferior, junior / めだつ   / medatsu   / to be conspicuous / もくてき   / mokuteki   / goal, purpose",
+    "vocabulary_text": "め  / me  / eye, viewpoint / よっつめ  / yottsume   / fourth item / めうえ  / meue   / superior, senior / めした  / meshita  / inferior, junior / めだつ   / medatsu   / to be conspicuous / もくてき   / mokuteki   / goal, purpose",
+    "page": 4
+  },
+  {
+    "character": "耳",
+    "source": "JK4B Flashcard",
+    "card": 59,
+    "strokes": 6,
+    "reading_info": "ジ JI, みみ mimi Ear(s) みみ   / mimi  / ear  / みぎみみ  / migi mimi  / right ear / ひだりみみ  / hidari mimi  / left ear / みみがいたい  / mimi ga itai  / earache",
+    "vocabulary_text": "みみ   / mimi  / ear  / みぎみみ  / migi mimi  / right ear / ひだりみみ  / hidari mimi  / left ear / みみがいたい  / mimi ga itai  / earache",
+    "page": 4
+  },
+  {
+    "character": "手",
+    "source": "JK4B Flashcard",
+    "card": 60,
+    "strokes": 4,
+    "reading_info": "シュ SHU, て te, た ta Hand て  / te  / hand / てじな  / tejina   / magic trick / あいて  / aite   / partner, opponent / せんしゅ  / senshu  / athlete, player / じょうずな  / jōzu na   / good at / へたな  / heta na   / not good at, clumsy / にがてな   / nigate na   / not good at, dislike",
+    "vocabulary_text": "",
+    "page": 4
+  },
+  {
+    "character": "心",
+    "source": "JK4B Flashcard",
+    "card": 61,
+    "strokes": 4,
+    "reading_info": "シン SHIN, こころ kokoro Heart こころ   / kokoro   / heart  / ここちよい  / kokochiyoi  / comfortable / あんしんする  / anshin suru  / be relieved / しんぱいする  / shinpai suru  / to worry / ちゅうしん  / chūshin  / center, middle",
+    "vocabulary_text": "こころ   / kokoro   / heart  / ここちよい  / kokochiyoi  / comfortable / あんしんする  / anshin suru  / be relieved / しんぱいする  / shinpai suru  / to worry / ちゅうしん  / chūshin  / center, middle",
+    "page": 5
+  },
+  {
+    "character": "寺",
+    "source": "JK4B Flashcard",
+    "card": 62,
+    "strokes": 6,
+    "reading_info": "ジ JI, てら tera Temple (お)てら   / (o)tera   / Buddhist temple  / 〜でら、〜じ  / ~dera, ~ji  / sufﬁ x for temples / きよみずでら  / kiyomizu-dera  / Kiyomizu Temple / きんかくじ  / kinkaku-ji  / Kinkaku Temple",
+    "vocabulary_text": "(お)てら   / (o)tera   / Buddhist temple  / 〜でら、〜じ  / ~dera, ~ji  / sufﬁ x for temples / きよみずでら  / kiyomizu-dera  / Kiyomizu Temple / きんかくじ  / kinkaku-ji  / Kinkaku Temple",
+    "page": 5
+  },
+  {
+    "character": "時",
+    "source": "JK4B Flashcard",
+    "card": 63,
+    "strokes": 10,
+    "reading_info": "ジ JI, とき toki Time とき   / toki  / time, occasion,   /   /   /  when~ / じかん  / jikan   / time, hour, leisure / いちじ  / ichiji   / one o’clock,  /   /   /  temporarily / はちじ  / hachiji  / eight o’clock / なんじですか   / nanji desu ka   / What time is it?",
+    "vocabulary_text": "",
+    "page": 5
+  },
+  {
+    "character": "半",
+    "source": "JK4B Flashcard",
+    "card": 64,
+    "strokes": 5,
+    "reading_info": "ハン HAN, なか(ば) naka(ba) Half いちじはん   / ichiji han   / half past one  / はんぶん  / hanbun  / half / ぜんはん  / zenhan  / ﬁ rst half / こうはん  / kōhan  / last half / はんとう  / hantō  / peninsula",
+    "vocabulary_text": "いちじはん   / ichiji han   / half past one  / はんぶん  / hanbun  / half / ぜんはん  / zenhan  / ﬁ rst half / こうはん  / kōhan  / last half / はんとう  / hantō  / peninsula",
+    "page": 5
+  },
+  {
+    "character": "間",
+    "source": "JK4B Flashcard",
+    "card": 65,
+    "strokes": 12,
+    "reading_info": "カン KAN, ケン KEN,  / あいだ aida, ま ma Interval あいだ  / aida  / interval / ながいあいだ  / nagai aida   / long time / このあいだ  / kono aida   / recently / まにあう  / maniau  / to be in time for / じかん  / jikan  / time, hour, leisure / にんげん  / ningen  / human",
+    "vocabulary_text": "あいだ  / aida  / interval / ながいあいだ  / nagai aida   / long time / このあいだ  / kono aida   / recently / まにあう  / maniau  / to be in time for / じかん  / jikan  / time, hour, leisure / にんげん  / ningen  / human",
+    "page": 5
+  },
+  {
+    "character": "分",
+    "source": "JK4B Flashcard",
+    "card": 66,
+    "strokes": 4,
+    "reading_info": "Minute, to part, to understand わかる   / wakaru   / to understand / わける  / wakeru  / to divide / さんぶんのいち  / sanbun no ichi  / one third / ごふん  / gofun  / 5 minutes / じっぷん/  / jippun/juppun  / 10 minutes /  じゅっぷん / じゅうぶんな  / jūbun na  / full, enough / じぶん  / jibun  / oneself",
+    "vocabulary_text": "",
+    "page": 5
+  },
+  {
+    "character": "今",
+    "source": "JK4B Flashcard",
+    "card": 67,
+    "strokes": 4,
+    "reading_info": "コン KON, キン KIN, いま ima Now いま   / ima  / now, soon / こんげつ  / kongetsu   / this month / ことし  / kotoshi  / this year / きょう  / kyō  / today / けさ  / kesa  / this morning",
+    "vocabulary_text": "いま   / ima  / now, soon / こんげつ  / kongetsu   / this month / ことし  / kotoshi  / this year / きょう  / kyō  / today / けさ  / kesa  / this morning",
+    "page": 5
+  },
+  {
+    "character": "何",
+    "source": "JK4B Flashcard",
+    "card": 68,
+    "strokes": 7,
+    "reading_info": "カ KA, なに nani, なん nan What なに、なん   / nani, nan   / what, which  / なに、なん〜 nani, nan ~  / what, how many / なんじですか nanji desu ka what time is it? / なにか  / nanika  / something, some, any / なんど  / nando  / how many degrees/ /   /   /  times / なんにん  / nannin  / how many people",
+    "vocabulary_text": "",
+    "page": 5
+  },
+  {
+    "character": "年",
+    "source": "JK4B Flashcard",
+    "card": 69,
+    "strokes": 6,
+    "reading_info": "ネン NEN, とし toshi Year とし   / toshi  / year / ことし  / kotoshi   / this year / としうえ   / toshiue  / older / らいねん  / rainen   / next year / きょねん   / kyonen  / last year",
+    "vocabulary_text": "とし   / toshi  / year / ことし  / kotoshi   / this year / としうえ   / toshiue  / older / らいねん  / rainen   / next year / きょねん   / kyonen  / last year",
+    "page": 5
+  },
+  {
+    "character": "回",
+    "source": "JK4B Flashcard",
+    "card": 70,
+    "strokes": 6,
+    "reading_info": "カイ KAI, エ E, まわ(る)  / mawa(ru), まわ(す) mawa(su) Turn around, times (counter) まわる   / mawaru   / to turn around, go around / かいとう  / kaitō  / reply, answer / にかい  / nikai  / two times (counter) / にかいめ  / nikaime  / second time",
+    "vocabulary_text": "まわる   / mawaru   / to turn around, go around / かいとう  / kaitō  / reply, answer / にかい  / nikai  / two times (counter) / にかいめ  / nikaime  / second time",
+    "page": 5
+  },
+  {
+    "character": "毎",
+    "source": "JK4B Flashcard",
+    "card": 71,
+    "strokes": 6,
+    "reading_info": "マイ MAI Every まいにち   / mainichi  / everyday / まいしゅう  / maishū   / every week / まいつき  / maitsuki   / every month / まいねん/まいとし  / mainen/   / every year /   /  maitoshi",
+    "vocabulary_text": "まいにち   / mainichi  / everyday / まいしゅう  / maishū   / every week / まいつき  / maitsuki   / every month / まいねん/まいとし  / mainen/   / every year /   /  maitoshi",
+    "page": 5
+  },
+  {
+    "character": "聞",
+    "source": "JK4B Flashcard",
+    "card": 72,
+    "strokes": 14,
+    "reading_info": "ブン BUN, モン MON, き(く)  / ki(ku), き(こえる) ki(koeru) To hear きく  / kiku  / to hear, listen, ask / ききて  / kikite  / listener, audience / きこえる  / kikoeru  / can hear / しんぶん  / shinbun  / newspaper",
+    "vocabulary_text": "きく  / kiku  / to hear, listen, ask / ききて  / kikite  / listener, audience / きこえる  / kikoeru  / can hear / しんぶん  / shinbun  / newspaper",
+    "page": 5
+  },
+  {
+    "character": "見",
+    "source": "JK4B Flashcard",
+    "card": 73,
+    "strokes": 7,
+    "reading_info": "ケン KEN, み(る) mi(ru),  / み(える) mi(eru), み(せる)  / mi(seru) To see みる  / miru  / to see, look, watch / みえる  / mieru   / can see / みかた  / mikata   / point of view / はなみ  / hanami  / cherry blossom viewing / けんぶつ   / kenbutsu   / sightseeing, visit",
+    "vocabulary_text": "みる  / miru  / to see, look, watch / みえる  / mieru   / can see / みかた  / mikata   / point of view / はなみ  / hanami  / cherry blossom viewing / けんぶつ   / kenbutsu   / sightseeing, visit",
+    "page": 5
+  },
+  {
+    "character": "思",
+    "source": "JK4B Flashcard",
+    "card": 74,
+    "strokes": 9,
+    "reading_info": "シ SHI, おも(う) omo(u) To think おもう   / omou   / to think  / おもいで  / omoide  / memory / おもいだす  / omoidasu  / to remember / いし  / ishi  / intention",
+    "vocabulary_text": "おもう   / omou   / to think  / おもいで  / omoide  / memory / おもいだす  / omoidasu  / to remember / いし  / ishi  / intention",
+    "page": 5
+  },
+  {
+    "character": "言",
+    "source": "JK4B Flashcard",
+    "card": 75,
+    "strokes": 7,
+    "reading_info": "ゲン GEN, ゴン GON,  / い(う) i(u), こと koto To say いう  / iu  / say, speak / ほうげん  / hōgen   / dialect",
+    "vocabulary_text": "いう  / iu  / say, speak / ほうげん  / hōgen   / dialect",
+    "page": 5
+  },
+  {
+    "character": "語",
+    "source": "JK4B Flashcard",
+    "card": 76,
+    "strokes": 14,
+    "reading_info": "ゴ GO, かた(る) kata(ru),  / かた(らう) kata(rau) Language かたる   / kataru   / to speak (formal) / ものがたり  / monogatari  / story, tale / がいこくご  / gaikokugo  / foreign language / にほんご  / nihongo  / Japanese (language) / げんご  / gengo  / language / たんご  / tango  / vocabulary",
+    "vocabulary_text": "かたる   / kataru   / to speak (formal) / ものがたり  / monogatari  / story, tale / がいこくご  / gaikokugo  / foreign language / にほんご  / nihongo  / Japanese (language) / げんご  / gengo  / language / たんご  / tango  / vocabulary",
+    "page": 6
+  },
+  {
+    "character": "話",
+    "source": "JK4B Flashcard",
+    "card": 77,
+    "strokes": 13,
+    "reading_info": "ワ WA, はな(す) hana(su),  / はなし hanashi To talk はなす  / hanasu  / to talk / はなし  / hanashi   / story, speech / わらいばなし  / waraibanashi   / funny story / むかしばなし  / mukashibanashi  / folk tale / せわ   / sewa   / care, help / しんわ   / shinwa   / myth",
+    "vocabulary_text": "はなす  / hanasu  / to talk / はなし  / hanashi   / story, speech / わらいばなし  / waraibanashi   / funny story / むかしばなし  / mukashibanashi  / folk tale / せわ   / sewa   / care, help / しんわ   / shinwa   / myth",
+    "page": 6
+  },
+  {
+    "character": "会",
+    "source": "JK4B Flashcard",
+    "card": 78,
+    "strokes": 6,
+    "reading_info": "カイ KAI, エ E, あう a(u) To meet あう   / au   / to meet  / かいわ  / kaiwa  / conversation / かいかん  / kaikan  / meeting hall / しゅうかい  / shūkai  / meeting / たいかい  / taikai  / conference, tournament / きかい  / kikai  / opportunity, occasion",
+    "vocabulary_text": "あう   / au   / to meet  / かいわ  / kaiwa  / conversation / かいかん  / kaikan  / meeting hall / しゅうかい  / shūkai  / meeting / たいかい  / taikai  / conference, tournament / きかい  / kikai  / opportunity, occasion",
+    "page": 6
+  },
+  {
+    "character": "生",
+    "source": "JK4B Flashcard",
+    "card": 79,
+    "strokes": 5,
+    "reading_info": "Life, birth いきる   / ikiru   / to live, exist  / うまれる  / umareru  / to be born / なま〜  / nama~  / raw~, fresh~ / じんせい  / jinsei  / life / せいねんがっぴ  / seinengappi  / date of birth / いけばな  / ikebana  / ﬂ ower arranging",
+    "vocabulary_text": "いきる   / ikiru   / to live, exist  / うまれる  / umareru  / to be born / なま〜  / nama~  / raw~, fresh~ / じんせい  / jinsei  / life / せいねんがっぴ  / seinengappi  / date of birth / いけばな  / ikebana  / ﬂ ower arranging",
+    "page": 6
+  },
+  {
+    "character": "先",
+    "source": "JK4B Flashcard",
+    "card": 80,
+    "strokes": 6,
+    "reading_info": "セン SEN, さき saki Ahead さきに  / sakini  / ahead of, prior to / いきさき  / ikisaki   / destination / せんせい  / sensei   / teacher, doctor, etc. / せんげつ  / sengetsu  / last month",
+    "vocabulary_text": "さきに  / sakini  / ahead of, prior to / いきさき  / ikisaki   / destination / せんせい  / sensei   / teacher, doctor, etc. / せんげつ  / sengetsu  / last month",
+    "page": 6
+  },
+  {
+    "character": "私",
+    "source": "JK4B Flashcard",
+    "card": 81,
+    "strokes": 7,
+    "reading_info": "シ SHI, わたくし watakushi,  / わたし watashi I, myself わたし   / watashi   / I, myself  / わたしたち  / watashitachi  / we, us / しりつ  / shiritsu  / private / しりつがっこう  / shiritsu gakkō  / private school / しりつだいがく  / shiritsu daigaku  / private college",
+    "vocabulary_text": "わたし   / watashi   / I, myself  / わたしたち  / watashitachi  / we, us / しりつ  / shiritsu  / private / しりつがっこう  / shiritsu gakkō  / private school / しりつだいがく  / shiritsu daigaku  / private college",
+    "page": 6
+  },
+  {
+    "character": "友",
+    "source": "JK4B Flashcard",
+    "card": 82,
+    "strokes": 4,
+    "reading_info": "ユウ YŪ, とも tomo Friend ともだち  / tomodachi  / friend, companion / ゆうじん  / yūjin   / friend / しんゆう  / shinyū   / best friend / ゆうじょう  / yūjō  / friendship, fellowship",
+    "vocabulary_text": "ともだち  / tomodachi  / friend, companion / ゆうじん  / yūjin   / friend / しんゆう  / shinyū   / best friend / ゆうじょう  / yūjō  / friendship, fellowship",
+    "page": 6
+  },
+  {
+    "character": "学",
+    "source": "JK4B Flashcard",
+    "card": 83,
+    "strokes": 8,
+    "reading_info": "ガク GAKU, まな(ぶ) mana(bu) To learn まなぶ   / manabu   / to study  / がくせい  / gakusei  / student / がっこう  / gakkō  / school / だいがく  / daigaku  / college / がくねん  / gakunen  / year in school, grade",
+    "vocabulary_text": "まなぶ   / manabu   / to study  / がくせい  / gakusei  / student / がっこう  / gakkō  / school / だいがく  / daigaku  / college / がくねん  / gakunen  / year in school, grade",
+    "page": 6
+  },
+  {
+    "character": "校",
+    "source": "JK4B Flashcard",
+    "card": 84,
+    "strokes": 10,
+    "reading_info": "コウ KŌ School がっこう  / gakkō  / school / しょうがっこう  / shōgakkō   / elementary school / ちゅうがっこう  / chūgakkō  / middle school / こうこう  / kōkō  / high school",
+    "vocabulary_text": "がっこう  / gakkō  / school / しょうがっこう  / shōgakkō   / elementary school / ちゅうがっこう  / chūgakkō  / middle school / こうこう  / kōkō  / high school",
+    "page": 6
+  },
+  {
+    "character": "本",
+    "source": "JK4B Flashcard",
+    "card": 85,
+    "strokes": 5,
+    "reading_info": "ホン HON, もと moto Book, main, counter for long objects ほん   / hon   / book  / いっぽんのぺん  / ippon no pen  / one pen / にほん  / nihon  / Japan / ほんじつ  / honjitsu  / today / ほんしゅう  / honshū  / Honshū / ほんとう  / hontō  / truth, reality",
+    "vocabulary_text": "ほん   / hon   / book  / いっぽんのぺん  / ippon no pen  / one pen / にほん  / nihon  / Japan / ほんじつ  / honjitsu  / today / ほんしゅう  / honshū  / Honshū / ほんとう  / hontō  / truth, reality",
+    "page": 6
+  },
+  {
+    "character": "字",
+    "source": "JK4B Flashcard",
+    "card": 86,
+    "strokes": 6,
+    "reading_info": "ジ JI, あざ aza Character, letter じ   / ji  / character / もじ  / moji   / character, letter / おおもじ  / ōmoji   / capital letter / ローマじ  / rōmaji   / Roman letters / すうじ  / sūji   / numbers / しゅうじ  / shūji   / calligraphy",
+    "vocabulary_text": "じ   / ji  / character / もじ  / moji   / character, letter / おおもじ  / ōmoji   / capital letter / ローマじ  / rōmaji   / Roman letters / すうじ  / sūji   / numbers / しゅうじ  / shūji   / calligraphy",
+    "page": 6
+  },
+  {
+    "character": "文",
+    "source": "JK4B Flashcard",
+    "card": 87,
+    "strokes": 4,
+    "reading_info": "ブン BUN, モン MON,  / ふみ fumi Letters, writing さくぶん   / sakubun   / essay  / ぶんぽう  / bunpō  / grammar / ぶんがく  / bungaku  / literature / もじ  / moji  / character, letters",
+    "vocabulary_text": "さくぶん   / sakubun   / essay  / ぶんぽう  / bunpō  / grammar / ぶんがく  / bungaku  / literature / もじ  / moji  / character, letters",
+    "page": 6
+  },
+  {
+    "character": "対",
+    "source": "JK4B Flashcard",
+    "card": 88,
+    "strokes": 7,
+    "reading_info": "タイ TAI, ツイ TSUI Opposite Aチーム たい  / ei chiimu tai  / Team  A vs. Team B /  Bチーム  /  bī chiimu / さんたいご  / san tai go   / score of 3 to 5 / 〜にたいして  / ~nitaishite   / in regards to… / はんたいする  / hantai suru  / to oppose",
+    "vocabulary_text": "Aチーム たい  / ei chiimu tai  / Team  A vs. Team B /  Bチーム  /  bī chiimu / さんたいご  / san tai go   / score of 3 to 5 / 〜にたいして  / ~nitaishite   / in regards to… / はんたいする  / hantai suru  / to oppose",
+    "page": 6
+  },
+  {
+    "character": "書",
+    "source": "JK4B Flashcard",
+    "card": 89,
+    "strokes": 10,
+    "reading_info": "ショ SHO, か(く) ka(ku) Books, writing かく   / kaku   / to write  / てがき  / tegaki  / handwriting / としょかん  / toshokan  / library / どくしょ  / dokusho  / reading / きょうかしょ  / kyōkasho  / textbook",
+    "vocabulary_text": "かく   / kaku   / to write  / てがき  / tegaki  / handwriting / としょかん  / toshokan  / library / どくしょ  / dokusho  / reading / きょうかしょ  / kyōkasho  / textbook",
+    "page": 6
+  },
+  {
+    "character": "化",
+    "source": "JK4B Flashcard",
+    "card": 90,
+    "strokes": 4,
+    "reading_info": "カ KA, ケ KE, ば(ける)  / ba(keru), ば(かす) ba(kasu) To change into ばける  / bakeru  / to change into something / ばけもの  / bakemono   / monster, ghost / ぶんか  / bunka   / culture / かせき  / kaseki  / fossil / へんか   / henka   / change, transformation / かがく   / kagaku   / chemistry",
+    "vocabulary_text": "ばける  / bakeru  / to change into something / ばけもの  / bakemono   / monster, ghost / ぶんか  / bunka   / culture / かせき  / kaseki  / fossil / へんか   / henka   / change, transformation / かがく   / kagaku   / chemistry",
+    "page": 6
+  },
+  {
+    "character": "公",
+    "source": "JK4B Flashcard",
+    "card": 91,
+    "strokes": 4,
+    "reading_info": "コウ KŌ, おおやけ ōyake Public こうえん   / kōen   / park  / こうりつ  / kōritsu  / public / こうへい  / kōhei  / fairness, justice / ふこうへい  / fukōhei  / unfairness",
+    "vocabulary_text": "こうえん   / kōen   / park  / こうりつ  / kōritsu  / public / こうへい  / kōhei  / fairness, justice / ふこうへい  / fukōhei  / unfairness",
+    "page": 7
+  },
+  {
+    "character": "立",
+    "source": "JK4B Flashcard",
+    "card": 92,
+    "strokes": 5,
+    "reading_info": "リツ RITSU, リュウ RYŪ,  / た(つ) ta(tsu), た(てる) ta(teru) To stand たつ  / tatsu  / to stand, to stand up / めだつ  / medatsu   / be conspicuous / しりつ  / shiritsu   / private / じりつ  / jiritsu  / independence",
+    "vocabulary_text": "たつ  / tatsu  / to stand, to stand up / めだつ  / medatsu   / be conspicuous / しりつ  / shiritsu   / private / じりつ  / jiritsu  / independence",
+    "page": 7
+  },
+  {
+    "character": "犬",
+    "source": "JK4B Flashcard",
+    "card": 93,
+    "strokes": 4,
+    "reading_info": "ケン KEN, いぬ inu Dog いぬ  / inu  / dog / こいぬ  / koinu   / puppy / ばんけん  / banken   / watchdog / のらいぬ  / norainu  / stray dog",
+    "vocabulary_text": "いぬ  / inu  / dog / こいぬ  / koinu   / puppy / ばんけん  / banken   / watchdog / のらいぬ  / norainu  / stray dog",
+    "page": 7
+  },
+  {
+    "character": "鳥",
+    "source": "JK4B Flashcard",
+    "card": 94,
+    "strokes": 11,
+    "reading_info": "チョウ CHŌ, とり tori Bird とり  / tori  / bird / ことり  / kotori   / small bird / はくちょう  / hakuchō   / swan / いっせきにちょう  / isseki nichō  / “kill two birds /   /   /  with one stone”",
+    "vocabulary_text": "とり  / tori  / bird / ことり  / kotori   / small bird / はくちょう  / hakuchō   / swan / いっせきにちょう  / isseki nichō  / “kill two birds /   /   /  with one stone”",
+    "page": 7
+  },
+  {
+    "character": "馬",
+    "source": "JK4B Flashcard",
+    "card": 95,
+    "strokes": 10,
+    "reading_info": "バ BA, うま uma, ま ma Horse うま   / uma   / horse  / こうま  / kouma  / pony, colt / じょうば  / jōba  / horse riding / ばしゃ  / basha  / wagon, carriage / ばりき  / bariki  / horse power",
+    "vocabulary_text": "うま   / uma   / horse  / こうま  / kouma  / pony, colt / じょうば  / jōba  / horse riding / ばしゃ  / basha  / wagon, carriage / ばりき  / bariki  / horse power",
+    "page": 7
+  },
+  {
+    "character": "羊",
+    "source": "JK4B Flashcard",
+    "card": 96,
+    "strokes": 6,
+    "reading_info": "ヨウ YŌ, ひつじ hitsuji Sheep",
+    "vocabulary_text": "ひつじ  / hitsuji  / sheep / こひつじ  / kohitsuji   / lamb / ひつじのにく  / hitsuji no niku   / mutton, lamb meat",
+    "page": 7
+  },
+  {
+    "character": "牛",
+    "source": "JK4B Flashcard",
+    "card": 97,
+    "strokes": 4,
+    "reading_info": "ギュウ GYŪ, うし ushi Cow",
+    "vocabulary_text": "うし   / ushi   / cow, cattle  / こうし  / koushi  / calf / ぎゅうにく  / gyūniku  / beef",
+    "page": 7
+  },
+  {
+    "character": "魚",
+    "source": "JK4B Flashcard",
+    "card": 98,
+    "strokes": 11,
+    "reading_info": "ギョ GYO, うお uo,  / さかな sakana Fish さかな  / sakana  / ﬁ sh / さかなや  / sakanaya   / ﬁ sh market / きんぎょ  / kingyo   / goldﬁ sh / にんぎょ  / ningyo  / mermaid, merman",
+    "vocabulary_text": "さかな  / sakana  / ﬁ sh / さかなや  / sakanaya   / ﬁ sh market / きんぎょ  / kingyo   / goldﬁ sh / にんぎょ  / ningyo  / mermaid, merman",
+    "page": 7
+  },
+  {
+    "character": "虫",
+    "source": "JK4B Flashcard",
+    "card": 99,
+    "strokes": 6,
+    "reading_info": "チュウ CHŪ, むし mushi Bug むし   / mushi   / bug, insect  / なきむし  / nakimushi  / crybaby / よわむし  / yowamushi  / coward, weakling / みずむし  / mizumushi  / athlete’s foot / ほんのむし  / hon no mushi  / bookworm (literally  /   /   /  and ﬁ guratively)",
+    "vocabulary_text": "むし   / mushi   / bug, insect  / なきむし  / nakimushi  / crybaby / よわむし  / yowamushi  / coward, weakling / みずむし  / mizumushi  / athlete’s foot / ほんのむし  / hon no mushi  / bookworm (literally  /   /   /  and ﬁ guratively)",
+    "page": 7
+  },
+  {
+    "character": "米",
+    "source": "JK4B Flashcard",
+    "card": 100,
+    "strokes": 6,
+    "reading_info": "ベイ BEI, マイ MAI, こめ kome Rice こめ   / kome   / uncooked rice  / こめや  / komeya  / rice store / べいこく  / beikoku  / USA / にちべい  / nichibei  / Japan and USA / なんべい  / nanbei  / South America",
+    "vocabulary_text": "こめ   / kome   / uncooked rice  / こめや  / komeya  / rice store / べいこく  / beikoku  / USA / にちべい  / nichibei  / Japan and USA / なんべい  / nanbei  / South America",
+    "page": 7
+  },
+  {
+    "character": "来",
+    "source": "JK4B Flashcard",
+    "card": 101,
+    "strokes": 7,
+    "reading_info": "ライ RAI, く(る) ku(ru) To come くる  / kuru  / to come / できる  / dekiru   / can do, be able to do / らいねん  / rainen   / next year / らいげつ  / raigetsu  / next month",
+    "vocabulary_text": "くる  / kuru  / to come / できる  / dekiru   / can do, be able to do / らいねん  / rainen   / next year / らいげつ  / raigetsu  / next month",
+    "page": 7
+  },
+  {
+    "character": "番",
+    "source": "JK4B Flashcard",
+    "card": 102,
+    "strokes": 12,
+    "reading_info": "バン BAN To turn; number いちばん   / ichiban   / ﬁ rst, most, best  / さんばんせん  / sanbansen Track No. 3 / ばんごう  / bangō  / number,  serial number / テレビばんぐみ terebi  / TV program /   /  bangumi / とうばん  / tōban  / person on duty",
+    "vocabulary_text": "いちばん   / ichiban   / ﬁ rst, most, best  / さんばんせん  / sanbansen Track No. 3 / ばんごう  / bangō  / number,  serial number / テレビばんぐみ terebi  / TV program /   /  bangumi / とうばん  / tōban  / person on duty",
+    "page": 7
+  },
+  {
+    "character": "行",
+    "source": "JK4B Flashcard",
+    "card": 103,
+    "strokes": 6,
+    "reading_info": "コウ KŌ, ギョウ GYŌ,  / い(く) i(ku), ゆ(く) yu(ku),  / おこな(う) okona(u) To go いく  / iku  / to go / おこなう  / okonau   / to act, hold an event / りょこう  / ryokō   / travel / ぎょうじ  / gyōji  / event, function / いきさき  / ikisaki  / destination",
+    "vocabulary_text": "いく  / iku  / to go / おこなう  / okonau   / to act, hold an event / りょこう  / ryokō   / travel / ぎょうじ  / gyōji  / event, function / いきさき  / ikisaki  / destination",
+    "page": 7
+  },
+  {
+    "character": "待",
+    "source": "JK4B Flashcard",
+    "card": 104,
+    "strokes": 9,
+    "reading_info": "タイ TAI, ま(つ) ma(tsu) To wait まつ   / matsu   / to wait,  /   /   /  anticipate  / まちあわせる  / machiawaseru  / to meet by  /   /   /  appointment / まちあいしつ  / machiaishitsu  / waiting room / きたい  / kitai  / expectation",
+    "vocabulary_text": "まつ   / matsu   / to wait,  /   /   /  anticipate  / まちあわせる  / machiawaseru  / to meet by  /   /   /  appointment / まちあいしつ  / machiaishitsu  / waiting room / きたい  / kitai  / expectation",
+    "page": 7
+  },
+  {
+    "character": "持",
+    "source": "JK4B Flashcard",
+    "card": 105,
+    "strokes": 9,
+    "reading_info": "ジ JI, も(つ) mo(tsu) To hold もつ   / motsu  / to hold, have, possess, last / もっていく motte iku   / to take something / かねもち  / kanemochi  / wealthy person / きもち  / kimochi  / feelings, mood",
+    "vocabulary_text": "もつ   / motsu  / to hold, have, possess, last / もっていく motte iku   / to take something / かねもち  / kanemochi  / wealthy person / きもち  / kimochi  / feelings, mood",
+    "page": 7
+  },
+  {
+    "character": "帰",
+    "source": "JK4B Flashcard",
+    "card": 106,
+    "strokes": 10,
+    "reading_info": "キ KI, かえ(る) kae(ru),  / かえ(す) kae(su) To return かえる  / kaeru  / to return home,  /   /   /  come back / ひがえり  / higaeri  / a day trip / きこくする  / kikoku suru  / to return to one’s country",
+    "vocabulary_text": "かえる  / kaeru  / to return home,  /   /   /  come back / ひがえり  / higaeri  / a day trip / きこくする  / kikoku suru  / to return to one’s country",
+    "page": 8
+  },
+  {
+    "character": "白",
+    "source": "JK4B Flashcard",
+    "card": 107,
+    "strokes": 5,
+    "reading_info": "ハク HAKU, ビャク BYAKU,  / しろ shiro, しら shira,  / しろ(い) shiro(i) White しろい   / shiroi  / white / しろくろ  / shirokuro   / black and white / おもしろい  / omoshiroi   / interesting / はくちょう  / hakuchō   / swan",
+    "vocabulary_text": "しろい   / shiroi  / white / しろくろ  / shirokuro   / black and white / おもしろい  / omoshiroi   / interesting / はくちょう  / hakuchō   / swan",
+    "page": 8
+  },
+  {
+    "character": "良",
+    "source": "JK4B Flashcard",
+    "card": 108,
+    "strokes": 7,
+    "reading_info": "リョウ RYŌ, よ(い) yo(i) Good よい／いい   / yoi/ ii   / good, okay  / よさそう  / yosasō  / to seem good / よく  / yoku  / well, nicely / ふりょうひん  / furyōhin  / defective product, trash",
+    "vocabulary_text": "よい／いい   / yoi/ ii   / good, okay  / よさそう  / yosasō  / to seem good / よく  / yoku  / well, nicely / ふりょうひん  / furyōhin  / defective product, trash",
+    "page": 8
+  },
+  {
+    "character": "食",
+    "source": "JK4B Flashcard",
+    "card": 109,
+    "strokes": 9,
+    "reading_info": "ショク SHOKU, ジキ JIKI, く(う)  / ku(u), たべる ta(beru) To eat たべる  / taberu  / to eat / たべもの  / tabemono   / food / ゆうしょく  / yūshoku   / dinner / わしょく  / washoku  / Japanese-style food / しょくじ  / shokuji  / meal, dinner",
+    "vocabulary_text": "たべる  / taberu  / to eat / たべもの  / tabemono   / food / ゆうしょく  / yūshoku   / dinner / わしょく  / washoku  / Japanese-style food / しょくじ  / shokuji  / meal, dinner",
+    "page": 8
+  },
+  {
+    "character": "物",
+    "source": "JK4B Flashcard",
+    "card": 110,
+    "strokes": 8,
+    "reading_info": "ブツ BUTSU, モツ MOTSU,  / もの mono Thing (tangible) ものがたり  / monogatari   / story, tale  / かいもの  / kaimono  / shopping / にもつ  / nimotsu  / luggage / けんぶつ  / kenbutsu  / sightseeing / どうぶつ  / dōbutsu  / animal",
+    "vocabulary_text": "ものがたり  / monogatari   / story, tale  / かいもの  / kaimono  / shopping / にもつ  / nimotsu  / luggage / けんぶつ  / kenbutsu  / sightseeing / どうぶつ  / dōbutsu  / animal",
+    "page": 8
+  },
+  {
+    "character": "雨",
+    "source": "JK4B Flashcard",
+    "card": 111,
+    "strokes": 8,
+    "reading_info": "ウ U, あめ ame, あま ama Rain あめ  / ame　  / rain / おおあめ  / ōame   / heavy rain / あまど  / amado   / shutter, storm door",
+    "vocabulary_text": "あめ  / ame　  / rain / おおあめ  / ōame   / heavy rain / あまど  / amado   / shutter, storm door",
+    "page": 8
+  },
+  {
+    "character": "雪",
+    "source": "JK4B Flashcard",
+    "card": 112,
+    "strokes": 11,
+    "reading_info": "セツ SETSU, ゆき yuki Snow ゆき  / yuki  / snow / ゆきまつり  / yukimatsuri   / snow festival / おおゆき  / ōyuki   / heavy snow / はつゆき  / hatsuyuki  / ﬁ rst snow of a season",
+    "vocabulary_text": "ゆき  / yuki  / snow / ゆきまつり  / yukimatsuri   / snow festival / おおゆき  / ōyuki   / heavy snow / はつゆき  / hatsuyuki  / ﬁ rst snow of a season",
+    "page": 8
+  },
+  {
+    "character": "電",
+    "source": "JK4B Flashcard",
+    "card": 113,
+    "strokes": 13,
+    "reading_info": "デン DEN Electricity でんき   / denki   / electricity, electric light  / でんしゃ  / densha  / train / でんわ  / denwa  / telephone, phone call / でんち  / denchi  / battery",
+    "vocabulary_text": "でんき   / denki   / electricity, electric light  / でんしゃ  / densha  / train / でんわ  / denwa  / telephone, phone call / でんち  / denchi  / battery",
+    "page": 8
+  },
+  {
+    "character": "風",
+    "source": "JK4B Flashcard",
+    "card": 114,
+    "strokes": 9,
+    "reading_info": "フウ FŪ, フ FU, かぜ kaze Wind かぜ  / kaze  / wind / たいふう  / taifu   / typhoon",
+    "vocabulary_text": "かぜ  / kaze  / wind / たいふう  / taifu   / typhoon",
+    "page": 8
+  },
+  {
+    "character": "元",
+    "source": "JK4B Flashcard",
+    "card": 115,
+    "strokes": 4,
+    "reading_info": "ゲン GEN, ガン GAN,  / もと moto Origin もともと   / motomoto   / originally  / てもと  / temoto  / at hand, nearby / あしもと  / ashimoto  / at one’s feet, underfoot / げんきな  / genki  / healthy, well / がんじつ  / ganjitsu  / New Year’s Day",
+    "vocabulary_text": "もともと   / motomoto   / originally  / てもと  / temoto  / at hand, nearby / あしもと  / ashimoto  / at one’s feet, underfoot / げんきな  / genki  / healthy, well / がんじつ  / ganjitsu  / New Year’s Day",
+    "page": 8
+  },
+  {
+    "character": "天",
+    "source": "JK4B Flashcard",
+    "card": 116,
+    "strokes": 4,
+    "reading_info": "テン TEN, あめ ame, あま ama Heavens, sky てんさい  / tensai  / genius / てんき  / tenki   / weather / てんごく  / tengoku   / heaven, paradise / てんし  / tenshi  / angel",
+    "vocabulary_text": "てんさい  / tensai  / genius / てんき  / tenki   / weather / てんごく  / tengoku   / heaven, paradise / てんし  / tenshi  / angel",
+    "page": 8
+  },
+  {
+    "character": "気",
+    "source": "JK4B Flashcard",
+    "card": 117,
+    "strokes": 6,
+    "reading_info": "キ KI, ケ KE Gas, spirit にんきがある   / ninki ga aru   / popular  / きもち  / kimochi  / feelings / くうき  / kūki  / air / びょうき  / byōki  / illness / きづく  / kizuku  / to notice / きをつける  / ki o tsukeru  / to take care",
+    "vocabulary_text": "にんきがある   / ninki ga aru   / popular  / きもち  / kimochi  / feelings / くうき  / kūki  / air / びょうき  / byōki  / illness / きづく  / kizuku  / to notice / きをつける  / ki o tsukeru  / to take care",
+    "page": 8
+  },
+  {
+    "character": "石",
+    "source": "JK4B Flashcard",
+    "card": 118,
+    "strokes": 5,
+    "reading_info": "セキ SEKI, いし ishi Stone いし   / ishi   / rock, stone  / こいし  / koishi  / pebble / かせき  / kaseki  / fossil / せきてい  / sekitei  / rock garden / 石の上にも三年  / ishi no ue ni mo “persistence /   /  sannen  /  overcomes  /   /   /  all things”",
+    "vocabulary_text": "",
+    "page": 8
+  },
+  {
+    "character": "早",
+    "source": "JK4B Flashcard",
+    "card": 119,
+    "strokes": 6,
+    "reading_info": "Early はやい   / hayai  / early / はやく  / hayaku   / early, soon [adv.] / はやめに  / hayameni   / ahead of time / はやがてん  / hayagaten  / to jump to a  /   /   /  hasty conclusion / はやくちことば hayakuchi kotoba tongue twister / さっそく  / sassoku  / immediately",
+    "vocabulary_text": "",
+    "page": 8
+  },
+  {
+    "character": "草",
+    "source": "JK4B Flashcard",
+    "card": 120,
+    "strokes": 7,
+    "reading_info": "ソウ SŌ, くさ kusa Grass くさ   / kusa   / grass, weeds  / しぐさ  / shigusa  / gesture, mannerism",
+    "vocabulary_text": "くさ   / kusa   / grass, weeds  / しぐさ  / shigusa  / gesture, mannerism",
+    "page": 8
+  },
+  {
+    "character": "花",
+    "source": "JK4B Flashcard",
+    "card": 121,
+    "strokes": 7,
+    "reading_info": "カ KA, はな hana Flower はな  / hana  / ﬂ ower / はなみ  / hanami   / cherry blossom viewing / はなび  / hanabi   / ﬁ reworks / いけばな  / ikebana  / ﬂ ower arrangement / かいか  / kaika  / blooming / こっか  / kokka  / national ﬂ ower",
+    "vocabulary_text": "はな  / hana  / ﬂ ower / はなみ  / hanami   / cherry blossom viewing / はなび  / hanabi   / ﬁ reworks / いけばな  / ikebana  / ﬂ ower arrangement / かいか  / kaika  / blooming / こっか  / kokka  / national ﬂ ower",
+    "page": 9
+  },
+  {
+    "character": "林",
+    "source": "JK4B Flashcard",
+    "card": 122,
+    "strokes": 8,
+    "reading_info": "リン RIN, はやし hayashi Grove はやし   / hayashi   / woods, grove, forest  / ねったいうりん  / nettaiurin  / rainforest / りんぎょう  / ringyō  / forestry",
+    "vocabulary_text": "はやし   / hayashi   / woods, grove, forest  / ねったいうりん  / nettaiurin  / rainforest / りんぎょう  / ringyō  / forestry",
+    "page": 9
+  },
+  {
+    "character": "森",
+    "source": "JK4B Flashcard",
+    "card": 123,
+    "strokes": 12,
+    "reading_info": "シン SHIN, もり mori Forest もり   / mori  / forest  / きをみてもりをみず  / ki o mite  / “cannot see /   /  mori o  /  the forest for  /   /  mizu   /  the trees” / しんりん*  / shinrin  / forest, woods",
+    "vocabulary_text": "もり   / mori  / forest  / きをみてもりをみず  / ki o mite  / “cannot see /   /  mori o  /  the forest for  /   /  mizu   /  the trees” / しんりん*  / shinrin  / forest, woods * Bonus word (not included in the book)",
+    "page": 9
+  },
+  {
+    "character": "旅",
+    "source": "JK4B Flashcard",
+    "card": 124,
+    "strokes": 10,
+    "reading_info": "リョ RYO, たび tabi Travel たび  / tabi  / journey, trip / りょこう  / ryokō   / travel, trip / りょかん  / ryokan   / Japanese inn / りょひ  / ryohi   / travel expenses",
+    "vocabulary_text": "たび  / tabi  / journey, trip / りょこう  / ryokō   / travel, trip / りょかん  / ryokan   / Japanese inn / りょひ  / ryohi   / travel expenses",
+    "page": 9
+  },
+  {
+    "character": "車",
+    "source": "JK4B Flashcard",
+    "card": 125,
+    "strokes": 7,
+    "reading_info": "シャ SHA, くるま kuruma Vehicle くるま  / kuruma  / vehicle, car, wheel / くるまいす  / kurumaisu   / wheelchair / でんしゃ  / densha   / train / せんしゃ  / sensha  / car wash / じてんしゃ  / jitensha  / bicycle",
+    "vocabulary_text": "くるま  / kuruma  / vehicle, car, wheel / くるまいす  / kurumaisu   / wheelchair / でんしゃ  / densha   / train / せんしゃ  / sensha  / car wash / じてんしゃ  / jitensha  / bicycle",
+    "page": 9
+  },
+  {
+    "character": "首",
+    "source": "JK4B Flashcard",
+    "card": 126,
+    "strokes": 9,
+    "reading_info": "シュ SHU, くび kubi Neck, head くび   / kubi   / neck, head  / てくび  / tekubi  / wrist / あしくび  / ashikubi  / ankle",
+    "vocabulary_text": "くび   / kubi   / neck, head  / てくび  / tekubi  / wrist / あしくび  / ashikubi  / ankle",
+    "page": 9
+  },
+  {
+    "character": "道",
+    "source": "JK4B Flashcard",
+    "card": 127,
+    "strokes": 12,
+    "reading_info": "ドウ DŌ, トウ TŌ, みち michi Path みち  / michi  / path, road, way / やまみち  / yamamichi  mountain path / ちかみち  / chikamichi  short cut / じゅうどう jūdō   / judo / しんとう  / shintō   / Shinto, the way of the gods / しょどう  / shodō   / Japanese calligraphy / かどう  / kadō   / ﬂ ower arrangement",
+    "vocabulary_text": "",
+    "page": 9
+  },
+  {
+    "character": "駅",
+    "source": "JK4B Flashcard",
+    "card": 128,
+    "strokes": 14,
+    "reading_info": "エキ EKI Train station えき   / eki   / train station  / とうきょうえき  / tōkyō eki  / Tokyo Station / えきいん  / ekiin  / station attendant / えきちょう  / ekichō  / station master / えきめい  / ekimei  / station name / えきべん  / ekiben  / station box lunch",
+    "vocabulary_text": "えき   / eki   / train station  / とうきょうえき  / tōkyō eki  / Tokyo Station / えきいん  / ekiin  / station attendant / えきちょう  / ekichō  / station master / えきめい  / ekimei  / station name / えきべん  / ekiben  / station box lunch",
+    "page": 9
+  },
+  {
+    "character": "町",
+    "source": "JK4B Flashcard",
+    "card": 129,
+    "strokes": 7,
+    "reading_info": "チョウ CHŌ, まち machi Town まち  / machi  / town, block / まちはずれ  / machihazure   / outskirts of town / みなとまち  / minatomachi   / harbor town / 〜まち／ちょう  / ~machi/chō  / town name sufﬁ x / ちょうないかい  / chōnaikai  / neighborhood  /   /   /  association",
+    "vocabulary_text": "まち  / machi  / town, block / まちはずれ  / machihazure   / outskirts of town / みなとまち  / minatomachi   / harbor town / 〜まち／ちょう  / ~machi/chō  / town name sufﬁ x / ちょうないかい  / chōnaikai  / neighborhood  /   /   /  association",
+    "page": 9
+  },
+  {
+    "character": "市",
+    "source": "JK4B Flashcard",
+    "card": 130,
+    "strokes": 5,
+    "reading_info": "シ SHI, いち ichi City, market し   / shi   / city  / しちょう  / shichō  / mayor / しりつ  / shiritsu  / municipal, city / しない  / shinai  / within a city / しがいでんわ  / shigaidenwa  / long-distance call / いちば  / ichiba  / marketplace",
+    "vocabulary_text": "し   / shi   / city  / しちょう  / shichō  / mayor / しりつ  / shiritsu  / municipal, city / しない  / shinai  / within a city / しがいでんわ  / shigaidenwa  / long-distance call / いちば  / ichiba  / marketplace",
+    "page": 9
+  },
+  {
+    "character": "京",
+    "source": "JK4B Flashcard",
+    "card": 131,
+    "strokes": 8,
+    "reading_info": "キョウ KYŌ, ケイ KEI Capital きょうと   / kyōto   / Kyoto  / とうきょう  / tōkyō  / Tokyo / とうきょうゆき  / tōkyōyuki  / Tokyo bound / ペキン  / pekin  / Beijing, Peking",
+    "vocabulary_text": "きょうと   / kyōto   / Kyoto  / とうきょう  / tōkyō  / Tokyo / とうきょうゆき  / tōkyōyuki  / Tokyo bound / ペキン  / pekin  / Beijing, Peking",
+    "page": 9
+  },
+  {
+    "character": "玉",
+    "source": "JK4B Flashcard",
+    "card": 132,
+    "strokes": 5,
+    "reading_info": "ギョク GYOKU, たま tama Ball, jewel たま   / tama   / jewel, ball  / みずたま  / mizutama  / polka dot / おてだま  / otedama  / traditional toy beanbags / おとしだま  / otoshidama  / New Year’s gift money",
+    "vocabulary_text": "たま   / tama   / jewel, ball  / みずたま  / mizutama  / polka dot / おてだま  / otedama  / traditional toy beanbags / おとしだま  / otoshidama  / New Year’s gift money",
+    "page": 9
+  },
+  {
+    "character": "国",
+    "source": "JK4B Flashcard",
+    "card": 133,
+    "strokes": 8,
+    "reading_info": "コク KOKU, くに kuni Country くに  / kuni  / country / ちゅうごく  / chūgoku   / China / こくない  / kokunai   / domestic / がいこく  / gaikoku  / foreign country / こくご   / kokugo  / Japanese language –  /   /   /  school subject / ぼこくご   / bokokugo   / native tongue",
+    "vocabulary_text": "",
+    "page": 9
+  },
+  {
+    "character": "北",
+    "source": "JK4B Flashcard",
+    "card": 134,
+    "strokes": 5,
+    "reading_info": "ホク KOKU, きた kita North きた   / kita   / north  / きたぐち  / kitaguchi  / north entrance / ほくぶ  / bokubu  / the north / ほっかいどう  / hokkaidō  / Hokkaido / とうほく  / tōhoku  / northeast, Tohoku / ほくべい  / hokubei  / North America",
+    "vocabulary_text": "きた   / kita   / north  / きたぐち  / kitaguchi  / north entrance / ほくぶ  / bokubu  / the north / ほっかいどう  / hokkaidō  / Hokkaido / とうほく  / tōhoku  / northeast, Tohoku / ほくべい  / hokubei  / North America",
+    "page": 9
+  },
+  {
+    "character": "南",
+    "source": "JK4B Flashcard",
+    "card": 135,
+    "strokes": 9,
+    "reading_info": "ナン NAN, ナ NA,  / みなみ minami South みなみ  / minami  / south / みなみぐち  / minamiguchi   / south entrance / みなみアメリカ  / minami amerika  South America / みなみアフリカ  / minami afurika  / South Africa / なんべい   / nanbei   / South America / なんぶ   / nanbu   / the south",
+    "vocabulary_text": "みなみ  / minami  / south / みなみぐち  / minamiguchi   / south entrance / みなみアメリカ  / minami amerika  South America / みなみアフリカ  / minami afurika  / South Africa / なんべい   / nanbei   / South America / なんぶ   / nanbu   / the south",
+    "page": 9
+  },
+  {
+    "character": "西",
+    "source": "JK4B Flashcard",
+    "card": 136,
+    "strokes": 6,
+    "reading_info": "セイ SEI, サイ SAI, にし nishi West にし   / nishi   / west  / にしぐち  / nishiguchi  / west entrance / せいよう  / seiyō  / the west, Western / たいせいよう  / taiseiyō  / Atlantic Ocean / かんさい  / kansai  / Kansai region",
+    "vocabulary_text": "にし   / nishi   / west  / にしぐち  / nishiguchi  / west entrance / せいよう  / seiyō  / the west, Western / たいせいよう  / taiseiyō  / Atlantic Ocean / かんさい  / kansai  / Kansai region",
+    "page": 10
+  },
+  {
+    "character": "東",
+    "source": "JK4B Flashcard",
+    "card": 137,
+    "strokes": 8,
+    "reading_info": "トウ TŌ, ひがし higashi East ひがし  / higashi  / east / ひがしぐち  / higashiguchi   / east entrance / ちゅうとう  / chūtō   / Middle East / とうよう  / tōyō  / the East, Orient / かんとう   / kantō   / Kantō region",
+    "vocabulary_text": "ひがし  / higashi  / east / ひがしぐち  / higashiguchi   / east entrance / ちゅうとう  / chūtō   / Middle East / とうよう  / tōyō  / the East, Orient / かんとう   / kantō   / Kantō region",
+    "page": 10
+  },
+  {
+    "character": "足",
+    "source": "JK4B Flashcard",
+    "card": 138,
+    "strokes": 7,
+    "reading_info": "ソク SOKU, あし ashi, た(りる)  / ta(riru), た(す) ta(su) Foot, enough あし   / ashi   / foot, legs  / みぎあし migiashi  / right foot / にそく  / nisoku  / two pairs – counter for footwear / ふそく  / fusoku  / insufﬁ cient / たりる  / tariru  / to be enough",
+    "vocabulary_text": "あし   / ashi   / foot, legs  / みぎあし migiashi  / right foot / にそく  / nisoku  / two pairs – counter for footwear / ふそく  / fusoku  / insufﬁ cient / たりる  / tariru  / to be enough",
+    "page": 10
+  },
+  {
+    "character": "走",
+    "source": "JK4B Flashcard",
+    "card": 139,
+    "strokes": 7,
+    "reading_info": "ソウ SŌ, はし(る) hashi(ru) To run はしる　   / hashiru　  / to run / 50めーとるそう*  / 50 metorusō  / 50-meter race / そうしゃ*  / sōsha  / runner / きょうそう*  / kyōsō   / a (foot) race / ごちそう*  / gochisō  / a feast",
+    "vocabulary_text": "* Bonus word (not included in the book)",
+    "page": 10
+  },
+  {
+    "character": "起",
+    "source": "JK4B Flashcard",
+    "card": 140,
+    "strokes": 10,
+    "reading_info": "キ KI, お(きる) o(kiru),  / お(こす) o(kosu) To wake up おきる   / okiru   / to  wake  / きりつ  / kiritsu  / “Stand”",
+    "vocabulary_text": "おきる   / okiru   / to  wake  / きりつ  / kiritsu  / “Stand”",
+    "page": 10
+  },
+  {
+    "character": "止",
+    "source": "JK4B Flashcard",
+    "card": 141,
+    "strokes": 4,
+    "reading_info": "シ SHI, と(まる) to(maru),  / と(める) to(meru) To stop とめる  / tomeru  / to stop something / とまる  / tomaru   / something stops / ちゅうしする  / chūshi suru   / to cancel / あめがやんだ  / ame ga yanda  / the rain stopped / いきとまり  / ikitomari  / deadend street",
+    "vocabulary_text": "とめる  / tomeru  / to stop something / とまる  / tomaru   / something stops / ちゅうしする  / chūshi suru   / to cancel / あめがやんだ  / ame ga yanda  / the rain stopped / いきとまり  / ikitomari  / deadend street",
+    "page": 10
+  },
+  {
+    "character": "正",
+    "source": "JK4B Flashcard",
+    "card": 142,
+    "strokes": 5,
+    "reading_info": "セイ SEI, ショウ SHŌ, ただ(しい)  / tada(shii), まさ masa Correct ただしい   / tadashii   / right, correct / おしょうがつ  / oshōgatsu  / New Year’s Day  / せいもん  / seimon  / main entry, main gate",
+    "vocabulary_text": "ただしい   / tadashii   / right, correct / おしょうがつ  / oshōgatsu  / New Year’s Day  / せいもん  / seimon  / main entry, main gate",
+    "page": 10
+  },
+  {
+    "character": "歩",
+    "source": "JK4B Flashcard",
+    "card": 143,
+    "strokes": 8,
+    "reading_info": "ホ HO, ブ BU, フ FU, ある(く)  / aru(ku), あゆ(む) ayu(mu) To walk あるく   / aruku  / to walk / あるいていく  / aruite iku  to go by walking / いっぽ*  / ippo  / a step / いっぽいっぽ*  / ippo ippo  / step by step / さんぽ*  / sampo  / a walk",
+    "vocabulary_text": "* Bonus word (not included in the book)",
+    "page": 10
+  },
+  {
+    "character": "休",
+    "source": "JK4B Flashcard",
+    "card": 144,
+    "strokes": 6,
+    "reading_info": "キュウ KYŪ, やす(む) yasu(mu),  / やす(まる) yasu(maru) To rest やすむ  / yasumu  / to rest, be absent / やすみ  / yasumi  / holiday, day off,  /   /   /  is absent / やすみじかん  / yasumi jikan  / recess, break time / きゅうじつ  / kyūjitsu  / holiday, day off /   /   /  (formal)",
+    "vocabulary_text": "やすむ  / yasumu  / to rest, be absent / やすみ  / yasumi  / holiday, day off,  /   /   /  is absent / やすみじかん  / yasumi jikan  / recess, break time / きゅうじつ  / kyūjitsu  / holiday, day off /   /   /  (formal)",
+    "page": 10
+  },
+  {
+    "character": "体",
+    "source": "JK4B Flashcard",
+    "card": 145,
+    "strokes": 7,
+    "reading_info": "タイ TAI, テイ TEI, からだ karada Body からだ   / karada  / body / だいたい  / daitai   / generally / たいりょく  / tairyoku   / physical strength / たいいく  / taiiku   / physical education / たいいくかん  / taiikukan   / gym / たいそう*  / taisō   / gymnastics, physical  /   /   /  exercises",
+    "vocabulary_text": "* Bonus word (not included in the book)",
+    "page": 10
+  },
+  {
+    "character": "指",
+    "source": "JK4B Flashcard",
+    "card": 146,
+    "strokes": 9,
+    "reading_info": "シ SHI, ゆび yubi, さ(す) sa(su) Finger, to point ゆび   / yubi   / ﬁ nger, toe  / さす  / sasu  / to point / めざす  / mezasu  / to aim / しめいする  / shimei suru  / to nominate",
+    "vocabulary_text": "ゆび   / yubi   / ﬁ nger, toe  / さす  / sasu  / to point / めざす  / mezasu  / to aim / しめいする  / shimei suru  / to nominate",
+    "page": 10
+  },
+  {
+    "character": "背",
+    "source": "JK4B Flashcard",
+    "card": 147,
+    "strokes": 9,
+    "reading_info": "ハイ HAI, せ se, せい sei,  / そむ(く) somu(ku) Back, stature せ／せい  / se/sei  / height / せがたかい  / se ga takai   / is tall / せなか  / senaka   / person’s back",
+    "vocabulary_text": "せ／せい  / se/sei  / height / せがたかい  / se ga takai   / is tall / せなか  / senaka   / person’s back",
+    "page": 10
+  },
+  {
+    "character": "自",
+    "source": "JK4B Flashcard",
+    "card": 148,
+    "strokes": 6,
+    "reading_info": "ジ JI, シ SHI,  / みずか(ら) mizuka(ra) Oneself じぶん   / jibun   / oneself  / しぜん  / shizen  / nature / じこしょうかい  / jikoshōkai  / self introduction",
+    "vocabulary_text": "じぶん   / jibun   / oneself  / しぜん  / shizen  / nature / じこしょうかい  / jikoshōkai  / self introduction",
+    "page": 10
+  },
+  {
+    "character": "鼻",
+    "source": "JK4B Flashcard",
+    "card": 149,
+    "strokes": 14,
+    "reading_info": "ビ BI, はな hana Nose はな  / hana  / nose / はなみずがでる  / hanamizu   / have a /   /  ga deru  /  runny nose / はなうた*  / hanauta  / humming / はなたかだか*  / hanatakadaka  / very proud",
+    "vocabulary_text": "* Bonus word (not included in the book)",
+    "page": 10
+  },
+  {
+    "character": "寝",
+    "source": "JK4B Flashcard",
+    "card": 150,
+    "strokes": 13,
+    "reading_info": "シン SHIN, ね(る) ne(ru),  / ね(かす) ne(kasu) To sleep, lie down ねる   / neru   / to sleep, lie down  / ねるじかん  / neru jikan  / bed time / はやねはやおき  / hayane  / early to bed,  /   /  hayaoki   /  early to rise",
+    "vocabulary_text": "ねる   / neru   / to sleep, lie down  / ねるじかん  / neru jikan  / bed time / はやねはやおき  / hayane  / early to bed,  /   /  hayaoki   /  early to rise",
+    "page": 10
+  },
+  {
+    "character": "新",
+    "source": "JK4B Flashcard",
+    "card": 151,
+    "strokes": 13,
+    "reading_info": "シン SHIN, あたら(しい)  / atara(shii), あら(た) ara(ta),  / にい nī New あたらしい  / atarashii  / new / しんぶん  / shinbun   / newspaper / さいしん  / saishin   / newest, latest / しんかんせん  / shinkansen   / bullet train",
+    "vocabulary_text": "あたらしい  / atarashii  / new / しんぶん  / shinbun   / newspaper / さいしん  / saishin   / newest, latest / しんかんせん  / shinkansen   / bullet train",
+    "page": 11
+  },
+  {
+    "character": "古",
+    "source": "JK4B Flashcard",
+    "card": 152,
+    "strokes": 5,
+    "reading_info": "コ KO, ふる(い) furu(i), ふる / (す) furu(su) Old ふるい  / furui  / old / ちゅうこ  / chūko   / used, secondhand / ふるほんや  / furuhonya   / used bookstore",
+    "vocabulary_text": "ふるい  / furui  / old / ちゅうこ  / chūko   / used, secondhand / ふるほんや  / furuhonya   / used bookstore",
+    "page": 11
+  },
+  {
+    "character": "美",
+    "source": "JK4B Flashcard",
+    "card": 153,
+    "strokes": 9,
+    "reading_info": "ビ BI, うつく(しい)  / utsuku(shii) Beautiful うつくしい   / utsukushii   / beautiful  / びじん  / bijin  / beautiful woman / びよういん  / biyōin  / beauty salon / びじゅつ  / bijutsu  / ﬁ ne arts / びじゅつかん  / bijutsukan  / art gallery",
+    "vocabulary_text": "うつくしい   / utsukushii   / beautiful  / びじん  / bijin  / beautiful woman / びよういん  / biyōin  / beauty salon / びじゅつ  / bijutsu  / ﬁ ne arts / びじゅつかん  / bijutsukan  / art gallery",
+    "page": 11
+  },
+  {
+    "character": "若",
+    "source": "JK4B Flashcard",
+    "card": 154,
+    "strokes": 8,
+    "reading_info": "ジャク JAKU, ニャク  / NYAKU, わか(い) waka(i),  / も(しくは) mo(shikuwa) Young わかい  / wakai  / young / わかもの  / wakamono   / young man, youth",
+    "vocabulary_text": "わかい  / wakai  / young / わかもの  / wakamono   / young man, youth",
+    "page": 11
+  },
+  {
+    "character": "長",
+    "source": "JK4B Flashcard",
+    "card": 155,
+    "strokes": 8,
+    "reading_info": "チョウ CHŌ, なが(い) naga(i) Long ながい   / nagai   / long  / ながさ  / nagasa  / length / しちょう  / shichō  / mayor / かいちょう  / kaichō  / president of a society / ちょうなん  / chōnan  / eldest son / ちょうじょ  / chōjo  / eldest daughter / こうちょう  / kōchō  / school principal",
+    "vocabulary_text": "",
+    "page": 11
+  },
+  {
+    "character": "太",
+    "source": "JK4B Flashcard",
+    "card": 156,
+    "strokes": 4,
+    "reading_info": "タイ TAI, タ TA, ふとい  / futo(i), ふとる futo(ru) Fat ふとい  / futoi  / fat, thick / ふとっている  / futotte iru   / to be fat, heavy / ふとさ*  / futosa  / thickness",
+    "vocabulary_text": "ふとい  / futoi  / fat, thick / ふとっている  / futotte iru   / to be fat, heavy / ふとさ*  / futosa  / thickness",
+    "page": 11
+  },
+  {
+    "character": "高",
+    "source": "JK4B Flashcard",
+    "card": 157,
+    "strokes": 10,
+    "reading_info": "コウ KŌ, たか(い) taka(i),  / たか taka Tall, expensive たかい   / takai   / high, high-priced, tall  / たかさ  / takasa  / height / こうこう  / kōkō  / high school",
+    "vocabulary_text": "たかい   / takai   / high, high-priced, tall  / たかさ  / takasa  / height / こうこう  / kōkō  / high school",
+    "page": 11
+  },
+  {
+    "character": "安",
+    "source": "JK4B Flashcard",
+    "card": 158,
+    "strokes": 6,
+    "reading_info": "アン AN, やすい yasu(i) Peace, cheap やすい  / yasui  / inexpensive, peaceful / あんしんする  / anshin suru  to be relieved / あんぜん  / anzen   / safety, safe",
+    "vocabulary_text": "やすい  / yasui  / inexpensive, peaceful / あんしんする  / anshin suru  to be relieved / あんぜん  / anzen   / safety, safe",
+    "page": 11
+  },
+  {
+    "character": "楽",
+    "source": "JK4B Flashcard",
+    "card": 159,
+    "strokes": 13,
+    "reading_info": "ガク GAKU, ラク RAKU,  / たの(しい) tano(shii),  / たの(しむ) tano(shimu) Fun, comfortable たのしい   / tanoshii   / is fun  / たのしむ  / tanoshimu  / to enjoy, have fun / らくな  / raku na  / comfortable / おんがく*  / ongaku  / music",
+    "vocabulary_text": "たのしい   / tanoshii   / is fun  / たのしむ  / tanoshimu  / to enjoy, have fun / らくな  / raku na  / comfortable / おんがく*  / ongaku  / music * Bonus word (not included in the book)",
+    "page": 11
+  },
+  {
+    "character": "明",
+    "source": "JK4B Flashcard",
+    "card": 160,
+    "strokes": 8,
+    "reading_info": "メイ MEI, ミョウ MYŌ, あ(かり)  / a(kari), あか(るい) aka(rui),  / あき(らか) aki(raka), あ(ける)  / a(keru), あ(かす) a(kasu) Bright あかるい  / akarui  / bright, cheerful / あした  / ashita   / tomorrow",
+    "vocabulary_text": "あかるい  / akarui  / bright, cheerful / あした  / ashita   / tomorrow",
+    "page": 11
+  },
+  {
+    "character": "広",
+    "source": "JK4B Flashcard",
+    "card": 161,
+    "strokes": 5,
+    "reading_info": "コウ KŌ, ひろ(い) hiro(i), ひろ / (める) hiro(meru), ひろ(げる)  / hiro(geru) Wide, spacious ひろい   / hiroi   / wide, spacious  / ひろさ  / hirosa  / width / こうだいな  / kōdai na  / vast",
+    "vocabulary_text": "ひろい   / hiroi   / wide, spacious  / ひろさ  / hirosa  / width / こうだいな  / kōdai na  / vast",
+    "page": 11
+  },
+  {
+    "character": "有",
+    "source": "JK4B Flashcard",
+    "card": 162,
+    "strokes": 6,
+    "reading_info": "ユウ YŪ, ウ U, あ(る) a(ru) Have, exist ゆうめいな  / yūmei na  / famous / ゆうりょく*  / yūryoku  / powerful",
+    "vocabulary_text": "ゆうめいな  / yūmei na  / famous / ゆうりょく*  / yūryoku  / powerful * Bonus word (not included in the book)",
+    "page": 11
+  },
+  {
+    "character": "前",
+    "source": "JK4B Flashcard",
+    "card": 163,
+    "strokes": 9,
+    "reading_info": "ゼン ZEN, まえ mae Before, in front まえ   / mae   / before, in front  / えきまえ  / ekimae  / in front of the station / さんねんまえ  / sannenmae  / three years before",
+    "vocabulary_text": "まえ   / mae   / before, in front  / えきまえ  / ekimae  / in front of the station / さんねんまえ  / sannenmae  / three years before",
+    "page": 11
+  },
+  {
+    "character": "名",
+    "source": "JK4B Flashcard",
+    "card": 164,
+    "strokes": 6,
+    "reading_info": "メイ MEI, ミョウ MYŌ, な na Name なまえ  / namae  / name / めいぶつ  / meibutsu   / specialty, noted product / めいしょ  / meisho   / noted place, sights",
+    "vocabulary_text": "なまえ  / namae  / name / めいぶつ  / meibutsu   / specialty, noted product / めいしょ  / meisho   / noted place, sights",
+    "page": 11
+  },
+  {
+    "character": "後",
+    "source": "JK4B Flashcard",
+    "card": 165,
+    "strokes": 9,
+    "reading_info": "ゴ GO, コウ KŌ, のち nochi,  / うし(ろ) ushi(ro), あと ato,  / おく(れる) oku(reru) After, behind あと(で)   / atode   / after, later  / うしろ  / ushiro  / behind / じゅうねんご  / jūnengo  / ten years later",
+    "vocabulary_text": "あと(で)   / atode   / after, later  / うしろ  / ushiro  / behind / じゅうねんご  / jūnengo  / ten years later",
+    "page": 11
+  },
+  {
+    "character": "族",
+    "source": "JK4B Flashcard",
+    "card": 166,
+    "strokes": 11,
+    "reading_info": "ゾク ZOKU Family, tribe かぞく   / kazoku   / family  / みんぞく  / minzoku  / race",
+    "vocabulary_text": "かぞく   / kazoku   / family  / みんぞく  / minzoku  / race",
+    "page": 12
+  },
+  {
+    "character": "様",
+    "source": "JK4B Flashcard",
+    "card": 167,
+    "strokes": 14,
+    "reading_info": "ヨウ YŌ, さま sama Formal title, / Mr./Mrs./Ms./Miss たなかさま  / tanaka sama  / Mr./Mrs./Ms./ /   /   /  Miss Tanaka / さまざまな  / samazama na  / various / ようす  / yōsu  / situation, status,  /   /   /  appearance / このように  / kono yō ni  / in this way",
+    "vocabulary_text": "たなかさま  / tanaka sama  / Mr./Mrs./Ms./ /   /   /  Miss Tanaka / さまざまな  / samazama na  / various / ようす  / yōsu  / situation, status,  /   /   /  appearance / このように  / kono yō ni  / in this way",
+    "page": 12
+  },
+  {
+    "character": "主",
+    "source": "JK4B Flashcard",
+    "card": 168,
+    "strokes": 5,
+    "reading_info": "シュ SHU,  ス SU, ぬし  / nushi, おも omo Master おもに   / omo ni   / mainly  / もちぬし  / mochinushi  / owner / しゅじん  / shujin  / one’s own husband / ごしゅじん  / goshujin  / someone’s husband",
+    "vocabulary_text": "おもに   / omo ni   / mainly  / もちぬし  / mochinushi  / owner / しゅじん  / shujin  / one’s own husband / ごしゅじん  / goshujin  / someone’s husband",
+    "page": 12
+  },
+  {
+    "character": "未",
+    "source": "JK4B Flashcard",
+    "card": 169,
+    "strokes": 5,
+    "reading_info": "ミ MI Not yet みらい  / mirai  / future / みち  / michi   / unknown",
+    "vocabulary_text": "みらい  / mirai  / future / みち  / michi   / unknown",
+    "page": 12
+  },
+  {
+    "character": "姉",
+    "source": "JK4B Flashcard",
+    "card": 170,
+    "strokes": 8,
+    "reading_info": "シ SHI, あね ane Big sister あね   / ane   / one’s older sister / おねえさん  / onēsan  / older sister",
+    "vocabulary_text": "あね   / ane   / one’s older sister / おねえさん  / onēsan  / older sister",
+    "page": 12
+  },
+  {
+    "character": "妹",
+    "source": "JK4B Flashcard",
+    "card": 171,
+    "strokes": 8,
+    "reading_info": "マイ MAI, いもうと imōto Younger sister いもうと   / imōto  / younger sister / しまい  / shimai   / sisters / しまいこう  / shimaikō   / sister school / しまいとし  / shimaitoshi   / sister city",
+    "vocabulary_text": "いもうと   / imōto  / younger sister / しまい  / shimai   / sisters / しまいこう  / shimaikō   / sister school / しまいとし  / shimaitoshi   / sister city",
+    "page": 12
+  },
+  {
+    "character": "兄",
+    "source": "JK4B Flashcard",
+    "card": 172,
+    "strokes": 5,
+    "reading_info": "ケイ KEI, キョウ KYŌ, あに ani Older brother",
+    "vocabulary_text": "あに  / ani  / one’s older brother / おにいさん  / oniisan  / older brother / ふけい  / fukei  / parents and guardians",
+    "page": 12
+  },
+  {
+    "character": "弟",
+    "source": "JK4B Flashcard",
+    "card": 173,
+    "strokes": 7,
+    "reading_info": "テイ TEI, ダイ DAI, デ DE,  / おとうと otōto Younger brother",
+    "vocabulary_text": "おとうと   / otōto  / younger brother / でし  / deshi   / disciple / きょうだい  / kyōdai   / siblings, brothers",
+    "page": 12
+  },
+  {
+    "character": "住",
+    "source": "JK4B Flashcard",
+    "card": 174,
+    "strokes": 7,
+    "reading_info": "ジュウ JŪ, す(む) su(mu),  / す(まう) su(mau) To live, reside",
+    "vocabulary_text": "すむ  / sumu  / to live, reside / じゅうしょ  / jūsho   / address / おすまい  / osumai   / where you live",
+    "page": 12
+  },
+  {
+    "character": "室",
+    "source": "JK4B Flashcard",
+    "card": 175,
+    "strokes": 9,
+    "reading_info": "シツ SHITSU, むろ muro Room わしつ  / washitsu  / Japanese-style room / ようしつ  / yōshitsu   / western-style room / しつない  / shitsunai   / indoor, inside the room",
+    "vocabulary_text": "わしつ  / washitsu  / Japanese-style room / ようしつ  / yōshitsu   / western-style room / しつない  / shitsunai   / indoor, inside the room",
+    "page": 12
+  },
+  {
+    "character": "部",
+    "source": "JK4B Flashcard",
+    "card": 176,
+    "strokes": 10,
+    "reading_info": "ブ BU Section へや   / heya   / room  / いちぶ  / ichibu  / one part / ぶぶん  / bubun  / part",
+    "vocabulary_text": "へや   / heya   / room  / いちぶ  / ichibu  / one part / ぶぶん  / bubun  / part",
+    "page": 12
+  },
+  {
+    "character": "屋",
+    "source": "JK4B Flashcard",
+    "card": 177,
+    "strokes": 9,
+    "reading_info": "オク OKU, や ya Roof, shop ほんや  / honya  / bookstore / さかなや  / sakanaya   / ﬁ sh market / おくじょう  / okujō   / rooftop / おくがい  / okugai   / outdoors",
+    "vocabulary_text": "ほんや  / honya  / bookstore / さかなや  / sakanaya   / ﬁ sh market / おくじょう  / okujō   / rooftop / おくがい  / okugai   / outdoors",
+    "page": 12
+  },
+  {
+    "character": "和",
+    "source": "JK4B Flashcard",
+    "card": 178,
+    "strokes": 8,
+    "reading_info": "ワ WA,  オ O,  / やわ(らぐ) yawa(ragu),  / なご(む) nago(mu) Harmony, Japanese style わ   / wa   / harmony  / わしょく  / washoku  / Japanese-style food / わふく  / wafuku  / Japanese clothing, kimono / わぎゅう  / wagyū  / Japanese beef",
+    "vocabulary_text": "わ   / wa   / harmony  / わしょく  / washoku  / Japanese-style food / わふく  / wafuku  / Japanese clothing, kimono / わぎゅう  / wagyū  / Japanese beef",
+    "page": 12
+  },
+  {
+    "character": "洋",
+    "source": "JK4B Flashcard",
+    "card": 179,
+    "strokes": 9,
+    "reading_info": "よう YŌ Ocean, Western style せいよう  / seiyō  / the West / とうよう  / tōyō   / the East / ようしょく  / yōshoku   / western-style food / たいせいよう  / taiseiyō   / Atlantic Ocean / たいへいよう  / taiheiyō   / Paciﬁ c Ocean",
+    "vocabulary_text": "せいよう  / seiyō  / the West / とうよう  / tōyō   / the East / ようしょく  / yōshoku   / western-style food / たいせいよう  / taiseiyō   / Atlantic Ocean / たいへいよう  / taiheiyō   / Paciﬁ c Ocean",
+    "page": 12
+  },
+  {
+    "character": "知",
+    "source": "JK4B Flashcard",
+    "card": 180,
+    "strokes": 8,
+    "reading_info": "チ CHI, し(る) shi(ru) To know しる   / shiru   / to know  / しりあう  / shiriau  / to get to know someone / しらせる   / shiraseru   / to notify, inform  / おしらせ   / oshirase   / notice, notiﬁ cation  / ちじん   / chijin   / acquaintance",
+    "vocabulary_text": "しる   / shiru   / to know  / しりあう  / shiriau  / to get to know someone / しらせる   / shiraseru   / to notify, inform  / おしらせ   / oshirase   / notice, notiﬁ cation  / ちじん   / chijin   / acquaintance",
+    "page": 12
+  },
+  {
+    "character": "科",
+    "source": "JK4B Flashcard",
+    "card": 181,
+    "strokes": 9,
+    "reading_info": "カ KA Department, subject かもく  / kamoku  / subject / きょうかしょ  / kyōkasho  / textbook / かがく  / kagaku  / science",
+    "vocabulary_text": "かもく  / kamoku  / subject / きょうかしょ  / kyōkasho  / textbook / かがく  / kagaku  / science",
+    "page": 13
+  },
+  {
+    "character": "教",
+    "source": "JK4B Flashcard",
+    "card": 182,
+    "strokes": 10,
+    "reading_info": "キョウ KYŌ, おし(える) oshi(eru),  / おそ(わる) oso(waru) To teach おしえる   / oshieru   / to teach  / きょうしつ  / kyōshitsu  / classroom, class, lesson / きょうかい  / kyōkai  / church / きょういく*  / kyōiku  / education",
+    "vocabulary_text": "おしえる   / oshieru   / to teach  / きょうしつ  / kyōshitsu  / classroom, class, lesson / きょうかい  / kyōkai  / church / きょういく*  / kyōiku  / education",
+    "page": 13
+  },
+  {
+    "character": "枚",
+    "source": "JK4B Flashcard",
+    "card": 183,
+    "strokes": 8,
+    "reading_info": "マイ MAI Counter of sheets of things いちまいのかみ ichimai  / one sheet of paper /   /  no kami  / まいすう*  / maisū   / number of sheets of paper",
+    "vocabulary_text": "いちまいのかみ ichimai  / one sheet of paper /   /  no kami  / まいすう*  / maisū   / number of sheets of paper * Bonus word (not included in the book) / * Bonus word (not included in the book)",
+    "page": 13
+  },
+  {
+    "character": "英",
+    "source": "JK4B Flashcard",
+    "card": 184,
+    "strokes": 8,
+    "reading_info": "エイ EI England, English, splendid えいご   / eigo   / English (language) / えいかいわ  / eikaiwa  / English conversation  / えいこく  / eikoku  / England, Great Britain",
+    "vocabulary_text": "えいご   / eigo   / English (language) / えいかいわ  / eikaiwa  / English conversation  / えいこく  / eikoku  / England, Great Britain",
+    "page": 13
+  },
+  {
+    "character": "音",
+    "source": "JK4B Flashcard",
+    "card": 185,
+    "strokes": 9,
+    "reading_info": "オン ON, イン IN, おと oto,  / ね ne Sound おと   / oto  / sound / おんがく  / ongaku   / music / おんがくか  / ongakuka   / musician / おんよみ  / onyomi   / Chinese reading of kanji",
+    "vocabulary_text": "おと   / oto  / sound / おんがく  / ongaku   / music / おんがくか  / ongakuka   / musician / おんよみ  / onyomi   / Chinese reading of kanji",
+    "page": 13
+  },
+  {
+    "character": "勉",
+    "source": "JK4B Flashcard",
+    "card": 186,
+    "strokes": 10,
+    "reading_info": "ベン BEN Endeavor べんきょうする  / benkyō suru  / to study",
+    "vocabulary_text": "べんきょうする  / benkyō suru  / to study",
+    "page": 13
+  },
+  {
+    "character": "強",
+    "source": "JK4B Flashcard",
+    "card": 187,
+    "strokes": 11,
+    "reading_info": "キョウ KYŌ, ゴウ GŌ, つよ(い)  / tsuyo(i), し(いる) shi(iru) Strong",
+    "vocabulary_text": "つよい   / tsuyoi  / strong / ちからづよい  / chikarazuyoi   / mighty / きょうりょくな  / kyōryoku na   / strong",
+    "page": 13
+  },
+  {
+    "character": "漢",
+    "source": "JK4B Flashcard",
+    "card": 188,
+    "strokes": 13,
+    "reading_info": "カンKAN Han Dynasty かんじ   / kanji   / kanji characters  / かんぶん  / kanbun  / classical Chinese  /   /   /  literature / かんわじてん*  / kanwajiten  / Chinese-Japanese /   /   /  character dictionary",
+    "vocabulary_text": "かんじ   / kanji   / kanji characters  / かんぶん  / kanbun  / classical Chinese  /   /   /  literature / かんわじてん*  / kanwajiten  / Chinese-Japanese /   /   /  character dictionary * Bonus word (not included in the book)",
+    "page": 13
+  },
+  {
+    "character": "紙",
+    "source": "JK4B Flashcard",
+    "card": 189,
+    "strokes": 10,
+    "reading_info": "シ SHI, かみ kami Paper",
+    "vocabulary_text": "かみ  / kami  / paper / てがみ  / tegami   / letter / わし  / washi   / Japanese paper",
+    "page": 13
+  },
+  {
+    "character": "絵",
+    "source": "JK4B Flashcard",
+    "card": 190,
+    "strokes": 12,
+    "reading_info": "カイ KAI, エ e Picture え   / e   / picture  / えはがき  / ehagaki  / picture postcard",
+    "vocabulary_text": "え   / e   / picture  / えはがき  / ehagaki  / picture postcard",
+    "page": 13
+  },
+  {
+    "character": "肉",
+    "source": "JK4B Flashcard",
+    "card": 191,
+    "strokes": 6,
+    "reading_info": "ニク NIKU Meat, ﬂ esh にく  / niku  / ﬂ esh, meat / ぎゅうにく  / gyūniku   / beef / にくたい  / nikutai   / physical body / にくしん  / nikushin   / blood relative",
+    "vocabulary_text": "にく  / niku  / ﬂ esh, meat / ぎゅうにく  / gyūniku   / beef / にくたい  / nikutai   / physical body / にくしん  / nikushin   / blood relative",
+    "page": 13
+  },
+  {
+    "character": "反",
+    "source": "JK4B Flashcard",
+    "card": 192,
+    "strokes": 4,
+    "reading_info": "ハン HAN, ホン HON,  / タン TAN, そ(る) so(ru),  / そ(らす) so(rasu) Against はんたいする hantai suru to be opposed / はんたいご  / hantaigo   / antonym / はんたいがわ hantai gawa  opposite side, i.e., street / いはん  / ihan   / violation",
+    "vocabulary_text": "はんたいする hantai suru to be opposed / はんたいご  / hantaigo   / antonym / はんたいがわ hantai gawa  opposite side, i.e., street / いはん  / ihan   / violation",
+    "page": 13
+  },
+  {
+    "character": "飯",
+    "source": "JK4B Flashcard",
+    "card": 193,
+    "strokes": 12,
+    "reading_info": "ハン HAN, めし meshi Meal, cooked rice ごはん  / gohan  / food, meal, cooked rice / あさごはん  / asagohan  / breakfast / ひるごはん  / hirugohan  / lunch",
+    "vocabulary_text": "ごはん  / gohan  / food, meal, cooked rice / あさごはん  / asagohan  / breakfast / ひるごはん  / hirugohan  / lunch",
+    "page": 13
+  },
+  {
+    "character": "飲",
+    "source": "JK4B Flashcard",
+    "card": 194,
+    "strokes": 12,
+    "reading_info": "イン IN, の(む) no(mu) To drink のむ  / nomu  / to drink / のみもの  / nomimono   / drink / のみみず*  / nomimizu  / drinking water",
+    "vocabulary_text": "のむ  / nomu  / to drink / のみもの  / nomimono   / drink / のみみず*  / nomimizu  / drinking water",
+    "page": 13
+  },
+  {
+    "character": "味",
+    "source": "JK4B Flashcard",
+    "card": 195,
+    "strokes": 8,
+    "reading_info": "ミ MI, あじ aji,  / あじ(わう) aji(wau) Flavor あじ   / aji   / ﬂ avor  / あじわう  / ajiwau  / to taste / おいしい*  / oishii  / delicious / みかた  / mikata  / friend, ally",
+    "vocabulary_text": "あじ   / aji   / ﬂ avor  / あじわう  / ajiwau  / to taste / おいしい*  / oishii  / delicious / みかた  / mikata  / friend, ally * Bonus word (not included in the book) / * Note: this is an unusual pronunciation for the kanji.",
+    "page": 13
+  },
+  {
+    "character": "料",
+    "source": "JK4B Flashcard",
+    "card": 196,
+    "strokes": 10,
+    "reading_info": "リョウ RYŌ Fee, materials りょうきん  / ryōkin  / charge / ゆうりょう  / yūryō   / fee, toll, charge / ざいりょう  / zairyō   / ingredients, materials",
+    "vocabulary_text": "りょうきん  / ryōkin  / charge / ゆうりょう  / yūryō   / fee, toll, charge / ざいりょう  / zairyō   / ingredients, materials",
+    "page": 14
+  },
+  {
+    "character": "理",
+    "source": "JK4B Flashcard",
+    "card": 197,
+    "strokes": 11,
+    "reading_info": "リ RI Logic, arrangement りょうり   / ryōri   / cooking  / にほんりょうり  / nihon ryōri  / Japanese cooking / しんりがく  / shinrigaku  / psychology / りか  / rika  / science",
+    "vocabulary_text": "りょうり   / ryōri   / cooking  / にほんりょうり  / nihon ryōri  / Japanese cooking / しんりがく  / shinrigaku  / psychology / りか  / rika  / science",
+    "page": 14
+  },
+  {
+    "character": "由",
+    "source": "JK4B Flashcard",
+    "card": 198,
+    "strokes": 5,
+    "reading_info": "ユ YU, ユウ YŪ, ユイ YUI Reason りゆう  / riyū  / reason / じゆう  / jiyū   / free, liberal",
+    "vocabulary_text": "りゆう  / riyū  / reason / じゆう  / jiyū   / free, liberal",
+    "page": 14
+  },
+  {
+    "character": "色",
+    "source": "JK4B Flashcard",
+    "card": 199,
+    "strokes": 6,
+    "reading_info": "ショク SHOKU, シキ SHIKI,  / いろ iro Color いろ   / iro   / color  / いろいろな  / iroiro na  / various",
+    "vocabulary_text": "いろ   / iro   / color  / いろいろな  / iroiro na  / various",
+    "page": 14
+  },
+  {
+    "character": "赤",
+    "source": "JK4B Flashcard",
+    "card": 200,
+    "strokes": 7,
+    "reading_info": "セキ SEKI, シャク SHAKU,  / あか aka, あか(い) aka(i) Red あか  / aka  / red / あかい  / akai  / is red / あかちゃん  / akachan  / baby / あかじ  / akaji  / deﬁ cit, loss / せきじゅうじ  / sekijūji  / Red Cross / せきどう  / sekidō  / equator",
+    "vocabulary_text": "あか  / aka  / red / あかい  / akai  / is red / あかちゃん  / akachan  / baby / あかじ  / akaji  / deﬁ cit, loss / せきじゅうじ  / sekijūji  / Red Cross / せきどう  / sekidō  / equator",
+    "page": 14
+  },
+  {
+    "character": "青",
+    "source": "JK4B Flashcard",
+    "card": 201,
+    "strokes": 8,
+    "reading_info": "セイ SEI, ショウ SHŌ,  / あお ao, あお(い) ao(i) Blue, green あお   / ao   / blue  / あおい  / aoi  / is blue / せいねん  / seinen  / youth, young man",
+    "vocabulary_text": "あお   / ao   / blue  / あおい  / aoi  / is blue / せいねん  / seinen  / youth, young man",
+    "page": 14
+  },
+  {
+    "character": "黒",
+    "source": "JK4B Flashcard",
+    "card": 202,
+    "strokes": 11,
+    "reading_info": "コク KOKU, くろ kuro,  / くろ(い) kuro(i) Black くろ  / kuro  / black / くろい  / kuroi   / is black / くろじ  / kuroji   / proﬁ t, surplus",
+    "vocabulary_text": "くろ  / kuro  / black / くろい  / kuroi   / is black / くろじ  / kuroji   / proﬁ t, surplus",
+    "page": 14
+  },
+  {
+    "character": "茶",
+    "source": "JK4B Flashcard",
+    "card": 203,
+    "strokes": 9,
+    "reading_info": "チャ CHA, サ SA Tea ちゃいろ   / chairo   / brown / ちゃいろい  / chairoi  / is brown  / おちゃ  / ocha  / Japanese tea / ちゃどう／さどう  / chadō/sadō  / tea ceremony / ちゃしつ  / chashitsu  / tea room / こうちゃ  / kōcha  / black tea",
+    "vocabulary_text": "ちゃいろ   / chairo   / brown / ちゃいろい  / chairoi  / is brown  / おちゃ  / ocha  / Japanese tea / ちゃどう／さどう  / chadō/sadō  / tea ceremony / ちゃしつ  / chashitsu  / tea room / こうちゃ  / kōcha  / black tea",
+    "page": 14
+  },
+  {
+    "character": "黄",
+    "source": "JK4B Flashcard",
+    "card": 204,
+    "strokes": 11,
+    "reading_info": "コウ KŌ, オウ Ō, き ki, こ ko Yellow きいろ   / kiiro  / yellow / きいろい  / kiiroi   / is yellow",
+    "vocabulary_text": "きいろ   / kiiro  / yellow / きいろい  / kiiroi   / is yellow",
+    "page": 14
+  },
+  {
+    "character": "横",
+    "source": "JK4B Flashcard",
+    "card": 205,
+    "strokes": 15,
+    "reading_info": "オウ Ō, よこ yoko Sideways よこ  / yoko  / sideways / よこはま  / yokohama  / Yokohama  /   /   /  (city near Tōkyō) / おうだんほどう  / ōdanhodō  / pedestrian  /   /   /  crosswalk",
+    "vocabulary_text": "よこ  / yoko  / sideways / よこはま  / yokohama  / Yokohama  /   /   /  (city near Tōkyō) / おうだんほどう  / ōdanhodō  / pedestrian  /   /   /  crosswalk",
+    "page": 14
+  },
+  {
+    "character": "銀",
+    "source": "JK4B Flashcard",
+    "card": 206,
+    "strokes": 14,
+    "reading_info": "ギン GIN Silver ぎん   / gin  / silver / ぎんいろ  / giniro   / silver color / ぎんこう  / ginkō   / bank",
+    "vocabulary_text": "ぎん   / gin  / silver / ぎんいろ  / giniro   / silver color / ぎんこう  / ginkō   / bank",
+    "page": 14
+  },
+  {
+    "character": "春",
+    "source": "JK4B Flashcard",
+    "card": 207,
+    "strokes": 9,
+    "reading_info": "シュン SHUN, はる haru Spring はる  / haru  / spring / はるやすみ  / haru yasumi  spring break / しゅんかしゅうとう shunkashūtō  spring, summer,  /   /   /  fall, winter / せいしゅん  / seishun   / youth / しゅんぶんのひ  / shunbun   / vernal equinox /   /  no hi",
+    "vocabulary_text": "",
+    "page": 14
+  },
+  {
+    "character": "夏",
+    "source": "JK4B Flashcard",
+    "card": 208,
+    "strokes": 10,
+    "reading_info": "カ KA, ゲ GE, なつ natsu Summer なつ  / natsu  / summer / なつやすみ  / natsu yasumi   / summer  /   /   /  vacation / なつのオリンピック  / natsu no  / Summer /   /  orinpikku  /  Olympics",
+    "vocabulary_text": "なつ  / natsu  / summer / なつやすみ  / natsu yasumi   / summer  /   /   /  vacation / なつのオリンピック  / natsu no  / Summer /   /  orinpikku  /  Olympics",
+    "page": 14
+  },
+  {
+    "character": "秋",
+    "source": "JK4B Flashcard",
+    "card": 209,
+    "strokes": 9,
+    "reading_info": "シュウ SHŪ, あき aki Autumn, fall あき   / aki   / autumn, fall  / しゅうぶんのひ  / shūbun  / autumn equinox /   /  no hi",
+    "vocabulary_text": "あき   / aki   / autumn, fall  / しゅうぶんのひ  / shūbun  / autumn equinox /   /  no hi",
+    "page": 14
+  },
+  {
+    "character": "冬",
+    "source": "JK4B Flashcard",
+    "card": 210,
+    "strokes": 5,
+    "reading_info": "トウ TŌ, ふゆ fuyu Winter ふゆ  / fuyu  / winter / ふゆやすみ  / fuyu yasumi  winter vacation / ふゆのオリンピック fuyu no   / Winter  /   /  orinpikku   /  Olympics",
+    "vocabulary_text": "ふゆ  / fuyu  / winter / ふゆやすみ  / fuyu yasumi  winter vacation / ふゆのオリンピック fuyu no   / Winter  /   /  orinpikku   /  Olympics",
+    "page": 14
+  },
+  {
+    "character": "朝",
+    "source": "JK4B Flashcard",
+    "card": 211,
+    "strokes": 12,
+    "reading_info": "チョウ CHŌ, あさ asa Morning あさ   / asa   / morning  / まいあさ  / maiasa  / every morning / あさごはん  / asagohan  / breakfast / けさ  / kesa  / this morning / ちょうしょく  / chōshoku  / breakfast",
+    "vocabulary_text": "あさ   / asa   / morning  / まいあさ  / maiasa  / every morning / あさごはん  / asagohan  / breakfast / けさ  / kesa  / this morning / ちょうしょく  / chōshoku  / breakfast",
+    "page": 15
+  },
+  {
+    "character": "昼",
+    "source": "JK4B Flashcard",
+    "card": 212,
+    "strokes": 9,
+    "reading_info": "チュウ CHŪ, ひる hiru Daytime, noon ひる  / hiru  / noon, daytime / ひるね  / hirune   / nap / ひるごはん  / hirugohan   / lunch / ちゅうしょく  / chūshoku   / lunch",
+    "vocabulary_text": "ひる  / hiru  / noon, daytime / ひるね  / hirune   / nap / ひるごはん  / hirugohan   / lunch / ちゅうしょく  / chūshoku   / lunch",
+    "page": 15
+  },
+  {
+    "character": "晩",
+    "source": "JK4B Flashcard",
+    "card": 213,
+    "strokes": 12,
+    "reading_info": "バン BAN Early evening, night ばん   / ban   / early evening, night  / こんばん  / konban  / this evening / こんばんは  / konbanwa  / “Good evening” / ばんごはん  / bangohan  / dinner",
+    "vocabulary_text": "ばん   / ban   / early evening, night  / こんばん  / konban  / this evening / こんばんは  / konbanwa  / “Good evening” / ばんごはん  / bangohan  / dinner",
+    "page": 15
+  },
+  {
+    "character": "夜",
+    "source": "JK4B Flashcard",
+    "card": 214,
+    "strokes": 8,
+    "reading_info": "ヤ YA, よ yo, よる yoru Evening, night よる  / yoru  / evening, night / よなか  / yonaka   / midnight / こんや  / konya   / tonight / やしょく  / yashoku  / evening snack",
+    "vocabulary_text": "よる  / yoru  / evening, night / よなか  / yonaka   / midnight / こんや  / konya   / tonight / やしょく  / yashoku  / evening snack",
+    "page": 15
+  },
+  {
+    "character": "午",
+    "source": "JK4B Flashcard",
+    "card": 215,
+    "strokes": 4,
+    "reading_info": "ゴ GO Noon ごぜん   / gozen   / A.M.  / ごぜんちゅう gozenchū  / during the morning / ごご  / gogo  / P.M. / しょうご  / shōgo  / noon",
+    "vocabulary_text": "ごぜん   / gozen   / A.M.  / ごぜんちゅう gozenchū  / during the morning / ごご  / gogo  / P.M. / しょうご  / shōgo  / noon",
+    "page": 15
+  },
+  {
+    "character": "週",
+    "source": "JK4B Flashcard",
+    "card": 216,
+    "strokes": 11,
+    "reading_info": "シュウ SHŪ Week いっしゅうかん  / isshūkan  / for one week / こんしゅう  / konshū   / this week / らいしゅう  / raishū   / next week / せんしゅう  / senshū  / last week / まいしゅう   / maishū   / every week",
+    "vocabulary_text": "いっしゅうかん  / isshūkan  / for one week / こんしゅう  / konshū   / this week / らいしゅう  / raishū   / next week / せんしゅう  / senshū  / last week / まいしゅう   / maishū   / every week",
+    "page": 15
+  },
+  {
+    "character": "末",
+    "source": "JK4B Flashcard",
+    "card": 219,
+    "strokes": 5,
+    "reading_info": "マツ MATSU, すえ sue Tip, end しゅうまつ   / shūmatsu   / weekend  / あとしまつ  / atoshimatsu  / clean-up / じゅうにがつすえ  / jūnigatsu sue  / end of  /   /   /  December / すえっこ  / suekko  / last child in  /   /   /  the family",
+    "vocabulary_text": "しゅうまつ   / shūmatsu   / weekend  / あとしまつ  / atoshimatsu  / clean-up / じゅうにがつすえ  / jūnigatsu sue  / end of  /   /   /  December / すえっこ  / suekko  / last child in  /   /   /  the family",
+    "page": 15
+  },
+  {
+    "character": "期",
+    "source": "JK4B Flashcard",
+    "card": 220,
+    "strokes": 12,
+    "reading_info": "キ KI Term, period きかん  / kikan  / period of time / きたいする  / kitai suru   / to expect / がっき  / gakki   / semester / いちがっき  / ichigakki  / 1st term / きまつしけん  / kimatsu shiken   / end of  /   /   /  semester exam",
+    "vocabulary_text": "きかん  / kikan  / period of time / きたいする  / kitai suru   / to expect / がっき  / gakki   / semester / いちがっき  / ichigakki  / 1st term / きまつしけん  / kimatsu shiken   / end of  /   /   /  semester exam",
+    "page": 15
+  },
+  {
+    "character": "初",
+    "source": "JK4B Flashcard",
+    "card": 221,
+    "strokes": 7,
+    "reading_info": "ショ SHO, はじ(め) haji(me),  / はつ hatsu, うい ui, そ(め) so(me) First はじめて / hajimete / for the ﬁ rst time / はじめまして / hajimemashite / “I am glad to meet  / you” / はつひので / hatsuhinode / ﬁ rst sunrise of the  / new year  / しょしんしゃ / shoshinsha / beginner",
+    "vocabulary_text": "はじめて / hajimete / for the ﬁ rst time / はじめまして / hajimemashite / “I am glad to meet  / you” / はつひので / hatsuhinode / ﬁ rst sunrise of the  / new year  / しょしんしゃ / shoshinsha / beginner",
+    "page": 15
+  },
+  {
+    "character": "次",
+    "source": "JK4B Flashcard",
+    "card": 222,
+    "strokes": 6,
+    "reading_info": "ジ JI, シ SHI, つ(ぐ) tsu(gu),  / つぎ tsugi Next つぎ　  / tsugi / next　 / じじょ　 / jijo / second daughter / じなん / jinan / second son　 / じかい　 / jikai / next time　 / もくじ / mokuji / table of contents",
+    "vocabulary_text": "つぎ　  / tsugi / next　 / じじょ　 / jijo / second daughter / じなん / jinan / second son　 / じかい　 / jikai / next time　 / もくじ / mokuji / table of contents",
+    "page": 15
+  },
+  {
+    "character": "曜",
+    "source": "JK4B Flashcard",
+    "card": 223,
+    "strokes": 18,
+    "reading_info": "ヨウ YŌ Day of the week にちようび / nichiyōbi / Sunday / なんようび / nanyōbi / what  day of the week",
+    "vocabulary_text": "にちようび / nichiyōbi / Sunday / なんようび / nanyōbi / what  day of the week",
+    "page": 15
+  },
+  {
+    "character": "昔",
+    "source": "JK4B Flashcard",
+    "card": 224,
+    "strokes": 8,
+    "reading_info": "セキ SEKI, むかし mukashi Once upon a time, olden times むかし / mukashi / former times / むかしむかしmukashi-mukashi “Once upon a  / time” / むかしばなしmukashibanashi / legend, old tale",
+    "vocabulary_text": "むかし / mukashi / former times / むかしむかしmukashi-mukashi “Once upon a  / time” / むかしばなしmukashibanashi / legend, old tale",
+    "page": 15
+  },
+  {
+    "character": "去",
+    "source": "JK4B Flashcard",
+    "card": 225,
+    "strokes": 5,
+    "reading_info": "キョ KYO, コ KO, さ(る) sa(ru) Gone, past きょねん / kyonen / last year",
+    "vocabulary_text": "きょねん / kyonen / last year",
+    "page": 15
+  },
+  {
+    "character": "平",
+    "source": "JK4B Flashcard",
+    "card": 226,
+    "strokes": 5,
+    "reading_info": "ヘイ HEI, ビョウ BYŌ,  / たい(ら) tai(ra), ひら hira Flat, calm へいじつ / heijitsu / weekday / へいわ / heiwa / peace / へいき / heiki / calm, unconcerned / へいせい / heisei / Heisei Era,  / 平成28年 = 2016 / たいら / taira / ﬂ at, level",
+    "vocabulary_text": "へいじつ / heijitsu / weekday / へいわ / heiwa / peace / へいき / heiki / calm, unconcerned / へいせい / heisei / Heisei Era,  / 平成28年 = 2016 / たいら / taira / ﬂ at, level",
+    "page": 16
+  },
+  {
+    "character": "昨",
+    "source": "JK4B Flashcard",
+    "card": 226,
+    "strokes": 9,
+    "reading_info": "サク SAKU Yesterday, previous きのう/さくじつ / kinō/sakujitsu / yesterday / おととい / ototoi / before yesterday / おととし / ototoshi / before last year",
+    "vocabulary_text": "きのう/さくじつ / kinō/sakujitsu / yesterday / おととい / ototoi / before yesterday / おととし / ototoshi / before last year",
+    "page": 15
+  },
+  {
+    "character": "画",
+    "source": "JK4B Flashcard",
+    "card": 227,
+    "strokes": 8,
+    "reading_info": "ガ  GA, カク KAKU",
+    "vocabulary_text": "",
+    "page": 16
+  },
+  {
+    "character": "節",
+    "source": "JK4B Flashcard",
+    "card": 227,
+    "strokes": 13,
+    "reading_info": "セツ SETSU, セチ SECHI,  / ふし fushi Season せつぶん / setsubun / bean throwing festival / おせちりょうりosechi ryōri / New Year’s food / きせつ / kisetsu / season",
+    "vocabulary_text": "せつぶん / setsubun / bean throwing festival / おせちりょうりosechi ryōri / New Year’s food / きせつ / kisetsu / season",
+    "page": 15
+  },
+  {
+    "character": "映",
+    "source": "JK4B Flashcard",
+    "card": 228,
+    "strokes": 9,
+    "reading_info": "エイ EI, うつ(る) utsu(ru),  / は(える) ha(eru) To reﬂ ect, reﬂ ection えいが / eiga / movie, ﬁ lm / えいがかん / eigakan / movie theater / じょうえいする / jōei suru / to show a ﬁ lm",
+    "vocabulary_text": "えいが / eiga / movie, ﬁ lm / えいがかん / eigakan / movie theater / じょうえいする / jōei suru / to show a ﬁ lm",
+    "page": 16
+  },
+  {
+    "character": "伝",
+    "source": "JK4B Flashcard",
+    "card": 229,
+    "strokes": 6,
+    "reading_info": "デン DEN, つた(える) tsuta(eru),  / つた(う) tsuta(u) To convey つたえる / tsutaeru / to pass along a  / message / てつだう / tetsudau / to help, assist / おてつだいさんotetsudai san / maid, custodian / でんごん / dengon / verbal message / でんとう / dentō / tradition",
+    "vocabulary_text": "つたえる / tsutaeru / to pass along a  / message / てつだう / tetsudau / to help, assist / おてつだいさんotetsudai san / maid, custodian / でんごん / dengon / verbal message / でんとう / dentō / tradition",
+    "page": 16
+  },
+  {
+    "character": "的",
+    "source": "JK4B Flashcard",
+    "card": 230,
+    "strokes": 8,
+    "reading_info": "テキ TEKI, まと mato Target, adjective ending でんとうてき / dentōteki / traditional  / もくてき / mokuteki / goal, purpose / ぶんかてき / bunkateki / cultural / きんだいてき / kindaiteki / modern",
+    "vocabulary_text": "でんとうてき / dentōteki / traditional  / もくてき / mokuteki / goal, purpose / ぶんかてき / bunkateki / cultural / きんだいてき / kindaiteki / modern",
+    "page": 16
+  },
+  {
+    "character": "連",
+    "source": "JK4B Flashcard",
+    "card": 231,
+    "strokes": 10,
+    "reading_info": "レン REN, つら(なる)   / tsura(naru), つ(れる) tsu(reru) To take along; to connect つれていく / tsureteiku / to take along / つれてくる / tsuretekuru / to bring along / つれてかえる / tsiretekaeru / to bring home  / れんきゅう / renkyū / long holiday",
+    "vocabulary_text": "つれていく / tsureteiku / to take along / つれてくる / tsuretekuru / to bring along / つれてかえる / tsiretekaeru / to bring home  / れんきゅう / renkyū / long holiday",
+    "page": 16
+  },
+  {
+    "character": "絡",
+    "source": "JK4B Flashcard",
+    "card": 232,
+    "strokes": 12,
+    "reading_info": "ラク RAKU, から(む) kara(mu),  / から(まる) kara(maru) To be involved; to contact れんらくする / renraku suru / to contact, get in  / touch  / れんらくさき / renrakusaki / contact address",
+    "vocabulary_text": "れんらくする / renraku suru / to contact, get in  / touch  / れんらくさき / renrakusaki / contact address",
+    "page": 16
+  },
+  {
+    "character": "信",
+    "source": "JK4B Flashcard",
+    "card": 233,
+    "strokes": 9,
+    "reading_info": "シン SHIN To believe, message しんじる / shinjiru / to believe / しんよう / shin’yō / trust, conﬁ dence / じしん / jishin / self-conﬁ dence",
+    "vocabulary_text": "しんじる / shinjiru / to believe / しんよう / shin’yō / trust, conﬁ dence / じしん / jishin / self-conﬁ dence",
+    "page": 16
+  },
+  {
+    "character": "説",
+    "source": "JK4B Flashcard",
+    "card": 234,
+    "strokes": 14,
+    "reading_info": "セツ SETSU, ゼイ ZEI,  / と(く) to(ku) To explain; theory しょうせつ / shōsetsu / a novel　 / せつめい / setsumei / explanation　 / でんせつ / densetsu / legend",
+    "vocabulary_text": "しょうせつ / shōsetsu / a novel　 / せつめい / setsumei / explanation　 / でんせつ / densetsu / legend",
+    "page": 16
+  },
+  {
+    "character": "面",
+    "source": "JK4B Flashcard",
+    "card": 235,
+    "strokes": 9,
+    "reading_info": "メン MEN, おも omo, おもて  / omote, つら tsura Face, mask おもしろい / omoshiroi / interesting / ほうめん / hōmen / direction / ひょうめん / hyōmen / surface",
+    "vocabulary_text": "おもしろい / omoshiroi / interesting / ほうめん / hōmen / direction / ひょうめん / hyōmen / surface",
+    "page": 16
+  },
+  {
+    "character": "接",
+    "source": "JK4B Flashcard",
+    "card": 236,
+    "strokes": 11,
+    "reading_info": "セツ SETSU, つ(ぐ) tsu(gu) To contact せっする / sessuru / to interact, come into  / contact / めんせつ / mensetsu / interview",
+    "vocabulary_text": "せっする / sessuru / to interact, come into  / contact / めんせつ / mensetsu / interview",
+    "page": 16
+  },
+  {
+    "character": "発",
+    "source": "JK4B Flashcard",
+    "card": 237,
+    "strokes": 9,
+    "reading_info": "ハツ HATSU, ホツ HOTSU To start off, emit はつめい / hatsumei / invention / はつおん / hatsuon / pronunciation / はっけん / hakken / discovery / しゅっぱつ / shuppatsu / departure",
+    "vocabulary_text": "はつめい / hatsumei / invention / はつおん / hatsuon / pronunciation / はっけん / hakken / discovery / しゅっぱつ / shuppatsu / departure",
+    "page": 16
+  },
+  {
+    "character": "表",
+    "source": "JK4B Flashcard",
+    "card": 238,
+    "strokes": 8,
+    "reading_info": "ヒョウ HYŌ, おもて omote,  / あらわ(す) arawa(su) To express, surface, table ひょう / hyō / table / ずひょう / zuhyō / chart / はっぴょう / happyō / presentation, announcement",
+    "vocabulary_text": "ひょう / hyō / table / ずひょう / zuhyō / chart / はっぴょう / happyō / presentation, announcement",
+    "page": 16
+  },
+  {
+    "character": "速",
+    "source": "JK4B Flashcard",
+    "card": 239,
+    "strokes": 10,
+    "reading_info": "ソク SOKU, はや(い) haya(i),  / すみ(やか) sumi(yaka) Fast, quick はやい / hayai / quick, fast / はやさ / hayasa / speed / さっそく / sassoku / immediately / そくど / sokudo / speed, velocity / じそく / jisoku / speed per hour",
+    "vocabulary_text": "はやい / hayai / quick, fast / はやさ / hayasa / speed / さっそく / sassoku / immediately / そくど / sokudo / speed, velocity / じそく / jisoku / speed per hour",
+    "page": 16
+  },
+  {
+    "character": "遅",
+    "source": "JK4B Flashcard",
+    "card": 240,
+    "strokes": 12,
+    "reading_info": "チ CHI, おく(れる) oku(reru),  / おそ(い) oso(i) Slow, late おそい / osoi / slow, late / おくれる / okureru / to be late / ちこく / chikoku / tardy",
+    "vocabulary_text": "おそい / osoi / slow, late / おくれる / okureru / to be late / ちこく / chikoku / tardy",
+    "page": 16
+  },
+  {
+    "character": "暗",
+    "source": "JK4B Flashcard",
+    "card": 241,
+    "strokes": 13,
+    "reading_info": "アン AN, くら(い) kura(i) Dark くらい / kurai / dark / あんこく / ankoku / darkness / あんきする / anki suru / to memorize",
+    "vocabulary_text": "くらい / kurai / dark / あんこく / ankoku / darkness / あんきする / anki suru / to memorize",
+    "page": 17
+  },
+  {
+    "character": "悪",
+    "source": "JK4B Flashcard",
+    "card": 242,
+    "strokes": 11,
+    "reading_info": "アク AKU, オ O,  / わる(い) waru(i) Bad わるい / warui / bad / わるくち / warukuchi / bad language, abuse",
+    "vocabulary_text": "わるい / warui / bad / わるくち / warukuchi / bad language, abuse",
+    "page": 17
+  },
+  {
+    "character": "忙",
+    "source": "JK4B Flashcard",
+    "card": 243,
+    "strokes": 6,
+    "reading_info": "ボウ BŌ, いそが(しい)  / isoga(shii) Busy いそがしい / isogashii / busy / いそがしさ / isogashisa / busyness",
+    "vocabulary_text": "いそがしい / isogashii / busy / いそがしさ / isogashisa / busyness",
+    "page": 17
+  },
+  {
+    "character": "静",
+    "source": "JK4B Flashcard",
+    "card": 244,
+    "strokes": 14,
+    "reading_info": "セイ SEI, ジョウ JŌ, しずか  / shizu(ka), しず(まる) shizu(maru) Quiet しずか / shizuka / quiet",
+    "vocabulary_text": "しずか / shizuka / quiet",
+    "page": 17
+  },
+  {
+    "character": "低",
+    "source": "JK4B Flashcard",
+    "card": 245,
+    "strokes": 7,
+    "reading_info": "テイ TEI, ひく(い) hiku(i) Low, short (height) ひくい / hikui / low / せがひくい / se ga hikui / short (for people)",
+    "vocabulary_text": "ひくい / hikui / low / せがひくい / se ga hikui / short (for people)",
+    "page": 17
+  },
+  {
+    "character": "短",
+    "source": "JK4B Flashcard",
+    "card": 246,
+    "strokes": 12,
+    "reading_info": "タン TAN, みじか(い) mijika(i) Short みじかい / mijikai / short / たんき / tanki / short term / たんだい / tandai / junior college / たんしょ / tansho / weak aspect / たんぶん / tanbun / short essay",
+    "vocabulary_text": "みじかい / mijikai / short / たんき / tanki / short term / たんだい / tandai / junior college / たんしょ / tansho / weak aspect / たんぶん / tanbun / short essay",
+    "page": 17
+  },
+  {
+    "character": "変",
+    "source": "JK4B Flashcard",
+    "card": 247,
+    "strokes": 9,
+    "reading_info": "ヘン HEN, か(わる) ka(waru),  / か(える) ka(eru) To change, strange かえる / kaeru / to change something / かわる / kawaru / something changes / へん / hen / strange / たいへん / taihen / awful, terrible / へんか / henka / change, transformation",
+    "vocabulary_text": "かえる / kaeru / to change something / かわる / kawaru / something changes / へん / hen / strange / たいへん / taihen / awful, terrible / へんか / henka / change, transformation",
+    "page": 17
+  },
+  {
+    "character": "重",
+    "source": "JK4B Flashcard",
+    "card": 248,
+    "strokes": 9,
+    "reading_info": "ジュウ JŪ, チョウ CHŌ, え e,  / おも(い) omo(i), かさ(なる)  / kasa(naru) Heavy おもい / omoi / heavy / じゅうよう / jūyō / important, essential / たいじゅう / taijū / body weight",
+    "vocabulary_text": "おもい / omoi / heavy / じゅうよう / jūyō / important, essential / たいじゅう / taijū / body weight",
+    "page": 17
+  },
+  {
+    "character": "宿",
+    "source": "JK4B Flashcard",
+    "card": 249,
+    "strokes": 11,
+    "reading_info": "シュク SHUKU, やど yado,  / やど(る) yado(ru) To lodge やど / yado  / lodging, inn / しんじゅく / shinjuku  / Shinjuku / はらじゅく / harajuku / Harajuku",
+    "vocabulary_text": "やど / yado  / lodging, inn / しんじゅく / shinjuku  / Shinjuku / はらじゅく / harajuku / Harajuku",
+    "page": 17
+  },
+  {
+    "character": "題",
+    "source": "JK4B Flashcard",
+    "card": 250,
+    "strokes": 18,
+    "reading_info": "ダイ DAI Topic, problem だいめい / daimei / title / かだい / kadai / task, topic / しゅくだい / shukudai  / homework / もんだい / mondai / problem / わだい / wadai / topic of conversation",
+    "vocabulary_text": "だいめい / daimei / title / かだい / kadai / task, topic / しゅくだい / shukudai  / homework / もんだい / mondai / problem / わだい / wadai / topic of conversation",
+    "page": 17
+  },
+  {
+    "character": "経",
+    "source": "JK4B Flashcard",
+    "card": 251,
+    "strokes": 11,
+    "reading_info": "ケイ KEI, キョウ KYŌ,  / へ(る) he(ru) To pass through, to manage けいゆする / keiyu suru / to pass through, by  / way of / けいざい / keizai  / economy, economics / けいえい / keiei  / management",
+    "vocabulary_text": "けいゆする / keiyu suru / to pass through, by  / way of / けいざい / keizai  / economy, economics / けいえい / keiei  / management",
+    "page": 17
+  },
+  {
+    "character": "験",
+    "source": "JK4B Flashcard",
+    "card": 252,
+    "strokes": 18,
+    "reading_info": "ケン KEN, ゲン GEN To experience, test けいけん / keikei / experience / たいけん / taiken / personal experience",
+    "vocabulary_text": "けいけん / keikei / experience / たいけん / taiken / personal experience",
+    "page": 17
+  },
+  {
+    "character": "受",
+    "source": "JK4B Flashcard",
+    "card": 253,
+    "strokes": 8,
+    "reading_info": "ジュ JU, う(ける) u(keru) To receive うける / ukeru / to receive, take うけつけ / uketsuke / reception, receptionist",
+    "vocabulary_text": "うける / ukeru / to receive, take うけつけ / uketsuke / reception, receptionist じゅしんする / jushin suru / to receive a message じゅけんする / juken suru / to take an exam",
+    "page": 17
+  },
+  {
+    "character": "授",
+    "source": "JK4B Flashcard",
+    "card": 254,
+    "strokes": 13,
+    "reading_info": "ジュ JU, さず(ける) sazu(keru) To confer きょうじゅ / kyōju / professor",
+    "vocabulary_text": "きょうじゅ / kyōju / professor",
+    "page": 17
+  },
+  {
+    "character": "業",
+    "source": "JK4B Flashcard",
+    "card": 255,
+    "strokes": 13,
+    "reading_info": "ギョウ GYŌ, ゴウ GŌ,  / わざ waza Work, business, industry こうぎょう / kōgyō / manufacturing / じゅぎょう / jugyō / class, instruction,  / lesson / じゅぎょうりょう / jugyōryō / tuition / じゅぎょうちゅう / jugyōchū / during class",
+    "vocabulary_text": "こうぎょう / kōgyō / manufacturing / じゅぎょう / jugyō / class, instruction,  / lesson / じゅぎょうりょう / jugyōryō / tuition / じゅぎょうちゅう / jugyōchū / during class",
+    "page": 17
+  },
+  {
+    "character": "実",
+    "source": "JK4B Flashcard",
+    "card": 256,
+    "strokes": 8,
+    "reading_info": "ジツ JITSU, み mi,  / みの(る) mino(ru) Truth じつは / jitsu wa / actually / じじつ / jijitsu / truth / じっけん / jikken / experiment",
+    "vocabulary_text": "じつは / jitsu wa / actually / じじつ / jijitsu / truth / じっけん / jikken / experiment",
+    "page": 18
+  },
+  {
+    "character": "卒",
+    "source": "JK4B Flashcard",
+    "card": 257,
+    "strokes": 8,
+    "reading_info": "ソツ SOTSU Graduate そつぎょう / sotsugyō / graduation / そつぎょうせい / sotsugyō-sei / graduate, alumni",
+    "vocabulary_text": "そつぎょう / sotsugyō / graduation / そつぎょうせい / sotsugyō-sei / graduate, alumni",
+    "page": 18
+  },
+  {
+    "character": "式",
+    "source": "JK4B Flashcard",
+    "card": 258,
+    "strokes": 6,
+    "reading_info": "シキ SHIKI Style, ceremony わしき / washiki / Japanese style / ようしき / yōshiki / western style / そつぎょうしきsotsugyō-shiki / graduation ceremony / せいしきに / seishiki ni / formal / そうしき / sōshiki / funeral / かいかいしき / kaikaishiki / opening ceremony",
+    "vocabulary_text": "",
+    "page": 18
+  },
+  {
+    "character": "運",
+    "source": "JK4B Flashcard",
+    "card": 259,
+    "strokes": 12,
+    "reading_info": "ウン UN, はこ(ぶ) hako(bu) To carry, move, fortune はこぶ / hakobu / to carry  / うん / un / fortune, luck  / うんよく / unyoku / fortunately, luckily",
+    "vocabulary_text": "はこぶ / hakobu / to carry  / うん / un / fortune, luck  / うんよく / unyoku / fortunately, luckily",
+    "page": 18
+  },
+  {
+    "character": "動",
+    "source": "JK4B Flashcard",
+    "card": 260,
+    "strokes": 11,
+    "reading_info": "ドウ DŌ, うご(く) ugo(ku) To move うごく / ugoku / to move  / どうぶつ / dōbutsu / animal  / どうが / dōga / video  / どうし / dōshi / verb  / うんどう / undō / exercise  / うんどうかい / undōkai / track and ﬁ eld day  / じどう / jidō / automatic",
+    "vocabulary_text": "",
+    "page": 18
+  },
+  {
+    "character": "試",
+    "source": "JK4B Flashcard",
+    "card": 261,
+    "strokes": 13,
+    "reading_info": "シ SHI, ため(す) tame(su) ,  / こころ(みる) kokoro(miru) To try, test ためす / tamesu / to try, test  / しけん / shiken / exam, test  / しちゃくしつ / shichakushitsu / changing room",
+    "vocabulary_text": "ためす / tamesu / to try, test  / しけん / shiken / exam, test  / しちゃくしつ / shichakushitsu / changing room",
+    "page": 18
+  },
+  {
+    "character": "合",
+    "source": "JK4B Flashcard",
+    "card": 262,
+    "strokes": 6,
+    "reading_info": "To ﬁ t, do mutually あう / au / to ﬁ t, do mutually  / はなしあう / hanashiau / to discuss  / つきあう / tsukiau / to associate with, date  / しあい / shiai / match, game  / ごうけいする / gōkei suru / to total, sum  / ごうかくする / gōkaku suru / to pass an exam  / つごう / tsugō / convenience, circum- / stances",
+    "vocabulary_text": "",
+    "page": 18
+  },
+  {
+    "character": "場",
+    "source": "JK4B Flashcard",
+    "card": 263,
+    "strokes": 12,
+    "reading_info": "ジョウ JŌ, ば ba Place ばしょ / basho / place, spot  / ひろば / hiroba / square, open space  / ばあい / baai / case, situation  / かいじょう / kaijō / place of meeting, site  / うんどうじょう / undōjō / athletic ﬁ eld, play- / ground  / にゅうじょうりょう / nyūjōryō admissions fee",
+    "vocabulary_text": "",
+    "page": 18
+  },
+  {
+    "character": "打",
+    "source": "JK4B Flashcard",
+    "card": 264,
+    "strokes": 5,
+    "reading_info": "ダ DA, う(つ) u(tsu) To hit うつ / utsu / to hit  / ボールをうつ / bōru o utsu / to hit a ball  / うちあわせ / uchiawase / consultation, previous  / arrangement",
+    "vocabulary_text": "うつ / utsu / to hit  / ボールをうつ / bōru o utsu / to hit a ball  / うちあわせ / uchiawase / consultation, previous  / arrangement",
+    "page": 18
+  },
+  {
+    "character": "選",
+    "source": "JK4B Flashcard",
+    "card": 265,
+    "strokes": 15,
+    "reading_info": "セン SEN, えら(ぶ) era(bu) To choose えらぶ / erabu / to choose  / せんしゅ / senshu / athlete, player  / せんきょ / senkyo / election",
+    "vocabulary_text": "えらぶ / erabu / to choose  / せんしゅ / senshu / athlete, player  / せんきょ / senkyo / election",
+    "page": 18
+  },
+  {
+    "character": "泳",
+    "source": "JK4B Flashcard",
+    "card": 266,
+    "strokes": 8,
+    "reading_info": "エイ EI, およ(ぐ) oyo(gu) To swim",
+    "vocabulary_text": "およぐ / oyogu / to swim  / すいえい / suiei / swimming",
+    "page": 18
+  },
+  {
+    "character": "習",
+    "source": "JK4B Flashcard",
+    "card": 267,
+    "strokes": 11,
+    "reading_info": "シュウ SHŪ, なら(う) nara(u) To learn; custom",
+    "vocabulary_text": "ならう / narau / to learn  / しゅうじ / shūji / penmanship",
+    "page": 18
+  },
+  {
+    "character": "練",
+    "source": "JK4B Flashcard",
+    "card": 268,
+    "strokes": 14,
+    "reading_info": "レン REN, ね(る) ne(ru) To train",
+    "vocabulary_text": "れんしゅうするrenshū suru / to practice",
+    "page": 18
+  },
+  {
+    "character": "服",
+    "source": "JK4B Flashcard",
+    "card": 269,
+    "strokes": 8,
+    "reading_info": "フク FUKU Clothes ふく / fuku  / clothes / ようふく / yōfuku / (western) clothes / わふく / wafuku / Japanese clothes",
+    "vocabulary_text": "ふく / fuku  / clothes / ようふく / yōfuku / (western) clothes / わふく / wafuku / Japanese clothes",
+    "page": 18
+  },
+  {
+    "character": "制",
+    "source": "JK4B Flashcard",
+    "card": 270,
+    "strokes": 8,
+    "reading_info": "セイ SEI System, control せいふく / seifuku / uniform (not sports  / attire) / せいさくする / seisaku suru / to produce / きょうせいする / kyōsei suru / to force",
+    "vocabulary_text": "せいふく / seifuku / uniform (not sports  / attire) / せいさくする / seisaku suru / to produce / きょうせいする / kyōsei suru / to force",
+    "page": 18
+  },
+  {
+    "character": "組",
+    "source": "JK4B Flashcard",
+    "card": 271,
+    "strokes": 11,
+    "reading_info": "ソ SO, く(む) ku(mu),  / くみ kumi To organize, assemble ばんぐみ / bangumi / (TV) program / あかぐみ / akagumi / red team / にねんさんくみ / ninen sankumi / class three in  / second grade",
+    "vocabulary_text": "ばんぐみ / bangumi / (TV) program / あかぐみ / akagumi / red team / にねんさんくみ / ninen sankumi / class three in  / second grade",
+    "page": 19
+  },
+  {
+    "character": "台",
+    "source": "JK4B Flashcard",
+    "card": 272,
+    "strokes": 5,
+    "reading_info": "ダイ DAI, タイ TAI Counter, measure word for  / mechanical objects だいどころ / daidokoro / kitchen / たいふう / taifū / typhoon / いちだいの / こんぴゅーたー / ichi-dai no  / konpyūtā / one computer",
+    "vocabulary_text": "だいどころ / daidokoro / kitchen / たいふう / taifū / typhoon / いちだいの / こんぴゅーたー / ichi-dai no  / konpyūtā / one computer にだいのくるま / ni-dai no kuruma / two cars",
+    "page": 19
+  },
+  {
+    "character": "問",
+    "source": "JK4B Flashcard",
+    "card": 273,
+    "strokes": 11,
+    "reading_info": "モン MON, と(う) to(u),  / と(い) to(i), とん ton Question しつもん / shitsumon / question / といあわせ / toiawase / inquiries",
+    "vocabulary_text": "しつもん / shitsumon / question / といあわせ / toiawase / inquiries",
+    "page": 19
+  },
+  {
+    "character": "答",
+    "source": "JK4B Flashcard",
+    "card": 274,
+    "strokes": 12,
+    "reading_info": "トウ TŌ, こた(える) kota(eru),  / こた(え) kota(e) Answer, to answer こたえ / kotae / answer / こたえる / kotaeru / to answer",
+    "vocabulary_text": "こたえ / kotae / answer / こたえる / kotaeru / to answer",
+    "page": 19
+  },
+  {
+    "character": "留",
+    "source": "JK4B Flashcard",
+    "card": 275,
+    "strokes": 10,
+    "reading_info": "リュウ RYŪ, ル RU, と(める)  / to(meru) To keep, stay とめる / tomeru / to keep in place,  / fasten / りゅうがくせい / ryūgakusei / student studying  / abroad / るす / rusu  / not at home / るすばん / rusuban / be at home alone / るすばんでんわrusuban denwa answering machine",
+    "vocabulary_text": "",
+    "page": 19
+  },
+  {
+    "character": "辞",
+    "source": "JK4B Flashcard",
+    "card": 276,
+    "strokes": 13,
+    "reading_info": "ジ JI, や(める) ya(meru) Word; to resign やめる / yameru / to resign, quit / じしょ / jisho / dictionary / おせじ / oseji / ﬂ attery, insincere compliment",
+    "vocabulary_text": "やめる / yameru / to resign, quit / じしょ / jisho / dictionary / おせじ / oseji / ﬂ attery, insincere compliment",
+    "page": 19
+  },
+  {
+    "character": "始",
+    "source": "JK4B Flashcard",
+    "card": 277,
+    "strokes": 8,
+    "reading_info": "シ SHI, はじ(める) haji(meru) To start, begin はじめる / hajimeru / to start something / はじまる / hajimaru / something begins / かいしする / kaishi suru / to begin, commence,  / open / しぎょうしき / sigyōshiki / school opening cer- / emony",
+    "vocabulary_text": "はじめる / hajimeru / to start something / はじまる / hajimaru / something begins / かいしする / kaishi suru / to begin, commence,  / open / しぎょうしき / sigyōshiki / school opening cer- / emony",
+    "page": 19
+  },
+  {
+    "character": "終",
+    "source": "JK4B Flashcard",
+    "card": 278,
+    "strokes": 11,
+    "reading_info": "シュウ SHŪ, おわ(る) owa(ru) To ﬁ nish; end",
+    "vocabulary_text": "おわる / owaru / to finish something,  / something finishes / おわり / owari / “The End”",
+    "page": 19
+  },
+  {
+    "character": "働",
+    "source": "JK4B Flashcard",
+    "card": 279,
+    "strokes": 13,
+    "reading_info": "ドウ DŌ, はたら(く) hatara(ku) To work",
+    "vocabulary_text": "はたらく / hataraku / to work, function  / ろうどうじかん / rōdōjikan / working hours",
+    "page": 19
+  },
+  {
+    "character": "歌",
+    "source": "JK4B Flashcard",
+    "card": 280,
+    "strokes": 14,
+    "reading_info": "カ KA, うた uta, うた(う) uta(u) To sing; song うた / uta / song  / うたう / utau / to sing / かしゅ / kashu / singer",
+    "vocabulary_text": "うた / uta / song  / うたう / utau / to sing / かしゅ / kashu / singer",
+    "page": 19
+  },
+  {
+    "character": "着",
+    "source": "JK4B Flashcard",
+    "card": 281,
+    "strokes": 12,
+    "reading_info": "To put on, arrive きる / kiru / to wear / きもの / kimono  / Japanese traditional  / wear, clothing / みずぎ / mizugi / swimsuit / したぎ / shitagi / underwear / つく / tuku / to arrive / とうちゃくする / tōchaku suru / to arrive (formal)",
+    "vocabulary_text": "",
+    "page": 19
+  },
+  {
+    "character": "登",
+    "source": "JK4B Flashcard",
+    "card": 282,
+    "strokes": 12,
+    "reading_info": "トウ TŌ, ト TO,  / のぼ(る) nobo(ru) To climb のぼる / noboru / to climb / とざん / tozan / mountain climbing / とうじょうじん / ぶつ / tōjōjinbutsu / characters in a  / novel, etc.",
+    "vocabulary_text": "のぼる / noboru / to climb / とざん / tozan / mountain climbing / とうじょうじん / ぶつ / tōjōjinbutsu / characters in a  / novel, etc.",
+    "page": 19
+  },
+  {
+    "character": "使",
+    "source": "JK4B Flashcard",
+    "card": 283,
+    "strokes": 8,
+    "reading_info": "シ SHI, つか(う) tsuka(u) To use; messenger つかう / tsukau / to use / たいし / taishi / ambassador / たいしかん / taishikan / embassy",
+    "vocabulary_text": "つかう / tsukau / to use / たいし / taishi / ambassador / たいしかん / taishikan / embassy",
+    "page": 19
+  },
+  {
+    "character": "忘",
+    "source": "JK4B Flashcard",
+    "card": 284,
+    "strokes": 7,
+    "reading_info": "ボウ BŌ, わす(れる) wasu(reru) To forget わすれる / wasureru / to forget / わすれもの / wasuremono / forgotten item / ぼうねんかいbōnenkai / year-end party",
+    "vocabulary_text": "わすれる / wasureru / to forget / わすれもの / wasuremono / forgotten item / ぼうねんかいbōnenkai / year-end party",
+    "page": 19
+  },
+  {
+    "character": "付",
+    "source": "JK4B Flashcard",
+    "card": 285,
+    "strokes": 5,
+    "reading_info": "To attach, include; associate つける / tsukeru / to attach / きをつける / ki o tsukeru / to be careful / つきあう / tsukiau / to date, associate  / with / きづく / kizuku / to notice / のみものつきnomimono-tsuki drink included / ふきん / fukin / vicinity, neighbor- / hood",
+    "vocabulary_text": "",
+    "page": 19
+  },
+  {
+    "character": "事",
+    "source": "JK4B Flashcard",
+    "card": 286,
+    "strokes": 8,
+    "reading_info": "ジ JI, こと koto Thing, matter (abstract) こと / koto / thing – abstract / じじつ / jijitsu / reality, fact / しょくじ / shokuji / meal / こうじ / kōji / construction / こうじちゅう / kōjichū / under construction / ねんちゅうぎょうじnenchūgyōji / annual event",
+    "vocabulary_text": "",
+    "page": 20
+  },
+  {
+    "character": "仕",
+    "source": "JK4B Flashcard",
+    "card": 287,
+    "strokes": 5,
+    "reading_info": "シ SHI, ジ JI, つか(える)  / tsuka(eru) To serve, do しごと / shigoto / job / しかた / shikata / way of doing / しかたがない / shikata ga nai / it is no use, have no  / choice",
+    "vocabulary_text": "しごと / shigoto / job / しかた / shikata / way of doing / しかたがない / shikata ga nai / it is no use, have no  / choice",
+    "page": 20
+  },
+  {
+    "character": "作",
+    "source": "JK4B Flashcard",
+    "card": 288,
+    "strokes": 7,
+    "reading_info": "サク SAKU, サ SA, つく(る)  / tsuku(ru) To make, work つくる / tsukuru / to make / さっか / sakka / writer / さくぶん / sakubun / essay, composition / こうさく / kōsaku  / handicrafts / めいさく / meisaku / masterpiece, ﬁ ne work",
+    "vocabulary_text": "つくる / tsukuru / to make / さっか / sakka / writer / さくぶん / sakubun / essay, composition / こうさく / kōsaku  / handicrafts / めいさく / meisaku / masterpiece, ﬁ ne work",
+    "page": 20
+  },
+  {
+    "character": "品",
+    "source": "JK4B Flashcard",
+    "card": 289,
+    "strokes": 9,
+    "reading_info": "ヒン HIN, しな shina Goods しなもの / shinamono / article, goods / しょくひん / shokuhin / food / さくひん / sakuhin / product, artistic work / じょうひんな / jōhin na / elegant, sophisticated / げひんな / gehin na / vulgar, unsophistIicated",
+    "vocabulary_text": "しなもの / shinamono / article, goods / しょくひん / shokuhin / food / さくひん / sakuhin / product, artistic work / じょうひんな / jōhin na / elegant, sophisticated / げひんな / gehin na / vulgar, unsophistIicated",
+    "page": 20
+  },
+  {
+    "character": "個",
+    "source": "JK4B Flashcard",
+    "card": 290,
+    "strokes": 10,
+    "reading_info": "コ KO Individual, general counter",
+    "vocabulary_text": "こじん / kojin / individual / いっこ / ikko / one object",
+    "page": 20
+  },
+  {
+    "character": "商",
+    "source": "JK4B Flashcard",
+    "card": 291,
+    "strokes": 11,
+    "reading_info": "ショウ SHŌ, あきな(う) akina(u) To trade",
+    "vocabulary_text": "しょうひん / shōhin / products / しょうぎょう / shōgyō / commerce, business",
+    "page": 20
+  },
+  {
+    "character": "店",
+    "source": "JK4B Flashcard",
+    "card": 292,
+    "strokes": 8,
+    "reading_info": "テン TEN, みせ mise Shop みせ / mise / store, shop / しょうてん / shōten / shop, small store / てんちょう / tenchō / shop manager / しょてん / shoten / bookstore",
+    "vocabulary_text": "みせ / mise / store, shop / しょうてん / shōten / shop, small store / てんちょう / tenchō / shop manager / しょてん / shoten / bookstore",
+    "page": 20
+  },
+  {
+    "character": "員",
+    "source": "JK4B Flashcard",
+    "card": 293,
+    "strokes": 10,
+    "reading_info": "イン IN Member えきいん / eki’in / station attendant / かいいん / kai’in / member / てんいん / ten’in / store attendant",
+    "vocabulary_text": "えきいん / eki’in / station attendant / かいいん / kai’in / member / てんいん / ten’in / store attendant",
+    "page": 20
+  },
+  {
+    "character": "用",
+    "source": "JK4B Flashcard",
+    "card": 294,
+    "strokes": 5,
+    "reading_info": "ヨウ YŌ, もち(いる) mochi(iru) To use, errand ようじ / yōji / errand / ようし / yōshi / blank form, stationery / りようする / riyō suru / to employ, use / いんようする / in’yō suru / to quote / ふよう / fuyō / unusable / じつようてき / jitsuyōteki / practical / がっこうようひんgakkō yōhin school supplies",
+    "vocabulary_text": "",
+    "page": 20
+  },
+  {
+    "character": "買",
+    "source": "JK4B Flashcard",
+    "card": 295,
+    "strokes": 12,
+    "reading_info": "バイ BAI, か(う) ka(u) To buy かう / kau / to buy / かいもの / kaimono / shopping",
+    "vocabulary_text": "かう / kau / to buy / かいもの / kaimono / shopping",
+    "page": 20
+  },
+  {
+    "character": "売",
+    "source": "JK4B Flashcard",
+    "card": 296,
+    "strokes": 7,
+    "reading_info": "バイ BAI, う(る) u(ru) To sell うる / uru / to sell / うりきれ / urikire / be sold out / うりば / uriba / place where things are sold / やすうり / yasu’uri / sale / ばいてん / baiten / shop, stand / しょうばい / shōbai / business",
+    "vocabulary_text": "",
+    "page": 20
+  },
+  {
+    "character": "数",
+    "source": "JK4B Flashcard",
+    "card": 297,
+    "strokes": 13,
+    "reading_info": "スウ SŪ, かず kazu,  / かぞ(える) kazo(eru) Number かず / kazu / number / かぞえる / kazoeru / to count / すうがく / sūgaku / math / すうかい / sūkai / several times / にんずう / ninzū / number of people / せいとすう / seitosū / number of students",
+    "vocabulary_text": "",
+    "page": 20
+  },
+  {
+    "character": "点",
+    "source": "JK4B Flashcard",
+    "card": 298,
+    "strokes": 9,
+    "reading_info": "テン TEN Point てん / ten / dot, point てんすう / tensū / points on a test, assignment",
+    "vocabulary_text": "てん / ten / dot, point てんすう / tensū / points on a test, assignment じてん / jiten / point in time, occasion",
+    "page": 20
+  },
+  {
+    "character": "単",
+    "source": "JK4B Flashcard",
+    "card": 299,
+    "strokes": 9,
+    "reading_info": "タン TAN Simple, single たんに / tan ni / merely / たんご / tango / vocabulary / たんい / tan’i / school credit / かんたん / kantan / simple, easy",
+    "vocabulary_text": "たんに / tan ni / merely / たんご / tango / vocabulary / たんい / tan’i / school credit / かんたん / kantan / simple, easy",
+    "page": 20
+  },
+  {
+    "character": "法",
+    "source": "JK4B Flashcard",
+    "card": 300,
+    "strokes": 8,
+    "reading_info": "ホウ HŌ Law, method ほうりつ / hōritsu / law / ほうほう / hōhō / way, method / ぶんぽう / bunpō / grammar",
+    "vocabulary_text": "ほうりつ / hōritsu / law / ほうほう / hōhō / way, method / ぶんぽう / bunpō / grammar",
+    "page": 20
+  },
+  {
+    "character": "究",
+    "source": "JK4B Flashcard",
+    "card": 301,
+    "strokes": 7,
+    "reading_info": "キュウ KYŪ, きわ(める)  / kiwa(meru) To research",
+    "vocabulary_text": "きわめる / kiwameru / to do something  / thoroughly",
+    "page": 21
+  },
+  {
+    "character": "研",
+    "source": "JK4B Flashcard",
+    "card": 302,
+    "strokes": 9,
+    "reading_info": "ケン KEN, と(ぐ) to(gu) To polish, study",
+    "vocabulary_text": "けんきゅう / kenkyū  / research / けんきゅうしゃ / kenkyūsha  / researcher",
+    "page": 21
+  },
+  {
+    "character": "比",
+    "source": "JK4B Flashcard",
+    "card": 303,
+    "strokes": 4,
+    "reading_info": "ヒ HI, くら(べる) kura(beru) To compare",
+    "vocabulary_text": "くらべる / kuraberu / to compare / ひかくする / hikaku suru / to compare, contrast",
+    "page": 21
+  },
+  {
+    "character": "皆",
+    "source": "JK4B Flashcard",
+    "card": 304,
+    "strokes": 9,
+    "reading_info": "カイ KAI, みな mina All みな、みんな / mina, min’na / all, everything,  / everyone / みなさん / mina san / everyone (formal) / みなさま / mina sama / everyone (more  / formal)",
+    "vocabulary_text": "みな、みんな / mina, min’na / all, everything,  / everyone / みなさん / mina san / everyone (formal) / みなさま / mina sama / everyone (more  / formal)",
+    "page": 21
+  },
+  {
+    "character": "専",
+    "source": "JK4B Flashcard",
+    "card": 305,
+    "strokes": 9,
+    "reading_info": "セン SEN, もっぱ(ら) moppa(ra) Specialty, expert せんもん / senmon / specialty, subject of  / study, expert / せんもんてん / senmonten / specialty store / せんこう / senkō / school major",
+    "vocabulary_text": "せんもん / senmon / specialty, subject of  / study, expert / せんもんてん / senmonten / specialty store / せんこう / senkō / school major",
+    "page": 21
+  },
+  {
+    "character": "読",
+    "source": "JK4B Flashcard",
+    "card": 306,
+    "strokes": 14,
+    "reading_info": "ドク DOKU, トウ TŌ, よ(む)  / yo(mu) To read よむ / yomu / to read / よみもの / yomimono / reading material / どくしょ / dokusho / reading / おんどくする / ondoku suru / to read aloud / どくしゃ / dokusha / reader",
+    "vocabulary_text": "よむ / yomu / to read / よみもの / yomimono / reading material / どくしょ / dokusho / reading / おんどくする / ondoku suru / to read aloud / どくしゃ / dokusha / reader",
+    "page": 21
+  },
+  {
+    "character": "医",
+    "source": "JK4B Flashcard",
+    "card": 307,
+    "strokes": 7,
+    "reading_info": "イ I Medical, doctor いがく / igaku / medical science / いがくぶ / igakubu / medical department / いしゃ / isha  / medical doctor",
+    "vocabulary_text": "いがく / igaku / medical science / いがくぶ / igakubu / medical department / いしゃ / isha  / medical doctor",
+    "page": 21
+  },
+  {
+    "character": "者",
+    "source": "JK4B Flashcard",
+    "card": 308,
+    "strokes": 8,
+    "reading_info": "シャ SHA, もの mono Person, distinguished person もの / mono / person / わかもの / wakamono / young person / はたらきもの / hatarakimono / hard worker / だしゃ / dasha / batter (baseball term) / がくしゃ / gakusha / scholar / かがくしゃ / kagakusha / scientist",
+    "vocabulary_text": "",
+    "page": 21
+  },
+  {
+    "character": "薬",
+    "source": "JK4B Flashcard",
+    "card": 309,
+    "strokes": 16,
+    "reading_info": "ヤク YAKU, くすり kusuri Medicine くすり / kusuri / medicine, drug / くすりや / kusuriya / drugstore, pharmacy / かぜぐすり / kazegusuri / cold/ﬂ u medicine / やくひん / yakuhin / medicine, drug, chemical / いやく / iyaku / chemicals, medicine / いやくひん / iyakuhin / pharmaceuticals, medical  / supplies",
+    "vocabulary_text": "",
+    "page": 21
+  },
+  {
+    "character": "治",
+    "source": "JK4B Flashcard",
+    "card": 310,
+    "strokes": 8,
+    "reading_info": "ジ JI, チ CHI, おさ(める)  / osa(meru), なおる nao(ru) To cure, govern なおす / naosu / to heal, ﬁ x / なおる / naoru / to become well / めいじ / meiji / Meiji Era / せいじ / seiji / politics / せいじか / seijika / politician",
+    "vocabulary_text": "なおす / naosu / to heal, ﬁ x / なおる / naoru / to become well / めいじ / meiji / Meiji Era / せいじ / seiji / politics / せいじか / seijika / politician",
+    "page": 21
+  },
+  {
+    "character": "病",
+    "source": "JK4B Flashcard",
+    "card": 311,
+    "strokes": 10,
+    "reading_info": "ビョウ BYŌ, ヘイ HEI,  / や(む) ya(mu), やまい yamai Illness びょうき / byōki / illness / びょうにん / byōnin / sick person",
+    "vocabulary_text": "びょうき / byōki / illness / びょうにん / byōnin / sick person",
+    "page": 21
+  },
+  {
+    "character": "院",
+    "source": "JK4B Flashcard",
+    "card": 312,
+    "strokes": 10,
+    "reading_info": "イン IN Institution いんちょう / inchō / head of a hospital / びょういん / byōin / hospital / にゅういんする / nyūin suru / to be hospitalized / いいん / iin / clinic / だいがくいん / daigakuin  / graduate school",
+    "vocabulary_text": "いんちょう / inchō / head of a hospital / びょういん / byōin / hospital / にゅういんする / nyūin suru / to be hospitalized / いいん / iin / clinic / だいがくいん / daigakuin  / graduate school",
+    "page": 21
+  },
+  {
+    "character": "痛",
+    "source": "JK4B Flashcard",
+    "card": 313,
+    "strokes": 12,
+    "reading_info": "ツウ TSŪ, いた(い) ita(i),  / いた(む) ita(mu) Pain いたい / itai / painful, sore, “Ouch!” / みみがいたいmimi ga itai / earache / いたみどめ / itamidome / painkiller",
+    "vocabulary_text": "いたい / itai / painful, sore, “Ouch!” / みみがいたいmimi ga itai / earache / いたみどめ / itamidome / painkiller",
+    "page": 21
+  },
+  {
+    "character": "活",
+    "source": "JK4B Flashcard",
+    "card": 314,
+    "strokes": 9,
+    "reading_info": "カツ KATSU Active, lively かつどう / katsudō / activity, function / かっぱつ / kappatsu / lively, active / せいかつ / seikatsu / life, livelihood / ぶかつ / bukatsu / school club",
+    "vocabulary_text": "かつどう / katsudō / activity, function / かっぱつ / kappatsu / lively, active / せいかつ / seikatsu / life, livelihood / ぶかつ / bukatsu / school club",
+    "page": 21
+  },
+  {
+    "character": "両",
+    "source": "JK4B Flashcard",
+    "card": 315,
+    "strokes": 6,
+    "reading_info": "リョウ RYŌ Both りょうて / ryōte  / both hands / りょうあし / ryōashi / both feet, legs / りょうほう / ryōhō / both / りょうしん / ryōshin / parents",
+    "vocabulary_text": "りょうて / ryōte  / both hands / りょうあし / ryōashi / both feet, legs / りょうほう / ryōhō / both / りょうしん / ryōshin / parents",
+    "page": 21
+  },
+  {
+    "character": "親",
+    "source": "JK4B Flashcard",
+    "card": 316,
+    "strokes": 16,
+    "reading_info": "Parents, intimate おや / oya / parent / おやゆび / oyayubi / thumb / ちちおや / chichioya / father / ははおや / hahaoya / mother / したしい / shitashii / intimate, familiar / しんせつ / shinsetsu / kind, considerate / しんゆう / shinyū / close friends",
+    "vocabulary_text": "",
+    "page": 22
+  },
+  {
+    "character": "結",
+    "source": "JK4B Flashcard",
+    "card": 317,
+    "strokes": 12,
+    "reading_info": "ケツ KETSU, むす(ぶ)  / musu(bu), ゆ(う) yu(u) To tie, bind むすぶ / musubu / to tie, bind / けっこんする / kekkon suru / get married / けっこんしき / kekkonshiki / wedding ceremony",
+    "vocabulary_text": "むすぶ / musubu / to tie, bind / けっこんする / kekkon suru / get married / けっこんしき / kekkonshiki / wedding ceremony",
+    "page": 22
+  },
+  {
+    "character": "婚",
+    "source": "JK4B Flashcard",
+    "card": 318,
+    "strokes": 11,
+    "reading_info": "コン KON To marry しんこん / shinkon / newly wed / りこん / rikon / divorce / さいこん / saikon / remarriage / きんこんしき / kinkonshiki / 50th wedding  / anniversary",
+    "vocabulary_text": "しんこん / shinkon / newly wed / りこん / rikon / divorce / さいこん / saikon / remarriage / きんこんしき / kinkonshiki / 50th wedding  / anniversary",
+    "page": 22
+  },
+  {
+    "character": "夫",
+    "source": "JK4B Flashcard",
+    "card": 319,
+    "strokes": 4,
+    "reading_info": "フ FU, フウ FŪ, おっと otto Husband おっと / otto / husband / たなかふじん / Tanaka fujin / Mrs. Tanaka",
+    "vocabulary_text": "おっと / otto / husband / たなかふじん / Tanaka fujin / Mrs. Tanaka",
+    "page": 22
+  },
+  {
+    "character": "婦",
+    "source": "JK4B Flashcard",
+    "card": 320,
+    "strokes": 11,
+    "reading_info": "フ FU Woman, lady ふじん / fujin / adult woman, lady / ふじんふく / fujinfuku / women’s clothes / ふうふ / fūfu / husband and wife,  / married couple / しゅふ / shufu / homemaker / せんぎょうしゅふsengyō shufu / full-time home- / maker",
+    "vocabulary_text": "",
+    "page": 22
+  },
+  {
+    "character": "係",
+    "source": "JK4B Flashcard",
+    "card": 321,
+    "strokes": 9,
+    "reading_info": "ケイ KEI, かか(る) kaka(ru),  / かかり kakari To connect; person in charge かかり(のひと) / kakari (no hito) / person in charge / かんけい / kankei / relationship",
+    "vocabulary_text": "かかり(のひと) / kakari (no hito) / person in charge / かんけい / kankei / relationship",
+    "page": 22
+  },
+  {
+    "character": "関",
+    "source": "JK4B Flashcard",
+    "card": 322,
+    "strokes": 14,
+    "reading_info": "カン KAN, せき seki,  / かか(わる) kaka(waru) Concern; barrier かんしん / kanshin / concern, interest / かんとう / kantō / Kanto region / かんさい / kansai / Kansai region / げんかん / genkan / entryway",
+    "vocabulary_text": "かんしん / kanshin / concern, interest / かんとう / kantō / Kanto region / かんさい / kansai / Kansai region / げんかん / genkan / entryway",
+    "page": 22
+  },
+  {
+    "character": "育",
+    "source": "JK4B Flashcard",
+    "card": 323,
+    "strokes": 8,
+    "reading_info": "イク IKU, そだ(つ) soda(tsu),  / そだ(てる) soda(teru),  / はぐく(む) haguku(mu) To raise そだつ / sodatsu / to be raised, be brought  / up / そだてる / sodateru / to raise, to bring up / きょういく / kyōiku / education / たいいく / taiiku / physical education",
+    "vocabulary_text": "そだつ / sodatsu / to be raised, be brought  / up / そだてる / sodateru / to raise, to bring up / きょういく / kyōiku / education / たいいく / taiiku / physical education",
+    "page": 22
+  },
+  {
+    "character": "頭",
+    "source": "JK4B Flashcard",
+    "card": 324,
+    "strokes": 16,
+    "reading_info": "トウ TŌ, ズ ZU, ト TO,  / かしら kashira Head あたま, かしら / atama, kashira head, brains / あたまがいたいatama ga itai / (one’s) head hurts / ずつう / zutsū / headache / いっとうのうま / ittō no uma / one horse [counter  / for large animals]",
+    "vocabulary_text": "あたま, かしら / atama, kashira head, brains / あたまがいたいatama ga itai / (one’s) head hurts / ずつう / zutsū / headache / いっとうのうま / ittō no uma / one horse [counter  / for large animals]",
+    "page": 22
+  },
+  {
+    "character": "顔",
+    "source": "JK4B Flashcard",
+    "card": 325,
+    "strokes": 18,
+    "reading_info": "ガン GAN, かお kao, Face かお / kao / face / かおいろ / kaoiro / complexion",
+    "vocabulary_text": "かお / kao / face / かおいろ / kaoiro / complexion",
+    "page": 22
+  },
+  {
+    "character": "身",
+    "source": "JK4B Flashcard",
+    "card": 326,
+    "strokes": 7,
+    "reading_info": "シン SHIN, み mi Body, oneself じしん / jishin / oneself / しんちょう / shinchō / height / しゅっしん / shusshin / one’s birthplace / なかみ / nakami / contents, interior / さしみ / sashimi / sliced raw ﬁ sh",
+    "vocabulary_text": "じしん / jishin / oneself / しんちょう / shinchō / height / しゅっしん / shusshin / one’s birthplace / なかみ / nakami / contents, interior / さしみ / sashimi / sliced raw ﬁ sh",
+    "page": 22
+  },
+  {
+    "character": "形",
+    "source": "JK4B Flashcard",
+    "card": 327,
+    "strokes": 7,
+    "reading_info": "ケイ KEI, ギョウ GYŌ, かた  / kata, かたち katachi Shape かたち, かた / katachi, kata / shape, form / はながた / hanagata / ﬂ oral pattern,  / leading, popular / にんぎょう / ningyō / doll / さんかくけい / sankakukei / triangle-shaped / しかくけい / shikakukei / square-shaped",
+    "vocabulary_text": "かたち, かた / katachi, kata / shape, form / はながた / hanagata / ﬂ oral pattern,  / leading, popular / にんぎょう / ningyō / doll / さんかくけい / sankakukei / triangle-shaped / しかくけい / shikakukei / square-shaped",
+    "page": 22
+  },
+  {
+    "character": "成",
+    "source": "JK4B Flashcard",
+    "card": 328,
+    "strokes": 6,
+    "reading_info": "セイ SEI, ジョウ JŌ, な(る)  / na(ru), な(す) na(su) To achieve, form なりた / narita / Narita-city/airport / せいじん / seijin / adult, grown-up / せいじんのひ / seijin no hi / Coming-of-Age Day / せいちょうする / seichō suru / to progress, grow / せいこうする / seikō suru / to succeed / せいせき / seiseki / grades",
+    "vocabulary_text": "",
+    "page": 22
+  },
+  {
+    "character": "笑",
+    "source": "JK4B Flashcard",
+    "card": 329,
+    "strokes": 10,
+    "reading_info": "ショウ SHŌ, わら(う)  / wara(u), え(む) e(mu) To laugh わらう / warau / to laugh, smile / えがお / egao / smiling face, smile",
+    "vocabulary_text": "わらう / warau / to laugh, smile / えがお / egao / smiling face, smile",
+    "page": 22
+  },
+  {
+    "character": "泣",
+    "source": "JK4B Flashcard",
+    "card": 330,
+    "strokes": 8,
+    "reading_info": "キュウ KYŪ, な(く) na(ku) To cry なく / naku / to cry / なきむし / nakimushi / crybaby",
+    "vocabulary_text": "なく / naku / to cry / なきむし / nakimushi / crybaby",
+    "page": 22
+  },
+  {
+    "character": "困",
+    "source": "JK4B Flashcard",
+    "card": 331,
+    "strokes": 7,
+    "reading_info": "コン KON, こま(る) koma(ru) To be in trouble こまる / komaru / to be in trouble / こまらせる / komaraseru / to annoy, to cause  / trouble",
+    "vocabulary_text": "こまる / komaru / to be in trouble / こまらせる / komaraseru / to annoy, to cause  / trouble",
+    "page": 23
+  },
+  {
+    "character": "熱",
+    "source": "JK4B Flashcard",
+    "card": 332,
+    "strokes": 15,
+    "reading_info": "ネツ NETSU, あつ(い) atsu(i) Hot (thing) あつい / atsui / hot to the touch / ねつ / netsu / heat, fever / こうねつ / kōnetsu / high fever / ねっしん / nesshin / enthusiastic",
+    "vocabulary_text": "あつい / atsui / hot to the touch / ねつ / netsu / heat, fever / こうねつ / kōnetsu / high fever / ねっしん / nesshin / enthusiastic",
+    "page": 23
+  },
+  {
+    "character": "暑",
+    "source": "JK4B Flashcard",
+    "card": 333,
+    "strokes": 12,
+    "reading_info": "ショ SHO, あつ(い) atsu(i) Hot (weather) あつい / atsui / hot / あつさ / atsusa / heat",
+    "vocabulary_text": "あつい / atsui / hot / あつさ / atsusa / heat",
+    "page": 23
+  },
+  {
+    "character": "氷",
+    "source": "JK4B Flashcard",
+    "card": 334,
+    "strokes": 5,
+    "reading_info": "ヒョウ HYŌ, こおり kōri, ひ hi Ice こおり / kōri / ice / こおりみず / kōrimizu / ice water / かきごおり / kakigōri / shaved ice",
+    "vocabulary_text": "こおり / kōri / ice / こおりみず / kōrimizu / ice water / かきごおり / kakigōri / shaved ice",
+    "page": 23
+  },
+  {
+    "character": "寒",
+    "source": "JK4B Flashcard",
+    "card": 335,
+    "strokes": 12,
+    "reading_info": "カン KAN, さむ(い) samu(i) Cold (weather) さむい / samui / cold / さむさ / samusa / coldness",
+    "vocabulary_text": "さむい / samui / cold / さむさ / samusa / coldness",
+    "page": 23
+  },
+  {
+    "character": "冷",
+    "source": "JK4B Flashcard",
+    "card": 336,
+    "strokes": 7,
+    "reading_info": "レイ REI, つめ(たい) tsume(tai),  / ひ(やす) hi(yasu), さ(める) sa(meru) Cold (thing) つめたい / tsumetai / cold (to the touch) / ひやす / hiyasu / to cool something, refrigerate / さめる / sameru / something cools off, gets cold / れいぞうこ / reizōko / refrigerator / れいぼう / reibō / air-conditioning",
+    "vocabulary_text": "つめたい / tsumetai / cold (to the touch) / ひやす / hiyasu / to cool something, refrigerate / さめる / sameru / something cools off, gets cold / れいぞうこ / reizōko / refrigerator / れいぼう / reibō / air-conditioning",
+    "page": 23
+  },
+  {
+    "character": "温",
+    "source": "JK4B Flashcard",
+    "card": 337,
+    "strokes": 12,
+    "reading_info": "オン ON, あたた(かい) atata(kai),  / あたた(める) atata(meru) Warm あたたかい / atatakai / warm / おんしつ / onshitsu / greenhouse / きおん / kion / temperature (atmospheric) / しつおん / shitsuon / room temperature / たいおん / taion / body temperature",
+    "vocabulary_text": "あたたかい / atatakai / warm / おんしつ / onshitsu / greenhouse / きおん / kion / temperature (atmospheric) / しつおん / shitsuon / room temperature / たいおん / taion / body temperature",
+    "page": 23
+  },
+  {
+    "character": "晴",
+    "source": "JK4B Flashcard",
+    "card": 338,
+    "strokes": 12,
+    "reading_info": "セイ SEI, は(れる) ha(reru) Clear weather はれ / hare / clear weather, ﬁ ne [adj.] / はれる / hareru / to clear up, become ﬁ ne",
+    "vocabulary_text": "はれ / hare / clear weather, ﬁ ne [adj.] / はれる / hareru / to clear up, become ﬁ ne",
+    "page": 23
+  },
+  {
+    "character": "降",
+    "source": "JK4B Flashcard",
+    "card": 339,
+    "strokes": 10,
+    "reading_info": "コウ KŌ, お(りる) o(riru),  / ふ(る) fu(ru) To descend, fall ふる / furu / (rain/snow) to fall / おりる / oriru / to come down, get off  / vehicle / こうすいりょうkōsuiryō / amount of precipitation",
+    "vocabulary_text": "ふる / furu / (rain/snow) to fall / おりる / oriru / to come down, get off  / vehicle / こうすいりょうkōsuiryō / amount of precipitation",
+    "page": 23
+  },
+  {
+    "character": "度",
+    "source": "JK4B Flashcard",
+    "card": 340,
+    "strokes": 9,
+    "reading_info": "ド DO, タク TAKU, たび tabi Time, degrees いちど / ichido / one time, once / もういちど / mō ichido / again, one more time / おんど / ondo / temperature / こんど / kondo / this time, next time,  / another time / そくど / sokudo / speed / せいど / seido / system",
+    "vocabulary_text": "",
+    "page": 23
+  },
+  {
+    "character": "世",
+    "source": "JK4B Flashcard",
+    "card": 341,
+    "strokes": 5,
+    "reading_info": "セイ SEI, セ SE, よ yo Generation, world せわ / sewa / help, care / いっせい / issei / ﬁ rst generation / にせい / nisei / second generation / さんせい / sansei / third generation / 21せいき / nijū-isseiki / 21st century",
+    "vocabulary_text": "せわ / sewa / help, care / いっせい / issei / ﬁ rst generation / にせい / nisei / second generation / さんせい / sansei / third generation / 21せいき / nijū-isseiki / 21st century",
+    "page": 23
+  },
+  {
+    "character": "界",
+    "source": "JK4B Flashcard",
+    "card": 342,
+    "strokes": 9,
+    "reading_info": "カイ KAI World, boundary せかい / sekai / world",
+    "vocabulary_text": "せかい / sekai / world",
+    "page": 23
+  },
+  {
+    "character": "地",
+    "source": "JK4B Flashcard",
+    "card": 343,
+    "strokes": 6,
+    "reading_info": "Ground, place ちか / chika / underground, basement  / ﬂ oor / ちかてつ / chikatetsu / subway / ちきゅう / chikyū / earth / ちほう / chihō / district / とち / tochi / land / ここちよい / kokochiyoi / comfortable / じしん / jishin / earthquake",
+    "vocabulary_text": "",
+    "page": 23
+  },
+  {
+    "character": "図",
+    "source": "JK4B Flashcard",
+    "card": 344,
+    "strokes": 7,
+    "reading_info": "ズ ZU, ト TO, はか(る)  / haka(ru) Chart, drawing としょしつ / toshoshitsu / library [room in a  / building] / ちず / chizu / map / あいず / aizu / sign, signal",
+    "vocabulary_text": "としょしつ / toshoshitsu / library [room in a  / building] / ちず / chizu / map / あいず / aizu / sign, signal",
+    "page": 23
+  },
+  {
+    "character": "海",
+    "source": "JK4B Flashcard",
+    "card": 345,
+    "strokes": 9,
+    "reading_info": "カイ KAI, うみ umi Sea うみ / umi / ocean, sea, beach / かいがい / kaigai / overseas / にほんかい / nihonkai / Japan Sea",
+    "vocabulary_text": "うみ / umi / ocean, sea, beach / かいがい / kaigai / overseas / にほんかい / nihonkai / Japan Sea",
+    "page": 23
+  },
+  {
+    "character": "池",
+    "source": "JK4B Flashcard",
+    "card": 346,
+    "strokes": 6,
+    "reading_info": "チ CHI, いけ ike Pond いけ / ike / pond",
+    "vocabulary_text": "いけ / ike / pond でんち / denchi / battery",
+    "page": 24
+  },
+  {
+    "character": "島",
+    "source": "JK4B Flashcard",
+    "card": 347,
+    "strokes": 10,
+    "reading_info": "トウ TŌ, しま shima Island しま / shima / island / しまぐに / shimaguni / island country / ひろしまし / hiroshimashi / Hiroshima City / はんとう / hantō / peninsula",
+    "vocabulary_text": "しま / shima / island / しまぐに / shimaguni / island country / ひろしまし / hiroshimashi / Hiroshima City / はんとう / hantō / peninsula",
+    "page": 24
+  },
+  {
+    "character": "野",
+    "source": "JK4B Flashcard",
+    "card": 348,
+    "strokes": 11,
+    "reading_info": "ヤ YA, の no Field のはら / nohara / ﬁ eld / ぶんや / bunya / academic ﬁ eld / のらいぬ / norainu / stray dog / やちょう / yachō / wild bird / やきゅう / yakyū / baseball / やさい / yasai / vegetables",
+    "vocabulary_text": "",
+    "page": 24
+  },
+  {
+    "character": "乗",
+    "source": "JK4B Flashcard",
+    "card": 349,
+    "strokes": 9,
+    "reading_info": "ジョウ JŌ, の(る) no(ru),  / の(せる) no(seru) To ride, get on のる / noru / to ride   / のりもの / norimono / vehicle / じょうしゃする / jōsha suru / to get aboard,  / take a train",
+    "vocabulary_text": "のる / noru / to ride   / のりもの / norimono / vehicle / じょうしゃする / jōsha suru / to get aboard,  / take a train",
+    "page": 24
+  },
+  {
+    "character": "転",
+    "source": "JK4B Flashcard",
+    "card": 350,
+    "strokes": 11,
+    "reading_info": "テン TEN, ころ(がる) koro- / (garu), ころ(ぶ) koro(bu) Turn ころぶ / korobu / to fall over, tumble / じてんしゃ / jitensha / bicycle / うんてんする / unten suru / to drive / うんてんしゅ / untenshu / driver / かんてんずし / kaitenzushi / conveyor belt sushi",
+    "vocabulary_text": "ころぶ / korobu / to fall over, tumble / じてんしゃ / jitensha / bicycle / うんてんする / unten suru / to drive / うんてんしゅ / untenshu / driver / かんてんずし / kaitenzushi / conveyor belt sushi",
+    "page": 24
+  },
+  {
+    "character": "空",
+    "source": "JK4B Flashcard",
+    "card": 351,
+    "strokes": 8,
+    "reading_info": "クウ KŪ, そら sora,  / あける a(keru), から kara Sky, air, empty そら, から / sora, kara / sky; empty / からて / karate / karate (lit. empty hand) / くうき / kūki / air / あきかん / akikan / empty can",
+    "vocabulary_text": "そら, から / sora, kara / sky; empty / からて / karate / karate (lit. empty hand) / くうき / kūki / air / あきかん / akikan / empty can",
+    "page": 24
+  },
+  {
+    "character": "港",
+    "source": "JK4B Flashcard",
+    "card": 352,
+    "strokes": 12,
+    "reading_info": "コウ KŌ, みなと minato Port みなと / minato / port   / くうこう / kūkō / airport / なりたくうこう / narita kūkō / Narita Airport / かんさいくうこう / kansai kūkō / Kansai Airport",
+    "vocabulary_text": "みなと / minato / port   / くうこう / kūkō / airport / なりたくうこう / narita kūkō / Narita Airport / かんさいくうこう / kansai kūkō / Kansai Airport",
+    "page": 24
+  },
+  {
+    "character": "機",
+    "source": "JK4B Flashcard",
+    "card": 353,
+    "strokes": 16,
+    "reading_info": "キ KI, はた hata Machine, opportunity きかい / kikai / opportunity, chance / きかい / kikai / machine / じぇっとき / jettoki / jet / せんたくき / sentakuki / washing machine",
+    "vocabulary_text": "きかい / kikai / opportunity, chance / きかい / kikai / machine / じぇっとき / jettoki / jet / せんたくき / sentakuki / washing machine",
+    "page": 24
+  },
+  {
+    "character": "飛",
+    "source": "JK4B Flashcard",
+    "card": 354,
+    "strokes": 9,
+    "reading_info": "ヒ HI, と(ぶ) to(bu) To ﬂ y とぶ / tobu / to ﬂ y, jump / ひこうき / hikōki / airplane / ひこうじかん / hikōjikan / ﬂ ight time",
+    "vocabulary_text": "とぶ / tobu / to ﬂ y, jump / ひこうき / hikōki / airplane / ひこうじかん / hikōjikan / ﬂ ight time",
+    "page": 24
+  },
+  {
+    "character": "橋",
+    "source": "JK4B Flashcard",
+    "card": 355,
+    "strokes": 16,
+    "reading_info": "キョウ KYŌ, はし hashi Bridge はし / hashi / bridge  / ほどうきょう / hodōkyō / pedestrian bridge   / にほんばし / nihonbashi / Nihonbashi (city name)",
+    "vocabulary_text": "はし / hashi / bridge  / ほどうきょう / hodōkyō / pedestrian bridge   / にほんばし / nihonbashi / Nihonbashi (city name)",
+    "page": 24
+  },
+  {
+    "character": "線",
+    "source": "JK4B Flashcard",
+    "card": 356,
+    "strokes": 15,
+    "reading_info": "セン SEN Line せん / sen / line   / せんをひく / sen o hiku / to draw a line   / ないせん / naisen / phone extension   / かせん / kasen / underline / しんかんせん / shinkansen / bullet train",
+    "vocabulary_text": "せん / sen / line   / せんをひく / sen o hiku / to draw a line   / ないせん / naisen / phone extension   / かせん / kasen / underline / しんかんせん / shinkansen / bullet train",
+    "page": 24
+  },
+  {
+    "character": "通",
+    "source": "JK4B Flashcard",
+    "card": 357,
+    "strokes": 10,
+    "reading_info": "To pass, commute とおる / とおり / かよう / つうがく / つうわりょう / こうつう / つうこうどめ to pass by / street, road, avenue / to commute / commute (to school) / charge for a telephone call / trafﬁ c, transportation / no through road, deadend  / street tōru / tōri / kayou / tsūgaku / tsūwaryō / kōtsū / tsūkōdome",
+    "vocabulary_text": "",
+    "page": 24
+  },
+  {
+    "character": "荷",
+    "source": "JK4B Flashcard",
+    "card": 358,
+    "strokes": 10,
+    "reading_info": "カ KA, に ni Load にもつ / nimotsu / luggage / てにもつ / tenimotsu / hand luggage / にづくりする / nizukuri suru / to pack one’s bags",
+    "vocabulary_text": "にもつ / nimotsu / luggage / てにもつ / tenimotsu / hand luggage / にづくりする / nizukuri suru / to pack one’s bags",
+    "page": 24
+  },
+  {
+    "character": "券",
+    "source": "JK4B Flashcard",
+    "card": 359,
+    "strokes": 8,
+    "reading_info": "ケン KEN Ticket, coupon けんばいき / kenbaiki / ticket vending  / machine / しょうひんけん / shōhinken / gift certiﬁ cate / にゅうじょうけん / nyūjōken / admission ticket",
+    "vocabulary_text": "けんばいき / kenbaiki / ticket vending  / machine / しょうひんけん / shōhinken / gift certiﬁ cate / にゅうじょうけん / nyūjōken / admission ticket",
+    "page": 24
+  },
+  {
+    "character": "泊",
+    "source": "JK4B Flashcard",
+    "card": 360,
+    "strokes": 8,
+    "reading_info": "ハク HAKU, と(まる) to(maru) To stay at, overnight とまる / tomaru / to stay over, lodge  / いっぱくふつかippaku futsuka / two days and one  / night",
+    "vocabulary_text": "とまる / tomaru / to stay over, lodge  / いっぱくふつかippaku futsuka / two days and one  / night",
+    "page": 24
+  },
+  {
+    "character": "送",
+    "source": "JK4B Flashcard",
+    "card": 361,
+    "strokes": 9,
+    "reading_info": "ソウ SŌ, おく(る) oku(ru) To send おくる / okuru / to send  / みおくる / miokuru / to see someone off / そうりょう / sōryō / postage",
+    "vocabulary_text": "おくる / okuru / to send  / みおくる / miokuru / to see someone off / そうりょう / sōryō / postage",
+    "page": 25
+  },
+  {
+    "character": "贈",
+    "source": "JK4B Flashcard",
+    "card": 362,
+    "strokes": 18,
+    "reading_info": "ゾウZŌ, ソウ SŌ, おく(る)  / oku(ru) To present a gift おくる / okuru / to present a gift / おくりもの / okurimono / a present, gift",
+    "vocabulary_text": "おくる / okuru / to present a gift / おくりもの / okurimono / a present, gift",
+    "page": 25
+  },
+  {
+    "character": "酒",
+    "source": "JK4B Flashcard",
+    "card": 363,
+    "strokes": 10,
+    "reading_info": "シュ SHU, さけ sake,  / さか saka Alcohol さけ / sake / sake, rice wine  / にほんしゅ / nihonshu / Japanese rice wine  / いんしゅうんてんinshu’unten / drunken driving",
+    "vocabulary_text": "さけ / sake / sake, rice wine  / にほんしゅ / nihonshu / Japanese rice wine  / いんしゅうんてんinshu’unten / drunken driving",
+    "page": 25
+  },
+  {
+    "character": "配",
+    "source": "JK4B Flashcard",
+    "card": 364,
+    "strokes": 10,
+    "reading_info": "ハイ HAI, くば(る) kuba(ru) To distribute くばる / kubaru / to distribute  / しんぱい / shinpai / anxiety, concern, worry",
+    "vocabulary_text": "くばる / kubaru / to distribute  / しんぱい / shinpai / anxiety, concern, worry",
+    "page": 25
+  },
+  {
+    "character": "貸",
+    "source": "JK4B Flashcard",
+    "card": 365,
+    "strokes": 12,
+    "reading_info": "タイ TAI, か(す) ka(su) To lend, to loan かす / kasu / to lend / かしきり / kashikiri / booked, reserved / かしや / kashiya / rental house",
+    "vocabulary_text": "かす / kasu / to lend / かしきり / kashikiri / booked, reserved / かしや / kashiya / rental house",
+    "page": 25
+  },
+  {
+    "character": "願",
+    "source": "JK4B Flashcard",
+    "card": 366,
+    "strokes": 19,
+    "reading_info": "ガン GAN, ねが(う) nega(u) To wish, ask for ねがう / negai / to wish  / ねがい / negai / wish  / おねがいします / onegaishimasu / “Please”  / がんしょ / gansho / an application",
+    "vocabulary_text": "ねがう / negai / to wish  / ねがい / negai / wish  / おねがいします / onegaishimasu / “Please”  / がんしょ / gansho / an application",
+    "page": 25
+  },
+  {
+    "character": "取",
+    "source": "JK4B Flashcard",
+    "card": 367,
+    "strokes": 8,
+    "reading_info": "シュ SHU, と(る) to(ru) To take とる / toru / to take  / ノートをとる / nōto o toru / to take notes",
+    "vocabulary_text": "とる / toru / to take  / ノートをとる / nōto o toru / to take notes",
+    "page": 25
+  },
+  {
+    "character": "相",
+    "source": "JK4B Flashcard",
+    "card": 368,
+    "strokes": 9,
+    "reading_info": "ソウ SŌ, ショウ SHŌ, あい ai Mutual あいて / aite / companion, partner,  / opponent  / あいかわらず / aikawarazu / as usual, without  / change",
+    "vocabulary_text": "あいて / aite / companion, partner,  / opponent  / あいかわらず / aikawarazu / as usual, without  / change",
+    "page": 25
+  },
+  {
+    "character": "礼",
+    "source": "JK4B Flashcard",
+    "card": 369,
+    "strokes": 5,
+    "reading_info": "レイ REI, ライ RAI Etiquette おれい / orei / thanks, gratitude  / れいをいう / rei o iu / to express gratitude",
+    "vocabulary_text": "おれい / orei / thanks, gratitude  / れいをいう / rei o iu / to express gratitude",
+    "page": 25
+  },
+  {
+    "character": "失",
+    "source": "JK4B Flashcard",
+    "card": 370,
+    "strokes": 5,
+    "reading_info": "シツ SHITSU, うしな(う)  / ushina(u) To lose うしなう / ushinau / to lose something / しつれい / shitsurei / rude  / しつぎょう / shitsugyō / unemployed / しつぎょうしゃshitsugyōsha / unemployed person",
+    "vocabulary_text": "うしなう / ushinau / to lose something / しつれい / shitsurei / rude  / しつぎょう / shitsugyō / unemployed / しつぎょうしゃshitsugyōsha / unemployed person",
+    "page": 25
+  },
+  {
+    "character": "切",
+    "source": "JK4B Flashcard",
+    "card": 371,
+    "strokes": 4,
+    "reading_info": "セツ SETSU, サイ SAI,  / き(る) ki(ru) To cut きる / kiru / to cut / きって / kitte / postage stamp / しんせつ / shinsetsu / kind, considerate / たいせつ / taisetsu / important",
+    "vocabulary_text": "きる / kiru / to cut / きって / kitte / postage stamp / しんせつ / shinsetsu / kind, considerate / たいせつ / taisetsu / important",
+    "page": 25
+  },
+  {
+    "character": "洗",
+    "source": "JK4B Flashcard",
+    "card": 372,
+    "strokes": 9,
+    "reading_info": "セン SEN, あら(う) ara(u) To wash あらう / arau / to wash  / (お)てあらい / (o)tearai / restroom  / せんめんじょ / senmenjo / washroom, bathroom",
+    "vocabulary_text": "あらう / arau / to wash  / (お)てあらい / (o)tearai / restroom  / せんめんじょ / senmenjo / washroom, bathroom",
+    "page": 25
+  },
+  {
+    "character": "残",
+    "source": "JK4B Flashcard",
+    "card": 373,
+    "strokes": 10,
+    "reading_info": "ザン ZAN, のこ(す) noko(su) To remain のこす / nokosu / to leave something / のこる / nokoru / something remains / のこりもの / nokorimono / leftovers  / ざんぎょう / zangyō / overtime",
+    "vocabulary_text": "のこす / nokosu / to leave something / のこる / nokoru / something remains / のこりもの / nokorimono / leftovers  / ざんぎょう / zangyō / overtime",
+    "page": 25
+  },
+  {
+    "character": "置",
+    "source": "JK4B Flashcard",
+    "card": 374,
+    "strokes": 13,
+    "reading_info": "チ CHI, お(く) o(ku) To place, put おく / oku / to put, place  / おきもの / okimono / ornament  / じてんしゃおきば / jitensha okiba bike parking area  / いちにちおき / ichinichi oki / every other day",
+    "vocabulary_text": "おく / oku / to put, place  / おきもの / okimono / ornament  / じてんしゃおきば / jitensha okiba bike parking area  / いちにちおき / ichinichi oki / every other day",
+    "page": 25
+  },
+  {
+    "character": "調",
+    "source": "JK4B Flashcard",
+    "card": 375,
+    "strokes": 15,
+    "reading_info": "チョウ CHŌ, しら(べる)  / shira(beru), ととの(える)  / totono(eru) To investigate, tone しらべる / shiraberu / to investigate,  / look into  / ちょうし / chōshi / condition, state  / of health  / きょうちょうする / kyōchō suru / to emphasize",
+    "vocabulary_text": "しらべる / shiraberu / to investigate,  / look into  / ちょうし / chōshi / condition, state  / of health  / きょうちょうする / kyōchō suru / to emphasize",
+    "page": 25
+  },
+  {
+    "character": "遊",
+    "source": "JK4B Flashcard",
+    "card": 376,
+    "strokes": 12,
+    "reading_info": "ユウ YŪ, ユ YU, あそ(ぶ)  / aso(bu) To play あそぶ / asobu / to play  / あそびば / asobiba / playground  / みずあそび / mizuasobi / playing in water  / ゆきあそび / yukiasobi / playing in snow",
+    "vocabulary_text": "あそぶ / asobu / to play  / あそびば / asobiba / playground  / みずあそび / mizuasobi / playing in water  / ゆきあそび / yukiasobi / playing in snow",
+    "page": 26
+  },
+  {
+    "character": "決",
+    "source": "JK4B Flashcard",
+    "card": 377,
+    "strokes": 7,
+    "reading_info": "ケツ KETSU, き(める) ki(meru) To decide きめる / kimeru / to decide something / きまる / kimaru / something is decided   / けっしんする / kesshin suru / to resolve, make a  / decision",
+    "vocabulary_text": "きめる / kimeru / to decide something / きまる / kimaru / something is decided   / けっしんする / kesshin suru / to resolve, make a  / decision",
+    "page": 26
+  },
+  {
+    "character": "現",
+    "source": "JK4B Flashcard",
+    "card": 378,
+    "strokes": 11,
+    "reading_info": "ゲン GEN, あらわ(す)  / arawa(su) To appear, actual げんじつ / genjitsu / reality  / げんじつてき / genjitsuteki / realistic  / げんきん / genkin / cash  / ひょうげん / hyōgen / expression  / げんざい / genzai / current  / げんだい / gendai / modern",
+    "vocabulary_text": "げんじつ / genjitsu / reality  / げんじつてき / genjitsuteki / realistic  / げんきん / genkin / cash  / ひょうげん / hyōgen / expression  / げんざい / genzai / current  / げんだい / gendai / modern",
+    "page": 26
+  },
+  {
+    "character": "引",
+    "source": "JK4B Flashcard",
+    "card": 379,
+    "strokes": 4,
+    "reading_info": "イン IN, ひ(く) hi(ku) To pull, draw ひく / hiku / to pull, subtract  / ひきだし / hikidashi / drawer  / さんひくには / いち / san hiku ni wa  / ichi / 3 – 2 = 1",
+    "vocabulary_text": "ひく / hiku / to pull, subtract  / ひきだし / hikidashi / drawer  / さんひくには / いち / san hiku ni wa  / ichi / 3 – 2 = 1",
+    "page": 26
+  },
+  {
+    "character": "写",
+    "source": "JK4B Flashcard",
+    "card": 380,
+    "strokes": 5,
+    "reading_info": "シャ SHA, うつ(す) utsu(su) To copy うつす / utsusu / to copy  / しゃしん / shashin / photograph",
+    "vocabulary_text": "うつす / utsusu / to copy  / しゃしん / shashin / photograph",
+    "page": 26
+  },
+  {
+    "character": "考",
+    "source": "JK4B Flashcard",
+    "card": 381,
+    "strokes": 6,
+    "reading_info": "コウ KŌ, かんが(える)  / kanga(eru) To think, consider かんがえる / kangaeru / to think, consider / かんがえ / kangae / a thought / さんこう / sankō / reference / さんこうしょ / sankōsho / reference material",
+    "vocabulary_text": "かんがえる / kangaeru / to think, consider / かんがえ / kangae / a thought / さんこう / sankō / reference / さんこうしょ / sankōsho / reference material",
+    "page": 26
+  },
+  {
+    "character": "集",
+    "source": "JK4B Flashcard",
+    "card": 382,
+    "strokes": 12,
+    "reading_info": "シュウ SHŪ, あつ(まる)  / atsu(maru), つど(う) tsudo(u) To collect, gather あつめる / atsumeru / to gather, collect  / something  / あつまる / atsumaru / to assemble/gather  / (things/people)  / しゅうかい / shūkai / meeting  / しゅうちゅうするshūchū suru / to concentrate / しゅうごうじかんshūgō jikan / time to gather",
+    "vocabulary_text": "",
+    "page": 26
+  },
+  {
+    "character": "進",
+    "source": "JK4B Flashcard",
+    "card": 383,
+    "strokes": 11,
+    "reading_info": "シン SHIN, すす(む) susu(mu) To advance すすめる / susumeru / to promote, advance,  / speed up / すすむ / susumu / something/someone  / advances / しんぽ / shinpo / progress",
+    "vocabulary_text": "すすめる / susumeru / to promote, advance,  / speed up / すすむ / susumu / something/someone  / advances / しんぽ / shinpo / progress",
+    "page": 26
+  },
+  {
+    "character": "落",
+    "source": "JK4B Flashcard",
+    "card": 384,
+    "strokes": 12,
+    "reading_info": "ラク RAKU, お(ちる) o(chiru) To fall, drop おとす / otosu / to drop something / おちる / ochiru / something falls / おちつく / ochitsuku / to be calm, relaxed / らくがき / rakugaki / scribbling, grafﬁ ti",
+    "vocabulary_text": "おとす / otosu / to drop something / おちる / ochiru / something falls / おちつく / ochitsuku / to be calm, relaxed / らくがき / rakugaki / scribbling, grafﬁ ti",
+    "page": 26
+  },
+  {
+    "character": "続",
+    "source": "JK4B Flashcard",
+    "card": 385,
+    "strokes": 13,
+    "reading_info": "ゾク ZOKU, つづ(く) tsuzu(ku) To continue",
+    "vocabulary_text": "",
+    "page": 26
+  },
+  {
+    "character": "払",
+    "source": "JK4B Flashcard",
+    "card": 386,
+    "strokes": 5,
+    "reading_info": "フツ FUTSU, はら(う) hara(u) To pay",
+    "vocabulary_text": "",
+    "page": 26
+  },
+  {
+    "character": "神",
+    "source": "JK4B Flashcard",
+    "card": 387,
+    "strokes": 9,
+    "reading_info": "シン SHIN, ジン JIN, かみ kami,  / かん kan, こう kō God, mind つづく / tsuzuku / something continues  / つづける / tsuzukeru / to continue something  / はらう / harau / to pay / かみ / kami / god, gods  / しんとう / shintō / Shintō, indigenous  / religion of Japan  / じんじゃ / jinja / Shintō shrine",
+    "vocabulary_text": "つづく / tsuzuku / something continues  / つづける / tsuzukeru / to continue something  / はらう / harau / to pay / かみ / kami / god, gods  / しんとう / shintō / Shintō, indigenous  / religion of Japan  / じんじゃ / jinja / Shintō shrine",
+    "page": 26
+  },
+  {
+    "character": "社",
+    "source": "JK4B Flashcard",
+    "card": 388,
+    "strokes": 7,
+    "reading_info": "シャ SHA, やしろ yashiro Company, society, shrine しゃかい / shakai / society, social studies  / かいしゃ / kaisha / company  / かいしゃいん / kaishain / company employee  / ほんしゃ / honsha / head ofﬁ ce",
+    "vocabulary_text": "しゃかい / shakai / society, social studies  / かいしゃ / kaisha / company  / かいしゃいん / kaishain / company employee  / ほんしゃ / honsha / head ofﬁ ce",
+    "page": 26
+  },
+  {
+    "character": "祭",
+    "source": "JK4B Flashcard",
+    "card": 389,
+    "strokes": 11,
+    "reading_info": "サイ SAI, まつ(る) matsu(ru), ま / つ(り) matsu(ri) Festival まつり / matsuri / festival  / なつまつり / natsumatsuri / summer festival",
+    "vocabulary_text": "まつり / matsuri / festival  / なつまつり / natsumatsuri / summer festival さいじつ / saijitsu / national holiday,  / festival day  / ぶんかさい / bunkasai / culture festival",
+    "page": 26
+  },
+  {
+    "character": "際",
+    "source": "JK4B Flashcard",
+    "card": 390,
+    "strokes": 14,
+    "reading_info": "サイ SAI, きわ kiwa Occasion, verge こくさい / kokusai / international  / じっさい / jissai / actual, real  / そのさいに / sonosai ni / “At that time”  / (formal)",
+    "vocabulary_text": "こくさい / kokusai / international  / じっさい / jissai / actual, real  / そのさいに / sonosai ni / “At that time”  / (formal)",
+    "page": 26
+  },
+  {
+    "character": "術",
+    "source": "JK4B Flashcard",
+    "card": 391,
+    "strokes": 11,
+    "reading_info": "ジュツ JUTSU Technique びじゅつ / bijutsu / art びじゅつかん / bijutsukan / art gallery",
+    "vocabulary_text": "びじゅつ / bijutsu / art びじゅつかん / bijutsukan / art gallery しゅじゅつ / shujutsu / surgery",
+    "page": 27
+  },
+  {
+    "character": "館",
+    "source": "JK4B Flashcard",
+    "card": 392,
+    "strokes": 16,
+    "reading_info": "カン KAN, やかた yakata Big building りょかん / ryokan / Japanese inn  / としょかん / toshokan / library  / えいがかん / eigakan / movie theater  / すいぞくかん / suizokukan / aquarium",
+    "vocabulary_text": "りょかん / ryokan / Japanese inn  / としょかん / toshokan / library  / えいがかん / eigakan / movie theater  / すいぞくかん / suizokukan / aquarium",
+    "page": 27
+  },
+  {
+    "character": "庭",
+    "source": "JK4B Flashcard",
+    "card": 393,
+    "strokes": 10,
+    "reading_info": "テイ TEI, にわ niwa Courtyard, garden にわ  / niwa / garden  / こうてい  / kōtei / campus",
+    "vocabulary_text": "にわ  / niwa / garden  / こうてい  / kōtei / campus",
+    "page": 27
+  },
+  {
+    "character": "園",
+    "source": "JK4B Flashcard",
+    "card": 394,
+    "strokes": 13,
+    "reading_info": "エン EN, その sono Garden こうえん  / kōen / park / ていえん  / teien / garden, park  / どうぶつえん / dōbutsuen / zoo  / ゆうえんち / yūenchi / amusement park  / ようちえん / yōchien / kindergarten",
+    "vocabulary_text": "こうえん  / kōen / park / ていえん  / teien / garden, park  / どうぶつえん / dōbutsuen / zoo  / ゆうえんち / yūenchi / amusement park  / ようちえん / yōchien / kindergarten",
+    "page": 27
+  },
+  {
+    "character": "局",
+    "source": "JK4B Flashcard",
+    "card": 395,
+    "strokes": 7,
+    "reading_info": "キョク KYOKU Bureau, ofﬁ ce, limited part やっきょく / yakkyoku / pharmacy  / テレビきょく / terebikyoku / TV station  / けっきょく / kekkyoku / after all, in conclusion",
+    "vocabulary_text": "やっきょく / yakkyoku / pharmacy  / テレビきょく / terebikyoku / TV station  / けっきょく / kekkyoku / after all, in conclusion",
+    "page": 27
+  },
+  {
+    "character": "記",
+    "source": "JK4B Flashcard",
+    "card": 396,
+    "strokes": 10,
+    "reading_info": "キ KI, しる(す) shiru(su) To write down, record にっき / nikki / journal, diary  / きじ / kiji / article, news story  / きしゃ / kisha / reporter  / きにゅうする / kinyū suru / to ﬁ ll out a document,  / record",
+    "vocabulary_text": "にっき / nikki / journal, diary  / きじ / kiji / article, news story  / きしゃ / kisha / reporter  / きにゅうする / kinyū suru / to ﬁ ll out a document,  / record",
+    "page": 27
+  },
+  {
+    "character": "急",
+    "source": "JK4B Flashcard",
+    "card": 397,
+    "strokes": 9,
+    "reading_info": "キュウ KYŪ, いそ(ぐ) iso(gu) Urgent, sudden, hurry いそぐ / ishogu / to hurry  / きゅうに / kyū ni / suddenly  / きゅうこう / kyūkō / express train",
+    "vocabulary_text": "いそぐ / ishogu / to hurry  / きゅうに / kyū ni / suddenly  / きゅうこう / kyūkō / express train",
+    "page": 27
+  },
+  {
+    "character": "定",
+    "source": "JK4B Flashcard",
+    "card": 398,
+    "strokes": 8,
+    "reading_info": "テイ TEI, ジョウ JŌ, さだ(める)  / sada(meru), さだ(まる) sada(maru) Set, ﬁ xed ていしょく / teishoku / set meal  / ていいん / tei’in / capacity, admission limit  / よてい / yotei / schedule, plan  / していする / shitei suru / to reserve  / していせき / shiteiseki / reserved seat  / ていきけん / teikiken / commuter’s pass",
+    "vocabulary_text": "",
+    "page": 27
+  },
+  {
+    "character": "州",
+    "source": "JK4B Flashcard",
+    "card": 399,
+    "strokes": 6,
+    "reading_info": "シュウ SHŪ, す su State しゅうりつ / だいがく / shūritsu  / daigaku / state college ゆたしゅう / yuta-shū / State of Utah, USA / ほんしゅう / honshū / Honshu, largest of the four  / main islands of Japan / きゅうしゅう kyūshū / Kyushu, southernmost of the  / four main islands of Japan",
+    "vocabulary_text": "ゆたしゅう / yuta-shū / State of Utah, USA / ほんしゅう / honshū / Honshu, largest of the four  / main islands of Japan / きゅうしゅう kyūshū / Kyushu, southernmost of the  / four main islands of Japan",
+    "page": 27
+  },
+  {
+    "character": "都",
+    "source": "JK4B Flashcard",
+    "card": 400,
+    "strokes": 11,
+    "reading_info": "ト TO, ツ TSU, みやこ miyako Metropolis とない / tonai / inside a metro area / としん  / toshin / heart of a metro area / きょうと  / kyōto / Kyoto / とうきょうと  / tōkyōto / Metropolis of Tokyo",
+    "vocabulary_text": "とない / tonai / inside a metro area / としん  / toshin / heart of a metro area / きょうと  / kyōto / Kyoto / とうきょうと  / tōkyōto / Metropolis of Tokyo",
+    "page": 27
+  },
+  {
+    "character": "県",
+    "source": "JK4B Flashcard",
+    "card": 401,
+    "strokes": 9,
+    "reading_info": "ケン KEN Prefecture ひろしまけん / hiroshima-ken / Hiroshima  / Prefecture / けんない / ken’nai / within a prefectural  / area",
+    "vocabulary_text": "ひろしまけん / hiroshima-ken / Hiroshima  / Prefecture / けんない / ken’nai / within a prefectural  / area",
+    "page": 27
+  },
+  {
+    "character": "区",
+    "source": "JK4B Flashcard",
+    "card": 402,
+    "strokes": 4,
+    "reading_info": "ク KU Ward, district くちょう / kuchō / head of a ward / みなとく / minato-ku / Minato Ward, Tokyo",
+    "vocabulary_text": "くちょう / kuchō / head of a ward / みなとく / minato-ku / Minato Ward, Tokyo",
+    "page": 27
+  },
+  {
+    "character": "村",
+    "source": "JK4B Flashcard",
+    "card": 403,
+    "strokes": 7,
+    "reading_info": "ソン SON, むら mura Village むら / mura / village / むらびと / murabito / village people / そんちょう / sonchō / village elder",
+    "vocabulary_text": "むら / mura / village / むらびと / murabito / village people / そんちょう / sonchō / village elder",
+    "page": 27
+  },
+  {
+    "character": "向",
+    "source": "JK4B Flashcard",
+    "card": 404,
+    "strokes": 6,
+    "reading_info": "To face, turn toward むく / muku / something turns  / towards somewhere / むける / mukeru / to turn something  / towards somewhere / ほうこう / hōkō / direction / まえむき / maemuki / positive, forward looking / みなみむき / のへや",
+    "vocabulary_text": "minamimuki  / no heya / southern facing room",
+    "page": 27
+  },
+  {
+    "character": "側",
+    "source": "JK4B Flashcard",
+    "card": 405,
+    "strokes": 11,
+    "reading_info": "ソク SOKU, がわ gawa Side みぎがわ  / migigawa / right side / ひだりがわ / hidarigawa / left side / むかいがわ  / mukaigawa / opposite side",
+    "vocabulary_text": "みぎがわ  / migigawa / right side / ひだりがわ / hidarigawa / left side / むかいがわ  / mukaigawa / opposite side",
+    "page": 27
+  },
+  {
+    "character": "階",
+    "source": "JK4B Flashcard",
+    "card": 406,
+    "strokes": 12,
+    "reading_info": "カイ KAI Floor, rank いっかい  / ikkai / ﬁ rst ﬂ oor / なんかい  / nankai / what ﬂ oor? / ちかいっかい chika ikkai / basement ﬁ rst ﬂ oor",
+    "vocabulary_text": "いっかい  / ikkai / ﬁ rst ﬂ oor / なんかい  / nankai / what ﬂ oor? / ちかいっかい chika ikkai / basement ﬁ rst ﬂ oor",
+    "page": 28
+  },
+  {
+    "character": "意",
+    "source": "JK4B Flashcard",
+    "card": 407,
+    "strokes": 13,
+    "reading_info": "イ I Mind, meaning いみ / imi / meaning / いけん / iken / opinion / ようい / yōi / preparation / いがい / igai / unexpected, surprising",
+    "vocabulary_text": "いみ / imi / meaning / いけん / iken / opinion / ようい / yōi / preparation / いがい / igai / unexpected, surprising",
+    "page": 28
+  },
+  {
+    "character": "注",
+    "source": "JK4B Flashcard",
+    "card": 408,
+    "strokes": 8,
+    "reading_info": "チュウ CHŪ, そそ(ぐ) soso(gu) To pour, concentrate ちゅうい / chūi / caution / ちゅういをはらうchūi o harau / to pay attention / ちゅうもんする / chūmon suru / to make an order / ちゅうもく / chūmoku / notice, attention",
+    "vocabulary_text": "ちゅうい / chūi / caution / ちゅういをはらうchūi o harau / to pay attention / ちゅうもんする / chūmon suru / to make an order / ちゅうもく / chūmoku / notice, attention",
+    "page": 28
+  },
+  {
+    "character": "計",
+    "source": "JK4B Flashcard",
+    "card": 409,
+    "strokes": 9,
+    "reading_info": "ケイ KEI, はか(る) haka(ru),  / はか(らう) haka(rau) To plan, compute はかる / hakaru / to calculate, estimate / ごうけい / gōkei / total, sum / けいかく / keikaku / plan / とけい / tokei / clock / かいけい / kaikei / cash register, bill",
+    "vocabulary_text": "はかる / hakaru / to calculate, estimate / ごうけい / gōkei / total, sum / けいかく / keikaku / plan / とけい / tokei / clock / かいけい / kaikei / cash register, bill",
+    "page": 28
+  },
+  {
+    "character": "号",
+    "source": "JK4B Flashcard",
+    "card": 410,
+    "strokes": 5,
+    "reading_info": "ゴウ GŌ Number, sign ばんごう / bangō / number",
+    "vocabulary_text": "ばんごう / bangō / number",
+    "page": 28
+  },
+  {
+    "character": "特",
+    "source": "JK4B Flashcard",
+    "card": 411,
+    "strokes": 10,
+    "reading_info": "トク TOKU Special とくに / toku ni / specially, especially / とっきゅう / tokkyū / super-express train / とくしょく / tokushoku / characteristic, unique / どくとく / dokutoku / unique",
+    "vocabulary_text": "とくに / toku ni / specially, especially / とっきゅう / tokkyū / super-express train / とくしょく / tokushoku / characteristic, unique / どくとく / dokutoku / unique",
+    "page": 28
+  },
+  {
+    "character": "別",
+    "source": "JK4B Flashcard",
+    "card": 412,
+    "strokes": 7,
+    "reading_info": "ベツ BETSU,  / わか(れる) waka(reru) Separate, another わかれる / wakareru / to separate, part from / べつに / betsu ni / separately / とくべつ / tokubetsu / special / そうべつかい / sōbetsukai / farewell party",
+    "vocabulary_text": "わかれる / wakareru / to separate, part from / べつに / betsu ni / separately / とくべつ / tokubetsu / special / そうべつかい / sōbetsukai / farewell party",
+    "page": 28
+  },
+  {
+    "character": "必",
+    "source": "JK4B Flashcard",
+    "card": 413,
+    "strokes": 5,
+    "reading_info": "ヒツ HITSU, かなら(ず)  / kanara(zu) Without fail かならず / kanarazu / deﬁ nitely, without fail / ひっしょう / hisshō / certain victory",
+    "vocabulary_text": "かならず / kanarazu / deﬁ nitely, without fail / ひっしょう / hisshō / certain victory",
+    "page": 28
+  },
+  {
+    "character": "要",
+    "source": "JK4B Flashcard",
+    "card": 414,
+    "strokes": 9,
+    "reading_info": "ヨウ YŌ, かなめ kaname,  / い(る) i(ru) Important, required ひつよう / hitsuyō / needed, necessary / じゅうよう / jūyō / important",
+    "vocabulary_text": "ひつよう / hitsuyō / needed, necessary / じゅうよう / jūyō / important",
+    "page": 28
+  },
+  {
+    "character": "遠",
+    "source": "JK4B Flashcard",
+    "card": 415,
+    "strokes": 13,
+    "reading_info": "エン EN, とおい tō(i) Far とおい / tōi / far / えんそく / ensoku / ﬁ eld trip",
+    "vocabulary_text": "とおい / tōi / far / えんそく / ensoku / ﬁ eld trip",
+    "page": 28
+  },
+  {
+    "character": "同",
+    "source": "JK4B Flashcard",
+    "card": 416,
+    "strokes": 6,
+    "reading_info": "ドウ DŌ, おな(じ) ona(ji) Same おなじ / onaji / same / どうじ / dōji / same time, simultaneous / どうい / dōi / agreement, consent",
+    "vocabulary_text": "おなじ / onaji / same / どうじ / dōji / same time, simultaneous / どうい / dōi / agreement, consent",
+    "page": 28
+  },
+  {
+    "character": "便",
+    "source": "JK4B Flashcard",
+    "card": 417,
+    "strokes": 9,
+    "reading_info": "ベン BEN, ビン BIN,  / たより tayo(ri) Convenient, post たより / tayori / news, letter / ふべん / fuben / inconvenient / じゅうななびん / jūnana-bin / ﬂ ight number 17 / ゆうびんきょく / yūbinkyoku / post ofﬁ ce",
+    "vocabulary_text": "たより / tayori / news, letter / ふべん / fuben / inconvenient / じゅうななびん / jūnana-bin / ﬂ ight number 17 / ゆうびんきょく / yūbinkyoku / post ofﬁ ce",
+    "page": 28
+  },
+  {
+    "character": "利",
+    "source": "JK4B Flashcard",
+    "card": 418,
+    "strokes": 7,
+    "reading_info": "リ RI, き(く) ki(ku) Advantage, proﬁ t りよう / riyō / use, utilization / りし / rishi / bank interest / りてん / riten / advantage / べんり / benri / convenient",
+    "vocabulary_text": "りよう / riyō / use, utilization / りし / rishi / bank interest / りてん / riten / advantage / べんり / benri / convenient",
+    "page": 28
+  },
+  {
+    "character": "雑",
+    "source": "JK4B Flashcard",
+    "card": 419,
+    "strokes": 14,
+    "reading_info": "ザツ ZATSU, ゾウ ZŌ Miscellaneous, mixed ざっし / zasshi / magazine / ふくざつ / fukuzatsu / complicated",
+    "vocabulary_text": "ざっし / zasshi / magazine / ふくざつ / fukuzatsu / complicated",
+    "page": 28
+  },
+  {
+    "character": "難",
+    "source": "JK4B Flashcard",
+    "card": 420,
+    "strokes": 18,
+    "reading_info": "ナン NAN, かた(い) kata(i),  / むずか(しい) muzuka(shii) Difﬁ cult むずかしい / muzukashii / difﬁ cult / こんなん / kon’nan / difﬁ culty / ひなん / hinan / blame / ありがとう / arigatō / “Thank you” [usually  / written in hiragana]",
+    "vocabulary_text": "むずかしい / muzukashii / difﬁ cult / こんなん / kon’nan / difﬁ culty / ひなん / hinan / blame / ありがとう / arigatō / “Thank you” [usually  / written in hiragana]",
+    "page": 28
+  },
+  {
+    "character": "最",
+    "source": "JK4B Flashcard",
+    "card": 421,
+    "strokes": 12,
+    "reading_info": "サイ SAI, もっと(も) motto(mo) Most, superlative もっとも / mottomo / most  / さいしょ / saisho / beginning, ﬁ rst  / さいご / saigo / end, last  / さいしゅう / saishū / ﬁ nal, last  / さいこう / saikō / highest, maximum, supreme  / さいてい / saitei / lowest, minimum, worst  / さいあく / saiaku / worst",
+    "vocabulary_text": "",
+    "page": 29
+  },
+  {
+    "character": "以",
+    "source": "JK4B Flashcard",
+    "card": 422,
+    "strokes": 5,
+    "reading_info": "イ I To the…of; by means of いじょう / ijō / above, …and above, “That’s all”  / いか / ika / below, …and below, not more than  / いぜん / izen / before now  / いご / igo / after this, from now on  / いがい / igai / except, with the exception of  / いない / inai / within, inside of, less than",
+    "vocabulary_text": "",
+    "page": 29
+  },
+  {
+    "character": "第",
+    "source": "JK4B Flashcard",
+    "card": 423,
+    "strokes": 11,
+    "reading_info": "ダイ DAI Ordinal number だいいち / dai-ichi / ﬁ rst  / だいさん / げつようび / dai-san getsuyōbi / third Monday",
+    "vocabulary_text": "だいいち / dai-ichi / ﬁ rst  / だいさん / げつようび / dai-san getsuyōbi / third Monday",
+    "page": 29
+  },
+  {
+    "character": "不",
+    "source": "JK4B Flashcard",
+    "card": 424,
+    "strokes": 4,
+    "reading_info": "フ FU, ブ BU Not ふあん / fuan / uneasiness, anxiety  / ふこうへい / fukōhei / unfair, unjust  / ふじゅうぶん / fujūbun / insufﬁ ciency, not enough",
+    "vocabulary_text": "ふあん / fuan / uneasiness, anxiety  / ふこうへい / fukōhei / unfair, unjust  / ふじゅうぶん / fujūbun / insufﬁ ciency, not enough",
+    "page": 29
+  },
+  {
+    "character": "非",
+    "source": "JK4B Flashcard",
+    "card": 425,
+    "strokes": 8,
+    "reading_info": "ヒ HI Un- ひじょう / hijō / extreme (lit, “unusual”)  / ひじょうぐち / hijōguchi / emergency exit",
+    "vocabulary_text": "ひじょう / hijō / extreme (lit, “unusual”)  / ひじょうぐち / hijōguchi / emergency exit",
+    "page": 29
+  },
+  {
+    "character": "無",
+    "source": "JK4B Flashcard",
+    "card": 426,
+    "strokes": 12,
+    "reading_info": "ム MU, ブ BU, な(い) na(i) Nothing, without むり / muri / impossible, unreasonable  / むりょう / muryō / free of charge  / ぶじ / buji / safe, without incident",
+    "vocabulary_text": "むり / muri / impossible, unreasonable  / むりょう / muryō / free of charge  / ぶじ / buji / safe, without incident",
+    "page": 29
+  },
+  {
+    "character": "全",
+    "source": "JK4B Flashcard",
+    "card": 427,
+    "strokes": 6,
+    "reading_info": "ゼン ZEN, まった(く)  / matta(ku), すべ(て) sube(te) Whole, complete ぜんぶ / zenbu / all, entire, whole, all together  / ぜんいん / zen’in / all members  / ぜんこく / zenkoku / whole country  / ぜんせかい / zensekai / whole world  / あんぜん / anzen / safety, security  / すべて / subete / all, entire, whole",
+    "vocabulary_text": "",
+    "page": 29
+  },
+  {
+    "character": "然",
+    "source": "JK4B Flashcard",
+    "card": 428,
+    "strokes": 12,
+    "reading_info": "Sort of thing; modiﬁ er form- / ing sufﬁ x しぜん / shizen / nature  / ぜんぜん / zenzen / not at all  / とうぜん / tōzen / of course, naturally",
+    "vocabulary_text": "しぜん / shizen / nature  / ぜんぜん / zenzen / not at all  / とうぜん / tōzen / of course, naturally",
+    "page": 29
+  },
+  {
+    "character": "歳",
+    "source": "JK4B Flashcard",
+    "card": 429,
+    "strokes": 13,
+    "reading_info": "Age sufﬁ x, year いっさい / issai / one year old / はたち/にじゅ / っさい / hatachi/nijussai / 20 years old なんさい / nansai / how old? / ばんざい / banzai / Banzai! (lit. ten  / thousand years) / おせいぼ / oseibo / year-end gift",
+    "vocabulary_text": "なんさい / nansai / how old? / ばんざい / banzai / Banzai! (lit. ten  / thousand years) / おせいぼ / oseibo / year-end gift",
+    "page": 29
+  },
+  {
+    "character": "達",
+    "source": "JK4B Flashcard",
+    "card": 430,
+    "strokes": 12,
+    "reading_info": "タツ TATSU, たち tachi Plural sufﬁ x, attain ともだち / tomodachi / friend, friends  / わたしたち / watashitachi / us, we  / そくたつ / sokutatsu / special delivery  / はいたつするhaitatsu suru / to deliver  / たっせいする / tassei suru / to achieve something",
+    "vocabulary_text": "ともだち / tomodachi / friend, friends  / わたしたち / watashitachi / us, we  / そくたつ / sokutatsu / special delivery  / はいたつするhaitatsu suru / to deliver  / たっせいする / tassei suru / to achieve something",
+    "page": 29
+  },
+  {
+    "character": "一",
+    "source": "JK4B Flashcard"
+  },
+  {
+    "character": "三",
+    "source": "JK4B Flashcard"
+  },
+  {
+    "character": "二",
+    "source": "JK4B Flashcard"
+  }
+]
