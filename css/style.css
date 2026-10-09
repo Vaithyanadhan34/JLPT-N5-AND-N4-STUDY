@@ -12,3 +12,202 @@
 @media(max-width:1050px){.kana-grid{grid-template-columns:repeat(5,minmax(0,1fr));gap:10px}}
 @media(max-width:720px){.kana-grid{width:100%;grid-template-columns:repeat(5,minmax(0,1fr));gap:8px}.kana-card{aspect-ratio:1/1;min-height:0;padding:8px 3px}.kana-char{font-size:30px}.kana-romaji{font-size:11px}.kana-listen{width:24px;height:24px;font-size:12px}.jump-input{max-width:none}.speak-btn{width:38px;height:38px;min-width:38px}.inline-speak{width:34px;height:34px;min-width:34px}}
 @media(max-width:420px){.kana-grid{grid-template-columns:repeat(5,minmax(0,1fr));gap:6px}.kana-card{aspect-ratio:1/1;padding:7px 2px}.kana-char{font-size:27px}.kana-romaji{font-size:10px}.kana-listen{width:22px;height:22px;font-size:11px}}
+
+/* ===== LIGHT / DARK THEME ===== */
+
+:root {
+  color-scheme: light;
+}
+
+body[data-theme="dark"] {
+  color-scheme: dark;
+
+  --bg: #0b1120;
+  --card: #151e30;
+  --text: #e7edf7;
+  --muted: #a5b2c8;
+  --line: #2d3a50;
+  --brand: #a8c1ff;
+  --accent: #8aa8ff;
+  --soft: #202e49;
+  --good: #5dd69a;
+  --warn: #f5c76b;
+  --danger: #ff8e8e;
+  --shadow: 0 8px 30px rgba(0, 0, 0, .22);
+
+  background: var(--bg);
+  color: var(--text);
+}
+
+/* Cards and panels */
+body[data-theme="dark"] .hero-copy,
+body[data-theme="dark"] .progress-panel,
+body[data-theme="dark"] .source-panel,
+body[data-theme="dark"] .stat-grid > div,
+body[data-theme="dark"] .how-card,
+body[data-theme="dark"] .compare-result,
+body[data-theme="dark"] .study-card,
+body[data-theme="dark"] .selector-box,
+body[data-theme="dark"] .modal-card,
+body[data-theme="dark"] .modal-header,
+body[data-theme="dark"] .quiz-box,
+body[data-theme="dark"] .quiz-option,
+body[data-theme="dark"] .flash-card,
+body[data-theme="dark"] .kana-card,
+body[data-theme="dark"] .kana-tab,
+body[data-theme="dark"] .load-more,
+body[data-theme="dark"] .read-btn {
+  background: var(--card);
+  color: var(--text);
+  border-color: var(--line);
+}
+
+/* Inputs, dropdowns and sticky toolbars */
+body[data-theme="dark"] .toolbar,
+body[data-theme="dark"] .mobile-nav {
+  background: #111a2b;
+  border-color: var(--line);
+}
+
+body[data-theme="dark"] input,
+body[data-theme="dark"] select,
+body[data-theme="dark"] .toolbar input,
+body[data-theme="dark"] .toolbar select,
+body[data-theme="dark"] .compare-selectors select {
+  background: #101827;
+  color: var(--text);
+  border-color: var(--line);
+}
+
+body[data-theme="dark"] input::placeholder {
+  color: #98a7bf;
+}
+
+/* Examples, tables and secondary content */
+body[data-theme="dark"] .example-box,
+body[data-theme="dark"] .flash-related,
+body[data-theme="dark"] .formula,
+body[data-theme="dark"] .empty-panel,
+body[data-theme="dark"] .close,
+body[data-theme="dark"] .pos-tag,
+body[data-theme="dark"] .tag {
+  background: #1b273b;
+  color: var(--text);
+  border-color: var(--line);
+}
+
+body[data-theme="dark"] .compare-table th {
+  background: #202c41;
+  color: var(--text);
+}
+
+body[data-theme="dark"] .compare-table td {
+  color: var(--text);
+  border-color: var(--line);
+}
+
+body[data-theme="dark"] .mobile-nav button {
+  color: var(--muted);
+}
+
+body[data-theme="dark"] .mobile-nav button.active {
+  background: var(--soft);
+  color: var(--accent);
+}
+
+/* Theme toggle button */
+.theme-toggle {
+  flex-shrink: 0;
+  border: 1px solid #ffffff55;
+  border-radius: 10px;
+  padding: 9px 12px;
+  background: #ffffff18;
+  color: white;
+  font-weight: 800;
+  cursor: pointer;
+}
+
+.theme-toggle:hover {
+  background: #ffffff2c;
+}
+
+body[data-theme="dark"] .theme-toggle {
+  background: #202e49;
+  color: #f5f7ff;
+  border-color: #526481;
+}
+
+/* Smooth but subtle theme changes */
+body,
+body .study-card,
+body .hero-copy,
+body .progress-panel,
+body .source-panel,
+body .how-card,
+body .quiz-box {
+  transition: background-color .2s ease, color .2s ease,
+              border-color .2s ease;
+}
+
+@media (max-width: 720px) {
+  .theme-toggle {
+    padding: 8px 10px;
+    font-size: 12px;
+  }
+}
+
+/* Fix white form fields in dark mode */
+body[data-theme="dark"] input,
+body[data-theme="dark"] select,
+body[data-theme="dark"] textarea {
+  background-color: #101827 !important;
+  color: #e7edf7 !important;
+  border-color: #35445e !important;
+  caret-color: #e7edf7;
+}
+
+body[data-theme="dark"] input::placeholder,
+body[data-theme="dark"] textarea::placeholder {
+  color: #a5b2c8 !important;
+  opacity: 1;
+}
+
+body[data-theme="dark"] input:focus,
+body[data-theme="dark"] select:focus,
+body[data-theme="dark"] textarea:focus {
+  outline-color: #8aa8ff;
+  border-color: #8aa8ff !important;
+}
+
+body[data-theme="dark"] select option {
+  background: #101827;
+  color: #e7edf7;
+}
+
+/* Fix white toolbar buttons in dark mode */
+body[data-theme="dark"] .toolbar .tool-btn,
+body[data-theme="dark"] .toolbar button,
+body[data-theme="dark"] .read-btn,
+body[data-theme="dark"] .load-more,
+body[data-theme="dark"] .add-btn {
+  background: #202e49 !important;
+  color: #e7edf7 !important;
+  border: 1px solid #526481 !important;
+}
+
+body[data-theme="dark"] .toolbar .tool-btn:hover,
+body[data-theme="dark"] .toolbar button:hover,
+body[data-theme="dark"] .read-btn:hover,
+body[data-theme="dark"] .load-more:hover,
+body[data-theme="dark"] .add-btn:hover {
+  background: #2c3d5c !important;
+  color: #ffffff !important;
+}
+
+/* Keep disabled buttons readable */
+body[data-theme="dark"] button:disabled {
+  background: #182337 !important;
+  color: #8493aa !important;
+  border-color: #35445e !important;
+}
+

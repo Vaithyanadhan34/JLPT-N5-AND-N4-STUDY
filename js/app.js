@@ -204,6 +204,48 @@ $('#gJump').onchange=e=>jumpTo('g',e.target);$('#gJump').onkeydown=e=>{if(e.key=
 $('#kSearch').oninput=()=>{clearTimeout(searchTimer);searchTimer=setTimeout(resetK,200)};$('#kLevel').onchange=resetK;$('#kProgress').onchange=resetK;
 $('#kJump').onchange=e=>jumpTo('k',e.target);$('#kJump').onkeydown=e=>{if(e.key==='Enter'){e.preventDefault();jumpTo('k',e.target)}};$('#kResume').onclick=()=>{kStart=resumeIndex('k');kVisible=24;renderKanji()};
 $('#addCompare').onclick=()=>{if(compareIds.length<6){compareIds.push('');fillCompare()}};$('#startQuiz').onclick=startQuiz;renderKana();
+
+/* ===== LIGHT / DARK THEME TOGGLE ===== */
+const themeToggle = document.getElementById('themeToggle');
+const savedTheme = localStorage.getItem('jlpt-theme') || 'light';
+
+function applyTheme(theme) {
+  document.body.dataset.theme = theme;
+
+  if (themeToggle) {
+    const dark = theme === 'dark';
+    themeToggle.textContent = dark ? '☀️ Light mode' : '🌙 Dark mode';
+    themeToggle.setAttribute(
+      'aria-label',
+      dark ? 'Switch to light mode' : 'Switch to dark mode'
+    );
+    themeToggle.setAttribute(
+      'aria-pressed',
+      String(dark)
+    );
+  }
+
+  const themeColor = document.querySelector('meta[name="theme-color"]');
+  if (themeColor) {
+    themeColor.setAttribute(
+      'content',
+      theme === 'dark' ? '#0b1120' : '#15284b'
+    );
+  }
+}
+
+applyTheme(savedTheme);
+
+if (themeToggle) {
+  themeToggle.addEventListener('click', () => {
+    const nextTheme =
+      document.body.dataset.theme === 'dark' ? 'light' : 'dark';
+
+    applyTheme(nextTheme);
+    localStorage.setItem('jlpt-theme', nextTheme);
+  });
+}
+
 $('#furiganaToggle').checked=settings.furigana;$('#romajiToggle').checked=settings.romaji;$('#furiganaToggle').onchange=e=>{settings.furigana=e.target.checked;save();renderAll()};$('#romajiToggle').onchange=e=>{settings.romaji=e.target.checked;save();renderAll()};
 setInterval(updateCountdown,1000);updateCountdown();
 if('serviceWorker' in navigator)window.addEventListener('load',()=>navigator.serviceWorker.register('./sw.js').catch(()=>{}));
