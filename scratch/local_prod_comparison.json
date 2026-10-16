@@ -1,0 +1,772 @@
+{
+  "timestamp": "2026-10-16T10:46:57.957Z",
+  "fileParityTable": [
+    {
+      "file": "index.html",
+      "localStatus": 200,
+      "localSize": 50987,
+      "localHash": "69ed48393c12",
+      "prodStatus": 200,
+      "prodSize": 50106,
+      "prodHash": "fc09eac49beb",
+      "prodCacheControl": "public, max-age=0, must-revalidate",
+      "prodContentType": "text/html; charset=utf-8",
+      "status": "MISMATCH"
+    },
+    {
+      "file": "css/style.css",
+      "localStatus": 200,
+      "localSize": 76503,
+      "localHash": "a6652e49e888",
+      "prodStatus": 200,
+      "prodSize": 73229,
+      "prodHash": "16f35399f565",
+      "prodCacheControl": "public, max-age=0, must-revalidate",
+      "prodContentType": "text/css; charset=utf-8",
+      "status": "MISMATCH"
+    },
+    {
+      "file": "js/app.js",
+      "localStatus": 200,
+      "localSize": 144840,
+      "localHash": "0b4540b4d71a",
+      "prodStatus": 200,
+      "prodSize": 142779,
+      "prodHash": "35eebaecd341",
+      "prodCacheControl": "public, max-age=0, must-revalidate",
+      "prodContentType": "application/javascript; charset=utf-8",
+      "status": "MISMATCH"
+    },
+    {
+      "file": "js/book-features.js",
+      "localStatus": 200,
+      "localSize": 23029,
+      "localHash": "05335da9c065",
+      "prodStatus": 200,
+      "prodSize": 22407,
+      "prodHash": "9a081e5c4214",
+      "prodCacheControl": "public, max-age=0, must-revalidate",
+      "prodContentType": "application/javascript; charset=utf-8",
+      "status": "MISMATCH"
+    },
+    {
+      "file": "js/kana-data.js",
+      "localStatus": 200,
+      "localSize": 11620,
+      "localHash": "a224532c9e11",
+      "prodStatus": 200,
+      "prodSize": 11475,
+      "prodHash": "036eb15318f2",
+      "prodCacheControl": "public, max-age=0, must-revalidate",
+      "prodContentType": "application/javascript; charset=utf-8",
+      "status": "MISMATCH"
+    },
+    {
+      "file": "manifest.json",
+      "localStatus": 200,
+      "localSize": 470,
+      "localHash": "ce7595036b16",
+      "prodStatus": 200,
+      "prodSize": 447,
+      "prodHash": "413cb4bceef5",
+      "prodCacheControl": "public, max-age=0, must-revalidate",
+      "prodContentType": "application/json; charset=utf-8",
+      "status": "MISMATCH"
+    },
+    {
+      "file": "sw.js",
+      "localStatus": 200,
+      "localSize": 2595,
+      "localHash": "bea0c25a9462",
+      "prodStatus": 200,
+      "prodSize": 2528,
+      "prodHash": "b2e6dfe8cda0",
+      "prodCacheControl": "public, max-age=0, must-revalidate",
+      "prodContentType": "application/javascript; charset=utf-8",
+      "status": "MISMATCH"
+    },
+    {
+      "file": "data/vocab_source_900.json",
+      "localStatus": 200,
+      "localSize": 652660,
+      "localHash": "4365210241d5",
+      "prodStatus": 200,
+      "prodSize": 623835,
+      "prodHash": "109ba235fed7",
+      "prodCacheControl": "public, max-age=0, must-revalidate",
+      "prodContentType": "application/json; charset=utf-8",
+      "status": "MISMATCH"
+    },
+    {
+      "file": "data/kanji_flashcards.json",
+      "localStatus": 200,
+      "localSize": 221745,
+      "localHash": "18251c7a4e9a",
+      "prodStatus": 200,
+      "prodSize": 217889,
+      "prodHash": "d15c237bfd0c",
+      "prodCacheControl": "public, max-age=0, must-revalidate",
+      "prodContentType": "application/json; charset=utf-8",
+      "status": "MISMATCH"
+    },
+    {
+      "file": "data/study_supplement.json",
+      "localStatus": 200,
+      "localSize": 525110,
+      "localHash": "0ec0a2e0dc27",
+      "prodStatus": 200,
+      "prodSize": 501119,
+      "prodHash": "4fbd16e8a434",
+      "prodCacheControl": "public, max-age=0, must-revalidate",
+      "prodContentType": "application/json; charset=utf-8",
+      "status": "MISMATCH"
+    },
+    {
+      "file": "data/grammar.json",
+      "localStatus": 200,
+      "localSize": 401496,
+      "localHash": "411a8c845fd1",
+      "prodStatus": 200,
+      "prodSize": 391005,
+      "prodHash": "c1065597b4d4",
+      "prodCacheControl": "public, max-age=0, must-revalidate",
+      "prodContentType": "application/json; charset=utf-8",
+      "status": "MISMATCH"
+    },
+    {
+      "file": "data/conjunctions.json",
+      "localStatus": 200,
+      "localSize": 20067,
+      "localHash": "2b2f328fcd3f",
+      "prodStatus": 200,
+      "prodSize": 19693,
+      "prodHash": "389ca85e0cb0",
+      "prodCacheControl": "public, max-age=0, must-revalidate",
+      "prodContentType": "application/json; charset=utf-8",
+      "status": "MISMATCH"
+    }
+  ],
+  "networkAudit": {
+    "localErrors": [],
+    "prodErrors": [],
+    "mismatchedHashes": [
+      {
+        "file": "index.html",
+        "localStatus": 200,
+        "localSize": 50987,
+        "localHash": "69ed48393c12",
+        "prodStatus": 200,
+        "prodSize": 50106,
+        "prodHash": "fc09eac49beb",
+        "prodCacheControl": "public, max-age=0, must-revalidate",
+        "prodContentType": "text/html; charset=utf-8",
+        "status": "MISMATCH"
+      },
+      {
+        "file": "css/style.css",
+        "localStatus": 200,
+        "localSize": 76503,
+        "localHash": "a6652e49e888",
+        "prodStatus": 200,
+        "prodSize": 73229,
+        "prodHash": "16f35399f565",
+        "prodCacheControl": "public, max-age=0, must-revalidate",
+        "prodContentType": "text/css; charset=utf-8",
+        "status": "MISMATCH"
+      },
+      {
+        "file": "js/app.js",
+        "localStatus": 200,
+        "localSize": 144840,
+        "localHash": "0b4540b4d71a",
+        "prodStatus": 200,
+        "prodSize": 142779,
+        "prodHash": "35eebaecd341",
+        "prodCacheControl": "public, max-age=0, must-revalidate",
+        "prodContentType": "application/javascript; charset=utf-8",
+        "status": "MISMATCH"
+      },
+      {
+        "file": "js/book-features.js",
+        "localStatus": 200,
+        "localSize": 23029,
+        "localHash": "05335da9c065",
+        "prodStatus": 200,
+        "prodSize": 22407,
+        "prodHash": "9a081e5c4214",
+        "prodCacheControl": "public, max-age=0, must-revalidate",
+        "prodContentType": "application/javascript; charset=utf-8",
+        "status": "MISMATCH"
+      },
+      {
+        "file": "js/kana-data.js",
+        "localStatus": 200,
+        "localSize": 11620,
+        "localHash": "a224532c9e11",
+        "prodStatus": 200,
+        "prodSize": 11475,
+        "prodHash": "036eb15318f2",
+        "prodCacheControl": "public, max-age=0, must-revalidate",
+        "prodContentType": "application/javascript; charset=utf-8",
+        "status": "MISMATCH"
+      },
+      {
+        "file": "manifest.json",
+        "localStatus": 200,
+        "localSize": 470,
+        "localHash": "ce7595036b16",
+        "prodStatus": 200,
+        "prodSize": 447,
+        "prodHash": "413cb4bceef5",
+        "prodCacheControl": "public, max-age=0, must-revalidate",
+        "prodContentType": "application/json; charset=utf-8",
+        "status": "MISMATCH"
+      },
+      {
+        "file": "sw.js",
+        "localStatus": 200,
+        "localSize": 2595,
+        "localHash": "bea0c25a9462",
+        "prodStatus": 200,
+        "prodSize": 2528,
+        "prodHash": "b2e6dfe8cda0",
+        "prodCacheControl": "public, max-age=0, must-revalidate",
+        "prodContentType": "application/javascript; charset=utf-8",
+        "status": "MISMATCH"
+      },
+      {
+        "file": "data/vocab_source_900.json",
+        "localStatus": 200,
+        "localSize": 652660,
+        "localHash": "4365210241d5",
+        "prodStatus": 200,
+        "prodSize": 623835,
+        "prodHash": "109ba235fed7",
+        "prodCacheControl": "public, max-age=0, must-revalidate",
+        "prodContentType": "application/json; charset=utf-8",
+        "status": "MISMATCH"
+      },
+      {
+        "file": "data/kanji_flashcards.json",
+        "localStatus": 200,
+        "localSize": 221745,
+        "localHash": "18251c7a4e9a",
+        "prodStatus": 200,
+        "prodSize": 217889,
+        "prodHash": "d15c237bfd0c",
+        "prodCacheControl": "public, max-age=0, must-revalidate",
+        "prodContentType": "application/json; charset=utf-8",
+        "status": "MISMATCH"
+      },
+      {
+        "file": "data/study_supplement.json",
+        "localStatus": 200,
+        "localSize": 525110,
+        "localHash": "0ec0a2e0dc27",
+        "prodStatus": 200,
+        "prodSize": 501119,
+        "prodHash": "4fbd16e8a434",
+        "prodCacheControl": "public, max-age=0, must-revalidate",
+        "prodContentType": "application/json; charset=utf-8",
+        "status": "MISMATCH"
+      },
+      {
+        "file": "data/grammar.json",
+        "localStatus": 200,
+        "localSize": 401496,
+        "localHash": "411a8c845fd1",
+        "prodStatus": 200,
+        "prodSize": 391005,
+        "prodHash": "c1065597b4d4",
+        "prodCacheControl": "public, max-age=0, must-revalidate",
+        "prodContentType": "application/json; charset=utf-8",
+        "status": "MISMATCH"
+      },
+      {
+        "file": "data/conjunctions.json",
+        "localStatus": 200,
+        "localSize": 20067,
+        "localHash": "2b2f328fcd3f",
+        "prodStatus": 200,
+        "prodSize": 19693,
+        "prodHash": "389ca85e0cb0",
+        "prodCacheControl": "public, max-age=0, must-revalidate",
+        "prodContentType": "application/json; charset=utf-8",
+        "status": "MISMATCH"
+      }
+    ]
+  },
+  "visualDiffs": [
+    {
+      "page": "home",
+      "viewport": "mobile_390x844",
+      "theme": "light",
+      "diffPixels": 0,
+      "totalPixels": 329160,
+      "diffPercent": 0,
+      "localErrors": [
+        "Unexpected token '<<'"
+      ],
+      "prodErrors": [
+        "Unexpected token '<<'"
+      ],
+      "diffShot": "C:\\Users\\asus\\Downloads\\JLPT_N5_N4_STUDY_V12_EXPANDED_DATA_GRAMMAR_UX\\screenshots\\diffs\\diff_home_mobile_390x844_light.png"
+    },
+    {
+      "page": "kana",
+      "viewport": "mobile_390x844",
+      "theme": "light",
+      "diffPixels": 0,
+      "totalPixels": 329160,
+      "diffPercent": 0,
+      "localErrors": [
+        "Unexpected token '<<'"
+      ],
+      "prodErrors": [
+        "Unexpected token '<<'"
+      ],
+      "diffShot": "C:\\Users\\asus\\Downloads\\JLPT_N5_N4_STUDY_V12_EXPANDED_DATA_GRAMMAR_UX\\screenshots\\diffs\\diff_kana_mobile_390x844_light.png"
+    },
+    {
+      "page": "vocab",
+      "viewport": "mobile_390x844",
+      "theme": "light",
+      "diffPixels": 0,
+      "totalPixels": 329160,
+      "diffPercent": 0,
+      "localErrors": [
+        "Unexpected token '<<'"
+      ],
+      "prodErrors": [
+        "Unexpected token '<<'"
+      ],
+      "diffShot": "C:\\Users\\asus\\Downloads\\JLPT_N5_N4_STUDY_V12_EXPANDED_DATA_GRAMMAR_UX\\screenshots\\diffs\\diff_vocab_mobile_390x844_light.png"
+    },
+    {
+      "page": "kanji",
+      "viewport": "mobile_390x844",
+      "theme": "light",
+      "diffPixels": 0,
+      "totalPixels": 329160,
+      "diffPercent": 0,
+      "localErrors": [
+        "Unexpected token '<<'"
+      ],
+      "prodErrors": [
+        "Unexpected token '<<'"
+      ],
+      "diffShot": "C:\\Users\\asus\\Downloads\\JLPT_N5_N4_STUDY_V12_EXPANDED_DATA_GRAMMAR_UX\\screenshots\\diffs\\diff_kanji_mobile_390x844_light.png"
+    },
+    {
+      "page": "grammar",
+      "viewport": "mobile_390x844",
+      "theme": "light",
+      "diffPixels": 0,
+      "totalPixels": 329160,
+      "diffPercent": 0,
+      "localErrors": [
+        "Unexpected token '<<'"
+      ],
+      "prodErrors": [
+        "Unexpected token '<<'"
+      ],
+      "diffShot": "C:\\Users\\asus\\Downloads\\JLPT_N5_N4_STUDY_V12_EXPANDED_DATA_GRAMMAR_UX\\screenshots\\diffs\\diff_grammar_mobile_390x844_light.png"
+    },
+    {
+      "page": "quiz",
+      "viewport": "mobile_390x844",
+      "theme": "light",
+      "diffPixels": 0,
+      "totalPixels": 329160,
+      "diffPercent": 0,
+      "localErrors": [
+        "Unexpected token '<<'"
+      ],
+      "prodErrors": [
+        "Unexpected token '<<'"
+      ],
+      "diffShot": "C:\\Users\\asus\\Downloads\\JLPT_N5_N4_STUDY_V12_EXPANDED_DATA_GRAMMAR_UX\\screenshots\\diffs\\diff_quiz_mobile_390x844_light.png"
+    },
+    {
+      "page": "home",
+      "viewport": "mobile_390x844",
+      "theme": "dark",
+      "diffPixels": 0,
+      "totalPixels": 329160,
+      "diffPercent": 0,
+      "localErrors": [
+        "Unexpected token '<<'"
+      ],
+      "prodErrors": [
+        "Unexpected token '<<'"
+      ],
+      "diffShot": "C:\\Users\\asus\\Downloads\\JLPT_N5_N4_STUDY_V12_EXPANDED_DATA_GRAMMAR_UX\\screenshots\\diffs\\diff_home_mobile_390x844_dark.png"
+    },
+    {
+      "page": "kana",
+      "viewport": "mobile_390x844",
+      "theme": "dark",
+      "diffPixels": 0,
+      "totalPixels": 329160,
+      "diffPercent": 0,
+      "localErrors": [
+        "Unexpected token '<<'"
+      ],
+      "prodErrors": [
+        "Unexpected token '<<'"
+      ],
+      "diffShot": "C:\\Users\\asus\\Downloads\\JLPT_N5_N4_STUDY_V12_EXPANDED_DATA_GRAMMAR_UX\\screenshots\\diffs\\diff_kana_mobile_390x844_dark.png"
+    },
+    {
+      "page": "vocab",
+      "viewport": "mobile_390x844",
+      "theme": "dark",
+      "diffPixels": 0,
+      "totalPixels": 329160,
+      "diffPercent": 0,
+      "localErrors": [
+        "Unexpected token '<<'"
+      ],
+      "prodErrors": [
+        "Unexpected token '<<'"
+      ],
+      "diffShot": "C:\\Users\\asus\\Downloads\\JLPT_N5_N4_STUDY_V12_EXPANDED_DATA_GRAMMAR_UX\\screenshots\\diffs\\diff_vocab_mobile_390x844_dark.png"
+    },
+    {
+      "page": "kanji",
+      "viewport": "mobile_390x844",
+      "theme": "dark",
+      "diffPixels": 0,
+      "totalPixels": 329160,
+      "diffPercent": 0,
+      "localErrors": [
+        "Unexpected token '<<'"
+      ],
+      "prodErrors": [
+        "Unexpected token '<<'"
+      ],
+      "diffShot": "C:\\Users\\asus\\Downloads\\JLPT_N5_N4_STUDY_V12_EXPANDED_DATA_GRAMMAR_UX\\screenshots\\diffs\\diff_kanji_mobile_390x844_dark.png"
+    },
+    {
+      "page": "grammar",
+      "viewport": "mobile_390x844",
+      "theme": "dark",
+      "diffPixels": 0,
+      "totalPixels": 329160,
+      "diffPercent": 0,
+      "localErrors": [
+        "Unexpected token '<<'"
+      ],
+      "prodErrors": [
+        "Unexpected token '<<'"
+      ],
+      "diffShot": "C:\\Users\\asus\\Downloads\\JLPT_N5_N4_STUDY_V12_EXPANDED_DATA_GRAMMAR_UX\\screenshots\\diffs\\diff_grammar_mobile_390x844_dark.png"
+    },
+    {
+      "page": "quiz",
+      "viewport": "mobile_390x844",
+      "theme": "dark",
+      "diffPixels": 0,
+      "totalPixels": 329160,
+      "diffPercent": 0,
+      "localErrors": [
+        "Unexpected token '<<'"
+      ],
+      "prodErrors": [
+        "Unexpected token '<<'"
+      ],
+      "diffShot": "C:\\Users\\asus\\Downloads\\JLPT_N5_N4_STUDY_V12_EXPANDED_DATA_GRAMMAR_UX\\screenshots\\diffs\\diff_quiz_mobile_390x844_dark.png"
+    },
+    {
+      "page": "home",
+      "viewport": "desktop_1440x900",
+      "theme": "light",
+      "diffPixels": 1489,
+      "totalPixels": 1296000,
+      "diffPercent": 0.11,
+      "localErrors": [
+        "Unexpected token '<<'"
+      ],
+      "prodErrors": [
+        "Unexpected token '<<'"
+      ],
+      "diffShot": "C:\\Users\\asus\\Downloads\\JLPT_N5_N4_STUDY_V12_EXPANDED_DATA_GRAMMAR_UX\\screenshots\\diffs\\diff_home_desktop_1440x900_light.png"
+    },
+    {
+      "page": "kana",
+      "viewport": "desktop_1440x900",
+      "theme": "light",
+      "diffPixels": 1490,
+      "totalPixels": 1296000,
+      "diffPercent": 0.11,
+      "localErrors": [
+        "Unexpected token '<<'"
+      ],
+      "prodErrors": [
+        "Unexpected token '<<'"
+      ],
+      "diffShot": "C:\\Users\\asus\\Downloads\\JLPT_N5_N4_STUDY_V12_EXPANDED_DATA_GRAMMAR_UX\\screenshots\\diffs\\diff_kana_desktop_1440x900_light.png"
+    },
+    {
+      "page": "vocab",
+      "viewport": "desktop_1440x900",
+      "theme": "light",
+      "diffPixels": 1489,
+      "totalPixels": 1296000,
+      "diffPercent": 0.11,
+      "localErrors": [
+        "Unexpected token '<<'"
+      ],
+      "prodErrors": [
+        "Unexpected token '<<'"
+      ],
+      "diffShot": "C:\\Users\\asus\\Downloads\\JLPT_N5_N4_STUDY_V12_EXPANDED_DATA_GRAMMAR_UX\\screenshots\\diffs\\diff_vocab_desktop_1440x900_light.png"
+    },
+    {
+      "page": "kanji",
+      "viewport": "desktop_1440x900",
+      "theme": "light",
+      "diffPixels": 2239,
+      "totalPixels": 1296000,
+      "diffPercent": 0.17,
+      "localErrors": [
+        "Unexpected token '<<'"
+      ],
+      "prodErrors": [
+        "Unexpected token '<<'"
+      ],
+      "diffShot": "C:\\Users\\asus\\Downloads\\JLPT_N5_N4_STUDY_V12_EXPANDED_DATA_GRAMMAR_UX\\screenshots\\diffs\\diff_kanji_desktop_1440x900_light.png"
+    },
+    {
+      "page": "grammar",
+      "viewport": "desktop_1440x900",
+      "theme": "light",
+      "diffPixels": 0,
+      "totalPixels": 1296000,
+      "diffPercent": 0,
+      "localErrors": [
+        "Unexpected token '<<'"
+      ],
+      "prodErrors": [
+        "Unexpected token '<<'"
+      ],
+      "diffShot": "C:\\Users\\asus\\Downloads\\JLPT_N5_N4_STUDY_V12_EXPANDED_DATA_GRAMMAR_UX\\screenshots\\diffs\\diff_grammar_desktop_1440x900_light.png"
+    },
+    {
+      "page": "quiz",
+      "viewport": "desktop_1440x900",
+      "theme": "light",
+      "diffPixels": 932,
+      "totalPixels": 1296000,
+      "diffPercent": 0.07,
+      "localErrors": [
+        "Unexpected token '<<'"
+      ],
+      "prodErrors": [
+        "Unexpected token '<<'"
+      ],
+      "diffShot": "C:\\Users\\asus\\Downloads\\JLPT_N5_N4_STUDY_V12_EXPANDED_DATA_GRAMMAR_UX\\screenshots\\diffs\\diff_quiz_desktop_1440x900_light.png"
+    },
+    {
+      "page": "home",
+      "viewport": "desktop_1440x900",
+      "theme": "dark",
+      "diffPixels": 228,
+      "totalPixels": 1296000,
+      "diffPercent": 0.02,
+      "localErrors": [
+        "Unexpected token '<<'"
+      ],
+      "prodErrors": [
+        "Unexpected token '<<'"
+      ],
+      "diffShot": "C:\\Users\\asus\\Downloads\\JLPT_N5_N4_STUDY_V12_EXPANDED_DATA_GRAMMAR_UX\\screenshots\\diffs\\diff_home_desktop_1440x900_dark.png"
+    },
+    {
+      "page": "kana",
+      "viewport": "desktop_1440x900",
+      "theme": "dark",
+      "diffPixels": 1713,
+      "totalPixels": 1296000,
+      "diffPercent": 0.13,
+      "localErrors": [
+        "Unexpected token '<<'"
+      ],
+      "prodErrors": [
+        "Unexpected token '<<'"
+      ],
+      "diffShot": "C:\\Users\\asus\\Downloads\\JLPT_N5_N4_STUDY_V12_EXPANDED_DATA_GRAMMAR_UX\\screenshots\\diffs\\diff_kana_desktop_1440x900_dark.png"
+    },
+    {
+      "page": "vocab",
+      "viewport": "desktop_1440x900",
+      "theme": "dark",
+      "diffPixels": 0,
+      "totalPixels": 1296000,
+      "diffPercent": 0,
+      "localErrors": [
+        "Unexpected token '<<'"
+      ],
+      "prodErrors": [
+        "Unexpected token '<<'"
+      ],
+      "diffShot": "C:\\Users\\asus\\Downloads\\JLPT_N5_N4_STUDY_V12_EXPANDED_DATA_GRAMMAR_UX\\screenshots\\diffs\\diff_vocab_desktop_1440x900_dark.png"
+    },
+    {
+      "page": "kanji",
+      "viewport": "desktop_1440x900",
+      "theme": "dark",
+      "diffPixels": 0,
+      "totalPixels": 1296000,
+      "diffPercent": 0,
+      "localErrors": [
+        "Unexpected token '<<'"
+      ],
+      "prodErrors": [
+        "Unexpected token '<<'"
+      ],
+      "diffShot": "C:\\Users\\asus\\Downloads\\JLPT_N5_N4_STUDY_V12_EXPANDED_DATA_GRAMMAR_UX\\screenshots\\diffs\\diff_kanji_desktop_1440x900_dark.png"
+    },
+    {
+      "page": "grammar",
+      "viewport": "desktop_1440x900",
+      "theme": "dark",
+      "diffPixels": 234,
+      "totalPixels": 1296000,
+      "diffPercent": 0.02,
+      "localErrors": [
+        "Unexpected token '<<'"
+      ],
+      "prodErrors": [
+        "Unexpected token '<<'"
+      ],
+      "diffShot": "C:\\Users\\asus\\Downloads\\JLPT_N5_N4_STUDY_V12_EXPANDED_DATA_GRAMMAR_UX\\screenshots\\diffs\\diff_grammar_desktop_1440x900_dark.png"
+    },
+    {
+      "page": "quiz",
+      "viewport": "desktop_1440x900",
+      "theme": "dark",
+      "diffPixels": 247,
+      "totalPixels": 1296000,
+      "diffPercent": 0.02,
+      "localErrors": [
+        "Unexpected token '<<'"
+      ],
+      "prodErrors": [
+        "Unexpected token '<<'"
+      ],
+      "diffShot": "C:\\Users\\asus\\Downloads\\JLPT_N5_N4_STUDY_V12_EXPANDED_DATA_GRAMMAR_UX\\screenshots\\diffs\\diff_quiz_desktop_1440x900_dark.png"
+    }
+  ],
+  "computedStyleDumps": [
+    {
+      "element": "navbar",
+      "selector": "header.site-header, header",
+      "local": {
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(0, 0, 0)",
+        "font": "\"Times New Roman\"",
+        "display": "block"
+      },
+      "prod": {
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(0, 0, 0)",
+        "font": "\"Times New Roman\"",
+        "display": "block"
+      },
+      "matches": true
+    },
+    {
+      "element": "hero",
+      "selector": ".hero-desk, .hero-copy",
+      "local": null,
+      "prod": null,
+      "matches": true
+    },
+    {
+      "element": "todayLesson",
+      "selector": "#todayLessonCard, .roadmap-container",
+      "local": {
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(0, 0, 0)",
+        "font": "\"Times New Roman\"",
+        "display": "flex"
+      },
+      "prod": {
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(0, 0, 0)",
+        "font": "\"Times New Roman\"",
+        "display": "flex"
+      },
+      "matches": true
+    },
+    {
+      "element": "studyCard",
+      "selector": ".study-card, .shortcut-card",
+      "local": {
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(0, 0, 0)",
+        "font": "\"Times New Roman\"",
+        "display": "flex"
+      },
+      "prod": {
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(0, 0, 0)",
+        "font": "\"Times New Roman\"",
+        "display": "flex"
+      },
+      "matches": true
+    },
+    {
+      "element": "themeToggle",
+      "selector": "#themeToggle",
+      "local": {
+        "bg": "rgba(255, 255, 255, 0.094)",
+        "color": "rgb(255, 255, 255)",
+        "font": "\"Times New Roman\"",
+        "display": "block"
+      },
+      "prod": {
+        "bg": "rgba(255, 255, 255, 0.094)",
+        "color": "rgb(255, 255, 255)",
+        "font": "\"Times New Roman\"",
+        "display": "block"
+      },
+      "matches": true
+    },
+    {
+      "element": "searchToggle",
+      "selector": "#searchToggle",
+      "local": {
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(0, 0, 0)",
+        "font": "\"Times New Roman\"",
+        "display": "flex"
+      },
+      "prod": {
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(0, 0, 0)",
+        "font": "\"Times New Roman\"",
+        "display": "flex"
+      },
+      "matches": true
+    },
+    {
+      "element": "mobileNav",
+      "selector": ".mobile-bottom-nav, .mobile-nav",
+      "local": {
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(0, 0, 0)",
+        "font": "\"Times New Roman\"",
+        "display": "none"
+      },
+      "prod": {
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(0, 0, 0)",
+        "font": "\"Times New Roman\"",
+        "display": "none"
+      },
+      "matches": true
+    }
+  ]
+}
