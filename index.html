@@ -17,6 +17,7 @@
     <nav id="nav" aria-label="Main navigation">
       <button data-page="home" class="active">Home</button><button data-page="vocab">Vocabulary</button><button data-page="grammar">Grammar</button><button data-page="kanji">Kanji</button><button data-page="compare">Compare</button><button data-page="quiz">Quiz</button><button data-page="kana">Kana</button><button data-page="how">How to use</button>
     </nav>
+<<<<<<< HEAD
     
 <button id="themeToggle" class="theme-toggle"
         type="button" aria-label="Switch to dark mode"
@@ -24,6 +25,9 @@
   🌙 Dark mode
 </button>
 
+=======
+    <button id="themeToggle" class="theme-toggle" type="button" aria-label="Switch to dark mode" title="Switch theme">🌙 Dark mode</button>
+>>>>>>> 25c51b3 (Updated JLPT Data and UI/UX)
   </div>
 </header>
 <main>
@@ -37,7 +41,20 @@
   <div class="source-panel"><div><span class="eyebrow">DATA SOURCES</span><h2>Loaded and checked</h2><p>OpenJLPT provides structured N5/N4 data, your two PDFs add supplementary study material, and JLPTStudy is included as an external reference source.</p></div><div id="sourceStatus" class="source-status" aria-live="polite"></div><div class="source-links"><a href="https://www.jlptstudy.net/N5/" target="_blank" rel="noopener">JLPTStudy N5 ↗</a><a href="https://www.jlptstudy.net/N4/" target="_blank" rel="noopener">JLPTStudy N4 ↗</a></div></div>
 </section>
 <section id="vocab" class="page"><div class="section-head"><div><span class="eyebrow">VOCABULARY</span><h2>Vocabulary study</h2><p>N5 first. N4 expands the scope to N5 + N4.</p></div><div id="vocabCount" class="count"></div></div><div class="toolbar"><input id="vSearch" placeholder="Search word, reading, romaji or English…" aria-label="Search vocabulary"><select id="vLevel"><option value="ALL">All data</option><option value="N5">N5 only</option><option value="N4">N4 only</option><option value="N5N4">N5 + N4</option><option value="SUPP">Supplementary PDF</option></select><input id="vJump" class="jump-input" type="number" min="1" placeholder="Jump to #"><button id="vResume" class="tool-btn">Resume</button><select id="vPos"><option value="ALL">All parts of speech</option><option value="NOUN">Noun</option><option value="IADJ">i-Adjective</option><option value="NADJ">na-Adjective</option><option value="VERB">Verb</option><option value="OTHER">Other</option></select><select id="vRead"><option value="ALL">All progress</option><option value="UNREAD">Unread</option><option value="READ">Read</option></select><button id="vFlash" class="tool-btn">Flashcards</button></div><div id="vGrid" class="card-grid"></div><div id="vLoadMore" class="load-more-wrap"></div></section>
+<<<<<<< HEAD
 <section id="grammar" class="page"><div class="section-head"><div><span class="eyebrow">GRAMMAR</span><h2>N5 → N4 Grammar</h2><p>English explanation, formation and example translations.</p></div><div id="gCount" class="count"></div></div><div class="toolbar"><input id="gSearch" placeholder="Search pattern, meaning, formation or tag…"><select id="gLevel"><option value="ALL">All data</option><option value="N5">N5 only</option><option value="N4">N4 only</option><option value="N5N4">N5 + N4</option></select><input id="gJump" class="jump-input" type="number" min="1" placeholder="Jump to #" aria-label="Jump to grammar number"><button id="gResume" class="tool-btn">Resume</button><select id="gProgress"><option value="ALL">All progress</option><option value="UNREAD">Unread</option><option value="READ">Read</option></select></div><div id="gGrid" class="card-grid"></div><div id="gLoadMore" class="load-more-wrap"></div></section>
+=======
+<section id="grammar" class="page"><div class="section-head"><div><span class="eyebrow">GRAMMAR</span><h2>Learn grammar step by step</h2><p>Understand the meaning, build the sentence, see real examples, and check what you remember.</p></div><div id="gCount" class="count"></div></div>
+<div class="grammar-path">
+  <div class="grammar-path-heading"><div><span class="eyebrow">YOUR LEARNING PATH</span><h3>How to learn each grammar point</h3><p>Study a small group, practise with examples, then mark it as read.</p></div><div class="grammar-level-shortcuts"><button type="button" data-grammar-level="N5">Start N5</button><button type="button" data-grammar-level="N4">Continue N4</button><button type="button" data-grammar-level="N5N4">Review both</button></div></div>
+  <div class="grammar-path-steps">
+    <article><span>01</span><h4>Meaning</h4><p>Say what the pattern means in simple English.</p></article>
+    <article><span>02</span><h4>Formula</h4><p>Notice what comes before the pattern: noun, verb, or adjective.</p></article>
+    <article><span>03</span><h4>Example</h4><p>Read the Japanese sentence, listen, and understand its translation.</p></article>
+    <article><span>04</span><h4>Recall</h4><p>Answer the quick check, then mark the point as read.</p></article>
+  </div>
+</div><div class="toolbar"><input id="gSearch" placeholder="Search pattern, meaning, formation or tag…"><select id="gLevel"><option value="ALL">All data</option><option value="N5">N5 only</option><option value="N4">N4 only</option><option value="N5N4">N5 + N4</option></select><input id="gJump" class="jump-input" type="number" min="1" placeholder="Jump to #" aria-label="Jump to grammar number"><button id="gResume" class="tool-btn">Resume</button><select id="gProgress"><option value="ALL">All progress</option><option value="UNREAD">Unread</option><option value="READ">Read</option></select></div><div id="gGrid" class="card-grid"></div><div id="gLoadMore" class="load-more-wrap"></div></section>
+>>>>>>> 25c51b3 (Updated JLPT Data and UI/UX)
 <section id="kanji" class="page"><div class="section-head"><div><span class="eyebrow">KANJI</span><h2>N5 + N4 Kanji</h2><p>OpenJLPT levels plus the supplied JK4B flashcard PDF.</p></div><div id="kCount" class="count"></div></div><div class="toolbar"><input id="kSearch" placeholder="Search kanji, reading or English meaning…"><select id="kLevel"><option value="ALL">All kanji</option><option value="N5">N5 only</option><option value="N4">N4 only</option><option value="N5N4">N5 + N4</option><option value="FLASH">Flashcard source</option></select><input id="kJump" class="jump-input" type="number" min="1" placeholder="Jump to #" aria-label="Jump to kanji number"><button id="kResume" class="tool-btn">Resume</button><select id="kProgress"><option value="ALL">All progress</option><option value="UNREAD">Unread</option><option value="READ">Read</option></select><button id="kFlash" class="tool-btn">Flashcards</button></div><div id="kGrid" class="card-grid kanji-grid"></div><div id="kLoadMore" class="load-more-wrap"></div></section>
 <section id="compare" class="page"><div class="section-head"><div><span class="eyebrow">GRAMMAR COMPARISON</span><h2>Compare 2 to 6 grammar points</h2><p>Useful when two patterns look similar in the exam.</p></div></div><div id="compareSelectors" class="compare-selectors"></div><button id="addCompare" class="add-btn">＋ Add another grammar point</button><div id="compareResult" class="compare-result empty-panel">Select at least 2 grammar points.</div></section>
 <section id="kana" class="page"><div class="section-head"><div><span class="eyebrow">KANA FOR BEGINNERS</span><h2>Hiragana & Katakana</h2><p>Learn the basic Japanese sounds and listen to every character.</p></div></div><div class="kana-tabs"><button class="kana-tab active" data-kana="hira">Hiragana</button><button class="kana-tab" data-kana="kata">Katakana</button></div><div id="kanaGrid" class="kana-grid"></div></section>

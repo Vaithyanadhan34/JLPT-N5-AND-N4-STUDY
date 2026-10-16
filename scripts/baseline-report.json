@@ -1,0 +1,2166 @@
+{
+  "timestamp": "2026-10-15T10:40:24.220Z",
+  "profile": "Moto G Power (412x823, DPR 1.75, Slow 4G 500kbps/150ms RTT, 4x CPU throttle)",
+  "local": {
+    "pages": [
+      {
+        "name": "Home",
+        "id": "home",
+        "hash": "#home",
+        "requestsCount": 41,
+        "totalTransferredKB": "2752.1",
+        "jsTransferredKB": "110.5",
+        "jsDecodedKB": "110.5",
+        "cssTransferredKB": "730.1",
+        "jsonTransferredKB": "1312.2",
+        "fontTransferredKB": "567.2",
+        "fcpMs": "7008",
+        "lcpMs": "7008",
+        "cls": "0.0000",
+        "domNodes": 999,
+        "jsHeapUsedMB": "1.76",
+        "requests": [
+          {
+            "url": "http://localhost:8000/",
+            "cat": "doc",
+            "status": 200,
+            "size": 32837
+          },
+          {
+            "url": "http://localhost:8000/js/kana-data.js?v=stationery15",
+            "cat": "js",
+            "status": 200,
+            "size": 11475
+          },
+          {
+            "url": "http://localhost:8000/css/style.css?v=stationery14",
+            "cat": "css",
+            "status": 200,
+            "size": 45891
+          },
+          {
+            "url": "http://localhost:8000/js/app.js?v=stationery15",
+            "cat": "js",
+            "status": 200,
+            "size": 101683
+          },
+          {
+            "url": "https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400..800;1,9..144,400..800&family=Inter:wght@400;500;600;700;800&family=Shippori+Mincho:wght@500;700;800&family=Zen+Kaku+Gothic+New:wght@400;500;700&display=swap",
+            "cat": "css",
+            "status": 200,
+            "size": 701749
+          },
+          {
+            "url": "https://fonts.gstatic.com/s/zenkakugothicnew/v19/gNMYW2drQpDw0GjzrVNFf_valaDBcznOkj5iS2z4CnVHwbSaNYf6hPiImB7BfkJ3ZpFRYQ.117.woff2",
+            "cat": "font",
+            "status": 200,
+            "size": 6128
+          },
+          {
+            "url": "https://fonts.gstatic.com/s/zenkakugothicnew/v19/gNMYW2drQpDw0GjzrVNFf_valaDBcznOkj5iS2z4CnVHwbSaNYf6hPiImB7BfkJ3ZpFRYQ.118.woff2",
+            "cat": "font",
+            "status": 200,
+            "size": 6860
+          },
+          {
+            "url": "https://fonts.gstatic.com/s/zenkakugothicnew/v19/gNMVW2drQpDw0GjzrVNFf_valaDBcznOqodNaWHSSmlNk8rxVYz1keqDognBR0dnbIQ0DZlb2g.58.woff2",
+            "cat": "font",
+            "status": 200,
+            "size": 6824
+          },
+          {
+            "url": "https://fonts.gstatic.com/s/zenkakugothicnew/v19/gNMYW2drQpDw0GjzrVNFf_valaDBcznOkj5iS2z4CnVHwbSaNYf6hPiImB7BfkJ3ZpFRYQ.113.woff2",
+            "cat": "font",
+            "status": 200,
+            "size": 7728
+          },
+          {
+            "url": "https://fonts.gstatic.com/s/zenkakugothicnew/v19/gNMYW2drQpDw0GjzrVNFf_valaDBcznOkj5iS2z4CnVHwbSaNYf6hPiImB7BfkJ3ZpFRYQ.111.woff2",
+            "cat": "font",
+            "status": 200,
+            "size": 9028
+          },
+          {
+            "url": "https://fonts.gstatic.com/s/zenkakugothicnew/v19/gNMYW2drQpDw0GjzrVNFf_valaDBcznOkj5iS2z4CnVHwbSaNYf6hPiImB7BfkJ3ZpFRYQ.109.woff2",
+            "cat": "font",
+            "status": 200,
+            "size": 8312
+          },
+          {
+            "url": "https://fonts.gstatic.com/s/shipporimincho/v17/VdGDAZweH5EbgHY6YExcZfDoj0B4Z9Cm4ZEI5-7s2xZbIDLfwlghWkaUqSYfzWdYeCMQ.117.woff2",
+            "cat": "font",
+            "status": 200,
+            "size": 9096
+          },
+          {
+            "url": "https://fonts.gstatic.com/s/zenkakugothicnew/v19/gNMVW2drQpDw0GjzrVNFf_valaDBcznOqodNaWHSSmlNk8rxVYz1keqDognBR0dnbIQ0DZlb2g.107.woff2",
+            "cat": "font",
+            "status": 200,
+            "size": 8900
+          },
+          {
+            "url": "https://fonts.gstatic.com/s/zenkakugothicnew/v19/gNMVW2drQpDw0GjzrVNFf_valaDBcznOqodNaWHSSmlNk8rxVYz1keqDognBR0dnbIQ0DZlb2g.113.woff2",
+            "cat": "font",
+            "status": 200,
+            "size": 7688
+          },
+          {
+            "url": "https://fonts.gstatic.com/s/zenkakugothicnew/v19/gNMYW2drQpDw0GjzrVNFf_valaDBcznOojxoTE76QGE.woff2",
+            "cat": "font",
+            "status": 200,
+            "size": 9752
+          },
+          {
+            "url": "https://fonts.gstatic.com/s/shipporimincho/v17/VdGDAZweH5EbgHY6YExcZfDoj0B4e9Om4ZEI5-7s2xZbIDLfwlghWkaUqSYfzWdYeCMQ.117.woff2",
+            "cat": "font",
+            "status": 200,
+            "size": 9000
+          },
+          {
+            "url": "https://fonts.gstatic.com/s/shipporimincho/v17/VdGDAZweH5EbgHY6YExcZfDoj0B4Z9Cm4ZEI5-7s2xZbIDLfwlghWkaUqSYfzWdYeCMQ.113.woff2",
+            "cat": "font",
+            "status": 200,
+            "size": 11756
+          },
+          {
+            "url": "https://fonts.gstatic.com/s/zenkakugothicnew/v19/gNMYW2drQpDw0GjzrVNFf_valaDBcznOkj5iS2z4CnVHwbSaNYf6hPiImB7BfkJ3ZpFRYQ.108.woff2",
+            "cat": "font",
+            "status": 200,
+            "size": 9928
+          },
+          {
+            "url": "https://fonts.gstatic.com/s/zenkakugothicnew/v19/gNMYW2drQpDw0GjzrVNFf_valaDBcznOkj5iS2z4CnVHwbSaNYf6hPiImB7BfkJ3ZpFRYQ.95.woff2",
+            "cat": "font",
+            "status": 200,
+            "size": 8992
+          },
+          {
+            "url": "https://fonts.gstatic.com/s/shipporimincho/v17/VdGDAZweH5EbgHY6YExcZfDoj0B4e9Om4ZEI5-7s2xZbIDLfwlghWkaUqSYfzWdYeCMQ.113.woff2",
+            "cat": "font",
+            "status": 200,
+            "size": 11796
+          },
+          {
+            "url": "https://fonts.gstatic.com/s/shipporimincho/v17/VdGDAZweH5EbgHY6YExcZfDoj0B4e9Om4ZEI5-7s2xZbIDLfwlghWkaUqSYfzWdYeCMQ.115.woff2",
+            "cat": "font",
+            "status": 200,
+            "size": 11552
+          },
+          {
+            "url": "https://fonts.gstatic.com/s/shipporimincho/v17/VdGDAZweH5EbgHY6YExcZfDoj0B4Z9Cm4ZEI5-7s2xZbIDLfwlghWkaUqSYfzWdYeCMQ.115.woff2",
+            "cat": "font",
+            "status": 200,
+            "size": 11528
+          },
+          {
+            "url": "https://fonts.gstatic.com/s/shipporimincho/v17/VdGDAZweH5EbgHY6YExcZfDoj0B4Z9Cm4ZEI5-7s2xZbIDLfwlghWkaUqSYfzWdYeCMQ.116.woff2",
+            "cat": "font",
+            "status": 200,
+            "size": 11556
+          },
+          {
+            "url": "https://fonts.gstatic.com/s/shipporimincho/v17/VdGDAZweH5EbgHY6YExcZfDoj0B4Z9Cm4ZEI5-7s2xZbIDLfwlghWkaUqSYfzWdYeCMQ.109.woff2",
+            "cat": "font",
+            "status": 200,
+            "size": 11668
+          },
+          {
+            "url": "https://fonts.gstatic.com/s/shipporimincho/v17/VdGDAZweH5EbgHY6YExcZfDoj0B4Z9Cm4ZEI5-7s2xZbIDLfwlghWkaUqSYfzWdYeCMQ.110.woff2",
+            "cat": "font",
+            "status": 200,
+            "size": 12312
+          },
+          {
+            "url": "https://fonts.gstatic.com/s/shipporimincho/v17/VdGDAZweH5EbgHY6YExcZfDoj0B4Z9Cm4ZEI5-7s2xZbIDLfwlghWkaUqSYfzWdYeCMQ.111.woff2",
+            "cat": "font",
+            "status": 200,
+            "size": 12332
+          },
+          {
+            "url": "https://fonts.gstatic.com/s/shipporimincho/v17/VdGDAZweH5EbgHY6YExcZfDoj0B4Z9Cm4ZEI5-7s2xZbIDLfwlghWkaUqSYfzWdYeCMQ.95.woff2",
+            "cat": "font",
+            "status": 200,
+            "size": 12384
+          },
+          {
+            "url": "https://fonts.gstatic.com/s/shipporimincho/v17/VdGDAZweH5EbgHY6YExcZfDoj0B4Z9Cm4ZEI5-7s2xZbIDLfwlghWkaUqSYfzWdYeCMQ.100.woff2",
+            "cat": "font",
+            "status": 200,
+            "size": 14192
+          },
+          {
+            "url": "https://fonts.gstatic.com/s/shipporimincho/v17/VdGDAZweH5EbgHY6YExcZfDoj0B4Z9Cm4ZEI5-7s2xZbIDLfwlghWkaUqSYfzWdYeCMQ.108.woff2",
+            "cat": "font",
+            "status": 200,
+            "size": 13444
+          },
+          {
+            "url": "https://fonts.gstatic.com/s/zenkakugothicnew/v19/gNMVW2drQpDw0GjzrVNFf_valaDBcznOqodNaWHSSmlNk8rxVYz1keqDognBR0dnbIQ0DZlb2g.119.woff2",
+            "cat": "font",
+            "status": 200,
+            "size": 18000
+          },
+          {
+            "url": "https://fonts.gstatic.com/s/zenkakugothicnew/v19/gNMYW2drQpDw0GjzrVNFf_valaDBcznOkj5iS2z4CnVHwbSaNYf6hPiImB7BfkJ3ZpFRYQ.119.woff2",
+            "cat": "font",
+            "status": 200,
+            "size": 18240
+          },
+          {
+            "url": "https://fonts.gstatic.com/s/shipporimincho/v17/VdGDAZweH5EbgHY6YExcZfDoj0B4e9Om4ZEI5-7s2xZbIDLfwlghWkaUqSYfzWdYeCMQ.118.woff2",
+            "cat": "font",
+            "status": 200,
+            "size": 19920
+          },
+          {
+            "url": "https://fonts.gstatic.com/s/shipporimincho/v17/VdGDAZweH5EbgHY6YExcZfDoj0B4Z9Cm4ZEI5-7s2xZbIDLfwlghWkaUqSYfzWdYeCMQ.118.woff2",
+            "cat": "font",
+            "status": 200,
+            "size": 20076
+          },
+          {
+            "url": "https://fonts.gstatic.com/s/shipporimincho/v17/VdGDAZweH5EbgHY6YExcZfDoj0B4Z9CW45sPxeymzw.woff2",
+            "cat": "font",
+            "status": 200,
+            "size": 28704
+          },
+          {
+            "url": "https://fonts.gstatic.com/s/shipporimincho/v17/VdGDAZweH5EbgHY6YExcZfDoj0B4Z9Cm4ZEI5-7s2xZbIDLfwlghWkaUqSYfzWdYeCMQ.119.woff2",
+            "cat": "font",
+            "status": 200,
+            "size": 32068
+          },
+          {
+            "url": "https://fonts.gstatic.com/s/inter/v20/UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa1ZL7W0Q5nw.woff2",
+            "cat": "font",
+            "status": 200,
+            "size": 48432
+          },
+          {
+            "url": "https://fonts.gstatic.com/s/fraunces/v38/6NU78FyLNQOQZAnv9bYEvDiIdE9Ea92uemAk_WBq8U_9v0c2Wa0KxC9TeP2Xz5c.woff2",
+            "cat": "font",
+            "status": 200,
+            "size": 67388
+          },
+          {
+            "url": "https://fonts.gstatic.com/s/inter/v20/UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa25L7W0Q5n-wU.woff2",
+            "cat": "font",
+            "status": 200,
+            "size": 85272
+          },
+          {
+            "url": "http://localhost:8000/data/vocab_source_900.json",
+            "cat": "json",
+            "status": 200,
+            "size": 624500
+          },
+          {
+            "url": "http://localhost:8000/data/kanji_flashcards.json",
+            "cat": "json",
+            "status": 200,
+            "size": 218066
+          },
+          {
+            "url": "http://localhost:8000/data/study_supplement.json",
+            "cat": "json",
+            "status": 200,
+            "size": 501119
+          }
+        ]
+      },
+      {
+        "name": "Kana",
+        "id": "kana",
+        "hash": "#kana",
+        "requestsCount": 41,
+        "totalTransferredKB": "2752.1",
+        "jsTransferredKB": "110.5",
+        "jsDecodedKB": "110.5",
+        "cssTransferredKB": "730.1",
+        "jsonTransferredKB": "1312.2",
+        "fontTransferredKB": "567.2",
+        "fcpMs": "7120",
+        "lcpMs": "7120",
+        "cls": "0.0000",
+        "domNodes": 999,
+        "jsHeapUsedMB": "1.76",
+        "requests": [
+          {
+            "url": "http://localhost:8000/",
+            "cat": "doc",
+            "status": 200,
+            "size": 32837
+          },
+          {
+            "url": "http://localhost:8000/js/kana-data.js?v=stationery15",
+            "cat": "js",
+            "status": 200,
+            "size": 11475
+          },
+          {
+            "url": "http://localhost:8000/css/style.css?v=stationery14",
+            "cat": "css",
+            "status": 200,
+            "size": 45891
+          },
+          {
+            "url": "http://localhost:8000/js/app.js?v=stationery15",
+            "cat": "js",
+            "status": 200,
+            "size": 101683
+          },
+          {
+            "url": "https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400..800;1,9..144,400..800&family=Inter:wght@400;500;600;700;800&family=Shippori+Mincho:wght@500;700;800&family=Zen+Kaku+Gothic+New:wght@400;500;700&display=swap",
+            "cat": "css",
+            "status": 200,
+            "size": 701749
+          },
+          {
+            "url": "https://fonts.gstatic.com/s/zenkakugothicnew/v19/gNMYW2drQpDw0GjzrVNFf_valaDBcznOkj5iS2z4CnVHwbSaNYf6hPiImB7BfkJ3ZpFRYQ.117.woff2",
+            "cat": "font",
+            "status": 200,
+            "size": 6128
+          },
+          {
+            "url": "https://fonts.gstatic.com/s/zenkakugothicnew/v19/gNMYW2drQpDw0GjzrVNFf_valaDBcznOkj5iS2z4CnVHwbSaNYf6hPiImB7BfkJ3ZpFRYQ.95.woff2",
+            "cat": "font",
+            "status": 200,
+            "size": 8992
+          },
+          {
+            "url": "https://fonts.gstatic.com/s/zenkakugothicnew/v19/gNMVW2drQpDw0GjzrVNFf_valaDBcznOqodNaWHSSmlNk8rxVYz1keqDognBR0dnbIQ0DZlb2g.113.woff2",
+            "cat": "font",
+            "status": 200,
+            "size": 7688
+          },
+          {
+            "url": "https://fonts.gstatic.com/s/shipporimincho/v17/VdGDAZweH5EbgHY6YExcZfDoj0B4Z9Cm4ZEI5-7s2xZbIDLfwlghWkaUqSYfzWdYeCMQ.117.woff2",
+            "cat": "font",
+            "status": 200,
+            "size": 9096
+          },
+          {
+            "url": "https://fonts.gstatic.com/s/zenkakugothicnew/v19/gNMYW2drQpDw0GjzrVNFf_valaDBcznOkj5iS2z4CnVHwbSaNYf6hPiImB7BfkJ3ZpFRYQ.113.woff2",
+            "cat": "font",
+            "status": 200,
+            "size": 7728
+          },
+          {
+            "url": "https://fonts.gstatic.com/s/zenkakugothicnew/v19/gNMYW2drQpDw0GjzrVNFf_valaDBcznOkj5iS2z4CnVHwbSaNYf6hPiImB7BfkJ3ZpFRYQ.111.woff2",
+            "cat": "font",
+            "status": 200,
+            "size": 9028
+          },
+          {
+            "url": "https://fonts.gstatic.com/s/zenkakugothicnew/v19/gNMYW2drQpDw0GjzrVNFf_valaDBcznOkj5iS2z4CnVHwbSaNYf6hPiImB7BfkJ3ZpFRYQ.108.woff2",
+            "cat": "font",
+            "status": 200,
+            "size": 9928
+          },
+          {
+            "url": "https://fonts.gstatic.com/s/shipporimincho/v17/VdGDAZweH5EbgHY6YExcZfDoj0B4e9Om4ZEI5-7s2xZbIDLfwlghWkaUqSYfzWdYeCMQ.115.woff2",
+            "cat": "font",
+            "status": 200,
+            "size": 11552
+          },
+          {
+            "url": "https://fonts.gstatic.com/s/shipporimincho/v17/VdGDAZweH5EbgHY6YExcZfDoj0B4Z9Cm4ZEI5-7s2xZbIDLfwlghWkaUqSYfzWdYeCMQ.109.woff2",
+            "cat": "font",
+            "status": 200,
+            "size": 11668
+          },
+          {
+            "url": "https://fonts.gstatic.com/s/zenkakugothicnew/v19/gNMYW2drQpDw0GjzrVNFf_valaDBcznOkj5iS2z4CnVHwbSaNYf6hPiImB7BfkJ3ZpFRYQ.109.woff2",
+            "cat": "font",
+            "status": 200,
+            "size": 8312
+          },
+          {
+            "url": "https://fonts.gstatic.com/s/zenkakugothicnew/v19/gNMYW2drQpDw0GjzrVNFf_valaDBcznOkj5iS2z4CnVHwbSaNYf6hPiImB7BfkJ3ZpFRYQ.118.woff2",
+            "cat": "font",
+            "status": 200,
+            "size": 6860
+          },
+          {
+            "url": "https://fonts.gstatic.com/s/zenkakugothicnew/v19/gNMVW2drQpDw0GjzrVNFf_valaDBcznOqodNaWHSSmlNk8rxVYz1keqDognBR0dnbIQ0DZlb2g.58.woff2",
+            "cat": "font",
+            "status": 200,
+            "size": 6824
+          },
+          {
+            "url": "https://fonts.gstatic.com/s/shipporimincho/v17/VdGDAZweH5EbgHY6YExcZfDoj0B4e9Om4ZEI5-7s2xZbIDLfwlghWkaUqSYfzWdYeCMQ.113.woff2",
+            "cat": "font",
+            "status": 200,
+            "size": 11796
+          },
+          {
+            "url": "https://fonts.gstatic.com/s/shipporimincho/v17/VdGDAZweH5EbgHY6YExcZfDoj0B4Z9Cm4ZEI5-7s2xZbIDLfwlghWkaUqSYfzWdYeCMQ.110.woff2",
+            "cat": "font",
+            "status": 200,
+            "size": 12312
+          },
+          {
+            "url": "https://fonts.gstatic.com/s/shipporimincho/v17/VdGDAZweH5EbgHY6YExcZfDoj0B4Z9Cm4ZEI5-7s2xZbIDLfwlghWkaUqSYfzWdYeCMQ.100.woff2",
+            "cat": "font",
+            "status": 200,
+            "size": 14192
+          },
+          {
+            "url": "https://fonts.gstatic.com/s/zenkakugothicnew/v19/gNMYW2drQpDw0GjzrVNFf_valaDBcznOojxoTE76QGE.woff2",
+            "cat": "font",
+            "status": 200,
+            "size": 9752
+          },
+          {
+            "url": "https://fonts.gstatic.com/s/shipporimincho/v17/VdGDAZweH5EbgHY6YExcZfDoj0B4e9Om4ZEI5-7s2xZbIDLfwlghWkaUqSYfzWdYeCMQ.117.woff2",
+            "cat": "font",
+            "status": 200,
+            "size": 9000
+          },
+          {
+            "url": "https://fonts.gstatic.com/s/shipporimincho/v17/VdGDAZweH5EbgHY6YExcZfDoj0B4Z9Cm4ZEI5-7s2xZbIDLfwlghWkaUqSYfzWdYeCMQ.113.woff2",
+            "cat": "font",
+            "status": 200,
+            "size": 11756
+          },
+          {
+            "url": "https://fonts.gstatic.com/s/zenkakugothicnew/v19/gNMVW2drQpDw0GjzrVNFf_valaDBcznOqodNaWHSSmlNk8rxVYz1keqDognBR0dnbIQ0DZlb2g.107.woff2",
+            "cat": "font",
+            "status": 200,
+            "size": 8900
+          },
+          {
+            "url": "https://fonts.gstatic.com/s/shipporimincho/v17/VdGDAZweH5EbgHY6YExcZfDoj0B4e9Om4ZEI5-7s2xZbIDLfwlghWkaUqSYfzWdYeCMQ.118.woff2",
+            "cat": "font",
+            "status": 200,
+            "size": 19920
+          },
+          {
+            "url": "https://fonts.gstatic.com/s/shipporimincho/v17/VdGDAZweH5EbgHY6YExcZfDoj0B4Z9Cm4ZEI5-7s2xZbIDLfwlghWkaUqSYfzWdYeCMQ.116.woff2",
+            "cat": "font",
+            "status": 200,
+            "size": 11556
+          },
+          {
+            "url": "https://fonts.gstatic.com/s/shipporimincho/v17/VdGDAZweH5EbgHY6YExcZfDoj0B4Z9Cm4ZEI5-7s2xZbIDLfwlghWkaUqSYfzWdYeCMQ.115.woff2",
+            "cat": "font",
+            "status": 200,
+            "size": 11528
+          },
+          {
+            "url": "https://fonts.gstatic.com/s/shipporimincho/v17/VdGDAZweH5EbgHY6YExcZfDoj0B4Z9Cm4ZEI5-7s2xZbIDLfwlghWkaUqSYfzWdYeCMQ.95.woff2",
+            "cat": "font",
+            "status": 200,
+            "size": 12384
+          },
+          {
+            "url": "https://fonts.gstatic.com/s/shipporimincho/v17/VdGDAZweH5EbgHY6YExcZfDoj0B4Z9Cm4ZEI5-7s2xZbIDLfwlghWkaUqSYfzWdYeCMQ.111.woff2",
+            "cat": "font",
+            "status": 200,
+            "size": 12332
+          },
+          {
+            "url": "https://fonts.gstatic.com/s/shipporimincho/v17/VdGDAZweH5EbgHY6YExcZfDoj0B4Z9Cm4ZEI5-7s2xZbIDLfwlghWkaUqSYfzWdYeCMQ.108.woff2",
+            "cat": "font",
+            "status": 200,
+            "size": 13444
+          },
+          {
+            "url": "https://fonts.gstatic.com/s/zenkakugothicnew/v19/gNMVW2drQpDw0GjzrVNFf_valaDBcznOqodNaWHSSmlNk8rxVYz1keqDognBR0dnbIQ0DZlb2g.119.woff2",
+            "cat": "font",
+            "status": 200,
+            "size": 18000
+          },
+          {
+            "url": "https://fonts.gstatic.com/s/shipporimincho/v17/VdGDAZweH5EbgHY6YExcZfDoj0B4Z9Cm4ZEI5-7s2xZbIDLfwlghWkaUqSYfzWdYeCMQ.118.woff2",
+            "cat": "font",
+            "status": 200,
+            "size": 20076
+          },
+          {
+            "url": "https://fonts.gstatic.com/s/zenkakugothicnew/v19/gNMYW2drQpDw0GjzrVNFf_valaDBcznOkj5iS2z4CnVHwbSaNYf6hPiImB7BfkJ3ZpFRYQ.119.woff2",
+            "cat": "font",
+            "status": 200,
+            "size": 18240
+          },
+          {
+            "url": "https://fonts.gstatic.com/s/inter/v20/UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa1ZL7W0Q5nw.woff2",
+            "cat": "font",
+            "status": 200,
+            "size": 48432
+          },
+          {
+            "url": "https://fonts.gstatic.com/s/shipporimincho/v17/VdGDAZweH5EbgHY6YExcZfDoj0B4Z9CW45sPxeymzw.woff2",
+            "cat": "font",
+            "status": 200,
+            "size": 28704
+          },
+          {
+            "url": "https://fonts.gstatic.com/s/shipporimincho/v17/VdGDAZweH5EbgHY6YExcZfDoj0B4Z9Cm4ZEI5-7s2xZbIDLfwlghWkaUqSYfzWdYeCMQ.119.woff2",
+            "cat": "font",
+            "status": 200,
+            "size": 32068
+          },
+          {
+            "url": "https://fonts.gstatic.com/s/inter/v20/UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa25L7W0Q5n-wU.woff2",
+            "cat": "font",
+            "status": 200,
+            "size": 85272
+          },
+          {
+            "url": "https://fonts.gstatic.com/s/fraunces/v38/6NU78FyLNQOQZAnv9bYEvDiIdE9Ea92uemAk_WBq8U_9v0c2Wa0KxC9TeP2Xz5c.woff2",
+            "cat": "font",
+            "status": 200,
+            "size": 67388
+          },
+          {
+            "url": "http://localhost:8000/data/vocab_source_900.json",
+            "cat": "json",
+            "status": 200,
+            "size": 624500
+          },
+          {
+            "url": "http://localhost:8000/data/kanji_flashcards.json",
+            "cat": "json",
+            "status": 200,
+            "size": 218066
+          },
+          {
+            "url": "http://localhost:8000/data/study_supplement.json",
+            "cat": "json",
+            "status": 200,
+            "size": 501119
+          }
+        ]
+      },
+      {
+        "name": "Vocabulary",
+        "id": "vocab",
+        "hash": "#vocab",
+        "requestsCount": 41,
+        "totalTransferredKB": "2752.1",
+        "jsTransferredKB": "110.5",
+        "jsDecodedKB": "110.5",
+        "cssTransferredKB": "730.1",
+        "jsonTransferredKB": "1312.2",
+        "fontTransferredKB": "567.2",
+        "fcpMs": "7300",
+        "lcpMs": "7300",
+        "cls": "0.0000",
+        "domNodes": 999,
+        "jsHeapUsedMB": "1.76",
+        "requests": [
+          {
+            "url": "http://localhost:8000/",
+            "cat": "doc",
+            "status": 200,
+            "size": 32837
+          },
+          {
+            "url": "http://localhost:8000/js/kana-data.js?v=stationery15",
+            "cat": "js",
+            "status": 200,
+            "size": 11475
+          },
+          {
+            "url": "http://localhost:8000/css/style.css?v=stationery14",
+            "cat": "css",
+            "status": 200,
+            "size": 45891
+          },
+          {
+            "url": "http://localhost:8000/js/app.js?v=stationery15",
+            "cat": "js",
+            "status": 200,
+            "size": 101683
+          },
+          {
+            "url": "https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400..800;1,9..144,400..800&family=Inter:wght@400;500;600;700;800&family=Shippori+Mincho:wght@500;700;800&family=Zen+Kaku+Gothic+New:wght@400;500;700&display=swap",
+            "cat": "css",
+            "status": 200,
+            "size": 701749
+          },
+          {
+            "url": "https://fonts.gstatic.com/s/zenkakugothicnew/v19/gNMYW2drQpDw0GjzrVNFf_valaDBcznOkj5iS2z4CnVHwbSaNYf6hPiImB7BfkJ3ZpFRYQ.118.woff2",
+            "cat": "font",
+            "status": 200,
+            "size": 6860
+          },
+          {
+            "url": "https://fonts.gstatic.com/s/zenkakugothicnew/v19/gNMYW2drQpDw0GjzrVNFf_valaDBcznOkj5iS2z4CnVHwbSaNYf6hPiImB7BfkJ3ZpFRYQ.117.woff2",
+            "cat": "font",
+            "status": 200,
+            "size": 6128
+          },
+          {
+            "url": "https://fonts.gstatic.com/s/zenkakugothicnew/v19/gNMVW2drQpDw0GjzrVNFf_valaDBcznOqodNaWHSSmlNk8rxVYz1keqDognBR0dnbIQ0DZlb2g.58.woff2",
+            "cat": "font",
+            "status": 200,
+            "size": 6824
+          },
+          {
+            "url": "https://fonts.gstatic.com/s/zenkakugothicnew/v19/gNMVW2drQpDw0GjzrVNFf_valaDBcznOqodNaWHSSmlNk8rxVYz1keqDognBR0dnbIQ0DZlb2g.113.woff2",
+            "cat": "font",
+            "status": 200,
+            "size": 7688
+          },
+          {
+            "url": "https://fonts.gstatic.com/s/zenkakugothicnew/v19/gNMYW2drQpDw0GjzrVNFf_valaDBcznOkj5iS2z4CnVHwbSaNYf6hPiImB7BfkJ3ZpFRYQ.113.woff2",
+            "cat": "font",
+            "status": 200,
+            "size": 7728
+          },
+          {
+            "url": "https://fonts.gstatic.com/s/zenkakugothicnew/v19/gNMYW2drQpDw0GjzrVNFf_valaDBcznOkj5iS2z4CnVHwbSaNYf6hPiImB7BfkJ3ZpFRYQ.109.woff2",
+            "cat": "font",
+            "status": 200,
+            "size": 8312
+          },
+          {
+            "url": "https://fonts.gstatic.com/s/zenkakugothicnew/v19/gNMVW2drQpDw0GjzrVNFf_valaDBcznOqodNaWHSSmlNk8rxVYz1keqDognBR0dnbIQ0DZlb2g.107.woff2",
+            "cat": "font",
+            "status": 200,
+            "size": 8900
+          },
+          {
+            "url": "https://fonts.gstatic.com/s/shipporimincho/v17/VdGDAZweH5EbgHY6YExcZfDoj0B4Z9Cm4ZEI5-7s2xZbIDLfwlghWkaUqSYfzWdYeCMQ.117.woff2",
+            "cat": "font",
+            "status": 200,
+            "size": 9096
+          },
+          {
+            "url": "https://fonts.gstatic.com/s/zenkakugothicnew/v19/gNMYW2drQpDw0GjzrVNFf_valaDBcznOkj5iS2z4CnVHwbSaNYf6hPiImB7BfkJ3ZpFRYQ.111.woff2",
+            "cat": "font",
+            "status": 200,
+            "size": 9028
+          },
+          {
+            "url": "https://fonts.gstatic.com/s/shipporimincho/v17/VdGDAZweH5EbgHY6YExcZfDoj0B4e9Om4ZEI5-7s2xZbIDLfwlghWkaUqSYfzWdYeCMQ.117.woff2",
+            "cat": "font",
+            "status": 200,
+            "size": 9000
+          },
+          {
+            "url": "https://fonts.gstatic.com/s/zenkakugothicnew/v19/gNMYW2drQpDw0GjzrVNFf_valaDBcznOojxoTE76QGE.woff2",
+            "cat": "font",
+            "status": 200,
+            "size": 9752
+          },
+          {
+            "url": "https://fonts.gstatic.com/s/zenkakugothicnew/v19/gNMYW2drQpDw0GjzrVNFf_valaDBcznOkj5iS2z4CnVHwbSaNYf6hPiImB7BfkJ3ZpFRYQ.108.woff2",
+            "cat": "font",
+            "status": 200,
+            "size": 9928
+          },
+          {
+            "url": "https://fonts.gstatic.com/s/zenkakugothicnew/v19/gNMYW2drQpDw0GjzrVNFf_valaDBcznOkj5iS2z4CnVHwbSaNYf6hPiImB7BfkJ3ZpFRYQ.95.woff2",
+            "cat": "font",
+            "status": 200,
+            "size": 8992
+          },
+          {
+            "url": "https://fonts.gstatic.com/s/shipporimincho/v17/VdGDAZweH5EbgHY6YExcZfDoj0B4Z9Cm4ZEI5-7s2xZbIDLfwlghWkaUqSYfzWdYeCMQ.109.woff2",
+            "cat": "font",
+            "status": 200,
+            "size": 11668
+          },
+          {
+            "url": "https://fonts.gstatic.com/s/shipporimincho/v17/VdGDAZweH5EbgHY6YExcZfDoj0B4Z9Cm4ZEI5-7s2xZbIDLfwlghWkaUqSYfzWdYeCMQ.115.woff2",
+            "cat": "font",
+            "status": 200,
+            "size": 11528
+          },
+          {
+            "url": "https://fonts.gstatic.com/s/shipporimincho/v17/VdGDAZweH5EbgHY6YExcZfDoj0B4e9Om4ZEI5-7s2xZbIDLfwlghWkaUqSYfzWdYeCMQ.115.woff2",
+            "cat": "font",
+            "status": 200,
+            "size": 11552
+          },
+          {
+            "url": "https://fonts.gstatic.com/s/shipporimincho/v17/VdGDAZweH5EbgHY6YExcZfDoj0B4Z9Cm4ZEI5-7s2xZbIDLfwlghWkaUqSYfzWdYeCMQ.116.woff2",
+            "cat": "font",
+            "status": 200,
+            "size": 11556
+          },
+          {
+            "url": "https://fonts.gstatic.com/s/shipporimincho/v17/VdGDAZweH5EbgHY6YExcZfDoj0B4Z9Cm4ZEI5-7s2xZbIDLfwlghWkaUqSYfzWdYeCMQ.113.woff2",
+            "cat": "font",
+            "status": 200,
+            "size": 11756
+          },
+          {
+            "url": "https://fonts.gstatic.com/s/shipporimincho/v17/VdGDAZweH5EbgHY6YExcZfDoj0B4e9Om4ZEI5-7s2xZbIDLfwlghWkaUqSYfzWdYeCMQ.113.woff2",
+            "cat": "font",
+            "status": 200,
+            "size": 11796
+          },
+          {
+            "url": "https://fonts.gstatic.com/s/shipporimincho/v17/VdGDAZweH5EbgHY6YExcZfDoj0B4Z9Cm4ZEI5-7s2xZbIDLfwlghWkaUqSYfzWdYeCMQ.110.woff2",
+            "cat": "font",
+            "status": 200,
+            "size": 12312
+          },
+          {
+            "url": "https://fonts.gstatic.com/s/shipporimincho/v17/VdGDAZweH5EbgHY6YExcZfDoj0B4Z9Cm4ZEI5-7s2xZbIDLfwlghWkaUqSYfzWdYeCMQ.95.woff2",
+            "cat": "font",
+            "status": 200,
+            "size": 12384
+          },
+          {
+            "url": "https://fonts.gstatic.com/s/shipporimincho/v17/VdGDAZweH5EbgHY6YExcZfDoj0B4Z9Cm4ZEI5-7s2xZbIDLfwlghWkaUqSYfzWdYeCMQ.111.woff2",
+            "cat": "font",
+            "status": 200,
+            "size": 12332
+          },
+          {
+            "url": "https://fonts.gstatic.com/s/shipporimincho/v17/VdGDAZweH5EbgHY6YExcZfDoj0B4Z9Cm4ZEI5-7s2xZbIDLfwlghWkaUqSYfzWdYeCMQ.108.woff2",
+            "cat": "font",
+            "status": 200,
+            "size": 13444
+          },
+          {
+            "url": "https://fonts.gstatic.com/s/shipporimincho/v17/VdGDAZweH5EbgHY6YExcZfDoj0B4Z9Cm4ZEI5-7s2xZbIDLfwlghWkaUqSYfzWdYeCMQ.100.woff2",
+            "cat": "font",
+            "status": 200,
+            "size": 14192
+          },
+          {
+            "url": "https://fonts.gstatic.com/s/zenkakugothicnew/v19/gNMYW2drQpDw0GjzrVNFf_valaDBcznOkj5iS2z4CnVHwbSaNYf6hPiImB7BfkJ3ZpFRYQ.119.woff2",
+            "cat": "font",
+            "status": 200,
+            "size": 18240
+          },
+          {
+            "url": "https://fonts.gstatic.com/s/zenkakugothicnew/v19/gNMVW2drQpDw0GjzrVNFf_valaDBcznOqodNaWHSSmlNk8rxVYz1keqDognBR0dnbIQ0DZlb2g.119.woff2",
+            "cat": "font",
+            "status": 200,
+            "size": 18000
+          },
+          {
+            "url": "https://fonts.gstatic.com/s/shipporimincho/v17/VdGDAZweH5EbgHY6YExcZfDoj0B4Z9Cm4ZEI5-7s2xZbIDLfwlghWkaUqSYfzWdYeCMQ.118.woff2",
+            "cat": "font",
+            "status": 200,
+            "size": 20076
+          },
+          {
+            "url": "https://fonts.gstatic.com/s/shipporimincho/v17/VdGDAZweH5EbgHY6YExcZfDoj0B4e9Om4ZEI5-7s2xZbIDLfwlghWkaUqSYfzWdYeCMQ.118.woff2",
+            "cat": "font",
+            "status": 200,
+            "size": 19920
+          },
+          {
+            "url": "https://fonts.gstatic.com/s/shipporimincho/v17/VdGDAZweH5EbgHY6YExcZfDoj0B4Z9CW45sPxeymzw.woff2",
+            "cat": "font",
+            "status": 200,
+            "size": 28704
+          },
+          {
+            "url": "https://fonts.gstatic.com/s/shipporimincho/v17/VdGDAZweH5EbgHY6YExcZfDoj0B4Z9Cm4ZEI5-7s2xZbIDLfwlghWkaUqSYfzWdYeCMQ.119.woff2",
+            "cat": "font",
+            "status": 200,
+            "size": 32068
+          },
+          {
+            "url": "https://fonts.gstatic.com/s/inter/v20/UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa1ZL7W0Q5nw.woff2",
+            "cat": "font",
+            "status": 200,
+            "size": 48432
+          },
+          {
+            "url": "https://fonts.gstatic.com/s/fraunces/v38/6NU78FyLNQOQZAnv9bYEvDiIdE9Ea92uemAk_WBq8U_9v0c2Wa0KxC9TeP2Xz5c.woff2",
+            "cat": "font",
+            "status": 200,
+            "size": 67388
+          },
+          {
+            "url": "https://fonts.gstatic.com/s/inter/v20/UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa25L7W0Q5n-wU.woff2",
+            "cat": "font",
+            "status": 200,
+            "size": 85272
+          },
+          {
+            "url": "http://localhost:8000/data/vocab_source_900.json",
+            "cat": "json",
+            "status": 200,
+            "size": 624500
+          },
+          {
+            "url": "http://localhost:8000/data/kanji_flashcards.json",
+            "cat": "json",
+            "status": 200,
+            "size": 218066
+          },
+          {
+            "url": "http://localhost:8000/data/study_supplement.json",
+            "cat": "json",
+            "status": 200,
+            "size": 501119
+          }
+        ]
+      },
+      {
+        "name": "Kanji",
+        "id": "kanji",
+        "hash": "#kanji",
+        "requestsCount": 41,
+        "totalTransferredKB": "2752.1",
+        "jsTransferredKB": "110.5",
+        "jsDecodedKB": "110.5",
+        "cssTransferredKB": "730.1",
+        "jsonTransferredKB": "1312.2",
+        "fontTransferredKB": "567.2",
+        "fcpMs": "7192",
+        "lcpMs": "7192",
+        "cls": "0.0000",
+        "domNodes": 999,
+        "jsHeapUsedMB": "1.76",
+        "requests": [
+          {
+            "url": "http://localhost:8000/",
+            "cat": "doc",
+            "status": 200,
+            "size": 32837
+          },
+          {
+            "url": "http://localhost:8000/js/kana-data.js?v=stationery15",
+            "cat": "js",
+            "status": 200,
+            "size": 11475
+          },
+          {
+            "url": "http://localhost:8000/css/style.css?v=stationery14",
+            "cat": "css",
+            "status": 200,
+            "size": 45891
+          },
+          {
+            "url": "http://localhost:8000/js/app.js?v=stationery15",
+            "cat": "js",
+            "status": 200,
+            "size": 101683
+          },
+          {
+            "url": "https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400..800;1,9..144,400..800&family=Inter:wght@400;500;600;700;800&family=Shippori+Mincho:wght@500;700;800&family=Zen+Kaku+Gothic+New:wght@400;500;700&display=swap",
+            "cat": "css",
+            "status": 200,
+            "size": 701749
+          },
+          {
+            "url": "https://fonts.gstatic.com/s/zenkakugothicnew/v19/gNMYW2drQpDw0GjzrVNFf_valaDBcznOkj5iS2z4CnVHwbSaNYf6hPiImB7BfkJ3ZpFRYQ.118.woff2",
+            "cat": "font",
+            "status": 200,
+            "size": 6860
+          },
+          {
+            "url": "https://fonts.gstatic.com/s/zenkakugothicnew/v19/gNMVW2drQpDw0GjzrVNFf_valaDBcznOqodNaWHSSmlNk8rxVYz1keqDognBR0dnbIQ0DZlb2g.58.woff2",
+            "cat": "font",
+            "status": 200,
+            "size": 6824
+          },
+          {
+            "url": "https://fonts.gstatic.com/s/zenkakugothicnew/v19/gNMYW2drQpDw0GjzrVNFf_valaDBcznOkj5iS2z4CnVHwbSaNYf6hPiImB7BfkJ3ZpFRYQ.117.woff2",
+            "cat": "font",
+            "status": 200,
+            "size": 6128
+          },
+          {
+            "url": "https://fonts.gstatic.com/s/zenkakugothicnew/v19/gNMYW2drQpDw0GjzrVNFf_valaDBcznOkj5iS2z4CnVHwbSaNYf6hPiImB7BfkJ3ZpFRYQ.113.woff2",
+            "cat": "font",
+            "status": 200,
+            "size": 7728
+          },
+          {
+            "url": "https://fonts.gstatic.com/s/zenkakugothicnew/v19/gNMVW2drQpDw0GjzrVNFf_valaDBcznOqodNaWHSSmlNk8rxVYz1keqDognBR0dnbIQ0DZlb2g.113.woff2",
+            "cat": "font",
+            "status": 200,
+            "size": 7688
+          },
+          {
+            "url": "https://fonts.gstatic.com/s/zenkakugothicnew/v19/gNMYW2drQpDw0GjzrVNFf_valaDBcznOkj5iS2z4CnVHwbSaNYf6hPiImB7BfkJ3ZpFRYQ.109.woff2",
+            "cat": "font",
+            "status": 200,
+            "size": 8312
+          },
+          {
+            "url": "https://fonts.gstatic.com/s/zenkakugothicnew/v19/gNMYW2drQpDw0GjzrVNFf_valaDBcznOkj5iS2z4CnVHwbSaNYf6hPiImB7BfkJ3ZpFRYQ.108.woff2",
+            "cat": "font",
+            "status": 200,
+            "size": 9928
+          },
+          {
+            "url": "https://fonts.gstatic.com/s/shipporimincho/v17/VdGDAZweH5EbgHY6YExcZfDoj0B4Z9Cm4ZEI5-7s2xZbIDLfwlghWkaUqSYfzWdYeCMQ.117.woff2",
+            "cat": "font",
+            "status": 200,
+            "size": 9096
+          },
+          {
+            "url": "https://fonts.gstatic.com/s/zenkakugothicnew/v19/gNMVW2drQpDw0GjzrVNFf_valaDBcznOqodNaWHSSmlNk8rxVYz1keqDognBR0dnbIQ0DZlb2g.107.woff2",
+            "cat": "font",
+            "status": 200,
+            "size": 8900
+          },
+          {
+            "url": "https://fonts.gstatic.com/s/zenkakugothicnew/v19/gNMYW2drQpDw0GjzrVNFf_valaDBcznOkj5iS2z4CnVHwbSaNYf6hPiImB7BfkJ3ZpFRYQ.111.woff2",
+            "cat": "font",
+            "status": 200,
+            "size": 9028
+          },
+          {
+            "url": "https://fonts.gstatic.com/s/zenkakugothicnew/v19/gNMYW2drQpDw0GjzrVNFf_valaDBcznOkj5iS2z4CnVHwbSaNYf6hPiImB7BfkJ3ZpFRYQ.95.woff2",
+            "cat": "font",
+            "status": 200,
+            "size": 8992
+          },
+          {
+            "url": "https://fonts.gstatic.com/s/zenkakugothicnew/v19/gNMYW2drQpDw0GjzrVNFf_valaDBcznOojxoTE76QGE.woff2",
+            "cat": "font",
+            "status": 200,
+            "size": 9752
+          },
+          {
+            "url": "https://fonts.gstatic.com/s/shipporimincho/v17/VdGDAZweH5EbgHY6YExcZfDoj0B4e9Om4ZEI5-7s2xZbIDLfwlghWkaUqSYfzWdYeCMQ.117.woff2",
+            "cat": "font",
+            "status": 200,
+            "size": 9000
+          },
+          {
+            "url": "https://fonts.gstatic.com/s/shipporimincho/v17/VdGDAZweH5EbgHY6YExcZfDoj0B4Z9Cm4ZEI5-7s2xZbIDLfwlghWkaUqSYfzWdYeCMQ.109.woff2",
+            "cat": "font",
+            "status": 200,
+            "size": 11668
+          },
+          {
+            "url": "https://fonts.gstatic.com/s/shipporimincho/v17/VdGDAZweH5EbgHY6YExcZfDoj0B4Z9Cm4ZEI5-7s2xZbIDLfwlghWkaUqSYfzWdYeCMQ.116.woff2",
+            "cat": "font",
+            "status": 200,
+            "size": 11556
+          },
+          {
+            "url": "https://fonts.gstatic.com/s/shipporimincho/v17/VdGDAZweH5EbgHY6YExcZfDoj0B4Z9Cm4ZEI5-7s2xZbIDLfwlghWkaUqSYfzWdYeCMQ.115.woff2",
+            "cat": "font",
+            "status": 200,
+            "size": 11528
+          },
+          {
+            "url": "https://fonts.gstatic.com/s/shipporimincho/v17/VdGDAZweH5EbgHY6YExcZfDoj0B4e9Om4ZEI5-7s2xZbIDLfwlghWkaUqSYfzWdYeCMQ.115.woff2",
+            "cat": "font",
+            "status": 200,
+            "size": 11552
+          },
+          {
+            "url": "https://fonts.gstatic.com/s/shipporimincho/v17/VdGDAZweH5EbgHY6YExcZfDoj0B4e9Om4ZEI5-7s2xZbIDLfwlghWkaUqSYfzWdYeCMQ.113.woff2",
+            "cat": "font",
+            "status": 200,
+            "size": 11796
+          },
+          {
+            "url": "https://fonts.gstatic.com/s/shipporimincho/v17/VdGDAZweH5EbgHY6YExcZfDoj0B4Z9Cm4ZEI5-7s2xZbIDLfwlghWkaUqSYfzWdYeCMQ.113.woff2",
+            "cat": "font",
+            "status": 200,
+            "size": 11756
+          },
+          {
+            "url": "https://fonts.gstatic.com/s/shipporimincho/v17/VdGDAZweH5EbgHY6YExcZfDoj0B4Z9Cm4ZEI5-7s2xZbIDLfwlghWkaUqSYfzWdYeCMQ.95.woff2",
+            "cat": "font",
+            "status": 200,
+            "size": 12384
+          },
+          {
+            "url": "https://fonts.gstatic.com/s/shipporimincho/v17/VdGDAZweH5EbgHY6YExcZfDoj0B4Z9Cm4ZEI5-7s2xZbIDLfwlghWkaUqSYfzWdYeCMQ.111.woff2",
+            "cat": "font",
+            "status": 200,
+            "size": 12332
+          },
+          {
+            "url": "https://fonts.gstatic.com/s/shipporimincho/v17/VdGDAZweH5EbgHY6YExcZfDoj0B4Z9Cm4ZEI5-7s2xZbIDLfwlghWkaUqSYfzWdYeCMQ.110.woff2",
+            "cat": "font",
+            "status": 200,
+            "size": 12312
+          },
+          {
+            "url": "https://fonts.gstatic.com/s/shipporimincho/v17/VdGDAZweH5EbgHY6YExcZfDoj0B4Z9Cm4ZEI5-7s2xZbIDLfwlghWkaUqSYfzWdYeCMQ.108.woff2",
+            "cat": "font",
+            "status": 200,
+            "size": 13444
+          },
+          {
+            "url": "https://fonts.gstatic.com/s/shipporimincho/v17/VdGDAZweH5EbgHY6YExcZfDoj0B4Z9Cm4ZEI5-7s2xZbIDLfwlghWkaUqSYfzWdYeCMQ.100.woff2",
+            "cat": "font",
+            "status": 200,
+            "size": 14192
+          },
+          {
+            "url": "https://fonts.gstatic.com/s/zenkakugothicnew/v19/gNMYW2drQpDw0GjzrVNFf_valaDBcznOkj5iS2z4CnVHwbSaNYf6hPiImB7BfkJ3ZpFRYQ.119.woff2",
+            "cat": "font",
+            "status": 200,
+            "size": 18240
+          },
+          {
+            "url": "https://fonts.gstatic.com/s/zenkakugothicnew/v19/gNMVW2drQpDw0GjzrVNFf_valaDBcznOqodNaWHSSmlNk8rxVYz1keqDognBR0dnbIQ0DZlb2g.119.woff2",
+            "cat": "font",
+            "status": 200,
+            "size": 18000
+          },
+          {
+            "url": "https://fonts.gstatic.com/s/shipporimincho/v17/VdGDAZweH5EbgHY6YExcZfDoj0B4e9Om4ZEI5-7s2xZbIDLfwlghWkaUqSYfzWdYeCMQ.118.woff2",
+            "cat": "font",
+            "status": 200,
+            "size": 19920
+          },
+          {
+            "url": "https://fonts.gstatic.com/s/shipporimincho/v17/VdGDAZweH5EbgHY6YExcZfDoj0B4Z9Cm4ZEI5-7s2xZbIDLfwlghWkaUqSYfzWdYeCMQ.118.woff2",
+            "cat": "font",
+            "status": 200,
+            "size": 20076
+          },
+          {
+            "url": "https://fonts.gstatic.com/s/shipporimincho/v17/VdGDAZweH5EbgHY6YExcZfDoj0B4Z9CW45sPxeymzw.woff2",
+            "cat": "font",
+            "status": 200,
+            "size": 28704
+          },
+          {
+            "url": "https://fonts.gstatic.com/s/shipporimincho/v17/VdGDAZweH5EbgHY6YExcZfDoj0B4Z9Cm4ZEI5-7s2xZbIDLfwlghWkaUqSYfzWdYeCMQ.119.woff2",
+            "cat": "font",
+            "status": 200,
+            "size": 32068
+          },
+          {
+            "url": "https://fonts.gstatic.com/s/inter/v20/UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa1ZL7W0Q5nw.woff2",
+            "cat": "font",
+            "status": 200,
+            "size": 48432
+          },
+          {
+            "url": "https://fonts.gstatic.com/s/fraunces/v38/6NU78FyLNQOQZAnv9bYEvDiIdE9Ea92uemAk_WBq8U_9v0c2Wa0KxC9TeP2Xz5c.woff2",
+            "cat": "font",
+            "status": 200,
+            "size": 67388
+          },
+          {
+            "url": "https://fonts.gstatic.com/s/inter/v20/UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa25L7W0Q5n-wU.woff2",
+            "cat": "font",
+            "status": 200,
+            "size": 85272
+          },
+          {
+            "url": "http://localhost:8000/data/vocab_source_900.json",
+            "cat": "json",
+            "status": 200,
+            "size": 624500
+          },
+          {
+            "url": "http://localhost:8000/data/kanji_flashcards.json",
+            "cat": "json",
+            "status": 200,
+            "size": 218066
+          },
+          {
+            "url": "http://localhost:8000/data/study_supplement.json",
+            "cat": "json",
+            "status": 200,
+            "size": 501119
+          }
+        ]
+      },
+      {
+        "name": "Grammar",
+        "id": "grammar",
+        "hash": "#grammar",
+        "requestsCount": 41,
+        "totalTransferredKB": "2753.5",
+        "jsTransferredKB": "110.5",
+        "jsDecodedKB": "110.5",
+        "cssTransferredKB": "732.2",
+        "jsonTransferredKB": "1312.2",
+        "fontTransferredKB": "566.5",
+        "fcpMs": "7180",
+        "lcpMs": "7180",
+        "cls": "0.0000",
+        "domNodes": 999,
+        "jsHeapUsedMB": "1.76",
+        "requests": [
+          {
+            "url": "http://localhost:8000/",
+            "cat": "doc",
+            "status": 200,
+            "size": 32837
+          },
+          {
+            "url": "http://localhost:8000/js/kana-data.js?v=stationery15",
+            "cat": "js",
+            "status": 200,
+            "size": 11475
+          },
+          {
+            "url": "http://localhost:8000/css/style.css?v=stationery14",
+            "cat": "css",
+            "status": 200,
+            "size": 45891
+          },
+          {
+            "url": "http://localhost:8000/js/app.js?v=stationery15",
+            "cat": "js",
+            "status": 200,
+            "size": 101683
+          },
+          {
+            "url": "https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400..800;1,9..144,400..800&family=Inter:wght@400;500;600;700;800&family=Shippori+Mincho:wght@500;700;800&family=Zen+Kaku+Gothic+New:wght@400;500;700&display=swap",
+            "cat": "css",
+            "status": 200,
+            "size": 703919
+          },
+          {
+            "url": "https://fonts.gstatic.com/s/zenkakugothicnew/v19/gNMYW2drQpDw0GjzrVNFf_valaDBcznOkj5iS2z4CnVHwbSaNYf6hPiImB7BfkJ3ZpFRYQ.118.woff2",
+            "cat": "font",
+            "status": 200,
+            "size": 6860
+          },
+          {
+            "url": "https://fonts.gstatic.com/s/zenkakugothicnew/v19/gNMVW2drQpDw0GjzrVNFf_valaDBcznOqodNaWHSSmlNk8rxVYz1keqDognBR0dnbIQ0DZlb2g.58.woff2",
+            "cat": "font",
+            "status": 200,
+            "size": 6824
+          },
+          {
+            "url": "https://fonts.gstatic.com/s/zenkakugothicnew/v19/gNMYW2drQpDw0GjzrVNFf_valaDBcznOkj5iS2z4CnVHwbSaNYf6hPiImB7BfkJ3ZpFRYQ.117.woff2",
+            "cat": "font",
+            "status": 200,
+            "size": 6128
+          },
+          {
+            "url": "https://fonts.gstatic.com/s/zenkakugothicnew/v19/gNMYW2drQpDw0GjzrVNFf_valaDBcznOkj5iS2z4CnVHwbSaNYf6hPiImB7BfkJ3ZpFRYQ.113.woff2",
+            "cat": "font",
+            "status": 200,
+            "size": 7728
+          },
+          {
+            "url": "https://fonts.gstatic.com/s/zenkakugothicnew/v19/gNMYW2drQpDw0GjzrVNFf_valaDBcznOkj5iS2z4CnVHwbSaNYf6hPiImB7BfkJ3ZpFRYQ.109.woff2",
+            "cat": "font",
+            "status": 200,
+            "size": 8312
+          },
+          {
+            "url": "https://fonts.gstatic.com/s/zenkakugothicnew/v19/gNMVW2drQpDw0GjzrVNFf_valaDBcznOqodNaWHSSmlNk8rxVYz1keqDognBR0dnbIQ0DZlb2g.113.woff2",
+            "cat": "font",
+            "status": 200,
+            "size": 7688
+          },
+          {
+            "url": "https://fonts.gstatic.com/s/zenkakugothicnew/v19/gNMYW2drQpDw0GjzrVNFf_valaDBcznOkj5iS2z4CnVHwbSaNYf6hPiImB7BfkJ3ZpFRYQ.95.woff2",
+            "cat": "font",
+            "status": 200,
+            "size": 8992
+          },
+          {
+            "url": "https://fonts.gstatic.com/s/zenkakugothicnew/v19/gNMYW2drQpDw0GjzrVNFf_valaDBcznOkj5iS2z4CnVHwbSaNYf6hPiImB7BfkJ3ZpFRYQ.111.woff2",
+            "cat": "font",
+            "status": 200,
+            "size": 9028
+          },
+          {
+            "url": "https://fonts.gstatic.com/s/shipporimincho/v17/VdGDAZweH5EbgHY6YExcZfDoj0B4Z9Cm4ZEI5-7s2xZbIDLfwlghWkaUqSYfzWdYeCMQ.117.woff2",
+            "cat": "font",
+            "status": 200,
+            "size": 9096
+          },
+          {
+            "url": "https://fonts.gstatic.com/s/zenkakugothicnew/v19/gNMVW2drQpDw0GjzrVNFf_valaDBcznOqodNaWHSSmlNk8rxVYz1keqDognBR0dnbIQ0DZlb2g.107.woff2",
+            "cat": "font",
+            "status": 200,
+            "size": 8900
+          },
+          {
+            "url": "https://fonts.gstatic.com/s/zenkakugothicnew/v19/gNMYW2drQpDw0GjzrVNFf_valaDBcznOojxoTE76QGE.woff2",
+            "cat": "font",
+            "status": 200,
+            "size": 9752
+          },
+          {
+            "url": "https://fonts.gstatic.com/s/shipporimincho/v17/VdGDAZweH5EbgHY6YExcZfDoj0B4e9Om4ZEI5-7s2xZbIDLfwlghWkaUqSYfzWdYeCMQ.117.woff2",
+            "cat": "font",
+            "status": 200,
+            "size": 9000
+          },
+          {
+            "url": "https://fonts.gstatic.com/s/zenkakugothicnew/v19/gNMYW2drQpDw0GjzrVNFf_valaDBcznOkj5iS2z4CnVHwbSaNYf6hPiImB7BfkJ3ZpFRYQ.108.woff2",
+            "cat": "font",
+            "status": 200,
+            "size": 9928
+          },
+          {
+            "url": "https://fonts.gstatic.com/s/shipporimincho/v17/VdGDAZweH5EbgHY6YExcZfDoj0B4Z9Cm4ZEI5-7s2xZbIDLfwlghWkaUqSYfzWdYeCMQ.116.woff2",
+            "cat": "font",
+            "status": 200,
+            "size": 11556
+          },
+          {
+            "url": "https://fonts.gstatic.com/s/shipporimincho/v17/VdGDAZweH5EbgHY6YExcZfDoj0B4Z9Cm4ZEI5-7s2xZbIDLfwlghWkaUqSYfzWdYeCMQ.113.woff2",
+            "cat": "font",
+            "status": 200,
+            "size": 11756
+          },
+          {
+            "url": "https://fonts.gstatic.com/s/shipporimincho/v17/VdGDAZweH5EbgHY6YExcZfDoj0B4Z9Cm4ZEI5-7s2xZbIDLfwlghWkaUqSYfzWdYeCMQ.109.woff2",
+            "cat": "font",
+            "status": 200,
+            "size": 11668
+          },
+          {
+            "url": "https://fonts.gstatic.com/s/shipporimincho/v17/VdGDAZweH5EbgHY6YExcZfDoj0B4e9Om4ZEI5-7s2xZbIDLfwlghWkaUqSYfzWdYeCMQ.115.woff2",
+            "cat": "font",
+            "status": 200,
+            "size": 11552
+          },
+          {
+            "url": "https://fonts.gstatic.com/s/shipporimincho/v17/VdGDAZweH5EbgHY6YExcZfDoj0B4e9Om4ZEI5-7s2xZbIDLfwlghWkaUqSYfzWdYeCMQ.113.woff2",
+            "cat": "font",
+            "status": 200,
+            "size": 11796
+          },
+          {
+            "url": "https://fonts.gstatic.com/s/shipporimincho/v17/VdGDAZweH5EbgHY6YExcZfDoj0B4Z9Cm4ZEI5-7s2xZbIDLfwlghWkaUqSYfzWdYeCMQ.115.woff2",
+            "cat": "font",
+            "status": 200,
+            "size": 11528
+          },
+          {
+            "url": "https://fonts.gstatic.com/s/shipporimincho/v17/VdGDAZweH5EbgHY6YExcZfDoj0B4Z9Cm4ZEI5-7s2xZbIDLfwlghWkaUqSYfzWdYeCMQ.95.woff2",
+            "cat": "font",
+            "status": 200,
+            "size": 12384
+          },
+          {
+            "url": "https://fonts.gstatic.com/s/shipporimincho/v17/VdGDAZweH5EbgHY6YExcZfDoj0B4Z9Cm4ZEI5-7s2xZbIDLfwlghWkaUqSYfzWdYeCMQ.110.woff2",
+            "cat": "font",
+            "status": 200,
+            "size": 12312
+          },
+          {
+            "url": "https://fonts.gstatic.com/s/shipporimincho/v17/VdGDAZweH5EbgHY6YExcZfDoj0B4Z9Cm4ZEI5-7s2xZbIDLfwlghWkaUqSYfzWdYeCMQ.111.woff2",
+            "cat": "font",
+            "status": 200,
+            "size": 12332
+          },
+          {
+            "url": "https://fonts.gstatic.com/s/shipporimincho/v17/VdGDAZweH5EbgHY6YExcZfDoj0B4Z9Cm4ZEI5-7s2xZbIDLfwlghWkaUqSYfzWdYeCMQ.100.woff2",
+            "cat": "font",
+            "status": 200,
+            "size": 14192
+          },
+          {
+            "url": "https://fonts.gstatic.com/s/shipporimincho/v17/VdGDAZweH5EbgHY6YExcZfDoj0B4Z9Cm4ZEI5-7s2xZbIDLfwlghWkaUqSYfzWdYeCMQ.108.woff2",
+            "cat": "font",
+            "status": 200,
+            "size": 13444
+          },
+          {
+            "url": "https://fonts.gstatic.com/s/zenkakugothicnew/v19/gNMYW2drQpDw0GjzrVNFf_valaDBcznOkj5iS2z4CnVHwbSaNYf6hPiImB7BfkJ3ZpFRYQ.119.woff2",
+            "cat": "font",
+            "status": 200,
+            "size": 18240
+          },
+          {
+            "url": "https://fonts.gstatic.com/s/zenkakugothicnew/v19/gNMVW2drQpDw0GjzrVNFf_valaDBcznOqodNaWHSSmlNk8rxVYz1keqDognBR0dnbIQ0DZlb2g.119.woff2",
+            "cat": "font",
+            "status": 200,
+            "size": 18000
+          },
+          {
+            "url": "https://fonts.gstatic.com/s/shipporimincho/v17/VdGDAZweH5EbgHY6YExcZfDoj0B4e9Om4ZEI5-7s2xZbIDLfwlghWkaUqSYfzWdYeCMQ.118.woff2",
+            "cat": "font",
+            "status": 200,
+            "size": 19920
+          },
+          {
+            "url": "https://fonts.gstatic.com/s/shipporimincho/v17/VdGDAZweH5EbgHY6YExcZfDoj0B4Z9Cm4ZEI5-7s2xZbIDLfwlghWkaUqSYfzWdYeCMQ.118.woff2",
+            "cat": "font",
+            "status": 200,
+            "size": 20076
+          },
+          {
+            "url": "https://fonts.gstatic.com/s/shipporimincho/v17/VdGDAZweH5EbgHY6YExcZfDoj0B4Z9CW45sPxeymzw.woff2",
+            "cat": "font",
+            "status": 200,
+            "size": 28704
+          },
+          {
+            "url": "https://fonts.gstatic.com/s/shipporimincho/v17/VdGDAZweH5EbgHY6YExcZfDoj0B4Z9Cm4ZEI5-7s2xZbIDLfwlghWkaUqSYfzWdYeCMQ.119.woff2",
+            "cat": "font",
+            "status": 200,
+            "size": 32068
+          },
+          {
+            "url": "https://fonts.gstatic.com/l/font?kit=UcCB3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuLyfU5NJeWUdIOjBeTHFXZdND2MVsiEu&skey=c491285d6722e4fa&v=v20",
+            "cat": "font",
+            "status": 200,
+            "size": 39144
+          },
+          {
+            "url": "https://fonts.gstatic.com/l/font?kit=6NUh8FyLNQOQZAnv9bYEvDiIdE9Ea92uemAk_WBq8U_9v0c2Wa0K7iN7iQcIfJD58ngz1dU3gg7S2nfgRYIcNxyTCf7Tp0hGNw&skey=2eca4ab215eafb9c&v=v38",
+            "cat": "font",
+            "status": 200,
+            "size": 72136
+          },
+          {
+            "url": "https://fonts.gstatic.com/l/font?kit=UcCB3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuLyfU5NJeWUdIOjBeTHFXZdDD2MVsiEu&skey=c491285d6722e4fa&v=v20",
+            "cat": "font",
+            "status": 200,
+            "size": 89056
+          },
+          {
+            "url": "http://localhost:8000/data/vocab_source_900.json",
+            "cat": "json",
+            "status": 200,
+            "size": 624500
+          },
+          {
+            "url": "http://localhost:8000/data/kanji_flashcards.json",
+            "cat": "json",
+            "status": 200,
+            "size": 218066
+          },
+          {
+            "url": "http://localhost:8000/data/study_supplement.json",
+            "cat": "json",
+            "status": 200,
+            "size": 501119
+          }
+        ]
+      },
+      {
+        "name": "Quiz",
+        "id": "quiz",
+        "hash": "#quiz",
+        "requestsCount": 41,
+        "totalTransferredKB": "2752.1",
+        "jsTransferredKB": "110.5",
+        "jsDecodedKB": "110.5",
+        "cssTransferredKB": "730.1",
+        "jsonTransferredKB": "1312.2",
+        "fontTransferredKB": "567.2",
+        "fcpMs": "7236",
+        "lcpMs": "7236",
+        "cls": "0.0000",
+        "domNodes": 999,
+        "jsHeapUsedMB": "1.76",
+        "requests": [
+          {
+            "url": "http://localhost:8000/",
+            "cat": "doc",
+            "status": 200,
+            "size": 32837
+          },
+          {
+            "url": "http://localhost:8000/js/kana-data.js?v=stationery15",
+            "cat": "js",
+            "status": 200,
+            "size": 11475
+          },
+          {
+            "url": "http://localhost:8000/css/style.css?v=stationery14",
+            "cat": "css",
+            "status": 200,
+            "size": 45891
+          },
+          {
+            "url": "http://localhost:8000/js/app.js?v=stationery15",
+            "cat": "js",
+            "status": 200,
+            "size": 101683
+          },
+          {
+            "url": "https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400..800;1,9..144,400..800&family=Inter:wght@400;500;600;700;800&family=Shippori+Mincho:wght@500;700;800&family=Zen+Kaku+Gothic+New:wght@400;500;700&display=swap",
+            "cat": "css",
+            "status": 200,
+            "size": 701749
+          },
+          {
+            "url": "https://fonts.gstatic.com/s/zenkakugothicnew/v19/gNMYW2drQpDw0GjzrVNFf_valaDBcznOkj5iS2z4CnVHwbSaNYf6hPiImB7BfkJ3ZpFRYQ.118.woff2",
+            "cat": "font",
+            "status": 200,
+            "size": 6860
+          },
+          {
+            "url": "https://fonts.gstatic.com/s/zenkakugothicnew/v19/gNMYW2drQpDw0GjzrVNFf_valaDBcznOkj5iS2z4CnVHwbSaNYf6hPiImB7BfkJ3ZpFRYQ.117.woff2",
+            "cat": "font",
+            "status": 200,
+            "size": 6128
+          },
+          {
+            "url": "https://fonts.gstatic.com/s/zenkakugothicnew/v19/gNMYW2drQpDw0GjzrVNFf_valaDBcznOkj5iS2z4CnVHwbSaNYf6hPiImB7BfkJ3ZpFRYQ.109.woff2",
+            "cat": "font",
+            "status": 200,
+            "size": 8312
+          },
+          {
+            "url": "https://fonts.gstatic.com/s/zenkakugothicnew/v19/gNMVW2drQpDw0GjzrVNFf_valaDBcznOqodNaWHSSmlNk8rxVYz1keqDognBR0dnbIQ0DZlb2g.58.woff2",
+            "cat": "font",
+            "status": 200,
+            "size": 6824
+          },
+          {
+            "url": "https://fonts.gstatic.com/s/zenkakugothicnew/v19/gNMVW2drQpDw0GjzrVNFf_valaDBcznOqodNaWHSSmlNk8rxVYz1keqDognBR0dnbIQ0DZlb2g.113.woff2",
+            "cat": "font",
+            "status": 200,
+            "size": 7688
+          },
+          {
+            "url": "https://fonts.gstatic.com/s/zenkakugothicnew/v19/gNMYW2drQpDw0GjzrVNFf_valaDBcznOkj5iS2z4CnVHwbSaNYf6hPiImB7BfkJ3ZpFRYQ.113.woff2",
+            "cat": "font",
+            "status": 200,
+            "size": 7728
+          },
+          {
+            "url": "https://fonts.gstatic.com/s/shipporimincho/v17/VdGDAZweH5EbgHY6YExcZfDoj0B4Z9Cm4ZEI5-7s2xZbIDLfwlghWkaUqSYfzWdYeCMQ.117.woff2",
+            "cat": "font",
+            "status": 200,
+            "size": 9096
+          },
+          {
+            "url": "https://fonts.gstatic.com/s/zenkakugothicnew/v19/gNMYW2drQpDw0GjzrVNFf_valaDBcznOkj5iS2z4CnVHwbSaNYf6hPiImB7BfkJ3ZpFRYQ.111.woff2",
+            "cat": "font",
+            "status": 200,
+            "size": 9028
+          },
+          {
+            "url": "https://fonts.gstatic.com/s/zenkakugothicnew/v19/gNMYW2drQpDw0GjzrVNFf_valaDBcznOkj5iS2z4CnVHwbSaNYf6hPiImB7BfkJ3ZpFRYQ.95.woff2",
+            "cat": "font",
+            "status": 200,
+            "size": 8992
+          },
+          {
+            "url": "https://fonts.gstatic.com/s/shipporimincho/v17/VdGDAZweH5EbgHY6YExcZfDoj0B4e9Om4ZEI5-7s2xZbIDLfwlghWkaUqSYfzWdYeCMQ.117.woff2",
+            "cat": "font",
+            "status": 200,
+            "size": 9000
+          },
+          {
+            "url": "https://fonts.gstatic.com/s/zenkakugothicnew/v19/gNMYW2drQpDw0GjzrVNFf_valaDBcznOojxoTE76QGE.woff2",
+            "cat": "font",
+            "status": 200,
+            "size": 9752
+          },
+          {
+            "url": "https://fonts.gstatic.com/s/zenkakugothicnew/v19/gNMYW2drQpDw0GjzrVNFf_valaDBcznOkj5iS2z4CnVHwbSaNYf6hPiImB7BfkJ3ZpFRYQ.108.woff2",
+            "cat": "font",
+            "status": 200,
+            "size": 9928
+          },
+          {
+            "url": "https://fonts.gstatic.com/s/zenkakugothicnew/v19/gNMVW2drQpDw0GjzrVNFf_valaDBcznOqodNaWHSSmlNk8rxVYz1keqDognBR0dnbIQ0DZlb2g.107.woff2",
+            "cat": "font",
+            "status": 200,
+            "size": 8900
+          },
+          {
+            "url": "https://fonts.gstatic.com/s/shipporimincho/v17/VdGDAZweH5EbgHY6YExcZfDoj0B4Z9Cm4ZEI5-7s2xZbIDLfwlghWkaUqSYfzWdYeCMQ.116.woff2",
+            "cat": "font",
+            "status": 200,
+            "size": 11556
+          },
+          {
+            "url": "https://fonts.gstatic.com/s/shipporimincho/v17/VdGDAZweH5EbgHY6YExcZfDoj0B4Z9Cm4ZEI5-7s2xZbIDLfwlghWkaUqSYfzWdYeCMQ.109.woff2",
+            "cat": "font",
+            "status": 200,
+            "size": 11668
+          },
+          {
+            "url": "https://fonts.gstatic.com/s/shipporimincho/v17/VdGDAZweH5EbgHY6YExcZfDoj0B4Z9Cm4ZEI5-7s2xZbIDLfwlghWkaUqSYfzWdYeCMQ.113.woff2",
+            "cat": "font",
+            "status": 200,
+            "size": 11756
+          },
+          {
+            "url": "https://fonts.gstatic.com/s/shipporimincho/v17/VdGDAZweH5EbgHY6YExcZfDoj0B4Z9Cm4ZEI5-7s2xZbIDLfwlghWkaUqSYfzWdYeCMQ.115.woff2",
+            "cat": "font",
+            "status": 200,
+            "size": 11528
+          },
+          {
+            "url": "https://fonts.gstatic.com/s/shipporimincho/v17/VdGDAZweH5EbgHY6YExcZfDoj0B4e9Om4ZEI5-7s2xZbIDLfwlghWkaUqSYfzWdYeCMQ.115.woff2",
+            "cat": "font",
+            "status": 200,
+            "size": 11552
+          },
+          {
+            "url": "https://fonts.gstatic.com/s/shipporimincho/v17/VdGDAZweH5EbgHY6YExcZfDoj0B4e9Om4ZEI5-7s2xZbIDLfwlghWkaUqSYfzWdYeCMQ.113.woff2",
+            "cat": "font",
+            "status": 200,
+            "size": 11796
+          },
+          {
+            "url": "https://fonts.gstatic.com/s/shipporimincho/v17/VdGDAZweH5EbgHY6YExcZfDoj0B4Z9Cm4ZEI5-7s2xZbIDLfwlghWkaUqSYfzWdYeCMQ.95.woff2",
+            "cat": "font",
+            "status": 200,
+            "size": 12384
+          },
+          {
+            "url": "https://fonts.gstatic.com/s/shipporimincho/v17/VdGDAZweH5EbgHY6YExcZfDoj0B4Z9Cm4ZEI5-7s2xZbIDLfwlghWkaUqSYfzWdYeCMQ.111.woff2",
+            "cat": "font",
+            "status": 200,
+            "size": 12332
+          },
+          {
+            "url": "https://fonts.gstatic.com/s/shipporimincho/v17/VdGDAZweH5EbgHY6YExcZfDoj0B4Z9Cm4ZEI5-7s2xZbIDLfwlghWkaUqSYfzWdYeCMQ.110.woff2",
+            "cat": "font",
+            "status": 200,
+            "size": 12312
+          },
+          {
+            "url": "https://fonts.gstatic.com/s/shipporimincho/v17/VdGDAZweH5EbgHY6YExcZfDoj0B4Z9Cm4ZEI5-7s2xZbIDLfwlghWkaUqSYfzWdYeCMQ.100.woff2",
+            "cat": "font",
+            "status": 200,
+            "size": 14192
+          },
+          {
+            "url": "https://fonts.gstatic.com/s/shipporimincho/v17/VdGDAZweH5EbgHY6YExcZfDoj0B4Z9Cm4ZEI5-7s2xZbIDLfwlghWkaUqSYfzWdYeCMQ.108.woff2",
+            "cat": "font",
+            "status": 200,
+            "size": 13444
+          },
+          {
+            "url": "https://fonts.gstatic.com/s/zenkakugothicnew/v19/gNMYW2drQpDw0GjzrVNFf_valaDBcznOkj5iS2z4CnVHwbSaNYf6hPiImB7BfkJ3ZpFRYQ.119.woff2",
+            "cat": "font",
+            "status": 200,
+            "size": 18240
+          },
+          {
+            "url": "https://fonts.gstatic.com/s/zenkakugothicnew/v19/gNMVW2drQpDw0GjzrVNFf_valaDBcznOqodNaWHSSmlNk8rxVYz1keqDognBR0dnbIQ0DZlb2g.119.woff2",
+            "cat": "font",
+            "status": 200,
+            "size": 18000
+          },
+          {
+            "url": "https://fonts.gstatic.com/s/shipporimincho/v17/VdGDAZweH5EbgHY6YExcZfDoj0B4e9Om4ZEI5-7s2xZbIDLfwlghWkaUqSYfzWdYeCMQ.118.woff2",
+            "cat": "font",
+            "status": 200,
+            "size": 19920
+          },
+          {
+            "url": "https://fonts.gstatic.com/s/shipporimincho/v17/VdGDAZweH5EbgHY6YExcZfDoj0B4Z9Cm4ZEI5-7s2xZbIDLfwlghWkaUqSYfzWdYeCMQ.118.woff2",
+            "cat": "font",
+            "status": 200,
+            "size": 20076
+          },
+          {
+            "url": "https://fonts.gstatic.com/s/shipporimincho/v17/VdGDAZweH5EbgHY6YExcZfDoj0B4Z9CW45sPxeymzw.woff2",
+            "cat": "font",
+            "status": 200,
+            "size": 28704
+          },
+          {
+            "url": "https://fonts.gstatic.com/s/shipporimincho/v17/VdGDAZweH5EbgHY6YExcZfDoj0B4Z9Cm4ZEI5-7s2xZbIDLfwlghWkaUqSYfzWdYeCMQ.119.woff2",
+            "cat": "font",
+            "status": 200,
+            "size": 32068
+          },
+          {
+            "url": "https://fonts.gstatic.com/s/inter/v20/UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa1ZL7W0Q5nw.woff2",
+            "cat": "font",
+            "status": 200,
+            "size": 48432
+          },
+          {
+            "url": "https://fonts.gstatic.com/s/fraunces/v38/6NU78FyLNQOQZAnv9bYEvDiIdE9Ea92uemAk_WBq8U_9v0c2Wa0KxC9TeP2Xz5c.woff2",
+            "cat": "font",
+            "status": 200,
+            "size": 67388
+          },
+          {
+            "url": "https://fonts.gstatic.com/s/inter/v20/UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa25L7W0Q5n-wU.woff2",
+            "cat": "font",
+            "status": 200,
+            "size": 85272
+          },
+          {
+            "url": "http://localhost:8000/data/vocab_source_900.json",
+            "cat": "json",
+            "status": 200,
+            "size": 624500
+          },
+          {
+            "url": "http://localhost:8000/data/kanji_flashcards.json",
+            "cat": "json",
+            "status": 200,
+            "size": 218066
+          },
+          {
+            "url": "http://localhost:8000/data/study_supplement.json",
+            "cat": "json",
+            "status": 200,
+            "size": 501119
+          }
+        ]
+      }
+    ],
+    "session": {
+      "heapStartMB": "1.71",
+      "heapPeakMB": "1.71",
+      "heapAfterSessionMB": "1.31",
+      "domStart": 999,
+      "domAfterVocab": 999,
+      "domAfterSession": 999,
+      "vocabCardsCount": 0,
+      "longTasksCount": 0,
+      "longTasksTotalTime": "0",
+      "cycleHeaps": [
+        "1.80",
+        "7.76",
+        "5.19",
+        "5.91",
+        "6.61"
+      ]
+    },
+    "lighthouse": {
+      "perf": 48,
+      "a11y": 96,
+      "fcp": 4.184081,
+      "lcp": 4.184081,
+      "tbt": 1895,
+      "cls": 0.0109,
+      "speedIndex": 4.385
+    }
+  },
+  "deployed": {
+    "pages": [
+      {
+        "name": "Home",
+        "id": "home",
+        "hash": "#home",
+        "requestsCount": 11,
+        "totalTransferredKB": "878.5",
+        "jsTransferredKB": "39.6",
+        "jsDecodedKB": "39.6",
+        "cssTransferredKB": "20.6",
+        "jsonTransferredKB": "808.9",
+        "fontTransferredKB": "0.0",
+        "fcpMs": "1192",
+        "lcpMs": "1192",
+        "cls": "0.0000",
+        "domNodes": 508,
+        "jsHeapUsedMB": "2.01",
+        "requests": [
+          {
+            "url": "https://jlpt-n5-and-n4-study.vercel.app/",
+            "cat": "doc",
+            "status": 200,
+            "size": 9662
+          },
+          {
+            "url": "https://jlpt-n5-and-n4-study.vercel.app/css/style.css",
+            "cat": "css",
+            "status": 200,
+            "size": 21048
+          },
+          {
+            "url": "https://jlpt-n5-and-n4-study.vercel.app/js/app.js",
+            "cat": "js",
+            "status": 200,
+            "size": 40536
+          },
+          {
+            "url": "https://jlpt-n5-and-n4-study.vercel.app/data/vocab_source_900.json",
+            "cat": "json",
+            "status": 200,
+            "size": 145168
+          },
+          {
+            "url": "https://jlpt-n5-and-n4-study.vercel.app/data/kanji_flashcards.json",
+            "cat": "json",
+            "status": 200,
+            "size": 218066
+          },
+          {
+            "url": "https://raw.githubusercontent.com/evanclan/OpenJLPT/main/data/json/kanji/n5.json",
+            "cat": "json",
+            "status": 200,
+            "size": 46218
+          },
+          {
+            "url": "https://raw.githubusercontent.com/evanclan/OpenJLPT/main/data/json/kanji/n4.json",
+            "cat": "json",
+            "status": 200,
+            "size": 87744
+          },
+          {
+            "url": "https://raw.githubusercontent.com/evanclan/OpenJLPT/main/data/json/grammar/n5.json",
+            "cat": "json",
+            "status": 200,
+            "size": 87774
+          },
+          {
+            "url": "https://raw.githubusercontent.com/evanclan/OpenJLPT/main/data/json/vocab/n5.json",
+            "cat": "json",
+            "status": 200,
+            "size": 103051
+          },
+          {
+            "url": "https://raw.githubusercontent.com/evanclan/OpenJLPT/main/data/json/vocab/n4.json",
+            "cat": "json",
+            "status": 200,
+            "size": 108686
+          },
+          {
+            "url": "https://raw.githubusercontent.com/evanclan/OpenJLPT/main/data/json/grammar/n4.json",
+            "cat": "json",
+            "status": 200,
+            "size": 31608
+          }
+        ]
+      },
+      {
+        "name": "Kana",
+        "id": "kana",
+        "hash": "#kana",
+        "requestsCount": 11,
+        "totalTransferredKB": "965.1",
+        "jsTransferredKB": "39.6",
+        "jsDecodedKB": "39.6",
+        "cssTransferredKB": "20.6",
+        "jsonTransferredKB": "895.5",
+        "fontTransferredKB": "0.0",
+        "fcpMs": "1084",
+        "lcpMs": "1084",
+        "cls": "0.0000",
+        "domNodes": 508,
+        "jsHeapUsedMB": "2.26",
+        "requests": [
+          {
+            "url": "https://jlpt-n5-and-n4-study.vercel.app/",
+            "cat": "doc",
+            "status": 200,
+            "size": 9662
+          },
+          {
+            "url": "https://jlpt-n5-and-n4-study.vercel.app/css/style.css",
+            "cat": "css",
+            "status": 200,
+            "size": 21048
+          },
+          {
+            "url": "https://jlpt-n5-and-n4-study.vercel.app/js/app.js",
+            "cat": "js",
+            "status": 200,
+            "size": 40536
+          },
+          {
+            "url": "https://jlpt-n5-and-n4-study.vercel.app/data/vocab_source_900.json",
+            "cat": "json",
+            "status": 200,
+            "size": 145168
+          },
+          {
+            "url": "https://jlpt-n5-and-n4-study.vercel.app/data/kanji_flashcards.json",
+            "cat": "json",
+            "status": 200,
+            "size": 218066
+          },
+          {
+            "url": "https://raw.githubusercontent.com/evanclan/OpenJLPT/main/data/json/kanji/n5.json",
+            "cat": "json",
+            "status": 200,
+            "size": 46218
+          },
+          {
+            "url": "https://raw.githubusercontent.com/evanclan/OpenJLPT/main/data/json/kanji/n4.json",
+            "cat": "json",
+            "status": 200,
+            "size": 87744
+          },
+          {
+            "url": "https://raw.githubusercontent.com/evanclan/OpenJLPT/main/data/json/grammar/n5.json",
+            "cat": "json",
+            "status": 200,
+            "size": 87774
+          },
+          {
+            "url": "https://raw.githubusercontent.com/evanclan/OpenJLPT/main/data/json/grammar/n4.json",
+            "cat": "json",
+            "status": 200,
+            "size": 120313
+          },
+          {
+            "url": "https://raw.githubusercontent.com/evanclan/OpenJLPT/main/data/json/vocab/n5.json",
+            "cat": "json",
+            "status": 200,
+            "size": 103051
+          },
+          {
+            "url": "https://raw.githubusercontent.com/evanclan/OpenJLPT/main/data/json/vocab/n4.json",
+            "cat": "json",
+            "status": 200,
+            "size": 108686
+          }
+        ]
+      },
+      {
+        "name": "Vocabulary",
+        "id": "vocab",
+        "hash": "#vocab",
+        "requestsCount": 11,
+        "totalTransferredKB": "965.1",
+        "jsTransferredKB": "39.6",
+        "jsDecodedKB": "39.6",
+        "cssTransferredKB": "20.6",
+        "jsonTransferredKB": "895.5",
+        "fontTransferredKB": "0.0",
+        "fcpMs": "1768",
+        "lcpMs": "1768",
+        "cls": "0.0000",
+        "domNodes": 508,
+        "jsHeapUsedMB": "2.26",
+        "requests": [
+          {
+            "url": "https://jlpt-n5-and-n4-study.vercel.app/",
+            "cat": "doc",
+            "status": 200,
+            "size": 9662
+          },
+          {
+            "url": "https://jlpt-n5-and-n4-study.vercel.app/css/style.css",
+            "cat": "css",
+            "status": 200,
+            "size": 21048
+          },
+          {
+            "url": "https://jlpt-n5-and-n4-study.vercel.app/js/app.js",
+            "cat": "js",
+            "status": 200,
+            "size": 40536
+          },
+          {
+            "url": "https://jlpt-n5-and-n4-study.vercel.app/data/vocab_source_900.json",
+            "cat": "json",
+            "status": 200,
+            "size": 145168
+          },
+          {
+            "url": "https://jlpt-n5-and-n4-study.vercel.app/data/kanji_flashcards.json",
+            "cat": "json",
+            "status": 200,
+            "size": 218066
+          },
+          {
+            "url": "https://raw.githubusercontent.com/evanclan/OpenJLPT/main/data/json/kanji/n5.json",
+            "cat": "json",
+            "status": 200,
+            "size": 46218
+          },
+          {
+            "url": "https://raw.githubusercontent.com/evanclan/OpenJLPT/main/data/json/kanji/n4.json",
+            "cat": "json",
+            "status": 200,
+            "size": 87744
+          },
+          {
+            "url": "https://raw.githubusercontent.com/evanclan/OpenJLPT/main/data/json/grammar/n5.json",
+            "cat": "json",
+            "status": 200,
+            "size": 87774
+          },
+          {
+            "url": "https://raw.githubusercontent.com/evanclan/OpenJLPT/main/data/json/grammar/n4.json",
+            "cat": "json",
+            "status": 200,
+            "size": 120313
+          },
+          {
+            "url": "https://raw.githubusercontent.com/evanclan/OpenJLPT/main/data/json/vocab/n4.json",
+            "cat": "json",
+            "status": 200,
+            "size": 108686
+          },
+          {
+            "url": "https://raw.githubusercontent.com/evanclan/OpenJLPT/main/data/json/vocab/n5.json",
+            "cat": "json",
+            "status": 200,
+            "size": 103051
+          }
+        ]
+      },
+      {
+        "name": "Kanji",
+        "id": "kanji",
+        "hash": "#kanji",
+        "requestsCount": 11,
+        "totalTransferredKB": "965.1",
+        "jsTransferredKB": "39.6",
+        "jsDecodedKB": "39.6",
+        "cssTransferredKB": "20.6",
+        "jsonTransferredKB": "895.5",
+        "fontTransferredKB": "0.0",
+        "fcpMs": "1068",
+        "lcpMs": "1068",
+        "cls": "0.0000",
+        "domNodes": 508,
+        "jsHeapUsedMB": "2.25",
+        "requests": [
+          {
+            "url": "https://jlpt-n5-and-n4-study.vercel.app/",
+            "cat": "doc",
+            "status": 200,
+            "size": 9662
+          },
+          {
+            "url": "https://jlpt-n5-and-n4-study.vercel.app/css/style.css",
+            "cat": "css",
+            "status": 200,
+            "size": 21048
+          },
+          {
+            "url": "https://jlpt-n5-and-n4-study.vercel.app/js/app.js",
+            "cat": "js",
+            "status": 200,
+            "size": 40536
+          },
+          {
+            "url": "https://jlpt-n5-and-n4-study.vercel.app/data/vocab_source_900.json",
+            "cat": "json",
+            "status": 200,
+            "size": 145168
+          },
+          {
+            "url": "https://jlpt-n5-and-n4-study.vercel.app/data/kanji_flashcards.json",
+            "cat": "json",
+            "status": 200,
+            "size": 218066
+          },
+          {
+            "url": "https://raw.githubusercontent.com/evanclan/OpenJLPT/main/data/json/kanji/n5.json",
+            "cat": "json",
+            "status": 200,
+            "size": 46218
+          },
+          {
+            "url": "https://raw.githubusercontent.com/evanclan/OpenJLPT/main/data/json/kanji/n4.json",
+            "cat": "json",
+            "status": 200,
+            "size": 87744
+          },
+          {
+            "url": "https://raw.githubusercontent.com/evanclan/OpenJLPT/main/data/json/grammar/n5.json",
+            "cat": "json",
+            "status": 200,
+            "size": 87774
+          },
+          {
+            "url": "https://raw.githubusercontent.com/evanclan/OpenJLPT/main/data/json/grammar/n4.json",
+            "cat": "json",
+            "status": 200,
+            "size": 120313
+          },
+          {
+            "url": "https://raw.githubusercontent.com/evanclan/OpenJLPT/main/data/json/vocab/n4.json",
+            "cat": "json",
+            "status": 200,
+            "size": 108686
+          },
+          {
+            "url": "https://raw.githubusercontent.com/evanclan/OpenJLPT/main/data/json/vocab/n5.json",
+            "cat": "json",
+            "status": 200,
+            "size": 103051
+          }
+        ]
+      },
+      {
+        "name": "Grammar",
+        "id": "grammar",
+        "hash": "#grammar",
+        "requestsCount": 11,
+        "totalTransferredKB": "965.1",
+        "jsTransferredKB": "39.6",
+        "jsDecodedKB": "39.6",
+        "cssTransferredKB": "20.6",
+        "jsonTransferredKB": "895.5",
+        "fontTransferredKB": "0.0",
+        "fcpMs": "992",
+        "lcpMs": "992",
+        "cls": "0.0000",
+        "domNodes": 508,
+        "jsHeapUsedMB": "2.26",
+        "requests": [
+          {
+            "url": "https://jlpt-n5-and-n4-study.vercel.app/",
+            "cat": "doc",
+            "status": 200,
+            "size": 9662
+          },
+          {
+            "url": "https://jlpt-n5-and-n4-study.vercel.app/css/style.css",
+            "cat": "css",
+            "status": 200,
+            "size": 21048
+          },
+          {
+            "url": "https://jlpt-n5-and-n4-study.vercel.app/js/app.js",
+            "cat": "js",
+            "status": 200,
+            "size": 40536
+          },
+          {
+            "url": "https://jlpt-n5-and-n4-study.vercel.app/data/vocab_source_900.json",
+            "cat": "json",
+            "status": 200,
+            "size": 145168
+          },
+          {
+            "url": "https://jlpt-n5-and-n4-study.vercel.app/data/kanji_flashcards.json",
+            "cat": "json",
+            "status": 200,
+            "size": 218066
+          },
+          {
+            "url": "https://raw.githubusercontent.com/evanclan/OpenJLPT/main/data/json/kanji/n5.json",
+            "cat": "json",
+            "status": 200,
+            "size": 46218
+          },
+          {
+            "url": "https://raw.githubusercontent.com/evanclan/OpenJLPT/main/data/json/kanji/n4.json",
+            "cat": "json",
+            "status": 200,
+            "size": 87744
+          },
+          {
+            "url": "https://raw.githubusercontent.com/evanclan/OpenJLPT/main/data/json/grammar/n5.json",
+            "cat": "json",
+            "status": 200,
+            "size": 87774
+          },
+          {
+            "url": "https://raw.githubusercontent.com/evanclan/OpenJLPT/main/data/json/grammar/n4.json",
+            "cat": "json",
+            "status": 200,
+            "size": 120313
+          },
+          {
+            "url": "https://raw.githubusercontent.com/evanclan/OpenJLPT/main/data/json/vocab/n5.json",
+            "cat": "json",
+            "status": 200,
+            "size": 103051
+          },
+          {
+            "url": "https://raw.githubusercontent.com/evanclan/OpenJLPT/main/data/json/vocab/n4.json",
+            "cat": "json",
+            "status": 200,
+            "size": 108686
+          }
+        ]
+      },
+      {
+        "name": "Quiz",
+        "id": "quiz",
+        "hash": "#quiz",
+        "requestsCount": 11,
+        "totalTransferredKB": "878.5",
+        "jsTransferredKB": "39.6",
+        "jsDecodedKB": "39.6",
+        "cssTransferredKB": "20.6",
+        "jsonTransferredKB": "808.9",
+        "fontTransferredKB": "0.0",
+        "fcpMs": "1036",
+        "lcpMs": "1036",
+        "cls": "0.0000",
+        "domNodes": 508,
+        "jsHeapUsedMB": "2.00",
+        "requests": [
+          {
+            "url": "https://jlpt-n5-and-n4-study.vercel.app/",
+            "cat": "doc",
+            "status": 200,
+            "size": 9662
+          },
+          {
+            "url": "https://jlpt-n5-and-n4-study.vercel.app/css/style.css",
+            "cat": "css",
+            "status": 200,
+            "size": 21048
+          },
+          {
+            "url": "https://jlpt-n5-and-n4-study.vercel.app/js/app.js",
+            "cat": "js",
+            "status": 200,
+            "size": 40536
+          },
+          {
+            "url": "https://jlpt-n5-and-n4-study.vercel.app/data/vocab_source_900.json",
+            "cat": "json",
+            "status": 200,
+            "size": 145168
+          },
+          {
+            "url": "https://jlpt-n5-and-n4-study.vercel.app/data/kanji_flashcards.json",
+            "cat": "json",
+            "status": 200,
+            "size": 218066
+          },
+          {
+            "url": "https://raw.githubusercontent.com/evanclan/OpenJLPT/main/data/json/kanji/n5.json",
+            "cat": "json",
+            "status": 200,
+            "size": 46218
+          },
+          {
+            "url": "https://raw.githubusercontent.com/evanclan/OpenJLPT/main/data/json/kanji/n4.json",
+            "cat": "json",
+            "status": 200,
+            "size": 87744
+          },
+          {
+            "url": "https://raw.githubusercontent.com/evanclan/OpenJLPT/main/data/json/grammar/n5.json",
+            "cat": "json",
+            "status": 200,
+            "size": 87774
+          },
+          {
+            "url": "https://raw.githubusercontent.com/evanclan/OpenJLPT/main/data/json/vocab/n4.json",
+            "cat": "json",
+            "status": 200,
+            "size": 108686
+          },
+          {
+            "url": "https://raw.githubusercontent.com/evanclan/OpenJLPT/main/data/json/vocab/n5.json",
+            "cat": "json",
+            "status": 200,
+            "size": 103051
+          },
+          {
+            "url": "https://raw.githubusercontent.com/evanclan/OpenJLPT/main/data/json/grammar/n4.json",
+            "cat": "json",
+            "status": 200,
+            "size": 31608
+          }
+        ]
+      }
+    ],
+    "session": {
+      "heapStartMB": "1.94",
+      "heapPeakMB": "4.79",
+      "heapAfterSessionMB": "5.00",
+      "domStart": 508,
+      "domAfterVocab": 1814,
+      "domAfterSession": 1858,
+      "vocabCardsCount": 24,
+      "longTasksCount": 0,
+      "longTasksTotalTime": "0",
+      "cycleHeaps": [
+        "3.91",
+        "4.39",
+        "4.10",
+        "3.84",
+        "3.95"
+      ]
+    },
+    "lighthouse": {
+      "perf": 97,
+      "a11y": 100,
+      "fcp": 1.9705899999999998,
+      "lcp": 1.9705899999999998,
+      "tbt": 81,
+      "cls": 0.006,
+      "speedIndex": 2.132
+    }
+  }
+}

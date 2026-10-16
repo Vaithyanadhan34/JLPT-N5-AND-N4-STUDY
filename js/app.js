@@ -14,6 +14,25 @@ const readSet=new Set(JSON.parse(localStorage.getItem(readKey)||'[]'));
 const knownSet=new Set(JSON.parse(localStorage.getItem(knownKey)||'[]'));
 const progress=JSON.parse(localStorage.getItem(progressKey)||'{}');
 const settings=Object.assign({furigana:true,romaji:false},JSON.parse(localStorage.getItem(settingsKey)||'{}'));
+<<<<<<< HEAD
+=======
+
+/* Theme preference: preserve it across visits without touching study progress. */
+const themeKey='jlpt-theme';
+function applyTheme(theme){
+  const safeTheme=theme==='dark'?'dark':'light';
+  document.body.dataset.theme=safeTheme;
+  const button=document.getElementById('themeToggle');
+  if(button){
+    const dark=safeTheme==='dark';
+    button.textContent=dark?'☀️ Light mode':'🌙 Dark mode';
+    button.setAttribute('aria-label',dark?'Switch to light mode':'Switch to dark mode');
+    button.setAttribute('aria-pressed',String(dark));
+  }
+  const meta=document.querySelector('meta[name="theme-color"]');
+  if(meta)meta.content=safeTheme==='dark'?'#0b1120':'#15284b';
+}
+>>>>>>> 25c51b3 (Updated JLPT Data and UI/UX)
 const KANA={
   hira:[['あ','a'],['い','i'],['う','u'],['え','e'],['お','o'],['か','ka'],['き','ki'],['く','ku'],['け','ke'],['こ','ko'],['さ','sa'],['し','shi'],['す','su'],['せ','se'],['そ','so'],['た','ta'],['ち','chi'],['つ','tsu'],['て','te'],['と','to'],['な','na'],['に','ni'],['ぬ','nu'],['ね','ne'],['の','no'],['は','ha'],['ひ','hi'],['ふ','fu'],['へ','he'],['ほ','ho'],['ま','ma'],['み','mi'],['む','mu'],['め','me'],['も','mo'],['や','ya'],['ゆ','yu'],['よ','yo'],['ら','ra'],['り','ri'],['る','ru'],['れ','re'],['ろ','ro'],['わ','wa'],['を','wo'],['ん','n'],['が','ga'],['ぎ','gi'],['ぐ','gu'],['げ','ge'],['ご','go'],['ざ','za'],['じ','ji'],['ず','zu'],['ぜ','ze'],['ぞ','zo'],['だ','da'],['ぢ','ji'],['づ','zu'],['で','de'],['ど','do'],['ば','ba'],['び','bi'],['ぶ','bu'],['べ','be'],['ぼ','bo'],['ぱ','pa'],['ぴ','pi'],['ぷ','pu'],['ぺ','pe'],['ぽ','po']],
   kata:[['ア','a'],['イ','i'],['ウ','u'],['エ','e'],['オ','o'],['カ','ka'],['キ','ki'],['ク','ku'],['ケ','ke'],['コ','ko'],['サ','sa'],['シ','shi'],['ス','su'],['セ','se'],['ソ','so'],['タ','ta'],['チ','chi'],['ツ','tsu'],['テ','te'],['ト','to'],['ナ','na'],['ニ','ni'],['ヌ','nu'],['ネ','ne'],['ノ','no'],['ハ','ha'],['ヒ','hi'],['フ','fu'],['ヘ','he'],['ホ','ho'],['マ','ma'],['ミ','mi'],['ム','mu'],['メ','me'],['モ','mo'],['ヤ','ya'],['ユ','yu'],['ヨ','yo'],['ラ','ra'],['リ','ri'],['ル','ru'],['レ','re'],['ロ','ro'],['ワ','wa'],['ヲ','wo'],['ン','n'],['ガ','ga'],['ギ','gi'],['グ','gu'],['ゲ','ge'],['ゴ','go'],['ザ','za'],['ジ','ji'],['ズ','zu'],['ゼ','ze'],['ゾ','zo'],['ダ','da'],['ヂ','ji'],['ヅ','zu'],['デ','de'],['ド','do'],['バ','ba'],['ビ','bi'],['ブ','bu'],['ベ','be'],['ボ','bo'],['パ','pa'],['ピ','pi'],['プ','pu'],['ペ','pe'],['ポ','po']]
@@ -86,17 +105,31 @@ function renderLoadError(message){for(const id of ['vGrid','gGrid','kGrid']){con
 async function loadData(){
   $('#sourceStatus').innerHTML='';
   try{
+<<<<<<< HEAD
     const localPromises=await Promise.allSettled([localJson('data/vocab_source_900.json'),localJson('data/kanji_flashcards.json')]);
     sourceVocab=localPromises[0].status==='fulfilled'?localPromises[0].value:[];flashChars=localPromises[1].status==='fulfilled'?localPromises[1].value:[];
     status('PDF vocabulary',localPromises[0].status==='fulfilled',`${sourceVocab.length} records`);status('Flashcard PDF',localPromises[1].status==='fulfilled',`${flashChars.length} kanji`);
+=======
+    const localPromises=await Promise.allSettled([localJson('data/vocab_source_900.json'),localJson('data/kanji_flashcards.json'),localJson('data/study_supplement.json')]);
+    sourceVocab=localPromises[0].status==='fulfilled'?localPromises[0].value:[];flashChars=localPromises[1].status==='fulfilled'?localPromises[1].value:[];
+    const workbookData=localPromises[2].status==='fulfilled'?localPromises[2].value:{vocabulary:[],kanji:[]};
+    status('900 Sentences PDF',localPromises[0].status==='fulfilled',`${sourceVocab.length} records`);status('JK4B flashcards',localPromises[1].status==='fulfilled',`${flashChars.length} kanji`);status('Excel N5/N4 lists',localPromises[2].status==='fulfilled',`${(workbookData.vocabulary||[]).length} words · ${(workbookData.kanji||[]).length} kanji`);
+>>>>>>> 25c51b3 (Updated JLPT Data and UI/UX)
     const keys=['v5','v4','k5','k4','g5','g4'];
     const results=await Promise.allSettled(keys.map(k=>fetchJsonWithFallback(SOURCES[k],SOURCES[k][0])));
     const d={};keys.forEach((k,i)=>d[k]=results[i].status==='fulfilled'?results[i].value.data:[]);
     keys.forEach((k,i)=>status(`OpenJLPT ${k.slice(-2).toUpperCase()}`,results[i].status==='fulfilled',results[i].status==='fulfilled'?(results[i].value.cached?'cache':'network'):'unavailable'));
     const extra=sourceVocab.map((x,i)=>({id:'pdf-'+x.source_no+'-'+i,word:x.word,reading:x.reading,romaji:'',meanings:[cleanMeaning(x.meaning)],level:'SUPP',pos:[],examples:[{ja:x.example,en:'',furigana:''}],source:'PDF',sourceNo:x.source_no}));
+<<<<<<< HEAD
     vocab=dedupeVocab([...(d.v5||[]),...(d.v4||[]),...extra]);
     grammar=[...(d.g5||[]),...(d.g4||[])];
     const km=new Map();for(const x of [...(d.k5||[]),...(d.k4||[])]){if(!km.has(x.character))km.set(x.character,{...x,id:'k-'+x.character,flash:false})}
+=======
+    vocab=dedupeVocab([...(d.v5||[]),...(d.v4||[]),...extra,...(workbookData.vocabulary||[])]);
+    grammar=[...(d.g5||[]),...(d.g4||[])];
+    const km=new Map();for(const x of [...(d.k5||[]),...(d.k4||[])]){if(!km.has(x.character))km.set(x.character,{...x,id:'k-'+x.character,flash:false})}
+    for(const x of (workbookData.kanji||[])){if(!km.has(x.character))km.set(x.character,{...x,id:'k-'+x.character,flash:false});else{const old=km.get(x.character);if(!old.meanings?.length)old.meanings=x.meanings||[];if(!old.onyomi?.length)old.onyomi=x.onyomi||[];if(!old.kunyomi?.length)old.kunyomi=x.kunyomi||[];if(!old.strokes)old.strokes=x.strokes;}}
+>>>>>>> 25c51b3 (Updated JLPT Data and UI/UX)
     for(const c of flashChars){if(!km.has(c.character))km.set(c.character,{id:'flash-'+c.character,character:c.character,level:'FLASH',meanings:c.meanings||[],onyomi:c.onyomi||[],kunyomi:c.kunyomi||[],strokes:c.strokes,words:c.words||[],flash:true,flashSource:c.source,flashCard:c.card,flashReadingInfo:c.reading_info,flashVocabulary:c.vocabulary_text})}
     kanji=[...km.values()];
     if(!vocab.length&&!grammar.length&&!kanji.length)throw new Error('No study data was returned.');
@@ -129,7 +162,11 @@ function jumpTo(type, input){
 function renderAll(){renderVocab();renderGrammar();renderKanji();updateHome()}
 
 function renderVocab(){let q=$('#vSearch').value.trim().toLowerCase(),f=$('#vLevel').value,pos=$('#vPos').value,prog=$('#vRead').value;let data=vocab.filter(x=>{if(f==='N5'&&x.level!=='N5')return false;if(f==='N4'&&x.level!=='N4')return false;if(f==='N5N4'&&!['N5','N4'].includes(x.level))return false;if(f==='SUPP'&&x.level!=='SUPP')return false;if(q&&!([x.word,x.reading,x.romaji,(x.meanings||[]).join(' ')].join(' ').toLowerCase().includes(q)))return false;const p=posLabel(x.pos);if(pos==='NOUN'&&p!=='Noun'||pos==='IADJ'&&p!=='i-Adjective'||pos==='NADJ'&&p!='na-Adjective'||pos==='VERB'&&p!=='Verb'||pos==='OTHER'&&['Noun','i-Adjective','na-Adjective','Verb'].includes(p))return false;if(prog==='READ'&&!isRead('v',x.id))return false;if(prog==='UNREAD'&&isRead('v',x.id))return false;return true});const start=Math.min(vStart,Math.max(0,data.length-1));$('#vocabCount').textContent=`${data.length.toLocaleString()} shown · starting at #${data.length?start+1:0}`;const slice=data.slice(start,start+vVisible);$('#vGrid').innerHTML=slice.map((x,i)=>`<article class="study-card" data-type="vocab" data-id="${esc(x.id)}" data-index="${start+i}"><div class="card-top"><div class="serial">#${start+i+1}</div><span class="badge">${esc(x.level)}</span></div><div class="jp">${rubyWord(x.word,x.reading)}</div><div class="reading romaji-field">${esc(x.reading||'—')}${settings.romaji&&x.romaji?' · '+esc(x.romaji):''}</div><div class="meaning">${esc((x.meanings||[x.meaning||''])[0]||'')}</div><div class="pos-tags"><span class="pos-tag">${esc(posLabel(x.pos))}</span></div><div class="card-bottom"><button class="detail-link" data-action="detail">Details →</button><button class="speak-btn card-speak" data-speak="${esc(x.word)}" aria-label="Listen to ${esc(x.word)}">🔊</button><button class="read-btn ${isRead('v',x.id)?'read':''}" data-action="read">${isRead('v',x.id)?'✓ Read':'○ Read'}</button></div></article>`).join('')||'<div class="empty-panel">No vocabulary matches.</div>';loadMore('v',data.length,start+slice.length);}
+<<<<<<< HEAD
 function renderGrammar(){let q=$('#gSearch').value.trim().toLowerCase(),f=$('#gLevel').value,p=$('#gProgress').value;let data=grammar.filter(x=>(f==='ALL'||f==='N5N4'&&['N5','N4'].includes(x.level)||f==='N5'&&x.level==='N5'||f==='N4'&&x.level==='N4')&&(!q||[x.pattern,x.romaji,x.meaning,x.formation,(x.tags||[]).join(' ')].join(' ').toLowerCase().includes(q))&&(p==='ALL'||p==='READ'&&isRead('g',x.id)||p==='UNREAD'&&!isRead('g',x.id)));data.sort((a,b)=>a.level.localeCompare(b.level)||a.pattern.localeCompare(b.pattern));const start=Math.min(gStart,Math.max(0,data.length-1));$('#gCount').textContent=`${data.length} shown · starting at #${data.length?start+1:0}`;const slice=data.slice(start,start+gVisible);$('#gGrid').innerHTML=slice.map((x,i)=>`<article class="study-card" data-type="grammar" data-id="${esc(x.id)}" data-index="${start+i}"><div class="card-top"><div class="serial">#${start+i+1}</div><span class="badge">${esc(x.level)}</span></div><div class="jp">${esc(x.pattern)}</div><div class="reading romaji-field">${esc(x.romaji||'')}</div><div class="meaning">${esc(x.meaning||'')}</div><div class="card-bottom"><button class="detail-link" data-action="detail">Details →</button><button class="speak-btn card-speak" data-speak="${esc(x.pattern)}" aria-label="Listen to grammar pattern">🔊</button><button class="read-btn ${isRead('g',x.id)?'read':''}" data-action="read">${isRead('g',x.id)?'✓ Read':'○ Read'}</button></div></article>`).join('')||'<div class="empty-panel">No grammar point matches.</div>';loadMore('g',data.length,start+slice.length)}
+=======
+function renderGrammar(){let q=$('#gSearch').value.trim().toLowerCase(),f=$('#gLevel').value,p=$('#gProgress').value;let data=grammar.filter(x=>(f==='ALL'||f==='N5N4'&&['N5','N4'].includes(x.level)||f==='N5'&&x.level==='N5'||f==='N4'&&x.level==='N4')&&(!q||[x.pattern,x.romaji,x.meaning,x.formation,(x.tags||[]).join(' ')].join(' ').toLowerCase().includes(q))&&(p==='ALL'||p==='READ'&&isRead('g',x.id)||p==='UNREAD'&&!isRead('g',x.id)));data.sort((a,b)=>a.level.localeCompare(b.level)||a.pattern.localeCompare(b.pattern));const start=Math.min(gStart,Math.max(0,data.length-1));$('#gCount').textContent=`${data.length} shown · starting at #${data.length?start+1:0}`;const slice=data.slice(start,start+gVisible);$('#gGrid').innerHTML=slice.map((x,i)=>`<article class="study-card" data-type="grammar" data-id="${esc(x.id)}" data-index="${start+i}"><div class="card-top"><div class="serial">#${start+i+1}</div><span class="badge">${esc(x.level)}</span></div><div class="jp">${esc(x.pattern)}</div><div class="reading romaji-field">${esc(x.romaji||'')}</div><div class="meaning">${esc(x.meaning||'')}</div>${x.formation?`<div class="grammar-formula-preview"><span>BUILD IT</span><code>${esc(x.formation)}</code></div>`:''}${x.examples?.[0]?.ja?`<div class="grammar-example-preview"><span>EXAMPLE</span><div>${x.examples[0].furigana?furiganaHtml(x.examples[0].furigana):esc(x.examples[0].ja)}</div>${x.examples[0].en?`<small>${esc(x.examples[0].en)}</small>`:''}</div>`:''}<div class="card-bottom"><button class="detail-link" data-action="detail">Learn this →</button><button class="speak-btn card-speak" data-speak="${esc(x.pattern)}" aria-label="Listen to grammar pattern">🔊</button><button class="read-btn ${isRead('g',x.id)?'read':''}" data-action="read">${isRead('g',x.id)?'✓ Read':'○ Read'}</button></div></article>`).join('')||'<div class="empty-panel">No grammar point matches.</div>';loadMore('g',data.length,start+slice.length)}
+>>>>>>> 25c51b3 (Updated JLPT Data and UI/UX)
 function renderKanji(){let q=$('#kSearch').value.trim().toLowerCase(),f=$('#kLevel').value,p=$('#kProgress').value;let data=kanji.filter(x=>(f==='ALL'||f==='N5'&&x.level==='N5'||f==='N4'&&x.level==='N4'||f==='N5N4'&&['N5','N4'].includes(x.level)||f==='FLASH'&&x.flash)&&(!q||[x.character,(x.onyomi||[]).join(' '),(x.kunyomi||[]).join(' '),kanjiMeaning(x),(x.words||[]).join(' ')].join(' ').toLowerCase().includes(q))&&(p==='ALL'||p==='READ'&&isRead('k',x.id)||p==='UNREAD'&&!isRead('k',x.id)));const start=Math.min(kStart,Math.max(0,data.length-1));$('#kCount').textContent=`${data.length} shown · starting at #${data.length?start+1:0}`;const slice=data.slice(start,start+kVisible);$('#kGrid').innerHTML=slice.map((x,i)=>`<article class="study-card" data-type="kanji" data-id="${esc(x.id)}" data-index="${start+i}"><div class="card-top"><div class="serial">#${start+i+1}</div><span class="badge">${esc(x.level||'Flashcard')}</span></div><div class="k-big">${x.character&&kanjiReading(x)?`<ruby>${esc(x.character)}<rt>${esc(kanjiReading(x))}</rt></ruby>`:esc(x.character||'')}</div><div class="k-meaning">${esc(kanjiMeaning(x))}</div><div class="reading romaji-field">${esc((x.onyomi||[]).slice(0,2).join(' · '))} ${(x.kunyomi||[]).slice(0,2).join(' · ')}</div><div class="card-bottom"><button class="detail-link" data-action="detail">Details →</button><button class="speak-btn card-speak" data-speak="${esc(kanjiReading(x)||x.character||'')}" aria-label="Listen to kanji reading">🔊</button><button class="read-btn ${isRead('k',x.id)?'read':''}" data-action="read">${isRead('k',x.id)?'✓ Read':'○ Read'}</button></div></article>`).join('')||'<div class="empty-panel">No kanji matches.</div>';loadMore('k',data.length,start+slice.length)}
 function loadMore(type,total,shown){const el=$('#'+type+'LoadMore');if(!el)return;el.innerHTML=shown<total?`<button class="load-more" data-load="${type}">Load 24 more · ${Math.min(24,total-shown)} next</button>`:''}
 function renderKana(){const rows=KANA[kanaMode];$('#kanaGrid').innerHTML=rows.map(([ch,romaji])=>`<button class="kana-card" data-kana-speak="${esc(ch)}"><span class="kana-char">${ch}</span><span class="kana-romaji">${romaji}</span><span class="kana-listen" aria-hidden="true"></span></button>`).join('')}
@@ -138,7 +175,32 @@ function vocabDetail(x){const scope=x.level==='N5'?'N5':'N4';const ex=eligibleEx
 function exampleHtml(e,i,scope,x){const needsTranslation=!e.en&&e.ja;const rid='tr-'+Math.random().toString(36).slice(2,8);return `<div class="example-box"><span class="difficulty">${difficulty(e,i)} · ${esc(e.sourceLevel||scope)}</span><div class="example-ja">${e.furigana?furiganaHtml(e.furigana):esc(e.ja||'')}</div>${e.furigana&&settings.furigana?`<div class="example-reading">Furigana shown above the kanji</div>`:''}<div class="example-en" id="${rid}">${e.en?esc(e.en):needsTranslation?'<span class="translation-loading">Translating sentence…</span>':''}</div>${needsTranslation?`<button class="detail-link translate-btn" data-ja="${esc(e.ja)}" data-target="${rid}">Translate to English</button>`:''}<button class="detail-link speak-btn" data-speak="${esc(e.ja||'')}" aria-label="Listen to Japanese example" title="Listen to Japanese example">🔊</button></div>`}
 async function translateSentence(ja,target){try{const u='https://translate.googleapis.com/translate_a/single?client=gtx&sl=ja&tl=en&dt=t&q='+encodeURIComponent(ja);const r=await fetch(u);if(!r.ok)throw new Error('Translation request failed');const d=await r.json();const t=(d[0]||[]).map(a=>a[0]||'').join('').trim();if(target)target.textContent=t||'Translation unavailable.';localStorage.setItem('tr:'+ja,t||'');}catch{const cached=localStorage.getItem('tr:'+ja);if(target)target.textContent=cached||'Translation unavailable offline.'}}
 
+<<<<<<< HEAD
 function openGrammar(id){const x=grammar.find(g=>g.id===id);if(!x)return;const ex=(x.examples||[]).slice(0,3);openModal(`<span class="eyebrow">GRAMMAR · ${esc(x.level)}</span><h2 id="modalTitle">${esc(x.pattern)}</h2><div class="reading">${esc(x.romaji||'')}</div><div class="detail-grid"><div><div class="detail-section"><h3>English meaning</h3><div>${esc(x.meaning||'')}</div></div><div class="detail-section"><h3>English explanation</h3><div>${esc(x.notes||'')}</div></div></div><div><div class="detail-section"><h3>Formation</h3><div class="formula">${esc(x.formation||'')}</div></div><div class="detail-section"><h3>Tags</h3><div>${(x.tags||[]).map(t=>`<span class="tag">${esc(t)}</span>`).join(' ')||'—'}</div></div></div></div><div class="detail-section"><h3>Examples</h3>${ex.length?ex.map((e,i)=>`<div class="example-box"><div class="example-ja">${e.furigana?furiganaHtml(e.furigana):esc(e.ja||'')}</div><div class="example-en">${esc(e.en||'')}</div><button class="detail-link speak-btn" data-speak="${esc(e.ja||'')}" aria-label="Listen to Japanese example" title="Listen to Japanese example">🔊</button></div>`).join(''):'<div class="subtle">No examples supplied.</div>'}</div><div class="card-bottom"><span></span><button class="read-btn ${isRead('g',x.id)?'read':''}" data-modal-action="read-grammar" data-id="${esc(x.id)}">${isRead('g',x.id)?'✓ Read':'○ Mark as read'}</button></div>`)}
+=======
+function grammarQuickCheck(x){
+  const correct=String(x.meaning||'').trim();
+  if(!correct)return '<div class="quick-check"><h3>Quick check</h3><p>This source does not provide a meaning for a quiz question.</p></div>';
+  const distractors=[...new Set(grammar.filter(g=>g.id!==x.id&&g.meaning&&g.meaning.trim()!==correct).map(g=>g.meaning.trim()))].sort(()=>Math.random()-.5).slice(0,3);
+  const options=[...new Set([correct,...distractors])].sort(()=>Math.random()-.5);
+  return `<div class="quick-check"><span class="eyebrow">CHECK YOUR UNDERSTANDING</span><h3>What does this pattern mean?</h3><div class="grammar-check-options">${options.map(o=>`<button type="button" class="grammar-check-option" data-grammar-check="${o===correct?'correct':'wrong'}">${esc(o)}</button>`).join('')}</div><p id="grammarCheckFeedback" class="grammar-check-feedback" aria-live="polite">Choose an answer to check yourself.</p></div>`;
+}
+function openGrammar(id){
+  const x=grammar.find(g=>g.id===id);if(!x)return;
+  const ex=(x.examples||[]).slice(0,4);
+  openModal(`<span class="eyebrow">GRAMMAR · ${esc(x.level)} · STEP-BY-STEP</span>
+  <h2 id="modalTitle">${esc(x.pattern)}</h2>
+  <div class="grammar-learning-intro">Learn the meaning first, build the sentence with the formula, then read the examples aloud.</div>
+  <div class="grammar-learning-grid">
+    <section class="grammar-learning-step"><span class="step-number">1</span><div><h3>Meaning</h3><p>${esc(x.meaning||'Meaning not supplied by this source.')}</p>${x.notes?`<p class="subtle">${esc(x.notes)}</p>`:''}</div></section>
+    <section class="grammar-learning-step"><span class="step-number">2</span><div><h3>Build the sentence</h3><div class="formula">${esc(x.formation||'Formation not supplied by this source.')}</div></div></section>
+    <section class="grammar-learning-step"><span class="step-number">3</span><div><h3>Notice the pattern</h3><p>Look at the words immediately before and after the grammar point. Repeat the Japanese example aloud, then try replacing one word.</p>${(x.tags||[]).map(t=>`<span class="tag">${esc(t)}</span>`).join(' ')}</div></section>
+  </div>
+  <div class="detail-section"><h3>Examples — read, listen, understand</h3>${ex.length?ex.map((e,i)=>`<div class="example-box grammar-example-box"><div class="example-level">Example ${i+1}</div><div class="example-ja">${e.furigana?furiganaHtml(e.furigana):esc(e.ja||'')}</div><div class="example-en">${esc(e.en||'Translation not supplied by this source.')}</div><button class="detail-link speak-btn" data-speak="${esc(e.ja||'')}" aria-label="Listen to Japanese example" title="Listen to Japanese example">🔊 Listen</button></div>`).join(''):'<div class="subtle">No examples supplied by this source.</div>'}</div>
+  ${grammarQuickCheck(x)}
+  <div class="card-bottom"><span></span><button class="read-btn ${isRead('g',x.id)?'read':''}" data-modal-action="read-grammar" data-id="${esc(x.id)}">${isRead('g',x.id)?'✓ Read':'○ Mark as read'}</button></div>`);
+}
+>>>>>>> 25c51b3 (Updated JLPT Data and UI/UX)
 function openKanji(id){const x=kanji.find(k=>k.id===id);if(!x)return;const reading=kanjiReading(x);const related=relatedVocabForKanji(x);const words=related.length?related:(x.words||[]).map(w=>({word:w,reading:'',meanings:[]}));const wordHtml=words.slice(0,12).map(v=>`<div class="kanji-vocab-row"><div><b>${esc(v.word)}</b> <span class="reading">${esc(v.reading||'')}</span></div><div class="subtle">${esc((v.meanings||[]).join(' · ')||'Meaning not available in supplied vocabulary data')}</div><button class="speak-btn" data-speak="${esc(v.word)}">🔊</button></div>`).join('');openModal(`<span class="eyebrow">KANJI · ${esc(x.level||'Flashcard')}</span><h2 id="modalTitle" class="ruby-word">${reading?`<ruby>${esc(x.character)}<rt>${esc(reading)}</rt></ruby>`:esc(x.character)} <button class="speak-btn inline-speak" data-speak="${esc((x.character||'')+' '+reading)}" aria-label="Listen to kanji reading">🔊</button></h2><div class="reading">${reading?'Hiragana: '+esc(reading):'Reading not available in this source'}</div><div class="detail-grid"><div><div class="detail-section"><h3>English meanings</h3><div>${esc(kanjiMeaning(x))}</div></div><div class="detail-section"><h3>Tamil meaning</h3><div id="kTamil" class="tamil-box">Loading…</div></div><div class="detail-section"><h3>On’yomi</h3><div>${esc((x.onyomi||[]).join(' · ')||'—')}</div></div></div><div><div class="detail-section"><h3>Kun’yomi</h3><div>${esc((x.kunyomi||[]).join(' · ')||'—')}</div></div><div class="detail-section"><h3>Kanji data</h3><div>${x.strokes?esc(x.strokes)+' strokes · ':''}${x.grade?'Grade '+esc(x.grade)+' · ':''}${x.radical?'Radical '+esc(x.radical):''}</div></div><div class="detail-section"><h3>Useful vocabulary</h3>${wordHtml||'<div class="subtle">No matching vocabulary is available in the loaded sources.</div>'}</div></div></div><div class="card-bottom"><span></span><button class="read-btn ${isRead('k',x.id)?'read':''}" data-modal-action="read-kanji" data-id="${esc(x.id)}">${isRead('k',x.id)?'✓ Read':'○ Mark as read'}</button></div>`);loadTamilKanji(kanjiMeaning(x))}
 async function loadTamilKanji(text){const el=$('#kTamil');if(!el)return;try{const u='https://translate.googleapis.com/translate_a/single?client=gtx&sl=en&tl=ta&dt=t&q='+encodeURIComponent(text);const r=await fetch(u);if(!r.ok)throw 0;const d=await r.json();const t=(d[0]||[]).map(a=>a[0]||'').join('').trim();el.textContent=t||'—';}catch{el.textContent='Tamil meaning unavailable offline.'}}
 
@@ -188,8 +250,20 @@ function finishQuiz(){touchStudy();$('#quizBox').innerHTML=`<div class="quiz-sco
 function showPage(id,scroll=true){document.querySelectorAll('.page').forEach(p=>p.classList.toggle('active',p.id===id));document.querySelectorAll('#nav button,#mobileNav button').forEach(b=>b.classList.toggle('active',b.dataset.page===id));lastPage=id;localStorage.setItem('jlpt-v7-last-page',id);if(scroll)window.scrollTo({top:0,behavior:'smooth'})}
 function updateCountdown(){const target=new Date('2026-12-05T00:00:00+05:30');let ms=target-Date.now();if(ms<=0){$('#countdown').textContent='EXAM DAY';return}const sec=Math.floor(ms/1000),months=Math.floor(sec/(30.436875*86400)),rest1=sec-Math.floor(months*30.436875*86400),days=Math.floor(rest1/86400),rest2=rest1-days*86400,h=Math.floor(rest2/3600),m=Math.floor((rest2%3600)/60),s=rest2%60;$('#countdown').textContent=`${months} months : ${days} days : ${String(h).padStart(2,'0')} hours : ${String(m).padStart(2,'0')} min : ${String(s).padStart(2,'0')} sec`}
 
+<<<<<<< HEAD
 $('#modal').addEventListener('click',e=>{if(e.target.classList.contains('modal-backdrop'))closeModal()});$('#closeModal').onclick=closeModal;document.addEventListener('keydown',e=>{if(e.key==='Escape')closeModal()});
 document.addEventListener('click',e=>{
+=======
+const themeToggle=document.getElementById('themeToggle');
+applyTheme(localStorage.getItem(themeKey)||'light');
+if(themeToggle)themeToggle.addEventListener('click',()=>{const next=document.body.dataset.theme==='dark'?'light':'dark';applyTheme(next);localStorage.setItem(themeKey,next);});
+$('#modal').addEventListener('click',e=>{if(e.target.classList.contains('modal-backdrop'))closeModal()});$('#closeModal').onclick=closeModal;document.addEventListener('keydown',e=>{if(e.key==='Escape')closeModal()});
+document.addEventListener('click',e=>{
+const grammarLevel=e.target.closest('[data-grammar-level]');
+if(grammarLevel){const select=$('#gLevel');if(select)select.value=grammarLevel.dataset.grammarLevel;gStart=0;renderGrammar();return;}
+const grammarAnswer=e.target.closest('[data-grammar-check]');
+if(grammarAnswer){const feedback=$('#grammarCheckFeedback');const options=$$('.grammar-check-option');options.forEach(b=>{b.disabled=true;if(b.dataset.grammarCheck==='correct')b.classList.add('is-correct');});if(grammarAnswer.dataset.grammarCheck==='correct'){feedback.textContent='Correct! Now read one example aloud and try to make your own sentence.';feedback.classList.add('is-correct');}else{grammarAnswer.classList.add('is-wrong');feedback.textContent='Not quite. The correct meaning is highlighted above. Read the pattern and example once more.';feedback.classList.add('is-wrong');}return;}
+>>>>>>> 25c51b3 (Updated JLPT Data and UI/UX)
 const pageBtn=e.target.closest('[data-page]');if(pageBtn){showPage(pageBtn.dataset.page);return}
 const speak=e.target.closest('.speak-btn');
 if(speak){e.preventDefault();e.stopPropagation();speakJapanese(speak.dataset.speak);return}
@@ -204,6 +278,7 @@ $('#gJump').onchange=e=>jumpTo('g',e.target);$('#gJump').onkeydown=e=>{if(e.key=
 $('#kSearch').oninput=()=>{clearTimeout(searchTimer);searchTimer=setTimeout(resetK,200)};$('#kLevel').onchange=resetK;$('#kProgress').onchange=resetK;
 $('#kJump').onchange=e=>jumpTo('k',e.target);$('#kJump').onkeydown=e=>{if(e.key==='Enter'){e.preventDefault();jumpTo('k',e.target)}};$('#kResume').onclick=()=>{kStart=resumeIndex('k');kVisible=24;renderKanji()};
 $('#addCompare').onclick=()=>{if(compareIds.length<6){compareIds.push('');fillCompare()}};$('#startQuiz').onclick=startQuiz;renderKana();
+<<<<<<< HEAD
 
 /* ===== LIGHT / DARK THEME TOGGLE ===== */
 const themeToggle = document.getElementById('themeToggle');
@@ -246,6 +321,8 @@ if (themeToggle) {
   });
 }
 
+=======
+>>>>>>> 25c51b3 (Updated JLPT Data and UI/UX)
 $('#furiganaToggle').checked=settings.furigana;$('#romajiToggle').checked=settings.romaji;$('#furiganaToggle').onchange=e=>{settings.furigana=e.target.checked;save();renderAll()};$('#romajiToggle').onchange=e=>{settings.romaji=e.target.checked;save();renderAll()};
 setInterval(updateCountdown,1000);updateCountdown();
 if('serviceWorker' in navigator)window.addEventListener('load',()=>navigator.serviceWorker.register('./sw.js').catch(()=>{}));

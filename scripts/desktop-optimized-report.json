@@ -1,0 +1,57 @@
+{
+  "pages": [
+    {
+      "name": "Home",
+      "domNodes": 3541,
+      "fcpMs": "1032",
+      "lcpMs": "1032",
+      "jsHeapUsedMB": "10.96",
+      "scriptDurationMs": "24",
+      "layoutDurationMs": "255",
+      "recalcStyleDurationMs": "26",
+      "taskDurationMs": "766"
+    },
+    {
+      "name": "Vocabulary",
+      "domNodes": 3541,
+      "fcpMs": "744",
+      "lcpMs": "744",
+      "jsHeapUsedMB": "10.96",
+      "scriptDurationMs": "22",
+      "layoutDurationMs": "240",
+      "recalcStyleDurationMs": "26",
+      "taskDurationMs": "881"
+    },
+    {
+      "name": "Kanji",
+      "domNodes": 3541,
+      "fcpMs": "1312",
+      "lcpMs": "1312",
+      "jsHeapUsedMB": "10.93",
+      "scriptDurationMs": "25",
+      "layoutDurationMs": "267",
+      "recalcStyleDurationMs": "27",
+      "taskDurationMs": "719"
+    },
+    {
+      "name": "Grammar",
+      "domNodes": 3541,
+      "fcpMs": "812",
+      "lcpMs": "812",
+      "jsHeapUsedMB": "10.92",
+      "scriptDurationMs": "11",
+      "layoutDurationMs": "269",
+      "recalcStyleDurationMs": "25",
+      "taskDurationMs": "706"
+    }
+  ],
+  "lighthouseHome": {
+    "perf": 87,
+    "a11y": 96,
+    "fcp": 1039,
+    "lcp": 1039,
+    "tbt": 233,
+    "cls": 0.0647,
+    "speedIndex": 1263
+  }
+}
