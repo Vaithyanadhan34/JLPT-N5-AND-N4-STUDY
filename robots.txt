@@ -1,0 +1,6 @@
+User-agent: *
+Disallow: /data/private/
+Disallow: /data/private-book-companion.json
+Disallow: /#companion
+Disallow: /reference/
+Sitemap: https://jlpt-n5-and-n4-study.vercel.app/sitemap.xml

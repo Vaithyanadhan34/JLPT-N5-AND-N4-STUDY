@@ -3,20 +3,81 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-<meta name="theme-color" content="#15284b">
-<meta name="description" content="JLPT N5 to N4 Japanese study hub with vocabulary, grammar, kanji, quizzes and progress tracking.">
+<meta name="theme-color" content="#F7F3EC">
+<meta name="color-scheme" content="light dark">
+<script>
+(function(){
+  try{
+    var s=localStorage.getItem('jlpt-v7-settings');
+    var t=s?JSON.parse(s).theme:'system';
+    if(!t||t==='system')t=localStorage.getItem('jlpt-theme')||'system';
+    var d=t==='dark'||(t==='system'&&window.matchMedia('(prefers-color-scheme: dark)').matches)?'dark':'light';
+    document.documentElement.dataset.theme=d;
+    document.documentElement.style.colorScheme=d;
+    var m=document.querySelector('meta[name="theme-color"]');
+    if(m)m.content=d==='dark'?'#0F1115':'#F7F3EC';
+  }catch(e){}
+})();
+</script>
+<meta name="description" content="JLPT N5 to N4 Japanese study hub — warm stationery study desk with ~760 words, 400+ kanji, grammar formulas, kana charts, and quizzes.">
+<meta property="og:title" content="JLPT N5 → N4 Study Hub · Japanese Stationery Desk">
+<meta property="og:description" content="Read real Japanese one small step at a time. Free, calm study hub with furigana, grammar formulas, and browser-saved progress.">
+<meta property="og:type" content="website">
+<meta name="twitter:card" content="summary_large_image">
 <link rel="manifest" href="manifest.json">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%2315284b'/%3E%3Ctext x='32' y='42' text-anchor='middle' font-size='30' font-family='sans-serif' fill='white'%3E日%3C/text%3E%3C/svg%3E">
-<title>JLPT N5 → N4 Study Hub</title>
-<link rel="stylesheet" href="css/style.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400..800;1,9..144,400..800&family=Inter:wght@400;500;600;700;800&family=Shippori+Mincho:wght@500;700;800&family=Zen+Kaku+Gothic+New:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='30' fill='%23D8412F' stroke='%23BA3222' stroke-width='2'/%3E%3Ccircle cx='32' cy='32' r='25' fill='none' stroke='%23F7F3EC' stroke-width='1.5' stroke-dasharray='4 2'/%3E%3Ctext x='32' y='42' text-anchor='middle' font-size='28' font-family='serif' font-weight='bold' fill='%23F7F3EC'%3E日%3C/text%3E%3C/svg%3E">
+<title>JLPT N5 → N4 Study Hub · 日本語</title>
+<link rel="stylesheet" href="css/style.css?v=stationery16">
 </head>
 <body>
-<header class="site-header">
+<div id="listLiveAnnouncer" class="sr-only" aria-live="polite" aria-atomic="true"></div>
+
+<!-- SVG Sprite for efficient lightweight icon rendering -->
+<svg class="svg-sprite" style="display:none" aria-hidden="true">
+  <symbol id="icon-speaker" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+    <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon>
+    <path d="M15.54 8.46a5 5 0 0 1 0 7.07"></path>
+    <path d="M19.07 4.93a10 10 0 0 1 0 14.14"></path>
+  </symbol>
+  <symbol id="icon-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+    <polyline points="20 6 9 17 4 12"></polyline>
+  </symbol>
+  <symbol id="icon-chevron-down" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+    <polyline points="6 9 12 15 18 9"></polyline>
+  </symbol>
+  <symbol id="icon-arrow-right" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+    <path d="M5 12h14M12 5l7 7-7 7"></path>
+  </symbol>
+</svg>
+<a class="skip-link" href="#home">Skip to content</a>
+
+<!-- Glass Navigation Header -->
+<header class="site-header glass-header" id="siteHeader">
   <div class="header-inner">
-    <div class="brand-wrap"><div class="brand">日本語 <span>N5 → N4</span></div><p>Learn in order. Review intelligently. Prepare for N4.</p></div>
-    <nav id="nav" aria-label="Main navigation">
-      <button data-page="home" class="active">Home</button><button data-page="vocab">Vocabulary</button><button data-page="grammar">Grammar</button><button data-page="kanji">Kanji</button><button data-page="compare">Compare</button><button data-page="quiz">Quiz</button><button data-page="kana">Kana</button><button data-page="how">How to use</button>
+    <div class="brand-wrap">
+      <button class="brand-btn" data-page="home" aria-label="Go to Home">
+        <span class="hanko-seal" aria-hidden="true">日</span>
+        <span class="brand-title"><span lang="ja" class="jp-mark">日本語</span> <span class="brand-tag">N5 → N4</span></span>
+      </button>
+    </div>
+
+    <nav id="nav" class="glass-nav" aria-label="Main">
+      <div class="nav-active-pill" id="navActivePill" aria-hidden="true"></div>
+      <button data-page="home" class="nav-item active" aria-current="page">Home</button>
+      <button data-page="kana" class="nav-item">Kana</button>
+      <button data-page="vocab" class="nav-item">Vocabulary</button>
+      <button data-page="kanji" class="nav-item">Kanji</button>
+      <button data-page="grammar" class="nav-item">Grammar</button>
+      <button data-page="conjunctions" class="nav-item">Conjunctions</button>
+      <button data-page="compare" class="nav-item">Compare</button>
+      <button data-page="companion" class="nav-item">Companion</button>
+      <button data-page="quiz" class="nav-item">Quiz</button>
+      <button data-page="how" class="nav-item">Guide</button>
     </nav>
+<<<<<<< HEAD
 <<<<<<< HEAD
     
 <button id="themeToggle" class="theme-toggle"
@@ -28,18 +89,317 @@
 =======
     <button id="themeToggle" class="theme-toggle" type="button" aria-label="Switch to dark mode" title="Switch theme">🌙 Dark mode</button>
 >>>>>>> 25c51b3 (Updated JLPT Data and UI/UX)
+=======
+
+    <div class="header-actions">
+      <button id="searchToggle" class="icon-action glass-btn" type="button" aria-label="Search across the app" title="Search (Ctrl+K)">
+        <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><path d="m21 21-4.3-4.3"></path></svg>
+        <span class="kbd-hint" aria-hidden="true">⌘K</span>
+      </button>
+      <button id="themeToggle" class="icon-action glass-btn theme-toggle" type="button" aria-label="Switch theme" title="Switch theme">
+        <span class="theme-icon-slot" id="themeIconSlot"></span>
+      </button>
+      <button id="settingsToggle" class="icon-action glass-btn" type="button" aria-label="Open settings" title="Settings">
+        <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><path d="M12.22 2h-.44a2 2 0 0 0-2 2v.18a2 2 0 0 1-1 1.73l-.43.25a2 2 0 0 1-2 0l-.15-.08a2 2 0 0 0-2.73.73l-.22.38a2 2 0 0 0 .73 2.73l.15.1a2 2 0 0 1 1 1.72v.51a2 2 0 0 1-1 1.74l-.15.09a2 2 0 0 0-.73 2.73l.22.38a2 2 0 0 0 2.73.73l.15-.08a2 2 0 0 1 2 0l.43.25a2 2 0 0 1 1 1.73V20a2 2 0 0 0 2 2h.44a2 2 0 0 0 2-2v-.18a2 2 0 0 1 1-1.73l.43-.25a2 2 0 0 1 2 0l.15.08a2 2 0 0 0 2.73-.73l.22-.39a2 2 0 0 0-.73-2.73l-.15-.08a2 2 0 0 1-1-1.74v-.5a2 2 0 0 1 1-1.74l.15-.09a2 2 0 0 0 .73-2.73l-.22-.38a2 2 0 0 0-2.73-.73l-.15.08a2 2 0 0 1-2 0l-.43-.25a2 2 0 0 1-1-1.73V4a2 2 0 0 0-2-2z"></path><circle cx="12" cy="12" r="3"></circle></svg>
+      </button>
+    </div>
+>>>>>>> 54359cc (Update project)
   </div>
 </header>
-<main>
+
+<main id="mainContent">
+<!-- HOME PAGE -->
 <section id="home" class="page active">
-  <div class="hero hero-home">
-    <div class="hero-copy"><span class="eyebrow">JLPT N5 → N4 · EXAM PREP</span><h1>Your N4 journey starts with the basics.</h1><p>Study vocabulary, grammar and kanji in a clear N5 → N4 hierarchy, then test yourself before exam day.</p><div class="home-actions"><button class="primary" data-page="vocab">Start Vocabulary</button><button data-page="kanji">Study Kanji</button><button data-page="quiz">Take a 10-question Quiz</button></div></div>
-    <div class="countdown-card"><div class="countdown-label">TIME LEFT TO JLPT N4</div><div id="countdown" class="countdown" aria-live="polite">—</div><div class="exam-date">5 December 2026</div><div class="countdown-note">Countdown updates every second.</div></div>
+  <div class="hero hero-stationery">
+    <!-- Watermark Japanese Calligraphy Mark -->
+    <div class="hero-watermark" aria-hidden="true" lang="ja">学</div>
+
+    <div class="hero-grid">
+      <!-- LEFT COLUMN: Headline & CTAs -->
+      <div class="hero-left">
+        <div class="eyebrow-chip">
+          <span class="eyebrow-dot" aria-hidden="true"></span>
+          <span>JLPT N5 → N4 · Free study hub</span>
+        </div>
+
+        <h1 class="hero-title">
+          Read real Japanese,<br>
+          <span class="brush-highlight">one small step
+            <svg class="brush-stroke" viewBox="0 0 240 16" fill="none" preserveAspectRatio="none" aria-hidden="true">
+              <path d="M4 11 C 60 4, 130 14, 236 7" stroke="var(--vermilion)" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </span> at a time.
+        </h1>
+
+        <p class="hero-desc">
+          ~760 essential vocabulary words, 400+ kanji, core grammar formulas, quizzes, and full gojūon kana charts. Free, calm study desk with browser-saved progress.
+        </p>
+
+        <div class="hero-cta-group">
+          <button class="hero-btn-primary" data-page="kana">
+            <span>Start with Kana</span>
+            <svg class="cta-arrow" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </button>
+          <button class="hero-btn-secondary" data-page="vocab">
+            Jump to Vocabulary
+          </button>
+        </div>
+
+        <div class="hero-resume-wrap" id="heroResumeWrap" style="display:none">
+          <button id="heroResumeBtn" class="hero-resume-link">
+            <span>Already studying? Continue where you left off</span>
+            <span class="resume-arrow">→</span>
+          </button>
+        </div>
+
+        <!-- Real Counts Stats Row -->
+        <div class="hero-stats-band">
+          <div class="hero-stat-cell">
+            <b id="homeVocab" class="hero-stat-num">760+</b>
+            <span class="hero-stat-lbl">Words</span>
+          </div>
+          <div class="hero-stat-divider" aria-hidden="true"></div>
+          <div class="hero-stat-cell">
+            <b id="homeKanji" class="hero-stat-num">400+</b>
+            <span class="hero-stat-lbl">Kanji</span>
+          </div>
+          <div class="hero-stat-divider" aria-hidden="true"></div>
+          <div class="hero-stat-cell">
+            <b id="homeGrammar" class="hero-stat-num">179</b>
+            <span class="hero-stat-lbl">Grammar</span>
+          </div>
+          <div class="hero-stat-divider" aria-hidden="true"></div>
+          <div class="hero-stat-cell">
+            <b id="homeExamples" class="hero-stat-num">890+</b>
+            <span class="hero-stat-lbl">Sentences</span>
+          </div>
+          <div class="hero-countdown-pill">
+            <span class="cd-tag">JLPT N4</span>
+            <span id="countdown" class="cd-time">5 Dec 2026</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- RIGHT COLUMN: Interactive Study Card Collage -->
+      <div class="hero-right" id="heroCollage">
+        <div class="collage-container" id="collageContainer">
+          <!-- Card 1: Vocabulary Card (Flippable) -->
+          <div class="stationery-card card-vocab" id="heroCardVocab" tabindex="0" role="button" aria-label="Interactive Vocabulary card. Tap or hover to flip.">
+            <div class="card-inner">
+              <div class="card-front">
+                <div class="card-meta">
+                  <span class="card-badge">N5 VOCAB</span>
+                  <span class="card-hanko">済</span>
+                </div>
+                <div class="card-jp" lang="ja">
+                  <ruby class="ruby-text"><rb>日本語</rb><rp>(</rp><rt>にほんご</rt><rp>)</rp></ruby>
+                </div>
+                <div class="card-reading">nihongo · Noun</div>
+                <div class="card-hint">
+                  <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12a9 9 0 0 0-9-9 9.75 9.75 0 0 0-6.74 2.74L3 8"></path><path d="M3 3v5h5"></path><path d="M3 12a9 9 0 0 0 9 9 9.75 9.75 0 0 0 6.74-2.74L21 16"></path><path d="M16 21h5v-5"></path></svg>
+                  <span>Flip for meaning</span>
+                </div>
+              </div>
+              <div class="card-back">
+                <div class="card-back-title">Japanese language</div>
+                <p class="card-back-ex" lang="ja">毎日<ruby><rb>日本語</rb><rt>にほんご</rt></ruby>を勉強します。</p>
+                <small class="card-back-trans">"I study Japanese every day."</small>
+                <div class="card-back-badge">Core Foundation</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 2: Kana Study Tile -->
+          <div class="stationery-card card-kana" id="heroCardKana" tabindex="0" role="button" aria-label="Kana card. Tap or hover to flip.">
+            <div class="card-inner">
+              <div class="card-front">
+                <div class="card-meta">
+                  <span class="card-badge kana-badge">GOJŪON</span>
+                  <span class="card-index">#1</span>
+                </div>
+                <div class="kana-pair" lang="ja">
+                  <span class="kana-hira">あ</span>
+                  <span class="kana-sep">/</span>
+                  <span class="kana-kata">ア</span>
+                </div>
+                <div class="card-reading">romaji: "a"</div>
+                <div class="card-hint"><span>Tap to see word</span></div>
+              </div>
+              <div class="card-back">
+                <div class="card-back-title">Sound "a"</div>
+                <p class="card-back-ex" lang="ja"><ruby><rb>朝</rb><rt>あさ</rt></ruby> · Morning</p>
+                <small class="card-back-trans">Vowel row · 3 strokes</small>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 3: Mini Quiz Card -->
+          <div class="stationery-card card-quiz" id="heroCardQuiz">
+            <div class="quiz-mini-head">
+              <span class="card-badge quiz-badge">QUICK RECALL</span>
+              <span class="quiz-q-num">Q1</span>
+            </div>
+            <div class="quiz-mini-prompt" lang="ja">
+              いま何時<span class="quiz-blank">____</span>ですか？
+            </div>
+            <div class="quiz-mini-options" id="heroQuizOptions">
+              <button class="quiz-mini-btn" type="button" data-hero-answer="ni">に</button>
+              <button class="quiz-mini-btn" type="button" data-hero-answer="wa">は</button>
+              <button class="quiz-mini-btn is-correct-target" type="button" data-hero-answer="correct">ナン</button>
+            </div>
+            <div class="quiz-mini-feedback" id="heroQuizFeedback">Choose the correct reading</div>
+          </div>
+
+          <!-- Word of the Day Stamp Card -->
+          <div class="stationery-card card-wotd" id="heroWotdCard">
+            <div class="wotd-label">WORD OF THE DAY</div>
+            <div class="wotd-word" id="heroWotdWord" lang="ja">
+              <ruby><rb>桜</rb><rt>さくら</rt></ruby>
+            </div>
+            <div class="wotd-meta" id="heroWotdMeta">cherry blossom · Noun</div>
+            <button class="speak-btn hero-speak-btn" id="heroWotdSpeak" type="button" aria-label="Listen to pronunciation">
+              <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon><path d="M15.54 8.46a5 5 0 0 1 0 7.07"></path></svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
-  <div class="progress-panel"><div><span class="eyebrow">YOUR PROGRESS</span><h2>Keep moving forward.</h2></div><div class="progress-metrics"><div><b id="homeRead">0</b><span>Items read</span></div><div><b id="homeKnown">0</b><span>Items known</span></div><div><b id="homeStreak">0</b><span>Day streak</span></div></div><button id="continueBtn" class="continue-btn">Continue where you left off →</button></div>
-  <div class="stat-grid"><div><b id="homeVocab">—</b><span>Vocabulary</span></div><div><b id="homeKanji">—</b><span>Kanji</span></div><div><b id="homeGrammar">—</b><span>Grammar</span></div><div><b id="homeExamples">—</b><span>Example sentences</span></div></div>
-  <div class="source-panel"><div><span class="eyebrow">DATA SOURCES</span><h2>Loaded and checked</h2><p>OpenJLPT provides structured N5/N4 data, your two PDFs add supplementary study material, and JLPTStudy is included as an external reference source.</p></div><div id="sourceStatus" class="source-status" aria-live="polite"></div><div class="source-links"><a href="https://www.jlptstudy.net/N5/" target="_blank" rel="noopener">JLPTStudy N5 ↗</a><a href="https://www.jlptstudy.net/N4/" target="_blank" rel="noopener">JLPTStudy N4 ↗</a></div></div>
+
+  <!-- Horizontal Vocab Marquee Ticker -->
+  <section class="marquee-ticker-section" aria-label="Sample vocabulary ticker">
+    <div class="marquee-label">
+      <span class="marquee-hanko">語</span>
+      <span>N5/N4 VOCABULARY STREAM</span>
+    </div>
+    <div class="marquee-track-wrap" id="marqueeTrackWrap">
+      <div class="marquee-track" id="marqueeTrack">
+        <!-- Filled dynamically by app.js with live vocab items -->
+        <span class="marquee-item"><span lang="ja">友だち</span> · ともだち · friend</span>
+        <span class="marquee-item"><span lang="ja">先生</span> · せんせい · teacher</span>
+        <span class="marquee-item"><span lang="ja">勉強</span> · べんきょう · study</span>
+        <span class="marquee-item"><span lang="ja">時間</span> · じかん · time</span>
+        <span class="marquee-item"><span lang="ja">大丈夫</span> · だいじょうぶ · all right</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Home Progress, Goal & Continue Grid -->
+  <div class="home-grid">
+    <section class="home-panel home-continue">
+      <div>
+        <span class="eyebrow">CONTINUE WHERE YOU LEFT OFF</span>
+        <h2 id="continueTitle">Loading progress…</h2>
+        <p id="continueText">Your last study section and resume point will appear here.</p>
+      </div>
+      <button id="continueBtn" class="continue-btn">
+        <span>Continue</span>
+        <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+      </button>
+    </section>
+
+    <section class="home-panel goal-card">
+      <div class="goal-head">
+        <span class="eyebrow">TODAY'S STUDY GOAL</span>
+        <span id="goalBadge" class="goal-badge">Ready</span>
+      </div>
+      <div class="goal-body">
+        <div class="goal-ring">
+          <div class="goal-ring-fill" id="goalRing"></div>
+          <div class="goal-ring-center"><strong id="goalDone">0</strong><span id="goalTotal">/ 13</span></div>
+        </div>
+        <div class="goal-copy">
+          <div><b id="homeStreak">0</b><span>Day streak</span></div>
+          <div><b id="homeKnown">0</b><span>Known items</span></div>
+          <div><b id="homeRead">0</b><span>Reviewed</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TODAY'S LESSON -->
+    <section class="home-panel today-lesson-card" id="todayLessonCard">
+      <div class="today-lesson-head">
+        <span class="eyebrow">TODAY'S GRAMMAR LESSON</span>
+        <span id="todayLessonBadge" class="lesson-num-badge">第1話</span>
+      </div>
+      <div class="today-lesson-body">
+        <h3 id="todayLessonTitle">日本のお正月</h3>
+        <p id="todayLessonDesc">4 core patterns · Book page 26</p>
+        <div class="today-lesson-actions">
+          <button id="todayLessonBtn" class="continue-btn" type="button">
+            <span>Study This Lesson</span>
+            <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </button>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <!-- 32-LESSON ROADMAP -->
+  <section class="roadmap-section">
+    <div class="section-head compact-head">
+      <div>
+        <span class="eyebrow">32-LESSON ROADMAP</span>
+        <h2>Master N5 → N4 Step by Step</h2>
+        <p>Curriculum structured after <em>Nihongo Challenge N4 文法と読む練習</em>. Tap any lesson to start studying.</p>
+      </div>
+      <div class="roadmap-summary" id="roadmapSummary">0 / 32 Lessons Completed</div>
+    </div>
+    <div class="roadmap-scroll-track" id="roadmapTrack" tabindex="0" role="region" aria-label="32-Lesson Grammar Roadmap"></div>
+  </section>
+
+  <!-- Study Section Shortcuts -->
+  <section class="shortcut-panel">
+    <div class="section-head compact-head">
+      <div>
+        <span class="eyebrow">STUDY MODULES</span>
+        <h2>Choose your daily practice</h2>
+      </div>
+    </div>
+    <div class="shortcut-grid">
+      <button data-page="kana" class="shortcut-card">
+        <span class="shortcut-kanji-mark" lang="ja">あ</span>
+        <strong>Kana Chart</strong>
+        <small>Gojūon, dakuten & sound practice</small>
+      </button>
+      <button data-page="vocab" class="shortcut-card">
+        <span class="shortcut-kanji-mark" lang="ja">語</span>
+        <strong>Vocabulary</strong>
+        <small>760+ words with audio and examples</small>
+      </button>
+      <button data-page="kanji" class="shortcut-card">
+        <span class="shortcut-kanji-mark" lang="ja">字</span>
+        <strong>Kanji</strong>
+        <small>Characters, on/kun readings & strokes</small>
+      </button>
+      <button data-page="grammar" class="shortcut-card">
+        <span class="shortcut-kanji-mark" lang="ja">文</span>
+        <strong>Grammar</strong>
+        <small>Formulas, examples & quick check</small>
+      </button>
+      <button data-page="quiz" class="shortcut-card">
+        <span class="shortcut-kanji-mark" lang="ja">問</span>
+        <strong>Quiz Recall</strong>
+        <small>Test retention with mistake review</small>
+      </button>
+    </div>
+  </section>
+
+  <!-- Data Sources Verification Panel -->
+  <div class="source-panel home-source">
+    <div>
+      <span class="eyebrow">DATA REPOSITORY</span>
+      <h2>Verified JLPT Curriculum</h2>
+      <p>Structured N5 and N4 datasets loaded directly with local supplements, audio bindings, and offline caching.</p>
+    </div>
+    <div id="sourceStatus" class="source-status" aria-live="polite"></div>
+    <div class="source-links">
+      <a href="https://www.jlptstudy.net/N5/" target="_blank" rel="noopener">JLPTStudy N5 ↗</a>
+      <a href="https://www.jlptstudy.net/N4/" target="_blank" rel="noopener">JLPTStudy N4 ↗</a>
+    </div>
+  </div>
 </section>
+<<<<<<< HEAD
 <section id="vocab" class="page"><div class="section-head"><div><span class="eyebrow">VOCABULARY</span><h2>Vocabulary study</h2><p>N5 first. N4 expands the scope to N5 + N4.</p></div><div id="vocabCount" class="count"></div></div><div class="toolbar"><input id="vSearch" placeholder="Search word, reading, romaji or English…" aria-label="Search vocabulary"><select id="vLevel"><option value="ALL">All data</option><option value="N5">N5 only</option><option value="N4">N4 only</option><option value="N5N4">N5 + N4</option><option value="SUPP">Supplementary PDF</option></select><input id="vJump" class="jump-input" type="number" min="1" placeholder="Jump to #"><button id="vResume" class="tool-btn">Resume</button><select id="vPos"><option value="ALL">All parts of speech</option><option value="NOUN">Noun</option><option value="IADJ">i-Adjective</option><option value="NADJ">na-Adjective</option><option value="VERB">Verb</option><option value="OTHER">Other</option></select><select id="vRead"><option value="ALL">All progress</option><option value="UNREAD">Unread</option><option value="READ">Read</option></select><button id="vFlash" class="tool-btn">Flashcards</button></div><div id="vGrid" class="card-grid"></div><div id="vLoadMore" class="load-more-wrap"></div></section>
 <<<<<<< HEAD
 <section id="grammar" class="page"><div class="section-head"><div><span class="eyebrow">GRAMMAR</span><h2>N5 → N4 Grammar</h2><p>English explanation, formation and example translations.</p></div><div id="gCount" class="count"></div></div><div class="toolbar"><input id="gSearch" placeholder="Search pattern, meaning, formation or tag…"><select id="gLevel"><option value="ALL">All data</option><option value="N5">N5 only</option><option value="N4">N4 only</option><option value="N5N4">N5 + N4</option></select><input id="gJump" class="jump-input" type="number" min="1" placeholder="Jump to #" aria-label="Jump to grammar number"><button id="gResume" class="tool-btn">Resume</button><select id="gProgress"><option value="ALL">All progress</option><option value="UNREAD">Unread</option><option value="READ">Read</option></select></div><div id="gGrid" class="card-grid"></div><div id="gLoadMore" class="load-more-wrap"></div></section>
@@ -60,8 +420,462 @@
 <section id="kana" class="page"><div class="section-head"><div><span class="eyebrow">KANA FOR BEGINNERS</span><h2>Hiragana & Katakana</h2><p>Learn the basic Japanese sounds and listen to every character.</p></div></div><div class="kana-tabs"><button class="kana-tab active" data-kana="hira">Hiragana</button><button class="kana-tab" data-kana="kata">Katakana</button></div><div id="kanaGrid" class="kana-grid"></div></section>
 <section id="quiz" class="page"><div class="section-head"><div><span class="eyebrow">QUIZ MODE</span><h2>10 questions</h2><p>Vocabulary meaning, kanji reading and grammar fill-in-the-blank. Your mistakes appear at the end.</p></div></div><div id="quizBox" class="quiz-box"><button id="startQuiz" class="primary">Start Quiz</button></div></section>
 <section id="how" class="page"><div class="how-card"><span class="eyebrow">HOW TO USE</span><h2>A simple N5 → N4 study flow</h2><ol><li>Finish N5 foundations first: common vocabulary, basic kanji and core grammar.</li><li>Switch to <b>N4 + N5</b> when you start N4.</li><li>Open a card to see the reading above the kanji, meanings and examples.</li><li>Use <b>Mark as read</b> and <b>Know it</b> to build browser-saved progress.</li><li>Use Flashcards and Quiz to actively recall instead of only reading.</li><li>Grammar Compare is for pairs or groups of 2–6 patterns.</li></ol><div class="settings-row"><label><input type="checkbox" id="furiganaToggle" checked> Show furigana</label><label><input type="checkbox" id="romajiToggle"> Show romaji</label></div></div></section>
+=======
+
+<!-- VOCABULARY PAGE -->
+<section id="vocab" class="page">
+  <div class="section-head">
+    <div>
+      <span class="eyebrow">VOCABULARY</span>
+      <h2>Vocabulary study</h2>
+      <p>N5 first. N4 expands the scope to N5 + N4.</p>
+    </div>
+    <div id="vocabCount" class="count"></div>
+  </div>
+  <div class="toolbar">
+    <div class="search-input-wrap">
+      <svg class="search-icon" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><path d="m21 21-4.3-4.3"></path></svg>
+      <input id="vSearch" placeholder="Search word, reading, romaji or English…" aria-label="Search vocabulary">
+    </div>
+    <select id="vLevel" data-label="Level">
+      <option value="ALL">All data</option>
+      <option value="N5">N5 only</option>
+      <option value="N4">N4 only</option>
+      <option value="N5N4">N5 + N4</option>
+      <option value="SUPP">Supplementary PDF</option>
+    </select>
+    <input id="vJump" class="jump-input" type="number" min="1" placeholder="Jump #" aria-label="Jump to vocabulary index">
+    <button id="vResume" class="tool-btn">Resume</button>
+    <select id="vPos" data-label="POS">
+      <option value="ALL">All parts of speech</option>
+      <option value="NOUN">Noun</option>
+      <option value="IADJ">i-Adjective</option>
+      <option value="NADJ">na-Adjective</option>
+      <option value="VERB">Verb</option>
+      <option value="OTHER">Other</option>
+    </select>
+    <select id="vRead" data-label="Status">
+      <option value="ALL">All progress</option>
+      <option value="UNREAD">Unread</option>
+      <option value="READ">Read</option>
+    </select>
+    <button id="vFlash" class="tool-btn">Flashcards</button>
+  </div>
+  <div id="vGrid" class="card-grid"></div>
+  <div id="vSentinel" class="list-sentinel" aria-hidden="true"></div>
+  <div id="vStatus" class="list-status-wrap"></div>
+</section>
+
+<!-- GRAMMAR PAGE -->
+<section id="grammar" class="page">
+  <div class="section-head">
+    <div>
+      <span class="eyebrow">GRAMMAR</span>
+      <h2>Learn grammar step by step</h2>
+      <p>Understand the meaning, build the sentence, see real examples, and check what you remember.</p>
+    </div>
+    <div id="gCount" class="count"></div>
+  </div>
+  <div class="grammar-path">
+    <div class="grammar-path-heading">
+      <div>
+        <span class="eyebrow">YOUR LEARNING PATH</span>
+        <h3>How to learn each grammar point</h3>
+        <p>Study a small group, practise with examples, then mark it as read.</p>
+      </div>
+      <div class="grammar-level-shortcuts">
+        <button type="button" data-grammar-level="N5">Start N5</button>
+        <button type="button" data-grammar-level="N4">Continue N4</button>
+        <button type="button" data-grammar-level="N5N4">Review both</button>
+      </div>
+    </div>
+    <div class="grammar-path-steps">
+      <article><span>01</span><h4>Meaning</h4><p>Say what the pattern means in simple English.</p></article>
+      <article><span>02</span><h4>Formula</h4><p>Notice what comes before the pattern: noun, verb, or adjective.</p></article>
+      <article><span>03</span><h4>Example</h4><p>Read the Japanese sentence, listen, and understand its translation.</p></article>
+      <article><span>04</span><h4>Recall</h4><p>Answer the quick check, then mark the point as read.</p></article>
+    </div>
+  </div>
+  <div class="toolbar grammar-toolbar">
+    <div class="search-input-wrap">
+      <svg class="search-icon" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><path d="m21 21-4.3-4.3"></path></svg>
+      <input id="gSearch" placeholder="Search pattern, meaning, formation or tag…" aria-label="Search grammar">
+    </div>
+    <div class="segmented" role="tablist" aria-label="Grammar view switch">
+      <button class="segmented-btn active" id="gViewBook" type="button">Book Lessons (1–32)</button>
+      <button class="segmented-btn" id="gViewAll" type="button">All Cards</button>
+    </div>
+    <select id="gLessonRange" data-label="Lessons">
+      <option value="ALL">All 32 Lessons</option>
+      <option value="1-8">Lessons 1–8</option>
+      <option value="9-16">Lessons 9–16</option>
+      <option value="17-24">Lessons 17–24</option>
+      <option value="25-32">Lessons 25–32</option>
+    </select>
+    <select id="gLevel" data-label="Level">
+      <option value="ALL">All levels</option>
+      <option value="N5">N5 only</option>
+      <option value="N4">N4 only</option>
+      <option value="N5N4">N5 + N4</option>
+    </select>
+    <select id="gProgress" data-label="Status">
+      <option value="ALL">All progress</option>
+      <option value="UNREAD">Unread</option>
+      <option value="READ">Read</option>
+    </select>
+    <button id="gPracticeBtn" class="tool-btn" type="button">Practice Quiz</button>
+    <input id="gJump" class="jump-input" type="number" min="1" placeholder="Jump #" aria-label="Jump to grammar number">
+    <button id="gResume" class="tool-btn">Resume</button>
+  </div>
+  <div id="gBookLessons" class="book-lessons-container"></div>
+  <div id="gGridWrap" class="grammar-grid-wrap" style="display:none">
+    <div id="gGrid" class="card-grid"></div>
+    <div id="gSentinel" class="list-sentinel" aria-hidden="true"></div>
+    <div id="gStatus" class="list-status-wrap"></div>
+  </div>
+  <footer class="book-credit-footer">
+    <p>Lesson/page references follow <em>Nihongo Challenge N4 文法と読む練習</em> (ASK Publishing). Content is for personal study.</p>
+  </footer>
+</section>
+
+<!-- KANJI PAGE -->
+<section id="kanji" class="page">
+  <div class="section-head">
+    <div>
+      <span class="eyebrow">KANJI</span>
+      <h2>N5 + N4 Kanji</h2>
+      <p>OpenJLPT levels plus the supplied JK4B flashcard PDF.</p>
+    </div>
+    <div id="kCount" class="count"></div>
+  </div>
+  <div class="toolbar">
+    <div class="search-input-wrap">
+      <svg class="search-icon" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><path d="m21 21-4.3-4.3"></path></svg>
+      <input id="kSearch" placeholder="Search kanji, reading or English meaning…" aria-label="Search kanji">
+    </div>
+    <select id="kLevel" data-label="Level">
+      <option value="ALL">All kanji</option>
+      <option value="N5">N5 only</option>
+      <option value="N4">N4 only</option>
+      <option value="N5N4">N5 + N4</option>
+      <option value="FLASH">Flashcard source</option>
+    </select>
+    <input id="kJump" class="jump-input" type="number" min="1" placeholder="Jump #" aria-label="Jump to kanji number">
+    <button id="kResume" class="tool-btn">Resume</button>
+    <select id="kProgress" data-label="Status">
+      <option value="ALL">All progress</option>
+      <option value="UNREAD">Unread</option>
+      <option value="READ">Read</option>
+    </select>
+    <button id="kFlash" class="tool-btn">Flashcards</button>
+  </div>
+  <div id="kGrid" class="card-grid kanji-grid"></div>
+  <div id="kSentinel" class="list-sentinel" aria-hidden="true"></div>
+  <div id="kStatus" class="list-status-wrap"></div>
+</section>
+
+<!-- CONJUNCTIONS PAGE -->
+<section id="conjunctions" class="page">
+  <div class="section-head">
+    <div>
+      <span class="eyebrow">CONNECTING WORDS</span>
+      <h2>文と文をつなぐことば (Conjunctions)</h2>
+      <p>14 essential conjunctions organized into 4 logical groups with interactive drills.</p>
+    </div>
+    <div id="conjCount" class="count">14 conjunctions</div>
+  </div>
+  <div class="conj-groups-container" id="conjGroupsContainer"></div>
+  <div class="conj-drill-section">
+    <div class="section-head compact-head">
+      <div>
+        <span class="eyebrow">INTERACTIVE DRILL</span>
+        <h3>Choose the right conjunction</h3>
+        <p>Test your understanding of logical flow between sentences.</p>
+      </div>
+    </div>
+    <div id="conjDrillBox" class="quiz-box"></div>
+  </div>
+  <footer class="book-credit-footer">
+    <p>Lesson/page references follow <em>Nihongo Challenge N4 文法と読む練習</em> (ASK Publishing). Content is for personal study.</p>
+  </footer>
+</section>
+
+<!-- GRAMMAR COMPARE PAGE -->
+<section id="compare" class="page">
+  <div class="section-head">
+    <div>
+      <span class="eyebrow">GRAMMAR COMPARISON</span>
+      <h2>Compare 2 to 6 grammar points</h2>
+      <p>Useful when two patterns look similar in the JLPT exam.</p>
+    </div>
+  </div>
+  <div class="compare-presets-wrap">
+    <span class="eyebrow">POPULAR JLPT CONTRAST GROUPS</span>
+    <div class="compare-presets-list" id="comparePresetsList">
+      <button type="button" class="preset-chip" data-preset="ba-tara-to-nara">ば · たら · と · なら</button>
+      <button type="button" class="preset-chip" data-preset="souda-sou-youda-rashii">そうだ(伝聞) · そう(様態) · ようだ · らしい</button>
+      <button type="button" class="preset-chip" data-preset="node-kara">ので · から</button>
+      <button type="button" class="preset-chip" data-preset="youni-tameni">ように · ために</button>
+      <button type="button" class="preset-chip" data-preset="kotonisuru-kotoninaru">ことにする · ことになる</button>
+      <button type="button" class="preset-chip" data-preset="temorau-tekureru-teageru">てもらう · てくれる · てあげる</button>
+      <button type="button" class="preset-chip" data-preset="ageru-kureru-morau">あげる · くれる · もらう</button>
+      <button type="button" class="preset-chip" data-preset="ukemi-saseru-saserareru">受身 · 使役 · 使役受身</button>
+    </div>
+  </div>
+  <div id="compareSelectors" class="compare-selectors"></div>
+  <button id="addCompare" class="add-btn">＋ Add another grammar point</button>
+  <div id="compareResult" class="compare-result empty-panel">Select at least 2 grammar points.</div>
+</section>
+
+<!-- BOOK COMPANION PAGE (PRIVATE GATED) -->
+<section id="companion" class="page">
+  <div id="companionGate" class="companion-gate-box">
+    <div class="gate-card">
+      <span class="eyebrow">PRIVATE ACCESS</span>
+      <h2>Book Companion Self-Checker</h2>
+      <p>Check your exercise answers against the textbook answer keys. Enter your study passphrase to continue.</p>
+      <form id="companionGateForm" class="gate-form">
+        <div class="gate-input-group">
+          <input type="password" id="companionPassphrase" placeholder="Enter passphrase (default: password)" autocomplete="current-password" required>
+          <button type="submit" class="hero-btn-primary">Unlock Companion</button>
+        </div>
+        <p id="gateError" class="gate-error-msg" hidden>Incorrect passphrase. Please try again.</p>
+        <small class="gate-note">References <em>Nihongo Challenge N4 文法と読む練習</em> (ASK Publishing). Content is for personal study.</small>
+      </form>
+    </div>
+  </div>
+
+  <div id="companionApp" class="companion-app" hidden>
+    <div class="section-head">
+      <div>
+        <span class="eyebrow">BOOK COMPANION</span>
+        <h2>Exercise Self-Checker</h2>
+        <p>Select a lesson or review section, enter your answers (1–4), and instantly grade your work.</p>
+      </div>
+      <button id="companionLockBtn" class="tool-btn" type="button">Lock Session</button>
+    </div>
+    <div class="companion-controls">
+      <select id="companionSectionSelect" aria-label="Select section to grade"></select>
+      <button id="companionClearBtn" class="tool-btn" type="button">Clear Inputs</button>
+    </div>
+    <div class="companion-sheet-card">
+      <div class="sheet-info-head">
+        <h3 id="compLessonTitle">第1話: 日本のお正月</h3>
+        <span id="compLessonPage" class="comp-page-badge">Book p.28</span>
+      </div>
+      <div id="companionGrid" class="companion-input-grid"></div>
+      <div class="companion-grade-actions">
+        <button id="companionGradeBtn" class="hero-btn-primary" type="button">Check Answers</button>
+      </div>
+      <div id="companionScoreBox" class="companion-score-box" hidden></div>
+    </div>
+    <div class="companion-history-panel" id="companionHistoryPanel">
+      <h3>Study Performance by Lesson</h3>
+      <div id="companionWeakLessons" class="weak-lessons-list"></div>
+    </div>
+    <footer class="book-credit-footer">
+      <p>Content is for personal study. Answer checking only — refer to your textbook for questions and reading exercises.</p>
+    </footer>
+  </div>
+</section>
+
+<!-- KANA PAGE -->
+<section id="kana" class="page">
+  <div class="section-head kana-head">
+    <div>
+      <span class="eyebrow">KANA FOR BEGINNERS</span>
+      <h2>Hiragana & Katakana</h2>
+      <p>Learn the sounds in a real gojūon grid, with a detail panel for each cell.</p>
+    </div>
+    <div id="kanaProgressWrap" class="kana-progress-wrap">
+      <div class="kana-progress-copy">
+        <b id="kanaProgressText">0 / 0 learned</b>
+        <span id="kanaProgressHint">Tracking progress on this device</span>
+      </div>
+      <div class="progress-bar">
+        <div id="kanaProgressBar" class="progress-bar-fill"></div>
+      </div>
+    </div>
+  </div>
+  <div class="kana-toolbar">
+    <div class="segmented" role="tablist" aria-label="Kana script switch">
+      <button class="segmented-btn active" data-kana-view="hira">Hiragana</button>
+      <button class="segmented-btn" data-kana-view="kata">Katakana</button>
+      <button class="segmented-btn" data-kana-view="both">Both</button>
+    </div>
+    <div class="segmented" role="tablist" aria-label="Kana set switch">
+      <button class="segmented-btn active" data-kana-set="basic">Basic</button>
+      <button class="segmented-btn" data-kana-set="dakuten">Dakuten</button>
+      <button class="segmented-btn" data-kana-set="combo">Combinations</button>
+    </div>
+    <button id="kanaRomajiToggle" class="tool-btn" type="button">Romaji off</button>
+  </div>
+  <div class="kana-practice-bar">
+    <button class="tool-btn" data-kana-mode="flash">Flash</button>
+    <button class="tool-btn" data-kana-mode="quiz">Quiz</button>
+    <button class="tool-btn" data-kana-mode="type">Type romaji</button>
+    <button class="tool-btn" data-kana-mode="review">Review mistakes</button>
+    <button class="tool-btn" data-kana-mode="export">Download chart</button>
+  </div>
+  <div id="kanaGridWrap" class="kana-grid-wrap"><div id="kanaGrid" class="kana-grid"></div></div>
+  <div id="kanaDetailHint" class="kana-detail-hint">Tap a cell to open kana details, examples, and audio.</div>
+</section>
+
+<!-- QUIZ PAGE -->
+<section id="quiz" class="page">
+  <div class="section-head">
+    <div>
+      <span class="eyebrow">QUIZ MODE</span>
+      <h2>Practice at your own pace</h2>
+      <p>Choose a topic, level, and question count. Wrong answers are collected for review.</p>
+    </div>
+  </div>
+  <div class="toolbar quiz-toolbar">
+    <select id="quizTopic" data-label="Topic">
+      <option value="mixed">Mixed topics</option>
+      <option value="vocab">Vocabulary</option>
+      <option value="kanji">Kanji</option>
+      <option value="grammar">Grammar</option>
+    </select>
+    <select id="quizLevel" data-label="Level">
+      <option value="ALL">All levels</option>
+      <option value="N5">N5</option>
+      <option value="N4">N4</option>
+      <option value="N5N4">N5 + N4</option>
+    </select>
+    <select id="quizCount" data-label="Questions">
+      <option value="5">5 questions</option>
+      <option value="10" selected>10 questions</option>
+      <option value="15">15 questions</option>
+    </select>
+    <button id="quizFuriganaToggle" class="tool-btn" type="button">Hide furigana (test mode)</button>
+    <button id="startQuiz" class="hero-btn-primary quiz-start-btn">Start Quiz</button>
+  </div>
+  <div id="quizBox" class="quiz-box"><div class="empty-panel">Pick a topic and press Start Quiz.</div></div>
+</section>
+
+<!-- GUIDE PAGE -->
+<section id="how" class="page">
+  <div class="how-card">
+    <span class="eyebrow">HOW TO USE</span>
+    <h2>A simple N5 → N4 study flow</h2>
+    <ol>
+      <li>Finish N5 foundations first: common vocabulary, basic kanji and core grammar.</li>
+      <li>Switch to <b>N4 + N5</b> when you start N4.</li>
+      <li>Open a card to see the reading above the kanji, meanings and examples.</li>
+      <li>Use <b>Mark as read</b> and <b>Know it</b> to build browser-saved progress.</li>
+      <li>Use Flashcards and Quiz to actively recall instead of only reading.</li>
+      <li>Grammar Compare is for pairs or groups of 2–6 patterns.</li>
+    </ol>
+    <div class="settings-row">
+      <label><input type="checkbox" id="furiganaToggle" checked> Show furigana</label>
+      <label><input type="checkbox" id="romajiToggle"> Show romaji</label>
+    </div>
+  </div>
+</section>
+>>>>>>> 54359cc (Update project)
 </main>
-<div id="mobileNav" class="mobile-nav"><button data-page="home">⌂<span>Home</span></button><button data-page="vocab">語<span>Vocab</span></button><button data-page="grammar">文<span>Grammar</span></button><button data-page="kanji">字<span>Kanji</span></button><button data-page="kana">あ<span>Kana</span></button></div>
-<div id="modal" class="modal" hidden><div class="modal-backdrop"></div><div class="modal-card" role="dialog" aria-modal="true" aria-labelledby="modalTitle" tabindex="-1"><div class="modal-header"><div id="modalTitle" class="modal-title">Details</div><button id="closeModal" class="close" aria-label="Close">×</button></div><div id="modalContent" class="modal-content"></div></div></div>
-<script src="js/app.js"></script>
-</body></html>
+
+<!-- Floating Glass Bottom Dock (Mobile) -->
+<div id="mobileNav" class="mobile-nav glass-dock" role="navigation" aria-label="Mobile Navigation">
+  <div class="dock-active-pill" id="dockActivePill" aria-hidden="true"></div>
+  <button data-page="home" class="dock-btn active" aria-current="page">
+    <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></svg>
+    <span>Home</span>
+  </button>
+  <button data-page="kana" class="dock-btn">
+    <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="4"></rect><path d="M8 8h8M12 8v8M8 16h8"></path></svg>
+    <span>Kana</span>
+  </button>
+  <button data-page="vocab" class="dock-btn">
+    <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1-2.5-2.5Z"></path><path d="M6 6h10M6 10h10M6 14h6"></path></svg>
+    <span>Vocab</span>
+  </button>
+  <button data-page="kanji" class="dock-btn">
+    <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"></circle><path d="M12 7v10M7 12h10"></path></svg>
+    <span>Kanji</span>
+  </button>
+  <button id="mobileMoreBtn" class="dock-btn" type="button" aria-label="Open more menu">
+    <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="1.5"></circle><circle cx="19" cy="12" r="1.5"></circle><circle cx="5" cy="12" r="1.5"></circle></svg>
+    <span>More</span>
+  </button>
+</div>
+
+<!-- Modals & Sheets -->
+<div id="moreSheet" class="modal sheet" hidden>
+  <div class="modal-backdrop"></div>
+  <div class="modal-card sheet-card" role="dialog" aria-modal="true" aria-labelledby="moreSheetTitle" tabindex="-1">
+    <div class="sheet-drag-handle" aria-hidden="true"></div>
+    <div class="modal-header">
+      <div id="moreSheetTitle" class="modal-title">Study Hub Navigation</div>
+      <button id="closeMoreSheet" class="close" aria-label="Close">
+        <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 6 6 18M6 6l12 12"></path></svg>
+      </button>
+    </div>
+    <div id="moreSheetContent" class="modal-content"></div>
+  </div>
+</div>
+
+<div id="settingsSheet" class="modal sheet" hidden>
+  <div class="modal-backdrop"></div>
+  <div class="modal-card sheet-card" role="dialog" aria-modal="true" aria-labelledby="settingsTitle" tabindex="-1">
+    <div class="sheet-drag-handle" aria-hidden="true"></div>
+    <div class="modal-header">
+      <div id="settingsTitle" class="modal-title">Settings & Study Preferences</div>
+      <button id="closeSettingsSheet" class="close" aria-label="Close">
+        <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 6 6 18M6 6l12 12"></path></svg>
+      </button>
+    </div>
+    <div id="settingsContent" class="modal-content"></div>
+  </div>
+</div>
+
+<div id="searchSheet" class="modal sheet" hidden>
+  <div class="modal-backdrop"></div>
+  <div class="modal-card sheet-card" role="dialog" aria-modal="true" aria-labelledby="searchTitle" tabindex="-1">
+    <div class="sheet-drag-handle" aria-hidden="true"></div>
+    <div class="modal-header">
+      <div id="searchTitle" class="modal-title">Search Across JLPT Hub</div>
+      <button id="closeSearchSheet" class="close" aria-label="Close">
+        <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 6 6 18M6 6l12 12"></path></svg>
+      </button>
+    </div>
+    <div id="searchContent" class="modal-content"></div>
+  </div>
+</div>
+
+<div id="onboardingSheet" class="modal sheet" hidden>
+  <div class="modal-backdrop"></div>
+  <div class="modal-card sheet-card" role="dialog" aria-modal="true" aria-labelledby="onboardingTitle" tabindex="-1">
+    <div class="sheet-drag-handle" aria-hidden="true"></div>
+    <div class="modal-header">
+      <div id="onboardingTitle" class="modal-title">Welcome to JLPT Study Desk</div>
+      <button id="closeOnboardingSheet" class="close" aria-label="Close">
+        <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 6 6 18M6 6l12 12"></path></svg>
+      </button>
+    </div>
+    <div id="onboardingContent" class="modal-content"></div>
+  </div>
+</div>
+
+<div id="modal" class="modal" hidden>
+  <div class="modal-backdrop"></div>
+  <div id="modalCard" class="modal-card" role="dialog" aria-modal="true" aria-labelledby="modalTitle" tabindex="-1">
+    <div class="modal-header">
+      <div id="modalTitle" class="modal-title">Details</div>
+      <button id="closeModal" class="close" type="button" role="button" aria-label="Close details">
+        <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 6 6 18M6 6l12 12"></path></svg>
+      </button>
+    </div>
+    <div id="modalContent" class="modal-content"></div>
+  </div>
+</div>
+
+<!-- Portal container for custom select floating panels -->
+<div id="dropdownPortal" class="dropdown-portal" aria-hidden="true"></div>
+
+<script src="js/kana-data.js?v=stationery15"></script>
+<script src="js/book-features.js?v=stationery16"></script>
+<script src="js/app.js?v=stationery15"></script>
+</body>
+</html>

@@ -1,0 +1,2547 @@
+{
+  "LOCAL": {
+    "success": true,
+    "data": {
+      "uiCounts": {
+        "words": "1,797",
+        "kanji": "443",
+        "grammar": "179",
+        "sentences": "3,389"
+      },
+      "vocabTotal": 1797,
+      "kanjiTotal": 443,
+      "grammarTotal": 179,
+      "kanaTotal": 104,
+      "emptyFields": 2,
+      "readingNonKana": [
+        {
+          "word": "十",
+          "reading": "(〜を) とお"
+        },
+        {
+          "word": "いい; よい",
+          "reading": "いい; よい"
+        },
+        {
+          "word": "行く",
+          "reading": "いく; ゆく"
+        },
+        {
+          "word": "お～",
+          "reading": "お～"
+        },
+        {
+          "word": "結婚",
+          "reading": "けっこん (する)"
+        },
+        {
+          "word": "散歩",
+          "reading": "さんぽ (する)"
+        },
+        {
+          "word": "じゃ; じゃあ",
+          "reading": "じゃ; じゃあ"
+        },
+        {
+          "word": "そう; そうです",
+          "reading": "そう; そうです"
+        },
+        {
+          "word": "そうして; そして",
+          "reading": "そうして; そして"
+        },
+        {
+          "word": "掃除",
+          "reading": "そうじ (する)"
+        }
+      ],
+      "meaningWithJp": [
+        {
+          "word": "方",
+          "meaning": "person way of doing -- honorific form for 人 (ひと) --; way of doing"
+        },
+        {
+          "word": "なぜ",
+          "meaning": "why why (same as どうして)"
+        },
+        {
+          "word": "半",
+          "meaning": "half half (e.g., にじはん | half-past two)"
+        },
+        {
+          "word": "致す",
+          "meaning": "(humble) to do -- extra-modest expression for する --"
+        },
+        {
+          "word": "いらっしゃる",
+          "meaning": "(respectful) to be to come or to go -- honorific expression for いく, くる, and いる --"
+        },
+        {
+          "word": "お宅",
+          "meaning": "(polite) your house (someone else's) house; home -- polite word for 家 (いえ) --"
+        },
+        {
+          "word": "おっしゃる",
+          "meaning": "(respectful) to say -- honorific expression for いう --"
+        },
+        {
+          "word": "差し上げる",
+          "meaning": "(polite) to give -- humble expression for あげる --"
+        },
+        {
+          "word": "大体",
+          "meaning": "generally approximately; in most cases; in general; to begin with (same as もともと)"
+        },
+        {
+          "word": "尋ねる",
+          "meaning": "to ask to inquire (same as 質問する)"
+        }
+      ],
+      "duplicatesCount": 0,
+      "duplicateSamples": [],
+      "specificFound": {
+        "学生": {
+          "word": "学生",
+          "reading": "がくせい",
+          "meanings": [
+            "student"
+          ],
+          "examples": [
+            {
+              "ja": "学生の半数が休んでいた。",
+              "furigana": "{学生|がくせい}の{半数|はんすう}が{休|やす}んでいた。",
+              "en": "Half the students were absent.",
+              "tatoeba_id": 184267,
+              "translation": "Half the students were absent."
+            },
+            {
+              "ja": "ルシーはアメリカからきた学生だ。",
+              "furigana": "ルシーはアメリカからきた{学生|がくせい}だ。",
+              "en": "Lucy is a student from America.",
+              "tatoeba_id": 192389,
+              "translation": "Lucy is a student from America."
+            }
+          ]
+        },
+        "取る": {
+          "word": "取る",
+          "reading": "とる",
+          "meanings": [
+            "to take something",
+            "to take",
+            "to take (a class); to get (a grade)"
+          ],
+          "examples": [
+            {
+              "ja": "そのお金はいざというときのために取っておくよ。",
+              "furigana": "そのお{金|かね}はいざというときのために{取|と}っておくよ。",
+              "en": "I'm going to lay aside that money for emergencies.",
+              "tatoeba_id": 213310,
+              "translation": "I'm going to lay aside that money for emergencies."
+            },
+            {
+              "ja": "水分をたくさん取ってください。",
+              "furigana": "{水分|すいぶん}をたくさん{取|と}ってください。",
+              "en": "You should drink a lot of liquid.",
+              "tatoeba_id": 143632,
+              "translation": "You should drink a lot of liquid."
+            },
+            {
+              "ja": "写真を取ります。",
+              "en": "Translation not available",
+              "furigana": [
+                {
+                  "text": "写真",
+                  "reading": "しゃしん"
+                },
+                {
+                  "text": "を",
+                  "reading": null
+                },
+                {
+                  "text": "取",
+                  "reading": "とる"
+                },
+                {
+                  "text": "り",
+                  "reading": null
+                },
+                {
+                  "text": "ま",
+                  "reading": null
+                },
+                {
+                  "text": "す",
+                  "reading": null
+                },
+                {
+                  "text": "。",
+                  "reading": null
+                }
+              ],
+              "translation": "Translation not available"
+            }
+          ]
+        },
+        "低い": {
+          "word": "低い",
+          "reading": "ひくい",
+          "meanings": [
+            "short",
+            "low",
+            "short, low"
+          ],
+          "examples": [
+            {
+              "ja": "ラジオの音を低くして下さい。",
+              "furigana": "ラジオの{音|おと}を{低|ひく}くして{下|くだ}さい。",
+              "en": "Please turn down the radio.",
+              "tatoeba_id": 192612,
+              "translation": "Please turn down the radio."
+            },
+            {
+              "ja": "このイスは私には低すぎる。",
+              "furigana": "このイスは{私|わたし}には{低|ひく}すぎる。",
+              "en": "This chair is too low for me.",
+              "tatoeba_id": 223992,
+              "translation": "This chair is too low for me."
+            },
+            {
+              "ja": "この山はあまり高くないです。",
+              "en": "Translation not available",
+              "furigana": [
+                {
+                  "text": "こ",
+                  "reading": null
+                },
+                {
+                  "text": "の",
+                  "reading": null
+                },
+                {
+                  "text": "山",
+                  "reading": "やま"
+                },
+                {
+                  "text": "は",
+                  "reading": null
+                },
+                {
+                  "text": "あ",
+                  "reading": null
+                },
+                {
+                  "text": "ま",
+                  "reading": null
+                },
+                {
+                  "text": "り",
+                  "reading": null
+                },
+                {
+                  "text": "高",
+                  "reading": "たかい"
+                },
+                {
+                  "text": "く",
+                  "reading": null
+                },
+                {
+                  "text": "な",
+                  "reading": null
+                },
+                {
+                  "text": "い",
+                  "reading": null
+                },
+                {
+                  "text": "で",
+                  "reading": null
+                },
+                {
+                  "text": "す",
+                  "reading": null
+                },
+                {
+                  "text": "。",
+                  "reading": null
+                }
+              ],
+              "translation": "Translation not available"
+            }
+          ]
+        },
+        "駐車場": {
+          "word": "駐車場",
+          "reading": "ちゅうしゃじょ",
+          "meanings": [
+            "う"
+          ],
+          "examples": [
+            {
+              "ja": "parking lot 車を駐車場に止めます。",
+              "en": "Translation not available",
+              "furigana": [
+                {
+                  "text": "p",
+                  "reading": null
+                },
+                {
+                  "text": "a",
+                  "reading": null
+                },
+                {
+                  "text": "r",
+                  "reading": null
+                },
+                {
+                  "text": "k",
+                  "reading": null
+                },
+                {
+                  "text": "i",
+                  "reading": null
+                },
+                {
+                  "text": "n",
+                  "reading": null
+                },
+                {
+                  "text": "g",
+                  "reading": null
+                },
+                {
+                  "text": " ",
+                  "reading": null
+                },
+                {
+                  "text": "l",
+                  "reading": null
+                },
+                {
+                  "text": "o",
+                  "reading": null
+                },
+                {
+                  "text": "t",
+                  "reading": null
+                },
+                {
+                  "text": " ",
+                  "reading": null
+                },
+                {
+                  "text": "車",
+                  "reading": "くるま"
+                },
+                {
+                  "text": "を",
+                  "reading": null
+                },
+                {
+                  "text": "駐車場",
+                  "reading": "ちゅうしゃじょ"
+                },
+                {
+                  "text": "に",
+                  "reading": null
+                },
+                {
+                  "text": "止",
+                  "reading": "とまる"
+                },
+                {
+                  "text": "め",
+                  "reading": null
+                },
+                {
+                  "text": "ま",
+                  "reading": null
+                },
+                {
+                  "text": "す",
+                  "reading": null
+                },
+                {
+                  "text": "。",
+                  "reading": null
+                }
+              ],
+              "translation": "Translation not available"
+            }
+          ]
+        },
+        "工場長": {
+          "word": "工場長",
+          "reading": "こうじょうちょ",
+          "meanings": [
+            "う"
+          ],
+          "examples": [
+            {
+              "ja": "factory manager 工場長に質問しました。",
+              "en": "Translation not available",
+              "furigana": [
+                {
+                  "text": "f",
+                  "reading": null
+                },
+                {
+                  "text": "a",
+                  "reading": null
+                },
+                {
+                  "text": "c",
+                  "reading": null
+                },
+                {
+                  "text": "t",
+                  "reading": null
+                },
+                {
+                  "text": "o",
+                  "reading": null
+                },
+                {
+                  "text": "r",
+                  "reading": null
+                },
+                {
+                  "text": "y",
+                  "reading": null
+                },
+                {
+                  "text": " ",
+                  "reading": null
+                },
+                {
+                  "text": "m",
+                  "reading": null
+                },
+                {
+                  "text": "a",
+                  "reading": null
+                },
+                {
+                  "text": "n",
+                  "reading": null
+                },
+                {
+                  "text": "a",
+                  "reading": null
+                },
+                {
+                  "text": "g",
+                  "reading": null
+                },
+                {
+                  "text": "e",
+                  "reading": null
+                },
+                {
+                  "text": "r",
+                  "reading": null
+                },
+                {
+                  "text": " ",
+                  "reading": null
+                },
+                {
+                  "text": "工場長",
+                  "reading": "こうじょうちょ"
+                },
+                {
+                  "text": "に",
+                  "reading": null
+                },
+                {
+                  "text": "質問",
+                  "reading": "しつもん"
+                },
+                {
+                  "text": "し",
+                  "reading": null
+                },
+                {
+                  "text": "ま",
+                  "reading": null
+                },
+                {
+                  "text": "し",
+                  "reading": null
+                },
+                {
+                  "text": "た",
+                  "reading": null
+                },
+                {
+                  "text": "。",
+                  "reading": null
+                }
+              ],
+              "translation": "Translation not available"
+            }
+          ]
+        },
+        "教わる": {
+          "word": "教わる",
+          "reading": "おそわる",
+          "meanings": [
+            "to be taught"
+          ],
+          "examples": [
+            {
+              "ja": "先生に漢字を教わりました。 学生 がくせい student 私は日本語の学生です。",
+              "en": "Translation not available",
+              "furigana": [
+                {
+                  "text": "先生",
+                  "reading": "せんせい"
+                },
+                {
+                  "text": "に",
+                  "reading": null
+                },
+                {
+                  "text": "漢字",
+                  "reading": "かんじ"
+                },
+                {
+                  "text": "を",
+                  "reading": null
+                },
+                {
+                  "text": "教",
+                  "reading": "おしえる"
+                },
+                {
+                  "text": "わ",
+                  "reading": null
+                },
+                {
+                  "text": "り",
+                  "reading": null
+                },
+                {
+                  "text": "ま",
+                  "reading": null
+                },
+                {
+                  "text": "し",
+                  "reading": null
+                },
+                {
+                  "text": "た",
+                  "reading": null
+                },
+                {
+                  "text": "。",
+                  "reading": null
+                },
+                {
+                  "text": " ",
+                  "reading": null
+                },
+                {
+                  "text": "学生",
+                  "reading": "がくせい"
+                },
+                {
+                  "text": " ",
+                  "reading": null
+                },
+                {
+                  "text": "が",
+                  "reading": null
+                },
+                {
+                  "text": "く",
+                  "reading": null
+                },
+                {
+                  "text": "せ",
+                  "reading": null
+                },
+                {
+                  "text": "い",
+                  "reading": null
+                },
+                {
+                  "text": " ",
+                  "reading": null
+                },
+                {
+                  "text": "s",
+                  "reading": null
+                },
+                {
+                  "text": "t",
+                  "reading": null
+                },
+                {
+                  "text": "u",
+                  "reading": null
+                },
+                {
+                  "text": "d",
+                  "reading": null
+                },
+                {
+                  "text": "e",
+                  "reading": null
+                },
+                {
+                  "text": "n",
+                  "reading": null
+                },
+                {
+                  "text": "t",
+                  "reading": null
+                },
+                {
+                  "text": " ",
+                  "reading": null
+                },
+                {
+                  "text": "私",
+                  "reading": "わたくし"
+                },
+                {
+                  "text": "は",
+                  "reading": null
+                },
+                {
+                  "text": "日本語",
+                  "reading": "にほんご"
+                },
+                {
+                  "text": "の",
+                  "reading": null
+                },
+                {
+                  "text": "学生",
+                  "reading": "がくせい"
+                },
+                {
+                  "text": "で",
+                  "reading": null
+                },
+                {
+                  "text": "す",
+                  "reading": null
+                },
+                {
+                  "text": "。",
+                  "reading": null
+                }
+              ],
+              "translation": "Translation not available"
+            }
+          ]
+        },
+        "洗面所": {
+          "word": "洗面所",
+          "reading": "せんめんじょ",
+          "meanings": [
+            "washroom; bathroom sink"
+          ],
+          "examples": [
+            {
+              "ja": "area 洗面所で顔を洗います。",
+              "en": "Translation not available",
+              "furigana": [
+                {
+                  "text": "a",
+                  "reading": null
+                },
+                {
+                  "text": "r",
+                  "reading": null
+                },
+                {
+                  "text": "e",
+                  "reading": null
+                },
+                {
+                  "text": "a",
+                  "reading": null
+                },
+                {
+                  "text": " ",
+                  "reading": null
+                },
+                {
+                  "text": "洗面所",
+                  "reading": "せんめんじょ"
+                },
+                {
+                  "text": "で",
+                  "reading": null
+                },
+                {
+                  "text": "顔",
+                  "reading": "かお"
+                },
+                {
+                  "text": "を",
+                  "reading": null
+                },
+                {
+                  "text": "洗",
+                  "reading": "あらう"
+                },
+                {
+                  "text": "い",
+                  "reading": null
+                },
+                {
+                  "text": "ま",
+                  "reading": null
+                },
+                {
+                  "text": "す",
+                  "reading": null
+                },
+                {
+                  "text": "。",
+                  "reading": null
+                }
+              ],
+              "translation": "Translation not available"
+            }
+          ]
+        },
+        "練習問題": {
+          "word": "練習問題",
+          "reading": "れんしゅうもん",
+          "meanings": [
+            "だい"
+          ],
+          "examples": [
+            {
+              "ja": "practice question 練習問題を解きます。",
+              "en": "Translation not available",
+              "furigana": [
+                {
+                  "text": "p",
+                  "reading": null
+                },
+                {
+                  "text": "r",
+                  "reading": null
+                },
+                {
+                  "text": "a",
+                  "reading": null
+                },
+                {
+                  "text": "c",
+                  "reading": null
+                },
+                {
+                  "text": "t",
+                  "reading": null
+                },
+                {
+                  "text": "i",
+                  "reading": null
+                },
+                {
+                  "text": "c",
+                  "reading": null
+                },
+                {
+                  "text": "e",
+                  "reading": null
+                },
+                {
+                  "text": " ",
+                  "reading": null
+                },
+                {
+                  "text": "q",
+                  "reading": null
+                },
+                {
+                  "text": "u",
+                  "reading": null
+                },
+                {
+                  "text": "e",
+                  "reading": null
+                },
+                {
+                  "text": "s",
+                  "reading": null
+                },
+                {
+                  "text": "t",
+                  "reading": null
+                },
+                {
+                  "text": "i",
+                  "reading": null
+                },
+                {
+                  "text": "o",
+                  "reading": null
+                },
+                {
+                  "text": "n",
+                  "reading": null
+                },
+                {
+                  "text": " ",
+                  "reading": null
+                },
+                {
+                  "text": "練習問題",
+                  "reading": "れんしゅうもん"
+                },
+                {
+                  "text": "を",
+                  "reading": null
+                },
+                {
+                  "text": "解きます",
+                  "reading": "きます"
+                },
+                {
+                  "text": "。",
+                  "reading": null
+                }
+              ],
+              "translation": "Translation not available"
+            }
+          ]
+        },
+        "国語": {
+          "word": "国語",
+          "reading": "こくご",
+          "meanings": [
+            "Japanese language (school"
+          ],
+          "examples": [
+            {
+              "ja": "subject) 国語の宿題があります。",
+              "en": "Translation not available",
+              "furigana": [
+                {
+                  "text": "s",
+                  "reading": null
+                },
+                {
+                  "text": "u",
+                  "reading": null
+                },
+                {
+                  "text": "b",
+                  "reading": null
+                },
+                {
+                  "text": "j",
+                  "reading": null
+                },
+                {
+                  "text": "e",
+                  "reading": null
+                },
+                {
+                  "text": "c",
+                  "reading": null
+                },
+                {
+                  "text": "t",
+                  "reading": null
+                },
+                {
+                  "text": ")",
+                  "reading": null
+                },
+                {
+                  "text": " ",
+                  "reading": null
+                },
+                {
+                  "text": "国語",
+                  "reading": "こくご"
+                },
+                {
+                  "text": "の",
+                  "reading": null
+                },
+                {
+                  "text": "宿題",
+                  "reading": "しゅくだい"
+                },
+                {
+                  "text": "が",
+                  "reading": null
+                },
+                {
+                  "text": "あ",
+                  "reading": null
+                },
+                {
+                  "text": "り",
+                  "reading": null
+                },
+                {
+                  "text": "ま",
+                  "reading": null
+                },
+                {
+                  "text": "す",
+                  "reading": null
+                },
+                {
+                  "text": "。",
+                  "reading": null
+                }
+              ],
+              "translation": "Translation not available"
+            }
+          ]
+        },
+        "写真撮影": {
+          "word": "写真撮影",
+          "reading": "しゃしんさつえ",
+          "meanings": [
+            "い"
+          ],
+          "examples": [
+            {
+              "ja": "photography 写真撮影をしました。",
+              "en": "Translation not available",
+              "furigana": [
+                {
+                  "text": "p",
+                  "reading": null
+                },
+                {
+                  "text": "h",
+                  "reading": null
+                },
+                {
+                  "text": "o",
+                  "reading": null
+                },
+                {
+                  "text": "t",
+                  "reading": null
+                },
+                {
+                  "text": "o",
+                  "reading": null
+                },
+                {
+                  "text": "g",
+                  "reading": null
+                },
+                {
+                  "text": "r",
+                  "reading": null
+                },
+                {
+                  "text": "a",
+                  "reading": null
+                },
+                {
+                  "text": "p",
+                  "reading": null
+                },
+                {
+                  "text": "h",
+                  "reading": null
+                },
+                {
+                  "text": "y",
+                  "reading": null
+                },
+                {
+                  "text": " ",
+                  "reading": null
+                },
+                {
+                  "text": "写真撮影",
+                  "reading": "しゃしんさつえ"
+                },
+                {
+                  "text": "を",
+                  "reading": null
+                },
+                {
+                  "text": "し",
+                  "reading": null
+                },
+                {
+                  "text": "ま",
+                  "reading": null
+                },
+                {
+                  "text": "し",
+                  "reading": null
+                },
+                {
+                  "text": "た",
+                  "reading": null
+                },
+                {
+                  "text": "。",
+                  "reading": null
+                }
+              ],
+              "translation": "Translation not available"
+            }
+          ]
+        },
+        "航空会社": {
+          "word": "航空会社",
+          "reading": "こうくうがいし",
+          "meanings": [
+            "ゃ"
+          ],
+          "examples": [
+            {
+              "ja": "airline company 航空会社に電話しました。",
+              "en": "Translation not available",
+              "furigana": [
+                {
+                  "text": "a",
+                  "reading": null
+                },
+                {
+                  "text": "i",
+                  "reading": null
+                },
+                {
+                  "text": "r",
+                  "reading": null
+                },
+                {
+                  "text": "l",
+                  "reading": null
+                },
+                {
+                  "text": "i",
+                  "reading": null
+                },
+                {
+                  "text": "n",
+                  "reading": null
+                },
+                {
+                  "text": "e",
+                  "reading": null
+                },
+                {
+                  "text": " ",
+                  "reading": null
+                },
+                {
+                  "text": "c",
+                  "reading": null
+                },
+                {
+                  "text": "o",
+                  "reading": null
+                },
+                {
+                  "text": "m",
+                  "reading": null
+                },
+                {
+                  "text": "p",
+                  "reading": null
+                },
+                {
+                  "text": "a",
+                  "reading": null
+                },
+                {
+                  "text": "n",
+                  "reading": null
+                },
+                {
+                  "text": "y",
+                  "reading": null
+                },
+                {
+                  "text": " ",
+                  "reading": null
+                },
+                {
+                  "text": "航空会社",
+                  "reading": "こうくうがいし"
+                },
+                {
+                  "text": "に",
+                  "reading": null
+                },
+                {
+                  "text": "電話",
+                  "reading": "でんわ"
+                },
+                {
+                  "text": "し",
+                  "reading": null
+                },
+                {
+                  "text": "ま",
+                  "reading": null
+                },
+                {
+                  "text": "し",
+                  "reading": null
+                },
+                {
+                  "text": "た",
+                  "reading": null
+                },
+                {
+                  "text": "。",
+                  "reading": null
+                }
+              ],
+              "translation": "Translation not available"
+            }
+          ]
+        },
+        "旅行会社": {
+          "word": "旅行会社",
+          "reading": "りょこうがいし",
+          "meanings": [
+            "ゃ"
+          ],
+          "examples": [
+            {
+              "ja": "travel agency 旅行会社で予約しました。 659 切符売り場きっぷうりば ticket counter 切符売り場はあそこです。",
+              "en": "Translation not available",
+              "furigana": [
+                {
+                  "text": "t",
+                  "reading": null
+                },
+                {
+                  "text": "r",
+                  "reading": null
+                },
+                {
+                  "text": "a",
+                  "reading": null
+                },
+                {
+                  "text": "v",
+                  "reading": null
+                },
+                {
+                  "text": "e",
+                  "reading": null
+                },
+                {
+                  "text": "l",
+                  "reading": null
+                },
+                {
+                  "text": " ",
+                  "reading": null
+                },
+                {
+                  "text": "a",
+                  "reading": null
+                },
+                {
+                  "text": "g",
+                  "reading": null
+                },
+                {
+                  "text": "e",
+                  "reading": null
+                },
+                {
+                  "text": "n",
+                  "reading": null
+                },
+                {
+                  "text": "c",
+                  "reading": null
+                },
+                {
+                  "text": "y",
+                  "reading": null
+                },
+                {
+                  "text": " ",
+                  "reading": null
+                },
+                {
+                  "text": "旅行会社",
+                  "reading": "りょこうがいし"
+                },
+                {
+                  "text": "で",
+                  "reading": null
+                },
+                {
+                  "text": "予約",
+                  "reading": "よやく"
+                },
+                {
+                  "text": "し",
+                  "reading": null
+                },
+                {
+                  "text": "ま",
+                  "reading": null
+                },
+                {
+                  "text": "し",
+                  "reading": null
+                },
+                {
+                  "text": "た",
+                  "reading": null
+                },
+                {
+                  "text": "。",
+                  "reading": null
+                },
+                {
+                  "text": " ",
+                  "reading": null
+                },
+                {
+                  "text": "6",
+                  "reading": null
+                },
+                {
+                  "text": "5",
+                  "reading": null
+                },
+                {
+                  "text": "9",
+                  "reading": null
+                },
+                {
+                  "text": " ",
+                  "reading": null
+                },
+                {
+                  "text": "切符",
+                  "reading": "きっぷ"
+                },
+                {
+                  "text": "売り場",
+                  "reading": "うりば"
+                },
+                {
+                  "text": "き",
+                  "reading": null
+                },
+                {
+                  "text": "っ",
+                  "reading": null
+                },
+                {
+                  "text": "ぷ",
+                  "reading": null
+                },
+                {
+                  "text": "う",
+                  "reading": null
+                },
+                {
+                  "text": "り",
+                  "reading": null
+                },
+                {
+                  "text": "ば",
+                  "reading": null
+                },
+                {
+                  "text": " ",
+                  "reading": null
+                },
+                {
+                  "text": "t",
+                  "reading": null
+                },
+                {
+                  "text": "i",
+                  "reading": null
+                },
+                {
+                  "text": "c",
+                  "reading": null
+                },
+                {
+                  "text": "k",
+                  "reading": null
+                },
+                {
+                  "text": "e",
+                  "reading": null
+                },
+                {
+                  "text": "t",
+                  "reading": null
+                },
+                {
+                  "text": " ",
+                  "reading": null
+                },
+                {
+                  "text": "c",
+                  "reading": null
+                },
+                {
+                  "text": "o",
+                  "reading": null
+                },
+                {
+                  "text": "u",
+                  "reading": null
+                },
+                {
+                  "text": "n",
+                  "reading": null
+                },
+                {
+                  "text": "t",
+                  "reading": null
+                },
+                {
+                  "text": "e",
+                  "reading": null
+                },
+                {
+                  "text": "r",
+                  "reading": null
+                },
+                {
+                  "text": " ",
+                  "reading": null
+                },
+                {
+                  "text": "切符",
+                  "reading": "きっぷ"
+                },
+                {
+                  "text": "売り場",
+                  "reading": "うりば"
+                },
+                {
+                  "text": "は",
+                  "reading": null
+                },
+                {
+                  "text": "あ",
+                  "reading": null
+                },
+                {
+                  "text": "そ",
+                  "reading": null
+                },
+                {
+                  "text": "こ",
+                  "reading": null
+                },
+                {
+                  "text": "で",
+                  "reading": null
+                },
+                {
+                  "text": "す",
+                  "reading": null
+                },
+                {
+                  "text": "。",
+                  "reading": null
+                }
+              ],
+              "translation": "Translation not available"
+            }
+          ]
+        },
+        "練習場": {
+          "word": "練習場",
+          "reading": "れんしゅうじょ",
+          "meanings": [
+            "う"
+          ],
+          "examples": [
+            {
+              "ja": "practice place 練習場で運動します。",
+              "en": "Translation not available",
+              "furigana": [
+                {
+                  "text": "p",
+                  "reading": null
+                },
+                {
+                  "text": "r",
+                  "reading": null
+                },
+                {
+                  "text": "a",
+                  "reading": null
+                },
+                {
+                  "text": "c",
+                  "reading": null
+                },
+                {
+                  "text": "t",
+                  "reading": null
+                },
+                {
+                  "text": "i",
+                  "reading": null
+                },
+                {
+                  "text": "c",
+                  "reading": null
+                },
+                {
+                  "text": "e",
+                  "reading": null
+                },
+                {
+                  "text": " ",
+                  "reading": null
+                },
+                {
+                  "text": "p",
+                  "reading": null
+                },
+                {
+                  "text": "l",
+                  "reading": null
+                },
+                {
+                  "text": "a",
+                  "reading": null
+                },
+                {
+                  "text": "c",
+                  "reading": null
+                },
+                {
+                  "text": "e",
+                  "reading": null
+                },
+                {
+                  "text": " ",
+                  "reading": null
+                },
+                {
+                  "text": "練習場",
+                  "reading": "れんしゅうじょ"
+                },
+                {
+                  "text": "で",
+                  "reading": null
+                },
+                {
+                  "text": "運動",
+                  "reading": "うんどうする"
+                },
+                {
+                  "text": "し",
+                  "reading": null
+                },
+                {
+                  "text": "ま",
+                  "reading": null
+                },
+                {
+                  "text": "す",
+                  "reading": null
+                },
+                {
+                  "text": "。",
+                  "reading": null
+                }
+              ],
+              "translation": "Translation not available"
+            }
+          ]
+        },
+        "何度": {
+          "word": "何度",
+          "reading": "なんど",
+          "meanings": [
+            "how many times; how many"
+          ],
+          "examples": [
+            {
+              "ja": "degrees 何度も練習しました。",
+              "en": "Translation not available",
+              "furigana": [
+                {
+                  "text": "d",
+                  "reading": null
+                },
+                {
+                  "text": "e",
+                  "reading": null
+                },
+                {
+                  "text": "g",
+                  "reading": null
+                },
+                {
+                  "text": "r",
+                  "reading": null
+                },
+                {
+                  "text": "e",
+                  "reading": null
+                },
+                {
+                  "text": "e",
+                  "reading": null
+                },
+                {
+                  "text": "s",
+                  "reading": null
+                },
+                {
+                  "text": " ",
+                  "reading": null
+                },
+                {
+                  "text": "何度",
+                  "reading": "なんど"
+                },
+                {
+                  "text": "も",
+                  "reading": null
+                },
+                {
+                  "text": "練習",
+                  "reading": "れんしゅう (する)"
+                },
+                {
+                  "text": "し",
+                  "reading": null
+                },
+                {
+                  "text": "ま",
+                  "reading": null
+                },
+                {
+                  "text": "し",
+                  "reading": null
+                },
+                {
+                  "text": "た",
+                  "reading": null
+                },
+                {
+                  "text": "。",
+                  "reading": null
+                }
+              ],
+              "translation": "Translation not available"
+            }
+          ]
+        }
+      },
+      "targetKanjiData": {
+        "一": {
+          "character": "一",
+          "strokes": 1,
+          "onyomi": [
+            "イチ",
+            "イツ"
+          ],
+          "kunyomi": [
+            "ひと-",
+            "ひと.つ"
+          ],
+          "meanings": [
+            "one",
+            "one radical (no.1)"
+          ],
+          "flash": false
+        },
+        "二": {
+          "character": "二",
+          "strokes": 2,
+          "onyomi": [
+            "ニ",
+            "ジ"
+          ],
+          "kunyomi": [
+            "ふた",
+            "ふた.つ",
+            "ふたたび"
+          ],
+          "meanings": [
+            "two",
+            "two radical (no. 7)"
+          ],
+          "flash": false
+        },
+        "三": {
+          "character": "三",
+          "strokes": 3,
+          "onyomi": [
+            "サン",
+            "ゾウ"
+          ],
+          "kunyomi": [
+            "み",
+            "み.つ",
+            "みっ.つ"
+          ],
+          "meanings": [
+            "three"
+          ],
+          "flash": false
+        },
+        "教": {
+          "character": "教",
+          "strokes": 11,
+          "onyomi": [
+            "キョウ"
+          ],
+          "kunyomi": [
+            "おし.える",
+            "おそ.わる"
+          ],
+          "meanings": [
+            "teach",
+            "faith",
+            "doctrine"
+          ],
+          "flash": false
+        },
+        "口": {
+          "character": "口",
+          "strokes": 3,
+          "onyomi": [
+            "コウ",
+            "ク"
+          ],
+          "kunyomi": [
+            "くち"
+          ],
+          "meanings": [
+            "mouth"
+          ],
+          "flash": false
+        },
+        "草": {
+          "character": "草",
+          "strokes": 7,
+          "onyomi": [],
+          "kunyomi": [],
+          "meanings": [],
+          "flash": true
+        },
+        "部": {
+          "character": "部",
+          "strokes": 10,
+          "onyomi": [],
+          "kunyomi": [],
+          "meanings": [],
+          "flash": true
+        },
+        "授": {
+          "character": "授",
+          "strokes": 13,
+          "onyomi": [],
+          "kunyomi": [],
+          "meanings": [],
+          "flash": true
+        }
+      },
+      "missingReadings": [
+        "合",
+        "付",
+        "向",
+        "然",
+        "歳"
+      ],
+      "ligatureMatches": [
+        "ﬁ",
+        "ﬁ",
+        "sufﬁ x",
+        "sufﬁ x",
+        "ﬁ",
+        "ﬁ",
+        "ﬁ",
+        "ﬁ",
+        "ﬁ",
+        "ﬁ",
+        "ﬁ",
+        "ﬁ",
+        "ﬁ",
+        "ﬁ",
+        "ﬁ",
+        "ﬁ",
+        "ﬁ",
+        "ﬁ",
+        "ﬂ",
+        "ﬂ",
+        "ﬁ",
+        "ﬁ",
+        "ﬁ",
+        "ﬁ",
+        "ﬁ",
+        "ﬁ",
+        "ﬂ",
+        "ﬂ",
+        "ﬂ",
+        "ﬁ",
+        "ﬁ",
+        "ﬁ",
+        "ﬁ",
+        "ﬂ",
+        "ﬂ",
+        "ﬁ",
+        "ﬁ",
+        "ﬁ",
+        "ﬁ",
+        "ﬂ",
+        "ﬂ",
+        "ﬂ",
+        "ﬂ",
+        "ﬂ",
+        "ﬁ",
+        "ﬁ",
+        "ﬁ",
+        "ﬁ",
+        "ﬁ",
+        "ﬁ",
+        "ﬁ",
+        "ﬁ",
+        "ﬁ",
+        "ﬂ",
+        "ﬂ",
+        "ﬁ",
+        "ﬂ",
+        "ﬁ",
+        "ﬂ",
+        "ﬂ",
+        "ﬁ",
+        "ﬂ",
+        "ﬁ",
+        "ﬁ",
+        "ﬁ",
+        "ﬁ",
+        "ﬂ",
+        "ﬁ",
+        "ﬂ",
+        "ﬁ",
+        "ﬁ",
+        "ﬁ",
+        "ﬁ",
+        "ﬁ",
+        "ﬁ",
+        "ﬁ",
+        "ﬁ",
+        "ﬁ",
+        "ﬁ",
+        "ﬁ",
+        "ﬁ",
+        "sufﬁ x",
+        "sufﬁ x",
+        "sufﬁ x"
+      ],
+      "kanjiFilterCounts": {
+        "n5": 84,
+        "n4": 169,
+        "n3Plus": 190
+      },
+      "kanaValidation": {
+        "kataInvalid": 0,
+        "hiraInvalid": 0
+      },
+      "translationValidation": {
+        "translatingPlaceholders": 0,
+        "missingTranslations": 0
+      }
+    },
+    "networkResponses": [
+      {
+        "url": "http://localhost:8000/",
+        "status": 200
+      },
+      {
+        "url": "http://localhost:8000/css/style.css?v=stationery14",
+        "status": 200
+      },
+      {
+        "url": "http://localhost:8000/js/kana-data.js?v=stationery15",
+        "status": 200
+      },
+      {
+        "url": "http://localhost:8000/js/app.js?v=stationery15",
+        "status": 200
+      },
+      {
+        "url": "https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400..800;1,9..144,400..800&family=Inter:wght@400;500;600;700;800&family=Shippori+Mincho:wght@500;700;800&family=Zen+Kaku+Gothic+New:wght@400;500;700&display=swap",
+        "status": 200
+      },
+      {
+        "url": "http://localhost:8000/data/vocab_source_900.json",
+        "status": 200
+      },
+      {
+        "url": "http://localhost:8000/data/kanji_flashcards.json",
+        "status": 200
+      },
+      {
+        "url": "http://localhost:8000/data/study_supplement.json",
+        "status": 200
+      },
+      {
+        "url": "https://fonts.gstatic.com/s/shipporimincho/v17/VdGDAZweH5EbgHY6YExcZfDoj0B4Z9Cm4fke5f7ErmwqJDbcxmkgTEWquC8NvBI.102.woff2",
+        "status": 200
+      },
+      {
+        "url": "https://fonts.gstatic.com/s/shipporimincho/v17/VdGDAZweH5EbgHY6YExcZfDoj0B4Z9Cm4fke5f7ErmwqJDbcxmkgTEWquC8NvBI.108.woff2",
+        "status": 200
+      },
+      {
+        "url": "https://fonts.gstatic.com/s/shipporimincho/v17/VdGDAZweH5EbgHY6YExcZfDoj0B4e9Om4fke5f7ErmwqJDbcxmkgTEWquC8NvBI.115.woff2",
+        "status": 200
+      },
+      {
+        "url": "https://fonts.gstatic.com/s/zenkakugothicnew/v19/gNMYW2drQpDw0GjzrVNFf_valaDBcznOkj4KXW7oIgA9sLCeNoPLhe6Lpg_IbDMC.111.woff2",
+        "status": 200
+      },
+      {
+        "url": "https://cdn.jsdelivr.net/gh/evanclan/OpenJLPT@main/data/json/vocab/n5.json",
+        "status": 200
+      },
+      {
+        "url": "https://fonts.gstatic.com/s/zenkakugothicnew/v19/gNMVW2drQpDw0GjzrVNFf_valaDBcznOqodNaWG6XGtdu7-LJIjxku6yox_CeVZufvVB.113.woff2",
+        "status": 200
+      },
+      {
+        "url": "https://fonts.gstatic.com/s/zenkakugothicnew/v19/gNMYW2drQpDw0GjzrVNFf_valaDBcznOkj4KXW7oIgA9sLCeNoPLhe6Lpg_IbDMC.95.woff2",
+        "status": 200
+      },
+      {
+        "url": "https://fonts.gstatic.com/s/shipporimincho/v17/VdGDAZweH5EbgHY6YExcZfDoj0B4Z9Cm4fke5f7ErmwqJDbcxmkgTEWquC8NvBI.119.woff2",
+        "status": 200
+      },
+      {
+        "url": "https://cdn.jsdelivr.net/gh/evanclan/OpenJLPT@main/data/json/kanji/n5.json",
+        "status": 200
+      },
+      {
+        "url": "https://fonts.gstatic.com/s/zenkakugothicnew/v19/gNMVW2drQpDw0GjzrVNFf_valaDBcznOqodNaWG6XGtdu7-LJIjxku6yox_CeVZufvVB.117.woff2",
+        "status": 200
+      },
+      {
+        "url": "https://cdn.jsdelivr.net/gh/evanclan/OpenJLPT@main/data/json/kanji/n4.json",
+        "status": 200
+      },
+      {
+        "url": "https://fonts.gstatic.com/s/shipporimincho/v17/VdGDAZweH5EbgHY6YExcZfDoj0B4Z9Cm4fke5f7ErmwqJDbcxmkgTEWquC8NvBI.113.woff2",
+        "status": 200
+      },
+      {
+        "url": "https://fonts.gstatic.com/s/zenkakugothicnew/v19/gNMVW2drQpDw0GjzrVNFf_valaDBcznOqodNaWG6XGtdu7-LJIjxku6yox_CeVZufvVB.112.woff2",
+        "status": 200
+      },
+      {
+        "url": "https://cdn.jsdelivr.net/gh/evanclan/OpenJLPT@main/data/json/vocab/n4.json",
+        "status": 200
+      },
+      {
+        "url": "https://fonts.gstatic.com/s/zenkakugothicnew/v19/gNMYW2drQpDw0GjzrVNFf_valaDBcznOkj4KXW7oIgA9sLCeNoPLhe6Lpg_IbDMC.113.woff2",
+        "status": 200
+      },
+      {
+        "url": "https://cdn.jsdelivr.net/gh/evanclan/OpenJLPT@main/data/json/grammar/n5.json",
+        "status": 200
+      },
+      {
+        "url": "https://fonts.gstatic.com/s/zenkakugothicnew/v19/gNMYW2drQpDw0GjzrVNFf_valaDBcznOkj4KXW7oIgA9sLCeNoPLhe6Lpg_IbDMC.117.woff2",
+        "status": 200
+      },
+      {
+        "url": "https://cdn.jsdelivr.net/gh/evanclan/OpenJLPT@main/data/json/grammar/n4.json",
+        "status": 200
+      },
+      {
+        "url": "https://fonts.gstatic.com/s/zenkakugothicnew/v19/gNMVW2drQpDw0GjzrVNFf_valaDBcznOqodNaWG6XGtdu7-LJIjxku6yox_CeVZufvVB.58.woff2",
+        "status": 200
+      },
+      {
+        "url": "https://fonts.gstatic.com/s/shipporimincho/v17/VdGDAZweH5EbgHY6YExcZfDoj0B4Z9Cm4fke5f7ErmwqJDbcxmkgTEWquC8NvBI.110.woff2",
+        "status": 200
+      },
+      {
+        "url": "https://fonts.gstatic.com/s/shipporimincho/v17/VdGDAZweH5EbgHY6YExcZfDoj0B4Z9Cm4fke5f7ErmwqJDbcxmkgTEWquC8NvBI.117.woff2",
+        "status": 200
+      },
+      {
+        "url": "https://fonts.gstatic.com/s/zenkakugothicnew/v19/gNMVW2drQpDw0GjzrVNFf_valaDBcznOqodNaWG6XGtdu7-LJIjxku6yox_CeVZufvVB.107.woff2",
+        "status": 200
+      },
+      {
+        "url": "https://fonts.gstatic.com/s/zenkakugothicnew/v19/gNMYW2drQpDw0GjzrVNFf_valaDBcznOkj4KXW7oIgA9sLCeNoPLhe6Lpg_IbDMC.119.woff2",
+        "status": 200
+      },
+      {
+        "url": "https://fonts.gstatic.com/s/zenkakugothicnew/v19/gNMVW2drQpDw0GjzrVNFf_valaDBcznOqodNWWPYTQ.woff2",
+        "status": 200
+      },
+      {
+        "url": "https://fonts.gstatic.com/s/shipporimincho/v17/VdGDAZweH5EbgHY6YExcZfDoj0B4e9Om4fke5f7ErmwqJDbcxmkgTEWquC8NvBI.117.woff2",
+        "status": 200
+      },
+      {
+        "url": "https://fonts.gstatic.com/s/shipporimincho/v17/VdGDAZweH5EbgHY6YExcZfDoj0B4e9Om4fke5f7ErmwqJDbcxmkgTEWquC8NvBI.113.woff2",
+        "status": 200
+      },
+      {
+        "url": "https://fonts.gstatic.com/s/zenkakugothicnew/v19/gNMYW2drQpDw0GjzrVNFf_valaDBcznOkj4KXW7oIgA9sLCeNoPLhe6Lpg_IbDMC.118.woff2",
+        "status": 200
+      },
+      {
+        "url": "https://fonts.gstatic.com/s/zenkakugothicnew/v19/gNMYW2drQpDw0GjzrVNFf_valaDBcznOkj4KXW7oIgA9sLCeNoPLhe6Lpg_IbDMC.109.woff2",
+        "status": 200
+      },
+      {
+        "url": "https://fonts.gstatic.com/s/zenkakugothicnew/v19/gNMYW2drQpDw0GjzrVNFf_valaDBcznOojxoTA.woff2",
+        "status": 200
+      },
+      {
+        "url": "https://fonts.gstatic.com/s/shipporimincho/v17/VdGDAZweH5EbgHY6YExcZfDoj0B4Z9CW45sP.woff2",
+        "status": 200
+      },
+      {
+        "url": "https://fonts.gstatic.com/s/zenkakugothicnew/v19/gNMVW2drQpDw0GjzrVNFf_valaDBcznOqodNaWG6XGtdu7-LJIjxku6yox_CeVZufvVB.119.woff2",
+        "status": 200
+      },
+      {
+        "url": "https://fonts.gstatic.com/s/shipporimincho/v17/VdGDAZweH5EbgHY6YExcZfDoj0B4e9Om4fke5f7ErmwqJDbcxmkgTEWquC8NvBI.118.woff2",
+        "status": 200
+      },
+      {
+        "url": "https://fonts.gstatic.com/s/shipporimincho/v17/VdGDAZweH5EbgHY6YExcZfDoj0B4Z9Cm4fke5f7ErmwqJDbcxmkgTEWquC8NvBI.118.woff2",
+        "status": 200
+      },
+      {
+        "url": "https://fonts.gstatic.com/s/zenkakugothicnew/v19/gNMYW2drQpDw0GjzrVNFf_valaDBcznOkj4KXW7oIgA9sLCeNoPLhe6Lpg_IbDMC.108.woff2",
+        "status": 200
+      },
+      {
+        "url": "https://fonts.gstatic.com/s/shipporimincho/v17/VdGDAZweH5EbgHY6YExcZfDoj0B4Z9Cm4fke5f7ErmwqJDbcxmkgTEWquC8NvBI.109.woff2",
+        "status": 200
+      },
+      {
+        "url": "https://fonts.gstatic.com/s/shipporimincho/v17/VdGDAZweH5EbgHY6YExcZfDoj0B4Z9Cm4fke5f7ErmwqJDbcxmkgTEWquC8NvBI.100.woff2",
+        "status": 200
+      },
+      {
+        "url": "https://fonts.gstatic.com/s/shipporimincho/v17/VdGDAZweH5EbgHY6YExcZfDoj0B4Z9Cm4fke5f7ErmwqJDbcxmkgTEWquC8NvBI.116.woff2",
+        "status": 200
+      },
+      {
+        "url": "https://fonts.gstatic.com/s/shipporimincho/v17/VdGDAZweH5EbgHY6YExcZfDoj0B4Z9Cm4fke5f7ErmwqJDbcxmkgTEWquC8NvBI.115.woff2",
+        "status": 200
+      },
+      {
+        "url": "https://fonts.gstatic.com/s/inter/v20/UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa1ZL7.woff2",
+        "status": 200
+      },
+      {
+        "url": "https://fonts.gstatic.com/s/shipporimincho/v17/VdGDAZweH5EbgHY6YExcZfDoj0B4Z9Cm4fke5f7ErmwqJDbcxmkgTEWquC8NvBI.111.woff2",
+        "status": 200
+      },
+      {
+        "url": "https://fonts.gstatic.com/s/shipporimincho/v17/VdGDAZweH5EbgHY6YExcZfDoj0B4Z9Cm4fke5f7ErmwqJDbcxmkgTEWquC8NvBI.95.woff2",
+        "status": 200
+      },
+      {
+        "url": "https://fonts.gstatic.com/s/zenkakugothicnew/v19/gNMVW2drQpDw0GjzrVNFf_valaDBcznOqodNaWG6XGtdu7-LJIjxku6yox_CeVZufvVB.116.woff2",
+        "status": 200
+      },
+      {
+        "url": "https://fonts.gstatic.com/s/fraunces/v38/6NU78FyLNQOQZAnv9bYEvDiIdE9Ea92uemAk_WBq8U_9v0c2Wa0KxC9TeA.woff2",
+        "status": 200
+      },
+      {
+        "url": "https://fonts.gstatic.com/s/inter/v20/UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa25L7SUc.woff2",
+        "status": 200
+      },
+      {
+        "url": "https://fonts.gstatic.com/s/shipporimincho/v17/VdGDAZweH5EbgHY6YExcZfDoj0B4Z9Cm4fke5f7ErmwqJDbcxmkgTEWquC8NvBI.105.woff2",
+        "status": 200
+      },
+      {
+        "url": "https://fonts.gstatic.com/s/shipporimincho/v17/VdGDAZweH5EbgHY6YExcZfDoj0B4Z9Cm4fke5f7ErmwqJDbcxmkgTEWquC8NvBI.104.woff2",
+        "status": 200
+      },
+      {
+        "url": "https://fonts.gstatic.com/s/shipporimincho/v17/VdGDAZweH5EbgHY6YExcZfDoj0B4Z9Cm4fke5f7ErmwqJDbcxmkgTEWquC8NvBI.86.woff2",
+        "status": 200
+      },
+      {
+        "url": "https://fonts.gstatic.com/s/shipporimincho/v17/VdGDAZweH5EbgHY6YExcZfDoj0B4Z9Cm4fke5f7ErmwqJDbcxmkgTEWquC8NvBI.91.woff2",
+        "status": 200
+      },
+      {
+        "url": "https://fonts.gstatic.com/s/shipporimincho/v17/VdGDAZweH5EbgHY6YExcZfDoj0B4Z9Cm4fke5f7ErmwqJDbcxmkgTEWquC8NvBI.107.woff2",
+        "status": 200
+      },
+      {
+        "url": "https://fonts.gstatic.com/s/shipporimincho/v17/VdGDAZweH5EbgHY6YExcZfDoj0B4Z9Cm4fke5f7ErmwqJDbcxmkgTEWquC8NvBI.101.woff2",
+        "status": 200
+      }
+    ],
+    "consoleLogs": []
+  },
+  "DEPLOYED": {
+    "success": true,
+    "data": {
+      "uiCounts": {
+        "words": "1,542",
+        "kanji": "443",
+        "grammar": "179",
+        "sentences": "3,389"
+      },
+      "vocabTotal": 1542,
+      "kanjiTotal": 443,
+      "grammarTotal": 179,
+      "kanaTotal": 0,
+      "emptyFields": 0,
+      "readingNonKana": [],
+      "meaningWithJp": [
+        {
+          "word": "駐車場",
+          "meaning": "う"
+        },
+        {
+          "word": "工場長",
+          "meaning": "う"
+        },
+        {
+          "word": "練習問題",
+          "meaning": "だい"
+        },
+        {
+          "word": "写真撮影",
+          "meaning": "い"
+        },
+        {
+          "word": "航空会社",
+          "meaning": "ゃ"
+        },
+        {
+          "word": "旅行会社",
+          "meaning": "ゃ"
+        },
+        {
+          "word": "練習場",
+          "meaning": "う"
+        }
+      ],
+      "duplicatesCount": 0,
+      "duplicateSamples": [],
+      "specificFound": {
+        "学生": {
+          "word": "学生",
+          "reading": "がくせい",
+          "meanings": [
+            "student"
+          ],
+          "examples": [
+            {
+              "ja": "学生の半数が休んでいた。",
+              "furigana": "{学生|がくせい}の{半数|はんすう}が{休|やす}んでいた。",
+              "en": "Half the students were absent.",
+              "tatoeba_id": 184267
+            },
+            {
+              "ja": "ルシーはアメリカからきた学生だ。",
+              "furigana": "ルシーはアメリカからきた{学生|がくせい}だ。",
+              "en": "Lucy is a student from America.",
+              "tatoeba_id": 192389
+            }
+          ]
+        },
+        "取る": {
+          "word": "取る",
+          "reading": "とる",
+          "meanings": [
+            "to take something",
+            "to take"
+          ],
+          "examples": [
+            {
+              "ja": "そのお金はいざというときのために取っておくよ。",
+              "furigana": "そのお{金|かね}はいざというときのために{取|と}っておくよ。",
+              "en": "I'm going to lay aside that money for emergencies.",
+              "tatoeba_id": 213310
+            },
+            {
+              "ja": "水分をたくさん取ってください。",
+              "furigana": "{水分|すいぶん}をたくさん{取|と}ってください。",
+              "en": "You should drink a lot of liquid.",
+              "tatoeba_id": 143632
+            },
+            {
+              "ja": "写真を取ります。",
+              "en": "",
+              "furigana": ""
+            }
+          ]
+        },
+        "低い": {
+          "word": "低い",
+          "reading": "ひくい",
+          "meanings": [
+            "short",
+            "low"
+          ],
+          "examples": [
+            {
+              "ja": "ラジオの音を低くして下さい。",
+              "furigana": "ラジオの{音|おと}を{低|ひく}くして{下|くだ}さい。",
+              "en": "Please turn down the radio.",
+              "tatoeba_id": 192612
+            },
+            {
+              "ja": "このイスは私には低すぎる。",
+              "furigana": "このイスは{私|わたし}には{低|ひく}すぎる。",
+              "en": "This chair is too low for me.",
+              "tatoeba_id": 223992
+            },
+            {
+              "ja": "この山はあまり高くないです。",
+              "en": "",
+              "furigana": ""
+            }
+          ]
+        },
+        "駐車場": {
+          "word": "駐車場",
+          "reading": "ちゅうしゃじょ",
+          "meanings": [
+            "う"
+          ],
+          "examples": [
+            {
+              "ja": "parking lot 車を駐車場に止めます。",
+              "en": "",
+              "furigana": ""
+            }
+          ]
+        },
+        "工場長": {
+          "word": "工場長",
+          "reading": "こうじょうちょ",
+          "meanings": [
+            "う"
+          ],
+          "examples": [
+            {
+              "ja": "factory manager 工場長に質問しました。",
+              "en": "",
+              "furigana": ""
+            }
+          ]
+        },
+        "教わる": {
+          "word": "教わる",
+          "reading": "おそわる",
+          "meanings": [
+            "to be taught"
+          ],
+          "examples": [
+            {
+              "ja": "先生に漢字を教わりました。 学生 がくせい student 私は日本語の学生です。",
+              "en": "",
+              "furigana": ""
+            }
+          ]
+        },
+        "洗面所": {
+          "word": "洗面所",
+          "reading": "せんめんじょ",
+          "meanings": [
+            "washroom; bathroom sink"
+          ],
+          "examples": [
+            {
+              "ja": "area 洗面所で顔を洗います。",
+              "en": "",
+              "furigana": ""
+            }
+          ]
+        },
+        "練習問題": {
+          "word": "練習問題",
+          "reading": "れんしゅうもん",
+          "meanings": [
+            "だい"
+          ],
+          "examples": [
+            {
+              "ja": "practice question 練習問題を解きます。",
+              "en": "",
+              "furigana": ""
+            }
+          ]
+        },
+        "国語": {
+          "word": "国語",
+          "reading": "こくご",
+          "meanings": [
+            "Japanese language (school"
+          ],
+          "examples": [
+            {
+              "ja": "subject) 国語の宿題があります。",
+              "en": "",
+              "furigana": ""
+            }
+          ]
+        },
+        "写真撮影": {
+          "word": "写真撮影",
+          "reading": "しゃしんさつえ",
+          "meanings": [
+            "い"
+          ],
+          "examples": [
+            {
+              "ja": "photography 写真撮影をしました。",
+              "en": "",
+              "furigana": ""
+            }
+          ]
+        },
+        "航空会社": {
+          "word": "航空会社",
+          "reading": "こうくうがいし",
+          "meanings": [
+            "ゃ"
+          ],
+          "examples": [
+            {
+              "ja": "airline company 航空会社に電話しました。",
+              "en": "",
+              "furigana": ""
+            }
+          ]
+        },
+        "旅行会社": {
+          "word": "旅行会社",
+          "reading": "りょこうがいし",
+          "meanings": [
+            "ゃ"
+          ],
+          "examples": [
+            {
+              "ja": "travel agency 旅行会社で予約しました。 659 切符売り場きっぷうりば ticket counter 切符売り場はあそこです。",
+              "en": "",
+              "furigana": ""
+            }
+          ]
+        },
+        "練習場": {
+          "word": "練習場",
+          "reading": "れんしゅうじょ",
+          "meanings": [
+            "う"
+          ],
+          "examples": [
+            {
+              "ja": "practice place 練習場で運動します。",
+              "en": "",
+              "furigana": ""
+            }
+          ]
+        },
+        "何度": {
+          "word": "何度",
+          "reading": "なんど",
+          "meanings": [
+            "how many times; how many"
+          ],
+          "examples": [
+            {
+              "ja": "degrees 何度も練習しました。",
+              "en": "",
+              "furigana": ""
+            }
+          ]
+        }
+      },
+      "targetKanjiData": {
+        "一": {
+          "character": "一",
+          "strokes": 1,
+          "onyomi": [
+            "イチ",
+            "イツ"
+          ],
+          "kunyomi": [
+            "ひと-",
+            "ひと.つ"
+          ],
+          "meanings": [
+            "one",
+            "one radical (no.1)"
+          ],
+          "flash": false
+        },
+        "二": {
+          "character": "二",
+          "strokes": 2,
+          "onyomi": [
+            "ニ",
+            "ジ"
+          ],
+          "kunyomi": [
+            "ふた",
+            "ふた.つ",
+            "ふたたび"
+          ],
+          "meanings": [
+            "two",
+            "two radical (no. 7)"
+          ],
+          "flash": false
+        },
+        "三": {
+          "character": "三",
+          "strokes": 3,
+          "onyomi": [
+            "サン",
+            "ゾウ"
+          ],
+          "kunyomi": [
+            "み",
+            "み.つ",
+            "みっ.つ"
+          ],
+          "meanings": [
+            "three"
+          ],
+          "flash": false
+        },
+        "教": {
+          "character": "教",
+          "strokes": 11,
+          "onyomi": [
+            "キョウ"
+          ],
+          "kunyomi": [
+            "おし.える",
+            "おそ.わる"
+          ],
+          "meanings": [
+            "teach",
+            "faith",
+            "doctrine"
+          ],
+          "flash": false
+        },
+        "口": {
+          "character": "口",
+          "strokes": 3,
+          "onyomi": [
+            "コウ",
+            "ク"
+          ],
+          "kunyomi": [
+            "くち"
+          ],
+          "meanings": [
+            "mouth"
+          ],
+          "flash": false
+        },
+        "草": {
+          "character": "草",
+          "strokes": 7,
+          "onyomi": [],
+          "kunyomi": [],
+          "meanings": [],
+          "flash": true
+        },
+        "部": {
+          "character": "部",
+          "strokes": 10,
+          "onyomi": [],
+          "kunyomi": [],
+          "meanings": [],
+          "flash": true
+        },
+        "授": {
+          "character": "授",
+          "strokes": 13,
+          "onyomi": [],
+          "kunyomi": [],
+          "meanings": [],
+          "flash": true
+        }
+      },
+      "missingReadings": [
+        "合",
+        "付",
+        "向",
+        "然",
+        "歳"
+      ],
+      "ligatureMatches": [
+        "ﬁ",
+        "ﬁ",
+        "sufﬁ x",
+        "sufﬁ x",
+        "ﬁ",
+        "ﬁ",
+        "ﬁ",
+        "ﬁ",
+        "ﬁ",
+        "ﬁ",
+        "ﬁ",
+        "ﬁ",
+        "ﬁ",
+        "ﬁ",
+        "ﬁ",
+        "ﬁ",
+        "ﬁ",
+        "ﬁ",
+        "ﬂ",
+        "ﬂ",
+        "ﬁ",
+        "ﬁ",
+        "ﬁ",
+        "ﬁ",
+        "ﬁ",
+        "ﬁ",
+        "ﬂ",
+        "ﬂ",
+        "ﬂ",
+        "ﬁ",
+        "ﬁ",
+        "ﬁ",
+        "ﬁ",
+        "ﬂ",
+        "ﬂ",
+        "ﬁ",
+        "ﬁ",
+        "ﬁ",
+        "ﬁ",
+        "ﬂ",
+        "ﬂ",
+        "ﬂ",
+        "ﬂ",
+        "ﬂ",
+        "ﬁ",
+        "ﬁ",
+        "ﬁ",
+        "ﬁ",
+        "ﬁ",
+        "ﬁ",
+        "ﬁ",
+        "ﬁ",
+        "ﬁ",
+        "ﬂ",
+        "ﬂ",
+        "ﬁ",
+        "ﬂ",
+        "ﬁ",
+        "ﬂ",
+        "ﬂ",
+        "ﬁ",
+        "ﬂ",
+        "ﬁ",
+        "ﬁ",
+        "ﬁ",
+        "ﬁ",
+        "ﬂ",
+        "ﬁ",
+        "ﬂ",
+        "ﬁ",
+        "ﬁ",
+        "ﬁ",
+        "ﬁ",
+        "ﬁ",
+        "ﬁ",
+        "ﬁ",
+        "ﬁ",
+        "ﬁ",
+        "ﬁ",
+        "ﬁ",
+        "ﬁ",
+        "sufﬁ x",
+        "sufﬁ x",
+        "sufﬁ x"
+      ],
+      "kanjiFilterCounts": {
+        "n5": 84,
+        "n4": 169,
+        "n3Plus": 190
+      },
+      "kanaValidation": {
+        "kataInvalid": 0,
+        "hiraInvalid": 0
+      },
+      "translationValidation": {
+        "translatingPlaceholders": 0,
+        "missingTranslations": 831
+      }
+    },
+    "networkResponses": [
+      {
+        "url": "https://jlpt-n5-and-n4-study.vercel.app/",
+        "status": 200
+      },
+      {
+        "url": "https://jlpt-n5-and-n4-study.vercel.app/css/style.css",
+        "status": 200
+      },
+      {
+        "url": "https://jlpt-n5-and-n4-study.vercel.app/js/app.js",
+        "status": 200
+      },
+      {
+        "url": "https://jlpt-n5-and-n4-study.vercel.app/data/kanji_flashcards.json",
+        "status": 200
+      },
+      {
+        "url": "https://jlpt-n5-and-n4-study.vercel.app/data/vocab_source_900.json",
+        "status": 200
+      },
+      {
+        "url": "https://raw.githubusercontent.com/evanclan/OpenJLPT/main/data/json/grammar/n4.json",
+        "status": 200
+      },
+      {
+        "url": "https://raw.githubusercontent.com/evanclan/OpenJLPT/main/data/json/vocab/n4.json",
+        "status": 200
+      },
+      {
+        "url": "https://raw.githubusercontent.com/evanclan/OpenJLPT/main/data/json/kanji/n4.json",
+        "status": 200
+      },
+      {
+        "url": "https://raw.githubusercontent.com/evanclan/OpenJLPT/main/data/json/grammar/n5.json",
+        "status": 200
+      },
+      {
+        "url": "https://raw.githubusercontent.com/evanclan/OpenJLPT/main/data/json/vocab/n5.json",
+        "status": 200
+      },
+      {
+        "url": "https://raw.githubusercontent.com/evanclan/OpenJLPT/main/data/json/kanji/n5.json",
+        "status": 200
+      }
+    ],
+    "consoleLogs": []
+  }
+}

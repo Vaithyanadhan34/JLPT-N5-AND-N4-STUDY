@@ -1,0 +1,17 @@
+# Reference material (copyrighted PDFs)
+reference/
+
+# Private Book Companion data (answers, companion notes)
+data/private/
+data/private-book-companion.json
+
+# Screenshots & test artifacts
+screenshots/
+scripts/lh-*.json
+scripts/*-report.json
+scripts/test-matrix-results.json
+
+# Node & temporary
+node_modules/
+.DS_Store
+Thumbs.db

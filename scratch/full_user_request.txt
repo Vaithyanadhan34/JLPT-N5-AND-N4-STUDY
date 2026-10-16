@@ -1,0 +1,140 @@
+<USER_REQUEST>
+You are a senior full-stack engineer AND a JLPT N4 Japanese teacher AND a QA lead. Two jobs, in this order:
+PHASE 1: integrate a grammar textbook as the reference backbone of my JLPT N5→N4 study site (Vercel).
+PHASE 2: test EVERYTHING in the site (desktop + mobile) as a real learner and as an engineer, then fix what you find in the new integration plus any blocker bugs, and report the rest.
+Never claim something works without evidence (test output, screenshot, log). Mark anything you cannot verify as UNVERIFIED. Do not invent grammar facts, readings or translations. If unsure, flag "needs_review".
+
+INPUT FILES
+- Bunpo_to_yomu_renshu_N4.pdf (main book)
+- Bunpo_to_yomu_renshu_N4_Answers.pdf (supplementary volume 別冊: grammar explanation / translated sentences / answers; Japanese + English + Portuguese; mostly scanned images, so OCR is needed: use Tesseract with jpn+eng+por, or read the pages visually; verify every OCR'd Japanese string by eye because OCR mangles furigana and small kana)
+- The existing site data (vocabulary, kanji, grammar JSON) and source code.
+
+====================================================
+RULES: COPYRIGHT & PRIVACY (follow strictly)
+====================================================
+The book is copyrighted. This site is for my PERSONAL study.
+1. In the PUBLIC build, store and show ONLY: lesson number (第N話), pattern number (文型N), pattern title (e.g. ～ながら), book page reference (e.g. "Book p.30"), and short ORIGINAL explanations and ORIGINAL example sentences that you write yourself (N4-level, verified). Do NOT copy the book's explanations, example sentences, translations, or exercise questions into the public build.
+2. Anything derived from the book's text (its example sentences, notes, translations, answer explanations) goes ONLY into a private "Book Companion" area that is behind a password/login gate (e.g. Vercel password protection or an env-var passphrase page), excluded from search engines (noindex, robots.txt disallow, no sitemap entry), excluded from the service-worker precache, and NOT committed to a public repo (put those files in .gitignore and load them from private storage/env at build). If I tell you the repo is private and for personal use only, you may keep them in the repo, but still gate the route.
+3. Add a visible credit line wherever the book is referenced: "Lesson/page references follow 'Nihongo Challenge N4 文法と読む練習' (ASK Publishing). Content is for personal study." Do not call the site official or affiliated.
+
+====================================================
+PHASE 1: INTEGRATE THE BOOK AS THE GRAMMAR BACKBONE
+====================================================
+1.1 Seed index (verify each line against the PDF, fix any difference, list differences in the report)
+第1話 (p.26): 1 ～ます/～ません; 2 ～ました/～ませんでした; 3 ～から～まで; 4 ～で
+第2話 (p.30): 1 ～ながら; 2 ～たい/～たくない; 3 ～ることがある/～ないことがある
+第3話 (p.34): 1 ～てください/～ないでください; 2 ～てから; 3 ～たことがある/～たことがない
+第4話 (p.38): 1 もらう; 2 くれる; 3 あげる/やる; 4 ～から
+第5話 (p.44): 1 ～ことになる/～ないことになる; 2 ～かどうか; 3 ～ようになる; 4 ～だす
+第6話 (p.48): 1 ～てもらう; 2 ～てくれる; 3 ～てあげる; 4 ～はじめる/～おわる
+第7話 (p.52): 1 ～たり(…たり)する; 2 ～たまま; 3 ～たらどう?; 4 ～ても
+第8話 (p.56): 1 ～ておく; 2 ～てもいい/～てもかまわない; 3 ～つづける; 4 ～という
+第9話 (p.62): 1 ～かた; 2 ～てみる; 3 ～やすい/～にくい
+第10話 (p.66): 1 ～が…ている; 2 ～が…てある; 3 ～のに
+第11話 (p.70): 1 いただく/くださる/さしあげる; 2 お～になる/ご～になる; 3 そんけい語の特別な形; 4 お～する/ご～する
+第12話 (p.74): 1 ～ば; 2 ～なら; 3 ～とか…とか; 4 ～し
+第13話 (p.80): 1 ～と; 2 ～たら; 3 ～たほうがいい/～ないほうがいい
+第14話 (p.84): 1 ～ように(目標); 2 ～はずだ; 3 ～はずがない; 4 ～かもしれない
+第15話 (p.88): 1 ～そう(様態); 2 [疑問詞]+か; 3 [疑問詞]+でも; 4 ～ようにする/～ようにしている
+第16話 (p.92): 1 ～られる(かのう形); 2 ～ことができる; 3 ～んです/～んですか; 4 ～んですが
+第17話 (p.98): 1 ～なければならない/～なくてはいけない; 2 ～なくてもいい/～なくてもかまわない; 3 ～てはいけない/～てはだめ; 4 ～の?
+第18話 (p.102): 1 ～そうだ(伝聞); 2 ～ようだ(比喩); 3 ～に行く/～に来る/～に帰る
+第19話 (p.106): 1 ～て(理由); 2 ～てしまう; 3 ～ずに; 4 ～を(通過)
+第20話 (p.110): 1 けんじょう語の特別な形; 2 ございます; 3 ～でございます; 4 お/ご～ください
+第21話 (p.116): 1 ～ことにする/～ないことにする; 2 ～つもりだ/～つもりはない; 3 ～ようだ(推量); 4 ～でも
+第22話 (p.120): 1 ～まえに; 2 ～あと(で); 3 ～の(名詞化)
+第23話 (p.124): 1 ～と…(と)、どちら～?; 2 ～より…ほうが; 3 ～が/は…より; 4 ～ため(に)
+第24話 (p.128): 1 ～(よ)う(いこう形); 2 ～だろう/～だろうと思う; 3 ～と言う; 4 ～(よ)うとする
+第25話 (p.134): 1 ～(ら)れる(うけみ); 2 ～ので; 3 ～になる/～くなる
+第26話 (p.138): 1 ～にする/～くする; 2 ～ところ; 3 ～(ら)れる(ものが主語のうけみ)
+第27話 (p.142): 1 ～なさい; 2 ～ように言う; 3 ～(さ)せる; 4 ～(さ)せられる
+第28話 (p.146): 1 ～らしい(推量); 2 ～までに; 3 ～が見える/～が聞こえる
+第29話 (p.152): 1 ～がっている/～がる; 2 ～な(禁止); 3 めいれい形
+第30話 (p.156): 1 ～すぎる; 2 ～は…ほど～ない; 3 ～さ; 4 ～にする(決定)
+第31話 (p.160): 1 ～しか…ない/～も/～で; 2 ～ばかり; 3 ～らしい(典型的); 4 ～(よ)うと思う
+第32話 (p.164): 1 [においなど]がする; 2 [疑問詞]～か; 3 ～てくる/～ていく
+Extra sections: conjunctions 文と文をつなぐことば (そして, それから, それに, そのうえ, だから, それで, すると, けれども/けれど, でも, しかし, ところが, たとえば, それでは/では/じゃあ, ところで); review exercises (ふくしゅう問題 1–8); text grammar (文章の文法) answers; reading (読解) answers; revision test (文法ふくしゅうテスト).
+Count check: this seed has 116 patterns. Report the exact count you find.
+
+1.2 Data model (add to the grammar JSON; keep existing fields and ids stable so saved progress still works)
+{ id, lesson (1–32), patternNo (1–4), title, formation (e.g. "Vて + ください"), meaning (EN), register/notes (short, original), cautions (e.g. "not used toward superiors"), examples[ {ja, furigana segments, en, level} ] (original, 2–3 each), bookRef { lesson, pattern, page }, relatedIds[], level ("N4"/"N5"), contrastWith[] (e.g. ようだ vs そうだ vs らしい; ば vs たら vs と vs なら; ので vs から; ように vs ために; はず vs かもしれない), tags (verb-form, politeness, causative-passive...) }
+Book-derived private fields live in a separate private file: privateNotes, bookExamples, bookTranslations (EN/PT).
+
+1.3 Map the existing site grammar to the book
+- Produce a coverage table: for each of the 116 book patterns → matching site grammar entry id / MISSING / DUPLICATE / WRONG LEVEL. Then add every MISSING pattern (original explanation + 2–3 original, N4-level, verified examples with furigana and translations), merge duplicates, and flag site entries that are not in the book (keep them but tag "extra").
+- Verify each site entry's formation and meaning against the book's notes (for example: ～たい is not used toward superiors; ～はずがない is a stronger negation than ～ないはずだ; ～ように attaches to potential/ない/non-volitional verbs; お～になる cannot be used with one-syllable stems like 見ます/来ます; ～てもらう/～てあげる restrictions on the giver/receiver being "I"). Wrong or missing nuance → fix and log in CHANGELOG.
+
+1.4 New UX (mobile + desktop)
+- Grammar page: a "Book order" mode (default) grouped by 第N話 accordions with progress rings per lesson; plus filters (lesson range, tag, N5/N4, Learned/Learning/New) and search (Japanese, romaji, English). Each card shows lesson/pattern badge + "Book p.NN".
+- Pattern detail: formation box, meaning, short notes, cautions ("Don't use when…"), examples with furigana (toggle) and audio, "Compare with…" chips linking to the Compare tool, "Mark as learned", and a "Practice this pattern" button.
+- Compare tool: preload the contrast groups listed above (ば/たら/と/なら, そうだ(伝聞)/そう(様態)/ようだ/らしい, ので/から, ように/ために, ことにする/ことになる, てもらう/てくれる/てあげる, あげる/くれる/もらう, うけみ/させる/させられる).
+- Practice: pattern-based quiz (fill-in-the-blank, sentence ordering "★" questions, choose-the-correct-form) generated from original examples; wrong answers feed "Review mistakes"; per-lesson mastery %.
+- Conjunctions page: the 14 groups with original examples and a "choose the right conjunction" drill.
+- "Book Companion" (private, gated): enter the answers from the book's exercises (Lesson 1–32 answer keys, ふくしゅう問題, 文章の文法, 読解, 文法ふくしゅうテスト) to auto-check against the answer key, show score per lesson, and surface weak lessons. Do not display the book's questions; the user does them in the book. Answer keys come from the PDF (verify each number; list any unreadable cell as needs_review).
+- Home: add "Today's lesson" (next unlearned lesson in book order) and a Lesson roadmap (32 steps).
+
+1.5 Data quality gates for everything new
+- Every Japanese string with kanji has correct per-segment furigana (<ruby>), generated at build time and verified; N4-level vocabulary/kanji only unless marked; example sentences natural and correct (check with a morphological analyzer and, where possible, Tatoeba/JMdict; flag doubts).
+- Validation script validate_grammar.py fails the build on: missing lesson/pattern, duplicate ids, missing formation/meaning/examples, example not containing the target pattern, non-hiragana furigana, empty translations, patterns outside 1–32/1–4 ranges.
+
+====================================================
+PHASE 2: TEST EVERYTHING (as a learner and as an engineer)
+====================================================
+Tools: Playwright (Chromium, WebKit, Firefox), axe-core, Lighthouse CI. Targets: deployed Vercel URL AND local build; report differences (stale deploy/cache). Viewports: 360×800, 390×844, 768×1024, 1280×800, 1440×900, 1920×1080, 2560×1440; light + dark; slow 4G + 4× CPU for mobile runs. Save a screenshot + console log for every failure.
+
+A. DATA INTEGRITY (all sections)
+- Vocabulary: no empty fields, no duplicate (word, reading), readings match JMdict, examples contain the word, no stray whitespace, previously broken rows fixed (駐車場, 工場長, 練習問題, 写真撮影, 航空会社, 旅行会社, 洗面所, 国語, 何度, 教わる, restored 学生/切符売り場/必要になる), 取る example not 写真を取ります.
+- Kanji: strokes match KANJIDIC2 (草9, 部11, 教11, 授11), 口 has no モク, 一/二/三 complete, every card has on/kun, no "ﬁ/ﬂ" artifacts, N3+ kanji excluded from the default N5+N4 filter.
+- Kana: Katakana grid shows only katakana, correct Hepburn romaji, dakuten/handakuten/combinations complete.
+- Grammar: all 116 book patterns present exactly once (coverage table = 0 MISSING, 0 DUPLICATE), formation/meaning verified, examples valid, lesson/page refs correct for 20 random patterns spot-checked against the PDF, relatedIds/contrast links resolve (no 404), no N3+ grammar mislabeled as N4.
+- Furigana: crawl every page/modal/quiz state; every kanji node is inside <ruby> with a hiragana <rt>; tricky readings correct (今日きょう, 明日あした, 昨日きのう, 大人おとな, 一人ひとり, 上手じょうず, 果物くだもの, 風邪かぜ, 行ったいった, 何なに/なん).
+- Translations: no "Translating sentence…"; every example has a translation.
+
+B. LEARNER JOURNEYS (real clicks/taps; note confusion points + time to complete)
+1 First visit and onboarding. 2 Learn kana (flash, quiz, type-romaji, review mistakes, progress persists after reload). 3 Learn 20 words (search by English/kana/kanji/romaji, flashcards swipe/keyboard, known/learning, session summary). 4 Kanji detail + filters. 5 Grammar in book order: open 第1話, learn ～ます/～ません, then ～から～まで, mark learned, see the lesson ring update; do the practice quiz for 第5話; use Compare for ば/たら/と/なら. 6 Conjunctions drill. 7 Book Companion: unlock with passphrase, enter answers for 第1話 (3,1,2,3,3,3,1,4,2,4 are the book's key for 第1話; confirm the app marks them correct and a deliberately wrong entry incorrect). 8 Daily habit: goal, streak, "Today's lesson", export/clear/import progress. 9 Navigation, search (Ctrl/Cmd+K), settings (furigana, romaji, theme, font size, performance mode). 10 Modals/dropdowns: every modal closes with ×, Esc, backdrop, and Back on mobile; every dropdown opens, scrolls, flips, closes, and becomes a bottom sheet on phone.
+Edge cases: offline after first load (PWA), 360×640, landscape phone, 200% zoom, rapid taps, deep-link reload (/grammar/lesson-5 must not 404), keyboard-only navigation, screen reader labels, cleared storage then import.
+
+C. LAYOUT, UI, THEME
+- Lists render exactly 7 rows at first paint (= 7 × detected columns), auto-load next 4 rows on scroll without clicking, bounded DOM (≤ ~200 cards), stable scroll, no layout shift, end-of-list footer.
+- No horizontal scroll at any viewport; fluid container (no narrow centered column on ≥1280px); no text < 14px; tap targets ≥ 44px.
+- Glass navbar readable on any background with @supports fallback; floating bottom tab bar on mobile; hero section renders correctly; dropdown component consistent.
+- Light↔dark switch: no flash on load, no mixed-theme frame (verify with frame capture), no layout shift, 20 rapid toggles with no leaked listeners.
+
+D. PERFORMANCE & MEMORY (desktop + mobile)
+- Lighthouse mobile: Performance ≥ 90, Accessibility ≥ 95, Best Practices ≥ 95, SEO ≥ 90; LCP ≤ 2.0s on slow 4G + 4× CPU, TBT ≤ 150ms, INP ≤ 200ms, CLS ≤ 0.05; desktop LCP ≤ 1.2s.
+- Home JS ≤ 60 KB gzip; data loaded per section in chunks; private book data NOT in the public bundle or service-worker cache (verify by inspecting network + cache storage + view-source).
+- Heap ≤ 60 MB after the scripted session; plateaus over 5 repeated cycles (no leaks); fonts ≤ 120 KB.
+
+E. ACCESSIBILITY & QUALITY
+- axe: 0 serious/critical. Contrast AA both themes. Focus order, focus trap in modals, aria labels on icon buttons, prefers-reduced-motion respected.
+- Zero console errors/warnings; zero failed requests; no 404 on data files; cache headers correct (immutable on hashed assets, must-revalidate on HTML).
+
+F. SECURITY & PRIVACY CHECKS FOR THE BOOK CONTENT
+- Unauthenticated request to any private book route/file returns 401/403 or the lock screen; search engines blocked; no book text in the public JSON, bundle, source maps, sitemap, or service-worker cache; credit line present.
+
+====================================================
+OUTPUT FORMAT
+====================================================
+1. Executive summary: Ready / Not ready, counts of PASS / FAIL / UNVERIFIED, top 5 problems.
+2. Book integration report: exact pattern count found in the PDF vs the seed, differences, the 116-row coverage table (pattern → site id → status), what you added/merged/fixed.
+3. Test results per section A–F with evidence (numbers, screenshots at 390px and 1440px).
+4. Bug list: ID, severity (Blocker/Major/Minor/Polish), page, steps, expected vs actual, evidence, fix status (fixed / not fixed).
+5. needs_review list (OCR doubts, grammar nuance doubts, unreadable answer-key cells).
+6. Deliverables: updated code, new/updated data files, validate_grammar.py, Playwright test suite, Lighthouse CI config, CHANGELOG, and a README section explaining how to re-run everything (npm run test:e2e, python validate_grammar.py).
+Work step by step; show a short summary after each step; fix defects in the new integration and any blockers, and list the rest without changing them.Add this line to .gitignore: reference/
+In the prompt, say: “The book PDFs are in ./reference/. Read them from disk.”
+</USER_REQUEST>
+<ADDITIONAL_METADATA>
+The current local time is: 2026-10-16T12:00:10+05:30.
+
+The user's current state is as follows:
+Other open documents:
+- c:\Users\asus\Downloads\JLPT_N5_N4_STUDY_V12_EXPANDED_DATA_GRAMMAR_UX\scripts\measure-baseline.mjs (LANGUAGE_JAVASCRIPT)
+- c:\Users\asus\Downloads\JLPT_N5_N4_STUDY_V12_EXPANDED_DATA_GRAMMAR_UX\scripts\run-all-journeys.mjs (LANGUAGE_JAVASCRIPT)
+- c:\Users\asus\Downloads\JLPT_N5_N4_STUDY_V12_EXPANDED_DATA_GRAMMAR_UX\js\app.js (LANGUAGE_JAVASCRIPT)
+- c:\Users\asus\Downloads\JLPT_N5_N4_STUDY_V12_EXPANDED_DATA_GRAMMAR_UX\data\kana.json (LANGUAGE_JSON)
+- c:\Users\asus\Downloads\JLPT_N5_N4_STUDY_V12_EXPANDED_DATA_GRAMMAR_UX\scripts\validate-kana.mjs (LANGUAGE_JAVASCRIPT)
+</ADDITIONAL_METADATA>
+<USER_SETTINGS_CHANGE>
+The user changed setting `Model Selection` from Gemini 3.8 Flash (High) to Gemini 3.8 Flash (Medium). No need to comment on this change if the user doesn't ask about it. If reporting what model you are, please use a human readable name instead of the exact string.
+</USER_SETTINGS_CHANGE>
