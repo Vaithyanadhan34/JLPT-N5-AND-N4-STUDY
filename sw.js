@@ -1,4 +1,4 @@
-const CACHE = 'jlpt-stationery-v18';
+const CACHE = 'jlpt-stationery-v19';
 const APP = [
   './',
   './index.html',

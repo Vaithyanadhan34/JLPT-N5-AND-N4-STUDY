@@ -259,6 +259,7 @@ body[data-theme="dark"] .grammar-check-option.is-wrong {
 
   /* Signature Accents */
   --vermilion: #D8412F;           /* Traditional Hanko Vermilion Stamp Red */
+  --vermilion-strong: #CB3522;
   --vermilion-glow: rgba(216, 65, 47, 0.12);
   --vermilion-bright: #E34D3A;
   --vermilion-deep: #BA3222;
@@ -307,7 +308,7 @@ body[data-theme="dark"] .grammar-check-option.is-wrong {
   --kana-empty: rgba(22, 24, 29, 0.03);
 
   /* Z-Index Hierarchy */
-  --z-nav: 50;
+  --z-nav: 75;
   --z-dropdown: 60;
   --z-modal: 70;
   --z-sheet: 80;
@@ -338,6 +339,7 @@ body[data-theme="dark"] {
   --ink-ghost: #4A5160;
 
   --vermilion: #E8523F;
+  --vermilion-strong: #FF6854;
   --vermilion-glow: rgba(232, 82, 63, 0.2);
   --vermilion-bright: #F06552;
   --vermilion-deep: #C73B28;
@@ -609,6 +611,10 @@ body[data-theme="dark"] .nav-active-pill {
   color: var(--ink-soft);
   transition: color 160ms ease;
   white-space: nowrap;
+  display: inline-flex;
+  align-items: center;
+  text-decoration: none;
+  cursor: pointer;
 }
 
 .nav-item:hover {
@@ -616,8 +622,51 @@ body[data-theme="dark"] .nav-active-pill {
 }
 
 .nav-item.active {
-  color: var(--vermilion);
+  color: var(--vermilion-strong, #cb3522);
   font-weight: 700;
+}
+
+/* Theme Toggle Button & Direct SVG Icons */
+.theme-toggle {
+  position: relative;
+  cursor: pointer;
+}
+
+.theme-toggle svg {
+  display: block;
+  pointer-events: none;
+  width: 20px;
+  height: 20px;
+  color: currentColor;
+  transition: transform 200ms ease;
+}
+
+.theme-toggle:hover svg {
+  transform: rotate(15deg) scale(1.08);
+}
+
+:root[data-theme="light"] .theme-icon-sun,
+:root:not([data-theme="dark"]) .theme-icon-sun,
+body[data-theme="light"] .theme-icon-sun,
+body:not([data-theme="dark"]) .theme-icon-sun {
+  display: none !important;
+}
+
+:root[data-theme="light"] .theme-icon-moon,
+:root:not([data-theme="dark"]) .theme-icon-moon,
+body[data-theme="light"] .theme-icon-moon,
+body:not([data-theme="dark"]) .theme-icon-moon {
+  display: block !important;
+}
+
+:root[data-theme="dark"] .theme-icon-sun,
+body[data-theme="dark"] .theme-icon-sun {
+  display: block !important;
+}
+
+:root[data-theme="dark"] .theme-icon-moon,
+body[data-theme="dark"] .theme-icon-moon {
+  display: none !important;
 }
 
 /* Header Right Action Icons */
@@ -657,7 +706,7 @@ body[data-theme="dark"] .nav-active-pill {
   font-size: 11px;
   font-weight: 700;
   letter-spacing: 0.04em;
-  color: var(--ink-faint);
+  color: var(--ink-soft);
   background: var(--paper-tint);
   border: 1px solid var(--line);
   padding: 2px 6px;
@@ -2164,6 +2213,8 @@ select.has-custom-select {
   color: var(--ink-faint);
   font-size: 11px;
   font-weight: 700;
+  text-decoration: none;
+  cursor: pointer;
   transition: transform 140ms ease, opacity 140ms ease, background-color 140ms ease, border-color 140ms ease;
 }
 
