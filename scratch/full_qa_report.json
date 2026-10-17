@@ -1,9 +1,9 @@
 {
-  "timestamp": "2026-10-16T10:07:52.245Z",
+  "timestamp": "2026-10-17T10:41:10.860Z",
   "executiveSummary": {
     "status": "Ready",
-    "passCount": 12,
-    "failCount": 2,
+    "passCount": 13,
+    "failCount": 1,
     "unverifiedCount": 0,
     "topProblems": []
   },
@@ -190,7 +190,7 @@
           "viewport": "phone_360",
           "width": 360,
           "height": 800,
-          "hasHorizontalOverflow": true,
+          "hasHorizontalOverflow": false,
           "screenshot": "C:\\Users\\asus\\Downloads\\JLPT_N5_N4_STUDY_V12_EXPANDED_DATA_GRAMMAR_UX\\screenshots\\layout_grammar_phone_360.png"
         },
         {
@@ -229,7 +229,7 @@
           "screenshot": "C:\\Users\\asus\\Downloads\\JLPT_N5_N4_STUDY_V12_EXPANDED_DATA_GRAMMAR_UX\\screenshots\\layout_grammar_desktop_1920.png"
         }
       ],
-      "noHorizontalOverflow": false
+      "noHorizontalOverflow": true
     },
     "D_performanceMemory": {},
     "E_accessibilityQuality": {
