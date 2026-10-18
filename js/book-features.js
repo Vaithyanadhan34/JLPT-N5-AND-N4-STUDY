@@ -7,16 +7,29 @@ let grammarViewMode = 'book'; // 'book' or 'all'
 let companionUnlocked = false;
 let companionData = null;
 
-// Preset Contrast Groups
+// Preset Contrast Groups (12 Core Groups)
 const CONTRAST_PRESETS = {
-  'ba-tara-to-nara': ['g-l12-1', 'g-l13-2', 'g-l13-1', 'g-l12-2'], // ば, たら, と, なら
-  'souda-sou-youda-rashii': ['g-l18-1', 'g-l15-1', 'g-l21-3', 'g-l28-1'], // そうだ(伝聞), そう(様態), ようだ(推量), らしい(推量)
-  'node-kara': ['g-l25-2', 'g-l4-4'], // ので, から
-  'youni-tameni': ['g-l14-1', 'g-l23-4'], // ように(目標), ため(に)
-  'kotonisuru-kotoninaru': ['g-l21-1', 'g-l5-1'], // ことにする, ことになる
-  'temorau-tekureru-teageru': ['g-l6-1', 'g-l6-2', 'g-l6-3'], // てもらう, てくれる, てあげる
-  'ageru-kureru-morau': ['g-l4-3', 'g-l4-2', 'g-l4-1'], // あげる, くれる, もらう
-  'ukemi-saseru-saserareru': ['g-l25-1', 'g-l27-3', 'g-l27-4'] // 受身, 使役, 使役受身
+  'group-conditionals': ['g-l22-1', 'g-l21-1', 'g-l14-2', 'g-l22-2'], // ば, たら, と, なら
+  'group-souda-rashii': ['g-l18-1', 'g-l15-1', 'g-l21-3', 'g-l28-1'], // そうだ(伝聞), そう(様態), ようだ(推量), らしい(推量)
+  'group-node-kara': ['g-l25-2', 'g-l4-4'], // ので, から
+  'group-youni-tameni': ['g-l14-1', 'g-l23-4'], // ように(目標), ため(に)
+  'group-kotonisuru': ['g-l21-1', 'g-l5-1'], // ことにする, ことになる
+  'group-temorau-tekureru': ['g-l6-1', 'g-l6-2', 'g-l6-3'], // てもらう, てくれる, てあげる
+  'group-ageru-kureru': ['g-l4-3', 'g-l4-2', 'g-l4-1'], // あげる, くれる, もらう
+  'group-voice': ['g-l25-1', 'g-l27-3', 'g-l27-4'], // 受身, 使役, 使役受身
+  'group-younisuru-youninaru': ['g-l14-1', 'g-l14-2'], // ようにする, ようになる
+  'group-hazu-kamoshirenai': ['g-l19-1', 'g-l19-2', 'g-l8-2'], // はず, はずがない, かもしれない
+  'group-teiru-tearu': ['g-l10-1', 'g-l10-2'], // ている, てある
+  'group-nisuru-ninaru': ['g-l5-1', 'g-l5-2'], // にする, になる
+  // Aliases
+  'ba-tara-to-nara': ['g-l22-1', 'g-l21-1', 'g-l14-2', 'g-l22-2'],
+  'souda-sou-youda-rashii': ['g-l18-1', 'g-l15-1', 'g-l21-3', 'g-l28-1'],
+  'node-kara': ['g-l25-2', 'g-l4-4'],
+  'youni-tameni': ['g-l14-1', 'g-l23-4'],
+  'kotonisuru-kotoninaru': ['g-l21-1', 'g-l5-1'],
+  'temorau-tekureru-teageru': ['g-l6-1', 'g-l6-2', 'g-l6-3'],
+  'ageru-kureru-morau': ['g-l4-3', 'g-l4-2', 'g-l4-1'],
+  'ukemi-saseru-saserareru': ['g-l25-1', 'g-l27-3', 'g-l27-4']
 };
 
 // ----------------------------------------------------
@@ -306,7 +319,7 @@ function renderConjunctions() {
   const html = groups.map(g => {
     const groupItems = items.filter(it => it.group === g.id);
     return `
-      <div class="conj-group-card">
+      <div class="conj-group-card" id="conjGroup-${g.id}">
         <div class="conj-group-head">
           <span class="eyebrow">GROUP ${g.no}</span>
           <h3>${esc(g.titleJa)} · ${esc(g.titleEn)}</h3>
@@ -314,19 +327,28 @@ function renderConjunctions() {
         </div>
         <div class="conj-items-grid">
           ${groupItems.map(item => `
-            <div class="conj-item-box">
+            <div class="conj-item-box" id="conjItem-${item.id}">
               <div class="conj-word-head">
                 <span class="conj-word">${esc(item.word)}</span>
                 <span class="conj-meaning">${esc(item.meaning)}</span>
               </div>
               <p class="conj-notes">${esc(item.notes)}</p>
+              ${item.commonMistake ? `
+                <div class="conj-mistake-callout">
+                  <strong>⚠️ Common mistake:</strong> ${esc(item.commonMistake)}
+                </div>
+              ` : ''}
               <div class="conj-ex-list">
-                ${(item.examples || []).map(ex => `
+                ${(item.examples || []).slice(0, 2).map(ex => `
                   <div class="conj-ex-item">
-                    <div class="conj-ex-ja">${renderSentenceFurigana(ex.furigana || ex.ja)}</div>
+                    <div class="conj-ex-ja">${renderSentenceFurigana(ex.segments || ex.furigana || ex.ja)}</div>
                     <div class="conj-ex-en">${esc(ex.en)}</div>
                   </div>
                 `).join('')}
+              </div>
+              <div class="conj-actions-row">
+                <button type="button" class="tool-btn" data-conj-learn="${esc(item.id)}">Learn more →</button>
+                <button type="button" class="tool-btn" data-conj-group="${esc(item.group)}">Group peers</button>
               </div>
             </div>
           `).join('')}
@@ -336,7 +358,87 @@ function renderConjunctions() {
   }).join('');
 
   container.innerHTML = html;
+
+  // Add click handlers for Learn More and Group peers
+  container.querySelectorAll('[data-conj-learn]').forEach(btn => {
+    btn.onclick = () => openConjunctionModal(btn.dataset.conjLearn);
+  });
+  container.querySelectorAll('[data-conj-group]').forEach(btn => {
+    btn.onclick = () => {
+      const gId = btn.dataset.conjGroup;
+      const target = document.getElementById(`conjGroup-${gId}`);
+      if (target) target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    };
+  });
+
   renderConjunctionDrills();
+}
+
+function openConjunctionModal(id) {
+  if (!window.conjunctionsData || !window.conjunctionsData.items) return;
+  const item = window.conjunctionsData.items.find(x => x.id === id);
+  if (!item) return;
+
+  const extraExamplesHtml = (item.extraExamples || []).map((ex, i) => `
+    <div class="grammar-example-card">
+      <span class="ex-num-badge">Example ${i + 3}</span>
+      <div class="example-ja">${renderSentenceFurigana(ex.segments || ex.furigana || ex.ja)}</div>
+      <div class="example-en">${esc(ex.en)}</div>
+    </div>
+  `).join('');
+
+  const drill = item.miniDrill;
+  const drillHtml = drill ? `
+    <div class="quick-check" style="margin-top:20px;">
+      <span class="eyebrow">MINI DRILL</span>
+      <h3>${esc(drill.question)}</h3>
+      <div class="grammar-check-options" id="conjModalDrillOptions">
+        ${drill.options.map(opt => `<button type="button" class="grammar-check-option" data-opt="${esc(opt)}">${esc(opt)}</button>`).join('')}
+      </div>
+      <p id="conjModalDrillFeedback" class="grammar-check-feedback" aria-live="polite">Choose an answer to test your recall.</p>
+    </div>
+  ` : '';
+
+  openModal(`
+    <span class="eyebrow">CONJUNCTION DETAIL · GROUP ${esc(item.group)}</span>
+    <h2 id="modalTitle" class="conj-word" style="font-size:28px;margin-bottom:6px;">${esc(item.word)} <span style="font-size:16px;color:var(--ink-soft);font-family:var(--font-ui);font-weight:600;">(${esc(item.meaning)})</span></h2>
+    <div class="grammar-summary-bar">${esc(item.notes)}</div>
+
+    <div class="detail-section">
+      <h3>Peer Differences (How it differs in this group)</h3>
+      <p style="font-size:14px;color:var(--ink);line-height:1.6;">${esc(item.nuanceDiff)}</p>
+    </div>
+
+    ${item.commonMistake ? `
+      <div class="conj-mistake-callout" style="margin:16px 0;">
+        <strong>⚠️ Common Mistake:</strong> ${esc(item.commonMistake)}
+      </div>
+    ` : ''}
+
+    <div class="detail-section">
+      <h3>Additional Sentences</h3>
+      <div class="grammar-examples-grid">${extraExamplesHtml || '<p class="subtle">No additional examples.</p>'}</div>
+    </div>
+
+    ${drillHtml}
+  `);
+
+  if (drill) {
+    const opts = document.querySelectorAll('#conjModalDrillOptions [data-opt]');
+    const fb = document.getElementById('conjModalDrillFeedback');
+    opts.forEach(b => {
+      b.onclick = () => {
+        opts.forEach(o => o.disabled = true);
+        if (b.dataset.opt === drill.correct) {
+          b.classList.add('is-correct');
+          if (fb) fb.textContent = `✓ Correct! ${drill.explanation}`;
+        } else {
+          b.classList.add('is-wrong');
+          if (fb) fb.textContent = `× Incorrect. Correct answer: "${drill.correct}". ${drill.explanation}`;
+        }
+      };
+    });
+  }
 }
 
 let conjDrillIndex = 0;
@@ -611,6 +713,8 @@ function startGrammarPractice(targetLesson = null) {
 }
 
 // Expose functions globally for app.js and HTML
+window.openConjunctionModal = openConjunctionModal;
+window.CONTRAST_PRESETS = CONTRAST_PRESETS;
 window.initGrammarViewControls = initGrammarViewControls;
 window.renderGrammarSection = renderGrammarSection;
 window.renderBookLessons = renderBookLessons;

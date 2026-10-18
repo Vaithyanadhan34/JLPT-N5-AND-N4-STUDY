@@ -16,6 +16,8 @@
     document.documentElement.style.colorScheme=d;
     var m=document.querySelector('meta[name="theme-color"]');
     if(m)m.content=d==='dark'?'#0F1115':'#F7F3EC';
+    var mc=document.querySelector('meta[name="color-scheme"]');
+    if(mc)mc.content=d==='dark'?'dark':'light';
   }catch(e){}
 })();
 </script>
@@ -72,7 +74,7 @@
       <a href="#kanji" data-page="kanji" class="nav-item">Kanji</a>
       <a href="#grammar" data-page="grammar" class="nav-item">Grammar</a>
       <a href="#conjunctions" data-page="conjunctions" class="nav-item">Conjunctions</a>
-      <a href="#compare" data-page="compare" class="nav-item">Compare</a>
+      <a href="#compare" data-page="compare" class="nav-item">Compare <span class="nav-compare-badge" id="navCompareBadge" style="display:none">0</span></a>
       <a href="#companion" data-page="companion" class="nav-item">Companion</a>
       <a href="#quiz" data-page="quiz" class="nav-item">Quiz</a>
       <a href="#how" data-page="how" class="nav-item">Guide</a>
@@ -83,15 +85,18 @@
         <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><path d="m21 21-4.3-4.3"></path></svg>
         <span class="kbd-hint" id="kbdHint" aria-hidden="true">⌘K</span>
       </button>
-      <button id="themeToggle" class="icon-action glass-btn theme-toggle" type="button" aria-label="Switch to dark mode" title="Switch theme" aria-pressed="false">
-        <svg class="theme-icon-sun" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-          <circle cx="12" cy="12" r="4"></circle>
-          <path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"></path>
-        </svg>
-        <svg class="theme-icon-moon" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-          <path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"></path>
-        </svg>
-      </button>
+      <div class="theme-toggle-wrap">
+        <button id="themeToggle" class="theme-toggle-btn" type="button" aria-label="Switch to dark theme" aria-pressed="false" aria-describedby="themeTooltip">
+          <svg class="theme-icon-sun" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.85" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <circle cx="12" cy="12" r="4"></circle>
+            <path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"></path>
+          </svg>
+          <svg class="theme-icon-moon" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.85" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"></path>
+          </svg>
+        </button>
+        <div id="themeTooltip" class="theme-tooltip" role="tooltip">Switch theme</div>
+      </div>
       <button id="settingsToggle" class="icon-action glass-btn" type="button" aria-label="Open settings" title="Settings">
         <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><path d="M12.22 2h-.44a2 2 0 0 0-2 2v.18a2 2 0 0 1-1 1.73l-.43.25a2 2 0 0 1-2 0l-.15-.08a2 2 0 0 0-2.73.73l-.22.38a2 2 0 0 0 .73 2.73l.15.1a2 2 0 0 1 1 1.72v.51a2 2 0 0 1-1 1.74l-.15.09a2 2 0 0 0-.73 2.73l.22.38a2 2 0 0 0 2.73.73l.15-.08a2 2 0 0 1 2 0l.43.25a2 2 0 0 1 1 1.73V20a2 2 0 0 0 2 2h.44a2 2 0 0 0 2-2v-.18a2 2 0 0 1 1-1.73l.43-.25a2 2 0 0 1 2 0l.15.08a2 2 0 0 0 2.73-.73l.22-.39a2 2 0 0 0-.73-2.73l-.15-.08a2 2 0 0 1-1-1.74v-.5a2 2 0 0 1 1-1.74l.15-.09a2 2 0 0 0 .73-2.73l-.22-.38a2 2 0 0 0-2.73-.73l-.15.08a2 2 0 0 1-2 0l-.43-.25a2 2 0 0 1-1-1.73V4a2 2 0 0 0-2-2z"></path><circle cx="12" cy="12" r="3"></circle></svg>
       </button>
@@ -580,21 +585,35 @@
     </div>
   </div>
   <div class="compare-presets-wrap">
-    <span class="eyebrow">POPULAR JLPT CONTRAST GROUPS</span>
+    <span class="eyebrow">POPULAR JLPT CONTRAST GROUPS (12 CORE SETS)</span>
     <div class="compare-presets-list" id="comparePresetsList">
-      <button type="button" class="preset-chip" data-preset="ba-tara-to-nara">ば · たら · と · なら</button>
-      <button type="button" class="preset-chip" data-preset="souda-sou-youda-rashii">そうだ(伝聞) · そう(様態) · ようだ · らしい</button>
-      <button type="button" class="preset-chip" data-preset="node-kara">ので · から</button>
-      <button type="button" class="preset-chip" data-preset="youni-tameni">ように · ために</button>
-      <button type="button" class="preset-chip" data-preset="kotonisuru-kotoninaru">ことにする · ことになる</button>
-      <button type="button" class="preset-chip" data-preset="temorau-tekureru-teageru">てもらう · てくれる · てあげる</button>
-      <button type="button" class="preset-chip" data-preset="ageru-kureru-morau">あげる · くれる · もらう</button>
-      <button type="button" class="preset-chip" data-preset="ukemi-saseru-saserareru">受身 · 使役 · 使役受身</button>
+      <button type="button" class="preset-chip" data-preset="group-conditionals">ば · たら · と · なら</button>
+      <button type="button" class="preset-chip" data-preset="group-souda-rashii">そうだ(伝聞) · そう(様態) · ようだ · らしい</button>
+      <button type="button" class="preset-chip" data-preset="group-node-kara">ので · から</button>
+      <button type="button" class="preset-chip" data-preset="group-youni-tameni">ように · ために</button>
+      <button type="button" class="preset-chip" data-preset="group-kotonisuru">ことにする · ことになる</button>
+      <button type="button" class="preset-chip" data-preset="group-temorau-tekureru">てもらう · てくれる · てあげる</button>
+      <button type="button" class="preset-chip" data-preset="group-ageru-kureru">あげる · くれる · もらう</button>
+      <button type="button" class="preset-chip" data-preset="group-voice">受身 · 使役 · 使役受身</button>
+      <button type="button" class="preset-chip" data-preset="group-younisuru-youninaru">ようにする · ようになる</button>
+      <button type="button" class="preset-chip" data-preset="group-hazu-kamoshirenai">はず · はずがない · かもしれない</button>
+      <button type="button" class="preset-chip" data-preset="group-teiru-tearu">ている · てある</button>
+      <button type="button" class="preset-chip" data-preset="group-nisuru-ninaru">にする · になる</button>
     </div>
   </div>
-  <div id="compareSelectors" class="compare-selectors"></div>
-  <button id="addCompare" class="add-btn">＋ Add another grammar point</button>
-  <div id="compareResult" class="compare-result empty-panel">Select at least 2 grammar points.</div>
+  <div class="compare-tools-bar">
+    <div id="compareSelectors" class="compare-selectors"></div>
+    <div class="compare-controls">
+      <button id="addCompare" class="add-btn" type="button">＋ Add grammar point</button>
+      <label class="toggle-control diff-toggle-label" id="diffToggleLabel" style="display:none">
+        <input type="checkbox" id="compareDiffOnly">
+        <span>Show only differences</span>
+      </label>
+    </div>
+  </div>
+  <div id="compareKeyDiff" class="compare-key-diff" style="display:none"></div>
+  <div id="compareResult" class="compare-result empty-panel">Select at least 2 grammar points to compare.</div>
+  <div id="compareQuizBox" class="quiz-box compare-quiz-box" style="display:none"></div>
 </section>
 
 <!-- BOOK COMPANION PAGE (PRIVATE GATED) -->
@@ -824,6 +843,20 @@
       </button>
     </div>
     <div id="onboardingContent" class="modal-content"></div>
+  </div>
+</div>
+
+<!-- Floating Compare Tray -->
+<div id="compareTray" class="compare-tray" hidden aria-live="polite">
+  <div class="compare-tray-inner">
+    <div class="compare-tray-header">
+      <span class="compare-tray-title">Compare Tray (<span id="compareTrayCount">0</span>/6)</span>
+      <button id="compareTrayClear" class="tool-btn tray-btn-clear" type="button">Clear</button>
+    </div>
+    <div class="compare-tray-chips" id="compareTrayChips"></div>
+    <div class="compare-tray-actions">
+      <button id="compareTrayGo" class="primary tray-btn-go" type="button">Compare Now →</button>
+    </div>
   </div>
 </div>
 

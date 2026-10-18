@@ -18,11 +18,14 @@ const progress=JSON.parse(localStorage.getItem(progressKey)||'{}');
 const settings=Object.assign({furigana:true,furiganaSize:'M',romaji:false,theme:'system',fontSize:'M',dailyGoal:13,soundOn:true},JSON.parse(localStorage.getItem(settingsKey)||'{}'));
 
 const themeKey='jlpt-theme';
+let isThemeTransitioning=false;
+
 function preferredTheme(){
   const saved=settings.theme||localStorage.getItem(themeKey)||'system';
   if(saved==='system')return window.matchMedia&&window.matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light';
   return saved==='dark'?'dark':'light';
 }
+
 function applyTheme(theme){
   const safeTheme=theme==='dark'?'dark':'light';
   document.documentElement.dataset.theme=safeTheme;
@@ -30,29 +33,114 @@ function applyTheme(theme){
   document.body.dataset.theme=safeTheme;
   const meta=document.querySelector('meta[name="theme-color"]');
   if(meta)meta.content=safeTheme==='dark'?'#0F1115':'#F7F3EC';
+  const metaScheme=document.querySelector('meta[name="color-scheme"]');
+  if(metaScheme)metaScheme.content=safeTheme==='dark'?'dark':'light';
   syncThemeControls();
 }
-function setThemeWithTransition(theme){
+
+function setThemeInstant(theme){
   const safeTheme=theme==='dark'?'dark':'light';
-  const prefersReducedMotion=window.matchMedia&&window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-  const performChange=()=>{
-    applyTheme(safeTheme);
+  settings.theme=safeTheme;
+  try{localStorage.setItem(themeKey,safeTheme);}catch(e){}
+  try{localStorage.setItem(settingsKey,JSON.stringify(settings));}catch(e){}
+  applyTheme(safeTheme);
+}
+
+async function toggleThemeWithCircularReveal(event,forcedTheme){
+  if(isThemeTransitioning)return;
+  const cur=(document.documentElement.dataset.theme||document.body.dataset.theme||'light')==='dark'?'dark':'light';
+  const next=forcedTheme||(cur==='dark'?'light':'dark');
+  if(next===cur)return;
+
+  const btn=document.getElementById('themeToggle');
+  const b=btn?btn.getBoundingClientRect():{left:window.innerWidth-60,top:20,width:40,height:40};
+  const x=b.left+b.width/2;
+  const y=b.top+b.height/2;
+
+  const r=Math.hypot(Math.max(x,window.innerWidth-x),Math.max(y,window.innerHeight-y));
+
+  const apply=()=>{
+    settings.theme=next;
+    try{localStorage.setItem(themeKey,next);}catch(e){}
+    try{localStorage.setItem(settingsKey,JSON.stringify(settings));}catch(e){}
+    applyTheme(next);
   };
 
-  if(!prefersReducedMotion && typeof document.startViewTransition==='function'){
-    document.startViewTransition(()=>{
-      performChange();
-    });
-  }else{
-    document.documentElement.classList.add('no-transition');
-    performChange();
+  const reduce=window.matchMedia&&window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  // Instant switch for reduced motion
+  if(reduce){
+    document.documentElement.classList.add('theme-switching');
+    apply();
     requestAnimationFrame(()=>{
       requestAnimationFrame(()=>{
-        document.documentElement.classList.remove('no-transition');
+        document.documentElement.classList.remove('theme-switching');
       });
     });
+    return;
+  }
+
+  // Fallback for browsers without View Transitions (e.g. Firefox)
+  if(typeof document.startViewTransition!=='function'){
+    const overlay=document.createElement('div');
+    overlay.className='theme-transition-overlay';
+    overlay.style.cssText=`position:fixed;inset:0;width:100vw;height:100vh;background:${next==='dark'?'#0F1115':'#F7F3EC'};z-index:2147483646;pointer-events:none;clip-path:circle(0px at ${x}px ${y}px);`;
+    document.body.appendChild(overlay);
+
+    isThemeTransitioning=true;
+    try{
+      const anim=overlay.animate(
+        [
+          {clipPath:`circle(0px at ${x}px ${y}px)`},
+          {clipPath:`circle(${r}px at ${x}px ${y}px)`}
+        ],
+        {duration:500,easing:'cubic-bezier(0.4, 0, 0.2, 1)',fill:'forwards'}
+      );
+      await anim.finished;
+      apply();
+    }catch(e){
+      apply();
+    }finally{
+      if(overlay.parentNode)overlay.parentNode.removeChild(overlay);
+      isThemeTransitioning=false;
+    }
+    return;
+  }
+
+  // Native View Transitions API
+  isThemeTransitioning=true;
+  try{
+    const transition=document.startViewTransition(async ()=>{
+      apply();
+      await new Promise(res=>requestAnimationFrame(res));
+    });
+    await transition.ready;
+    const anim=document.documentElement.animate(
+      {
+        clipPath:[
+          `circle(0px at ${x}px ${y}px)`,
+          `circle(${r}px at ${x}px ${y}px)`
+        ]
+      },
+      {
+        duration:500,
+        easing:'cubic-bezier(0.4, 0, 0.2, 1)',
+        pseudoElement:'::view-transition-new(root)'
+      }
+    );
+    await anim.finished;
+  }catch(err){
+    apply();
+  }finally{
+    isThemeTransitioning=false;
   }
 }
+
+function setThemeWithTransition(theme){
+  return toggleThemeWithCircularReveal(null,theme);
+}
+window.toggleTheme = toggleThemeWithCircularReveal;
+window.toggleThemeWithCircularReveal = toggleThemeWithCircularReveal;
 
 const kanaSource=Array.isArray(window.KANA_DATA)?window.KANA_DATA:[];
 const kanaCells=new Map(kanaSource.map(cell=>[cell.romaji,cell]));
@@ -153,13 +241,42 @@ function rubyWord(word, reading) {
 
 function renderFuriganaSegments(segments) {
   if (!Array.isArray(segments) || !segments.length) return '';
-  return segments.map(segment => segment.reading && hasKanji(segment.text) ? renderRubyWord(segment.text, segment.reading) : esc(segment.text)).join('');
+  return segments.map(segment => {
+    if (!segment) return '';
+    const text = segment.t != null ? segment.t : (segment.text != null ? segment.text : '');
+    const reading = segment.r != null ? segment.r : (segment.reading != null ? segment.reading : '');
+    if (!text) return '';
+    if (reading) {
+      if (hasKanji(text)) {
+        return renderRubyWord(text, reading);
+      }
+      return `<ruby class="ruby-text"><rb>${esc(text)}</rb><rp>(</rp><rt>${esc(reading)}</rt><rp>)</rp></ruby>`;
+    }
+    return esc(text);
+  }).join('');
 }
 
 function renderSentenceFurigana(value) {
+  if (!value) return '';
   if (Array.isArray(value)) return renderFuriganaSegments(value);
-  const sentence = String(value || '');
-  if (!sentence || !hasKanji(sentence)) return esc(sentence);
+  if (typeof value === 'object') {
+    if (Array.isArray(value.segments) && value.segments.length) return renderFuriganaSegments(value.segments);
+    if (Array.isArray(value.furigana)) return renderFuriganaSegments(value.furigana);
+    if (value.ja) return renderSentenceFurigana(value.ja);
+  }
+  let sentence = String(value || '');
+  if (!sentence) return '';
+  // Strip raw HTML tags or escaped tags if passed accidentally
+  if (sentence.includes('<ruby') || sentence.includes('&lt;ruby') || sentence.includes('<rt>') || sentence.includes('&lt;rt&gt;')) {
+    sentence = sentence
+      .replace(/<rt>[^<]*<\/rt>/gi, '')
+      .replace(/&lt;rt&gt;.*?&lt;\/rt&gt;/gi, '')
+      .replace(/<[^>]+>/g, '')
+      .replace(/&lt;[^&]+&gt;/g, '')
+      .trim();
+  }
+  if (!hasKanji(sentence)) return esc(sentence);
+
   const knownWords = [...globalLexicon.keys()].sort((a, b) => b.length - a.length);
   let out = '';
   let index = 0;
@@ -179,8 +296,12 @@ function renderSentenceFurigana(value) {
       index += matched.length;
       continue;
     }
-    const kReading = globalLexicon.get(char) || 'かんじ';
-    out += `<ruby class="ruby-text"><rb>${esc(char)}</rb><rp>(</rp><rt>${esc(kReading)}</rt><rp>)</rp></ruby>`;
+    const kReading = globalLexicon.get(char);
+    if (kReading) {
+      out += `<ruby class="ruby-text"><rb>${esc(char)}</rb><rp>(</rp><rt>${esc(kReading)}</rt><rp>)</rp></ruby>`;
+    } else {
+      out += esc(char);
+    }
     index++;
   }
   return out;
@@ -214,17 +335,15 @@ function applyFontSize(size){
 function currentThemeSetting(){return settings.theme||localStorage.getItem(themeKey)||'system'}
 function syncThemeControls(){
   const isDark=(document.documentElement.dataset.theme||document.body.dataset.theme)==='dark';
-  const slot=document.getElementById('themeIconSlot');
   const btn=document.getElementById('themeToggle');
-  if(slot){
-    slot.innerHTML=isDark
-      ? `<svg class="theme-icon-sun" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"></circle><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"></path></svg>`
-      : `<svg class="theme-icon-moon" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"></path></svg>`;
-  }
   if(btn){
-    btn.setAttribute('aria-label',isDark?'Switch to light mode':'Switch to dark mode');
-    btn.title=isDark?'Switch to light mode':'Switch to dark mode';
+    btn.setAttribute('aria-label',isDark?'Switch to light theme':'Switch to dark theme');
+    btn.title=isDark?'Switch to light theme':'Switch to dark theme';
     btn.setAttribute('aria-pressed',String(isDark));
+  }
+  const select=document.getElementById('settingsTheme');
+  if(select){
+    select.value=currentThemeSetting();
   }
 }
 function initShortcutHint(){
@@ -363,16 +482,16 @@ function enrichStudyText(){
     if(item.word&&item.reading)item.furigana=buildFuriganaForWord(item.word,item.reading);
     item.examples=(item.examples||[]).map(example=>{
       const ja=String(example.ja||'').trim();
-      const translation=String(example.en||example.translation||exampleTranslation(ja)||'Translation not available').trim();
-      const furigana=example.furigana||buildSentenceFurigana(ja,globalLexicon);
+      const translation=String(example.en||example.translation||exampleTranslation(ja)||'').trim();
+      const furigana=(example.segments&&example.segments.length)?example.segments:(example.furigana||buildSentenceFurigana(ja,globalLexicon));
       return {...example,en:translation,translation,furigana};
     });
   }
   for(const item of grammar){
     item.examples=(item.examples||[]).map(example=>{
       const ja=String(example.ja||'').trim();
-      const translation=String(example.en||example.translation||exampleTranslation(ja)||'Translation not available').trim();
-      const furigana=example.furigana||buildSentenceFurigana(ja,globalLexicon);
+      const translation=String(example.en||example.translation||exampleTranslation(ja)||'').trim();
+      const furigana=(example.segments&&example.segments.length)?example.segments:(example.furigana||buildSentenceFurigana(ja,globalLexicon));
       return {...example,en:translation,translation,furigana};
     });
   }
@@ -415,7 +534,28 @@ function buildSentenceFurigana(text,lexicon){
   return segments;
 }
 function levelScope(level){return level==='N5'?['N5']:['N5','N4']}
-function eligibleExamples(target,scope){const allowed=levelScope(scope);let out=[];for(const x of vocab.filter(v=>allowed.includes(v.level))){for(const e of x.examples||[]){if((e.ja||'').includes(target.word)||x.word===target.word)out.push({...e,sourceWord:x.word,sourceLevel:x.level});}}if(!out.length)out=(target.examples||[]).map(e=>({...e,sourceWord:target.word,sourceLevel:target.level}));return [...new Map(out.map(e=>[(e.ja||'')+'|'+(e.en||''),e])).values()].sort((a,b)=>(a.ja||'').length-(b.ja||'').length).slice(0,3)}
+function eligibleExamples(target,scope){
+  let out=[];
+  if(target.examples&&target.examples.length){
+    out.push(...target.examples.map(e=>({...e,sourceWord:target.word,sourceLevel:target.level})));
+  }
+  const allowed=levelScope(scope);
+  for(const x of vocab.filter(v=>allowed.includes(v.level))){
+    if(x===target)continue;
+    for(const e of x.examples||[]){
+      if((e.ja||'').includes(target.word)){
+        out.push({...e,sourceWord:x.word,sourceLevel:x.level});
+      }
+    }
+  }
+  const deduped=[...new Map(out.filter(e=>e.ja).map(e=>[(e.ja||'')+'|'+(e.en||''),e])).values()];
+  return deduped.sort((a,b)=>{
+    const aHasEn=a.en&&a.en!=='Translation not available'?1:0;
+    const bHasEn=b.en&&b.en!=='Translation not available'?1:0;
+    if(aHasEn!==bHasEn)return bHasEn-aHasEn;
+    return (a.ja||'').length-(b.ja||'').length;
+  }).slice(0,3);
+}
 function difficulty(ex,i){return i===0?'Easy':i===1?'Medium':'Hard'}
 function escapeId(id){return String(id).replace(/[^a-zA-Z0-9_-]/g,'_')}
 
@@ -438,22 +578,39 @@ async function loadData(){
       localJson('data/kanji_flashcards.json'),
       localJson('data/study_supplement.json'),
       localJson('data/grammar.json'),
-      localJson('data/conjunctions.json')
+      localJson('data/conjunctions.json'),
+      localJson('data/comparisons.json')
     ]);
     sourceVocab=localPromises[0].status==='fulfilled'?localPromises[0].value:[];
     flashChars=localPromises[1].status==='fulfilled'?localPromises[1].value:[];
     const workbookData=localPromises[2].status==='fulfilled'?localPromises[2].value:{vocabulary:[],kanji:[]};
     if(localPromises[3].status==='fulfilled') grammar=localPromises[3].value;
     if(localPromises[4].status==='fulfilled') window.conjunctionsData=localPromises[4].value;
+    if(localPromises[5].status==='fulfilled') window.comparisonsData=localPromises[5].value;
 
     status('900 Sentences PDF',localPromises[0].status==='fulfilled',`${sourceVocab.length} records`);
     status('JK4B flashcards',localPromises[1].status==='fulfilled',`${flashChars.length} kanji`);
     status('Excel N5/N4 lists',localPromises[2].status==='fulfilled',`${(workbookData.vocabulary||[]).length} words · ${(workbookData.kanji||[]).length} kanji`);
     status('Grammar (Book N4 & N5)',localPromises[3].status==='fulfilled',`${grammar.length} patterns`);
     status('Conjunctions (14 points)',localPromises[4].status==='fulfilled',`${(window.conjunctionsData?.items||[]).length} items`);
+    status('Contrast Groups (12 sets)',localPromises[5].status==='fulfilled',`${(window.comparisonsData||[]).length} groups`);
+
+    const mapExtra = (x, i) => ({
+      id: 'pdf-' + x.source_no + '-' + i,
+      word: x.word,
+      reading: x.reading,
+      romaji: '',
+      meanings: [cleanMeaning(x.meaning)],
+      level: x.level || 'SUPP',
+      pos: Array.isArray(x.pos) ? x.pos : (x.pos ? [x.pos] : []),
+      forms: x.forms || [],
+      examples: (x.examples && x.examples.length) ? x.examples : (x.example ? [{ ja: x.example, en: x.translation || x.example_en || '', furigana: x.segments || '' }] : []),
+      source: 'PDF',
+      sourceNo: x.source_no
+    });
 
     if(sourceVocab.length||flashChars.length){
-      const quickExtra=sourceVocab.map((x,i)=>({id:'pdf-'+x.source_no+'-'+i,word:x.word,reading:x.reading,romaji:'',meanings:[cleanMeaning(x.meaning)],level:'SUPP',pos:[],examples:[{ja:x.example,en:'',furigana:''}],source:'PDF',sourceNo:x.source_no}));
+      const quickExtra=sourceVocab.map(mapExtra);
       vocab=dedupeVocab([...quickExtra,...(workbookData.vocabulary||[])]);
       const quickKm=new Map();
       for(const x of (workbookData.kanji||[])) quickKm.set(x.character,{...x,id:'k-'+x.character,flash:false});
@@ -465,7 +622,7 @@ async function loadData(){
     const results=await Promise.allSettled(keys.map(k=>fetchJsonWithFallback(SOURCES[k],SOURCES[k][0])));
     const d={};keys.forEach((k,i)=>d[k]=results[i].status==='fulfilled'?results[i].value.data:[]);
     keys.forEach((k,i)=>status(`OpenJLPT ${k.slice(-2).toUpperCase()}`,results[i].status==='fulfilled',results[i].status==='fulfilled'?(results[i].value.cached?'cache':'network'):'unavailable'));
-    const extra=sourceVocab.map((x,i)=>({id:'pdf-'+x.source_no+'-'+i,word:x.word,reading:x.reading,romaji:'',meanings:[cleanMeaning(x.meaning)],level:'SUPP',pos:[],examples:[{ja:x.example,en:'',furigana:''}],source:'PDF',sourceNo:x.source_no}));
+    const extra=sourceVocab.map(mapExtra);
     vocab=dedupeVocab([...(d.v5||[]),...(d.v4||[]),...extra,...(workbookData.vocabulary||[])]);
     if(!grammar.length) grammar=[...(d.g5||[]),...(d.g4||[])];
     const km=new Map();for(const x of [...(d.k5||[]),...(d.k4||[])]){if(!km.has(x.character))km.set(x.character,{...x,id:'k-'+x.character,flash:false})}
@@ -474,7 +631,7 @@ async function loadData(){
     kanji=[...km.values()];
     if(!vocab.length&&!grammar.length&&!kanji.length)throw new Error('No study data was returned.');
     enrichStudyText();
-    updateHome();renderAll();fillCompare();
+    updateHome();renderAll();syncCompareTray();fillCompare();
     if(typeof initGrammarViewControls==='function') initGrammarViewControls();
     if(typeof initComparePresets==='function') initComparePresets();
     if(typeof initBookCompanion==='function') initBookCompanion();
@@ -802,12 +959,13 @@ function getFilteredVocab(){
 }
 
 function vocabCardMarkup(x, i) {
+  const posDisplay = Array.isArray(x.pos) && x.pos.length ? x.pos.join(', ') : posLabel(x.pos);
   return `<article class="study-card" data-type="vocab" data-id="${esc(x.id)}" data-index="${i}">
     <div class="card-top"><div class="serial">#${i+1}</div><span class="badge">${esc(x.level)}</span></div>
     <div class="jp">${rubyWord(x.word,x.reading)}</div>
     <div class="reading romaji-field">${esc(x.reading||'—')}${settings.romaji&&x.romaji?' · '+esc(x.romaji):''}</div>
     <div class="meaning">${esc((x.meanings||[x.meaning||''])[0]||'')}</div>
-    <div class="pos-tags"><span class="pos-tag">${esc(posLabel(x.pos))}</span></div>
+    <div class="pos-tags"><span class="pos-tag">${esc(posDisplay)}</span></div>
     <div class="card-bottom">
       <button class="detail-link" data-action="detail">Details →</button>
       <button class="speak-btn card-speak" data-speak="${esc(x.word)}" aria-label="Listen to ${esc(x.word)}">
@@ -828,19 +986,21 @@ function grammarCardMarkup(x, i) {
   const isBook = Boolean(x.isBookPattern);
   const badgeText = isBook ? `第${x.lesson}話 · 文型${x.patternNo}` : `#${i+1}`;
   const pageBadge = isBook && x.bookRef?.page ? `<span class="book-ref-badge">Book p.${x.bookRef.page}</span>` : '';
+  const isComparing = compareIds.includes(x.id);
   return `<article class="study-card" data-type="grammar" data-id="${esc(x.id)}" data-index="${i}">
     <div class="card-top">
       <div class="serial">${badgeText}</div>
       ${pageBadge}
       <span class="badge">${esc(x.level)}</span>
     </div>
-    <div class="jp">${esc(x.pattern)}</div>
+    <div class="jp">${renderSentenceFurigana(x.furigana || x.pattern)}</div>
     <div class="reading romaji-field">${esc(x.romaji||'')}</div>
     <div class="meaning">${esc(x.meaning||'')}</div>
     ${x.formation?`<div class="grammar-formula-preview"><span>BUILD IT</span><code>${esc(x.formation)}</code></div>`:''}
-    ${x.examples?.[0]?.ja?`<div class="grammar-example-preview"><span>EXAMPLE</span><div>${renderSentenceFurigana(x.examples[0].furigana||x.examples[0].ja||'')}</div>${x.examples[0].en?`<small>${esc(x.examples[0].en)}</small>`:''}</div>`:''}
+    ${x.examples?.[0]?.ja?`<div class="grammar-example-preview"><span>EXAMPLE</span><div>${renderSentenceFurigana(x.examples[0].furigana||x.examples[0].segments||x.examples[0].ja||'')}</div>${x.examples[0].en?`<small>${esc(x.examples[0].en)}</small>`:''}</div>`:''}
     <div class="card-bottom">
       <button class="detail-link" data-action="detail">Learn this →</button>
+      <button class="tool-btn compare-toggle-btn ${isComparing ? 'active' : ''}" data-action="toggle-compare" data-id="${esc(x.id)}" title="Add or remove from Compare Tray">${isComparing ? '✓ In Compare' : '⚖️ Compare'}</button>
       <button class="speak-btn card-speak" data-speak="${esc(x.pattern)}" aria-label="Listen to grammar pattern">
         <svg class="btn-icon" width="16" height="16"><use href="#icon-speaker"/></svg>
       </button>
@@ -1164,9 +1324,62 @@ function syncKanaControls(){
   if(toggle)toggle.textContent=settings.romaji?'Romaji on':'Romaji off';
 }
 
-function vocabDetail(x){const scope=x.level==='N5'?'N5':'N4';const ex=eligibleExamples(x,scope);return `<span class="eyebrow">VOCABULARY · ${esc(x.level)}</span><h2 id="modalTitle">${renderRuby(x.word,x.reading)} <button class="speak-btn inline-speak" data-speak="${esc(x.word)}" aria-label="Listen to Japanese word">🔊</button></h2><div class="reading">${settings.romaji&&x.romaji?esc(x.romaji):''}</div><div class="detail-grid"><div><div class="detail-section"><h3>English meanings</h3><div>${(x.meanings||[]).map(esc).join(' · ')||'—'}</div></div><div class="detail-section"><h3>Part of speech</h3><div>${esc(posLabel(x.pos))}</div></div><div class="detail-section"><h3>Study scope</h3><div>${scope==='N5'?'N5 vocabulary only':'N5 + N4 vocabulary'}</div></div></div><div><div class="detail-section"><h3>Examples</h3>${ex.length?ex.map((e,i)=>exampleHtml(e,i,scope,x)).join(''):'<div class="subtle">No example sentence is available in the current source.</div>'}</div></div></div><div class="card-bottom"><span class="subtle">Progress is saved on this device.</span><button class="read-btn ${isRead('v',x.id)?'read':''}" data-modal-action="read-vocab" data-id="${esc(x.id)}">${isRead('v',x.id)?'✓ Read':'○ Mark as read'}</button></div>`}
-function exampleHtml(e,i,scope,x){const translation=e.translation||e.en||exampleTranslation(e.ja)||'Translation not available';return `<div class="example-box"><span class="difficulty">${difficulty(e,i)} · ${esc(e.sourceLevel||scope)}</span><div class="example-ja">${renderSentenceFurigana(e.furigana||e.ja||'')}</div><div class="example-en">${esc(translation)}</div>${!e.translation&&!e.en?`<button class="detail-link report-link" data-report="example">Report</button>`:''}<button class="detail-link speak-btn" data-speak="${esc(e.ja||'')}" aria-label="Listen to Japanese example" title="Listen to Japanese example">🔊</button></div>`}
-function openVocab(id){const x=vocab.find(v=>v.id===id);if(!x)return;openModal(vocabDetail(x));}
+function vocabDetail(x){
+  const scope = x.level === 'N5' ? 'N5' : 'N4';
+  const ex = eligibleExamples(x, scope);
+  const posArray = Array.isArray(x.pos) && x.pos.length ? x.pos : [posLabel(x.pos)];
+  const posTags = posArray.map(p => `<span class="vocab-pos-chip">${esc(p)}</span>`).join(' ');
+  const formsTags = (x.forms || []).map(f => `<span class="vocab-forms-chip">${esc(f)}</span>`).join(' ');
+
+  return `
+    <span class="eyebrow">VOCABULARY</span>
+    <h2 class="ruby-word vocab-modal-title" style="font-size:28px;margin-bottom:4px;">
+      ${renderSentenceFurigana(x.furigana || x.word)}
+      <button class="speak-btn inline-speak" data-speak="${esc(x.word)}" aria-label="Listen to Japanese word" title="Listen">🔊</button>
+    </h2>
+    <div class="reading">${settings.romaji && x.romaji ? esc(x.romaji) : (x.reading ? esc(x.reading) : '')}</div>
+
+    <div class="vocab-meta-row">
+      <span class="vocab-level-chip">${esc(x.level || 'N5')}</span>
+      ${posTags}
+      ${formsTags}
+      <span class="subtle" style="margin-left:auto;font-size:12px;">Scope: ${scope === 'N5' ? 'N5 Core' : 'N5 + N4'}</span>
+    </div>
+
+    <div class="detail-section">
+      <h3>English Meanings</h3>
+      <div style="font-size:15px;color:var(--ink);font-weight:600;line-height:1.5;">${(x.meanings || []).map(esc).join(' · ') || '—'}</div>
+    </div>
+
+    <div class="detail-section" style="margin-top:16px;">
+      <h3>Example Sentences</h3>
+      <div class="grammar-examples-grid">
+        ${ex.length ? ex.map((e, i) => `
+          <div class="grammar-example-card">
+            <span class="ex-num-badge">Example ${i + 1} · ${esc(e.sourceLevel || scope)}</span>
+            <div class="example-ja">${renderSentenceFurigana(e.segments || e.furigana || e.ja)}</div>
+            <div class="example-en">${esc(e.en || e.translation || '')}</div>
+            <button class="detail-link speak-btn inline-speak" data-speak="${esc(e.ja || '')}" aria-label="Listen to Japanese example" title="Listen" style="align-self:flex-start;margin-top:4px;">🔊 Listen</button>
+          </div>
+        `).join('') : '<div class="subtle">No example sentence is available in the current source.</div>'}
+      </div>
+    </div>
+
+    <div class="card-bottom" style="margin-top:20px;">
+      <span class="subtle">Progress is saved on this device</span>
+      <button class="read-btn ${isRead('v', x.id) ? 'read' : ''}" data-modal-action="read-vocab" data-id="${esc(x.id)}">${isRead('v', x.id) ? '✓ Read' : '○ Mark as read'}</button>
+    </div>
+  `;
+}
+function exampleHtml(e,i,scope,x){const translation=e.translation||e.en||exampleTranslation(e.ja)||'';return `<div class="example-box"><span class="difficulty">${difficulty(e,i)} · ${esc(e.sourceLevel||scope)}</span><div class="example-ja">${renderSentenceFurigana(e.furigana||e.ja||'')}</div><div class="example-en">${esc(translation)}</div><button class="detail-link speak-btn" data-speak="${esc(e.ja||'')}" aria-label="Listen to Japanese example" title="Listen to Japanese example">🔊</button></div>`}
+function openVocab(id){
+  const x=vocab.find(v=>v.id===id);if(!x)return;
+  const card=document.getElementById('modalCard');
+  if(card)card.classList.remove('modal-large');
+  openModal(vocabDetail(x));
+  const tEl=document.getElementById('modalTitle');
+  if(tEl)tEl.textContent=x.word;
+}
 
 function grammarQuickCheck(x){
   const correct=String(x.meaning||'').trim();
@@ -1180,24 +1393,97 @@ function openGrammar(id){
   const ex=(x.examples||[]).slice(0,4);
   const isBook=Boolean(x.isBookPattern);
   const bookInfo=isBook?`<span class="book-ref-badge">第${x.lesson}話 · 文型${x.patternNo} · Book p.${x.bookRef?.page||''}</span>`:'';
-  const cautionsHtml=x.cautions?`<div class="grammar-cautions-box"><h4>⚠️ Caution / Don't use when…</h4><p>${esc(x.cautions)}</p></div>`:'';
-  const contrastHtml=(x.contrastWith||[]).length?`<div class="detail-section"><h3>Compare with similar patterns</h3><div class="contrast-chips-wrap">${x.contrastWith.map(cw=>`<button type="button" class="contrast-chip" data-contrast-target="${esc(cw)}">${esc(cw)} ↗</button>`).join('')}</div></div>`:'';
-  const practiceHtml=`<div class="detail-section" style="text-align:center;margin:16px 0;"><button type="button" class="hero-btn-primary" data-action="practice-pattern" data-id="${esc(x.id)}">🎯 Practice this pattern</button></div>`;
+  const isComparing=compareIds.includes(x.id);
 
-  openModal(`<span class="eyebrow">GRAMMAR · ${esc(x.level)} ${bookInfo}</span>
-  <h2 id="modalTitle">${renderTextWithRuby(x.pattern)}</h2>
-  <div class="grammar-learning-intro">Learn the meaning first, build the sentence with the formula, then read the examples aloud.</div>
-  <div class="grammar-learning-grid">
-    <section class="grammar-learning-step"><span class="step-number">1</span><div><h3>Meaning</h3><p>${esc(x.meaning||'Meaning not supplied by this source.')}</p>${x.notes?`<p class="subtle">${esc(x.notes)}</p>`:''}</div></section>
-    <section class="grammar-learning-step"><span class="step-number">2</span><div><h3>Build the sentence</h3><div class="formula">${esc(x.formation||'Formation not supplied by this source.')}</div></div></section>
+  let prevId=null,nextId=null;
+  if(isBook&&x.lesson){
+    const lessonPatterns=grammar.filter(g=>g.lesson===x.lesson);
+    const currIdx=lessonPatterns.findIndex(g=>g.id===x.id);
+    if(currIdx>0)prevId=lessonPatterns[currIdx-1].id;
+    if(currIdx>=0&&currIdx<lessonPatterns.length-1)nextId=lessonPatterns[currIdx+1].id;
+  }
+
+  const cautionsHtml=x.cautions?`<div class="grammar-cautions-box"><h4>⚠️ Caution / Don't use when…</h4><p>${esc(x.cautions)}</p></div>`:'';
+  const contrastHtml=(x.contrastWith||[]).length?`<div class="detail-section" style="margin-top:16px;"><h3>Compare with similar patterns</h3><div class="contrast-chips-wrap">${x.contrastWith.map(cw=>{const match=grammar.find(g=>g.pattern===cw||g.pattern.replace(/^[～~]/,'')===cw.replace(/^[～~]/,''));const targetId=match?match.id:'';return `<button type="button" class="contrast-chip" data-contrast-target="${esc(cw)}" data-target-id="${esc(targetId)}">${esc(cw)} ↗ Compare</button>`;}).join('')}</div></div>`:'';
+  const practiceHtml=`<div class="detail-section" style="text-align:center;margin:20px 0;"><button type="button" class="practice-pattern-btn" data-action="practice-pattern" data-id="${esc(x.id)}"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="10"/><path d="m4.93 4.93 4.24 4.24M14.83 14.83l4.24 4.24M14.83 9.17l4.24-4.24M4.93 19.07l4.24-4.24"/><circle cx="12" cy="12" r="4"/></svg> Practice this pattern</button></div>`;
+
+  const summaryText=x.summary||x.meaning||'Core Japanese grammar pattern.';
+
+  const examplesHtml=ex.length?`<div class="detail-section" style="margin-top:16px;"><h3>Examples — read, listen, understand</h3><div class="grammar-examples-grid">${ex.map((e,i)=>`<div class="grammar-example-card"><span class="ex-num-badge">Example ${i+1}</span><div class="example-ja">${renderSentenceFurigana(e.segments||e.furigana||e.ja)}</div><div class="example-en">${esc(e.translation||e.en||'')}</div><button class="detail-link speak-btn inline-speak" data-speak="${esc(e.ja||'')}" aria-label="Listen to Japanese example" title="Listen" style="align-self:flex-start;margin-top:4px;">🔊 Listen</button></div>`).join('')}</div></div>`:'<div class="subtle">No examples supplied by this source.</div>';
+
+  const modalHtml=`
+    <div class="modal-header-left" style="margin-bottom:12px;">
+      <span class="eyebrow" style="margin:0;">GRAMMAR · ${esc(x.level)}</span>
+      ${bookInfo}
+      <button type="button" class="tool-btn compare-toggle-btn ${isComparing?'active':''}" data-action="toggle-compare" data-id="${esc(x.id)}" style="font-size:12px;padding:3px 9px;">
+        ${isComparing?'✓ In Compare Tray':'⚖️ Add to Compare'}
+      </button>
+    </div>
+
+    <h2 class="ruby-word grammar-modal-title" style="font-size:30px;margin-bottom:8px;">
+      ${renderTextWithRuby(x.pattern)}
+      <button class="speak-btn inline-speak" data-speak="${esc(x.pattern)}" aria-label="Listen to grammar pattern" title="Listen">🔊</button>
+    </h2>
+
+    <div class="grammar-summary-bar">${esc(summaryText)}</div>
+
+    <div class="grammar-trio-grid">
+      <div class="grammar-trio-card">
+        <span class="trio-step-num">1</span>
+        <h3>Meaning & Usage</h3>
+        <p>${esc(x.meaning||'Meaning not supplied.')}</p>
+        ${x.notes?`<p class="subtle" style="margin-top:6px;font-size:12px;">${esc(x.notes)}</p>`:''}
+      </div>
+
+      <div class="grammar-trio-card">
+        <span class="trio-step-num">2</span>
+        <h3>Build the Sentence</h3>
+        <p class="subtle" style="font-size:12px;margin-bottom:6px;">Standard conjugation formula:</p>
+        <div class="formula">${esc(x.formation||'Formation not supplied.')}</div>
+      </div>
+
+      <div class="grammar-trio-card">
+        <span class="trio-step-num">3</span>
+        <h3>Key Signals & Collocations</h3>
+        <p style="font-size:13px;line-height:1.45;">Notice the words immediately before and after the pattern. Repeat the Japanese aloud, then substitute one word.</p>
+        <div style="margin-top:8px;display:flex;flex-wrap:wrap;gap:4px;">
+          ${(x.tags||[]).map(t=>`<span class="tag">${esc(t)}</span>`).join('')}
+        </div>
+      </div>
+    </div>
+
     ${cautionsHtml}
-    <section class="grammar-learning-step"><span class="step-number">3</span><div><h3>Notice the pattern</h3><p>Look at the words immediately before and after the grammar point. Repeat the Japanese example aloud, then try replacing one word.</p>${(x.tags||[]).map(t=>`<span class="tag">${esc(t)}</span>`).join(' ')}</div></section>
-  </div>
-  <div class="detail-section"><h3>Examples — read, listen, understand</h3>${ex.length?ex.map((e,i)=>`<div class="example-box grammar-example-box"><div class="example-level">Example ${i+1}</div><div class="example-ja">${renderSentenceFurigana(e.furigana||e.ja||'')}</div><div class="example-en">${esc(e.translation||e.en||'Translation not available')}</div><button class="detail-link speak-btn" data-speak="${esc(e.ja||'')}" aria-label="Listen to Japanese example" title="Listen to Japanese example">🔊 Listen</button></div>`).join(''):'<div class="subtle">No examples supplied by this source.</div>'}</div>
-  ${contrastHtml}
-  ${practiceHtml}
-  ${grammarQuickCheck(x)}
-  <div class="card-bottom"><span></span><button class="read-btn ${isRead('g',x.id)?'read':''}" data-modal-action="read-grammar" data-id="${esc(x.id)}">${isRead('g',x.id)?'✓ Read':'○ Mark as read'}</button></div>`);
+    ${examplesHtml}
+    ${contrastHtml}
+    ${practiceHtml}
+    ${grammarQuickCheck(x)}
+
+    <div class="grammar-nav-row">
+      <button type="button" class="grammar-nav-btn" data-nav-id="${esc(prevId||'')}" ${prevId?'':'disabled'}>
+        ← Prev (${prevId?'Lesson pattern':'None'})
+      </button>
+      <span class="grammar-keyboard-hint">Use ← and → arrow keys to navigate</span>
+      <button type="button" class="grammar-nav-btn" data-nav-id="${esc(nextId||'')}" ${nextId?'':'disabled'}>
+        Next (${nextId?'Lesson pattern':'None'}) →
+      </button>
+    </div>
+
+    <div class="card-bottom" style="margin-top:16px;">
+      <span class="subtle">Progress is saved on this device</span>
+      <button class="read-btn ${isRead('g',x.id)?'read':''}" data-modal-action="read-grammar" data-id="${esc(x.id)}">
+        ${isRead('g',x.id)?'✓ Read':'○ Mark as read'}
+      </button>
+    </div>
+  `;
+
+  const card = document.getElementById('modalCard');
+  if (card) card.classList.add('modal-large');
+
+  openModal(modalHtml);
+  const tEl = document.getElementById('modalTitle');
+  if (tEl) tEl.textContent = x.pattern;
+
+  window.__activeGrammarNav = { prevId, nextId };
 }
 
 function openKanji(id){const x=kanji.find(k=>k.id===id);if(!x)return;const reading=kanjiReading(x);const related=relatedVocabForKanji(x);const words=related.length?related:(x.words||[]).map(w=>({word:w,reading:'',meanings:[]}));const wordHtml=words.slice(0,12).map(v=>`<div class="kanji-vocab-row"><div><b>${renderRuby(v.word,v.reading)}</b> <span class="reading">${esc(v.reading||'')}</span></div><div class="subtle">${esc((v.meanings||[]).join(' · ')||'Meaning not available in supplied vocabulary data')}</div><button class="speak-btn" data-speak="${esc(v.word)}">🔊</button></div>`).join('');openModal(`<span class="eyebrow">KANJI · ${esc(x.level||'Flashcard')}</span><h2 id="modalTitle" class="ruby-word">${reading?renderRuby(x.character,reading):esc(x.character)} <button class="speak-btn inline-speak" data-speak="${esc((x.character||'')+' '+reading)}" aria-label="Listen to kanji reading">🔊</button></h2><div class="reading">${reading?'Hiragana: '+esc(reading):'Reading not available in this source'}</div><div class="detail-grid"><div><div class="detail-section"><h3>English meanings</h3><div>${esc(kanjiMeaning(x))}</div></div><div class="detail-section"><h3>Tamil meaning</h3><div id="kTamil" class="tamil-box">Loading…</div></div><div class="detail-section"><h3>On’yomi</h3><div>${esc((x.onyomi||[]).join(' · ')||'—')}</div></div></div><div><div class="detail-section"><h3>Kun’yomi</h3><div>${esc((x.kunyomi||[]).join(' · ')||'—')}</div></div><div class="detail-section"><h3>Kanji data</h3><div>${x.strokes?esc(x.strokes)+' strokes · ':''}${x.grade?'Grade '+esc(x.grade)+' · ':''}${x.radical?'Radical '+esc(x.radical):''}</div></div><div class="detail-section"><h3>Useful vocabulary</h3>${wordHtml||'<div class="subtle">No matching vocabulary is available in the loaded sources.</div>'}</div></div></div><div class="card-bottom"><span></span><button class="read-btn ${isRead('k',x.id)?'read':''}" data-modal-action="read-kanji" data-id="${esc(x.id)}">${isRead('k',x.id)?'✓ Read':'○ Mark as read'}</button></div>`);loadTamilKanji(kanjiMeaning(x))}
@@ -1250,6 +1536,9 @@ function closeModal(options={}){
   if(!modal||modal.hidden)return;
   modal.hidden=true;
   document.body.classList.remove('modal-open');
+  const card=document.getElementById('modalCard');
+  if(card)card.classList.remove('modal-large');
+  window.__activeGrammarNav=null;
   if(modalHistoryArmed&&!options.fromPopState){
     modalHistoryArmed=false;
     try{history.back();}catch{}
@@ -1266,11 +1555,320 @@ function closeModal(options={}){
 function toggleRead(t,id){const k=markKey(t,id);readSet.has(k)?readSet.delete(k):readSet.add(k);touchStudy();renderAll();}
 function toggleKnown(t,id){const k=markKey(t,id);knownSet.has(k)?knownSet.delete(k):knownSet.add(k);touchStudy();renderAll();}
 
-function fillCompare(){const opts=grammar.map(x=>`<option value="${esc(x.id)}">${esc(x.level)} · ${esc(x.pattern)} — ${esc(x.meaning||'')}</option>`).join('');$('#compareSelectors').innerHTML=compareIds.map((id,i)=>`<div class="selector-box"><label>Grammar point ${i+1}</label><select data-compare="${i}"><option value="">Select a grammar point</option>${opts}</select>${i>1?`<button class="remove-selector" data-remove-compare="${i}">Remove</button>`:''}</div>`).join('');compareIds.forEach((id,i)=>{const s=$(`[data-compare="${i}"]`);if(s)s.value=id});if(typeof initCustomSelects==='function')initCustomSelects();renderCompare()}
-function renderCompare(){const xs=compareIds.map(id=>grammar.find(g=>g.id===id)).filter(Boolean);if(xs.length<2){$('#compareResult').innerHTML='<div class="empty-panel">Select at least 2 grammar points.</div>';return}let rows=[['Level',...xs.map(x=>x.level)],['Pattern',...xs.map(x=>x.pattern)],['English meaning',...xs.map(x=>x.meaning||'')],['Formation',...xs.map(x=>x.formation||'')],['Tags',...xs.map(x=>(x.tags||[]).join(', '))],['Example',...xs.map(x=>(x.examples?.[0]?.ja||'')+' — '+(x.examples?.[0]?.en||''))]];$('#compareResult').innerHTML='<table class="compare-table"><thead><tr><th>Feature</th>'+xs.map(x=>`<th>${esc(x.pattern)}</th>`).join('')+'</tr></thead><tbody>'+rows.map(r=>`<tr><th>${esc(r[0])}</th>${r.slice(1).map(c=>`<td>${esc(c)}</td>`).join('')}</tr>`).join('')+'</tbody></table>'}
+function showToast(msg){
+  let toast=document.getElementById('appToast');
+  if(!toast){
+    toast=document.createElement('div');
+    toast.id='appToast';
+    toast.style.cssText='position:fixed;bottom:24px;left:50%;transform:translateX(-50%);z-index:var(--z-toast,80);background:var(--paper-elev);border:1px solid var(--line);border-radius:var(--radius-full);padding:10px 20px;box-shadow:var(--shadow-lg);font-size:13px;font-weight:600;color:var(--ink);transition:opacity 200ms ease;pointer-events:none;';
+    document.body.appendChild(toast);
+  }
+  toast.textContent=msg;
+  toast.style.opacity='1';
+  clearTimeout(toast.__timer);
+  toast.__timer=setTimeout(()=>{toast.style.opacity='0';},2400);
+}
 
-function openFlash(type){const pool=type==='vocab'?vocab.filter(x=>x.level==='N5'||x.level==='N4'):kanji.filter(x=>x.level==='N5'||x.level==='N4'||x.flash);if(!pool.length){openModal('<h2 id="modalTitle">Flashcards unavailable</h2><p>No data is loaded for this section.</p>');return}let index=0,current=pool[Math.floor(Math.random()*pool.length)];const render=()=>{const front=type==='vocab'?`${rubyWord(current.word,current.reading)}<button class="speak-btn" data-speak="${esc(current.word||'')}" aria-label="Listen to Japanese word">🔊</button>`:`${current.character&&kanjiReading(current)?`<ruby>${esc(current.character)}<rt>${esc(kanjiReading(current))}</rt></ruby>`:esc(current.character||'')}<button class="speak-btn" data-speak="${esc(kanjiReading(current)||current.character||'')}" aria-label="Listen to kanji reading">🔊</button>`;const back=type==='vocab'?`<strong>${esc(current.meanings?.join(' · ')||'—')}</strong><div class="reading">${esc(current.reading||'')}</div>`:`<strong>${esc(kanjiMeaning(current))}</strong><div class="reading">${esc((current.onyomi||[]).join(' · '))} ${(current.kunyomi||[]).join(' · ')}</div><div class="flash-related">${relatedVocabForKanji(current).slice(0,5).map(v=>`<div><b>${esc(v.word)}</b> ${esc(v.reading||'')} — ${esc((v.meanings||[])[0]||'')} <button class="speak-btn inline-speak" data-speak="${esc(v.word)}" aria-label="Listen to Japanese word">🔊</button></div>`).join('')}</div>`;$('#modalContent').innerHTML=`<div class="flash-wrap"><span class="eyebrow">FLASHCARD · ${index+1}/${Math.min(pool.length,100)}</span><div class="flash-card" id="flashCard" data-type="${type}"><div class="flash-front">${front}</div><div class="flash-back">${back}</div></div><div class="flash-actions"><button class="read-btn" data-flash="still">× Still learning</button><button class="read-btn read" data-flash="know">✓ Know it</button></div><p class="subtle" style="text-align:center">Tap the card to flip. Swipe left/right on mobile.</p></div>`};window.__flashNext=()=>{index=(index+1)%Math.min(pool.length,100);current=pool[Math.floor(Math.random()*pool.length)];render()};openModal('<h2 id="modalTitle">Flashcards</h2>');render()}
-function openFlash(type){const pool=type==='vocab'?vocab.filter(x=>x.level==='N5'||x.level==='N4'):kanji.filter(x=>x.level==='N5'||x.level==='N4'||x.flash);if(!pool.length){openModal('<h2 id="modalTitle">Flashcards unavailable</h2><p>No data is loaded for this section.</p>');return}let index=0,current=pool[Math.floor(Math.random()*pool.length)];const render=()=>{const front=type==='vocab'?`${renderSentenceFurigana(current.furigana||buildFuriganaForWord(current.word,current.reading))}<button class="speak-btn" data-speak="${esc(current.word||'')}" aria-label="Listen to Japanese word">🔊</button>`:`${current.character&&kanjiReading(current)?renderRuby(current.character,kanjiReading(current)):esc(current.character||'')}<button class="speak-btn" data-speak="${esc(kanjiReading(current)||current.character||'')}" aria-label="Listen to kanji reading">🔊</button>`;const back=type==='vocab'?`<strong>${esc(current.meanings?.join(' · ')||'—')}</strong><div class="reading">${esc(current.reading||'')}</div>`:`<strong>${esc(kanjiMeaning(current))}</strong><div class="reading">${esc((current.onyomi||[]).join(' · '))} ${(current.kunyomi||[]).join(' · ')}</div><div class="flash-related">${relatedVocabForKanji(current).slice(0,5).map(v=>`<div><b>${esc(v.word)}</b> ${esc(v.reading||'')} — ${esc((v.meanings||[])[0]||'')} <button class="speak-btn inline-speak" data-speak="${esc(v.word)}" aria-label="Listen to Japanese word">🔊</button></div>`).join('')}</div>`;$('#modalContent').innerHTML=`<div class="flash-wrap"><span class="eyebrow">FLASHCARD · ${index+1}/${Math.min(pool.length,100)}</span><div class="flash-card" id="flashCard" data-type="${type}"><div class="flash-front">${front}</div><div class="flash-back">${back}</div></div><div class="flash-actions"><button class="read-btn" data-flash="still">× Still learning</button><button class="read-btn read" data-flash="know">✓ Know it</button></div><p class="subtle" style="text-align:center">Tap the card to flip. Swipe left/right on mobile.</p></div>`};window.__flashNext=()=>{index=(index+1)%Math.min(pool.length,100);current=pool[Math.floor(Math.random()*pool.length)];render()};openModal('<h2 id="modalTitle">Flashcards</h2>');render()}
+function syncCompareTray(){
+  try{
+    sessionStorage.setItem('jlpt-compare-ids',JSON.stringify(compareIds));
+  }catch(e){}
+
+  const tray=document.getElementById('compareTray');
+  const countEl=document.getElementById('compareTrayCount');
+  const chipsContainer=document.getElementById('compareTrayChips');
+  const navBadge=document.getElementById('navCompareBadge');
+
+  const count=compareIds.length;
+  if(countEl)countEl.textContent=count;
+
+  if(navBadge){
+    if(count>0){
+      navBadge.style.display='inline-flex';
+      navBadge.textContent=count;
+    }else{
+      navBadge.style.display='none';
+    }
+  }
+
+  if(tray){
+    if(count===0){
+      tray.hidden=true;
+      if(chipsContainer)chipsContainer.innerHTML='';
+    }else{
+      tray.hidden=false;
+      if(chipsContainer){
+        chipsContainer.innerHTML=compareIds.map(id=>{
+          const item=grammar.find(g=>g.id===id);
+          const name=item?item.pattern:id;
+          return `
+            <span class="compare-tray-chip">
+              <span>${esc(name)}</span>
+              <button type="button" data-tray-remove="${esc(id)}" aria-label="Remove ${esc(name)}">×</button>
+            </span>
+          `;
+        }).join('');
+
+        chipsContainer.querySelectorAll('[data-tray-remove]').forEach(btn=>{
+          btn.onclick=(e)=>{
+            e.stopPropagation();
+            toggleCompare(btn.dataset.trayRemove);
+          };
+        });
+      }
+    }
+  }
+
+  document.querySelectorAll('[data-action="toggle-compare"]').forEach(btn=>{
+    const id=btn.dataset.id;
+    const isComp=compareIds.includes(id);
+    btn.classList.toggle('active',isComp);
+    if(btn.classList.contains('compare-toggle-btn')){
+      btn.textContent=isComp?'✓ In Compare':'⚖️ Compare';
+    }else{
+      btn.textContent=isComp?'✓ In Compare Tray':'⚖️ Add to Compare';
+    }
+  });
+}
+
+function clearCompareTray(){
+  compareIds=[];
+  syncCompareTray();
+  if($('#compare')?.classList.contains('active')){
+    fillCompare();
+  }
+}
+
+function toggleCompare(id){
+  if(!id)return;
+  const idx=compareIds.indexOf(id);
+  if(idx>=0){
+    compareIds.splice(idx,1);
+  }else{
+    if(compareIds.length>=6){
+      showToast('Maximum 6 grammar points can be compared at once.');
+      return;
+    }
+    compareIds.push(id);
+  }
+  syncCompareTray();
+  if($('#compare')?.classList.contains('active')){
+    fillCompare();
+  }
+}
+
+function selectComparisonGroup(groupKey){
+  if(!window.comparisonsData)return;
+  const group=(window.comparisonsData||[]).find(g=>g.id===groupKey);
+  if(group&&group.patternIds){
+    compareIds=[...group.patternIds];
+    syncCompareTray();
+    showPage('compare');
+    renderComparisonGroup(group);
+  }
+}
+window.selectComparisonGroup=selectComparisonGroup;
+
+function renderComparisonGroup(group){
+  const diffBox=document.getElementById('compareKeyDiff');
+  const result=document.getElementById('compareResult');
+  const quizBox=document.getElementById('compareQuizBox');
+  const diffToggleLabel=document.getElementById('diffToggleLabel');
+
+  if(diffToggleLabel)diffToggleLabel.style.display='inline-flex';
+
+  if(diffBox){
+    diffBox.style.display='block';
+    diffBox.innerHTML=`
+      <div style="font-weight:700;color:var(--vermilion);margin-bottom:4px;letter-spacing:0.02em;">KEY DIFFERENCE · ${esc(group.title)}</div>
+      <p style="margin:0;font-size:14px;color:var(--ink);">${esc(group.keyDifference)}</p>
+    `;
+  }
+
+  const columns=group.patterns||[];
+  const rows=group.rows||[];
+
+  const tableHtml=`
+    <div class="compare-table-wrap" id="compareTableWrap">
+      <table class="compare-table">
+        <thead>
+          <tr>
+            <th>Contrast Dimension</th>
+            ${columns.map((p,i)=>{
+              const pid=group.patternIds?.[i];
+              return `
+                <th>
+                  <div style="font-size:16px;font-family:var(--font-display-jp);color:var(--vermilion);">${esc(p)}</div>
+                  ${pid?`<button type="button" class="tool-btn" style="font-size:11px;padding:2px 8px;margin-top:4px;" onclick="openGrammar('${esc(pid)}')">Details →</button>`:''}
+                </th>
+              `;
+            }).join('')}
+          </tr>
+        </thead>
+        <tbody>
+          ${rows.map(r=>{
+            const cells=r.cells||[];
+            const isSame=cells.length>1&&cells.every(c=>c.trim().toLowerCase()===cells[0].trim().toLowerCase());
+            return `
+              <tr class="${isSame?'is-same':''}">
+                <th>${esc(r.label)}</th>
+                ${cells.map(c=>`
+                  <td>
+                    ${renderSentenceFurigana(c)}
+                  </td>
+                `).join('')}
+              </tr>
+            `;
+          }).join('')}
+        </tbody>
+      </table>
+    </div>
+  `;
+
+  if(result){
+    result.className='compare-result';
+    result.innerHTML=tableHtml;
+  }
+
+  const drills=group.quizItems||group.drills||(group.quiz?[group.quiz]:[]);
+  if(quizBox&&drills.length){
+    const d=drills[0];
+    quizBox.style.display='block';
+    quizBox.innerHTML=`
+      <span class="eyebrow">CONTRAST DRILL · TEST YOUR RECALL</span>
+      <h3 style="margin:8px 0;">${esc(d.question)}</h3>
+      <div class="grammar-check-options" id="compareDrillOptions">
+        ${d.options.map(opt=>`<button type="button" class="grammar-check-option" data-ans="${esc(opt)}">${esc(opt)}</button>`).join('')}
+      </div>
+      <p id="compareDrillFeedback" class="grammar-check-feedback" aria-live="polite">Select the right pattern based on nuance and context restrictions.</p>
+    `;
+    const opts=quizBox.querySelectorAll('#compareDrillOptions [data-ans]');
+    const fb=document.getElementById('compareDrillFeedback');
+    opts.forEach(btn=>{
+      btn.onclick=()=>{
+        opts.forEach(b=>b.disabled=true);
+        if(btn.dataset.ans===d.correct){
+          btn.classList.add('is-correct');
+          if(fb)fb.textContent=`✓ Correct! ${d.explanation}`;
+        }else{
+          btn.classList.add('is-wrong');
+          if(fb)fb.textContent=`× Incorrect. The correct choice is "${d.correct}". ${d.explanation}`;
+        }
+      };
+    });
+  }else if(quizBox){
+    quizBox.style.display='none';
+  }
+}
+
+function fillCompare(){
+  const opts=grammar.map(x=>`<option value="${esc(x.id)}">${esc(x.level)} · ${esc(x.pattern)} — ${esc(x.meaning||'')}</option>`).join('');
+  const selectorsContainer=$('#compareSelectors');
+  if(selectorsContainer){
+    selectorsContainer.innerHTML=compareIds.map((id,i)=>`
+      <div class="selector-box">
+        <label>Grammar point ${i+1}</label>
+        <select data-compare="${i}">
+          <option value="">Select a grammar point</option>
+          ${opts}
+        </select>
+        ${compareIds.length>2?`<button class="remove-selector" data-remove-compare="${i}">Remove</button>`:''}
+      </div>
+    `).join('');
+    compareIds.forEach((id,i)=>{
+      const s=$(`[data-compare="${i}"]`);
+      if(s)s.value=id;
+    });
+  }
+  if(typeof initCustomSelects==='function')initCustomSelects();
+  renderCompare();
+}
+
+function renderCompare(){
+  const diffBox=document.getElementById('compareKeyDiff');
+  const quizBox=document.getElementById('compareQuizBox');
+  const diffToggleLabel=document.getElementById('diffToggleLabel');
+
+  if(window.comparisonsData&&window.comparisonsData.length){
+    const matchedGroup=window.comparisonsData.find(g=>{
+      if(!g.patternIds||g.patternIds.length!==compareIds.length)return false;
+      return g.patternIds.every(id=>compareIds.includes(id));
+    });
+    if(matchedGroup){
+      renderComparisonGroup(matchedGroup);
+      return;
+    }
+  }
+
+  const xs=compareIds.map(id=>grammar.find(g=>g.id===id)).filter(Boolean);
+  if(xs.length<2){
+    if(diffBox)diffBox.style.display='none';
+    if(quizBox)quizBox.style.display='none';
+    if(diffToggleLabel)diffToggleLabel.style.display='none';
+    $('#compareResult').className='compare-result empty-panel';
+    $('#compareResult').innerHTML='<div class="empty-panel">Select at least 2 grammar points to compare.</div>';
+    return;
+  }
+
+  if(diffToggleLabel)diffToggleLabel.style.display='inline-flex';
+  if(diffBox)diffBox.style.display='none';
+  if(quizBox)quizBox.style.display='none';
+
+  const rows=[
+    ['Level',...xs.map(x=>x.level)],
+    ['Pattern',...xs.map(x=>x.pattern)],
+    ['English meaning',...xs.map(x=>x.meaning||'—')],
+    ['Formation',...xs.map(x=>x.formation||'—')],
+    ['Tags',...xs.map(x=>(x.tags||[]).join(', ')||'—')],
+    ['Caution / Note',...xs.map(x=>x.cautions||x.notes||'—')],
+    ['Example Sentence',...xs.map(x=>(x.examples?.[0]?.ja||'')+(x.examples?.[0]?.en?' — '+x.examples[0].en:''))]
+  ];
+
+  $('#compareResult').className='compare-result';
+  $('#compareResult').innerHTML=`
+    <div class="compare-table-wrap" id="compareTableWrap">
+      <table class="compare-table">
+        <thead>
+          <tr>
+            <th>Feature</th>
+            ${xs.map(x=>`
+              <th>
+                <div style="font-size:16px;font-family:var(--font-display-jp);color:var(--vermilion);">${esc(x.pattern)}</div>
+                <button type="button" class="tool-btn" style="font-size:11px;padding:2px 8px;margin-top:4px;" onclick="openGrammar('${esc(x.id)}')">Details →</button>
+              </th>
+            `).join('')}
+          </tr>
+        </thead>
+        <tbody>
+          ${rows.map(r=>{
+            const vals=r.slice(1);
+            const isSame=vals.length>1&&vals.every(v=>v===vals[0]);
+            return `
+              <tr class="${isSame?'is-same':''}">
+                <th>${esc(r[0])}</th>
+                ${vals.map(c=>`<td>${renderSentenceFurigana(c)}</td>`).join('')}
+              </tr>
+            `;
+          }).join('')}
+        </tbody>
+      </table>
+    </div>
+  `;
+}
+
+function openFlash(type){
+  const pool=type==='vocab'?vocab.filter(x=>x.level==='N5'||x.level==='N4'):kanji.filter(x=>x.level==='N5'||x.level==='N4'||x.flash);
+  if(!pool.length){openModal('<h2 id="modalTitle">Flashcards unavailable</h2><p>No data is loaded for this section.</p>');return;}
+  let index=0,current=pool[Math.floor(Math.random()*pool.length)];
+  const render=()=>{
+    const front=type==='vocab'?`${renderSentenceFurigana(current.furigana||buildFuriganaForWord(current.word,current.reading))}<button class="speak-btn" data-speak="${esc(current.word||'')}" aria-label="Listen to Japanese word">🔊</button>`:`${current.character&&kanjiReading(current)?renderRuby(current.character,kanjiReading(current)):esc(current.character||'')}<button class="speak-btn" data-speak="${esc(kanjiReading(current)||current.character||'')}" aria-label="Listen to kanji reading">🔊</button>`;
+    const back=type==='vocab'?`<strong>${esc(current.meanings?.join(' · ')||'—')}</strong><div class="reading">${esc(current.reading||'')}</div>`:`<strong>${esc(kanjiMeaning(current))}</strong><div class="reading">${esc((current.onyomi||[]).join(' · '))} ${(current.kunyomi||[]).join(' · ')}</div><div class="flash-related">${relatedVocabForKanji(current).slice(0,5).map(v=>`<div><b>${esc(v.word)}</b> ${esc(v.reading||'')} — ${esc((v.meanings||[])[0]||'')} <button class="speak-btn inline-speak" data-speak="${esc(v.word)}" aria-label="Listen to Japanese word">🔊</button></div>`).join('')}</div>`;
+    $('#modalContent').innerHTML=`<div class="flash-wrap"><span class="eyebrow">FLASHCARD · ${index+1}/${Math.min(pool.length,100)}</span><div class="flash-card" id="flashCard" data-type="${type}"><div class="flash-front">${front}</div><div class="flash-back">${back}</div></div><div class="flash-actions"><button class="read-btn" data-flash="still">× Still learning</button><button class="read-btn read" data-flash="know">✓ Know it</button></div><p class="subtle" style="text-align:center">Tap the card to flip. Swipe left/right on mobile.</p></div>`;
+  };
+  window.__flashNext=()=>{index=(index+1)%Math.min(pool.length,100);current=pool[Math.floor(Math.random()*pool.length)];render();};
+  openModal('<h2 id="modalTitle">Flashcards</h2>');
+  render();
+}
 function quizConfig(){
   const topic=$('#quizTopic')?.value||'mixed';
   const level=$('#quizLevel')?.value||'ALL';
@@ -1349,7 +1947,8 @@ function updateNavIndicators(pageId){
 }
 window.addEventListener('resize',()=>updateNavIndicators(lastPage||'home'));
 
-function showPage(id,scroll=true){
+function showPage(rawId,scroll=true){
+  const id=(rawId||'home').split('?')[0];
   if(scroll) window.scrollTo({ top: 0, left: 0, behavior: 'instant' });
   document.querySelectorAll('.page').forEach(p=>p.classList.toggle('active',p.id===id));
   document.querySelectorAll('#nav [data-page],#mobileNav [data-page]').forEach(b=>{
@@ -1359,7 +1958,7 @@ function showPage(id,scroll=true){
   });
   lastPage=id;
   localStorage.setItem('jlpt-v7-last-page',id);
-  const targetHash = '#' + id;
+  const targetHash = '#' + (rawId || id);
   if(window.location.hash !== targetHash){
     try{
       history.pushState({ page: id }, '', targetHash);
@@ -1372,7 +1971,17 @@ function showPage(id,scroll=true){
   else if(id==='grammar'){if(typeof renderGrammarSection==='function')renderGrammarSection();else if(rowLoaders.g)rowLoaders.g.reset();}
   else if(id==='kanji'){if(rowLoaders.k)rowLoaders.k.reset();else renderKanji();}
   else if(id==='kana')renderKana();
-  else if(id==='compare')fillCompare();
+  else if(id==='compare'){
+    const searchSrc = window.location.hash + '&' + (rawId || '');
+    if(searchSrc.includes('ids=')){
+      const match=searchSrc.match(/ids=([^&]+)/);
+      if(match&&match[1]){
+        compareIds=decodeURIComponent(match[1]).split(',').filter(Boolean);
+        syncCompareTray();
+      }
+    }
+    fillCompare();
+  }
   else if(id==='conjunctions'){if(typeof renderConjunctions==='function')renderConjunctions();}
   else if(id==='companion'){if(typeof initBookCompanion==='function')initBookCompanion();}
 
@@ -1426,19 +2035,16 @@ const themeToggle=document.getElementById('themeToggle');
 applyTheme(preferredTheme());
 applyFontSize(settings.fontSize||'M');
 initShortcutHint();
-if(themeToggle)themeToggle.addEventListener('click',()=>{
-  const cur=document.documentElement.dataset.theme||document.body.dataset.theme||'light';
-  const next=cur==='dark'?'light':'dark';
-  settings.theme=next;
-  try{localStorage.setItem(themeKey,next);}catch(e){}
-  setThemeWithTransition(next);
-  try{save();}catch(e){}
-});
+if(themeToggle){
+  themeToggle.addEventListener('click',e=>{
+    toggleThemeWithCircularReveal(e);
+  });
+}
 
 if(window.matchMedia){
   window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change',e=>{
     if(currentThemeSetting()==='system'){
-      setThemeWithTransition(e.matches?'dark':'light');
+      setThemeInstant(e.matches?'dark':'light');
     }
   });
 }
@@ -1446,7 +2052,7 @@ window.addEventListener('storage',e=>{
   if(e.key===themeKey||e.key===settingsKey){
     const target=preferredTheme();
     if((document.documentElement.dataset.theme||document.body.dataset.theme)!==target){
-      setThemeWithTransition(target);
+      setThemeInstant(target);
     }
   }
 });
@@ -1467,6 +2073,10 @@ document.addEventListener('keydown',e=>{
       if(!e.shiftKey&&document.activeElement===last){e.preventDefault();first.focus();return;}
     }
     if(window.__kanaNav){if(e.key==='ArrowLeft'){e.preventDefault();window.__kanaNav.prev();return;}if(e.key==='ArrowRight'){e.preventDefault();window.__kanaNav.next();return;}}
+    if(window.__activeGrammarNav){
+      if(e.key==='ArrowLeft'&&window.__activeGrammarNav.prevId){e.preventDefault();openGrammar(window.__activeGrammarNav.prevId);return;}
+      if(e.key==='ArrowRight'&&window.__activeGrammarNav.nextId){e.preventDefault();openGrammar(window.__activeGrammarNav.nextId);return;}
+    }
   }
 });
 window.addEventListener('popstate',()=>{
@@ -1507,7 +2117,31 @@ document.addEventListener('click', e => {
   const grammarLevel=e.target.closest('[data-grammar-level]');if(grammarLevel){const select=$('#gLevel');if(select)select.value=grammarLevel.dataset.grammarLevel;resetG();return;}
   const grammarAnswer=e.target.closest('[data-grammar-check]');if(grammarAnswer){const feedback=$('#grammarCheckFeedback');const options=$$('.grammar-check-option');options.forEach(b=>{b.disabled=true;if(b.dataset.grammarCheck==='correct')b.classList.add('is-correct');});if(grammarAnswer.dataset.grammarCheck==='correct'){feedback.textContent='Correct! Now read one example aloud and try to make your own sentence.';feedback.classList.add('is-correct');}else{grammarAnswer.classList.add('is-wrong');feedback.textContent='Not quite. The correct meaning is highlighted above. Read the pattern and example once more.';feedback.classList.add('is-wrong');}return;}
   const quizFuriganaToggle=e.target.closest('#quizFuriganaToggle');if(quizFuriganaToggle){quizHideFurigana=!quizHideFurigana;quizPeek=false;quizFuriganaToggle.textContent=quizHideFurigana?'Hide furigana (test mode)':'Show furigana';if(quizState)renderQuizQuestion();return;}
-  const contrastTarget=e.target.closest('[data-contrast-target]');if(contrastTarget){const target=contrastTarget.dataset.contrastTarget.trim();const found=grammar.find(g=>g.pattern===target||g.title===target||g.pattern.includes(target)||(target.includes(g.pattern)&&g.pattern.length>1));closeModal();showPage('compare');if(found&&!compareIds.includes(found.id)){if(compareIds.length<2)compareIds.push(found.id);else compareIds[1]=found.id;fillCompare();}return;}
+  const toggleComp=e.target.closest('[data-action="toggle-compare"]');
+  if(toggleComp){
+    e.stopPropagation();
+    toggleCompare(toggleComp.dataset.id);
+    return;
+  }
+  const navGrammarBtn=e.target.closest('.grammar-nav-btn');
+  if(navGrammarBtn&&navGrammarBtn.dataset.navId){
+    e.preventDefault();
+    openGrammar(navGrammarBtn.dataset.navId);
+    return;
+  }
+  const contrastTarget=e.target.closest('[data-contrast-target]');
+  if(contrastTarget){
+    const target=contrastTarget.dataset.contrastTarget.trim();
+    const targetId=contrastTarget.dataset.targetId;
+    const found=targetId ? grammar.find(g=>g.id===targetId) : grammar.find(g=>g.pattern===target||g.title===target||g.pattern.includes(target)||(target.includes(g.pattern)&&g.pattern.length>1));
+    closeModal();
+    if(found&&!compareIds.includes(found.id)){
+      if(compareIds.length<6)compareIds.push(found.id);
+      syncCompareTray();
+    }
+    showPage('compare');
+    return;
+  }
   const practicePattern=e.target.closest('[data-action="practice-pattern"]');if(practicePattern){closeModal();if(typeof startGrammarPractice==='function')startGrammarPractice();return;}
   const card=e.target.closest('.study-card');if(card){const action=e.target.closest('[data-action]')?.dataset.action,id=card.dataset.id,type=card.dataset.type;if(action==='read'){e.stopPropagation();rememberResume(type==='vocab'?'v':type==='grammar'?'g':'k',Number(card.dataset.index||0)+1);toggleRead(type==='vocab'?'v':type==='grammar'?'g':'k',id)}else if(action==='detail'){rememberResume(type==='vocab'?'v':type==='grammar'?'g':'k',Number(card.dataset.index||0)+1);touchStudy();type==='vocab'?openVocab(id):type==='grammar'?openGrammar(id):openKanji(id)}return;}
   const load=e.target.closest('[data-load]');if(load){const t=load.dataset.load;if(rowLoaders[t])rowLoaders[t].jumpToIndex?.(rowLoaders[t].getLoadedCount());return;}
@@ -1517,6 +2151,16 @@ document.addEventListener('click', e => {
   if(e.target.id==='startQuiz'||e.target.id==='startQuizAgain'){startQuiz();return;}
   const quizPeekTarget=e.target.closest('[data-quiz-peek]');if(quizPeekTarget&&quizHideFurigana&&!quizPeek&&quizState){quizPeek=true;renderQuizQuestion();return;}
   const ans=e.target.closest('[data-answer]');if(ans&&quizState){answerQuiz(ans.dataset.answer);return;}
+  if(e.target.id==='compareTrayClear'||e.target.closest('#compareTrayClear')){
+    clearCompareTray();
+    return;
+  }
+  if(e.target.id==='compareTrayGo'||e.target.closest('#compareTrayGo')){
+    showPage('compare');
+    const tableWrap=document.getElementById('compareTableWrap');
+    if(tableWrap)tableWrap.scrollIntoView({behavior:'smooth',block:'start'});
+    return;
+  }
   if(e.target.id==='addCompare'){if(compareIds.length<6){compareIds.push('');fillCompare()}return;}
   const sel=e.target.closest('[data-compare]');if(sel){compareIds[Number(sel.dataset.compare)]=sel.value;renderCompare();return;}
   const rem=e.target.closest('[data-remove-compare]');if(rem){compareIds.splice(Number(rem.dataset.removeCompare),1);fillCompare();return;}
@@ -1538,6 +2182,11 @@ document.addEventListener('click', e => {
 });
 
 document.addEventListener('change',e=>{
+  if(e.target.id==='compareDiffOnly'){
+    const tableWrap=document.getElementById('compareTableWrap');
+    if(tableWrap)tableWrap.classList.toggle('compare-diff-only',e.target.checked);
+    return;
+  }
   const importInput=e.target.closest('#progressImport');
   if(importInput&&importInput.files&&importInput.files[0]){
     const reader=new FileReader();

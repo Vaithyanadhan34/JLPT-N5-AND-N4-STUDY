@@ -13,5 +13,6 @@ scripts/test-matrix-results.json
 
 # Node & temporary
 node_modules/
+scratch/
 .DS_Store
 Thumbs.db

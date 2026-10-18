@@ -1,0 +1,15 @@
+{
+  "name": "jlpt-n5-n4-study",
+  "version": "1.0.0",
+  "description": "JLPT N5 to N4 Japanese study hub",
+  "type": "module",
+  "scripts": {
+    "test:data": "node scripts/validate_all_data.mjs",
+    "test:theme": "node scripts/test_theme_toggle.mjs",
+    "test:e2e": "node scripts/test_theme_toggle.mjs && node scripts/test_all_issues.mjs",
+    "test": "npm run test:data && npm run test:e2e"
+  },
+  "devDependencies": {
+    "playwright": "^1.50.0"
+  }
+}

@@ -3,7 +3,7 @@
     {
       "id": "xlsx-n5-1",
       "word": "十",
-      "reading": "(〜を) とお",
+      "reading": "とお",
       "romaji": "",
       "meanings": [
         "ten (~)"
@@ -562,7 +562,7 @@
     {
       "id": "xlsx-n5-44",
       "word": "いい; よい",
-      "reading": "いい; よい",
+      "reading": "いい",
       "romaji": "",
       "meanings": [
         "good"
@@ -627,7 +627,7 @@
     {
       "id": "xlsx-n5-49",
       "word": "行く",
-      "reading": "いく; ゆく",
+      "reading": "いく",
       "romaji": "",
       "meanings": [
         "to go"
@@ -1797,7 +1797,7 @@
     {
       "id": "xlsx-n5-139",
       "word": "お～",
-      "reading": "お～",
+      "reading": "お",
       "romaji": "",
       "meanings": [
         "honorable ~ (honorific)"
@@ -2850,7 +2850,7 @@
     {
       "id": "xlsx-n5-220",
       "word": "結婚",
-      "reading": "けっこん (する)",
+      "reading": "けっこん",
       "romaji": "",
       "meanings": [
         "marriage (get married)"
@@ -3370,7 +3370,7 @@
     {
       "id": "xlsx-n5-260",
       "word": "散歩",
-      "reading": "さんぽ (する)",
+      "reading": "さんぽ",
       "romaji": "",
       "meanings": [
         "walk, stroll"
@@ -3734,7 +3734,7 @@
     {
       "id": "xlsx-n5-288",
       "word": "じゃ; じゃあ",
-      "reading": "じゃ; じゃあ",
+      "reading": "じゃ",
       "romaji": "",
       "meanings": [
         "well, well then"
@@ -4072,7 +4072,7 @@
     {
       "id": "xlsx-n5-314",
       "word": "そう; そうです",
-      "reading": "そう; そうです",
+      "reading": "そう",
       "romaji": "",
       "meanings": [
         "yes; appears, to be the case"
@@ -4085,7 +4085,7 @@
     {
       "id": "xlsx-n5-315",
       "word": "そうして; そして",
-      "reading": "そうして; そして",
+      "reading": "そうして",
       "romaji": "",
       "meanings": [
         "and, like that"
@@ -4098,7 +4098,7 @@
     {
       "id": "xlsx-n5-316",
       "word": "掃除",
-      "reading": "そうじ (する)",
+      "reading": "そうじ",
       "romaji": "",
       "meanings": [
         "cleaning, sweeping"
@@ -5606,7 +5606,7 @@
     {
       "id": "xlsx-n5-432",
       "word": "何",
-      "reading": "なん; なに",
+      "reading": "なん",
       "romaji": "",
       "meanings": [
         "what"
@@ -5619,7 +5619,7 @@
     {
       "id": "xlsx-n5-433",
       "word": "何～",
-      "reading": "なん～",
+      "reading": "なん",
       "romaji": "",
       "meanings": [
         "what sort of ~"
@@ -6685,7 +6685,7 @@
     {
       "id": "xlsx-n5-515",
       "word": "勉強",
-      "reading": "べんきょう (する)",
+      "reading": "べんきょう",
       "romaji": "",
       "meanings": [
         "study"
@@ -6815,7 +6815,7 @@
     {
       "id": "xlsx-n5-525",
       "word": "毎月",
-      "reading": "まいげつ; まいつき",
+      "reading": "まいげつ",
       "romaji": "",
       "meanings": [
         "every month, monthly"
@@ -6854,7 +6854,7 @@
     {
       "id": "xlsx-n5-528",
       "word": "毎年",
-      "reading": "まいねん; まいとし",
+      "reading": "まいねん",
       "romaji": "",
       "meanings": [
         "every year, yearly, annually"
@@ -7894,7 +7894,7 @@
     {
       "id": "xlsx-n5-608",
       "word": "練習",
-      "reading": "れんしゅう (する)",
+      "reading": "れんしゅう",
       "romaji": "",
       "meanings": [
         "(to) practice"
@@ -8115,7 +8115,7 @@
     {
       "id": "xlsx-n5-625",
       "word": "キロ; キログラム",
-      "reading": "キロ; キログラム",
+      "reading": "キロ",
       "romaji": "",
       "meanings": [
         "(abbr.) kilo (kilogram)"
@@ -8128,7 +8128,7 @@
     {
       "id": "xlsx-n5-626",
       "word": "キロ; キロメートル",
-      "reading": "キロ; キロメートル",
+      "reading": "キロ",
       "romaji": "",
       "meanings": [
         "(abbr.) kilo (kilometer)"
@@ -8830,7 +8830,7 @@
     {
       "id": "xlsx-n5-680",
       "word": "～円",
-      "reading": "～えん",
+      "reading": "えん",
       "romaji": "",
       "meanings": [
         "Yen"
@@ -8843,7 +8843,7 @@
     {
       "id": "xlsx-n5-681",
       "word": "～回",
-      "reading": "～かい",
+      "reading": "かい",
       "romaji": "",
       "meanings": [
         "counter for occurrences (~ times)"
@@ -8856,7 +8856,7 @@
     {
       "id": "xlsx-n5-682",
       "word": "～階",
-      "reading": "～かい",
+      "reading": "かい",
       "romaji": "",
       "meanings": [
         "counter for stories (floors) of a building"
@@ -8869,7 +8869,7 @@
     {
       "id": "xlsx-n5-683",
       "word": "～か月",
-      "reading": "～かげつ",
+      "reading": "かげつ",
       "romaji": "",
       "meanings": [
         "(number of) months"
@@ -8882,7 +8882,7 @@
     {
       "id": "xlsx-n5-684",
       "word": "～月",
-      "reading": "～がつ",
+      "reading": "がつ",
       "romaji": "",
       "meanings": [
         "month of year"
@@ -8895,7 +8895,7 @@
     {
       "id": "xlsx-n5-685",
       "word": "～がる",
-      "reading": "～がる",
+      "reading": "がる",
       "romaji": "",
       "meanings": [
         "feel"
@@ -8908,7 +8908,7 @@
     {
       "id": "xlsx-n5-686",
       "word": "～側",
-      "reading": "～がわ",
+      "reading": "がわ",
       "romaji": "",
       "meanings": [
         "~ side"
@@ -8921,7 +8921,7 @@
     {
       "id": "xlsx-n5-687",
       "word": "～くらい; ぐらい",
-      "reading": "～くらい; ぐらい",
+      "reading": "くらい",
       "romaji": "",
       "meanings": [
         "approximate (quantity)"
@@ -8934,7 +8934,7 @@
     {
       "id": "xlsx-n5-688",
       "word": "～個",
-      "reading": "～こ",
+      "reading": "こ",
       "romaji": "",
       "meanings": [
         "counter for small items (e.g., fruits, cups)"
@@ -8947,7 +8947,7 @@
     {
       "id": "xlsx-n5-689",
       "word": "～ころ; ～ごろ",
-      "reading": "～ころ; ～ごろ",
+      "reading": "ころ",
       "romaji": "",
       "meanings": [
         "about, toward, approximately (time)"
@@ -8960,7 +8960,7 @@
     {
       "id": "xlsx-n5-690",
       "word": "～語",
-      "reading": "～ご",
+      "reading": "ご",
       "romaji": "",
       "meanings": [
         "word, language"
@@ -8973,7 +8973,7 @@
     {
       "id": "xlsx-n5-691",
       "word": "～歳",
-      "reading": "～さい",
+      "reading": "さい",
       "romaji": "",
       "meanings": [
         "~ years old"
@@ -8986,7 +8986,7 @@
     {
       "id": "xlsx-n5-692",
       "word": "～冊",
-      "reading": "～さつ",
+      "reading": "さつ",
       "romaji": "",
       "meanings": [
         "counter for books"
@@ -8999,7 +8999,7 @@
     {
       "id": "xlsx-n5-693",
       "word": "～さん",
-      "reading": "～さん",
+      "reading": "さん",
       "romaji": "",
       "meanings": [
         "Mr. ~, Ms. ~"
@@ -9012,7 +9012,7 @@
     {
       "id": "xlsx-n5-694",
       "word": "～週間",
-      "reading": "～しゅうかん",
+      "reading": "しゅうかん",
       "romaji": "",
       "meanings": [
         "~ weeks"
@@ -9025,7 +9025,7 @@
     {
       "id": "xlsx-n5-695",
       "word": "～時",
-      "reading": "～じ",
+      "reading": "じ",
       "romaji": "",
       "meanings": [
         "~ o'clock (time)"
@@ -9038,7 +9038,7 @@
     {
       "id": "xlsx-n5-696",
       "word": "～時間",
-      "reading": "～じかん",
+      "reading": "じかん",
       "romaji": "",
       "meanings": [
         "~ hours"
@@ -9051,7 +9051,7 @@
     {
       "id": "xlsx-n5-697",
       "word": "～中",
-      "reading": "～じゅう",
+      "reading": "じゅう",
       "romaji": "",
       "meanings": [
         "during, while"
@@ -9064,7 +9064,7 @@
     {
       "id": "xlsx-n5-698",
       "word": "～人",
-      "reading": "～じん",
+      "reading": "じん",
       "romaji": "",
       "meanings": [
         "counter for people"
@@ -9077,7 +9077,7 @@
     {
       "id": "xlsx-n5-699",
       "word": "～すぎ",
-      "reading": "～すぎ",
+      "reading": "すぎ",
       "romaji": "",
       "meanings": [
         "past; to exceed, ~ too much"
@@ -9090,7 +9090,7 @@
     {
       "id": "xlsx-n5-700",
       "word": "～ずつ",
-      "reading": "～ずつ",
+      "reading": "ずつ",
       "romaji": "",
       "meanings": [
         "at a time"
@@ -9103,7 +9103,7 @@
     {
       "id": "xlsx-n5-701",
       "word": "～たち",
-      "reading": "～たち",
+      "reading": "たち",
       "romaji": "",
       "meanings": [
         "plural suffix"
@@ -9116,7 +9116,7 @@
     {
       "id": "xlsx-n5-702",
       "word": "～台",
-      "reading": "～だい",
+      "reading": "だい",
       "romaji": "",
       "meanings": [
         "counter for vehicles; machines"
@@ -9129,7 +9129,7 @@
     {
       "id": "xlsx-n5-703",
       "word": "～だけ",
-      "reading": "～だけ",
+      "reading": "だけ",
       "romaji": "",
       "meanings": [
         "only ~, just ~, as ~"
@@ -9142,7 +9142,7 @@
     {
       "id": "xlsx-n5-704",
       "word": "～中",
-      "reading": "～ちゅう",
+      "reading": "ちゅう",
       "romaji": "",
       "meanings": [
         "during, while ~ing"
@@ -9155,7 +9155,7 @@
     {
       "id": "xlsx-n5-705",
       "word": "～時",
-      "reading": "～とき",
+      "reading": "とき",
       "romaji": "",
       "meanings": [
         "at the time of ~"
@@ -9168,7 +9168,7 @@
     {
       "id": "xlsx-n5-706",
       "word": "～度",
-      "reading": "～ど",
+      "reading": "ど",
       "romaji": "",
       "meanings": [
         "counter for occurrences; ~ degree; ~ point"
@@ -9181,7 +9181,7 @@
     {
       "id": "xlsx-n5-707",
       "word": "～など",
-      "reading": "～など",
+      "reading": "など",
       "romaji": "",
       "meanings": [
         "et cetera"
@@ -9194,7 +9194,7 @@
     {
       "id": "xlsx-n5-708",
       "word": "～日",
-      "reading": "～にち",
+      "reading": "にち",
       "romaji": "",
       "meanings": [
         "~ day of the month, for ~ days"
@@ -9207,7 +9207,7 @@
     {
       "id": "xlsx-n5-709",
       "word": "～人",
-      "reading": "～にん",
+      "reading": "にん",
       "romaji": "",
       "meanings": [
         "counter for people"
@@ -9220,7 +9220,7 @@
     {
       "id": "xlsx-n5-710",
       "word": "～年",
-      "reading": "～ねん",
+      "reading": "ねん",
       "romaji": "",
       "meanings": [
         "~ years"
@@ -9233,7 +9233,7 @@
     {
       "id": "xlsx-n5-711",
       "word": "～杯",
-      "reading": "～はい",
+      "reading": "はい",
       "romaji": "",
       "meanings": [
         "counter for cupfuls"
@@ -9246,7 +9246,7 @@
     {
       "id": "xlsx-n5-712",
       "word": "～番",
-      "reading": "～ばん",
+      "reading": "ばん",
       "romaji": "",
       "meanings": [
         "~st; ~th best"
@@ -9259,7 +9259,7 @@
     {
       "id": "xlsx-n5-713",
       "word": "～匹",
-      "reading": "～ひき",
+      "reading": "ひき",
       "romaji": "",
       "meanings": [
         "counter for small animals"
@@ -9272,7 +9272,7 @@
     {
       "id": "xlsx-n5-714",
       "word": "～分",
-      "reading": "～ふん",
+      "reading": "ふん",
       "romaji": "",
       "meanings": [
         "~ minutes"
@@ -9285,7 +9285,7 @@
     {
       "id": "xlsx-n5-715",
       "word": "～本",
-      "reading": "～ほん",
+      "reading": "ほん",
       "romaji": "",
       "meanings": [
         "counter for long cylindrical things"
@@ -9298,7 +9298,7 @@
     {
       "id": "xlsx-n5-716",
       "word": "～枚",
-      "reading": "～まい",
+      "reading": "まい",
       "romaji": "",
       "meanings": [
         "counter for flat things"
@@ -9311,7 +9311,7 @@
     {
       "id": "xlsx-n5-717",
       "word": "～前",
-      "reading": "～まえ",
+      "reading": "まえ",
       "romaji": "",
       "meanings": [
         "in front of ~"
@@ -9324,7 +9324,7 @@
     {
       "id": "xlsx-n5-718",
       "word": "～屋",
-      "reading": "～や",
+      "reading": "や",
       "romaji": "",
       "meanings": [
         "~ shop"
@@ -11183,7 +11183,7 @@
     {
       "id": "xlsx-n4-861",
       "word": "お金持ち",
-      "reading": "かねもち; おかねもち",
+      "reading": "かねもち",
       "romaji": "",
       "meanings": [
         "rich person"
@@ -12067,7 +12067,7 @@
     {
       "id": "xlsx-n4-929",
       "word": "けれど; けれども",
-      "reading": "けれど; けれども",
+      "reading": "けれど",
       "romaji": "",
       "meanings": [
         "but, although"
@@ -12275,7 +12275,7 @@
     {
       "id": "xlsx-n4-945",
       "word": "高校; 高等学校",
-      "reading": "こうこう; こうとうがっこう",
+      "reading": "こうこう",
       "romaji": "",
       "meanings": [
         "high school; senior high school"
@@ -12743,7 +12743,7 @@
     {
       "id": "xlsx-n4-981",
       "word": "御～",
-      "reading": "ご～",
+      "reading": "ご",
       "romaji": "",
       "meanings": [
         "honorable ~"
@@ -17683,7 +17683,7 @@
     {
       "id": "xlsx-n4-1361",
       "word": "やはり; やっぱり",
-      "reading": "やはり; やっぱり",
+      "reading": "やはり",
       "romaji": "",
       "meanings": [
         "as I thought, absolutely"
@@ -18424,7 +18424,7 @@
     {
       "id": "xlsx-n4-1418",
       "word": "コンピュータ; コンピューター",
-      "reading": "コンピュータ; コンピューター",
+      "reading": "コンピュータ",
       "romaji": "",
       "meanings": [
         "computer"
@@ -18567,7 +18567,7 @@
     {
       "id": "xlsx-n4-1429",
       "word": "スーパー (マーケット)",
-      "reading": "スーパー (マーケット)",
+      "reading": "スーパー(マーケット)",
       "romaji": "",
       "meanings": [
         "supermarket"
@@ -18723,7 +18723,7 @@
     {
       "id": "xlsx-n4-1441",
       "word": "パート (タイム)",
-      "reading": "パート (タイム)",
+      "reading": "パート(タイム)",
       "romaji": "",
       "meanings": [
         "part time (esp. female part time employees)"
@@ -18840,7 +18840,7 @@
     {
       "id": "xlsx-n4-1450",
       "word": "レポート; リポート",
-      "reading": "レポート; リポート",
+      "reading": "レポート",
       "romaji": "",
       "meanings": [
         "report"
@@ -18944,7 +18944,7 @@
     {
       "id": "xlsx-n4-1458",
       "word": "～(て) しまう",
-      "reading": "～(て) しまう",
+      "reading": "(て)しまう",
       "romaji": "",
       "meanings": [
         "to end up ~"
@@ -18957,7 +18957,7 @@
     {
       "id": "xlsx-n4-1459",
       "word": "～(に) ついて",
-      "reading": "～(に) ついて",
+      "reading": "(に)ついて",
       "romaji": "",
       "meanings": [
         "about, concerning"
@@ -18970,7 +18970,7 @@
     {
       "id": "xlsx-n4-1460",
       "word": "～(に) よると",
-      "reading": "～(に) よると",
+      "reading": "(に)よると",
       "romaji": "",
       "meanings": [
         "according to ~"
@@ -18983,7 +18983,7 @@
     {
       "id": "xlsx-n4-1461",
       "word": "～員",
-      "reading": "～いん",
+      "reading": "いん",
       "romaji": "",
       "meanings": [
         "member of ~"
@@ -18996,7 +18996,7 @@
     {
       "id": "xlsx-n4-1462",
       "word": "～おき",
-      "reading": "～おき",
+      "reading": "おき",
       "romaji": "",
       "meanings": [
         "after every ~"
@@ -19009,7 +19009,7 @@
     {
       "id": "xlsx-n4-1463",
       "word": "～おわる",
-      "reading": "～おわる",
+      "reading": "おわる",
       "romaji": "",
       "meanings": [
         "to finish doing ~"
@@ -19022,7 +19022,7 @@
     {
       "id": "xlsx-n4-1464",
       "word": "～家",
-      "reading": "～か",
+      "reading": "か",
       "romaji": "",
       "meanings": [
         "person who is specialized in ~"
@@ -19035,7 +19035,7 @@
     {
       "id": "xlsx-n4-1465",
       "word": "～会",
-      "reading": "～かい",
+      "reading": "かい",
       "romaji": "",
       "meanings": [
         "~ meeting"
@@ -19048,7 +19048,7 @@
     {
       "id": "xlsx-n4-1466",
       "word": "～学部",
-      "reading": "～がくぶ",
+      "reading": "がくぶ",
       "romaji": "",
       "meanings": [
         "department of a university"
@@ -19061,7 +19061,7 @@
     {
       "id": "xlsx-n4-1467",
       "word": "～区",
-      "reading": "～く",
+      "reading": "く",
       "romaji": "",
       "meanings": [
         "~ district, ~ ward, ~ borough"
@@ -19074,7 +19074,7 @@
     {
       "id": "xlsx-n4-1468",
       "word": "～君",
-      "reading": "～くん",
+      "reading": "くん",
       "romaji": "",
       "meanings": [
         "Mr. (junior) ~, master ~"
@@ -19087,7 +19087,7 @@
     {
       "id": "xlsx-n4-1469",
       "word": "～軒",
-      "reading": "～けん",
+      "reading": "けん",
       "romaji": "",
       "meanings": [
         "counter for houses"
@@ -19100,7 +19100,7 @@
     {
       "id": "xlsx-n4-1470",
       "word": "～ございます",
-      "reading": "～ございます",
+      "reading": "ございます",
       "romaji": "",
       "meanings": [
         "to be (polite), to exist"
@@ -19113,7 +19113,7 @@
     {
       "id": "xlsx-n4-1471",
       "word": "～様",
-      "reading": "～さま",
+      "reading": "さま",
       "romaji": "",
       "meanings": [
         "Mr., Mrs., Ms."
@@ -19126,7 +19126,7 @@
     {
       "id": "xlsx-n4-1472",
       "word": "～式",
-      "reading": "～しき",
+      "reading": "しき",
       "romaji": "",
       "meanings": [
         "~ ceremony; ~ style"
@@ -19139,7 +19139,7 @@
     {
       "id": "xlsx-n4-1473",
       "word": "～製",
-      "reading": "～せい",
+      "reading": "せい",
       "romaji": "",
       "meanings": [
         "made in ~"
@@ -19152,7 +19152,7 @@
     {
       "id": "xlsx-n4-1474",
       "word": "～代",
-      "reading": "～だい",
+      "reading": "だい",
       "romaji": "",
       "meanings": [
         "~ age; period"
@@ -19165,7 +19165,7 @@
     {
       "id": "xlsx-n4-1475",
       "word": "～だす",
-      "reading": "～だす",
+      "reading": "だす",
       "romaji": "",
       "meanings": [
         "to start doing ~"
@@ -19178,7 +19178,7 @@
     {
       "id": "xlsx-n4-1476",
       "word": "建て",
-      "reading": "～だて",
+      "reading": "だて",
       "romaji": "",
       "meanings": [
         "~ storied, separate housing"
@@ -19191,7 +19191,7 @@
     {
       "id": "xlsx-n4-1477",
       "word": "～ちゃん",
-      "reading": "～ちゃん",
+      "reading": "ちゃん",
       "romaji": "",
       "meanings": [
         "suffix for familiar (female) person"
@@ -19204,7 +19204,7 @@
     {
       "id": "xlsx-n4-1478",
       "word": "～町",
-      "reading": "～ちょう",
+      "reading": "ちょう",
       "romaji": "",
       "meanings": [
         "the town of ~"
@@ -19217,7 +19217,7 @@
     {
       "id": "xlsx-n4-1479",
       "word": "～月",
-      "reading": "～つき",
+      "reading": "つき",
       "romaji": "",
       "meanings": [
         "month"
@@ -19230,7 +19230,7 @@
     {
       "id": "xlsx-n4-1480",
       "word": "～続ける",
-      "reading": "～つづける",
+      "reading": "つづける",
       "romaji": "",
       "meanings": [
         "to continue doing ~"
@@ -19243,7 +19243,7 @@
     {
       "id": "xlsx-n4-1481",
       "word": "～にくい",
-      "reading": "～にくい",
+      "reading": "にくい",
       "romaji": "",
       "meanings": [
         "difficult to do ~"
@@ -19256,7 +19256,7 @@
     {
       "id": "xlsx-n4-1482",
       "word": "～始める",
-      "reading": "～はじめる",
+      "reading": "はじめる",
       "romaji": "",
       "meanings": [
         "to start doing ~"
@@ -19269,7 +19269,7 @@
     {
       "id": "xlsx-n4-1483",
       "word": "～ばかり",
-      "reading": "～ばかり",
+      "reading": "ばかり",
       "romaji": "",
       "meanings": [
         "just did ~, only"
@@ -19282,7 +19282,7 @@
     {
       "id": "xlsx-n4-1484",
       "word": "～まま",
-      "reading": "～まま",
+      "reading": "まま",
       "romaji": "",
       "meanings": [
         "as it is"
@@ -19295,7 +19295,7 @@
     {
       "id": "xlsx-n4-1485",
       "word": "～目",
-      "reading": "～め",
+      "reading": "め",
       "romaji": "",
       "meanings": [
         "number ~ sequence, ~nd; ~th"
@@ -19308,7 +19308,7 @@
     {
       "id": "xlsx-n4-1486",
       "word": "～やすい",
-      "reading": "～やすい",
+      "reading": "やすい",
       "romaji": "",
       "meanings": [
         "easy to do ~"
