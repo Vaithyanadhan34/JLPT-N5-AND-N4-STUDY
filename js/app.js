@@ -85,20 +85,10 @@ async function toggleThemeWithCircularReveal(event,forcedTheme){
   };
 
   const reduce=window.matchMedia&&window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-  const isLowEnd = Boolean((navigator.hardwareConcurrency && navigator.hardwareConcurrency <= 4) ||
-                   (navigator.deviceMemory && navigator.deviceMemory <= 4) ||
-                   (navigator.connection && navigator.connection.saveData) ||
-                   (window.matchMedia && window.matchMedia('(prefers-reduced-transparency: reduce)').matches));
 
-  // Instant switch for reduced motion and low-end devices
-  if(reduce || isLowEnd){
-    document.documentElement.classList.add('theme-switching');
+  // Instant switch ONLY if user explicitly enabled prefers-reduced-motion in OS
+  if(reduce){
     apply();
-    requestAnimationFrame(()=>{
-      requestAnimationFrame(()=>{
-        document.documentElement.classList.remove('theme-switching');
-      });
-    });
     return;
   }
 
@@ -117,7 +107,7 @@ async function toggleThemeWithCircularReveal(event,forcedTheme){
           {clipPath:`circle(0px at ${x}px ${y}px)`},
           {clipPath:`circle(${r}px at ${x}px ${y}px)`}
         ],
-        {duration:320,easing:'cubic-bezier(0.4, 0, 0.2, 1)',fill:'forwards'}
+        {duration:700,easing:'cubic-bezier(0.4, 0, 0.2, 1)',fill:'forwards'}
       );
       await anim.finished;
       apply();
@@ -147,7 +137,7 @@ async function toggleThemeWithCircularReveal(event,forcedTheme){
         ]
       },
       {
-        duration:320,
+        duration:700,
         easing:'cubic-bezier(0.4, 0, 0.2, 1)',
         pseudoElement:'::view-transition-new(root)'
       }
