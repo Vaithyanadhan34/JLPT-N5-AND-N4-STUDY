@@ -90,8 +90,7 @@ async function diagnoseTarget(name, url, browser) {
     '#nav button[data-page="quiz"]',
     '#nav button[data-page="how"]',
     '#searchToggle',
-    '#themeToggle',
-    '#settingsToggle'
+    '#themeToggle'
   ];
 
   for (const sel of targetSelectors) {

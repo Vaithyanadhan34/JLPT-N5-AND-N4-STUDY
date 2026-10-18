@@ -59,8 +59,10 @@ async function runRegressionSuite() {
     searchOpenViaBtn: false,
     searchCloseViaEsc: false,
     searchOpenViaKey: false,
-    settingsOpenViaBtn: false,
-    settingsCloseViaEsc: false,
+    settingsRemoved: false,
+    settingsSheetRemoved: false,
+    tabOrderPass: false,
+    settingsRedirectPass: false,
     axeViolations: [],
     screenshots: {}
   };
@@ -76,7 +78,13 @@ async function runRegressionSuite() {
 
   console.log('\n[1/7] Loading local app at', LOCAL_URL);
   await page.goto(LOCAL_URL, { waitUntil: 'networkidle' });
-  await page.waitForTimeout(600);
+  await page.evaluate(() => {
+    localStorage.setItem('jlpt-v7-onboarding-dismissed', '1');
+    const sheet = document.getElementById('onboardingSheet');
+    if (sheet) sheet.hidden = true;
+    document.body.classList.remove('modal-open');
+  });
+  await page.waitForTimeout(400);
 
   // 1. Covering-Layer elementFromPoint check
   console.log('\n[2/7] Running covering-layer elementFromPoint checks on all nav controls...');
@@ -92,8 +100,7 @@ async function runRegressionSuite() {
     '#nav [data-page="quiz"]',
     '#nav [data-page="how"]',
     '#searchToggle',
-    '#themeToggle',
-    '#settingsToggle'
+    '#themeToggle'
   ];
 
   for (const sel of navControlSelectors) {
@@ -324,25 +331,40 @@ async function runRegressionSuite() {
   await page.keyboard.press('Escape');
   await page.waitForTimeout(300);
 
-  // Open settings with gear button
-  await page.click('#settingsToggle');
-  await page.waitForTimeout(300);
-  results.settingsOpenViaBtn = await page.evaluate(() => !document.getElementById('settingsSheet')?.hidden);
+  // Verify Settings button (#settingsToggle) and modal (#settingsSheet) are completely removed
+  results.settingsRemoved = (await page.$('#settingsToggle')) === null;
+  results.settingsSheetRemoved = (await page.$('#settingsSheet')) === null;
 
-  // Close settings with Escape
-  await page.keyboard.press('Escape');
+  // Focus management: Search -> Tab lands on Theme toggle (#themeToggle)
+  await page.focus('#searchToggle');
+  await page.keyboard.press('Tab');
+  const activeFocusId = await page.evaluate(() => document.activeElement?.id);
+  results.tabOrderPass = activeFocusId === 'themeToggle';
+
+  // Deep linking: #settings redirects to #home without error
+  await page.evaluate(() => window.showPage('settings'));
   await page.waitForTimeout(300);
-  results.settingsCloseViaEsc = await page.evaluate(() => Boolean(document.getElementById('settingsSheet')?.hidden));
+  const activePageAfterSettings = await page.evaluate(() => ({
+    page: document.querySelector('.page.active')?.id,
+    hash: window.location.hash
+  }));
+  results.settingsRedirectPass = activePageAfterSettings.page === 'home';
 
   console.log(`  Search: openViaBtn=${results.searchOpenViaBtn}, closeViaEsc=${results.searchCloseViaEsc}, openViaKey=${results.searchOpenViaKey}`);
-  console.log(`  Settings: openViaBtn=${results.settingsOpenViaBtn}, closeViaEsc=${results.settingsCloseViaEsc}`);
+  console.log(`  Settings removal: btnRemoved=${results.settingsRemoved}, sheetRemoved=${results.settingsSheetRemoved}, tabOrderSearchToTheme=${results.tabOrderPass}, redirectPass=${results.settingsRedirectPass}`);
 
   // 5. Mobile Viewport (390x844) Navigation
   console.log('\n[7/7] Testing Mobile Viewport (390x844)...');
   const mobContext = await browser.newContext({ viewport: { width: 390, height: 844 } });
   const mobPage = await mobContext.newPage();
   await mobPage.goto(LOCAL_URL, { waitUntil: 'networkidle' });
-  await mobPage.waitForTimeout(500);
+  await mobPage.evaluate(() => {
+    localStorage.setItem('jlpt-v7-onboarding-dismissed', '1');
+    const sheet = document.getElementById('onboardingSheet');
+    if (sheet) sheet.hidden = true;
+    document.body.classList.remove('modal-open');
+  });
+  await mobPage.waitForTimeout(400);
 
   const mobNavShotLight = path.join(SCREENSHOTS_DIR, 'navbar_mobile_390_light.png');
   await mobPage.screenshot({ path: mobNavShotLight });
@@ -389,7 +411,9 @@ runRegressionSuite().then(results => {
   const overallPass = allNavPass && allCoverPass && results.historyTest &&
                       results.deepLinkTest && results.themeToggleTest &&
                       results.themePersistenceTest && results.searchOpenViaBtn &&
-                      results.settingsOpenViaBtn && results.consoleErrors.length === 0 &&
+                      results.settingsRemoved && results.settingsSheetRemoved &&
+                      results.tabOrderPass && results.settingsRedirectPass &&
+                      results.consoleErrors.length === 0 &&
                       results.axeViolations.length === 0;
 
   console.log('\n=====================================================');

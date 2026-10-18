@@ -11,17 +11,39 @@ let vocab=[],grammar=[],kanji=[],sourceVocab=[],flashChars=[];
 let lastPage='home', modalReturnFocus=null, quizState=null, compareIds=['',''];
 let quizHideFurigana=false, quizPeek=false;
 let kanaView='hira', kanaSet='basic', kanaPracticeMode='flash', kanaSelectedId='', searchResults=[];
-const readKey='jlpt-v7-read',knownKey='jlpt-v7-known',progressKey='jlpt-v7-progress',settingsKey='jlpt-v7-settings';
+const readKey='jlpt-v7-read',knownKey='jlpt-v7-known',progressKey='jlpt-v7-progress';
 const readSet=new Set(JSON.parse(localStorage.getItem(readKey)||'[]'));
 const knownSet=new Set(JSON.parse(localStorage.getItem(knownKey)||'[]'));
 const progress=JSON.parse(localStorage.getItem(progressKey)||'{}');
-const settings=Object.assign({furigana:true,furiganaSize:'M',romaji:false,theme:'system',fontSize:'M',dailyGoal:13,soundOn:true},JSON.parse(localStorage.getItem(settingsKey)||'{}'));
+const DAILY_GOAL=10;
+window.DAILY_GOAL=DAILY_GOAL;
 
 const themeKey='jlpt-theme';
 let isThemeTransitioning=false;
 
+function migrateStorage(){
+  try{
+    const oldSettingsRaw=localStorage.getItem('jlpt-v7-settings');
+    if(oldSettingsRaw){
+      try{
+        const parsed=JSON.parse(oldSettingsRaw);
+        if(parsed&&parsed.theme&&!localStorage.getItem(themeKey)){
+          localStorage.setItem(themeKey,parsed.theme==='dark'?'dark':parsed.theme==='light'?'light':'system');
+        }
+      }catch(e){}
+      localStorage.removeItem('jlpt-v7-settings');
+    }
+    const obsoleteKeys=['settings','fontSize','furigana','romaji','dailyGoal','sound','furiganaSize','soundOn','themeMode'];
+    obsoleteKeys.forEach(k=>{
+      try{localStorage.removeItem(k);}catch(e){}
+    });
+  }catch(e){}
+}
+migrateStorage();
+
 function preferredTheme(){
-  const saved=settings.theme||localStorage.getItem(themeKey)||'system';
+  let saved='system';
+  try{saved=localStorage.getItem(themeKey)||'system';}catch(e){}
   if(saved==='system')return window.matchMedia&&window.matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light';
   return saved==='dark'?'dark':'light';
 }
@@ -40,9 +62,7 @@ function applyTheme(theme){
 
 function setThemeInstant(theme){
   const safeTheme=theme==='dark'?'dark':'light';
-  settings.theme=safeTheme;
   try{localStorage.setItem(themeKey,safeTheme);}catch(e){}
-  try{localStorage.setItem(settingsKey,JSON.stringify(settings));}catch(e){}
   applyTheme(safeTheme);
 }
 
@@ -60,16 +80,18 @@ async function toggleThemeWithCircularReveal(event,forcedTheme){
   const r=Math.hypot(Math.max(x,window.innerWidth-x),Math.max(y,window.innerHeight-y));
 
   const apply=()=>{
-    settings.theme=next;
     try{localStorage.setItem(themeKey,next);}catch(e){}
-    try{localStorage.setItem(settingsKey,JSON.stringify(settings));}catch(e){}
     applyTheme(next);
   };
 
   const reduce=window.matchMedia&&window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  const isLowEnd = Boolean((navigator.hardwareConcurrency && navigator.hardwareConcurrency <= 4) ||
+                   (navigator.deviceMemory && navigator.deviceMemory <= 4) ||
+                   (navigator.connection && navigator.connection.saveData) ||
+                   (window.matchMedia && window.matchMedia('(prefers-reduced-transparency: reduce)').matches));
 
-  // Instant switch for reduced motion
-  if(reduce){
+  // Instant switch for reduced motion and low-end devices
+  if(reduce || isLowEnd){
     document.documentElement.classList.add('theme-switching');
     apply();
     requestAnimationFrame(()=>{
@@ -88,19 +110,21 @@ async function toggleThemeWithCircularReveal(event,forcedTheme){
     document.body.appendChild(overlay);
 
     isThemeTransitioning=true;
+    document.documentElement.classList.add('theme-switching');
     try{
       const anim=overlay.animate(
         [
           {clipPath:`circle(0px at ${x}px ${y}px)`},
           {clipPath:`circle(${r}px at ${x}px ${y}px)`}
         ],
-        {duration:500,easing:'cubic-bezier(0.4, 0, 0.2, 1)',fill:'forwards'}
+        {duration:320,easing:'cubic-bezier(0.4, 0, 0.2, 1)',fill:'forwards'}
       );
       await anim.finished;
       apply();
     }catch(e){
       apply();
     }finally{
+      document.documentElement.classList.remove('theme-switching');
       if(overlay.parentNode)overlay.parentNode.removeChild(overlay);
       isThemeTransitioning=false;
     }
@@ -109,10 +133,10 @@ async function toggleThemeWithCircularReveal(event,forcedTheme){
 
   // Native View Transitions API
   isThemeTransitioning=true;
+  document.documentElement.classList.add('theme-switching');
   try{
-    const transition=document.startViewTransition(async ()=>{
+    const transition=document.startViewTransition(()=>{
       apply();
-      await new Promise(res=>requestAnimationFrame(res));
     });
     await transition.ready;
     const anim=document.documentElement.animate(
@@ -123,7 +147,7 @@ async function toggleThemeWithCircularReveal(event,forcedTheme){
         ]
       },
       {
-        duration:500,
+        duration:320,
         easing:'cubic-bezier(0.4, 0, 0.2, 1)',
         pseudoElement:'::view-transition-new(root)'
       }
@@ -132,6 +156,7 @@ async function toggleThemeWithCircularReveal(event,forcedTheme){
   }catch(err){
     apply();
   }finally{
+    document.documentElement.classList.remove('theme-switching');
     isThemeTransitioning=false;
   }
 }
@@ -311,28 +336,21 @@ function renderTextWithRuby(text) {
   return renderSentenceFurigana(text);
 }
 
-function applyFuriganaSettings() {
-  document.body.dataset.furigana = settings.furigana ? 'on' : 'off';
-  document.body.classList.toggle('hide-furigana', !settings.furigana);
-  document.body.dataset.furiganaSize = settings.furiganaSize || 'M';
-  const toggle = $('#furiganaToggle');
-  if (toggle) toggle.checked = !!settings.furigana;
-  const settingsToggle = $('#settingsFurigana');
-  if (settingsToggle) settingsToggle.checked = !!settings.furigana;
-  const sizeSelect = $('#settingsFuriganaSize');
-  if (sizeSelect) sizeSelect.value = settings.furiganaSize || 'M';
-}
+document.body.dataset.furigana = 'on';
 
-function save(){localStorage.setItem(readKey,JSON.stringify([...readSet]));localStorage.setItem(knownKey,JSON.stringify([...knownSet]));localStorage.setItem(progressKey,JSON.stringify(progress));localStorage.setItem(settingsKey,JSON.stringify(settings));localStorage.setItem('jlpt-v7-kana-state',JSON.stringify(kanaState));}
+function save(){
+  try{
+    localStorage.setItem(readKey,JSON.stringify([...readSet]));
+    localStorage.setItem(knownKey,JSON.stringify([...knownSet]));
+    localStorage.setItem(progressKey,JSON.stringify(progress));
+    localStorage.setItem('jlpt-v7-kana-state',JSON.stringify(kanaState));
+  }catch(e){}
+}
 function isRead(t,id){return readSet.has(markKey(t,id))} function isKnown(t,id){return knownSet.has(markKey(t,id))}
 function posLabel(pos=[]){if(pos.some(x=>/^v/.test(x)))return 'Verb';if(pos.includes('adj-i'))return 'i-Adjective';if(pos.includes('adj-na'))return 'na-Adjective';if(pos.includes('n'))return 'Noun';return 'Other'}
 function furiganaHtml(s){if(!s)return '';return esc(s).replace(/\{([^|{}]+)\|([^{}]+)\}/g,'<ruby>$1<rt>$2</rt></ruby>')}
 function cleanMeaning(s){return String(s||'').replace(/\s+/g,' ').trim()}
-function applyFontSize(size){
-  const map={S:'15px',M:'16px',L:'17px'};
-  document.body.style.fontSize=map[size]||map.M;
-}
-function currentThemeSetting(){return settings.theme||localStorage.getItem(themeKey)||'system'}
+
 function syncThemeControls(){
   const isDark=(document.documentElement.dataset.theme||document.body.dataset.theme)==='dark';
   const btn=document.getElementById('themeToggle');
@@ -340,10 +358,6 @@ function syncThemeControls(){
     btn.setAttribute('aria-label',isDark?'Switch to light theme':'Switch to dark theme');
     btn.title=isDark?'Switch to light theme':'Switch to dark theme';
     btn.setAttribute('aria-pressed',String(isDark));
-  }
-  const select=document.getElementById('settingsTheme');
-  if(select){
-    select.value=currentThemeSetting();
   }
 }
 function initShortcutHint(){
@@ -465,7 +479,7 @@ function buildFuriganaForWord(word,reading){
   }
   return parts.map(segment=>segment.reading?{text:segment.text,reading:normalizeHiragana(segment.reading)}:{text:segment.text,reading:null});
 }
-function enrichStudyText(){
+async function enrichStudyText(){
   for(const item of vocab){
     const reading=normalizeHiragana(item.reading||item.romaji||'');
     if(item.word&&reading)globalLexicon.set(item.word,reading);
@@ -478,6 +492,7 @@ function enrichStudyText(){
       if(word.word&&value)globalLexicon.set(word.word,value);
     }
   }
+  await new Promise(r => setTimeout(r, 0));
   for(const item of vocab){
     if(item.word&&item.reading)item.furigana=buildFuriganaForWord(item.word,item.reading);
     item.examples=(item.examples||[]).map(example=>{
@@ -487,6 +502,7 @@ function enrichStudyText(){
       return {...example,en:translation,translation,furigana};
     });
   }
+  await new Promise(r => setTimeout(r, 0));
   for(const item of grammar){
     item.examples=(item.examples||[]).map(example=>{
       const ja=String(example.ja||'').trim();
@@ -495,6 +511,7 @@ function enrichStudyText(){
       return {...example,en:translation,translation,furigana};
     });
   }
+  await new Promise(r => setTimeout(r, 0));
   for(const item of kanji){
     if(item.character&&kanjiReading(item))item.furigana=[{text:item.character,reading:normalizeHiragana(kanjiReading(item))}];
     item.words=(item.words||[]).map(word=>{
@@ -630,7 +647,7 @@ async function loadData(){
     for(const c of flashChars){if(!km.has(c.character))km.set(c.character,{id:'flash-'+c.character,character:c.character,level:'FLASH',meanings:c.meanings||[],onyomi:c.onyomi||[],kunyomi:c.kunyomi||[],strokes:c.strokes,words:c.words||[],flash:true,flashSource:c.source,flashCard:c.card,flashReadingInfo:c.reading_info,flashVocabulary:c.vocabulary_text})}
     kanji=[...km.values()];
     if(!vocab.length&&!grammar.length&&!kanji.length)throw new Error('No study data was returned.');
-    enrichStudyText();
+    await enrichStudyText();
     updateHome();renderAll();syncCompareTray();fillCompare();
     if(typeof initGrammarViewControls==='function') initGrammarViewControls();
     if(typeof initComparePresets==='function') initComparePresets();
@@ -641,7 +658,7 @@ async function loadData(){
 
 function updateHome(){
   const examples=vocab.reduce((n,x)=>n+(x.examples?.length||0),0);
-  const goal=Math.max(1,Number(settings.dailyGoal)||13);
+  const goal=DAILY_GOAL;
   const done=Math.min(goal,readSet.size+knownSet.size);
   if($('#homeVocab'))$('#homeVocab').textContent=vocab.length.toLocaleString();
   if($('#homeKanji'))$('#homeKanji').textContent=kanji.length.toLocaleString();
@@ -713,7 +730,6 @@ function createRowLoader({
   function getComputedCols() {
     const grid = getGrid();
     if (!grid) return 1;
-    void grid.offsetWidth;
     const style = window.getComputedStyle(grid);
     const template = style.gridTemplateColumns;
     if (template && template !== 'none' && !template.includes('repeat') && !template.includes('minmax')) {
@@ -963,7 +979,7 @@ function vocabCardMarkup(x, i) {
   return `<article class="study-card" data-type="vocab" data-id="${esc(x.id)}" data-index="${i}">
     <div class="card-top"><div class="serial">#${i+1}</div><span class="badge">${esc(x.level)}</span></div>
     <div class="jp">${rubyWord(x.word,x.reading)}</div>
-    <div class="reading romaji-field">${esc(x.reading||'—')}${settings.romaji&&x.romaji?' · '+esc(x.romaji):''}</div>
+    <div class="reading romaji-field">${esc(x.reading||'—')}</div>
     <div class="meaning">${esc((x.meanings||[x.meaning||''])[0]||'')}</div>
     <div class="pos-tags"><span class="pos-tag">${esc(posDisplay)}</span></div>
     <div class="card-bottom">
@@ -1189,7 +1205,7 @@ function kanaCellMarkup(item,script='hira'){
     ? `<span class="kana-characters"><span class="kana-char">${esc(item.hiragana)}</span><span class="kana-char">${esc(item.katakana)}</span></span>`
     : `<span class="kana-char">${esc(script==='kata'?item.katakana:item.hiragana)}</span>`;
   const label=`${item.romaji}, hiragana ${item.hiragana}, katakana ${item.katakana}`;
-  return `<button class="kana-cell ${learned?'learned':''}" type="button" data-kana-id="${esc(item.romaji)}" data-col="${esc(item.col||kanaColumnForRomaji(item.romaji))}" data-group="${esc(item.group)}" aria-label="${esc(label)}"><span class="kana-romaji" ${settings.romaji?'':'hidden'}>${esc(item.romaji)}</span>${learned?'<span class="kana-check">✓</span>':''}<span class="kana-main">${content}</span></button>`;
+  return `<button class="kana-cell ${learned?'learned':''}" type="button" data-kana-id="${esc(item.romaji)}" data-col="${esc(item.col||kanaColumnForRomaji(item.romaji))}" data-group="${esc(item.group)}" aria-label="${esc(label)}"><span class="kana-romaji">${esc(item.romaji)}</span>${learned?'<span class="kana-check">✓</span>':''}<span class="kana-main">${content}</span></button>`;
 }
 function kanaRowMarkup(row,script,set){
   const rowItems=row.items.map(romaji=>kanaItem(romaji)).filter(Boolean);
@@ -1320,8 +1336,6 @@ function openKanaPractice(mode){
 function syncKanaControls(){
   document.querySelectorAll('[data-kana-view]').forEach(btn=>btn.classList.toggle('active',btn.dataset.kanaView===kanaView));
   document.querySelectorAll('[data-kana-set]').forEach(btn=>btn.classList.toggle('active',btn.dataset.kanaSet===kanaSet));
-  const toggle=$('#kanaRomajiToggle');
-  if(toggle)toggle.textContent=settings.romaji?'Romaji on':'Romaji off';
 }
 
 function vocabDetail(x){
@@ -1337,7 +1351,7 @@ function vocabDetail(x){
       ${renderSentenceFurigana(x.furigana || x.word)}
       <button class="speak-btn inline-speak" data-speak="${esc(x.word)}" aria-label="Listen to Japanese word" title="Listen">🔊</button>
     </h2>
-    <div class="reading">${settings.romaji && x.romaji ? esc(x.romaji) : (x.reading ? esc(x.reading) : '')}</div>
+    <div class="reading">${x.reading ? esc(x.reading) : ''}</div>
 
     <div class="vocab-meta-row">
       <span class="vocab-level-chip">${esc(x.level || 'N5')}</span>
@@ -1948,7 +1962,11 @@ function updateNavIndicators(pageId){
 window.addEventListener('resize',()=>updateNavIndicators(lastPage||'home'));
 
 function showPage(rawId,scroll=true){
-  const id=(rawId||'home').split('?')[0];
+  let id=(rawId||'home').split('?')[0];
+  if(id==='settings'){
+    id='home';
+    rawId='home';
+  }
   if(scroll) window.scrollTo({ top: 0, left: 0, behavior: 'instant' });
   document.querySelectorAll('.page').forEach(p=>p.classList.toggle('active',p.id===id));
   document.querySelectorAll('#nav [data-page],#mobileNav [data-page]').forEach(b=>{
@@ -1957,7 +1975,7 @@ function showPage(rawId,scroll=true){
     if(isActive)b.setAttribute('aria-current','page');else b.removeAttribute('aria-current');
   });
   lastPage=id;
-  localStorage.setItem('jlpt-v7-last-page',id);
+  try{localStorage.setItem('jlpt-v7-last-page',id);}catch(e){}
   const targetHash = '#' + (rawId || id);
   if(window.location.hash !== targetHash){
     try{
@@ -1989,37 +2007,11 @@ function showPage(rawId,scroll=true){
 }
 function updateCountdown(){const target=new Date('2026-12-05T00:00:00+05:30');let ms=target-Date.now();if(ms<=0){$('#countdown').textContent='EXAM DAY';return}const sec=Math.floor(ms/1000),months=Math.floor(sec/(30.436875*86400)),rest1=sec-Math.floor(months*30.436875*86400),days=Math.floor(rest1/86400),rest2=rest1-days*86400,h=Math.floor(rest2/3600),m=Math.floor((rest2%3600)/60),s=rest2%60;$('#countdown').textContent=`${months} months : ${days} days : ${String(h).padStart(2,'0')} hours : ${String(m).padStart(2,'0')} min : ${String(s).padStart(2,'0')} sec`}
 
-function openSheet(id){['moreSheet','settingsSheet','searchSheet','onboardingSheet'].forEach(sheet=>{const el=$('#'+sheet);if(el)el.hidden=sheet!==id;});document.body.classList.add('modal-open');}
-function closeSheets(){['moreSheet','settingsSheet','searchSheet','onboardingSheet'].forEach(sheet=>{const el=$('#'+sheet);if(el)el.hidden=true;});document.body.classList.remove('modal-open');}
+function openSheet(id){['moreSheet','searchSheet','onboardingSheet'].forEach(sheet=>{const el=$('#'+sheet);if(el)el.hidden=sheet!==id;});document.body.classList.add('modal-open');}
+function closeSheets(){['moreSheet','searchSheet','onboardingSheet'].forEach(sheet=>{const el=$('#'+sheet);if(el)el.hidden=true;});document.body.classList.remove('modal-open');}
 function renderMoreSheet(){
   $('#moreSheetTitle').textContent='More';
-  $('#moreSheetContent').innerHTML=`<div class="settings-grid"><button class="tool-btn" data-page="grammar">Grammar</button><button class="tool-btn" data-page="conjunctions">Conjunctions</button><button class="tool-btn" data-page="compare">Compare</button><button class="tool-btn" data-page="companion">Companion</button><button class="tool-btn" data-page="quiz">Quiz</button><button class="tool-btn" data-page="how">Guide</button><button class="tool-btn" data-open-settings="1">Settings</button></div>`;
-}
-function renderSettingsSheet(){
-  $('#settingsTitle').textContent='Settings';
-  $('#settingsContent').innerHTML=`<div class="settings-grid">
-    <div class="settings-row">
-      <div class="settings-item"><label><span>Furigana</span><input type="checkbox" id="settingsFurigana" ${settings.furigana?'checked':''}></label><small>Show reading above kanji.</small></div>
-      <div class="settings-item"><label><span>Romaji</span><input type="checkbox" id="settingsRomaji" ${settings.romaji?'checked':''}></label><small>Show romaji labels in study cards.</small></div>
-    </div>
-    <div class="settings-row">
-      <div class="settings-item"><label><span>Theme</span><select id="settingsTheme"><option value="system" ${currentThemeSetting()==='system'?'selected':''}>System</option><option value="light" ${currentThemeSetting()==='light'?'selected':''}>Light</option><option value="dark" ${currentThemeSetting()==='dark'?'selected':''}>Dark</option></select></label><small>Follows your device unless you choose a mode.</small></div>
-      <div class="settings-item"><label><span>Font size</span><select id="settingsFontSize"><option value="S" ${settings.fontSize==='S'?'selected':''}>S</option><option value="M" ${settings.fontSize==='M'||!settings.fontSize?'selected':''}>M</option><option value="L" ${settings.fontSize==='L'?'selected':''}>L</option></select></label><small>Adjust the reading comfort.</small></div>
-    </div>
-    <div class="settings-row">
-      <div class="settings-item"><label><span>Furigana size</span><select id="settingsFuriganaSize"><option value="S" ${settings.furiganaSize==='S'?'selected':''}>Small</option><option value="M" ${settings.furiganaSize==='M'||!settings.furiganaSize?'selected':''}>Medium</option><option value="L" ${settings.furiganaSize==='L'?'selected':''}>Large</option></select></label><small>Scales the reading line above kanji.</small></div>
-      <div class="settings-item"><label><span>Daily goal</span><input id="settingsGoal" type="number" min="1" value="${esc(settings.dailyGoal||13)}"></label><small>Use this for the progress ring on Home.</small></div>
-      <div class="settings-item"><label><span>Sound</span><input type="checkbox" id="settingsSound" ${settings.soundOn!==false?'checked':''}></label><small>Use the browser voice when available.</small></div>
-    </div>
-    <div class="settings-actions">
-      <button class="primary" data-settings-save="1">Save settings</button>
-      <button class="tool-btn" data-progress-export="1">Export progress</button>
-      <label class="tool-btn" style="display:inline-flex;align-items:center;gap:8px;cursor:pointer"><input id="progressImport" type="file" accept="application/json" style="display:none">Import progress</label>
-      <button class="tool-btn" data-reset-progress="1">Reset progress</button>
-    </div>
-    <p class="subtle">Clearing browser data will erase progress on this device. Export first if you want a backup.</p>
-  </div>`;
-  if(typeof initCustomSelects==='function')initCustomSelects();
+  $('#moreSheetContent').innerHTML=`<div class="settings-grid"><button class="tool-btn" data-page="grammar">Grammar</button><button class="tool-btn" data-page="conjunctions">Conjunctions</button><button class="tool-btn" data-page="compare">Compare</button><button class="tool-btn" data-page="companion">Companion</button><button class="tool-btn" data-page="quiz">Quiz</button><button class="tool-btn" data-page="how">Guide</button></div>`;
 }
 function renderSearchSheet(){
   $('#searchTitle').textContent='Search';
@@ -2033,7 +2025,6 @@ function renderOnboardingSheet(){
 function maybeShowOnboarding(){if(localStorage.getItem('jlpt-v7-onboarding-dismissed')==='1')return;openSheet('onboardingSheet');renderOnboardingSheet();}
 const themeToggle=document.getElementById('themeToggle');
 applyTheme(preferredTheme());
-applyFontSize(settings.fontSize||'M');
 initShortcutHint();
 if(themeToggle){
   themeToggle.addEventListener('click',e=>{
@@ -2043,22 +2034,24 @@ if(themeToggle){
 
 if(window.matchMedia){
   window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change',e=>{
-    if(currentThemeSetting()==='system'){
-      setThemeInstant(e.matches?'dark':'light');
-    }
+    try{
+      if(!localStorage.getItem(themeKey)||localStorage.getItem(themeKey)==='system'){
+        setThemeInstant(e.matches?'dark':'light');
+      }
+    }catch(err){}
   });
 }
 window.addEventListener('storage',e=>{
-  if(e.key===themeKey||e.key===settingsKey){
+  if(e.key===themeKey){
     const target=preferredTheme();
     if((document.documentElement.dataset.theme||document.body.dataset.theme)!==target){
       setThemeInstant(target);
     }
   }
 });
-const sheetIds=['moreSheet','settingsSheet','searchSheet','onboardingSheet'];
+const sheetIds=['moreSheet','searchSheet','onboardingSheet'];
 sheetIds.forEach(id=>{const el=$('#'+id);if(el)el.addEventListener('click',e=>{if(e.target.classList.contains('modal-backdrop'))closeSheets();});});
-$('#closeMoreSheet')?.addEventListener('click',closeSheets);$('#closeSettingsSheet')?.addEventListener('click',closeSheets);$('#closeSearchSheet')?.addEventListener('click',closeSheets);$('#closeOnboardingSheet')?.addEventListener('click',()=>{localStorage.setItem('jlpt-v7-onboarding-dismissed','1');closeSheets();});
+$('#closeMoreSheet')?.addEventListener('click',closeSheets);$('#closeSearchSheet')?.addEventListener('click',closeSheets);$('#closeOnboardingSheet')?.addEventListener('click',()=>{localStorage.setItem('jlpt-v7-onboarding-dismissed','1');closeSheets();});
 document.addEventListener('keydown',e=>{
   if((e.metaKey||e.ctrlKey)&&e.key.toLowerCase()==='k'){e.preventDefault();openSheet('searchSheet');renderSearchSheet();return;}
   if(e.key==='Escape'){closeModal();closeSheets();return;}
@@ -2088,10 +2081,6 @@ window.addEventListener('popstate',()=>{
     showPage(page,false);
   }
 });
-if($('#furiganaToggle')) $('#furiganaToggle').checked=settings.furigana;
-if($('#romajiToggle')) $('#romajiToggle').checked=settings.romaji;
-if($('#furiganaToggle')) $('#furiganaToggle').onchange=e=>{settings.furigana=e.target.checked;save();renderAll()};
-if($('#romajiToggle')) $('#romajiToggle').onchange=e=>{settings.romaji=e.target.checked;save();renderAll()};
 setInterval(updateCountdown,1000);updateCountdown();
 document.addEventListener('click', e => {
   const pageBtn=e.target.closest('[data-page]');
@@ -2103,17 +2092,11 @@ document.addEventListener('click', e => {
     return;
   }
   const searchToggle=e.target.closest('#searchToggle');if(searchToggle){openSheet('searchSheet');renderSearchSheet();return;}
-  const settingsToggle=e.target.closest('#settingsToggle');if(settingsToggle){openSheet('settingsSheet');renderSettingsSheet();return;}
   const mobileMore=e.target.closest('#mobileMoreBtn');if(mobileMore){openSheet('moreSheet');renderMoreSheet();return;}
-  const openSettings=e.target.closest('[data-open-settings]');if(openSettings){openSheet('settingsSheet');renderSettingsSheet();return;}
   const onboardingClose=e.target.closest('[data-onboarding-close]');if(onboardingClose){localStorage.setItem('jlpt-v7-onboarding-dismissed','1');closeSheets();return;}
   const onboardingSkip=e.target.closest('[data-onboarding-skip]');if(onboardingSkip){localStorage.setItem('jlpt-v7-onboarding-dismissed','1');closeSheets();return;}
   const closeModalBtn=e.target.closest('#closeModal');if(closeModalBtn){closeModal();return;}
   const modalBackdrop=e.target.closest('#modal .modal-backdrop');if(modalBackdrop){closeModal();return;}
-  const themeChoice=e.target.closest('[data-theme-choice]');if(themeChoice){settings.theme=themeChoice.dataset.themeChoice;applyTheme(preferredTheme());save();return;}
-  const settingsSave=e.target.closest('[data-settings-save]');if(settingsSave){settings.furigana=$('#settingsFurigana')?.checked??settings.furigana;settings.furiganaSize=$('#settingsFuriganaSize')?.value||settings.furiganaSize;settings.romaji=$('#settingsRomaji')?.checked??settings.romaji;settings.theme=$('#settingsTheme')?.value||settings.theme;settings.fontSize=$('#settingsFontSize')?.value||settings.fontSize;settings.dailyGoal=Math.max(1,Number($('#settingsGoal')?.value||settings.dailyGoal||13));settings.soundOn=$('#settingsSound')?.checked??true;applyTheme(preferredTheme());applyFontSize(settings.fontSize);save();renderAll();return;}
-  const progressExport=e.target.closest('[data-progress-export]');if(progressExport){const payload={read:[...readSet],known:[...knownSet],progress,settings,kanaState};const blob=new Blob([JSON.stringify(payload,null,2)],{type:'application/json'});const url=URL.createObjectURL(blob);const a=document.createElement('a');a.href=url;a.download='jlpt-progress.json';a.click();setTimeout(()=>URL.revokeObjectURL(url),0);return;}
-  const resetProgress=e.target.closest('[data-reset-progress]');if(resetProgress){if(confirm('Reset all progress on this device?')){readSet.clear();knownSet.clear();Object.keys(progress).forEach(k=>delete progress[k]);kanaState={view:kanaView,set:kanaSet,learned:[]};save();renderAll();renderKana();renderSettingsSheet();}return;}
   const grammarLevel=e.target.closest('[data-grammar-level]');if(grammarLevel){const select=$('#gLevel');if(select)select.value=grammarLevel.dataset.grammarLevel;resetG();return;}
   const grammarAnswer=e.target.closest('[data-grammar-check]');if(grammarAnswer){const feedback=$('#grammarCheckFeedback');const options=$$('.grammar-check-option');options.forEach(b=>{b.disabled=true;if(b.dataset.grammarCheck==='correct')b.classList.add('is-correct');});if(grammarAnswer.dataset.grammarCheck==='correct'){feedback.textContent='Correct! Now read one example aloud and try to make your own sentence.';feedback.classList.add('is-correct');}else{grammarAnswer.classList.add('is-wrong');feedback.textContent='Not quite. The correct meaning is highlighted above. Read the pattern and example once more.';feedback.classList.add('is-wrong');}return;}
   const quizFuriganaToggle=e.target.closest('#quizFuriganaToggle');if(quizFuriganaToggle){quizHideFurigana=!quizHideFurigana;quizPeek=false;quizFuriganaToggle.textContent=quizHideFurigana?'Hide furigana (test mode)':'Show furigana';if(quizState)renderQuizQuestion();return;}
@@ -2170,7 +2153,6 @@ document.addEventListener('click', e => {
   const kanaCell=e.target.closest('[data-kana-id]');if(kanaCell){openKanaDetail(kanaCell.dataset.kanaId);return;}
   const kanaViewBtn=e.target.closest('[data-kana-view]');if(kanaViewBtn){kanaView=kanaViewBtn.dataset.kanaView;kanaState.view=kanaView;save();renderKana();return;}
   const kanaSetBtn=e.target.closest('[data-kana-set]');if(kanaSetBtn){kanaSet=kanaSetBtn.dataset.kanaSet;kanaState.set=kanaSet;save();renderKana();return;}
-  const kanaRomaji=e.target.closest('#kanaRomajiToggle');if(kanaRomaji){settings.romaji=!settings.romaji;save();renderKana();return;}
   const kanaModeBtn=e.target.closest('[data-kana-mode]');if(kanaModeBtn){openKanaPractice(kanaModeBtn.dataset.kanaMode);return;}
   const kanaNav=e.target.closest('[data-kana-nav]');if(kanaNav&&window.__kanaNav){window.__kanaNav[kanaNav.dataset.kanaNav]();return;}
   const kanaMark=e.target.closest('[data-kana-mark]');if(kanaMark&&kanaSelectedId){if(kanaMark.dataset.kanaMark==='learn')kanaMarkLearned(kanaSelectedId);else kanaUnmarkLearned(kanaSelectedId);openKanaDetail(kanaSelectedId);return;}
@@ -2186,28 +2168,6 @@ document.addEventListener('change',e=>{
     const tableWrap=document.getElementById('compareTableWrap');
     if(tableWrap)tableWrap.classList.toggle('compare-diff-only',e.target.checked);
     return;
-  }
-  const importInput=e.target.closest('#progressImport');
-  if(importInput&&importInput.files&&importInput.files[0]){
-    const reader=new FileReader();
-    reader.onload=()=>{
-      try{
-        const data=JSON.parse(String(reader.result||'{}'));
-        if(Array.isArray(data.read)){readSet.clear();data.read.forEach(x=>readSet.add(x));}
-        if(Array.isArray(data.known)){knownSet.clear();data.known.forEach(x=>knownSet.add(x));}
-        Object.assign(progress,data.progress||{});
-        Object.assign(settings,data.settings||{});
-        kanaState=data.kanaState||kanaState;
-        applyTheme(preferredTheme());
-        applyFontSize(settings.fontSize||'M');
-        save();
-        renderAll();
-        renderKana();
-        renderSettingsSheet();
-        alert('Progress imported.');
-      }catch(err){alert('Could not import progress.');}
-    };
-    reader.readAsText(importInput.files[0]);
   }
 });
 
@@ -2245,10 +2205,6 @@ renderKana();
 
 const quizFuriganaToggleButton=$('#quizFuriganaToggle');
 if(quizFuriganaToggleButton)quizFuriganaToggleButton.textContent='Hide furigana (test mode)';
-$('#furiganaToggle').checked=settings.furigana;
-$('#romajiToggle').checked=settings.romaji;
-$('#furiganaToggle').onchange=e=>{settings.furigana=e.target.checked;save();renderAll()};
-$('#romajiToggle').onchange=e=>{settings.romaji=e.target.checked;save();renderAll()};
 
 if($('#globalSearchInput'))$('#globalSearchInput').addEventListener('input',e=>{
   const q=e.target.value.trim().toLowerCase();
@@ -2598,7 +2554,6 @@ window.addEventListener('scroll',()=>{
 if('serviceWorker' in navigator)window.addEventListener('load',()=>navigator.serviceWorker.register('./sw.js').catch(()=>{}));
 
 loadData().then(()=>{
-  applyFontSize(settings.fontSize||'M');
   initCustomSelects();
   setupHeroInteractions();
   setupWordOfTheDay();

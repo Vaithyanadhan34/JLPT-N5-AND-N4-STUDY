@@ -8,9 +8,7 @@
 <script>
 (function(){
   try{
-    var s=localStorage.getItem('jlpt-v7-settings');
-    var t=s?JSON.parse(s).theme:'system';
-    if(!t||t==='system')t=localStorage.getItem('jlpt-theme')||'system';
+    var t=localStorage.getItem('jlpt-theme')||'system';
     var d=t==='dark'||(t==='system'&&window.matchMedia('(prefers-color-scheme: dark)').matches)?'dark':'light';
     document.documentElement.dataset.theme=d;
     document.documentElement.style.colorScheme=d;
@@ -97,9 +95,6 @@
         </button>
         <div id="themeTooltip" class="theme-tooltip" role="tooltip">Switch theme</div>
       </div>
-      <button id="settingsToggle" class="icon-action glass-btn" type="button" aria-label="Open settings" title="Settings">
-        <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><path d="M12.22 2h-.44a2 2 0 0 0-2 2v.18a2 2 0 0 1-1 1.73l-.43.25a2 2 0 0 1-2 0l-.15-.08a2 2 0 0 0-2.73.73l-.22.38a2 2 0 0 0 .73 2.73l.15.1a2 2 0 0 1 1 1.72v.51a2 2 0 0 1-1 1.74l-.15.09a2 2 0 0 0-.73 2.73l.22.38a2 2 0 0 0 2.73.73l.15-.08a2 2 0 0 1 2 0l.43.25a2 2 0 0 1 1 1.73V20a2 2 0 0 0 2 2h.44a2 2 0 0 0 2-2v-.18a2 2 0 0 1 1-1.73l.43-.25a2 2 0 0 1 2 0l.15.08a2 2 0 0 0 2.73-.73l.22-.39a2 2 0 0 0-.73-2.73l-.15-.08a2 2 0 0 1-1-1.74v-.5a2 2 0 0 1 1-1.74l.15-.09a2 2 0 0 0 .73-2.73l-.22-.38a2 2 0 0 0-2.73-.73l-.15.08a2 2 0 0 1-2 0l-.43-.25a2 2 0 0 1-1-1.73V4a2 2 0 0 0-2-2z"></path><circle cx="12" cy="12" r="3"></circle></svg>
-      </button>
     </div>
   </div>
 </header>
@@ -697,7 +692,6 @@
       <button class="segmented-btn" data-kana-set="dakuten">Dakuten</button>
       <button class="segmented-btn" data-kana-set="combo">Combinations</button>
     </div>
-    <button id="kanaRomajiToggle" class="tool-btn" type="button">Romaji off</button>
   </div>
   <div class="kana-practice-bar">
     <button class="tool-btn" data-kana-mode="flash">Flash</button>
@@ -756,10 +750,6 @@
       <li>Use Flashcards and Quiz to actively recall instead of only reading.</li>
       <li>Grammar Compare is for pairs or groups of 2–6 patterns.</li>
     </ol>
-    <div class="settings-row">
-      <label><input type="checkbox" id="furiganaToggle" checked> Show furigana</label>
-      <label><input type="checkbox" id="romajiToggle"> Show romaji</label>
-    </div>
   </div>
 </section>
 </main>
@@ -801,20 +791,6 @@
       </button>
     </div>
     <div id="moreSheetContent" class="modal-content"></div>
-  </div>
-</div>
-
-<div id="settingsSheet" class="modal sheet" hidden>
-  <div class="modal-backdrop"></div>
-  <div class="modal-card sheet-card" role="dialog" aria-modal="true" aria-labelledby="settingsTitle" tabindex="-1">
-    <div class="sheet-drag-handle" aria-hidden="true"></div>
-    <div class="modal-header">
-      <div id="settingsTitle" class="modal-title">Settings & Study Preferences</div>
-      <button id="closeSettingsSheet" class="close" aria-label="Close">
-        <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 6 6 18M6 6l12 12"></path></svg>
-      </button>
-    </div>
-    <div id="settingsContent" class="modal-content"></div>
   </div>
 </div>
 

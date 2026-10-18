@@ -6,7 +6,7 @@
   "scripts": {
     "test:data": "node scripts/validate_all_data.mjs",
     "test:theme": "node scripts/test_theme_toggle.mjs",
-    "test:e2e": "node scripts/test_theme_toggle.mjs && node scripts/test_all_issues.mjs",
+    "test:e2e": "node scripts/test_theme_toggle.mjs && node scripts/test_all_issues.mjs && node scripts/test_smoothness_regression.mjs",
     "test": "npm run test:data && npm run test:e2e"
   },
   "devDependencies": {

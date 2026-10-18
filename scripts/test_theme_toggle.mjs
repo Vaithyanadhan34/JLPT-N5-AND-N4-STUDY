@@ -143,7 +143,7 @@ async function runThemeTests() {
     });
 
     for (let i = 0; i < 30; i++) {
-      await page.click('#themeToggle').catch(() => {});
+      await page.evaluate(() => document.getElementById('themeToggle')?.click());
       await page.waitForTimeout(40);
     }
     await page.waitForTimeout(1000);
