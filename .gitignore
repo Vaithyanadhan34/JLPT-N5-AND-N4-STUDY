@@ -1,18 +1,25 @@
-# Reference material (copyrighted PDFs)
+# Reference material & media (copyrighted PDFs, reference recordings)
 reference/
+video/
+*.mp4
+*.webm
+*.mov
+
+# Screenshots & visual test artifacts
+screenshots/
+scratch/
+scripts/lh-*.json
+scripts/*-report.json
+scripts/test-matrix-results.json
 
 # Private Book Companion data (answers, companion notes)
 data/private/
 data/private-book-companion.json
 
-# Screenshots & test artifacts
-screenshots/
-scripts/lh-*.json
-scripts/*-report.json
-scripts/test-matrix-results.json
-
-# Node & temporary
+# Python & Node artifacts
+__pycache__/
+*.pyc
+*.pyo
 node_modules/
-scratch/
 .DS_Store
 Thumbs.db

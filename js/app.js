@@ -72,74 +72,78 @@ async function toggleThemeWithCircularReveal(event,forcedTheme){
   const next=forcedTheme||(cur==='dark'?'light':'dark');
   if(next===cur)return;
 
-  const btn=document.getElementById('themeToggle');
-  const b=btn?btn.getBoundingClientRect():{left:window.innerWidth-60,top:20,width:40,height:40};
-  const x=b.left+b.width/2;
-  const y=b.top+b.height/2;
+  let x = event && typeof event.clientX === 'number' && event.clientX > 0 ? event.clientX : null;
+  let y = event && typeof event.clientY === 'number' && event.clientY > 0 ? event.clientY : null;
+  const btn = document.getElementById('themeToggle');
+  if (!x || !y) {
+    const b = btn ? btn.getBoundingClientRect() : { left: window.innerWidth - 60, top: 20, width: 40, height: 40 };
+    x = b.left + b.width / 2;
+    y = b.top + b.height / 2;
+  }
 
-  const r=Math.hypot(Math.max(x,window.innerWidth-x),Math.max(y,window.innerHeight-y));
+  const r = Math.hypot(Math.max(x, window.innerWidth - x), Math.max(y, window.innerHeight - y)) + 30;
 
-  const apply=()=>{
-    try{localStorage.setItem(themeKey,next);}catch(e){}
+  const apply = () => {
+    try { localStorage.setItem(themeKey, next); } catch(e){}
     applyTheme(next);
   };
 
-  const reduce=window.matchMedia&&window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  const reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
   // Instant switch ONLY if user explicitly enabled prefers-reduced-motion in OS
-  if(reduce){
+  if (reduce) {
     apply();
     return;
   }
 
   // Fallback for browsers without View Transitions (e.g. Firefox)
-  if(typeof document.startViewTransition!=='function'){
-    const overlay=document.createElement('div');
-    overlay.className='theme-transition-overlay';
-    overlay.style.cssText=`position:fixed;inset:0;width:100vw;height:100vh;background:${next==='dark'?'#0F1115':'#F7F3EC'};z-index:2147483646;pointer-events:none;clip-path:circle(0px at ${x}px ${y}px);`;
+  if (typeof document.startViewTransition !== 'function') {
+    const overlay = document.createElement('div');
+    overlay.className = 'theme-transition-overlay';
+    overlay.style.cssText = `position:fixed;inset:0;width:100vw;height:100vh;background:${next==='dark'?'#0F1115':'#F7F3EC'};z-index:2147483646;pointer-events:none;clip-path:circle(0px at ${x}px ${y}px);`;
     document.body.appendChild(overlay);
 
-    isThemeTransitioning=true;
+    isThemeTransitioning = true;
     document.documentElement.classList.add('theme-switching');
-    try{
-      const anim=overlay.animate(
+    try {
+      const anim = overlay.animate(
         [
-          {clipPath:`circle(0px at ${x}px ${y}px)`},
-          {clipPath:`circle(${r}px at ${x}px ${y}px)`}
+          { clipPath: `circle(0px at ${x}px ${y}px)` },
+          { clipPath: `circle(${r}px at ${x}px ${y}px)` }
         ],
-        {duration:700,easing:'cubic-bezier(0.4, 0, 0.2, 1)',fill:'forwards'}
+        { duration: 850, easing: 'cubic-bezier(0.4, 0, 0.2, 1)', fill: 'forwards' }
       );
       await anim.finished;
       apply();
-    }catch(e){
+    } catch(e) {
       apply();
-    }finally{
+    } finally {
       document.documentElement.classList.remove('theme-switching');
-      if(overlay.parentNode)overlay.parentNode.removeChild(overlay);
-      isThemeTransitioning=false;
+      if (overlay.parentNode) overlay.parentNode.removeChild(overlay);
+      isThemeTransitioning = false;
     }
     return;
   }
 
   // Native View Transitions API
-  isThemeTransitioning=true;
+  isThemeTransitioning = true;
   document.documentElement.classList.add('theme-switching');
-  try{
-    const transition=document.startViewTransition(()=>{
+  try {
+    const transition = document.startViewTransition(() => {
       apply();
     });
     await transition.ready;
-    const anim=document.documentElement.animate(
+    const anim = document.documentElement.animate(
       {
-        clipPath:[
+        clipPath: [
           `circle(0px at ${x}px ${y}px)`,
           `circle(${r}px at ${x}px ${y}px)`
         ]
       },
       {
-        duration:700,
-        easing:'cubic-bezier(0.4, 0, 0.2, 1)',
-        pseudoElement:'::view-transition-new(root)'
+        duration: 850,
+        easing: 'cubic-bezier(0.4, 0, 0.2, 1)',
+        pseudoElement: '::view-transition-new(root)'
       }
     );
     await anim.finished;

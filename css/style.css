@@ -716,7 +716,7 @@ body[data-theme="dark"] {
   color: currentColor;
   stroke-width: 1.85px;
   transform-origin: center center;
-  transition: transform 650ms cubic-bezier(0.4, 0, 0.2, 1), opacity 550ms ease !important;
+  transition: transform 800ms cubic-bezier(0.4, 0, 0.2, 1), opacity 650ms ease !important;
 }
 
 /* Dark mode active: Sun rotates in, Moon rotates out */
@@ -799,21 +799,51 @@ body:not([data-theme="dark"]) .theme-icon-moon {
   visibility: hidden !important;
 }
 
-/* On mobile / narrow screens (<640px), place tooltip below or hide */
+/* On mobile / narrow screens (<640px), compact header and actions */
 @media (max-width: 639px) {
-  .theme-tooltip {
-    right: auto;
-    left: 50%;
-    top: calc(100% + 8px);
-    transform: translateX(-50%);
+  .site-header {
+    width: calc(100% - 16px);
+    top: 8px;
   }
-  .theme-tooltip::after {
-    top: auto;
-    bottom: 100%;
-    left: 50%;
-    margin-top: 0;
-    margin-left: -5px;
-    border-color: transparent transparent var(--theme-tooltip-bg) transparent;
+  .header-inner {
+    height: 52px;
+    padding: 0 12px;
+    gap: 8px;
+  }
+  .brand-title {
+    white-space: nowrap;
+    gap: 4px;
+  }
+  .jp-mark {
+    white-space: nowrap;
+    font-size: 18px;
+  }
+  .brand-tag {
+    font-size: 10px;
+    padding: 1px 5px;
+  }
+  .hanko-seal {
+    width: 28px;
+    height: 28px;
+    font-size: 15px;
+  }
+  #searchToggle {
+    width: 38px;
+    height: 38px;
+    padding: 0;
+    justify-content: center;
+    border-radius: 10px;
+  }
+  #searchToggle .kbd-hint {
+    display: none !important;
+  }
+  .theme-toggle-btn {
+    width: 38px;
+    height: 38px;
+    border-radius: 10px;
+  }
+  .theme-tooltip {
+    display: none !important;
   }
 }
 
@@ -1504,21 +1534,52 @@ body[data-theme="dark"] .hero-watermark {
 @media (max-width: 640px) {
   .hero-stationery {
     min-height: auto;
-    padding: 24px 0 20px;
+    padding: 18px 0 16px;
+  }
+  .eyebrow-chip {
+    padding: 4px 10px;
+    font-size: 11px;
+    margin-bottom: 10px;
   }
   .hero-title {
-    font-size: 36px;
+    font-size: 26px;
+    line-height: 1.25;
+    margin-bottom: 10px;
+  }
+  .hero-desc {
+    font-size: 13.5px;
+    line-height: 1.45;
+    margin-bottom: 14px;
   }
   .hero-cta-group {
-    flex-direction: column;
+    flex-direction: row;
+    gap: 8px;
+    width: 100%;
   }
   .hero-btn-primary, .hero-btn-secondary {
-    width: 100%;
+    flex: 1;
+    width: auto;
+    padding: 9px 12px;
+    font-size: 13px;
+    min-height: 40px;
+    justify-content: center;
+    white-space: nowrap;
   }
   .hero-stats-band {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 12px;
+    gap: 8px;
+    padding: 8px 12px;
+    margin-top: 12px;
+  }
+  .hero-stat-cell {
+    padding: 4px 6px;
+  }
+  .hero-stat-num {
+    font-size: 19px;
+  }
+  .hero-stat-lbl {
+    font-size: 10.5px;
   }
   .hero-stat-divider {
     display: none;
@@ -1527,21 +1588,24 @@ body[data-theme="dark"] .hero-watermark {
     grid-column: 1 / -1;
     margin-left: 0;
     justify-content: center;
+    padding: 6px 12px;
+    font-size: 11.5px;
   }
   .collage-container {
-    min-height: 380px;
+    min-height: 300px;
+    margin-top: 10px;
   }
   .card-vocab {
-    width: 240px;
-    height: 180px;
-    left: 10px;
-    top: 20px;
+    width: 210px;
+    height: 160px;
+    left: 8px;
+    top: 10px;
   }
   .card-kana {
-    width: 180px;
-    height: 160px;
-    right: 10px;
-    top: 150px;
+    width: 160px;
+    height: 140px;
+    right: 8px;
+    top: 120px;
   }
   .card-quiz {
     display: none;
@@ -4000,4 +4064,194 @@ body[data-theme="dark"] .card-skeleton::after {
   font-size: 12px;
   font-weight: 600;
 }
+
+/* ==========================================================================
+   Mobile Version Compact Spacing & Density Improvements (<640px)
+   ========================================================================== */
+@media (max-width: 640px) {
+  main {
+    width: calc(100% - 20px);
+    padding: 12px 0 96px;
+  }
+  .section-head {
+    margin-bottom: 14px;
+    flex-wrap: wrap;
+    gap: 6px;
+  }
+  .section-head h2 {
+    font-size: 24px;
+    margin: 2px 0 4px;
+  }
+  .section-head p {
+    font-size: 13px;
+    line-height: 1.4;
+  }
+  .section-head .count {
+    font-size: 12px;
+  }
+
+  /* Compact Toolbar on mobile */
+  .toolbar {
+    padding: 10px;
+    gap: 8px;
+    margin-bottom: 14px;
+    border-radius: 12px;
+  }
+  .search-input-wrap {
+    min-width: 100%;
+    flex: 1 1 100%;
+  }
+  .search-input-wrap input {
+    height: 38px;
+    font-size: 13px;
+    padding-left: 36px;
+  }
+  .search-input-wrap .search-icon {
+    left: 12px;
+  }
+  .custom-select-wrap {
+    flex: 1 1 calc(50% - 4px);
+    min-width: calc(50% - 4px);
+  }
+  .custom-select-trigger {
+    height: 36px;
+    padding: 0 10px;
+    font-size: 12px;
+    gap: 6px;
+  }
+  .jump-input {
+    flex: 1 1 calc(50% - 4px);
+    min-width: calc(50% - 4px);
+    height: 36px;
+    font-size: 12px;
+    padding: 0 8px;
+  }
+  .tool-btn {
+    flex: 1 1 calc(50% - 4px);
+    min-width: calc(50% - 4px);
+    height: 36px;
+    padding: 0 10px;
+    font-size: 12px;
+  }
+
+  /* Compact Cards */
+  .card-grid {
+    gap: 12px;
+  }
+  .study-card {
+    padding: 14px;
+    min-height: 160px;
+    border-radius: 12px;
+  }
+  .study-card .jp {
+    font-size: 22px;
+  }
+  .study-card .reading {
+    font-size: 12.5px;
+  }
+  .study-card .meaning {
+    font-size: 13px;
+  }
+  .card-bottom {
+    gap: 6px;
+    margin-top: 10px;
+  }
+  .card-bottom button {
+    height: 32px;
+    padding: 0 10px;
+    font-size: 11.5px;
+  }
+
+  /* Compact Grammar Path */
+  .grammar-path {
+    padding: 14px;
+    margin: 12px 0 16px;
+    border-radius: 14px;
+  }
+  .grammar-path-heading {
+    margin-bottom: 10px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+  .grammar-path-heading h3 {
+    font-size: 18px;
+  }
+  .grammar-path-heading p {
+    font-size: 12.5px;
+  }
+  .grammar-level-shortcuts button {
+    padding: 6px 10px;
+    font-size: 12px;
+  }
+
+  /* Compact Kana Matrix */
+  .basic-row {
+    grid-template-columns: 24px repeat(5, 1fr);
+    gap: 4px;
+  }
+  .kana-row-label {
+    font-size: 11px;
+  }
+  .kana-cell {
+    min-height: 48px;
+    border-radius: 8px;
+  }
+  .kana-cell .kana-char {
+    font-size: 20px;
+  }
+  .kana-cell .kana-romaji {
+    font-size: 9.5px;
+  }
+
+  /* Compact Floating Compare Tray */
+  .compare-tray {
+    bottom: 74px;
+    left: 8px;
+    right: 8px;
+    width: auto;
+    transform: none;
+    padding: 8px 12px;
+    border-radius: 14px;
+  }
+  .compare-tray-inner {
+    gap: 8px;
+  }
+  .compare-tray-title {
+    font-size: 12px;
+  }
+  .compare-tray-chips {
+    gap: 4px;
+  }
+  .compare-tray-chip {
+    padding: 2px 8px;
+    font-size: 11px;
+    max-width: 120px;
+  }
+  .tray-btn-go {
+    padding: 6px 14px;
+    font-size: 12px;
+  }
+
+  /* Compact Floating Dock */
+  .glass-dock {
+    height: 56px;
+    bottom: 8px;
+    left: 8px;
+    right: 8px;
+    border-radius: 18px;
+    padding: 0 4px;
+  }
+  .dock-btn {
+    width: 48px;
+    height: 46px;
+    font-size: 10px;
+    gap: 2px;
+  }
+  .dock-btn svg {
+    width: 18px;
+    height: 18px;
+  }
+}
+
 
